@@ -3,6 +3,9 @@
 on:
   # Scheduled automation is intentionally disabled for now.
   # We will re-enable cron-based runs in a later phase.
+  # IMPORTANT: In repository Settings -> Pages, Source must be "GitHub Actions".
+  # If "Deploy from branch" is enabled, GitHub may run a root Jekyll build and fail
+  # to resolve includes/layouts that intentionally live under /blog.
   workflow_dispatch:
     inputs:
       trend:
