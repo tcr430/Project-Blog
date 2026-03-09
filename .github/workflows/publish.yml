@@ -1,15 +1,14 @@
 name: Publish Blog Pipeline
 
 on:
+  # Scheduled automation is intentionally disabled for now.
+  # We will re-enable cron-based runs in a later phase.
   workflow_dispatch:
     inputs:
       trend:
         description: Optional manual trend (leave empty to use automatic trend selection)
         required: false
         type: string
-  schedule:
-    # Weekly run (Sunday at 09:00 UTC). Adjust as needed.
-    - cron: '0 9 * * 0'
 
 permissions:
   contents: write
