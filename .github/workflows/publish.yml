@@ -81,11 +81,24 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Build Jekyll site from blog folder
-        uses: actions/jekyll-build-pages@v1
+      - name: Set up Ruby for Jekyll build
+        uses: ruby/setup-ruby@v1
         with:
-          source: ./blog
-          destination: ./blog/_site
+          ruby-version: "3.1"
+
+      - name: Install Jekyll
+        run: |
+          gem install jekyll -v 3.10.0 --no-document
+          gem install kramdown-parser-gfm --no-document
+
+      - name: Build Jekyll site from blog folder
+        env:
+          JEKYLL_ENV: production
+        run: |
+          jekyll build \
+            --source ./blog \
+            --destination ./blog/_site \
+            --config ./blog/_config.yml
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
