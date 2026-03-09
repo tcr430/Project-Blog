@@ -1,0 +1,78 @@
+name: Publish Blog Pipeline
+
+on:
+  workflow_dispatch:
+    inputs:
+      trend:
+        description: Optional manual trend (leave empty to use automatic trend selection)
+        required: false
+        type: string
+  schedule:
+    # Weekly run (Sunday at 09:00 UTC). Adjust as needed.
+    - cron: '0 9 * * 0'
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      # Flush Python logs immediately so Actions shows phase-by-phase progress.
+      PYTHONUNBUFFERED: "1"
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install pipeline dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r pipeline/requirements.txt
+
+      - name: Run weekly pipeline
+        env:
+          # Required for OpenAI article/image generation.
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+          # Optional product-provider configuration. If Amazon credentials are missing,
+          # the provider layer will fall back to mock products unless strict mode is enabled.
+          PRODUCT_PROVIDER: ${{ secrets.PRODUCT_PROVIDER }}
+          AMAZON_API_FLAVOR: ${{ secrets.AMAZON_API_FLAVOR }}
+          AMAZON_MARKETPLACE: ${{ secrets.AMAZON_MARKETPLACE }}
+          AMAZON_ASSOCIATE_TAG: ${{ secrets.AMAZON_ASSOCIATE_TAG }}
+          AMAZON_PAAPI_ACCESS_KEY: ${{ secrets.AMAZON_PAAPI_ACCESS_KEY }}
+          AMAZON_PAAPI_SECRET_KEY: ${{ secrets.AMAZON_PAAPI_SECRET_KEY }}
+          AMAZON_FALLBACK_TO_MOCK: ${{ secrets.AMAZON_FALLBACK_TO_MOCK }}
+        run: |
+          if [ -n "${{ github.event.inputs.trend }}" ]; then
+            python pipeline/scripts/weekly_pipeline.py "${{ github.event.inputs.trend }}"
+          else
+            python pipeline/scripts/weekly_pipeline.py
+          fi
+
+      - name: Commit and push generated content
+        run: |
+          # Configure bot identity for automated commits.
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Stage only generated/pipeline state paths.
+          git add blog/_posts blog/assets/img blog/_data pipeline/data
+
+          # Exit cleanly if nothing changed.
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit."
+            exit 0
+          fi
+
+          git commit -m "chore(pipeline): publish generated blog content"
+          git push origin "${{ github.ref_name }}"

@@ -1,0 +1,66 @@
+[
+  {
+    "title": "Handcrafted Terracotta Vase Set",
+    "affiliate_url": "https://www.amazon.com/dp/B0TERRA001?tag=decorblog-20",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/terracotta-vase.jpg",
+    "short_reason": "Adds warm earthy color and organic shape to shelves or counters.",
+    "price": "$49.99",
+    "source": "mock"
+  },
+  {
+    "title": "Linen Textured Throw Pillow Covers",
+    "affiliate_url": "https://www.amazon.com/dp/B0LINEN002?tag=decorblog-20",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/linen-pillows.jpg",
+    "short_reason": "Softens hard surfaces and layers texture without visual clutter.",
+    "price": "$29.99",
+    "source": "mock"
+  },
+  {
+    "title": "Matte Ceramic Pendant Light",
+    "affiliate_url": "https://www.amazon.com/dp/B0LIGHT003?tag=decorblog-20",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/ceramic-light.jpg",
+    "short_reason": "Creates a focal point while reinforcing the trend's material palette.",
+    "price": "$89.00",
+    "source": "mock"
+  },
+  {
+    "title": "Natural Jute Area Rug",
+    "affiliate_url": "https://www.amazon.com/dp/B0RUG004?tag=decorblog-20",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/jute-rug.jpg",
+    "short_reason": "Grounds the room with natural texture and helps tie furniture together.",
+    "price": "$74.99",
+    "source": "mock"
+  },
+  {
+    "title": "Wood and Metal Accent Shelf",
+    "affiliate_url": "https://www.amazon.com/dp/B0SHELF005?tag=decorblog-20",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/accent-shelf.jpg",
+    "short_reason": "Displays decor vertically and balances storage with styling.",
+    "price": "$64.50",
+    "source": "mock"
+  },
+  {
+    "title": "Woven Storage Basket Set",
+    "affiliate_url": "https://www.amazon.com/dp/B0BASKET006?tag=decorblog-20",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/woven-baskets.jpg",
+    "short_reason": "Keeps everyday items tidy while adding visual warmth.",
+    "price": "$36.99",
+    "source": "mock"
+  },
+  {
+    "title": "Brushed Brass Table Lamp",
+    "affiliate_url": "https://www.amazon.com/dp/B0LAMP007?tag=decorblog-20",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/brass-lamp.jpg",
+    "short_reason": "Introduces a subtle metallic accent that elevates the palette.",
+    "price": "$58.00",
+    "source": "mock"
+  },
+  {
+    "title": "Stoneware Dinnerware Set",
+    "affiliate_url": "https://www.amazon.com/dp/B0STONE008?tag=decorblog-20",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/stoneware-set.jpg",
+    "short_reason": "Makes everyday table styling feel cohesive and trend-aligned.",
+    "price": "$79.99",
+    "source": "mock"
+  }
+]

@@ -1,0 +1,313 @@
+from __future__ import annotations
+
+import argparse
+import json
+import re
+import sys
+from datetime import datetime
+from pathlib import Path
+from typing import Any
+
+
+SECTION_COUNT = 5
+PINTEREST_ITEM_COUNT = 5
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Publish a generated article package JSON as a Jekyll markdown post."
+    )
+    parser.add_argument(
+        "package_json_path",
+        type=str,
+        help="Path to article package JSON file.",
+    )
+    return parser.parse_args()
+
+
+def slugify(text: str) -> str:
+    cleaned = re.sub(r"[^a-zA-Z0-9\s-]", "", text).strip().lower()
+    slug = re.sub(r"[\s_-]+", "-", cleaned).strip("-")
+    return slug or "decor-article"
+
+
+def yaml_escape(text: str) -> str:
+    escaped = text.replace("\\", "\\\\").replace('"', '\\"')
+    return escaped
+
+
+def normalize_tags(keywords: Any) -> list[str]:
+    if isinstance(keywords, list):
+        tags = [str(item).strip() for item in keywords if str(item).strip()]
+    elif isinstance(keywords, str):
+        tags = [item.strip() for item in keywords.split(",") if item.strip()]
+    else:
+        raise ValueError("keywords must be a list of strings or a comma-separated string.")
+
+    if not tags:
+        raise ValueError("keywords/tags cannot be empty.")
+
+    return tags
+
+
+def normalize_string_list(value: Any, field_name: str, expected_count: int) -> list[str]:
+    if not isinstance(value, list):
+        raise ValueError(f"{field_name} must be a list.")
+
+    items = [str(item).strip() for item in value if str(item).strip()]
+    if len(items) != expected_count:
+        raise ValueError(f"{field_name} must contain exactly {expected_count} items.")
+
+    return items
+
+
+def validate_article_package(data: dict[str, Any]) -> dict[str, Any]:
+    required_fields = [
+        "title",
+        "slug",
+        "meta_description",
+        "keywords",
+        "estimated_reading_time",
+        "hero_image_prompt",
+        "section_image_prompts",
+        "pinterest_titles",
+        "pinterest_descriptions",
+        "article_markdown",
+    ]
+    missing = [field for field in required_fields if field not in data]
+    if missing:
+        raise ValueError(f"Missing required fields: {', '.join(missing)}")
+
+    title = str(data["title"]).strip()
+    slug = slugify(str(data["slug"]).strip())
+    meta_description = str(data["meta_description"]).strip()
+    article_markdown = str(data["article_markdown"]).strip()
+    estimated_reading_time = str(data["estimated_reading_time"]).strip()
+    hero_image_prompt = str(data["hero_image_prompt"]).strip()
+
+    tags = normalize_tags(data["keywords"])
+    section_image_prompts = normalize_string_list(
+        data["section_image_prompts"],
+        field_name="section_image_prompts",
+        expected_count=SECTION_COUNT,
+    )
+    pinterest_titles = normalize_string_list(
+        data["pinterest_titles"],
+        field_name="pinterest_titles",
+        expected_count=PINTEREST_ITEM_COUNT,
+    )
+    pinterest_descriptions = normalize_string_list(
+        data["pinterest_descriptions"],
+        field_name="pinterest_descriptions",
+        expected_count=PINTEREST_ITEM_COUNT,
+    )
+
+    if not title:
+        raise ValueError("title cannot be empty.")
+    if not slug:
+        raise ValueError("slug cannot be empty.")
+    if not meta_description:
+        raise ValueError("meta_description cannot be empty.")
+    if not article_markdown:
+        raise ValueError("article_markdown cannot be empty.")
+    if not estimated_reading_time:
+        raise ValueError("estimated_reading_time cannot be empty.")
+    if not hero_image_prompt:
+        raise ValueError("hero_image_prompt cannot be empty.")
+
+    return {
+        "title": title,
+        "slug": slug,
+        "meta_description": meta_description,
+        "keywords": tags,
+        "estimated_reading_time": estimated_reading_time,
+        "hero_image_prompt": hero_image_prompt,
+        "section_image_prompts": section_image_prompts,
+        "pinterest_titles": pinterest_titles,
+        "pinterest_descriptions": pinterest_descriptions,
+        "article_markdown": article_markdown,
+    }
+
+
+def load_article_package(package_json_path: Path) -> dict[str, Any]:
+    if not package_json_path.exists():
+        raise FileNotFoundError(f"Input JSON file not found: {package_json_path}")
+
+    raw = package_json_path.read_text(encoding="utf-8")
+    try:
+        data = json.loads(raw)
+    except json.JSONDecodeError as exc:
+        raise ValueError(f"Input file is not valid JSON: {package_json_path}") from exc
+
+    if not isinstance(data, dict):
+        raise ValueError("Input JSON must be an object.")
+
+    return validate_article_package(data)
+
+
+def build_image_url(slug: str, filename: str) -> str:
+    return f"/assets/img/{slug}/{filename}"
+
+
+def inject_hero_image(article_markdown: str, title: str, hero_image_url: str) -> str:
+    if hero_image_url in article_markdown:
+        return article_markdown.strip() + "\n"
+
+    lines = article_markdown.splitlines()
+    hero_line = f"![{title} hero image]({hero_image_url})"
+
+    for index, line in enumerate(lines):
+        if line.strip().startswith("# "):
+            lines.insert(index + 1, "")
+            lines.insert(index + 2, hero_line)
+            lines.insert(index + 3, "")
+            return "\n".join(lines).strip() + "\n"
+
+    return f"{hero_line}\n\n{article_markdown.strip()}\n"
+
+
+def inject_section_images(article_markdown: str, slug: str, section_count: int) -> str:
+    lines = article_markdown.splitlines()
+    section_index = 0
+    line_index = 0
+
+    while line_index < len(lines) and section_index < section_count:
+        if lines[line_index].strip().startswith("## "):
+            section_index += 1
+            image_url = build_image_url(slug=slug, filename=f"section-{section_index}.png")
+
+            if image_url in article_markdown:
+                line_index += 1
+                continue
+
+            image_line = f"![Section {section_index} interior image]({image_url})"
+            insert_at = line_index + 1
+            lines.insert(insert_at, "")
+            lines.insert(insert_at + 1, image_line)
+            lines.insert(insert_at + 2, "")
+            line_index = insert_at + 3
+            continue
+
+        line_index += 1
+
+    return "\n".join(lines).strip() + "\n"
+
+
+def build_frontmatter(
+    title: str,
+    published_at: datetime,
+    description: str,
+    tags: list[str],
+    estimated_reading_time: str,
+    hero_image_url: str,
+) -> str:
+    date_value = published_at.strftime("%Y-%m-%d %H:%M:%S")
+    tag_values = ", ".join(f'"{yaml_escape(tag)}"' for tag in tags)
+
+    return (
+        "---\n"
+        "layout: post\n"
+        f'title: "{yaml_escape(title)}"\n'
+        f'date: "{date_value}"\n'
+        f'description: "{yaml_escape(description)}"\n'
+        f"tags: [{tag_values}]\n"
+        f'estimated_reading_time: "{yaml_escape(estimated_reading_time)}"\n'
+        f'image: "{yaml_escape(hero_image_url)}"\n'
+        "---\n\n"
+    )
+
+
+def build_post_path(project_root: Path, slug: str, published_at: datetime) -> Path:
+    date_prefix = published_at.strftime("%Y-%m-%d")
+    filename = f"{date_prefix}-{slug}.md"
+    return project_root / "blog" / "_posts" / filename
+
+
+def build_metadata_path(project_root: Path, post_path: Path) -> Path:
+    metadata_dir = project_root / "blog" / "_data" / "article_metadata"
+    return metadata_dir / f"{post_path.stem}.json"
+
+
+def save_article_metadata(package: dict[str, Any], post_path: Path, metadata_path: Path) -> Path:
+    metadata_path.parent.mkdir(parents=True, exist_ok=True)
+    section_image_paths = [
+        build_image_url(slug=package["slug"], filename=f"section-{index}.png")
+        for index in range(1, SECTION_COUNT + 1)
+    ]
+
+    payload = {
+        "slug": package["slug"],
+        "hero_image_prompt": package["hero_image_prompt"],
+        "section_image_prompts": package["section_image_prompts"],
+        "hero_image_path": build_image_url(slug=package["slug"], filename="hero.png"),
+        "section_image_paths": section_image_paths,
+        "pinterest_titles": package["pinterest_titles"],
+        "pinterest_descriptions": package["pinterest_descriptions"],
+        "post_path": str(post_path),
+        "updated_at": datetime.now().isoformat(),
+    }
+    metadata_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    return metadata_path
+
+
+def publish_post_from_package_file(package_json_path: str | Path) -> dict[str, Path]:
+    package_path = Path(package_json_path)
+    project_root = Path(__file__).resolve().parents[2]
+
+    package = load_article_package(package_path)
+
+    published_at = datetime.now()
+    output_path = build_post_path(project_root=project_root, slug=package["slug"], published_at=published_at)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    hero_image_url = build_image_url(slug=package["slug"], filename="hero.png")
+
+    markdown_body = inject_hero_image(
+        article_markdown=package["article_markdown"],
+        title=package["title"],
+        hero_image_url=hero_image_url,
+    )
+    markdown_body = inject_section_images(
+        article_markdown=markdown_body,
+        slug=package["slug"],
+        section_count=SECTION_COUNT,
+    )
+
+    frontmatter = build_frontmatter(
+        title=package["title"],
+        published_at=published_at,
+        description=package["meta_description"],
+        tags=package["keywords"],
+        estimated_reading_time=package["estimated_reading_time"],
+        hero_image_url=hero_image_url,
+    )
+
+    markdown_content = f"{frontmatter}{markdown_body.rstrip()}\n"
+    output_path.write_text(markdown_content, encoding="utf-8")
+
+    metadata_path = build_metadata_path(project_root=project_root, post_path=output_path)
+    save_article_metadata(package=package, post_path=output_path, metadata_path=metadata_path)
+
+    return {"post_path": output_path, "metadata_path": metadata_path}
+
+
+def publish_post(package_json_path: str | Path) -> dict[str, Path]:
+    return publish_post_from_package_file(package_json_path)
+
+
+def main() -> int:
+    args = parse_args()
+
+    try:
+        result = publish_post_from_package_file(args.package_json_path)
+        print(result["post_path"])
+        return 0
+    except Exception as exc:
+        print(f"Error: {exc}", file=sys.stderr)
+        return 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
+
+

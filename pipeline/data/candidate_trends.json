@@ -1,0 +1,38 @@
+[
+  {
+    "trend_cluster": "kitchen decor",
+    "trend_keyword": "terracotta kitchen decor",
+    "season": "",
+    "holiday": "",
+    "source": "local_seed"
+  },
+  {
+    "trend_cluster": "living room styling",
+    "trend_keyword": "organic modern living room",
+    "season": "",
+    "holiday": "",
+    "source": "local_seed"
+  },
+  {
+    "trend_cluster": "small spaces",
+    "trend_keyword": "small apartment dining nook",
+    "season": "",
+    "holiday": "",
+    "source": "local_seed"
+  },
+  {
+    "trend_cluster": "seasonal decor",
+    "trend_keyword": "spring mantel styling ideas",
+    "season": "spring",
+    "holiday": "",
+    "source": "local_seed"
+  },
+  {
+    "trend_cluster": "seasonal decor",
+    "trend_keyword": "easter brunch table decor",
+    "season": "spring",
+    "holiday": "easter",
+    "source": "local_seed"
+  }
+]
+
