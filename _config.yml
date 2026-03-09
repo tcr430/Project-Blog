@@ -1,0 +1,8 @@
+﻿# Root-level Jekyll config for GitHub Pages compatibility.
+# This tells root-based builds to treat /blog as the site source.
+source: blog
+destination: _site
+
+# Keep URL settings minimal; can be overridden per environment.
+url: ""
+baseurl: ""
