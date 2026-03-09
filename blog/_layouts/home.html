@@ -1,0 +1,51 @@
+﻿---
+layout: default
+---
+
+<section class="hero">
+  <p class="eyebrow">Decor Journal</p>
+  <h1>{{ site.title }}</h1>
+  <p class="hero-text">
+    Warm, practical interior ideas for everyday homes. Explore trend guides, styling advice,
+    and actionable room updates you can actually apply.
+  </p>
+</section>
+
+{% assign featured_posts = site.posts | slice: 0, 3 %}
+{% if featured_posts and featured_posts.size > 0 %}
+<section class="section-block">
+  <div class="section-head">
+    <h2>Featured This Week</h2>
+    <a href="{{ '/blog/' | relative_url }}">Browse all posts</a>
+  </div>
+  <div class="card-grid featured-grid">
+    {% for post in featured_posts %}
+      {% include post_card.html post=post %}
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% assign latest_posts = site.posts | slice: 3, 6 %}
+{% if latest_posts and latest_posts.size > 0 %}
+<section class="section-block">
+  <div class="section-head">
+    <h2>Latest Guides</h2>
+  </div>
+  <div class="list-grid">
+    {% for post in latest_posts %}
+      {% include post_card.html post=post compact=true %}
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+<section class="section-block about-panel" id="about">
+  <h2>About The Studio</h2>
+  <p>
+    Casa Editorial is a small design-first publication focused on approachable interiors.
+    We blend trend awareness with practical styling direction, so each article helps readers
+    make confident decor decisions at home.
+  </p>
+  <a class="button-link" href="{{ '/authors/' | relative_url }}">Meet the authors</a>
+</section>

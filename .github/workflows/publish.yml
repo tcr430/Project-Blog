@@ -1,4 +1,4 @@
-name: Publish Blog Pipeline
+﻿name: Publish Blog Pipeline
 
 on:
   # Scheduled automation is intentionally disabled for now.
@@ -12,6 +12,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   publish:
@@ -75,3 +77,21 @@ jobs:
 
           git commit -m "chore(pipeline): publish generated blog content"
           git push origin "${{ github.ref_name }}"
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Build Jekyll site from blog folder
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./blog
+          destination: ./blog/_site
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./blog/_site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

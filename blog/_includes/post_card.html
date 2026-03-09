@@ -1,0 +1,15 @@
+﻿{% assign post_item = include.post %}
+<article class="post-card{% if include.compact %} compact{% endif %}">
+  <a class="post-card-link" href="{{ post_item.url | relative_url }}">
+    {% if post_item.image %}
+      <img src="{{ post_item.image | relative_url }}" alt="{{ post_item.title }}" loading="lazy">
+    {% endif %}
+    <div class="post-card-body">
+      <p class="post-card-meta">{{ post_item.date | date: "%d %b %Y" }}</p>
+      <h3>{{ post_item.title }}</h3>
+      {% if post_item.description %}
+        <p>{{ post_item.description }}</p>
+      {% endif %}
+    </div>
+  </a>
+</article>

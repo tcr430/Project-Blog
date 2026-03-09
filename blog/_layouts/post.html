@@ -1,0 +1,27 @@
+﻿---
+layout: default
+---
+
+<article class="post-single">
+  <header class="post-header">
+    <p class="post-date">{{ page.date | date: "%d %b %Y" }}</p>
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}
+      <p class="post-description">{{ page.description }}</p>
+    {% endif %}
+    {% if page.estimated_reading_time %}
+      <p class="read-time">{{ page.estimated_reading_time }}</p>
+    {% endif %}
+    {% if page.tags %}
+      <ul class="tag-list">
+        {% for tag in page.tags %}
+          <li>{{ tag }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>
