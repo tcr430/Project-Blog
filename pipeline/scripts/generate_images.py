@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import argparse
 import base64
@@ -292,7 +292,7 @@ def generate_and_save_images(
     client = OpenAI(api_key=api_key)
 
     project_root = Path(__file__).resolve().parents[2]
-    output_dir = project_root / "blog" / "assets" / "img" / slug
+    output_dir = project_root / "assets" / "img" / slug
 
     saved_paths: list[Path] = []
 
@@ -345,3 +345,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

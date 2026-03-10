@@ -4,8 +4,8 @@ on:
   # Scheduled automation is intentionally disabled for now.
   # We will re-enable cron-based runs in a later phase.
   # IMPORTANT: In repository Settings -> Pages, Source must be "GitHub Actions".
-  # If "Deploy from branch" is enabled, GitHub may run a root Jekyll build and fail
-  # to resolve includes/layouts that intentionally live under /blog.
+  # If "Deploy from branch" is enabled, GitHub may run an extra root Jekyll build
+  # instead of using this workflow artifact.
   workflow_dispatch:
     inputs:
       trend:
@@ -44,11 +44,7 @@ jobs:
 
       - name: Run weekly pipeline
         env:
-          # Required for OpenAI article/image generation.
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-
-          # Optional product-provider configuration. If Amazon credentials are missing,
-          # the provider layer will fall back to mock products unless strict mode is enabled.
           PRODUCT_PROVIDER: ${{ secrets.PRODUCT_PROVIDER }}
           AMAZON_API_FLAVOR: ${{ secrets.AMAZON_API_FLAVOR }}
           AMAZON_MARKETPLACE: ${{ secrets.AMAZON_MARKETPLACE }}
@@ -65,14 +61,11 @@ jobs:
 
       - name: Commit and push generated content
         run: |
-          # Configure bot identity for automated commits.
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # Stage only generated/pipeline state paths.
-          git add blog/_posts blog/assets/img blog/_data pipeline/data
+          git add _posts assets/img _data pipeline/data Gemfile _config.yml authors.md blog.md contact.md index.html _layouts _includes
 
-          # Exit cleanly if nothing changed.
           if git diff --cached --quiet; then
             echo "No generated changes to commit."
             exit 0
@@ -89,24 +82,21 @@ jobs:
         with:
           ruby-version: "3.1"
 
-      - name: Install Jekyll
-        run: |
-          gem install jekyll -v 3.10.0 --no-document
-          gem install kramdown-parser-gfm --no-document
+      - name: Install Bundler dependencies
+        run: bundle install
 
-      - name: Build Jekyll site from blog folder
+      - name: Build Jekyll site from repository root
         env:
           JEKYLL_ENV: production
         run: |
-          jekyll build \
-            --source ./blog \
-            --destination ./blog/_site \
-            --config ./blog/_config.yml
+          bundle exec jekyll build \
+            --destination ./_site \
+            --config ./_config.yml
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./blog/_site
+          path: ./_site
 
       - name: Deploy to GitHub Pages
         id: deployment

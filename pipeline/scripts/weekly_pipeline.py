@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import argparse
 import importlib.util
@@ -189,7 +189,7 @@ def run_publish_step(project_root: Path, package_json_path: Path) -> tuple[Path,
             "Expected dict with post_path/metadata_path or a markdown path."
         )
 
-    metadata_path = project_root / "blog" / "_data" / "article_metadata" / f"{post_path.stem}.json"
+    metadata_path = project_root / "_data" / "article_metadata" / f"{post_path.stem}.json"
     if not metadata_path.exists():
         raise RuntimeError(f"Metadata file was not found after publish: {metadata_path}")
 
@@ -418,3 +418,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

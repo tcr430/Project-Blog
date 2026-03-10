@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import argparse
 import json
@@ -220,11 +220,11 @@ def build_frontmatter(
 def build_post_path(project_root: Path, slug: str, published_at: datetime) -> Path:
     date_prefix = published_at.strftime("%Y-%m-%d")
     filename = f"{date_prefix}-{slug}.md"
-    return project_root / "blog" / "_posts" / filename
+    return project_root / "_posts" / filename
 
 
 def build_metadata_path(project_root: Path, post_path: Path) -> Path:
-    metadata_dir = project_root / "blog" / "_data" / "article_metadata"
+    metadata_dir = project_root / "_data" / "article_metadata"
     return metadata_dir / f"{post_path.stem}.json"
 
 
@@ -309,5 +309,6 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
 
 
