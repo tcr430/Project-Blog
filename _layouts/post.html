@@ -2,26 +2,63 @@
 layout: default
 ---
 
-<article class="post-single">
-  <header class="post-header">
-    <p class="post-date">{{ page.date | date: "%d %b %Y" }}</p>
-    <h1>{{ page.title }}</h1>
-    {% if page.description %}
-      <p class="post-description">{{ page.description }}</p>
-    {% endif %}
-    {% if page.estimated_reading_time %}
-      <p class="read-time">{{ page.estimated_reading_time }}</p>
-    {% endif %}
+{% assign primary_category = page.categories | first %}
+<section class="container post-shell">
+  <article class="post-single">
+    <header class="post-header">
+      {% if primary_category %}
+      <p class="post-category">{{ primary_category }}</p>
+      {% endif %}
+      <h1>{{ page.title }}</h1>
+      {% if page.excerpt or page.description %}
+      <p class="post-description">{{ page.excerpt | default: page.description }}</p>
+      {% endif %}
+      <div class="post-meta-row">
+        <span>{{ page.date | date: "%d %b %Y" }}</span>
+        {% if page.estimated_reading_time %}
+        <span>{{ page.estimated_reading_time }}</span>
+        {% endif %}
+      </div>
+      {% include author_box.html author_id=page.author compact=true %}
+      {% if page.image %}
+      <figure class="post-hero">
+        <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" loading="eager">
+      </figure>
+      {% endif %}
+    </header>
+
+    <div class="post-content prose">
+      {{ content }}
+    </div>
+
+    {% include author_box.html author_id=page.author %}
+  </article>
+
+  <aside class="post-sidebar">
     {% if page.tags %}
+    <section class="sidebar-card">
+      <p class="kicker">Tags</p>
       <ul class="tag-list">
         {% for tag in page.tags %}
-          <li>{{ tag }}</li>
+        <li>{{ tag }}</li>
         {% endfor %}
       </ul>
+    </section>
     {% endif %}
-  </header>
 
-  <div class="post-content">
-    {{ content }}
-  </div>
-</article>
+    {% assign related_category = page.categories | first %}
+    {% assign related_posts = site.categories[related_category] %}
+    {% if related_posts and related_posts.size > 1 %}
+    <section class="sidebar-card">
+      <p class="kicker">More in {{ related_category }}</p>
+      <div class="sidebar-stories">
+        {% for post in related_posts limit: 4 %}
+          {% if post.url != page.url %}
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
+  </aside>
+</section>

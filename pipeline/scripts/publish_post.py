@@ -1,6 +1,7 @@
 ﻿from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import re
 import sys
@@ -11,6 +12,13 @@ from typing import Any
 
 SECTION_COUNT = 5
 PINTEREST_ITEM_COUNT = 5
+AUTHOR_IDS = ["elena_hart", "sophie_bennett", "marco_alvarez"]
+CATEGORY_RULES = [
+    ("Mistakes & Fixes", ["mistake", "fix", "avoid"]),
+    ("Ideas", ["idea", "inspiration"]),
+    ("Trends", ["trend", "trending"]),
+    ("Styling Advice", ["style", "styling", "decor", "guide"]),
+]
 
 
 def parse_args() -> argparse.Namespace:
@@ -59,6 +67,37 @@ def normalize_string_list(value: Any, field_name: str, expected_count: int) -> l
         raise ValueError(f"{field_name} must contain exactly {expected_count} items.")
 
     return items
+
+
+def choose_author(slug: str) -> str:
+    digest = hashlib.sha256(slug.encode("utf-8")).hexdigest()
+    index = int(digest, 16) % len(AUTHOR_IDS)
+    return AUTHOR_IDS[index]
+
+
+def derive_categories(title: str, tags: list[str]) -> list[str]:
+    haystack = f"{title} {' '.join(tags)}".lower()
+    for category, keywords in CATEGORY_RULES:
+        if any(keyword in haystack for keyword in keywords):
+            return [category]
+    return ["Styling Advice"]
+
+
+def derive_excerpt(meta_description: str, article_markdown: str) -> str:
+    if meta_description.strip():
+        return meta_description.strip()
+
+    without_headings = re.sub(r"(?m)^#+\s+", "", article_markdown)
+    without_images = re.sub(r"!\[[^\]]*\]\([^)]+\)", "", without_headings)
+    without_links = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", without_images)
+    words = re.findall(r"\S+", without_links)
+    return " ".join(words[:32]).strip()
+
+
+def derive_featured(categories: list[str], tags: list[str]) -> bool:
+    if categories and categories[0] == "Trends":
+        return True
+    return any("trend" in tag.lower() for tag in tags)
 
 
 def validate_article_package(data: dict[str, Any]) -> dict[str, Any]:
@@ -115,6 +154,15 @@ def validate_article_package(data: dict[str, Any]) -> dict[str, Any]:
     if not hero_image_prompt:
         raise ValueError("hero_image_prompt cannot be empty.")
 
+    author = str(data.get("author") or choose_author(slug)).strip()
+    categories_raw = data.get("categories")
+    if isinstance(categories_raw, list):
+        categories = [str(item).strip() for item in categories_raw if str(item).strip()]
+    else:
+        categories = derive_categories(title=title, tags=tags)
+    excerpt = str(data.get("excerpt") or derive_excerpt(meta_description, article_markdown)).strip()
+    featured = bool(data.get("featured", derive_featured(categories, tags)))
+
     return {
         "title": title,
         "slug": slug,
@@ -126,6 +174,10 @@ def validate_article_package(data: dict[str, Any]) -> dict[str, Any]:
         "pinterest_titles": pinterest_titles,
         "pinterest_descriptions": pinterest_descriptions,
         "article_markdown": article_markdown,
+        "author": author,
+        "categories": categories,
+        "excerpt": excerpt,
+        "featured": featured,
     }
 
 
@@ -200,9 +252,15 @@ def build_frontmatter(
     tags: list[str],
     estimated_reading_time: str,
     hero_image_url: str,
+    author: str,
+    categories: list[str],
+    excerpt: str,
+    featured: bool,
 ) -> str:
     date_value = published_at.strftime("%Y-%m-%d %H:%M:%S")
     tag_values = ", ".join(f'"{yaml_escape(tag)}"' for tag in tags)
+    category_values = ", ".join(f'"{yaml_escape(category)}"' for category in categories)
+    featured_value = "true" if featured else "false"
 
     return (
         "---\n"
@@ -210,7 +268,11 @@ def build_frontmatter(
         f'title: "{yaml_escape(title)}"\n'
         f'date: "{date_value}"\n'
         f'description: "{yaml_escape(description)}"\n'
+        f'excerpt: "{yaml_escape(excerpt)}"\n'
+        f'author: "{yaml_escape(author)}"\n'
+        f"categories: [{category_values}]\n"
         f"tags: [{tag_values}]\n"
+        f"featured: {featured_value}\n"
         f'estimated_reading_time: "{yaml_escape(estimated_reading_time)}"\n'
         f'image: "{yaml_escape(hero_image_url)}"\n'
         "---\n\n"
@@ -237,6 +299,10 @@ def save_article_metadata(package: dict[str, Any], post_path: Path, metadata_pat
 
     payload = {
         "slug": package["slug"],
+        "author": package["author"],
+        "categories": package["categories"],
+        "excerpt": package["excerpt"],
+        "featured": package["featured"],
         "hero_image_prompt": package["hero_image_prompt"],
         "section_image_prompts": package["section_image_prompts"],
         "hero_image_path": build_image_url(slug=package["slug"], filename="hero.png"),
@@ -280,6 +346,10 @@ def publish_post_from_package_file(package_json_path: str | Path) -> dict[str, P
         tags=package["keywords"],
         estimated_reading_time=package["estimated_reading_time"],
         hero_image_url=hero_image_url,
+        author=package["author"],
+        categories=package["categories"],
+        excerpt=package["excerpt"],
+        featured=package["featured"],
     )
 
     markdown_content = f"{frontmatter}{markdown_body.rstrip()}\n"
@@ -309,6 +379,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
-
-

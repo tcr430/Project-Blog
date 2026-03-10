@@ -2,50 +2,77 @@
 layout: default
 ---
 
-<section class="hero">
-  <p class="eyebrow">Decor Journal</p>
-  <h1>{{ site.title }}</h1>
-  <p class="hero-text">
-    Warm, practical interior ideas for everyday homes. Explore trend guides, styling advice,
-    and actionable room updates you can actually apply.
-  </p>
+{% assign featured_post = site.posts | where: "featured", true | first %}
+{% if featured_post == nil %}
+  {% assign featured_post = site.posts.first %}
+{% endif %}
+
+<section class="hero-band">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="kicker">Decor Journal</p>
+      <h1>Editorial decor guidance for rooms that feel current, livable, and beautifully resolved.</h1>
+      <p class="hero-summary">
+        Casa Editorial publishes approachable trend reports, styling advice, and design-first decor stories built for real homes.
+      </p>
+      <div class="hero-links">
+        <a class="button-link" href="{{ '/blog/' | relative_url }}">Browse stories</a>
+        <a class="subtle-link" href="{{ '/authors/' | relative_url }}">Meet the editorial team</a>
+      </div>
+    </div>
+    <aside class="hero-note">
+      <p class="kicker">What we cover</p>
+      <ul class="hero-list">
+        <li>Trend-led interiors with practical takeaways</li>
+        <li>Room-specific styling ideas and visual reasoning</li>
+        <li>Decor stories prepared for affiliate and Pinterest workflows</li>
+      </ul>
+    </aside>
+  </div>
 </section>
 
-{% assign featured_posts = site.posts | slice: 0, 3 %}
-{% if featured_posts and featured_posts.size > 0 %}
-<section class="section-block">
+{% if featured_post %}
+<section class="container section-block">
   <div class="section-head">
-    <h2>Featured This Week</h2>
-    <a href="{{ '/blog/' | relative_url }}">Browse all posts</a>
+    <h2>Featured Story</h2>
+    <a href="{{ featured_post.url | relative_url }}">Read the full article</a>
   </div>
-  <div class="card-grid featured-grid">
-    {% for post in featured_posts %}
-      {% include post_card.html post=post %}
-    {% endfor %}
-  </div>
+  {% include featured_post.html post=featured_post %}
 </section>
 {% endif %}
 
-{% assign latest_posts = site.posts | slice: 3, 6 %}
-{% if latest_posts and latest_posts.size > 0 %}
-<section class="section-block">
+{% assign recent_posts = site.posts %}
+<section class="container section-block">
   <div class="section-head">
-    <h2>Latest Guides</h2>
+    <h2>Latest Articles</h2>
+    <a href="{{ '/blog/' | relative_url }}">View archive</a>
   </div>
-  <div class="list-grid">
-    {% for post in latest_posts %}
-      {% include post_card.html post=post compact=true %}
+  <div class="story-grid">
+    {% for post in recent_posts limit: 6 %}
+      {% if featured_post == nil or post.url != featured_post.url %}
+        {% include post_card.html post=post %}
+      {% endif %}
     {% endfor %}
   </div>
 </section>
-{% endif %}
 
-<section class="section-block about-panel" id="about">
-  <h2>About The Studio</h2>
+{% assign homepage_categories = "Trends|Ideas|Styling Advice|Mistakes & Fixes" | split: "|" %}
+{% for category_name in homepage_categories %}
+  {% assign category_posts = site.categories[category_name] %}
+  {% if category_posts and category_posts.size > 0 %}
+  <section class="container section-block">
+    {% include category_section.html title=category_name posts=category_posts %}
+  </section>
+  {% endif %}
+{% endfor %}
+
+<section class="container section-block editorial-note">
+  <div>
+    <p class="kicker">About Casa Editorial</p>
+    <h2>A decor publication built to make generated content feel genuinely publishable.</h2>
+  </div>
   <p>
-    Casa Editorial is a small design-first publication focused on approachable interiors.
-    We blend trend awareness with practical styling direction, so each article helps readers
-    make confident decor decisions at home.
+    Our system generates trend-led stories, structured metadata, and original imagery, but the site itself is designed to read like a curated editorial publication rather than a content dump.
   </p>
-  <a class="button-link" href="{{ '/authors/' | relative_url }}">Meet the authors</a>
+  <a class="subtle-link" href="{{ '/contact/' | relative_url }}">Get in touch</a>
 </section>

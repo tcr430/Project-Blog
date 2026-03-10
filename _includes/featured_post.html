@@ -1,0 +1,20 @@
+﻿{% assign post_item = include.post %}
+{% assign author = site.data.authors[post_item.author] %}
+{% assign category = post_item.categories | first %}
+<article class="featured-story">
+  <a class="featured-story-media" href="{{ post_item.url | relative_url }}">
+    {% if post_item.image %}
+    <img src="{{ post_item.image | relative_url }}" alt="{{ post_item.title }}" loading="lazy">
+    {% endif %}
+  </a>
+  <div class="featured-story-copy">
+    {% if category %}<span class="category-pill">{{ category }}</span>{% endif %}
+    <h3><a href="{{ post_item.url | relative_url }}">{{ post_item.title }}</a></h3>
+    <p>{{ post_item.excerpt | default: post_item.description }}</p>
+    <div class="featured-story-meta">
+      <span>{{ author.name | default: "Casa Editorial" }}</span>
+      <span>{{ post_item.date | date: "%d %b %Y" }}</span>
+      {% if post_item.estimated_reading_time %}<span>{{ post_item.estimated_reading_time }}</span>{% endif %}
+    </div>
+  </div>
+</article>

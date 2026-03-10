@@ -1,0 +1,14 @@
+﻿{% assign author_id = include.author_id %}
+{% assign author = site.data.authors[author_id] %}
+{% if author %}
+<div class="author-box{% if include.compact %} compact{% endif %}">
+  <div class="author-avatar">{{ author.initials | default: author.name | slice: 0, 2 }}</div>
+  <div>
+    <p class="author-name">{{ author.name }}</p>
+    <p class="author-role">{{ author.role }}</p>
+    {% unless include.compact %}
+    <p class="author-bio">{{ author.bio }}</p>
+    {% endunless %}
+  </div>
+</div>
+{% endif %}

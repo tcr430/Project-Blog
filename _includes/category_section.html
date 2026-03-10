@@ -1,0 +1,10 @@
+﻿{% assign section_posts = include.posts %}
+<div class="section-head">
+  <h2>{{ include.title }}</h2>
+  <a href="{{ '/blog/' | relative_url }}">See all articles</a>
+</div>
+<div class="story-grid compact-grid">
+  {% for post in section_posts limit: 3 %}
+    {% include post_card.html post=post compact=true %}
+  {% endfor %}
+</div>
