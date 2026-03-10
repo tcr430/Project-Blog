@@ -1,2 +1,0 @@
-﻿# Prevent branch-based GitHub Pages Jekyll processing at repo root.
-# The site is built and deployed from /blog via GitHub Actions.
