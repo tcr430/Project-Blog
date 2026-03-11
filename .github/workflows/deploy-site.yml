@@ -1,4 +1,4 @@
-﻿name: Deploy Site Only
+name: Deploy Site Only
 
 on:
   workflow_dispatch:

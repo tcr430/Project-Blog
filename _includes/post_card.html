@@ -1,4 +1,4 @@
-﻿{% assign post_item = include.post %}
+{% assign post_item = include.post %}
 {% assign author = site.data.authors[post_item.author] %}
 {% assign category = post_item.categories | first %}
 <article class="post-card{% if include.compact %} compact{% endif %}">

@@ -1,4 +1,4 @@
-﻿name: Publish Blog Pipeline
+name: Publish Blog Pipeline
 
 on:
   # Scheduled automation is intentionally disabled for now.
