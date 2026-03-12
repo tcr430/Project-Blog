@@ -2,6 +2,7 @@
   --bg: #ffffff;
   --surface: #ffffff;
   --surface-soft: #f5f5f2;
+  --surface-tint: #f6f5f2;
   --ink: #181818;
   --muted: #707070;
   --line: #e8e8e1;
@@ -78,7 +79,7 @@ p {
 
 .site-header {
   border-bottom: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.96);
+  background: rgba(246, 245, 242, 0.96);
   position: sticky;
   top: 0;
   z-index: 40;
@@ -202,6 +203,12 @@ p {
   border-radius: 20px;
   padding: 1.4rem;
   background: var(--surface);
+}
+
+.popular-panel,
+.stories-sidebar-panel:first-child,
+.article-sidebar .sidebar-panel {
+  background: var(--surface-tint);
 }
 
 .panel-head h2 {
@@ -386,6 +393,20 @@ p {
   color: #ffffff;
   border-radius: 22px;
   padding: 2rem;
+}
+
+.newsletter-copy {
+  display: grid;
+  align-content: center;
+  gap: 0.55rem;
+}
+
+.newsletter-copy .eyebrow-label {
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.newsletter-copy h2 {
+  max-width: 14ch;
 }
 
 .newsletter-banner p {
