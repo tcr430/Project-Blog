@@ -1,0 +1,9 @@
+{% assign author = site.data.authors[include.author_id] %}
+<article class="author-card">
+  <div class="author-badge">{{ author.initials }}</div>
+  <div>
+    <h3>{{ author.name }}</h3>
+    <p class="author-role">{{ author.role }}</p>
+    <p>{{ author.bio }}</p>
+  </div>
+</article>

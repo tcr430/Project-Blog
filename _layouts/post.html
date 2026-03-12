@@ -2,63 +2,69 @@
 layout: default
 ---
 
+{% assign author = site.data.authors[page.author] %}
 {% assign primary_category = page.categories | first %}
-<section class="container post-shell">
-  <article class="post-single">
-    <header class="post-header">
-      {% if primary_category %}
-      <p class="post-category">{{ primary_category }}</p>
-      {% endif %}
+<section class="container article-shell">
+  <article class="article-main">
+    <header class="article-header">
+      <div class="article-meta-top">
+        {% if primary_category %}<span class="category-chip">{{ primary_category }}</span>{% endif %}
+        <span>{{ page.date | date: "%d %b %Y" }}</span>
+        {% if page.estimated_reading_time %}<span>{{ page.estimated_reading_time }}</span>{% endif %}
+      </div>
       <h1>{{ page.title }}</h1>
       {% if page.excerpt or page.description %}
-      <p class="post-description">{{ page.excerpt | default: page.description }}</p>
+      <p class="article-dek">{{ page.excerpt | default: page.description }}</p>
       {% endif %}
-      <div class="post-meta-row">
-        <span>{{ page.date | date: "%d %b %Y" }}</span>
-        {% if page.estimated_reading_time %}
-        <span>{{ page.estimated_reading_time }}</span>
-        {% endif %}
+      {% if author %}
+      <div class="article-author-row">
+        <span class="author-initials">{{ author.initials }}</span>
+        <div>
+          <p>{{ author.name }}</p>
+          <small>{{ author.role }}</small>
+        </div>
       </div>
-      {% include author_box.html author_id=page.author compact=true %}
+      {% endif %}
       {% if page.image %}
-      <figure class="post-hero">
+      <figure class="article-hero">
         <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" loading="eager">
       </figure>
       {% endif %}
     </header>
 
-    <div class="post-content prose">
+    <div class="article-body prose">
       {{ content }}
     </div>
-
-    {% include author_box.html author_id=page.author %}
   </article>
 
-  <aside class="post-sidebar">
-    {% if page.tags %}
-    <section class="sidebar-card">
-      <p class="kicker">Tags</p>
-      <ul class="tag-list">
-        {% for tag in page.tags %}
-        <li>{{ tag }}</li>
-        {% endfor %}
-      </ul>
-    </section>
-    {% endif %}
-
-    {% assign related_category = page.categories | first %}
-    {% assign related_posts = site.categories[related_category] %}
-    {% if related_posts and related_posts.size > 1 %}
-    <section class="sidebar-card">
-      <p class="kicker">More in {{ related_category }}</p>
-      <div class="sidebar-stories">
-        {% for post in related_posts limit: 4 %}
+  <aside class="article-sidebar">
+    <div class="sidebar-panel">
+      <div class="panel-head">
+        <p class="eyebrow-label">Explore</p>
+        <h2>More stories</h2>
+      </div>
+      <div class="popular-list compact-popular">
+        {% assign sidebar_count = 0 %}
+        {% for post in site.posts %}
           {% if post.url != page.url %}
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            {% include popular_item.html post=post index=forloop.index %}
+            {% assign sidebar_count = sidebar_count | plus: 1 %}
           {% endif %}
+          {% if sidebar_count >= 5 %}{% break %}{% endif %}
         {% endfor %}
       </div>
-    </section>
+    </div>
+    {% if page.tags %}
+    <div class="sidebar-panel">
+      <div class="panel-head">
+        <p class="eyebrow-label">Tags</p>
+      </div>
+      <ul class="tag-list">
+        {% for tag in page.tags %}
+          <li>{{ tag }}</li>
+        {% endfor %}
+      </ul>
+    </div>
     {% endif %}
   </aside>
 </section>

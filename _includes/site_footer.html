@@ -1,20 +1,22 @@
 <footer class="site-footer">
-  <div class="container footer-grid">
-    <div>
-      <p class="kicker">Casa Editorial</p>
+  <div class="container footer-top">
+    <div class="footer-branding">
+      <a class="site-logo footer-logo" href="{{ '/' | relative_url }}">
+        <span class="logo-mark">C</span>
+        <span class="logo-text">{{ site.title }}</span>
+      </a>
       <p>{{ site.description }}</p>
     </div>
-    <div>
-      <p class="kicker">Explore</p>
-      <ul>
-        <li><a href="{{ '/' | relative_url }}">Home</a></li>
-        <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
-        <li><a href="{{ '/authors/' | relative_url }}">Authors</a></li>
-        <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
-      </ul>
-    </div>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/stories/' | relative_url }}">Stories</a>
+      <a href="{{ '/authors/' | relative_url }}">Authors</a>
+      <a href="{{ '/about/' | relative_url }}">About</a>
+      <a href="{{ '/contact/' | relative_url }}">Contact</a>
+      <a href="{{ '/privacy/' | relative_url }}">Privacy</a>
+    </nav>
   </div>
   <div class="container footer-bottom">
-    <p>{{ site.time | date: "%Y" }} {{ site.title }}. Designed as an editorial decor publication.</p>
+    <a class="button-link footer-cta" href="{{ site.buy_me_a_coffee_url }}" target="_blank" rel="noopener">Buy Me a Coffee</a>
   </div>
 </footer>

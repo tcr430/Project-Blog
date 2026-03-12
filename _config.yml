@@ -8,6 +8,8 @@ lang: en
 timezone: Europe/Lisbon
 markdown: kramdown
 permalink: /:categories/:year/:month/:day/:title/
+include:
+  - _pages
 
 collections:
   posts:
@@ -22,7 +24,7 @@ defaults:
       layout: post
   -
     scope:
-      path: ""
+      path: "_pages"
     values:
       layout: page
 
@@ -30,3 +32,6 @@ exclude:
   - Gemfile.lock
   - node_modules
   - vendor
+
+buy_me_a_coffee_url: "https://buymeacoffee.com/casaeditorial"
+newsletter_email: "hello@example.com"

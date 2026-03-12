@@ -1,0 +1,11 @@
+{% assign post_item = include.post %}
+<article class="popular-item">
+  <span class="popular-index">{{ include.index }}</span>
+  <div>
+    <h3><a href="{{ post_item.url | relative_url }}">{{ post_item.title }}</a></h3>
+    <div class="entry-meta">
+      <span>{{ post_item.date | date: "%d %b %Y" }}</span>
+      {% if post_item.estimated_reading_time %}<span>{{ post_item.estimated_reading_time }}</span>{% endif %}
+    </div>
+  </div>
+</article>

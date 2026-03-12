@@ -1,14 +1,15 @@
 <header class="site-header">
-  <div class="container nav-shell">
-    <a class="site-brand" href="{{ '/' | relative_url }}">
-      <span class="site-brand-mark">C</span>
-      <span>{{ site.title }}</span>
+  <div class="container header-inner">
+    <a class="site-logo" href="{{ '/' | relative_url }}">
+      <span class="logo-mark">C</span>
+      <span class="logo-text">{{ site.title }}</span>
     </a>
-    <nav class="site-nav" aria-label="Main navigation">
+    <nav class="site-nav" aria-label="Primary navigation">
       <a href="{{ '/' | relative_url }}">Home</a>
-      <a href="{{ '/blog/' | relative_url }}">Blog</a>
+      <a href="{{ '/stories/' | relative_url }}">Stories</a>
       <a href="{{ '/authors/' | relative_url }}">Authors</a>
-      <a href="{{ '/contact/' | relative_url }}">Contact</a>
+      <a href="{{ site.buy_me_a_coffee_url }}" target="_blank" rel="noopener">Buy Me a Coffee</a>
+      <a class="search-link" href="{{ '/search/' | relative_url }}">Search</a>
     </nav>
   </div>
 </header>

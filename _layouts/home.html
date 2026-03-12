@@ -7,72 +7,64 @@ layout: default
   {% assign featured_post = site.posts.first %}
 {% endif %}
 
-<section class="hero-band">
-  <div class="container hero-grid">
-    <div class="hero-copy">
-      <p class="kicker">Decor Journal</p>
-      <h1>Editorial decor guidance for rooms that feel current, livable, and beautifully resolved.</h1>
-      <p class="hero-summary">
-        Casa Editorial publishes approachable trend reports, styling advice, and design-first decor stories built for real homes.
-      </p>
-      <div class="hero-links">
-        <a class="button-link" href="{{ '/blog/' | relative_url }}">Browse stories</a>
-        <a class="subtle-link" href="{{ '/authors/' | relative_url }}">Meet the editorial team</a>
-      </div>
+<section class="home-lead container">
+  <div class="lead-grid">
+    <div class="lead-main">
+      {% if featured_post %}
+        {% include hero_featured.html post=featured_post %}
+      {% endif %}
     </div>
-    <aside class="hero-note">
-      <p class="kicker">What we cover</p>
-      <ul class="hero-list">
-        <li>Trend-led interiors with practical takeaways</li>
-        <li>Room-specific styling ideas and visual reasoning</li>
-        <li>Decor stories prepared for affiliate and Pinterest workflows</li>
-      </ul>
+    <aside class="lead-sidebar">
+      <div class="sidebar-panel popular-panel">
+        <div class="panel-head">
+          <p class="eyebrow-label">Popular</p>
+          <h2>What readers should not miss</h2>
+        </div>
+        <div class="popular-list">
+          {% assign popular_count = 0 %}
+          {% for post in site.posts %}
+            {% if featured_post == nil or post.url != featured_post.url %}
+              {% include popular_item.html post=post index=forloop.index %}
+              {% assign popular_count = popular_count | plus: 1 %}
+            {% endif %}
+            {% if popular_count >= 5 %}{% break %}{% endif %}
+          {% endfor %}
+        </div>
+      </div>
     </aside>
   </div>
 </section>
 
-{% if featured_post %}
-<section class="container section-block">
-  <div class="section-head">
-    <h2>Featured Story</h2>
-    <a href="{{ featured_post.url | relative_url }}">Read the full article</a>
+<section class="container home-section recent-section">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow-label">Recent Posts</p>
+      <h2>Fresh stories from the decor desk</h2>
+    </div>
+    <a href="{{ '/stories/' | relative_url }}">View all stories</a>
   </div>
-  {% include featured_post.html post=featured_post %}
-</section>
-{% endif %}
-
-{% assign recent_posts = site.posts %}
-<section class="container section-block">
-  <div class="section-head">
-    <h2>Latest Articles</h2>
-    <a href="{{ '/blog/' | relative_url }}">View archive</a>
-  </div>
-  <div class="story-grid">
-    {% for post in recent_posts limit: 6 %}
+  <div class="story-card-row recent-cards">
+    {% assign recent_count = 0 %}
+    {% for post in site.posts %}
       {% if featured_post == nil or post.url != featured_post.url %}
-        {% include post_card.html post=post %}
+        {% include story_card.html post=post %}
+        {% assign recent_count = recent_count | plus: 1 %}
       {% endif %}
+      {% if recent_count >= 4 %}{% break %}{% endif %}
     {% endfor %}
   </div>
 </section>
 
-{% assign homepage_categories = "Trends|Ideas|Styling Advice|Mistakes & Fixes" | split: "|" %}
-{% for category_name in homepage_categories %}
-  {% assign category_posts = site.categories[category_name] %}
-  {% if category_posts and category_posts.size > 0 %}
-  <section class="container section-block">
-    {% include category_section.html title=category_name posts=category_posts %}
-  </section>
-  {% endif %}
-{% endfor %}
-
-<section class="container section-block editorial-note">
-  <div>
-    <p class="kicker">About Casa Editorial</p>
-    <h2>A decor publication built to make generated content feel genuinely publishable.</h2>
+<section class="container home-section newsletter-wrap">
+  <div class="newsletter-banner">
+    <div>
+      <p class="eyebrow-label">Newsletter</p>
+      <h2>Get one sharp decor idea in your inbox every week.</h2>
+      <p>A clean placeholder signup block for the future newsletter flow. Swap this for your real provider when ready.</p>
+    </div>
+    <form class="newsletter-form" action="#" method="post">
+      <input type="email" placeholder="Enter your email" aria-label="Email address">
+      <button type="submit">Subscribe</button>
+    </form>
   </div>
-  <p>
-    Our system generates trend-led stories, structured metadata, and original imagery, but the site itself is designed to read like a curated editorial publication rather than a content dump.
-  </p>
-  <a class="subtle-link" href="{{ '/contact/' | relative_url }}">Get in touch</a>
 </section>
