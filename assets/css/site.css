@@ -404,7 +404,7 @@ p {
   width: 100%;
   min-height: 48px;
   border-radius: 999px;
-  border: 1px solid transparent;
+  border: 1px solid #d8d8d1;
   padding: 0 1rem;
   font-size: 0.94rem;
 }
@@ -570,6 +570,12 @@ p {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.15em;
+}
+
+.prose hr {
+  border: 0;
+  height: 0;
+  margin: 1.75rem 0;
 }
 
 .tag-list {

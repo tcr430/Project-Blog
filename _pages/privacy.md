@@ -8,7 +8,7 @@ permalink: /privacy/
   <p class="page-intro">This Privacy Policy explains how information may be handled when you visit and interact with this website.</p>
 
   <h2>Introduction</h2>
-  <p>Casa Editorial is an editorial-style website that publishes decor content and related media. As a general rule, the site does not intentionally collect personal data directly from visitors unless information is explicitly provided, such as through a future contact form, newsletter signup, or similar direct interaction.</p>
+  <p>The Livin' Edit is an editorial-style website that publishes decor content and related media. As a general rule, the site does not intentionally collect personal data directly from visitors unless information is explicitly provided, such as through a future contact form, newsletter signup, or similar direct interaction.</p>
 
   <h2>Information We Collect</h2>
   <p>The site itself is designed to minimize direct data collection. In normal browsing, we do not intentionally request or store personal information unless you choose to provide it. Depending on how the site evolves, limited information such as an email address or message content may be submitted voluntarily through third-party tools or forms.</p>

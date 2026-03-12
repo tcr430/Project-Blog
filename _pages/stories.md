@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Stories
+title: Posts
 permalink: /stories/
 ---
 
@@ -26,7 +26,7 @@ permalink: /stories/
       </div>
     </div>
 
-    <aside class="stories-sidebar" aria-label="Stories sidebar">
+    <aside class="stories-sidebar" aria-label="Posts sidebar">
       <section class="sidebar-panel stories-sidebar-panel">
         <div class="panel-head">
           <h2>Popular</h2>

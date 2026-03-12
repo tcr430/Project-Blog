@@ -17,14 +17,14 @@ layout: default
     <aside class="lead-sidebar">
       <div class="sidebar-panel popular-panel">
         <div class="panel-head">
-          <p class="eyebrow-label">Popular</p>
-          <h2>What readers should not miss</h2>
+          <h2>Popular</h2>
         </div>
         <div class="popular-list">
           {% assign popular_count = 0 %}
           {% for post in site.posts %}
             {% if featured_post == nil or post.url != featured_post.url %}
-              {% include popular_item.html post=post index=forloop.index %}
+              {% assign popular_rank = popular_count | plus: 1 %}
+              {% include popular_item.html post=post index=popular_rank %}
               {% assign popular_count = popular_count | plus: 1 %}
             {% endif %}
             {% if popular_count >= 5 %}{% break %}{% endif %}
@@ -38,10 +38,9 @@ layout: default
 <section class="container home-section recent-section">
   <div class="section-heading">
     <div>
-      <p class="eyebrow-label">Recent Posts</p>
-      <h2>Fresh stories from the decor desk</h2>
+      <h2>Recent Posts</h2>
     </div>
-    <a href="{{ '/stories/' | relative_url }}">View all stories</a>
+    <a href="{{ '/stories/' | relative_url }}">View all posts</a>
   </div>
   <div class="story-card-row recent-cards">
     {% assign recent_count = 0 %}
