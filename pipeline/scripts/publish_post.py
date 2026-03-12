@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import argparse
 import hashlib
@@ -201,46 +201,47 @@ def build_image_url(slug: str, filename: str) -> str:
     return f"/assets/img/{slug}/{filename}"
 
 
-def inject_hero_image(article_markdown: str, title: str, hero_image_url: str) -> str:
-    if hero_image_url in article_markdown:
-        return article_markdown.strip() + "\n"
+def strip_leading_title(article_markdown: str) -> str:
+    return re.sub(r"\A#\s+.+?(?:\n{2,}|\n(?=##\s)|\Z)", "", article_markdown.strip(), count=1, flags=re.DOTALL).strip()
 
-    lines = article_markdown.splitlines()
-    hero_line = f"![{title} hero image]({hero_image_url})"
 
-    for index, line in enumerate(lines):
-        if line.strip().startswith("# "):
-            lines.insert(index + 1, "")
-            lines.insert(index + 2, hero_line)
-            lines.insert(index + 3, "")
-            return "\n".join(lines).strip() + "\n"
-
-    return f"{hero_line}\n\n{article_markdown.strip()}\n"
+def build_section_image_block(image_url: str, section_number: int) -> str:
+    return (
+        '<figure class="article-section-image">\n'
+        f'  <img src="{image_url}" alt="Section {section_number} interior image" loading="lazy">\n'
+        '</figure>'
+    )
 
 
 def inject_section_images(article_markdown: str, slug: str, section_count: int) -> str:
     lines = article_markdown.splitlines()
-    section_index = 0
+    section_number = 0
     line_index = 0
 
-    while line_index < len(lines) and section_index < section_count:
+    while line_index < len(lines) and section_number < section_count:
         if lines[line_index].strip().startswith("## "):
-            section_index += 1
-            image_url = build_image_url(slug=slug, filename=f"section-{section_index}.png")
+            section_number += 1
+            image_url = build_image_url(slug=slug, filename=f"section-{section_number}.png")
+            image_block = build_section_image_block(image_url=image_url, section_number=section_number)
+            insert_at = line_index + 1
 
-            if image_url in article_markdown:
-                line_index += 1
+            while insert_at < len(lines) and not lines[insert_at].strip():
+                insert_at += 1
+
+            if image_url not in "\n".join(lines[max(line_index - 1, 0): min(insert_at + 3, len(lines))]):
+                lines.insert(insert_at, "")
+                lines.insert(insert_at + 1, image_block)
+                lines.insert(insert_at + 2, "")
+                line_index = insert_at + 3
                 continue
 
-            image_line = f"![Section {section_index} interior image]({image_url})"
-            insert_at = line_index + 1
-            lines.insert(insert_at, "")
-            lines.insert(insert_at + 1, image_line)
-            lines.insert(insert_at + 2, "")
-            line_index = insert_at + 3
-            continue
-
         line_index += 1
+
+    if section_number < section_count:
+        for index in range(section_number + 1, section_count + 1):
+            image_url = build_image_url(slug=slug, filename=f"section-{index}.png")
+            image_block = build_section_image_block(image_url=image_url, section_number=index)
+            lines.extend(["", image_block, ""])
 
     return "\n".join(lines).strip() + "\n"
 
@@ -328,11 +329,7 @@ def publish_post_from_package_file(package_json_path: str | Path) -> dict[str, P
 
     hero_image_url = build_image_url(slug=package["slug"], filename="hero.png")
 
-    markdown_body = inject_hero_image(
-        article_markdown=package["article_markdown"],
-        title=package["title"],
-        hero_image_url=hero_image_url,
-    )
+    markdown_body = strip_leading_title(package["article_markdown"])
     markdown_body = inject_section_images(
         article_markdown=markdown_body,
         slug=package["slug"],

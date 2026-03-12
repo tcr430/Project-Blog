@@ -420,8 +420,21 @@ p {
 }
 
 .article-header h1 {
-  font-size: clamp(2.3rem, 4vw, 4rem);
-  margin: 1rem 0;
+  font-size: clamp(1.9rem, 3vw, 3.1rem);
+  margin: 0.8rem 0;
+}
+
+.article-body > h1:first-child {
+  display: none;
+}
+
+.article-section-image {
+  margin: 1.25rem 0 1.5rem;
+}
+
+.article-section-image img {
+  width: 100%;
+  border-radius: 18px;
 }
 
 .article-meta-top {
