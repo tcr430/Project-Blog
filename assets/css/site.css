@@ -2,7 +2,6 @@
   --bg: #ffffff;
   --surface: #ffffff;
   --surface-soft: #f5f5f2;
-  --surface-tint: #f6f5f2;
   --ink: #181818;
   --muted: #707070;
   --line: #e8e8e1;
@@ -79,7 +78,7 @@ p {
 
 .site-header {
   border-bottom: 1px solid var(--line);
-  background: rgba(246, 245, 242, 0.96);
+  background: rgba(255, 255, 255, 0.96);
   position: sticky;
   top: 0;
   z-index: 40;
@@ -205,11 +204,6 @@ p {
   background: var(--surface);
 }
 
-.popular-panel,
-.stories-sidebar-panel:first-child,
-.article-sidebar .sidebar-panel {
-  background: var(--surface-tint);
-}
 
 .panel-head h2 {
   font-size: 1.6rem;
