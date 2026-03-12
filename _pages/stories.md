@@ -1,12 +1,55 @@
 ---
+layout: default
 title: Stories
 permalink: /stories/
 ---
 
-<p class="page-intro">Browse the latest generated decor stories, trend features, and practical room-by-room ideas.</p>
+{% assign featured_popular_posts = site.posts | where: 'featured', true %}
+{% assign popular_posts = featured_popular_posts %}
+{% if popular_posts.size == 0 %}
+  {% assign popular_posts = site.posts | slice: 2, 4 %}
+{% endif %}
 
-<div class="story-card-row archive-grid">
-  {% for post in site.posts %}
-    {% include story_card.html post=post %}
-  {% endfor %}
-</div>
+<section class="container page-shell stories-shell">
+  <div class="section-heading page-heading stories-heading">
+    <div>
+      <h1>{{ page.title }}</h1>
+    </div>
+  </div>
+
+  <div class="stories-layout">
+    <div class="stories-main">
+      <div class="stories-grid">
+        {% for post in site.posts %}
+          {% include story_card.html post=post %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <aside class="stories-sidebar" aria-label="Stories sidebar">
+      <section class="sidebar-panel stories-sidebar-panel">
+        <div class="panel-head">
+          <h2>Popular</h2>
+        </div>
+        <div class="popular-list">
+          {% for post in popular_posts limit: 4 %}
+            {% assign popular_rank = forloop.index %}
+            {% include popular_item.html post=post index=popular_rank %}
+          {% endfor %}
+        </div>
+      </section>
+
+      <section class="sidebar-panel stories-sidebar-panel newsletter-sidebar-card">
+        <div class="panel-head">
+          <p class="eyebrow-label">Stay Updated</p>
+          <h2>Subscribe</h2>
+        </div>
+        <p>Get fresh decor stories, trend notes, and styling ideas delivered when new editorial pieces go live.</p>
+        <form class="newsletter-form sidebar-newsletter-form" action="#" method="post">
+          <input type="email" placeholder="Enter your email" aria-label="Email address">
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+    </aside>
+  </div>
+</section>

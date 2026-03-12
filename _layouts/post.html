@@ -35,6 +35,17 @@ layout: default
     <div class="article-body prose">
       {{ content }}
     </div>
+
+    {% if page.tags %}
+    <section class="article-tags-block">
+      <h2>Tags</h2>
+      <ul class="tag-list article-tag-list">
+        {% for tag in page.tags %}
+          <li>{{ tag }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
   </article>
 
   <aside class="article-sidebar">
@@ -47,24 +58,13 @@ layout: default
         {% assign sidebar_count = 0 %}
         {% for post in site.posts %}
           {% if post.url != page.url %}
-            {% include popular_item.html post=post index=forloop.index %}
+            {% assign sidebar_rank = sidebar_count | plus: 1 %}
+            {% include popular_item.html post=post index=sidebar_rank %}
             {% assign sidebar_count = sidebar_count | plus: 1 %}
           {% endif %}
           {% if sidebar_count >= 5 %}{% break %}{% endif %}
         {% endfor %}
       </div>
     </div>
-    {% if page.tags %}
-    <div class="sidebar-panel">
-      <div class="panel-head">
-        <p class="eyebrow-label">Tags</p>
-      </div>
-      <ul class="tag-list">
-        {% for tag in page.tags %}
-          <li>{{ tag }}</li>
-        {% endfor %}
-      </ul>
-    </div>
-    {% endif %}
   </aside>
 </section>
