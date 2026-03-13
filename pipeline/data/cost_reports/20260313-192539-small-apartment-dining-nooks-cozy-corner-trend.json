@@ -1,0 +1,87 @@
+{
+  "generated_at": "2026-03-13T19:25:39.023118+00:00",
+  "trend": "small apartment dining nook",
+  "slug": "small-apartment-dining-nooks-cozy-corner-trend",
+  "article_generation": {
+    "cache_hit": false,
+    "cache_path": "D:\\Project\\Blog\\pipeline\\data\\article_packages\\8cb5d3eb18221571654a16e804a276d622e64f35124278f92a88e19c0aeae55e.json",
+    "model": "gpt-4.1-mini",
+    "generation_calls": 3,
+    "short_retries": 0,
+    "product_retries": 0,
+    "selected_products": 0,
+    "affiliate_mode": false
+  },
+  "image_generation": {
+    "cache_path": "D:\\Project\\Blog\\pipeline\\data\\image_generation_cache\\small-apartment-dining-nooks-cozy-corner-trend.json",
+    "model": "gpt-image-1",
+    "size": "1536x1024",
+    "hero_quality": "high",
+    "section_quality": "medium",
+    "generated_images": 6,
+    "cache_hits": 0,
+    "generation_calls": 6,
+    "qa_calls": 1,
+    "details": [
+      {
+        "label": "hero",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 1,
+        "quality": "high",
+        "qa_enabled": true
+      },
+      {
+        "label": "section-1",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false
+      },
+      {
+        "label": "section-2",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false
+      },
+      {
+        "label": "section-3",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false
+      },
+      {
+        "label": "section-4",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false
+      },
+      {
+        "label": "section-5",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false
+      }
+    ]
+  },
+  "pinterest": {
+    "variants_requested": 4,
+    "pin_assets_generated": true,
+    "mode": "queue"
+  }
+}
