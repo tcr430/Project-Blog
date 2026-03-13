@@ -2,6 +2,8 @@
 layout: page
 title: Subscription Confirmed
 permalink: /newsletter-success/
+noindex: true
+sitemap: false
 ---
 
 <section class="page-body simple-message">

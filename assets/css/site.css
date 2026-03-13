@@ -478,7 +478,87 @@ p {
   font-size: 1.02rem;
 }
 
+.sitemap-section + .sitemap-section {
+  margin-top: 2.25rem;
+}
+
+.sitemap-section h2 {
+  font-size: 1.35rem;
+  margin-bottom: 1rem;
+}
+
+.sitemap-list {
+  margin: 0;
+  padding-left: 1.15rem;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.sitemap-list li {
+  color: var(--muted);
+}
+
+.sitemap-list a {
+  color: var(--ink);
+}
+
+.sitemap-list a:hover {
+  color: var(--accent-soft);
+}
+
+.sitemap-post-list li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  align-items: baseline;
+}
+
+.sitemap-date {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.sitemap-section + .sitemap-section {
+  margin-top: 2.25rem;
+}
+
+.sitemap-section h2 {
+  font-size: 1.35rem;
+  margin-bottom: 1rem;
+}
+
+.sitemap-list {
+  margin: 0;
+  padding-left: 1.15rem;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.sitemap-list li {
+  color: var(--muted);
+}
+
+.sitemap-list a {
+  color: var(--ink);
+}
+
+.sitemap-list a:hover {
+  color: var(--accent-soft);
+}
+
+.sitemap-post-list li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  align-items: baseline;
+}
+
+.sitemap-date {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
 .author-grid {
+
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;

@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 title: Posts
 permalink: /stories/
@@ -7,7 +7,7 @@ description: Browse the latest decor posts, styling guides, and trend-led editor
 {% assign featured_popular_posts = site.posts | where: 'featured', true %}
 {% assign popular_posts = featured_popular_posts %}
 {% if popular_posts.size == 0 %}
-  {% assign popular_posts = site.posts | slice: 2, 4 %}
+  {% assign popular_posts = site.posts | slice: 2, 5 %}
 {% endif %}
 <section class="container page-shell stories-shell">
   <div class="section-heading page-heading stories-heading">
@@ -29,7 +29,7 @@ description: Browse the latest decor posts, styling guides, and trend-led editor
           <h2>Popular</h2>
         </div>
         <div class="popular-list">
-          {% for post in popular_posts limit: 4 %}
+          {% for post in popular_posts limit: 5 %}
             {% assign popular_rank = forloop.index %}
             {% include popular_item.html post=post index=popular_rank %}
           {% endfor %}

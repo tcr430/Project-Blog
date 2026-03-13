@@ -1,4 +1,4 @@
-title: The Livin' Edit
+﻿title: The Livin' Edit
 email: thelivinedit@proton.me
 description: >-
   A modern decor journal with practical styling guides, trend analysis, and product-ready inspiration.
@@ -33,6 +33,8 @@ exclude:
   - Gemfile.lock
   - node_modules
   - vendor
+  - pipeline
+  - pipeline
 buy_me_a_coffee_url: "https://buymeacoffee.com/casaeditorial"
 newsletter_email: "thelivinedit@proton.me"
 affiliate_disclosure_text: "This article may contain affiliate links. If you buy through them, The Livin' Edit may earn a small commission at no extra cost to you."
