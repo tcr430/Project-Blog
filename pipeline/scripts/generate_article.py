@@ -6,6 +6,7 @@ import json
 import os
 import re
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -47,6 +48,7 @@ Rules:
 
 
 ARTICLE_TEMPLATE_PATH = Path(__file__).resolve().parents[1] / "prompts" / "article_template.md"
+ARTICLE_CACHE_DIR = Path(__file__).resolve().parents[1] / "data" / "article_packages"
 
 SHORT_RETRY_PROMPT_TEMPLATE = """
 The previous draft was too short at {word_count} words, below the minimum of {min_words}.
@@ -126,8 +128,8 @@ MAX_WORDS = 1600
 PREFERRED_MIN_WORDS = 1000
 PREFERRED_MAX_WORDS = 1300
 SECTION_COUNT = 5
-SHORT_RETRY_LIMIT = 2
-PRODUCT_RETRY_LIMIT = 2
+SHORT_RETRY_LIMIT = 1
+PRODUCT_RETRY_LIMIT = 1
 PINTEREST_ITEM_COUNT = 5
 MIN_PRODUCTS_FOR_AFFILIATE_MODE = 3
 # Preferred guidance range is 1000-1300 words. Hard validation uses MIN_WORDS/MAX_WORDS.
@@ -209,6 +211,69 @@ def load_article_template() -> str:
         raise RuntimeError(f"Article prompt template is empty: {ARTICLE_TEMPLATE_PATH}")
 
     return content
+
+
+def build_article_cache_key(
+    trend: str,
+    model: str,
+    format_name: str,
+    persona_name: str,
+    article_template: str,
+    format_prompt: str,
+    persona_prompt: str,
+    products: list[Product],
+) -> str:
+    payload = {
+        "trend": trend.strip(),
+        "model": model.strip(),
+        "format_name": format_name,
+        "persona_name": persona_name,
+        "article_template": article_template,
+        "format_prompt": format_prompt,
+        "persona_prompt": persona_prompt,
+        "products": products,
+        "min_words": MIN_WORDS,
+        "max_words": MAX_WORDS,
+        "section_count": SECTION_COUNT,
+    }
+    serialized = json.dumps(payload, ensure_ascii=False, sort_keys=True)
+    return hashlib.sha256(serialized.encode("utf-8")).hexdigest()
+
+
+def build_article_cache_path(cache_key: str) -> Path:
+    return ARTICLE_CACHE_DIR / f"{cache_key}.json"
+
+
+def load_cached_article_package(cache_path: Path, products: list[Product]) -> dict[str, Any] | None:
+    if not cache_path.exists():
+        return None
+
+    try:
+        payload = json.loads(cache_path.read_text(encoding="utf-8-sig"))
+    except json.JSONDecodeError:
+        return None
+
+    if not isinstance(payload, dict):
+        return None
+
+    package = payload.get("package")
+    if not isinstance(package, dict):
+        return None
+
+    try:
+        return normalize_and_validate(package, products=products)
+    except Exception:
+        return None
+
+
+def save_cached_article_package(cache_path: Path, package: dict[str, Any]) -> Path:
+    cache_path.parent.mkdir(parents=True, exist_ok=True)
+    payload = {
+        "saved_at": datetime.now(timezone.utc).isoformat(),
+        "package": package,
+    }
+    cache_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    return cache_path
 
 
 def get_format_prompts() -> dict[str, str]:
@@ -515,6 +580,7 @@ def request_article_json(
     client: OpenAI,
     trend: str,
     model: str,
+    article_template: str,
     persona_name: str,
     persona_prompt: str,
     format_name: str,
@@ -522,7 +588,6 @@ def request_article_json(
     products: list[Product],
     extra_instruction: str | None = None,
 ) -> dict[str, Any]:
-    article_template = load_article_template()
     try:
         article_prompt = article_template.format(trend=trend)
     except KeyError as exc:
@@ -715,10 +780,30 @@ def generate_article_package(
     persona_name: str | None = None,
     products: list[Product] | None = None,
 ) -> dict[str, Any]:
+    package, _ = generate_article_package_with_report(
+        client=client,
+        trend=trend,
+        model=model,
+        format_name=format_name,
+        persona_name=persona_name,
+        products=products,
+    )
+    return package
+
+
+def generate_article_package_with_report(
+    client: OpenAI,
+    trend: str,
+    model: str,
+    format_name: str | None = None,
+    persona_name: str | None = None,
+    products: list[Product] | None = None,
+) -> tuple[dict[str, Any], dict[str, Any]]:
     last_error: Exception | None = None
     extra_instruction: str | None = None
     short_retry_count = 0
     product_retry_count = 0
+    generation_calls = 0
 
     selected_format_name, selected_format_prompt = resolve_format_prompt(
         trend=trend,
@@ -739,13 +824,43 @@ def generate_article_package(
     if len(selected_products) < MIN_PRODUCTS_FOR_AFFILIATE_MODE:
         selected_products = []
 
+    article_template = load_article_template()
+    cache_key = build_article_cache_key(
+        trend=trend,
+        model=model,
+        format_name=selected_format_name,
+        persona_name=selected_persona_name,
+        article_template=article_template,
+        format_prompt=selected_format_prompt,
+        persona_prompt=selected_persona_prompt,
+        products=selected_products,
+    )
+    cache_path = build_article_cache_path(cache_key)
+    cached_package = load_cached_article_package(cache_path=cache_path, products=selected_products)
+    if cached_package:
+        print(f"[article] cache hit: {cache_path.name}")
+        return cached_package, {
+            "cache_hit": True,
+            "cache_path": str(cache_path),
+            "model": model,
+            "generation_calls": 0,
+            "short_retries": 0,
+            "product_retries": 0,
+            "selected_products": len(selected_products),
+            "affiliate_mode": bool(selected_products),
+        }
+
+    print(f"[article] cache miss: {cache_path.name}")
+
     # One initial draft plus retries for short drafts or product-link rule failures.
     for _ in range(1 + SHORT_RETRY_LIMIT + PRODUCT_RETRY_LIMIT):
         try:
+            generation_calls += 1
             payload = request_article_json(
                 client=client,
                 trend=trend,
                 model=model,
+                article_template=article_template,
                 persona_name=selected_persona_name,
                 persona_prompt=selected_persona_prompt,
                 format_name=selected_format_name,
@@ -753,7 +868,18 @@ def generate_article_package(
                 products=selected_products,
                 extra_instruction=extra_instruction,
             )
-            return normalize_and_validate(payload, products=selected_products)
+            normalized_package = normalize_and_validate(payload, products=selected_products)
+            save_cached_article_package(cache_path=cache_path, package=normalized_package)
+            return normalized_package, {
+                "cache_hit": False,
+                "cache_path": str(cache_path),
+                "model": model,
+                "generation_calls": generation_calls,
+                "short_retries": short_retry_count,
+                "product_retries": product_retry_count,
+                "selected_products": len(selected_products),
+                "affiliate_mode": bool(selected_products),
+            }
         except ArticleLengthError as exc:
             if exc.word_count < MIN_WORDS and short_retry_count < SHORT_RETRY_LIMIT:
                 short_retry_count += 1

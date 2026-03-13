@@ -12,8 +12,8 @@ from openai import OpenAI
 
 from fetch_products import Product, fetch_products_with_context
 from fetch_trends import fetch_candidate_trends
-from generate_article import generate_article_package, load_openai_api_key, slugify
-from generate_images import generate_and_save_images
+from generate_article import generate_article_package_with_report, load_openai_api_key, slugify
+from generate_images import generate_and_save_images_with_report
 from generate_weekly_newsletter import generate_weekly_newsletter_draft
 from push_newsletter_to_kit import push_weekly_newsletter_to_kit
 from generate_weekly_report import build_weekly_report
@@ -32,6 +32,7 @@ from select_trends import (
 from trend_history import DEFAULT_NON_SEASONAL_COOLDOWN_DAYS, add_trend_entry
 
 PINTEREST_VARIANT_COUNT = 4
+COST_REPORTS_DIR = Path(__file__).resolve().parents[1] / "data" / "cost_reports"
 
 
 def log_phase(message: str) -> None:
@@ -168,11 +169,26 @@ def find_sync_images_function(module: Any) -> Callable[..., Any]:
     raise RuntimeError("publish_post.py does not expose a sync_post_images function.")
 
 
-def run_generate_step(trend: str, model: str, products: list[Product]) -> dict[str, Any]:
+def build_cost_report_path(slug: str) -> Path:
+    timestamp = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S")
+    return COST_REPORTS_DIR / f"{timestamp}-{slug}.json"
+
+
+def write_cost_report(output_path: Path, payload: dict[str, Any]) -> Path:
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    return output_path
+
+
+def run_generate_step(
+    trend: str,
+    model: str,
+    products: list[Product],
+) -> tuple[dict[str, Any], dict[str, Any]]:
     log_phase("generating article")
     api_key = load_openai_api_key()
     client = OpenAI(api_key=api_key)
-    return generate_article_package(
+    return generate_article_package_with_report(
         client=client,
         trend=trend,
         model=model,
@@ -222,10 +238,10 @@ def run_image_step(
     image_model: str,
     image_size: str,
     image_quality: str,
-) -> list[Path]:
+) -> tuple[list[Path], dict[str, Any]]:
     log_phase("generating images")
     try:
-        saved_paths = generate_and_save_images(
+        saved_paths, image_report = generate_and_save_images_with_report(
             metadata_path=metadata_path,
             model=image_model,
             size=image_size,
@@ -237,7 +253,7 @@ def run_image_step(
         sync_images_fn = find_sync_images_function(module)
         sync_images_fn(post_path=post_path, metadata_path=metadata_path)
 
-        return saved_paths
+        return saved_paths, image_report
     except Exception as exc:
         raise RuntimeError(
             "Image generation failed after publish. The markdown post is kept as-is. "
@@ -329,10 +345,10 @@ def run_pipeline_for_trend(
     image_size: str,
     image_quality: str,
     products: list[Product],
-) -> tuple[Path, list[Path], str, dict[str, Any] | None]:
+) -> tuple[Path, list[Path], str, dict[str, Any] | None, Path]:
     project_root = Path(__file__).resolve().parents[2]
 
-    article_package = run_generate_step(trend=trend, model=model, products=products)
+    article_package, article_report = run_generate_step(trend=trend, model=model, products=products)
 
     log_phase("saving temporary article package")
     slug = slugify(str(article_package.get("slug") or article_package.get("title") or "decor-article"))
@@ -340,7 +356,7 @@ def run_pipeline_for_trend(
     save_article_package(package=article_package, output_path=package_json_path)
 
     post_path, metadata_path = run_publish_step(project_root=project_root, package_json_path=package_json_path)
-    image_paths = run_image_step(
+    image_paths, image_report = run_image_step(
         project_root=project_root,
         post_path=post_path,
         metadata_path=metadata_path,
@@ -350,7 +366,23 @@ def run_pipeline_for_trend(
     )
     pinterest_result = run_pinterest_step(metadata_path=metadata_path)
 
-    return post_path, image_paths, slug, pinterest_result
+    cost_report_path = write_cost_report(
+        output_path=build_cost_report_path(slug=slug),
+        payload={
+            "generated_at": datetime.now(timezone.utc).isoformat(),
+            "trend": trend,
+            "slug": slug,
+            "article_generation": article_report,
+            "image_generation": image_report,
+            "pinterest": {
+                "variants_requested": PINTEREST_VARIANT_COUNT,
+                "pin_assets_generated": bool(pinterest_result),
+                "mode": pinterest_result.get("mode") if pinterest_result else None,
+            },
+        },
+    )
+
+    return post_path, image_paths, slug, pinterest_result, cost_report_path
 
 
 def select_automatic_trends(
@@ -410,7 +442,7 @@ def run_manual_mode(args: argparse.Namespace) -> int:
             product_provider=args.product_provider,
             product_strict=args.product_strict,
         )
-        post_path, image_paths, _, pinterest_result = run_pipeline_for_trend(
+        post_path, image_paths, _, pinterest_result, cost_report_path = run_pipeline_for_trend(
             trend=trend,
             model=args.model,
             image_model=args.image_model,
@@ -436,6 +468,7 @@ def run_manual_mode(args: argparse.Namespace) -> int:
                 print(f"Pinterest repins planned: {pinterest_result['repin_plan']['planned_count']}")
             if pinterest_result.get('mode') == 'queue':
                 print(f"Pins queued in: {pinterest_result['queue_path']}")
+        print(f"Cost report: {cost_report_path}")
         project_root = Path(__file__).resolve().parents[2]
         newsletter_path, kit_result = run_newsletter_step(project_root)
         run_report_step(project_root)
@@ -514,7 +547,7 @@ def run_automatic_mode(args: argparse.Namespace) -> int:
                 product_provider=args.product_provider,
                 product_strict=args.product_strict,
             )
-            post_path, image_paths, article_slug, pinterest_result = run_pipeline_for_trend(
+            post_path, image_paths, article_slug, pinterest_result, cost_report_path = run_pipeline_for_trend(
                 trend=trend_keyword,
                 model=args.model,
                 image_model=args.image_model,
@@ -550,6 +583,7 @@ def run_automatic_mode(args: argparse.Namespace) -> int:
                     print(f"[auto] pinterest repins planned: {pinterest_result['repin_plan']['planned_count']}")
                 if pinterest_result.get('mode') == 'queue':
                     print(f"[auto] pins queued in: {pinterest_result['queue_path']}")
+            print(f"[auto] cost report: {cost_report_path}")
 
         project_root = Path(__file__).resolve().parents[2]
         newsletter_path, kit_result = run_newsletter_step(project_root)
