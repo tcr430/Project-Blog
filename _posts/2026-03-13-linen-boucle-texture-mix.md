@@ -23,7 +23,7 @@ In contemporary interiors, texture is a silent architect shaping ambiance and co
 
 
 <figure class="article-section-image">
-  <img src="/assets/img/linen-boucle-texture-mix/section-1.png" alt="Mastering the Linen and Bouclé Texture Mix for Modern Interiors section 1 interior styling detail" loading="lazy">
+  <img src="{{ '/assets/img/linen-boucle-texture-mix/section-1.png' | relative_url }}" alt="Mastering the Linen and Bouclé Texture Mix for Modern Interiors section 1 interior styling detail" loading="lazy">
 </figure>
 
 Start with linen as your foundational fabric—whether on sofas, chairs, or built-in benches. Its clean, matte finish and natural fibers establish a calm, neutral background that grounds the room visually. Against this, introduce bouclé in accent pieces like cushions or throws. The pronounced texture of bouclé cushions on a smooth linen sofa creates an inviting tactile contrast while maintaining a cohesive palette. Choose linen in shades of soft cream or warm grey, and pick bouclé in creams or off-whites to keep the combination light and sophisticated.
@@ -34,7 +34,7 @@ Practically, linen’s durability and breathability make it ideal for daily use,
 
 
 <figure class="article-section-image">
-  <img src="/assets/img/linen-boucle-texture-mix/section-2.png" alt="Mastering the Linen and Bouclé Texture Mix for Modern Interiors section 2 interior styling detail" loading="lazy">
+  <img src="{{ '/assets/img/linen-boucle-texture-mix/section-2.png' | relative_url }}" alt="Mastering the Linen and Bouclé Texture Mix for Modern Interiors section 2 interior styling detail" loading="lazy">
 </figure>
 
 Use bouclé’s tactile appeal to create a focal point with a statement armchair or lounge chair in a living area or reading nook. The chair’s dense, knotted texture calls attention and invites touch. Surround it with linen elements such as curtains, cushions, or upholstered stools. Linen’s smooth and airy quality visually pushes back, allowing the bouclé chair to become an architectural accent.
@@ -47,7 +47,7 @@ From a usability standpoint, bouclé chairs provide comfortable seating and are 
 
 
 <figure class="article-section-image">
-  <img src="/assets/img/linen-boucle-texture-mix/section-3.png" alt="Mastering the Linen and Bouclé Texture Mix for Modern Interiors section 3 interior styling detail" loading="lazy">
+  <img src="{{ '/assets/img/linen-boucle-texture-mix/section-3.png' | relative_url }}" alt="Mastering the Linen and Bouclé Texture Mix for Modern Interiors section 3 interior styling detail" loading="lazy">
 </figure>
 
 Dining rooms gain relaxed sophistication by combining linen-covered seating with bouclé cushions or bench pads. A linen dining chair offers sleek lines and breathability, while bouclé cushions provide plush comfort under extended seating periods. Pair these with a matte black metal or natural wood table to anchor the composition and introduce material variety.
@@ -60,7 +60,7 @@ Functionally, linen’s easy care and bouclé’s foam-backed texture enhance se
 
 
 <figure class="article-section-image">
-  <img src="/assets/img/linen-boucle-texture-mix/section-4.png" alt="Mastering the Linen and Bouclé Texture Mix for Modern Interiors section 4 interior styling detail" loading="lazy">
+  <img src="{{ '/assets/img/linen-boucle-texture-mix/section-4.png' | relative_url }}" alt="Mastering the Linen and Bouclé Texture Mix for Modern Interiors section 4 interior styling detail" loading="lazy">
 </figure>
 
 Bedrooms invite tactile layers to enhance comfort and tranquility. Combine linen bed linens with bouclé throw pillows or a bouclé bench at the foot of the bed. Linen sheets and duvet covers bring a crisp, matte softness, while bouclé adds sculptural, inviting texture.
@@ -73,7 +73,7 @@ From a practical viewpoint, linen is ideal for bed linens owing to breathability
 
 
 <figure class="article-section-image">
-  <img src="/assets/img/linen-boucle-texture-mix/section-5.png" alt="Mastering the Linen and Bouclé Texture Mix for Modern Interiors section 5 interior styling detail" loading="lazy">
+  <img src="{{ '/assets/img/linen-boucle-texture-mix/section-5.png' | relative_url }}" alt="Mastering the Linen and Bouclé Texture Mix for Modern Interiors section 5 interior styling detail" loading="lazy">
 </figure>
 
 Extend texture interaction beyond primary furniture by combining linen drapery with bouclé floor accents like poufs or ottomans. Linen drapes filter natural light softly, their matte surfaces and gentle folds bringing architectural scale and height. Nearby bouclé ottomans introduce contrast through form and material, anchoring seating clusters with softness.

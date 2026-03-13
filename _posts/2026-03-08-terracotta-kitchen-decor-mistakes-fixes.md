@@ -22,7 +22,7 @@ This guide highlights five common terracotta kitchen mistakes and offers practic
 
 
 <figure class="article-section-image">
-  <img src="/assets/img/terracotta-kitchen-decor-mistakes-fixes/section-1.png" alt="2026-03-08-terracotta-kitchen-decor-mistakes-fixes section 1 interior styling detail" loading="lazy">
+  <img src="{{ '/assets/img/terracotta-kitchen-decor-mistakes-fixes/section-1.png' | relative_url }}" alt="2026-03-08-terracotta-kitchen-decor-mistakes-fixes section 1 interior styling detail" loading="lazy">
 </figure>
 
 ![Section 1 interior image](/assets/img/terracotta-kitchen-decor-mistakes-fixes/section-1.png)
@@ -45,7 +45,7 @@ In practice, place the accent shelf next to the terracotta backsplash displaying
 
 
 <figure class="article-section-image">
-  <img src="/assets/img/terracotta-kitchen-decor-mistakes-fixes/section-2.png" alt="2026-03-08-terracotta-kitchen-decor-mistakes-fixes section 2 interior styling detail" loading="lazy">
+  <img src="{{ '/assets/img/terracotta-kitchen-decor-mistakes-fixes/section-2.png' | relative_url }}" alt="2026-03-08-terracotta-kitchen-decor-mistakes-fixes section 2 interior styling detail" loading="lazy">
 </figure>
 
 ![Section 2 interior image](/assets/img/terracotta-kitchen-decor-mistakes-fixes/section-2.png)
@@ -68,7 +68,7 @@ This tactic provides visual interest and avoids the kitchen looking too uniform 
 
 
 <figure class="article-section-image">
-  <img src="/assets/img/terracotta-kitchen-decor-mistakes-fixes/section-3.png" alt="2026-03-08-terracotta-kitchen-decor-mistakes-fixes section 3 interior styling detail" loading="lazy">
+  <img src="{{ '/assets/img/terracotta-kitchen-decor-mistakes-fixes/section-3.png' | relative_url }}" alt="2026-03-08-terracotta-kitchen-decor-mistakes-fixes section 3 interior styling detail" loading="lazy">
 </figure>
 
 ![Section 3 interior image](/assets/img/terracotta-kitchen-decor-mistakes-fixes/section-3.png)
@@ -91,7 +91,7 @@ In day-to-day terms, these metallic accents make the kitchen feel dynamic and in
 
 
 <figure class="article-section-image">
-  <img src="/assets/img/terracotta-kitchen-decor-mistakes-fixes/section-4.png" alt="2026-03-08-terracotta-kitchen-decor-mistakes-fixes section 4 interior styling detail" loading="lazy">
+  <img src="{{ '/assets/img/terracotta-kitchen-decor-mistakes-fixes/section-4.png' | relative_url }}" alt="2026-03-08-terracotta-kitchen-decor-mistakes-fixes section 4 interior styling detail" loading="lazy">
 </figure>
 
 ![Section 4 interior image](/assets/img/terracotta-kitchen-decor-mistakes-fixes/section-4.png)
@@ -114,7 +114,7 @@ Combined with terracotta floors, walls, or backsplashes, linen textiles bring mo
 
 
 <figure class="article-section-image">
-  <img src="/assets/img/terracotta-kitchen-decor-mistakes-fixes/section-5.png" alt="2026-03-08-terracotta-kitchen-decor-mistakes-fixes section 5 interior styling detail" loading="lazy">
+  <img src="{{ '/assets/img/terracotta-kitchen-decor-mistakes-fixes/section-5.png' | relative_url }}" alt="2026-03-08-terracotta-kitchen-decor-mistakes-fixes section 5 interior styling detail" loading="lazy">
 </figure>
 
 ![Section 5 interior image](/assets/img/terracotta-kitchen-decor-mistakes-fixes/section-5.png)

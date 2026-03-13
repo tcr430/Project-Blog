@@ -223,6 +223,10 @@ def build_image_url(slug: str, filename: str) -> str:
     return f"/assets/img/{slug}/{filename}"
 
 
+def build_public_image_src(image_url: str) -> str:
+    return "{{ '" + image_url + "' | relative_url }}"
+
+
 def build_hero_image_alt(title: str) -> str:
     return f"{title} interior design inspiration"
 
@@ -264,7 +268,7 @@ def strip_section_image_blocks(article_markdown: str) -> str:
 def build_section_image_block(image_url: str, alt_text: str) -> str:
     return (
         '<figure class="article-section-image">\n'
-        f'  <img src="{image_url}" alt="{alt_text}" loading="lazy">\n'
+        f'  <img src="{build_public_image_src(image_url)}" alt="{alt_text}" loading="lazy">\n'
         '</figure>'
     )
 
@@ -303,6 +307,7 @@ def build_existing_section_image_specs(
 
         filesystem_path = project_root / Path(relative_path.lstrip("/").replace("/", os.sep))
         if not filesystem_path.exists():
+            print(f"[images] section image skipped because file missing: {filesystem_path}")
             continue
 
         alt_text = ""
@@ -315,6 +320,7 @@ def build_existing_section_image_specs(
                 section_number=index,
             )
 
+        print(f"[images] section image ready: {filesystem_path}")
         specs.append({"image_url": relative_path, "alt_text": alt_text})
 
     return specs
@@ -337,6 +343,7 @@ def inject_section_images(article_markdown: str, image_specs: list[dict[str, str
             build_section_image_block(image_url=spec["image_url"], alt_text=spec["alt_text"]),
             "",
         ]
+        print(f"[images] section image inserted: {spec['image_url']}")
         offset += 3
 
     return "\n".join(lines).strip() + "\n"
@@ -371,6 +378,7 @@ def sync_post_images(post_path: str | Path, metadata_path: str | Path) -> Path:
     if image_specs:
         synced_body = inject_section_images(cleaned_body, image_specs=image_specs)
     else:
+        print(f"[images] no section images inserted for {post_path.name}")
         synced_body = cleaned_body.rstrip() + "\n"
 
     post_path.write_text(f"{frontmatter}{synced_body}", encoding="utf-8")
