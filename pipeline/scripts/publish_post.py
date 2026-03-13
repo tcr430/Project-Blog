@@ -100,6 +100,12 @@ def derive_featured(categories: list[str], tags: list[str]) -> bool:
     return any("trend" in tag.lower() for tag in tags)
 
 
+def slugify_path_part(text: str) -> str:
+    cleaned = re.sub(r"[^a-zA-Z0-9\s-]", " ", text).strip().lower()
+    slug = re.sub(r"[\s_-]+", "-", cleaned).strip("-")
+    return slug or "posts"
+
+
 def validate_article_package(data: dict[str, Any]) -> dict[str, Any]:
     required_fields = [
         "title",
@@ -291,15 +297,33 @@ def build_metadata_path(project_root: Path, post_path: Path) -> Path:
     return metadata_dir / f"{post_path.stem}.json"
 
 
-def save_article_metadata(package: dict[str, Any], post_path: Path, metadata_path: Path) -> Path:
+def build_post_relative_url(categories: list[str], published_at: datetime, slug: str) -> str:
+    category_part = slugify_path_part(categories[0]) if categories else "posts"
+    return f"/{category_part}/{published_at.strftime('%Y/%m/%d')}/{slug}/"
+
+
+def save_article_metadata(
+    package: dict[str, Any],
+    post_path: Path,
+    metadata_path: Path,
+    published_at: datetime,
+) -> Path:
     metadata_path.parent.mkdir(parents=True, exist_ok=True)
     section_image_paths = [
         build_image_url(slug=package["slug"], filename=f"section-{index}.png")
         for index in range(1, SECTION_COUNT + 1)
     ]
+    post_relative_url = build_post_relative_url(
+        categories=package["categories"],
+        published_at=published_at,
+        slug=package["slug"],
+    )
 
     payload = {
+        "title": package["title"],
         "slug": package["slug"],
+        "meta_description": package["meta_description"],
+        "estimated_reading_time": package["estimated_reading_time"],
         "author": package["author"],
         "categories": package["categories"],
         "excerpt": package["excerpt"],
@@ -310,6 +334,7 @@ def save_article_metadata(package: dict[str, Any], post_path: Path, metadata_pat
         "section_image_paths": section_image_paths,
         "pinterest_titles": package["pinterest_titles"],
         "pinterest_descriptions": package["pinterest_descriptions"],
+        "article_relative_url": post_relative_url,
         "post_path": str(post_path),
         "updated_at": datetime.now().isoformat(),
     }
@@ -353,7 +378,12 @@ def publish_post_from_package_file(package_json_path: str | Path) -> dict[str, P
     output_path.write_text(markdown_content, encoding="utf-8")
 
     metadata_path = build_metadata_path(project_root=project_root, post_path=output_path)
-    save_article_metadata(package=package, post_path=output_path, metadata_path=metadata_path)
+    save_article_metadata(
+        package=package,
+        post_path=output_path,
+        metadata_path=metadata_path,
+        published_at=published_at,
+    )
 
     return {"post_path": output_path, "metadata_path": metadata_path}
 

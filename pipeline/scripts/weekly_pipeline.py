@@ -14,6 +14,9 @@ from fetch_products import Product, fetch_products_with_context
 from fetch_trends import fetch_candidate_trends
 from generate_article import generate_article_package, load_openai_api_key, slugify
 from generate_images import generate_and_save_images
+from generate_pin_assets import generate_pin_assets
+from generate_pin_metadata import generate_pinterest_metadata
+from publish_pins import publish_or_queue_pins
 from select_trends import (
     filter_recently_used,
     normalize_candidates,
@@ -21,6 +24,8 @@ from select_trends import (
     score_candidates,
 )
 from trend_history import DEFAULT_NON_SEASONAL_COOLDOWN_DAYS, add_trend_entry
+
+PINTEREST_VARIANT_COUNT = 4
 
 
 def log_phase(message: str) -> None:
@@ -212,6 +217,30 @@ def run_image_step(metadata_path: Path, image_model: str, image_size: str, image
         ) from exc
 
 
+def run_pinterest_step(metadata_path: Path) -> dict[str, Any] | None:
+    try:
+        log_phase("generating pinterest metadata")
+        pinterest_metadata_path = generate_pinterest_metadata(
+            metadata_path=metadata_path,
+            variant_count=PINTEREST_VARIANT_COUNT,
+        )
+
+        log_phase("generating pin images")
+        pin_image_paths = generate_pin_assets(pinterest_metadata_path=pinterest_metadata_path)
+
+        log_phase("queueing pins")
+        publish_result = publish_or_queue_pins(pinterest_metadata_path=pinterest_metadata_path)
+        publish_result["metadata_path"] = pinterest_metadata_path
+        publish_result["pin_image_paths"] = pin_image_paths
+        return publish_result
+    except Exception as exc:
+        print(
+            "[warning] Pinterest automation failed after publish. The blog post remains published. "
+            f"Details: {exc}"
+        )
+        return None
+
+
 def fetch_products_for_pipeline(
     trend: str,
     product_provider: str | None,
@@ -246,7 +275,7 @@ def run_pipeline_for_trend(
     image_size: str,
     image_quality: str,
     products: list[Product],
-) -> tuple[Path, list[Path], str]:
+) -> tuple[Path, list[Path], str, dict[str, Any] | None]:
     project_root = Path(__file__).resolve().parents[2]
 
     article_package = run_generate_step(trend=trend, model=model, products=products)
@@ -263,8 +292,9 @@ def run_pipeline_for_trend(
         image_size=image_size,
         image_quality=image_quality,
     )
+    pinterest_result = run_pinterest_step(metadata_path=metadata_path)
 
-    return post_path, image_paths, slug
+    return post_path, image_paths, slug, pinterest_result
 
 
 def select_automatic_trends(
@@ -324,7 +354,7 @@ def run_manual_mode(args: argparse.Namespace) -> int:
             product_provider=args.product_provider,
             product_strict=args.product_strict,
         )
-        post_path, image_paths, _ = run_pipeline_for_trend(
+        post_path, image_paths, _, pinterest_result = run_pipeline_for_trend(
             trend=trend,
             model=args.model,
             image_model=args.image_model,
@@ -336,6 +366,12 @@ def run_manual_mode(args: argparse.Namespace) -> int:
         print(f"Success: article published to {post_path} ({source_label})")
         for image_path in image_paths:
             print(f"Image saved: {image_path}")
+        if pinterest_result:
+            print(f"Pinterest metadata: {pinterest_result['metadata_path']}")
+            for pin_path in pinterest_result['pin_image_paths']:
+                print(f"Pin image saved: {pin_path}")
+            if pinterest_result.get('mode') == 'queue':
+                print(f"Pins queued in: {pinterest_result['queue_path']}")
         return 0
     except Exception as exc:
         print(
@@ -373,7 +409,7 @@ def run_automatic_mode(args: argparse.Namespace) -> int:
                 product_provider=args.product_provider,
                 product_strict=args.product_strict,
             )
-            post_path, image_paths, article_slug = run_pipeline_for_trend(
+            post_path, image_paths, article_slug, pinterest_result = run_pipeline_for_trend(
                 trend=trend_keyword,
                 model=args.model,
                 image_model=args.image_model,
@@ -395,6 +431,12 @@ def run_automatic_mode(args: argparse.Namespace) -> int:
             print(f"[auto] published: {post_path} ({source_label})")
             for image_path in image_paths:
                 print(f"[auto] image saved: {image_path}")
+            if pinterest_result:
+                print(f"[auto] pinterest metadata: {pinterest_result['metadata_path']}")
+                for pin_path in pinterest_result['pin_image_paths']:
+                    print(f"[auto] pin image saved: {pin_path}")
+                if pinterest_result.get('mode') == 'queue':
+                    print(f"[auto] pins queued in: {pinterest_result['queue_path']}")
 
         print(f"Success: generated {len(generated_posts)} posts in automatic mode.")
         return 0
@@ -418,4 +460,5 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
 
