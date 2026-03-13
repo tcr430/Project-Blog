@@ -160,6 +160,14 @@ def find_publish_function(module: Any) -> Callable[..., Any]:
     )
 
 
+def find_sync_images_function(module: Any) -> Callable[..., Any]:
+    candidate = getattr(module, "sync_post_images", None)
+    if callable(candidate):
+        return candidate
+
+    raise RuntimeError("publish_post.py does not expose a sync_post_images function.")
+
+
 def run_generate_step(trend: str, model: str, products: list[Product]) -> dict[str, Any]:
     log_phase("generating article")
     api_key = load_openai_api_key()
@@ -207,15 +215,29 @@ def run_publish_step(project_root: Path, package_json_path: Path) -> tuple[Path,
     return post_path, metadata_path
 
 
-def run_image_step(metadata_path: Path, image_model: str, image_size: str, image_quality: str) -> list[Path]:
+def run_image_step(
+    project_root: Path,
+    post_path: Path,
+    metadata_path: Path,
+    image_model: str,
+    image_size: str,
+    image_quality: str,
+) -> list[Path]:
     log_phase("generating images")
     try:
-        return generate_and_save_images(
+        saved_paths = generate_and_save_images(
             metadata_path=metadata_path,
             model=image_model,
             size=image_size,
             quality=image_quality,
         )
+
+        log_phase("syncing post body images")
+        module = load_publish_module(project_root)
+        sync_images_fn = find_sync_images_function(module)
+        sync_images_fn(post_path=post_path, metadata_path=metadata_path)
+
+        return saved_paths
     except Exception as exc:
         raise RuntimeError(
             "Image generation failed after publish. The markdown post is kept as-is. "
@@ -319,6 +341,8 @@ def run_pipeline_for_trend(
 
     post_path, metadata_path = run_publish_step(project_root=project_root, package_json_path=package_json_path)
     image_paths = run_image_step(
+        project_root=project_root,
+        post_path=post_path,
         metadata_path=metadata_path,
         image_model=image_model,
         image_size=image_size,

@@ -12,7 +12,6 @@ image: "/assets/img/terracotta-kitchen-decor-mistakes-fixes/hero.png"
 
 ![Terracotta Kitchen Decor Mistakes and Fixes: Achieving Warmth Without Overwhelm hero image](/assets/img/terracotta-kitchen-decor-mistakes-fixes/hero.png)
 
-
 Terracotta is a powerful design element in kitchens—its warm, earthy tones instantly add character and a grounded, tactile feel. But without careful planning, terracotta decor can feel too heavy, overly rustic, or clash with modern materials. The key is in balancing its natural warmth with texture and contrast so that the kitchen feels inviting and architecturally sophisticated, not cluttered or dated.
 
 This guide highlights five common terracotta kitchen mistakes and offers practical fixes. Each fix includes actionable styling advice to help you introduce terracotta thoughtfully, whether through color, material pairing, layering, or lighting. By understanding how terracotta works in concert with wood, metal, plaster, and matte finishes, you’ll create a kitchen space that is both striking and functional.
@@ -21,8 +20,12 @@ This guide highlights five common terracotta kitchen mistakes and offers practic
 
 ## Mistake 1: Overusing Terracotta Without Visual Breaks
 
-![Section 1 interior image](/assets/img/terracotta-kitchen-decor-mistakes-fixes/section-1.png)
 
+<figure class="article-section-image">
+  <img src="/assets/img/terracotta-kitchen-decor-mistakes-fixes/section-1.png" alt="2026-03-08-terracotta-kitchen-decor-mistakes-fixes section 1 interior styling detail" loading="lazy">
+</figure>
+
+![Section 1 interior image](/assets/img/terracotta-kitchen-decor-mistakes-fixes/section-1.png)
 
 Terracotta often tempts us to go all-in, covering too many surfaces and losing sight of balance. When walls, floors, cabinetry, and accessories are all terracotta, the palette becomes monotonous and overwhelming.
 
@@ -40,8 +43,12 @@ In practice, place the accent shelf next to the terracotta backsplash displaying
 
 ## Mistake 2: Neglecting Texture Variation
 
-![Section 2 interior image](/assets/img/terracotta-kitchen-decor-mistakes-fixes/section-2.png)
 
+<figure class="article-section-image">
+  <img src="/assets/img/terracotta-kitchen-decor-mistakes-fixes/section-2.png" alt="2026-03-08-terracotta-kitchen-decor-mistakes-fixes section 2 interior styling detail" loading="lazy">
+</figure>
+
+![Section 2 interior image](/assets/img/terracotta-kitchen-decor-mistakes-fixes/section-2.png)
 
 A common misstep is relying solely on flat terracotta surfaces, which can flatten the kitchen’s visual depth. Uniform textures make warm color tones feel dull or heavy.
 
@@ -59,8 +66,12 @@ This tactic provides visual interest and avoids the kitchen looking too uniform 
 
 ## Mistake 3: Ignoring the Power of Metallic Accents
 
-![Section 3 interior image](/assets/img/terracotta-kitchen-decor-mistakes-fixes/section-3.png)
 
+<figure class="article-section-image">
+  <img src="/assets/img/terracotta-kitchen-decor-mistakes-fixes/section-3.png" alt="2026-03-08-terracotta-kitchen-decor-mistakes-fixes section 3 interior styling detail" loading="lazy">
+</figure>
+
+![Section 3 interior image](/assets/img/terracotta-kitchen-decor-mistakes-fixes/section-3.png)
 
 Terracotta kitchens can become visually flat or overly rustic without a touch of reflective contrast. Neglecting metal accent pieces risks missing an architectural counterpoint that adds polish and sophistication.
 
@@ -78,8 +89,12 @@ In day-to-day terms, these metallic accents make the kitchen feel dynamic and in
 
 ## Mistake 4: Overlooking Textiles to Soften the Look
 
-![Section 4 interior image](/assets/img/terracotta-kitchen-decor-mistakes-fixes/section-4.png)
 
+<figure class="article-section-image">
+  <img src="/assets/img/terracotta-kitchen-decor-mistakes-fixes/section-4.png" alt="2026-03-08-terracotta-kitchen-decor-mistakes-fixes section 4 interior styling detail" loading="lazy">
+</figure>
+
+![Section 4 interior image](/assets/img/terracotta-kitchen-decor-mistakes-fixes/section-4.png)
 
 Kitchens heavy on terracotta and hard surfaces risk feeling too stark or uncomfortable. Without exposed texture from fabrics, the space can lack softness and depth.
 
@@ -97,8 +112,12 @@ Combined with terracotta floors, walls, or backsplashes, linen textiles bring mo
 
 ## Mistake 5: Forgetting a Grounding Element
 
-![Section 5 interior image](/assets/img/terracotta-kitchen-decor-mistakes-fixes/section-5.png)
 
+<figure class="article-section-image">
+  <img src="/assets/img/terracotta-kitchen-decor-mistakes-fixes/section-5.png" alt="2026-03-08-terracotta-kitchen-decor-mistakes-fixes section 5 interior styling detail" loading="lazy">
+</figure>
+
+![Section 5 interior image](/assets/img/terracotta-kitchen-decor-mistakes-fixes/section-5.png)
 
 Terracotta kitchens without an anchored base can feel like the space floats or lacks cohesion. Floors or rugs that don’t harmonize weaken the spatial composition.
 

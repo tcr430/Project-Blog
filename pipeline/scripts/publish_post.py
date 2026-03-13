@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import re
 import sys
 from datetime import datetime
@@ -242,6 +243,24 @@ def strip_leading_title(article_markdown: str) -> str:
     return re.sub(r"\A#\s+.+?(?:\n{2,}|\n(?=##\s)|\Z)", "", article_markdown.strip(), count=1, flags=re.DOTALL).strip()
 
 
+def split_frontmatter(markdown_content: str) -> tuple[str, str]:
+    match = re.match(r"\A---\n.*?\n---\n+", markdown_content, flags=re.DOTALL)
+    if not match:
+        return "", markdown_content
+    return match.group(0), markdown_content[match.end():]
+
+
+def strip_section_image_blocks(article_markdown: str) -> str:
+    cleaned = re.sub(
+        r"\n*<figure class=\"article-section-image\">.*?</figure>\n*",
+        "\n\n",
+        article_markdown,
+        flags=re.DOTALL,
+    )
+    cleaned = re.sub(r"\n{3,}", "\n\n", cleaned)
+    return cleaned.strip()
+
+
 def build_section_image_block(image_url: str, alt_text: str) -> str:
     return (
         '<figure class="article-section-image">\n'
@@ -250,47 +269,112 @@ def build_section_image_block(image_url: str, alt_text: str) -> str:
     )
 
 
-def inject_section_images(article_markdown: str, slug: str, article_title: str, section_count: int) -> str:
-    lines = article_markdown.splitlines()
-    section_number = 0
-    line_index = 0
+def is_intro_heading(heading_line: str) -> bool:
+    heading = normalize_heading_text(heading_line).lower()
+    return heading in {"introduction", "intro"} or heading.startswith("introduction ")
 
-    while line_index < len(lines) and section_number < section_count:
-        if lines[line_index].strip().startswith("## "):
-            section_number += 1
-            image_url = build_image_url(slug=slug, filename=f"section-{section_number}.png")
-            image_alt = build_section_image_alt(
-                article_title=article_title,
-                heading_text=lines[line_index].strip(),
-                section_number=section_number,
-            )
-            image_block = build_section_image_block(image_url=image_url, alt_text=image_alt)
-            insert_at = line_index + 1
 
-            while insert_at < len(lines) and not lines[insert_at].strip():
-                insert_at += 1
+def is_conclusion_heading(heading_line: str) -> bool:
+    heading = normalize_heading_text(heading_line).lower()
+    return heading in {"conclusion", "final thoughts", "closing thoughts", "wrap-up"} or heading.startswith(
+        "conclusion "
+    )
 
-            if image_url not in "\n".join(lines[max(line_index - 1, 0): min(insert_at + 3, len(lines))]):
-                lines.insert(insert_at, "")
-                lines.insert(insert_at + 1, image_block)
-                lines.insert(insert_at + 2, "")
-                line_index = insert_at + 3
-                continue
 
-        line_index += 1
+def is_body_section_heading(heading_line: str) -> bool:
+    if not heading_line.strip().startswith("## "):
+        return False
+    return not is_intro_heading(heading_line) and not is_conclusion_heading(heading_line)
 
-    if section_number < section_count:
-        for index in range(section_number + 1, section_count + 1):
-            image_url = build_image_url(slug=slug, filename=f"section-{index}.png")
-            image_alt = build_section_image_alt(
+
+def build_existing_section_image_specs(
+    metadata: dict[str, Any],
+    article_title: str,
+    project_root: Path,
+) -> list[dict[str, str]]:
+    section_paths = metadata.get("section_image_paths", [])
+    section_alts = metadata.get("section_image_alts", [])
+
+    specs: list[dict[str, str]] = []
+    for index, image_path in enumerate(section_paths, start=1):
+        relative_path = str(image_path).strip()
+        if not relative_path:
+            continue
+
+        filesystem_path = project_root / Path(relative_path.lstrip("/").replace("/", os.sep))
+        if not filesystem_path.exists():
+            continue
+
+        alt_text = ""
+        if index - 1 < len(section_alts):
+            alt_text = str(section_alts[index - 1]).strip()
+        if not alt_text:
+            alt_text = build_section_image_alt(
                 article_title=article_title,
                 heading_text="",
                 section_number=index,
             )
-            image_block = build_section_image_block(image_url=image_url, alt_text=image_alt)
-            lines.extend(["", image_block, ""])
+
+        specs.append({"image_url": relative_path, "alt_text": alt_text})
+
+    return specs
+
+
+def inject_section_images(article_markdown: str, image_specs: list[dict[str, str]]) -> str:
+    lines = article_markdown.splitlines()
+    eligible_indices = [index for index, line in enumerate(lines) if is_body_section_heading(line)]
+
+    offset = 0
+    for spec, line_index in zip(image_specs, eligible_indices):
+        heading_index = line_index + offset
+        insert_at = heading_index + 1
+
+        while insert_at < len(lines) and not lines[insert_at].strip():
+            insert_at += 1
+
+        lines[insert_at:insert_at] = [
+            "",
+            build_section_image_block(image_url=spec["image_url"], alt_text=spec["alt_text"]),
+            "",
+        ]
+        offset += 3
 
     return "\n".join(lines).strip() + "\n"
+
+
+def sync_post_images(post_path: str | Path, metadata_path: str | Path) -> Path:
+    post_path = Path(post_path)
+    metadata_path = Path(metadata_path)
+    project_root = Path(__file__).resolve().parents[2]
+
+    if not post_path.exists():
+        raise FileNotFoundError(f"Post markdown file not found: {post_path}")
+    if not metadata_path.exists():
+        raise FileNotFoundError(f"Metadata JSON file not found: {metadata_path}")
+
+    markdown_content = post_path.read_text(encoding="utf-8")
+    frontmatter, body = split_frontmatter(markdown_content)
+    if not body:
+        raise ValueError(f"Post body is empty: {post_path}")
+
+    metadata_raw = metadata_path.read_text(encoding="utf-8")
+    metadata = json.loads(metadata_raw)
+
+    article_title = str(metadata.get("title", "")).strip() or post_path.stem
+    cleaned_body = strip_section_image_blocks(body)
+    image_specs = build_existing_section_image_specs(
+        metadata=metadata,
+        article_title=article_title,
+        project_root=project_root,
+    )
+
+    if image_specs:
+        synced_body = inject_section_images(cleaned_body, image_specs=image_specs)
+    else:
+        synced_body = cleaned_body.rstrip() + "\n"
+
+    post_path.write_text(f"{frontmatter}{synced_body}", encoding="utf-8")
+    return post_path
 
 
 def build_frontmatter(
@@ -419,12 +503,8 @@ def publish_post_from_package_file(package_json_path: str | Path) -> dict[str, P
     hero_image_alt = build_hero_image_alt(package["title"])
 
     markdown_body = strip_leading_title(package["article_markdown"])
-    markdown_body = inject_section_images(
-        article_markdown=markdown_body,
-        slug=package["slug"],
-        article_title=package["title"],
-        section_count=SECTION_COUNT,
-    )
+    markdown_body = strip_section_image_blocks(markdown_body)
+    markdown_body = markdown_body.rstrip() + "\n"
 
     affiliate_disclosure = has_affiliate_links(markdown_body)
 

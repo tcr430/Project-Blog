@@ -19,11 +19,8 @@ sitemap: true
       {% endif %}
       {% if author %}
       <div class="article-author-row">
-        <span class="author-initials">{{ author.initials }}</span>
-        <div>
-          <p>{{ author.name }}</p>
-          <small>{{ author.role }}</small>
-        </div>
+        <p class="article-author-name">{{ author.name }}</p>
+        {% if author.role %}<small>{{ author.role }}</small>{% endif %}
       </div>
       {% endif %}
       {% if page.image %}
