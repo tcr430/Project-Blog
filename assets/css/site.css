@@ -96,19 +96,19 @@ p {
 .site-logo {
   display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
-  font-size: 1rem;
-  font-weight: 700;
+  line-height: 1;
 }
 
-.logo-mark {
-  width: 2.2rem;
-  height: 2.2rem;
-  border-radius: 999px;
-  display: grid;
-  place-items: center;
-  background: var(--ink);
-  color: #fff;
+.site-logo-image {
+  display: block;
+  height: 3rem;
+  width: auto;
+  max-width: min(100%, 16.5rem);
+}
+
+.footer-logo-image {
+  height: 3.4rem;
+  max-width: min(100%, 18rem);
 }
 
 .site-nav {
@@ -271,6 +271,14 @@ p {
 .page-heading h1 {
   font-size: clamp(2rem, 3.4vw, 3.2rem);
   margin-top: 0.35rem;
+}
+
+.recent-section .section-heading h2 {
+  font-size: clamp(1.75rem, 2.7vw, 2.55rem);
+}
+
+.recent-section .section-heading h2 {
+  font-size: clamp(1.75rem, 2.7vw, 2.55rem);
 }
 
 .section-heading a {

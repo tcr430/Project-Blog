@@ -1,0 +1,75 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 320" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">The Livin' Edit logo</title>
+  <desc id="logoDesc">A dark editorial logo with softly lit decor objects and the words The Livin' Edit.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6b685f"/>
+      <stop offset="32%" stop-color="#a8a394"/>
+      <stop offset="60%" stop-color="#343434"/>
+      <stop offset="100%" stop-color="#0f0f10"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="18%" cy="46%" r="42%">
+      <stop offset="0%" stop-color="#fffdf6" stop-opacity="0.98"/>
+      <stop offset="50%" stop-color="#f6f0dd" stop-opacity="0.72"/>
+      <stop offset="100%" stop-color="#f6f0dd" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ceramic" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbfaf6"/>
+      <stop offset="100%" stop-color="#e3e0d7"/>
+    </linearGradient>
+    <linearGradient id="book" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbfaf7"/>
+      <stop offset="100%" stop-color="#ddd8cb"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#000000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="960" height="320" rx="28" fill="url(#bg)"/>
+  <rect width="960" height="320" rx="28" fill="url(#glow)"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="38" y="248" width="168" height="28" rx="4" fill="url(#book)"/>
+    <rect x="54" y="220" width="145" height="24" rx="4" fill="url(#book)"/>
+    <rect x="68" y="195" width="122" height="20" rx="4" fill="url(#book)"/>
+
+    <rect x="48" y="84" width="72" height="108" rx="8" fill="url(#ceramic)"/>
+    <rect x="40" y="48" width="88" height="92" rx="16" fill="url(#ceramic)"/>
+    <rect x="79" y="140" width="10" height="54" rx="4" fill="#d9d3c8"/>
+
+    <rect x="252" y="152" width="86" height="112" rx="24" fill="url(#ceramic)"/>
+    <path d="M236 110C236 88 252 74 274 74H316C338 74 354 88 354 110V218H236V110Z" fill="url(#ceramic)"/>
+    <rect x="284" y="58" width="16" height="26" rx="8" fill="#ece8df"/>
+
+    <path d="M290 66L276 34" stroke="#4b4137" stroke-width="2.8" stroke-linecap="round"/>
+    <path d="M292 72L314 42" stroke="#4b4137" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M294 78L338 48" stroke="#4b4137" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M294 76L356 62" stroke="#4b4137" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M294 80L344 84" stroke="#4b4137" stroke-width="2.1" stroke-linecap="round"/>
+
+    <g fill="#f8f4e7">
+      <circle cx="272" cy="32" r="4.2"/>
+      <circle cx="266" cy="38" r="3.2"/>
+      <circle cx="280" cy="38" r="3.2"/>
+      <circle cx="308" cy="39" r="4"/>
+      <circle cx="302" cy="45" r="3"/>
+      <circle cx="316" cy="45" r="3"/>
+      <circle cx="334" cy="46" r="4.1"/>
+      <circle cx="328" cy="52" r="3"/>
+      <circle cx="341" cy="52" r="3"/>
+      <circle cx="356" cy="59" r="4"/>
+      <circle cx="350" cy="65" r="3"/>
+      <circle cx="362" cy="65" r="3"/>
+      <circle cx="342" cy="83" r="4"/>
+      <circle cx="336" cy="89" r="3"/>
+      <circle cx="348" cy="89" r="3"/>
+    </g>
+  </g>
+
+  <g fill="#171717">
+    <text x="410" y="114" font-family="Georgia, 'Times New Roman', serif" font-size="76">The</text>
+    <text x="404" y="214" font-family="Georgia, 'Times New Roman', serif" font-size="132" font-weight="700">LIVIN’</text>
+    <text x="410" y="292" font-family="Georgia, 'Times New Roman', serif" font-size="120">Edit</text>
+  </g>
+</svg>
