@@ -414,6 +414,25 @@ p {
   align-items: center;
 }
 
+.newsletter-provider-note {
+  margin-top: 0.8rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.newsletter-honeypot,
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .newsletter-form input,
 .search-placeholder input {
   width: 100%;

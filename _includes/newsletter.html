@@ -1,0 +1,40 @@
+﻿{% assign newsletter = site.newsletter_form %}
+{% assign provider_name = newsletter.provider | default: "Newsletter" %}
+{% assign form_action = newsletter.action | default: "#" %}
+{% assign form_method = newsletter.method | default: "post" %}
+{% assign email_field_name = newsletter.email_field_name | default: "email" %}
+{% assign redirect_field_name = newsletter.redirect_field_name | default: "" %}
+{% assign success_path = '/newsletter-success/' | relative_url %}
+{% assign success_url = site.url | append: site.baseurl | append: '/newsletter-success/' %}
+{% assign form_variant = include.variant | default: 'banner' %}
+{% assign form_class = 'newsletter-form' %}
+{% if form_variant == 'sidebar' %}
+  {% assign form_class = form_class | append: ' sidebar-newsletter-form' %}
+{% endif %}
+<form class="{{ form_class }}" action="{{ form_action }}" method="{{ form_method }}" accept-charset="utf-8">
+  {% if redirect_field_name != blank %}
+    <input type="hidden" name="{{ redirect_field_name }}" value="{{ success_url }}">
+  {% endif %}
+  {% for hidden in newsletter.hidden_fields %}
+    <input type="hidden" name="{{ hidden[0] }}" value="{{ hidden[1] }}">
+  {% endfor %}
+  <div class="newsletter-honeypot" aria-hidden="true">
+    <label for="newsletter-website">Website</label>
+    <input id="newsletter-website" type="text" name="website" tabindex="-1" autocomplete="off">
+  </div>
+  <label class="sr-only" for="newsletter-email-{{ form_variant }}">Email address</label>
+  <input
+    id="newsletter-email-{{ form_variant }}"
+    type="email"
+    name="{{ email_field_name }}"
+    placeholder="Enter your email"
+    aria-label="Email address"
+    autocomplete="email"
+    required
+  >
+  <button type="submit">Subscribe</button>
+</form>
+<p class="newsletter-provider-note">Powered by {{ provider_name }}. After subscribing, you will be redirected to our success page.</p>
+<noscript>
+  <p class="newsletter-provider-note">JavaScript is not required. The form will submit directly to {{ provider_name }}.</p>
+</noscript>

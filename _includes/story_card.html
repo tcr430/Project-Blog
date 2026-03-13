@@ -1,9 +1,9 @@
 {% assign post_item = include.post %}
-{% assign author = site.data.authors[post_item.author] %}
+{% assign author = site.data.authors[post_item.author_id | default: post_item.author] %}
 <article class="story-card">
   <a class="story-card-image" href="{{ post_item.url | relative_url }}">
     {% if post_item.image %}
-      <img src="{{ post_item.image | relative_url }}" alt="{{ post_item.title }}" loading="lazy">
+      <img src="{{ post_item.image | relative_url }}" alt="{{ post_item.image_alt | default: post_item.title }}" loading="lazy">
     {% endif %}
   </a>
   <div class="story-card-copy">

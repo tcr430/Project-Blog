@@ -88,7 +88,7 @@ def load_json(path: Path) -> dict[str, Any]:
     if not path.exists():
         raise FileNotFoundError(f"JSON file not found: {path}")
 
-    raw = path.read_text(encoding="utf-8")
+    raw = path.read_text(encoding="utf-8-sig")
     data = json.loads(raw)
     if not isinstance(data, dict):
         raise ValueError(f"JSON file must contain an object: {path}")
@@ -248,8 +248,8 @@ def generate_pin_assets(pinterest_metadata_path: Path) -> list[Path]:
     variants = payload.get("variants", [])
     if not isinstance(variants, list) or not variants:
         raise ValueError("Pinterest metadata must contain a non-empty variants list.")
-    if len(variants) != 4:
-        raise ValueError("Pinterest metadata must contain exactly 4 variants.")
+    if len(variants) < 4:
+        raise ValueError("Pinterest metadata must contain at least 4 variants.")
 
     for index, variant in enumerate(variants, start=1):
         title = normalize_copy(str(variant.get("title", "")))

@@ -1,39 +1,27 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import argparse
 import json
-import os
 import re
 from pathlib import Path
 from typing import Any
 
 from dotenv import load_dotenv
 
+from pinterest_strategy import build_pin_distribution_strategy
+
 DEFAULT_VARIANT_COUNT = 4
-DEFAULT_BOARD_KEY = "home-decor"
-DEFAULT_BOARD_NAME = "Home Decor"
+BOARD_CONFIG_PATH = Path(__file__).resolve().parents[1] / "data" / "pinterest_boards.json"
 MAX_TITLE_LENGTH = 90
 MAX_DESCRIPTION_LENGTH = 260
 
-VARIANT_SPECS = [
-    {"type": "trend_overview", "style": "bottom-panel"},
-    {"type": "practical_tips", "style": "center-card"},
-    {"type": "product_led", "style": "product-focus"},
-    {"type": "styling_angle", "style": "top-band"},
-]
-
 BOARD_RULES = [
-    {"key": "kitchen-decor", "name": "Kitchen Decor", "keywords": ["kitchen"]},
-    {"key": "living-room-decor", "name": "Living Room Decor", "keywords": ["living room", "sofa"]},
-    {"key": "bedroom-decor", "name": "Bedroom Decor", "keywords": ["bedroom", "nightstand", "bedside"]},
-    {"key": "bathroom-decor", "name": "Bathroom Decor", "keywords": ["bathroom", "vanity"]},
-    {"key": "nursery-kids-decor", "name": "Kids Decor", "keywords": ["nursery", "kids", "playroom"]},
+    {"category": "kitchen", "keywords": ["kitchen"]},
+    {"category": "living_room", "keywords": ["living room", "sofa"]},
+    {"category": "bedroom", "keywords": ["bedroom", "nightstand", "bedside"]},
+    {"category": "bathroom", "keywords": ["bathroom", "vanity"]},
+    {"category": "kids_room", "keywords": ["nursery", "kids", "playroom"]},
 ]
-
-TREND_BOARD = {"key": "decor-trends", "name": "Decor Trends"}
-TIPS_BOARD = {"key": "styling-tips", "name": "Styling Tips"}
-PRODUCT_BOARD = {"key": "decor-finds", "name": "Decor Finds"}
-DEFAULT_BOARD = {"key": DEFAULT_BOARD_KEY, "name": DEFAULT_BOARD_NAME}
 
 
 def parse_args() -> argparse.Namespace:
@@ -45,7 +33,7 @@ def parse_args() -> argparse.Namespace:
         "--variants",
         type=int,
         default=DEFAULT_VARIANT_COUNT,
-        help=f"How many Pinterest variants to prepare (default: {DEFAULT_VARIANT_COUNT}).",
+        help=f"Minimum Pinterest variants to prepare (default: {DEFAULT_VARIANT_COUNT}).",
     )
     return parser.parse_args()
 
@@ -58,7 +46,7 @@ def load_json(path: Path) -> dict[str, Any]:
     if not path.exists():
         raise FileNotFoundError(f"JSON file not found: {path}")
 
-    raw = path.read_text(encoding="utf-8")
+    raw = path.read_text(encoding="utf-8-sig")
     data = json.loads(raw)
     if not isinstance(data, dict):
         raise ValueError(f"JSON file must contain an object: {path}")
@@ -78,6 +66,25 @@ def load_site_config(project_root: Path) -> dict[str, str]:
         elif stripped.startswith("baseurl:"):
             result["baseurl"] = stripped.split(":", 1)[1].strip().strip('"')
     return result
+
+
+def load_board_config(path: Path = BOARD_CONFIG_PATH) -> dict[str, str]:
+    data = load_json(path)
+    normalized: dict[str, str] = {}
+    for key, value in data.items():
+        key_text = str(key).strip()
+        value_text = str(value).strip()
+        if key_text and value_text:
+            normalized[key_text] = value_text
+
+    if "default" not in normalized:
+        normalized["default"] = "Home Decor Inspiration"
+    return normalized
+
+
+def board_from_category(board_config: dict[str, str], category: str) -> dict[str, str]:
+    name = board_config.get(category) or board_config["default"]
+    return {"key": category, "name": name}
 
 
 def build_site_root_url(site_url: str, baseurl: str) -> str:
@@ -146,18 +153,16 @@ def infer_topic_phrase(article_title: str, slug: str) -> str:
     return title_case_slug(slug)
 
 
-def infer_topic_board(topic_text: str) -> dict[str, str]:
+def infer_topic_board(topic_text: str, board_config: dict[str, str]) -> dict[str, str]:
     haystack = normalize_copy(topic_text).lower()
     for rule in BOARD_RULES:
         if any(keyword in haystack for keyword in rule["keywords"]):
-            return {"key": rule["key"], "name": rule["name"]}
-    return DEFAULT_BOARD.copy()
+            return board_from_category(board_config, rule["category"])
+    return board_from_category(board_config, "default")
 
 
 def select_variant_count(requested_count: int) -> int:
-    if requested_count < 4:
-        return 4
-    return 4
+    return max(DEFAULT_VARIANT_COUNT, requested_count)
 
 
 def validate_article_metadata(data: dict[str, Any], variant_count: int) -> dict[str, Any]:
@@ -200,12 +205,14 @@ def validate_article_metadata(data: dict[str, Any], variant_count: int) -> dict[
     return {
         "title": normalize_copy(str(data["title"])),
         "slug": normalize_copy(str(data["slug"])),
-        "meta_description": ensure_terminal_punctuation(truncate_text(str(data["meta_description"]), MAX_DESCRIPTION_LENGTH)),
+        "meta_description": ensure_terminal_punctuation(
+            truncate_text(str(data["meta_description"]), MAX_DESCRIPTION_LENGTH)
+        ),
         "hero_image_path": str(data["hero_image_path"]).strip(),
         "article_relative_url": str(data["article_relative_url"]).strip(),
         "pinterest_titles": title_candidates,
         "pinterest_descriptions": description_candidates,
-        "variant_count": requested_variant_count,
+        "minimum_variant_count": requested_variant_count,
         "topic_phrase": topic_phrase,
     }
 
@@ -239,42 +246,53 @@ def build_variant_description(
     candidate = pick_candidate(description_candidates, index)
     templates = {
         "trend_overview": candidate,
-        "practical_tips": f"Use these practical design moves to make {topic_phrase.lower()} feel balanced, useful, and easy to live with.",
-        "product_led": f"Discover decor pieces and finishing details that help {topic_phrase.lower()} feel more intentional without looking overdone.",
-        "styling_angle": f"See how color, texture, and room styling can shape {topic_phrase.lower()} into a softer, more editorial look.",
+        "practical_tips": (
+            f"Use these practical design moves to make {topic_phrase.lower()} feel balanced, useful, "
+            "and easy to live with."
+        ),
+        "product_led": (
+            f"Discover decor pieces and finishing details that help {topic_phrase.lower()} feel more "
+            "intentional without looking overdone."
+        ),
+        "styling_angle": (
+            f"See how color, texture, and room styling can shape {topic_phrase.lower()} into a softer, "
+            "more editorial look."
+        ),
     }
     base = templates.get(variant_type, meta_description or candidate)
     return ensure_terminal_punctuation(truncate_text(base, MAX_DESCRIPTION_LENGTH))
 
 
-def assign_board(variant_type: str, topic_board: dict[str, str], topic_text: str) -> dict[str, str]:
-    haystack = normalize_copy(topic_text).lower()
-    if variant_type == "trend_overview":
-        if "trend" in haystack or "trending" in haystack:
-            return TREND_BOARD.copy()
-        return topic_board.copy()
-    if variant_type == "practical_tips":
-        return TIPS_BOARD.copy()
-    if variant_type == "product_led":
-        return PRODUCT_BOARD.copy()
-    if variant_type == "styling_angle":
-        return topic_board.copy() if topic_board["key"] != DEFAULT_BOARD["key"] else TIPS_BOARD.copy()
-    return DEFAULT_BOARD.copy()
-
-
-def build_variant_payloads(article_metadata: dict[str, Any]) -> list[dict[str, Any]]:
+def build_variant_payloads(article_metadata: dict[str, Any], board_config: dict[str, str]) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     topic_text = f"{article_metadata['title']} {article_metadata['meta_description']} {article_metadata['slug']}"
-    topic_board = infer_topic_board(topic_text)
-    variants: list[dict[str, Any]] = []
+    topic_board = infer_topic_board(topic_text, board_config=board_config)
+    strategy = build_pin_distribution_strategy(
+        article_slug=article_metadata["slug"],
+        topic_text=topic_text,
+        topic_board=topic_board,
+        trend_board=board_from_category(board_config, "decor_trends"),
+        tips_board=topic_board,
+        product_board=board_from_category(board_config, "home_products"),
+        default_board=board_from_category(board_config, "default"),
+    )
 
-    for index, spec in enumerate(VARIANT_SPECS[: article_metadata["variant_count"]], start=1):
-        variant_type = spec["type"]
-        board = assign_board(variant_type=variant_type, topic_board=topic_board, topic_text=topic_text)
+    print("[pinterest] applying performance weighting")
+    for note in strategy["notes"]:
+        print(f"[pinterest] {note}")
+
+    plans = strategy["plans"]
+    minimum_variant_count = article_metadata["minimum_variant_count"]
+    if len(plans) < minimum_variant_count:
+        raise ValueError("Pinterest strategy returned fewer variants than the minimum required.")
+
+    variants: list[dict[str, Any]] = []
+    for index, plan in enumerate(plans, start=1):
+        variant_type = str(plan["variant_type"])
         variants.append(
             {
                 "variant_key": f"pin-{index}",
                 "variant_type": variant_type,
-                "style_name": spec["style"],
+                "style_name": str(plan["style_name"]),
                 "title": build_variant_title(
                     variant_type=variant_type,
                     topic_phrase=article_metadata["topic_phrase"],
@@ -289,15 +307,26 @@ def build_variant_payloads(article_metadata: dict[str, Any]) -> list[dict[str, A
                     index=index - 1,
                 ),
                 "image_path": build_pin_image_path(slug=article_metadata["slug"], index=index),
-                "board": board,
+                "board": dict(plan["board"]),
+                "priority_score": plan["priority_score"],
+                "schedule_rank": plan["schedule_rank"],
             }
         )
 
-    return variants
+    return variants, {
+        "minimum_variant_count": minimum_variant_count,
+        "generated_variant_count": len(variants),
+        "bonus_slots": strategy["bonus_slots"],
+        "ranked_variant_types": strategy["ranked_variant_types"],
+        "article_score": strategy["article_score"],
+        "notes": strategy["notes"],
+        "board_config_path": str(BOARD_CONFIG_PATH),
+    }
 
 
 def build_pinterest_payload(article_metadata: dict[str, Any], project_root: Path) -> dict[str, Any]:
     site_config = load_site_config(project_root)
+    board_config = load_board_config()
 
     site_root_url = build_site_root_url(
         site_url=site_config.get("url", ""),
@@ -308,7 +337,7 @@ def build_pinterest_payload(article_metadata: dict[str, Any], project_root: Path
         baseurl=site_config.get("baseurl", ""),
         article_relative_url=article_metadata["article_relative_url"],
     )
-    variants = build_variant_payloads(article_metadata)
+    variants, strategy_summary = build_variant_payloads(article_metadata, board_config=board_config)
 
     return {
         "article_title": article_metadata["title"],
@@ -318,7 +347,8 @@ def build_pinterest_payload(article_metadata: dict[str, Any], project_root: Path
         "meta_description": article_metadata["meta_description"],
         "hero_image_path": article_metadata["hero_image_path"],
         "site_root_url": site_root_url,
-        "variant_count": article_metadata["variant_count"],
+        "variant_count": len(variants),
+        "strategy": strategy_summary,
         "variants": variants,
     }
 

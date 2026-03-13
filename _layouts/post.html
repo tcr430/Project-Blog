@@ -1,9 +1,10 @@
 ---
 layout: default
+sitemap: true
 ---
-
-{% assign author = site.data.authors[page.author] %}
+{% assign author = site.data.authors[page.author_id | default: page.author] %}
 {% assign primary_category = page.categories | first %}
+{% assign primary_tag = page.tags | first %}
 <section class="container article-shell">
   <article class="article-main">
     <header class="article-header">
@@ -27,15 +28,18 @@ layout: default
       {% endif %}
       {% if page.image %}
       <figure class="article-hero">
-        <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" loading="eager">
+        <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title }}" loading="eager">
       </figure>
       {% endif %}
     </header>
-
+    {% if page.affiliate_disclosure %}
+    <aside class="article-disclosure" aria-label="Affiliate disclosure">
+      <p>{{ site.affiliate_disclosure_text }}</p>
+    </aside>
+    {% endif %}
     <div class="article-body prose">
       {{ content }}
     </div>
-
     {% if page.tags %}
     <section class="article-tags-block">
       <h2>Tags</h2>
@@ -47,23 +51,58 @@ layout: default
     </section>
     {% endif %}
   </article>
-
   <aside class="article-sidebar">
     <div class="sidebar-panel">
       <div class="panel-head">
         <p class="eyebrow-label">Explore</p>
-        <h2>More posts</h2>
+        <h2>Related posts</h2>
       </div>
       <div class="popular-list compact-popular">
         {% assign sidebar_count = 0 %}
-        {% for post in site.posts %}
-          {% if post.url != page.url %}
-            {% assign sidebar_rank = sidebar_count | plus: 1 %}
-            {% include popular_item.html post=post index=sidebar_rank %}
-            {% assign sidebar_count = sidebar_count | plus: 1 %}
-          {% endif %}
-          {% if sidebar_count >= 5 %}{% break %}{% endif %}
-        {% endfor %}
+        {% assign sidebar_seen = '|' %}
+        {% if primary_category %}
+          {% for post in site.posts %}
+            {% assign related_category = post.categories | first %}
+            {% capture post_marker %}|{{ post.url }}|{% endcapture %}
+            {% if post.url != page.url and related_category == primary_category %}
+              {% unless sidebar_seen contains post_marker %}
+                {% assign sidebar_rank = sidebar_count | plus: 1 %}
+                {% include popular_item.html post=post index=sidebar_rank %}
+                {% assign sidebar_count = sidebar_count | plus: 1 %}
+                {% assign sidebar_seen = sidebar_seen | append: post.url | append: '|' %}
+              {% endunless %}
+            {% endif %}
+            {% if sidebar_count >= 5 %}{% break %}{% endif %}
+          {% endfor %}
+        {% endif %}
+        {% if sidebar_count < 5 and primary_tag %}
+          {% for post in site.posts %}
+            {% capture post_marker %}|{{ post.url }}|{% endcapture %}
+            {% if post.url != page.url and post.tags contains primary_tag %}
+              {% unless sidebar_seen contains post_marker %}
+                {% assign sidebar_rank = sidebar_count | plus: 1 %}
+                {% include popular_item.html post=post index=sidebar_rank %}
+                {% assign sidebar_count = sidebar_count | plus: 1 %}
+                {% assign sidebar_seen = sidebar_seen | append: post.url | append: '|' %}
+              {% endunless %}
+            {% endif %}
+            {% if sidebar_count >= 5 %}{% break %}{% endif %}
+          {% endfor %}
+        {% endif %}
+        {% if sidebar_count < 5 %}
+          {% for post in site.posts %}
+            {% capture post_marker %}|{{ post.url }}|{% endcapture %}
+            {% if post.url != page.url %}
+              {% unless sidebar_seen contains post_marker %}
+                {% assign sidebar_rank = sidebar_count | plus: 1 %}
+                {% include popular_item.html post=post index=sidebar_rank %}
+                {% assign sidebar_count = sidebar_count | plus: 1 %}
+                {% assign sidebar_seen = sidebar_seen | append: post.url | append: '|' %}
+              {% endunless %}
+            {% endif %}
+            {% if sidebar_count >= 5 %}{% break %}{% endif %}
+          {% endfor %}
+        {% endif %}
       </div>
     </div>
   </aside>

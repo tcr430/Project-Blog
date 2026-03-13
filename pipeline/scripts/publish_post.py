@@ -13,6 +13,11 @@ from typing import Any
 SECTION_COUNT = 5
 PINTEREST_ITEM_COUNT = 5
 AUTHOR_IDS = ["elena_hart", "sophie_bennett", "marco_alvarez"]
+AUTHOR_NAME_MAP = {
+    "elena_hart": "Elena Hart",
+    "sophie_bennett": "Sophie Bennett",
+    "marco_alvarez": "Marco Alvarez",
+}
 CATEGORY_RULES = [
     ("Mistakes & Fixes", ["mistake", "fix", "avoid"]),
     ("Ideas", ["idea", "inspiration"]),
@@ -73,6 +78,14 @@ def choose_author(slug: str) -> str:
     digest = hashlib.sha256(slug.encode("utf-8")).hexdigest()
     index = int(digest, 16) % len(AUTHOR_IDS)
     return AUTHOR_IDS[index]
+
+
+def build_author_name(author_id: str) -> str:
+    if author_id in AUTHOR_NAME_MAP:
+        return AUTHOR_NAME_MAP[author_id]
+
+    cleaned = author_id.replace("_", " ").replace("-", " ").strip()
+    return cleaned.title() if cleaned else "The Livin' Edit"
 
 
 def derive_categories(title: str, tags: list[str]) -> list[str]:
@@ -160,7 +173,8 @@ def validate_article_package(data: dict[str, Any]) -> dict[str, Any]:
     if not hero_image_prompt:
         raise ValueError("hero_image_prompt cannot be empty.")
 
-    author = str(data.get("author") or choose_author(slug)).strip()
+    author_id = str(data.get("author_id") or data.get("author") or choose_author(slug)).strip()
+    author_name = build_author_name(author_id)
     categories_raw = data.get("categories")
     if isinstance(categories_raw, list):
         categories = [str(item).strip() for item in categories_raw if str(item).strip()]
@@ -180,7 +194,8 @@ def validate_article_package(data: dict[str, Any]) -> dict[str, Any]:
         "pinterest_titles": pinterest_titles,
         "pinterest_descriptions": pinterest_descriptions,
         "article_markdown": article_markdown,
-        "author": author,
+        "author_id": author_id,
+        "author_name": author_name,
         "categories": categories,
         "excerpt": excerpt,
         "featured": featured,
@@ -207,19 +222,35 @@ def build_image_url(slug: str, filename: str) -> str:
     return f"/assets/img/{slug}/{filename}"
 
 
+def build_hero_image_alt(title: str) -> str:
+    return f"{title} interior design inspiration"
+
+
+def normalize_heading_text(heading: str) -> str:
+    text = re.sub(r"^#+\s+", "", heading).strip()
+    return re.sub(r"\s+", " ", text)
+
+
+def build_section_image_alt(article_title: str, heading_text: str, section_number: int) -> str:
+    cleaned_heading = normalize_heading_text(heading_text)
+    if cleaned_heading:
+        return f"{article_title} - {cleaned_heading.lower()} styling detail"
+    return f"{article_title} section {section_number} interior styling detail"
+
+
 def strip_leading_title(article_markdown: str) -> str:
     return re.sub(r"\A#\s+.+?(?:\n{2,}|\n(?=##\s)|\Z)", "", article_markdown.strip(), count=1, flags=re.DOTALL).strip()
 
 
-def build_section_image_block(image_url: str, section_number: int) -> str:
+def build_section_image_block(image_url: str, alt_text: str) -> str:
     return (
         '<figure class="article-section-image">\n'
-        f'  <img src="{image_url}" alt="Section {section_number} interior image" loading="lazy">\n'
+        f'  <img src="{image_url}" alt="{alt_text}" loading="lazy">\n'
         '</figure>'
     )
 
 
-def inject_section_images(article_markdown: str, slug: str, section_count: int) -> str:
+def inject_section_images(article_markdown: str, slug: str, article_title: str, section_count: int) -> str:
     lines = article_markdown.splitlines()
     section_number = 0
     line_index = 0
@@ -228,7 +259,12 @@ def inject_section_images(article_markdown: str, slug: str, section_count: int) 
         if lines[line_index].strip().startswith("## "):
             section_number += 1
             image_url = build_image_url(slug=slug, filename=f"section-{section_number}.png")
-            image_block = build_section_image_block(image_url=image_url, section_number=section_number)
+            image_alt = build_section_image_alt(
+                article_title=article_title,
+                heading_text=lines[line_index].strip(),
+                section_number=section_number,
+            )
+            image_block = build_section_image_block(image_url=image_url, alt_text=image_alt)
             insert_at = line_index + 1
 
             while insert_at < len(lines) and not lines[insert_at].strip():
@@ -246,7 +282,12 @@ def inject_section_images(article_markdown: str, slug: str, section_count: int) 
     if section_number < section_count:
         for index in range(section_number + 1, section_count + 1):
             image_url = build_image_url(slug=slug, filename=f"section-{index}.png")
-            image_block = build_section_image_block(image_url=image_url, section_number=index)
+            image_alt = build_section_image_alt(
+                article_title=article_title,
+                heading_text="",
+                section_number=index,
+            )
+            image_block = build_section_image_block(image_url=image_url, alt_text=image_alt)
             lines.extend(["", image_block, ""])
 
     return "\n".join(lines).strip() + "\n"
@@ -259,15 +300,19 @@ def build_frontmatter(
     tags: list[str],
     estimated_reading_time: str,
     hero_image_url: str,
-    author: str,
+    hero_image_alt: str,
+    author_id: str,
+    author_name: str,
     categories: list[str],
     excerpt: str,
     featured: bool,
+    affiliate_disclosure: bool,
 ) -> str:
     date_value = published_at.strftime("%Y-%m-%d %H:%M:%S")
     tag_values = ", ".join(f'"{yaml_escape(tag)}"' for tag in tags)
     category_values = ", ".join(f'"{yaml_escape(category)}"' for category in categories)
     featured_value = "true" if featured else "false"
+    affiliate_disclosure_value = "true" if affiliate_disclosure else "false"
 
     return (
         "---\n"
@@ -276,12 +321,15 @@ def build_frontmatter(
         f'date: "{date_value}"\n'
         f'description: "{yaml_escape(description)}"\n'
         f'excerpt: "{yaml_escape(excerpt)}"\n'
-        f'author: "{yaml_escape(author)}"\n'
+        f'author: "{yaml_escape(author_name)}"\n'
+        f'author_id: "{yaml_escape(author_id)}"\n'
         f"categories: [{category_values}]\n"
         f"tags: [{tag_values}]\n"
         f"featured: {featured_value}\n"
         f'estimated_reading_time: "{yaml_escape(estimated_reading_time)}"\n'
         f'image: "{yaml_escape(hero_image_url)}"\n'
+        f'image_alt: "{yaml_escape(hero_image_alt)}"\n'
+        f'affiliate_disclosure: {affiliate_disclosure_value}\n'
         "---\n\n"
     )
 
@@ -313,6 +361,14 @@ def save_article_metadata(
         build_image_url(slug=package["slug"], filename=f"section-{index}.png")
         for index in range(1, SECTION_COUNT + 1)
     ]
+    section_image_alts = [
+        build_section_image_alt(
+            article_title=package["title"],
+            heading_text="",
+            section_number=index,
+        )
+        for index in range(1, SECTION_COUNT + 1)
+    ]
     post_relative_url = build_post_relative_url(
         categories=package["categories"],
         published_at=published_at,
@@ -324,14 +380,17 @@ def save_article_metadata(
         "slug": package["slug"],
         "meta_description": package["meta_description"],
         "estimated_reading_time": package["estimated_reading_time"],
-        "author": package["author"],
+        "author_id": package["author_id"],
+        "author_name": package["author_name"],
         "categories": package["categories"],
         "excerpt": package["excerpt"],
         "featured": package["featured"],
         "hero_image_prompt": package["hero_image_prompt"],
         "section_image_prompts": package["section_image_prompts"],
         "hero_image_path": build_image_url(slug=package["slug"], filename="hero.png"),
+        "hero_image_alt": build_hero_image_alt(package["title"]),
         "section_image_paths": section_image_paths,
+        "section_image_alts": section_image_alts,
         "pinterest_titles": package["pinterest_titles"],
         "pinterest_descriptions": package["pinterest_descriptions"],
         "article_relative_url": post_relative_url,
@@ -340,6 +399,10 @@ def save_article_metadata(
     }
     metadata_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     return metadata_path
+
+
+def has_affiliate_links(article_markdown: str) -> bool:
+    return bool(re.search(r"https?://", article_markdown))
 
 
 def publish_post_from_package_file(package_json_path: str | Path) -> dict[str, Path]:
@@ -353,13 +416,17 @@ def publish_post_from_package_file(package_json_path: str | Path) -> dict[str, P
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
     hero_image_url = build_image_url(slug=package["slug"], filename="hero.png")
+    hero_image_alt = build_hero_image_alt(package["title"])
 
     markdown_body = strip_leading_title(package["article_markdown"])
     markdown_body = inject_section_images(
         article_markdown=markdown_body,
         slug=package["slug"],
+        article_title=package["title"],
         section_count=SECTION_COUNT,
     )
+
+    affiliate_disclosure = has_affiliate_links(markdown_body)
 
     frontmatter = build_frontmatter(
         title=package["title"],
@@ -368,10 +435,13 @@ def publish_post_from_package_file(package_json_path: str | Path) -> dict[str, P
         tags=package["keywords"],
         estimated_reading_time=package["estimated_reading_time"],
         hero_image_url=hero_image_url,
-        author=package["author"],
+        hero_image_alt=hero_image_alt,
+        author_id=package["author_id"],
+        author_name=package["author_name"],
         categories=package["categories"],
         excerpt=package["excerpt"],
         featured=package["featured"],
+        affiliate_disclosure=affiliate_disclosure,
     )
 
     markdown_content = f"{frontmatter}{markdown_body.rstrip()}\n"

@@ -1,0 +1,84 @@
+{
+  "article_title": "Mastering the Linen and Bouclé Texture Mix for Modern Interiors",
+  "article_slug": "linen-boucle-texture-mix",
+  "article_relative_url": "/styling-advice/2026/03/13/linen-boucle-texture-mix/",
+  "article_url": "https://tcr430.github.io/Project-Blog/styling-advice/2026/03/13/linen-boucle-texture-mix/",
+  "meta_description": "Explore how mixing linen and bouclé textures adds depth and warmth to your home decor with expert tips on layout, material pairing, and color choices.",
+  "hero_image_path": "/assets/img/linen-boucle-texture-mix/hero.png",
+  "site_root_url": "https://tcr430.github.io/Project-Blog",
+  "variant_count": 4,
+  "strategy": {
+    "minimum_variant_count": 4,
+    "generated_variant_count": 4,
+    "bonus_slots": 0,
+    "ranked_variant_types": [
+      "trend_overview",
+      "practical_tips",
+      "product_led",
+      "styling_angle"
+    ],
+    "article_score": null,
+    "notes": [
+      "applying performance weighting: no historical lift yet, using balanced defaults"
+    ],
+    "board_config_path": "D:\\Project\\Blog\\pipeline\\data\\pinterest_boards.json"
+  },
+  "variants": [
+    {
+      "variant_key": "pin-1",
+      "variant_type": "trend_overview",
+      "style_name": "bottom-panel",
+      "title": "How to Mix Linen and Bouclé for Warm, Textured Interiors",
+      "description": "Discover practical ways to blend linen and bouclé in your home for a layered, tactile look that feels inviting and refined.",
+      "image_path": "/assets/pins/linen-boucle-texture-mix/pin-1.svg",
+      "board": {
+        "key": "default",
+        "name": "Home Decor Inspiration"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 0
+    },
+    {
+      "variant_key": "pin-2",
+      "variant_type": "practical_tips",
+      "style_name": "center-card",
+      "title": "Mastering the Linen and Bouclé Texture Mix for Modern Interiors: Practical Tips That...",
+      "description": "Use these practical design moves to make mastering the linen and bouclé texture mix for modern interiors feel balanced, useful, and easy to live with.",
+      "image_path": "/assets/pins/linen-boucle-texture-mix/pin-2.svg",
+      "board": {
+        "key": "default",
+        "name": "Home Decor Inspiration"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 1
+    },
+    {
+      "variant_key": "pin-3",
+      "variant_type": "product_led",
+      "style_name": "product-focus",
+      "title": "4 Pieces That Elevate Mastering the Linen and Bouclé Texture Mix for Modern Interiors",
+      "description": "Discover decor pieces and finishing details that help mastering the linen and bouclé texture mix for modern interiors feel more intentional without looking overdone.",
+      "image_path": "/assets/pins/linen-boucle-texture-mix/pin-3.svg",
+      "board": {
+        "key": "home_products",
+        "name": "Home Finds & Decor Picks"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 2
+    },
+    {
+      "variant_key": "pin-4",
+      "variant_type": "styling_angle",
+      "style_name": "top-band",
+      "title": "How to Style Mastering the Linen and Bouclé Texture Mix for Modern Interiors for a...",
+      "description": "See how color, texture, and room styling can shape mastering the linen and bouclé texture mix for modern interiors into a softer, more editorial look.",
+      "image_path": "/assets/pins/linen-boucle-texture-mix/pin-4.svg",
+      "board": {
+        "key": "default",
+        "name": "Home Decor Inspiration"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 3
+    }
+  ]
+}

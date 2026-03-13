@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-03-13T16:27:19.766422+00:00",
+  "history_path": "D:\\Project\\Blog\\pipeline\\data\\pinterest_history.json",
+  "published_pin_count": 0,
+  "global_metrics": {
+    "published_pins": 0,
+    "analytics_ready_pins": 0,
+    "average_impressions": null,
+    "average_saves": null,
+    "average_outbound_clicks": null,
+    "average_pin_clicks": null,
+    "average_closeups": null,
+    "average_engagement_rate": null
+  },
+  "performance_by_variant_type": [],
+  "performance_by_board": [],
+  "performance_by_article": [],
+  "rankings": {
+    "top_variant_types": [],
+    "top_boards": [],
+    "top_articles": [],
+    "weak_articles": []
+  }
+}

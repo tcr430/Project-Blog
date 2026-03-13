@@ -38,7 +38,8 @@ Rules:
 - The article must focus on exactly one decor trend.
 - Preferred length target: 1000 to 1300 words (hard valid range: 950 to 1600).
 - Include: introduction, exactly 5 main sections, and conclusion.
-- Use markdown headings for structure.
+- Do not include an H1 title inside article_markdown; the site layout renders the post title separately.
+- Use markdown headings for structure with H2 headings for the 5 main sections and H3 only when useful inside a section.
 - Keep tone editorial, practical, and human.
 - Avoid fake data, fake citations, and keyword stuffing.
 - Do not include any text outside the JSON.
@@ -76,7 +77,9 @@ Return only the required JSON object.
 PRODUCT_RETRY_PROMPT_TEMPLATE = """
 The previous draft did not follow the product-link rules.
 Rewrite the full article package and follow these rules exactly:
-- Use one provided product per main section (5 sections total).
+- Use each provided product exactly once in a different main section.
+- Only sections with a provided product may include an affiliate URL.
+- Sections without a provided product must stay editorial-only with no external links.
 - Use only provided affiliate URLs.
 - Do not invent products.
 - Do not invent links.
@@ -126,6 +129,7 @@ SECTION_COUNT = 5
 SHORT_RETRY_LIMIT = 2
 PRODUCT_RETRY_LIMIT = 2
 PINTEREST_ITEM_COUNT = 5
+MIN_PRODUCTS_FOR_AFFILIATE_MODE = 3
 # Preferred guidance range is 1000-1300 words. Hard validation uses MIN_WORDS/MAX_WORDS.
 
 
@@ -330,10 +334,8 @@ def normalize_product(raw: dict[str, Any]) -> Product:
 def validate_products(products: list[dict[str, Any]] | list[Product]) -> list[Product]:
     normalized_products = [normalize_product(dict(item)) for item in products]
 
-    if len(normalized_products) < SECTION_COUNT:
-        raise ValueError(
-            f"At least {SECTION_COUNT} products are required for one product per section."
-        )
+    if not normalized_products:
+        return []
 
     affiliate_urls = [item["affiliate_url"] for item in normalized_products]
     if len(set(affiliate_urls)) != len(affiliate_urls):
@@ -363,10 +365,24 @@ def load_products_from_file(products_file: str | None) -> list[Product] | None:
 
 
 def build_products_prompt(products: list[Product]) -> str:
+    if not products:
+        return (
+            "Product placement rules:\n"
+            "- No validated affiliate products are available for this draft.\n"
+            "- Keep all 5 sections editorial-only.\n"
+            "- Do not include external URLs.\n"
+        )
+
     serialized = json.dumps(products[:SECTION_COUNT], ensure_ascii=False, indent=2)
+    product_count = min(len(products), SECTION_COUNT)
+    remaining_sections = SECTION_COUNT - product_count
     return (
         "Product placement rules:\n"
-        f"- You must use exactly one provided product in each of the {SECTION_COUNT} main sections.\n"
+        f"- You have {product_count} validated affiliate products available.\n"
+        "- Use each provided product exactly once in a different main section.\n"
+        "- Only sections using a provided product may include an affiliate URL.\n"
+        "- Each section may contain at most one affiliate URL.\n"
+        f"- Keep the remaining {remaining_sections} section(s) editorial-only with no external links.\n"
         "- Use the product's exact title and exact affiliate_url in markdown links.\n"
         "- Use only the provided products and links.\n"
         "- Do not invent products, product names, or URLs.\n"
@@ -550,6 +566,7 @@ def request_article_json(
 
 
 def validate_affiliate_link_usage(article_markdown: str, products: list[Product]) -> None:
+    expected_product_count = min(len(products), SECTION_COUNT)
     provided_urls = {item["affiliate_url"] for item in products[:SECTION_COUNT]}
     article_urls = extract_urls(article_markdown)
 
@@ -564,27 +581,41 @@ def validate_affiliate_link_usage(article_markdown: str, products: list[Product]
             "article_markdown must include exactly 5 main sections as markdown H2 headings."
         )
 
+    if expected_product_count == 0:
+        if article_urls:
+            raise ProductLinkError("article_markdown cannot include affiliate URLs when no products are available.")
+        return
+
     used_urls_by_section: list[str] = []
+    sections_with_links = 0
+
     for section_text in main_sections:
         url_count = count_provided_url_occurrences(section_text, provided_urls)
-        if url_count != 1:
+        if url_count > 1:
             raise ProductLinkError(
-                "Each main section must contain exactly one provided affiliate URL."
+                "Each main section may contain at most one provided affiliate URL."
             )
 
-        section_urls = [url for url in provided_urls if url in section_text]
-        used_urls_by_section.extend(section_urls)
+        if url_count == 1:
+            sections_with_links += 1
+            section_urls = [url for url in provided_urls if url in section_text]
+            used_urls_by_section.extend(section_urls)
 
     distinct_urls = set(used_urls_by_section)
-    if len(distinct_urls) != SECTION_COUNT:
+    if sections_with_links != expected_product_count:
         raise ProductLinkError(
-            "Each section must use a different provided product affiliate URL."
+            f"article_markdown must contain affiliate URLs in exactly {expected_product_count} section(s)."
+        )
+
+    if len(distinct_urls) != expected_product_count:
+        raise ProductLinkError(
+            "Each affiliate-enabled section must use a different provided product affiliate URL."
         )
 
     total_occurrences = count_provided_url_occurrences(article_markdown, provided_urls)
-    if total_occurrences != SECTION_COUNT:
+    if total_occurrences != expected_product_count:
         raise ProductLinkError(
-            "article_markdown must use exactly one provided affiliate URL per section and nowhere else."
+            "article_markdown must use each provided affiliate URL exactly once and nowhere outside the selected sections."
         )
 
 
@@ -701,9 +732,12 @@ def generate_article_package(
     selected_products = (
         products
         if products is not None
-        else fetch_products_for_trend(trend=trend, limit=5)
+        else fetch_products_for_trend(trend=trend, limit=SECTION_COUNT)
     )
     selected_products = validate_products(selected_products)
+
+    if len(selected_products) < MIN_PRODUCTS_FOR_AFFILIATE_MODE:
+        selected_products = []
 
     # One initial draft plus retries for short drafts or product-link rule failures.
     for _ in range(1 + SHORT_RETRY_LIMIT + PRODUCT_RETRY_LIMIT):
@@ -734,6 +768,15 @@ def generate_article_package(
             if product_retry_count < PRODUCT_RETRY_LIMIT:
                 product_retry_count += 1
                 extra_instruction = PRODUCT_RETRY_PROMPT_TEMPLATE
+                last_error = exc
+                continue
+            if selected_products and len(selected_products) >= MIN_PRODUCTS_FOR_AFFILIATE_MODE:
+                selected_products = []
+                product_retry_count = 0
+                extra_instruction = (
+                    "The affiliate placement draft could not be validated. Rewrite the full article package "
+                    "in editorial-only mode with no external URLs and no product links. Keep the same trend focus and structure."
+                )
                 last_error = exc
                 continue
             last_error = exc

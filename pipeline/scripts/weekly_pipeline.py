@@ -14,7 +14,13 @@ from fetch_products import Product, fetch_products_with_context
 from fetch_trends import fetch_candidate_trends
 from generate_article import generate_article_package, load_openai_api_key, slugify
 from generate_images import generate_and_save_images
+from generate_weekly_newsletter import generate_weekly_newsletter_draft
+from push_newsletter_to_kit import push_weekly_newsletter_to_kit
+from generate_weekly_report import build_weekly_report
+from fetch_pinterest_analytics import should_sync_pinterest_analytics, sync_pinterest_analytics
 from generate_pin_assets import generate_pin_assets
+from pinterest_performance_summary import build_performance_summary
+from plan_pinterest_repins import plan_pinterest_repins
 from generate_pin_metadata import generate_pinterest_metadata
 from publish_pins import publish_or_queue_pins
 from select_trends import (
@@ -228,10 +234,36 @@ def run_pinterest_step(metadata_path: Path) -> dict[str, Any] | None:
         log_phase("generating pin images")
         pin_image_paths = generate_pin_assets(pinterest_metadata_path=pinterest_metadata_path)
 
-        log_phase("queueing pins")
+        log_phase("scheduling and queueing pins")
         publish_result = publish_or_queue_pins(pinterest_metadata_path=pinterest_metadata_path)
         publish_result["metadata_path"] = pinterest_metadata_path
         publish_result["pin_image_paths"] = pin_image_paths
+
+        project_root = Path(__file__).resolve().parents[2]
+        if should_sync_pinterest_analytics(project_root) and publish_result.get("history_path"):
+            log_phase("syncing pinterest analytics")
+            analytics_result = sync_pinterest_analytics(
+                history_path=Path(publish_result["history_path"]),
+            )
+            publish_result["analytics_result"] = analytics_result
+
+        if publish_result.get("history_path"):
+            log_phase("building pinterest performance summary")
+            summary_result = build_performance_summary(
+                history_path=Path(publish_result["history_path"]),
+                summary_path=project_root / "pipeline" / "data" / "pinterest_performance_summary.json",
+                article_scores_path=project_root / "pipeline" / "data" / "pinterest_article_scores.json",
+            )
+            publish_result["performance_summary"] = summary_result
+
+            log_phase("planning pinterest repins")
+            repin_result = plan_pinterest_repins(
+                article_scores_path=Path(summary_result["article_scores_path"]),
+                history_path=Path(publish_result["history_path"]),
+                queue_path=project_root / "pipeline" / "data" / "pinterest_queue.json",
+            )
+            publish_result["repin_plan"] = repin_result
+
         return publish_result
     except Exception as exc:
         print(
@@ -370,8 +402,22 @@ def run_manual_mode(args: argparse.Namespace) -> int:
             print(f"Pinterest metadata: {pinterest_result['metadata_path']}")
             for pin_path in pinterest_result['pin_image_paths']:
                 print(f"Pin image saved: {pin_path}")
+            if pinterest_result.get('history_path'):
+                print(f"Pinterest history: {pinterest_result['history_path']}")
+            if pinterest_result.get('analytics_result'):
+                print(f"Pinterest analytics sync updated: {pinterest_result['analytics_result']['updated_count']}")
+            if pinterest_result.get('performance_summary'):
+                print(f"Pinterest performance summary: {pinterest_result['performance_summary']['summary_path']}")
+            if pinterest_result.get('repin_plan'):
+                print(f"Pinterest repins planned: {pinterest_result['repin_plan']['planned_count']}")
             if pinterest_result.get('mode') == 'queue':
                 print(f"Pins queued in: {pinterest_result['queue_path']}")
+        project_root = Path(__file__).resolve().parents[2]
+        newsletter_path, kit_result = run_newsletter_step(project_root)
+        run_report_step(project_root)
+        print(f"Newsletter draft: {newsletter_path}")
+        if kit_result and kit_result.get("sidecar_path"):
+            print(f"Kit newsletter metadata: {kit_result['sidecar_path']}")
         return 0
     except Exception as exc:
         print(
@@ -380,6 +426,41 @@ def run_manual_mode(args: argparse.Namespace) -> int:
             file=sys.stderr,
         )
         return 1
+
+
+def run_newsletter_step(project_root: Path) -> tuple[Path, dict[str, Any] | None]:
+    log_phase("generating weekly newsletter draft")
+    draft_path = generate_weekly_newsletter_draft(
+        metadata_dir=project_root / "_data" / "article_metadata",
+        output_dir=project_root / "pipeline" / "data" / "newsletter_drafts",
+    )
+    print(f"[newsletter] weekly draft generated: {draft_path}")
+
+    try:
+        log_phase("pushing weekly newsletter draft to Kit")
+        kit_result = push_weekly_newsletter_to_kit(draft_path=draft_path)
+        if kit_result.get("status") == "created":
+            print(f"[kit] draft broadcast id: {kit_result['kit_broadcast_id']}")
+        elif kit_result.get("status") == "unchanged":
+            print(f"[kit] existing draft broadcast id: {kit_result['kit_broadcast_id']}")
+        return draft_path, kit_result
+    except Exception as exc:
+        print(
+            "[warning] Kit draft creation failed. The local weekly newsletter draft is kept. "
+            f"Details: {exc}"
+        )
+        return draft_path, None
+
+
+def run_report_step(project_root: Path) -> Path:
+    log_phase("generating weekly report")
+    report_path = build_weekly_report(
+        history_path=project_root / "pipeline" / "data" / "pinterest_history.json",
+        summary_path=project_root / "pipeline" / "data" / "pinterest_performance_summary.json",
+        output_path=project_root / "pipeline" / "reports" / "weekly_report.md",
+    )
+    print(f"[report] weekly report generated: {report_path}")
+    return report_path
 
 
 def run_automatic_mode(args: argparse.Namespace) -> int:
@@ -435,9 +516,23 @@ def run_automatic_mode(args: argparse.Namespace) -> int:
                 print(f"[auto] pinterest metadata: {pinterest_result['metadata_path']}")
                 for pin_path in pinterest_result['pin_image_paths']:
                     print(f"[auto] pin image saved: {pin_path}")
+                if pinterest_result.get('history_path'):
+                    print(f"[auto] pinterest history: {pinterest_result['history_path']}")
+                if pinterest_result.get('analytics_result'):
+                    print(f"[auto] pinterest analytics sync updated: {pinterest_result['analytics_result']['updated_count']}")
+                if pinterest_result.get('performance_summary'):
+                    print(f"[auto] pinterest performance summary: {pinterest_result['performance_summary']['summary_path']}")
+                if pinterest_result.get('repin_plan'):
+                    print(f"[auto] pinterest repins planned: {pinterest_result['repin_plan']['planned_count']}")
                 if pinterest_result.get('mode') == 'queue':
                     print(f"[auto] pins queued in: {pinterest_result['queue_path']}")
 
+        project_root = Path(__file__).resolve().parents[2]
+        newsletter_path, kit_result = run_newsletter_step(project_root)
+        run_report_step(project_root)
+        print(f"Newsletter draft: {newsletter_path}")
+        if kit_result and kit_result.get("sidecar_path"):
+            print(f"Kit newsletter metadata: {kit_result['sidecar_path']}")
         print(f"Success: generated {len(generated_posts)} posts in automatic mode.")
         return 0
     except Exception as exc:
@@ -460,5 +555,6 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
 
 

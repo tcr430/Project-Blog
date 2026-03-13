@@ -530,10 +530,9 @@ def fetch_products_for_trend(
 
         normalized = [_normalize_product(dict(item), source=provider.provider_name) for item in products]
         ranked = _select_best_products(normalized, trend=trend, limit=limit)
-        if len(ranked) < limit:
+        if not ranked:
             raise RuntimeError(
-                f"Provider '{provider.provider_name}' returned too few high-quality products "
-                f"({len(ranked)}/{limit})."
+                f"Provider '{provider.provider_name}' returned no high-quality products."
             )
 
         if provider.provider_name != "mock":

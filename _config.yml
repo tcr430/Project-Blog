@@ -1,20 +1,22 @@
 title: The Livin' Edit
-email: hello@example.com
+email: thelivinedit@proton.me
 description: >-
   A modern decor journal with practical styling guides, trend analysis, and product-ready inspiration.
 baseurl: "/Project-Blog"
 url: "https://tcr430.github.io"
 lang: en
+locale: en_US
 timezone: Europe/Lisbon
 markdown: kramdown
 permalink: /:categories/:year/:month/:day/:title/
 include:
   - _pages
-
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
 collections:
   posts:
     output: true
-
 defaults:
   -
     scope:
@@ -27,11 +29,23 @@ defaults:
       path: "_pages"
     values:
       layout: page
-
 exclude:
   - Gemfile.lock
   - node_modules
   - vendor
-
 buy_me_a_coffee_url: "https://buymeacoffee.com/casaeditorial"
-newsletter_email: "hello@example.com"
+newsletter_email: "thelivinedit@proton.me"
+affiliate_disclosure_text: "This article may contain affiliate links. If you buy through them, The Livin' Edit may earn a small commission at no extra cost to you."
+social:
+  name: The Livin' Edit
+webmaster_verifications:
+  google: ""
+  bing: ""
+newsletter_form:
+  provider: "ConvertKit"
+  action: "https://app.convertkit.com/forms/YOUR_FORM_ID/subscriptions"
+  method: "post"
+  email_field_name: "email_address"
+  redirect_field_name: "redirect_url"
+  hidden_fields:
+    form_source: "the-livin-edit-site"
