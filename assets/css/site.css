@@ -151,6 +151,8 @@ p {
 }
 
 .featured-hero-image {
+  display: block;
+  width: 100%;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -162,16 +164,20 @@ p {
   object-fit: cover;
 }
 
+.featured-hero-copy {
+  width: 100%;
+}
+
 .featured-hero-copy h1 {
   font-size: clamp(1.95rem, 3.4vw, 3.2rem);
   margin: 0.8rem 0 0.95rem;
-  max-width: 14ch;
+  max-width: none;
 }
 
 .featured-hero-copy p {
   color: var(--muted);
   font-size: 1.05rem;
-  max-width: 60ch;
+  max-width: none;
 }
 
 .entry-meta {
