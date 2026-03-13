@@ -1,4 +1,4 @@
-<!-- newsletter_meta: {"week": "2026-W11", "articles": ["2026-03-13:small-apartment-dining-nooks-cozy-corner-trend", "2026-03-13:linen-boucle-texture-mix"]} -->
+<!-- newsletter_meta: {"week": "2026-W11", "articles": ["2026-03-13:small-apartment-dining-nooks-cozy-corner-trend", "2026-03-13:linen-boucle-texture-mix", "2026-03-13:organic-modern-living-room"]} -->
 
 # Weekly Newsletter Draft
 
@@ -20,6 +20,12 @@ Read more: /ideas/2026/03/13/small-apartment-dining-nooks-cozy-corner-trend/
 *Styling Advice*  
 Explore how mixing linen and bouclé textures adds depth and warmth to your home decor with expert tips on layout, material pairing, and color choices.
 Read more: /styling-advice/2026/03/13/linen-boucle-texture-mix/
+
+
+### Embracing Organic Modern Living Rooms: A Guide to Natural Elegance
+*Styling Advice*  
+Discover how to create a warm, balanced organic modern living room using natural materials, soft earthy tones, and layered textures for a timeless, inviting space.
+Read more: /styling-advice/2026/03/13/organic-modern-living-room/
 
 
 ## Design Pick of the Week

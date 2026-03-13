@@ -335,6 +335,7 @@ def fetch_products_for_pipeline(
         source_label = "mock products"
 
     print(f"[products] source: {source_label}")
+    print(f"[products] fetched: {len(product_result['products'])}")
     return product_result["products"], source_label
 
 
@@ -349,6 +350,11 @@ def run_pipeline_for_trend(
     project_root = Path(__file__).resolve().parents[2]
 
     article_package, article_report = run_generate_step(trend=trend, model=model, products=products)
+    print(
+        f"[article] mode: {'affiliate-enabled' if article_report.get('affiliate_mode') else 'editorial-only'}; "
+        f"products passed: {article_report.get('selected_products', 0)}; "
+        f"visible affiliate links: {article_report.get('generated_link_count', 0)}"
+    )
 
     log_phase("saving temporary article package")
     slug = slugify(str(article_package.get("slug") or article_package.get("title") or "decor-article"))

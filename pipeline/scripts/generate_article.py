@@ -39,6 +39,7 @@ Rules:
 - The article must focus on exactly one decor trend.
 - Preferred length target: 1000 to 1300 words (hard valid range: 950 to 1600).
 - Include: introduction, exactly 5 main sections, and conclusion.
+- Do not label the introduction with a heading. Start with plain introductory paragraphs, then begin the 5 main sections with H2 headings.
 - Do not include an H1 title inside article_markdown; the site layout renders the post title separately.
 - Use markdown headings for structure with H2 headings for the 5 main sections and H3 only when useful inside a section.
 - Keep tone editorial, practical, and human.
@@ -82,6 +83,8 @@ Rewrite the full article package and follow these rules exactly:
 - Use each provided product exactly once in a different main section.
 - Only sections with a provided product may include an affiliate URL.
 - Sections without a provided product must stay editorial-only with no external links.
+- In each affiliate-enabled section, include one visible markdown link in the prose.
+- Use the product's exact title as the markdown link anchor text.
 - Use only provided affiliate URLs.
 - Do not invent products.
 - Do not invent links.
@@ -242,6 +245,29 @@ def build_article_cache_key(
 
 def build_article_cache_path(cache_key: str) -> Path:
     return ARTICLE_CACHE_DIR / f"{cache_key}.json"
+
+
+def build_cache_artifacts(
+    trend: str,
+    model: str,
+    format_name: str,
+    persona_name: str,
+    article_template: str,
+    format_prompt: str,
+    persona_prompt: str,
+    products: list[Product],
+) -> tuple[str, Path]:
+    cache_key = build_article_cache_key(
+        trend=trend,
+        model=model,
+        format_name=format_name,
+        persona_name=persona_name,
+        article_template=article_template,
+        format_prompt=format_prompt,
+        persona_prompt=persona_prompt,
+        products=products,
+    )
+    return cache_key, build_article_cache_path(cache_key)
 
 
 def load_cached_article_package(cache_path: Path, products: list[Product]) -> dict[str, Any] | None:
@@ -448,6 +474,8 @@ def build_products_prompt(products: list[Product]) -> str:
         "- Only sections using a provided product may include an affiliate URL.\n"
         "- Each section may contain at most one affiliate URL.\n"
         f"- Keep the remaining {remaining_sections} section(s) editorial-only with no external links.\n"
+        "- In each affiliate-enabled section, add one visible markdown link in the prose.\n"
+        "- Use the product's exact title as the markdown link anchor text.\n"
         "- Use the product's exact title and exact affiliate_url in markdown links.\n"
         "- Use only the provided products and links.\n"
         "- Do not invent products, product names, or URLs.\n"
@@ -470,6 +498,8 @@ def extract_urls(text: str) -> set[str]:
     matches = re.findall(r"https?://[^\s\]\)\>\"']+", text)
     cleaned = {match.rstrip(".,;:") for match in matches}
     return cleaned
+
+
 def count_provided_url_occurrences(text: str, provided_urls: set[str]) -> int:
     count = 0
     for url in provided_urls:
@@ -477,8 +507,87 @@ def count_provided_url_occurrences(text: str, provided_urls: set[str]) -> int:
     return count
 
 
+def count_markdown_links(text: str) -> int:
+    return len(re.findall(r"\[[^\]]+\]\(https?://[^)]+\)", text))
+
+
+def strip_provided_links_from_text(text: str, provided_urls: set[str]) -> str:
+    cleaned = text
+    for url in provided_urls:
+        escaped_url = re.escape(url)
+        cleaned = re.sub(rf"\[([^\]]+)\]\({escaped_url}\)", r"\1", cleaned)
+        cleaned = cleaned.replace(url, "")
+    cleaned = re.sub(r"[ \t]{2,}", " ", cleaned)
+    cleaned = re.sub(r"\n{3,}", "\n\n", cleaned)
+    return cleaned.strip()
+
+
+def build_affiliate_sentence(product: Product) -> str:
+    reason = str(product.get("short_reason") or product.get("reason_for_recommendation") or "").strip()
+    if reason:
+        reason = reason[:1].lower() + reason[1:]
+        return (
+            f"A polished way to bring this look home is with "
+            f"[{product['title']}]({product['affiliate_url']}), which {reason}"
+        )
+    return f"A polished way to bring this look home is with [{product['title']}]({product['affiliate_url']})."
+
+
+def repair_affiliate_links(article_markdown: str, products: list[Product]) -> str:
+    provided_urls = {item["affiliate_url"] for item in products[:SECTION_COUNT]}
+    split_parts = re.split(r"(?m)(^##\s+.+$)", article_markdown)
+    if len(split_parts) < 3:
+        return article_markdown
+
+    repaired_parts: list[str] = [strip_provided_links_from_text(split_parts[0], provided_urls)]
+    body_section_index = 0
+    expected_product_count = min(len(products), SECTION_COUNT)
+
+    for index in range(1, len(split_parts), 2):
+        heading = split_parts[index]
+        body = split_parts[index + 1] if index + 1 < len(split_parts) else ""
+        cleaned_body = strip_provided_links_from_text(body, provided_urls)
+
+        repaired_parts.append(heading)
+        if is_intro_section_heading(heading) or is_conclusion_section_heading(heading):
+            repaired_parts.append(f"\n{cleaned_body}")
+            continue
+
+        if body_section_index < expected_product_count:
+            affiliate_sentence = build_affiliate_sentence(products[body_section_index])
+            cleaned_body = f"{cleaned_body.rstrip()}\n\n{affiliate_sentence}"
+
+        repaired_parts.append(f"\n{cleaned_body}")
+        body_section_index += 1
+
+    repaired_markdown = "".join(repaired_parts).strip()
+    return repaired_markdown
+
+
+def normalize_section_heading(heading_text: str) -> str:
+    cleaned = re.sub(r"^##\s+", "", heading_text).strip().lower()
+    cleaned = re.sub(r"^[0-9]+[\.\)]\s*", "", cleaned)
+    return re.sub(r"\s+", " ", cleaned)
+
+
+def is_intro_section_heading(heading_text: str) -> bool:
+    normalized = normalize_section_heading(heading_text)
+    return normalized in {"introduction", "intro"} or normalized.startswith("introduction ")
+
+
+def is_conclusion_section_heading(heading_text: str) -> bool:
+    normalized = normalize_section_heading(heading_text)
+    return normalized in {"conclusion", "final thoughts", "closing thoughts", "wrap-up"} or normalized.startswith(
+        "conclusion "
+    )
+
+
 def split_main_sections(article_markdown: str) -> list[str]:
-    heading_matches = list(re.finditer(r"(?m)^##\s+.+$", article_markdown))
+    heading_matches = [
+        match
+        for match in re.finditer(r"(?m)^##\s+.+$", article_markdown)
+        if not is_intro_section_heading(match.group(0)) and not is_conclusion_section_heading(match.group(0))
+    ]
     if len(heading_matches) < SECTION_COUNT:
         return []
 
@@ -822,10 +931,16 @@ def generate_article_package_with_report(
     selected_products = validate_products(selected_products)
 
     if len(selected_products) < MIN_PRODUCTS_FOR_AFFILIATE_MODE:
+        print(
+            f"[article] affiliate mode disabled: only {len(selected_products)} validated product(s) available "
+            f"(minimum {MIN_PRODUCTS_FOR_AFFILIATE_MODE})"
+        )
         selected_products = []
+    else:
+        print(f"[article] affiliate mode enabled with {len(selected_products)} product(s)")
 
     article_template = load_article_template()
-    cache_key = build_article_cache_key(
+    _, cache_path = build_cache_artifacts(
         trend=trend,
         model=model,
         format_name=selected_format_name,
@@ -835,10 +950,11 @@ def generate_article_package_with_report(
         persona_prompt=selected_persona_prompt,
         products=selected_products,
     )
-    cache_path = build_article_cache_path(cache_key)
     cached_package = load_cached_article_package(cache_path=cache_path, products=selected_products)
     if cached_package:
+        cached_link_count = count_markdown_links(cached_package["article_markdown"])
         print(f"[article] cache hit: {cache_path.name}")
+        print(f"[article] generated markdown visible affiliate links: {cached_link_count}")
         return cached_package, {
             "cache_hit": True,
             "cache_path": str(cache_path),
@@ -848,6 +964,7 @@ def generate_article_package_with_report(
             "product_retries": 0,
             "selected_products": len(selected_products),
             "affiliate_mode": bool(selected_products),
+            "generated_link_count": cached_link_count,
         }
 
     print(f"[article] cache miss: {cache_path.name}")
@@ -868,7 +985,21 @@ def generate_article_package_with_report(
                 products=selected_products,
                 extra_instruction=extra_instruction,
             )
-            normalized_package = normalize_and_validate(payload, products=selected_products)
+            try:
+                normalized_package = normalize_and_validate(payload, products=selected_products)
+            except ProductLinkError:
+                if selected_products and isinstance(payload.get("article_markdown"), str):
+                    repaired_payload = dict(payload)
+                    repaired_payload["article_markdown"] = repair_affiliate_links(
+                        article_markdown=str(payload["article_markdown"]),
+                        products=selected_products,
+                    )
+                    print("[article] attempted automatic affiliate link repair")
+                    normalized_package = normalize_and_validate(repaired_payload, products=selected_products)
+                else:
+                    raise
+            generated_link_count = count_markdown_links(normalized_package["article_markdown"])
+            print(f"[article] generated markdown visible affiliate links: {generated_link_count}")
             save_cached_article_package(cache_path=cache_path, package=normalized_package)
             return normalized_package, {
                 "cache_hit": False,
@@ -879,6 +1010,7 @@ def generate_article_package_with_report(
                 "product_retries": product_retry_count,
                 "selected_products": len(selected_products),
                 "affiliate_mode": bool(selected_products),
+                "generated_link_count": generated_link_count,
             }
         except ArticleLengthError as exc:
             if exc.word_count < MIN_WORDS and short_retry_count < SHORT_RETRY_LIMIT:
@@ -891,18 +1023,48 @@ def generate_article_package_with_report(
                 continue
             last_error = exc
         except ProductLinkError as exc:
+            print(f"[article] affiliate validation failed: {exc}")
             if product_retry_count < PRODUCT_RETRY_LIMIT:
                 product_retry_count += 1
                 extra_instruction = PRODUCT_RETRY_PROMPT_TEMPLATE
                 last_error = exc
                 continue
             if selected_products and len(selected_products) >= MIN_PRODUCTS_FOR_AFFILIATE_MODE:
+                print(
+                    "[article] falling back to editorial-only mode after affiliate validation failures"
+                )
                 selected_products = []
                 product_retry_count = 0
                 extra_instruction = (
                     "The affiliate placement draft could not be validated. Rewrite the full article package "
                     "in editorial-only mode with no external URLs and no product links. Keep the same trend focus and structure."
                 )
+                _, cache_path = build_cache_artifacts(
+                    trend=trend,
+                    model=model,
+                    format_name=selected_format_name,
+                    persona_name=selected_persona_name,
+                    article_template=article_template,
+                    format_prompt=selected_format_prompt,
+                    persona_prompt=selected_persona_prompt,
+                    products=selected_products,
+                )
+                cached_editorial_package = load_cached_article_package(cache_path=cache_path, products=selected_products)
+                if cached_editorial_package:
+                    cached_link_count = count_markdown_links(cached_editorial_package["article_markdown"])
+                    print(f"[article] cache hit after editorial fallback: {cache_path.name}")
+                    print(f"[article] generated markdown visible affiliate links: {cached_link_count}")
+                    return cached_editorial_package, {
+                        "cache_hit": True,
+                        "cache_path": str(cache_path),
+                        "model": model,
+                        "generation_calls": generation_calls,
+                        "short_retries": short_retry_count,
+                        "product_retries": product_retry_count,
+                        "selected_products": len(selected_products),
+                        "affiliate_mode": bool(selected_products),
+                        "generated_link_count": cached_link_count,
+                    }
                 last_error = exc
                 continue
             last_error = exc

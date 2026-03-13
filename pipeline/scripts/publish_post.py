@@ -247,6 +247,16 @@ def strip_leading_title(article_markdown: str) -> str:
     return re.sub(r"\A#\s+.+?(?:\n{2,}|\n(?=##\s)|\Z)", "", article_markdown.strip(), count=1, flags=re.DOTALL).strip()
 
 
+def strip_intro_heading(article_markdown: str) -> str:
+    return re.sub(
+        r"\A##\s+(?:Introduction|Intro)\s*\n+",
+        "",
+        article_markdown.strip(),
+        count=1,
+        flags=re.IGNORECASE,
+    ).strip()
+
+
 def split_frontmatter(markdown_content: str) -> tuple[str, str]:
     match = re.match(r"\A---\n.*?\n---\n+", markdown_content, flags=re.DOTALL)
     if not match:
@@ -368,7 +378,7 @@ def sync_post_images(post_path: str | Path, metadata_path: str | Path) -> Path:
     metadata = json.loads(metadata_raw)
 
     article_title = str(metadata.get("title", "")).strip() or post_path.stem
-    cleaned_body = strip_section_image_blocks(body)
+    cleaned_body = strip_intro_heading(strip_section_image_blocks(body))
     image_specs = build_existing_section_image_specs(
         metadata=metadata,
         article_title=article_title,
@@ -497,6 +507,10 @@ def has_affiliate_links(article_markdown: str) -> bool:
     return bool(re.search(r"https?://", article_markdown))
 
 
+def count_visible_affiliate_links(article_markdown: str) -> int:
+    return len(re.findall(r"\[[^\]]+\]\(https?://[^)]+\)", article_markdown))
+
+
 def publish_post_from_package_file(package_json_path: str | Path) -> dict[str, Path]:
     package_path = Path(package_json_path)
     project_root = Path(__file__).resolve().parents[2]
@@ -511,10 +525,13 @@ def publish_post_from_package_file(package_json_path: str | Path) -> dict[str, P
     hero_image_alt = build_hero_image_alt(package["title"])
 
     markdown_body = strip_leading_title(package["article_markdown"])
+    markdown_body = strip_intro_heading(markdown_body)
     markdown_body = strip_section_image_blocks(markdown_body)
     markdown_body = markdown_body.rstrip() + "\n"
 
     affiliate_disclosure = has_affiliate_links(markdown_body)
+    visible_link_count = count_visible_affiliate_links(markdown_body)
+    print(f"[publish] generated markdown visible affiliate links: {visible_link_count}")
 
     frontmatter = build_frontmatter(
         title=package["title"],
@@ -534,6 +551,7 @@ def publish_post_from_package_file(package_json_path: str | Path) -> dict[str, P
 
     markdown_content = f"{frontmatter}{markdown_body.rstrip()}\n"
     output_path.write_text(markdown_content, encoding="utf-8")
+    print(f"[publish] published markdown visible affiliate links: {count_visible_affiliate_links(markdown_content)}")
 
     metadata_path = build_metadata_path(project_root=project_root, post_path=output_path)
     save_article_metadata(

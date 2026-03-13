@@ -1,0 +1,26 @@
+{
+  "hero": {
+    "cache_key": "2457f71eeb7c758765e12243c29fe340ab8d31e70e306aa3d6751443c0ebfa6b",
+    "output_path": "D:\\Project\\Blog\\assets\\img\\organic-modern-living-room\\hero.png"
+  },
+  "section-1": {
+    "cache_key": "3b5acf04cd9427c7a77f5a61fbcf88d81a8f48f702afde498debd5c409685007",
+    "output_path": "D:\\Project\\Blog\\assets\\img\\organic-modern-living-room\\section-1.png"
+  },
+  "section-2": {
+    "cache_key": "1bd06153d08b0a84437faf8525c2d06c69d61910a141911ee11959c35a3e7bba",
+    "output_path": "D:\\Project\\Blog\\assets\\img\\organic-modern-living-room\\section-2.png"
+  },
+  "section-3": {
+    "cache_key": "46d032fad8e442727ad10c95b3d4eb428dfe1be3ed4bee22dee04d7b45375581",
+    "output_path": "D:\\Project\\Blog\\assets\\img\\organic-modern-living-room\\section-3.png"
+  },
+  "section-4": {
+    "cache_key": "3990a6d8be0599b9dd2dea647eaa7d25bdd0fae7689b2e12b6ade4b328c719de",
+    "output_path": "D:\\Project\\Blog\\assets\\img\\organic-modern-living-room\\section-4.png"
+  },
+  "section-5": {
+    "cache_key": "9ff29778f208aaf84c473b015b04c9d0c66fd25468ed1c87974c804a118d48f5",
+    "output_path": "D:\\Project\\Blog\\assets\\img\\organic-modern-living-room\\section-5.png"
+  }
+}
