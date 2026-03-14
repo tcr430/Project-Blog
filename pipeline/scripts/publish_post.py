@@ -362,93 +362,122 @@ def extract_faq_items(article_markdown: str) -> list[dict[str, str]]:
     return faq_items[:5]
 
 
-def build_product_card_html(title: str, description: str, affiliate_url: str) -> str:
-    safe_title = yaml_escape(title)
-    safe_description = yaml_escape(description)
-    safe_url = yaml_escape(affiliate_url)
+def build_shop_the_look_description(product: dict[str, str]) -> str:
+    title = str(product.get("title") or "").strip()
+    reason = str(product.get("short_reason") or "").strip()
+    if reason:
+        return reason[0].upper() + reason[1:]
+    return f"{title} is an easy way to bring this look into your own space."
+
+
+def extract_affiliate_products_from_markdown(article_markdown: str) -> list[dict[str, str]]:
+    link_pattern = re.compile(r"\[([^\]]+)\]\s*\((https?://[^)]+)\)")
+    products: list[dict[str, str]] = []
+    seen_urls: set[str] = set()
+
+    for match in link_pattern.finditer(article_markdown):
+        title = strip_markdown_formatting(match.group(1))
+        affiliate_url = match.group(2).strip()
+        if not title or not affiliate_url or affiliate_url in seen_urls:
+            continue
+        seen_urls.add(affiliate_url)
+        products.append(
+            {
+                "title": title,
+                "affiliate_url": affiliate_url,
+                "short_reason": "",
+            }
+        )
+
+    return products
+
+
+def build_shop_the_look_block(affiliate_products: list[dict[str, str]], article_markdown: str = "") -> str:
+    products = affiliate_products or extract_affiliate_products_from_markdown(article_markdown)
+    if not products:
+        return ""
+
+    rendered_urls: set[str] = set()
+    product_items: list[str] = []
+
+    for product in products:
+        title = str(product.get("title") or "").strip()
+        affiliate_url = str(product.get("affiliate_url") or "").strip()
+        if not title or not affiliate_url or affiliate_url in rendered_urls:
+            continue
+
+        rendered_urls.add(affiliate_url)
+        description = build_shop_the_look_description(product)
+        product_items.append(
+            "\n".join(
+                [
+                    '  <article class="shop-the-look-item">',
+                    f'    <h3 class="shop-the-look-title">{yaml_escape(title)}</h3>',
+                    f'    <p class="shop-the-look-desc">{yaml_escape(description)}</p>',
+                    (
+                        f'    <a href="{yaml_escape(affiliate_url)}" class="shop-the-look-button" '
+                        'target="_blank" rel="nofollow sponsored noopener">View Product</a>'
+                    ),
+                    "  </article>",
+                ]
+            )
+        )
+
+    if not product_items:
+        return ""
+
     return (
-        '<div class="product-card">\n'
-        f'  <div class="product-title">{safe_title}</div>\n'
-        f'  <p class="product-desc">{safe_description}</p>\n'
-        f'  <a href="{safe_url}" class="product-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>\n'
-        "</div>"
+        '<section class="shop-the-look" aria-label="Shop the look">\n'
+        '  <div class="shop-the-look-header">\n'
+        "    <p class=\"shop-the-look-kicker\">Shop the Look</p>\n"
+        "    <h2>Bring the Look Home</h2>\n"
+        "    <p>These are the pieces featured throughout the article, gathered in one place for easy browsing.</p>\n"
+        "  </div>\n"
+        '  <div class="shop-the-look-grid">\n'
+        f"{chr(10).join(product_items)}\n"
+        "  </div>\n"
+        "</section>"
     )
 
 
-def build_product_card_description(
-    product_title: str,
-    product_lookup: dict[str, dict[str, str]],
-    paragraph: str,
-) -> str:
-    product = product_lookup.get(product_title.lower())
-    if product:
-        reason = str(product.get("short_reason") or "").strip()
-        if reason:
-            return reason[0].upper() + reason[1:]
-
-    return f"{product_title} is a practical way to bring this section's styling direction home while keeping the look cohesive."
+def append_shop_the_look_block(article_markdown: str, affiliate_products: list[dict[str, str]]) -> str:
+    shop_block = build_shop_the_look_block(affiliate_products, article_markdown=article_markdown)
+    if not shop_block:
+        return article_markdown.rstrip() + "\n"
+    return article_markdown.rstrip() + "\n\n" + shop_block + "\n"
 
 
-def should_replace_whole_paragraph(paragraph: str) -> bool:
-    normalized = paragraph.strip().lower()
-    affiliate_cues = (
-        "this [",
-        "the [",
-        "consider this [",
-        "a polished way to bring this look home is with [",
-    )
-    return len(normalized) <= 280 or normalized.startswith(affiliate_cues)
-
-
-def convert_affiliate_links_to_product_cards(
+def convert_product_cards_to_inline_links(
     article_markdown: str,
     affiliate_products: list[dict[str, str]],
 ) -> str:
-    link_pattern = re.compile(r"\[([^\]]+)\]\s*\((https?://[^)]+)\)")
     product_lookup = {
-        str(product.get("title", "")).strip().lower(): product
+        str(product.get("title") or "").strip().lower(): product
         for product in affiliate_products
-        if str(product.get("title", "")).strip()
+        if str(product.get("title") or "").strip()
     }
-    paragraphs = article_markdown.split("\n\n")
-    converted_paragraphs: list[str] = []
-    rendered_urls: set[str] = set()
+    card_pattern = re.compile(
+        r'\n*<div class="product-card">\s*'
+        r'<div class="product-title">(?P<title>.*?)</div>\s*'
+        r'<p class="product-desc">.*?</p>\s*'
+        r'<a href="(?P<url>https?://[^"]+)" class="product-button"[^>]*>.*?</a>\s*'
+        r"</div>\n*",
+        flags=re.DOTALL,
+    )
 
-    for paragraph in paragraphs:
-        matches = list(link_pattern.finditer(paragraph))
-        if not matches:
-            converted_paragraphs.append(paragraph)
-            continue
+    def replace_card(match: re.Match[str]) -> str:
+        raw_title = strip_markdown_formatting(match.group("title"))
+        affiliate_url = match.group("url").strip()
+        product = product_lookup.get(raw_title.lower(), {})
+        link_title = str(product.get("title") or raw_title).strip()
+        return (
+            f"\n\nA practical piece for this look is the "
+            f"[{link_title}]({affiliate_url}).\n\n"
+        )
 
-        updated_paragraph = paragraph
-        appended_cards: list[str] = []
-        paragraph_replaced = False
-
-        for match in matches:
-            product_title = strip_markdown_formatting(match.group(1))
-            affiliate_url = match.group(2).strip()
-            if affiliate_url in rendered_urls:
-                updated_paragraph = updated_paragraph.replace(match.group(0), product_title, 1)
-                continue
-
-            description = build_product_card_description(product_title, product_lookup, paragraph)
-            card_html = build_product_card_html(product_title, description, affiliate_url)
-            rendered_urls.add(affiliate_url)
-
-            if should_replace_whole_paragraph(paragraph) and not paragraph_replaced:
-                converted_paragraphs.append(card_html)
-                paragraph_replaced = True
-            else:
-                updated_paragraph = updated_paragraph.replace(match.group(0), product_title, 1)
-                appended_cards.append(card_html)
-
-        if paragraph_replaced:
-            continue
-
-        converted_paragraphs.append(updated_paragraph)
-        converted_paragraphs.extend(appended_cards)
-
-    return "\n\n".join(block.rstrip() for block in converted_paragraphs if block.strip()).strip() + "\n"
+    cleaned = card_pattern.sub(replace_card, article_markdown)
+    cleaned = re.sub(r"\n{3,}", "\n\n", cleaned)
+    return cleaned.strip() + "\n"
 
 
 def strip_section_image_blocks(article_markdown: str) -> str:
@@ -732,8 +761,8 @@ def has_affiliate_links(article_markdown: str) -> bool:
 
 def count_visible_affiliate_links(article_markdown: str) -> int:
     markdown_links = len(re.findall(r"\[[^\]]+\]\s*\(https?://[^)]+\)", article_markdown))
-    card_links = len(re.findall(r'class="product-button"[^>]+href="https?://', article_markdown))
-    return markdown_links + card_links
+    shop_links = len(re.findall(r'class="shop-the-look-button"[^>]+href="https?://', article_markdown))
+    return markdown_links + shop_links
 
 
 def publish_post_from_package_file(package_json_path: str | Path) -> dict[str, Path]:
@@ -752,7 +781,11 @@ def publish_post_from_package_file(package_json_path: str | Path) -> dict[str, P
     markdown_body = strip_leading_title(package["article_markdown"])
     markdown_body = strip_intro_heading(markdown_body)
     markdown_body = strip_section_image_blocks(markdown_body)
-    markdown_body = convert_affiliate_links_to_product_cards(
+    markdown_body = convert_product_cards_to_inline_links(
+        article_markdown=markdown_body,
+        affiliate_products=package.get("affiliate_products", []),
+    )
+    markdown_body = append_shop_the_look_block(
         article_markdown=markdown_body,
         affiliate_products=package.get("affiliate_products", []),
     )

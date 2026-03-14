@@ -27,18 +27,13 @@ Let’s explore five practical styling ideas to help you create a dining nook th
 
 ## 1. Choose the Right Table Shape and Scale
 
-
 <figure class="article-section-image">
   <img src="{{ '/assets/img/small-apartment-dining-nooks-cozy-corner-trend/section-1.png' | relative_url }}" alt="Small Apartment Dining Nooks: Styling the Cozy Corner Trend section 1 interior styling detail" loading="lazy">
 </figure>
 
 When space is limited, selecting a table that fits perfectly without crowding the area is key. Round tables are ideal because they allow for smooth movement around the edges and create a gentle, social vibe. They soften the corners typically found in small apartments and invite conversation. Opt for a bistro-style or pedestal base to maximize legroom and make the nook feel more open.
 
-<div class="product-card">
-  <div class="product-title">Round tables</div>
-  <p class="product-desc">Round tables is a practical way to bring this section's styling direction home while keeping the look cohesive.</p>
-  <a href="https://amzn.to/4sc4u7G" class="product-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
-</div>
+A practical piece for this look is the [Round tables](https://amzn.to/4sc4u7G).
 
 Visual balance is essential here: a large rectangular table will overpower the space and limit access, whereas a compact round or small square table scales down the visual weight and keeps the nook inviting. If your nook borders the kitchen or living room, choose one that subtly reflects the broader room’s style—whether it’s sleek wood, metal, or glass—to tie the spaces together.
 
@@ -46,25 +41,19 @@ In terms of materials, warm woods add a natural, lived-in feel that offsets brig
 
 ## 2. Layer Textures Through Seating and Soft Furnishings
 
-
 <figure class="article-section-image">
   <img src="{{ '/assets/img/small-apartment-dining-nooks-cozy-corner-trend/section-2.png' | relative_url }}" alt="Small Apartment Dining Nooks: Styling the Cozy Corner Trend section 2 interior styling detail" loading="lazy">
 </figure>
 
 Texture brings warmth and depth to small spaces where color alone can feel flat. For a dining nook, layering textiles on and around your seating can add visual interest and encourage relaxation. Think plush seat cushions in natural fibers like cotton or linen paired with a cozy throw draped over a bench or chair back.
 
-<div class="product-card">
-  <div class="product-title">rattan-backed seating</div>
-  <p class="product-desc">rattan-backed seating is a practical way to bring this section's styling direction home while keeping the look cohesive.</p>
-  <a href="https://amzn.to/47MFkUP" class="product-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
-</div>
+A practical piece for this look is the [rattan-backed seating](https://amzn.to/47MFkUP).
 
 Rugs deserve a mention: even a small, patterned rug under the table can anchor the space while adding softness underfoot. Just ensure it’s low pile and sized correctly to keep chairs comfortably pulled out without catching.
 
 In small spots, subtle patterns or textures often outperform bold prints. They add enough interest without overpowering the delicate scale, creating a soothing yet dynamic nook.
 
 ## 3. Use Color to Define and Elevate the Space
-
 
 <figure class="article-section-image">
   <img src="{{ '/assets/img/small-apartment-dining-nooks-cozy-corner-trend/section-3.png' | relative_url }}" alt="Small Apartment Dining Nooks: Styling the Cozy Corner Trend section 3 interior styling detail" loading="lazy">
@@ -80,18 +69,13 @@ A key tip: keep bulky furniture neutral, and introduce bolder colors in the smal
 
 ## 4. Layer Lighting for Ambiance and Function
 
-
 <figure class="article-section-image">
   <img src="{{ '/assets/img/small-apartment-dining-nooks-cozy-corner-trend/section-4.png' | relative_url }}" alt="Small Apartment Dining Nooks: Styling the Cozy Corner Trend section 4 interior styling detail" loading="lazy">
 </figure>
 
 Lighting sets the mood and usability of your dining nook, so a one-light-fits-all approach rarely works here. Begin with a statement pendant or chandelier centered over the table—this draws the eye and adds a layer of style. Choose fixtures with warm metals like brass or matte black to create contrast and warmth, balancing modern and timeless vibes.
 
-<div class="product-card">
-  <div class="product-title">matte black</div>
-  <p class="product-desc">matte black is a practical way to bring this section's styling direction home while keeping the look cohesive.</p>
-  <a href="https://amzn.to/4dlYlB9" class="product-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
-</div>
+A practical piece for this look is the [matte black](https://amzn.to/4dlYlB9).
 
 Add task lighting nearby if you use the nook for reading or work—consider a slim floor lamp or wall-mounted sconce with an adjustable arm. These light sources can be positioned without eating into floor space.
 
@@ -101,24 +85,15 @@ Layering ambient and task lighting ensures the space can shift from morning coff
 
 ## 5. Optimize Layout with Flexible Seating Options
 
-
 <figure class="article-section-image">
   <img src="{{ '/assets/img/small-apartment-dining-nooks-cozy-corner-trend/section-5.png' | relative_url }}" alt="Small Apartment Dining Nooks: Styling the Cozy Corner Trend section 5 interior styling detail" loading="lazy">
 </figure>
 
 Small apartment dining nooks work best when flexible. Instead of traditional four chairs, consider a built-in bench or banquette along one or two walls. This saves floor space and creates an intimate, casual vibe. Plus, benches often double as extra storage below—a practical bonus.
 
-<div class="product-card">
-  <div class="product-title">built-in bench</div>
-  <p class="product-desc">built-in bench is a practical way to bring this section's styling direction home while keeping the look cohesive.</p>
-  <a href="https://amzn.to/3Ny1uDv" class="product-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
-</div>
+A practical piece for this look is the [built-in bench](https://amzn.to/3Ny1uDv).
 
-<div class="product-card">
-  <div class="product-title">Foldable</div>
-  <p class="product-desc">Foldable is a practical way to bring this section's styling direction home while keeping the look cohesive.</p>
-  <a href="https://amzn.to/47MFw6v" class="product-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
-</div>
+A practical piece for this look is the [Foldable](https://amzn.to/47MFw6v).
 
 If the nook is narrow or oddly shaped, wall-mounted tables that fold down can turn a corridor or corner into a usable dining spot without blocking pathways. When open, they provide enough surface for meals but tuck away cleanly.
 
@@ -129,3 +104,38 @@ The key is to keep circulation smooth—leave enough room for chairs to pull out
 Creating a cozy, stylish dining nook in a small apartment doesn’t have to be a puzzle. Start by choosing a well-scaled table shape, preferably a round or pedestal style that feels open and social. Layer textures with cushions, throws, and rugs to add warmth without clutter. Use color strategically—rich hues to cozy up or soft neutrals to brighten—and keep furniture neutral when possible. Don’t skimp on lighting: mix a statement overhead piece with task sources and make the most of natural daylight. Finally, prioritize flexible seating solutions like benches and movable chairs to maximize space and comfort.
 
 With these five styling strategies, your dining nook will feel both inviting and functional—a cozy corner that makes small apartment living a little more luxurious and a lot more personal.
+
+<section class="shop-the-look" aria-label="Shop the look">
+  <div class="shop-the-look-header">
+    <p class="shop-the-look-kicker">Shop the Look</p>
+    <h2>Bring the Look Home</h2>
+    <p>These are the pieces featured throughout the article, gathered in one place for easy browsing.</p>
+  </div>
+  <div class="shop-the-look-grid">
+  <article class="shop-the-look-item">
+    <h3 class="shop-the-look-title">Round tables</h3>
+    <p class="shop-the-look-desc">Round tables is an easy way to bring this look into your own space.</p>
+    <a href="https://amzn.to/4sc4u7G" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+  </article>
+  <article class="shop-the-look-item">
+    <h3 class="shop-the-look-title">rattan-backed seating</h3>
+    <p class="shop-the-look-desc">rattan-backed seating is an easy way to bring this look into your own space.</p>
+    <a href="https://amzn.to/47MFkUP" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+  </article>
+  <article class="shop-the-look-item">
+    <h3 class="shop-the-look-title">matte black</h3>
+    <p class="shop-the-look-desc">matte black is an easy way to bring this look into your own space.</p>
+    <a href="https://amzn.to/4dlYlB9" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+  </article>
+  <article class="shop-the-look-item">
+    <h3 class="shop-the-look-title">built-in bench</h3>
+    <p class="shop-the-look-desc">built-in bench is an easy way to bring this look into your own space.</p>
+    <a href="https://amzn.to/3Ny1uDv" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+  </article>
+  <article class="shop-the-look-item">
+    <h3 class="shop-the-look-title">Foldable</h3>
+    <p class="shop-the-look-desc">Foldable is an easy way to bring this look into your own space.</p>
+    <a href="https://amzn.to/47MFw6v" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+  </article>
+  </div>
+</section>

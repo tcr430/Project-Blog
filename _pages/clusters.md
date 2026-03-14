@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Clusters
 permalink: /clusters/
 description: Explore topic clusters from The Livin' Edit, including related decor articles grouped into practical hub pages.

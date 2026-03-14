@@ -25,7 +25,6 @@ Below, I share five practical styling strategies to help you master the organic 
 
 ## 1. Ground the Room with a Natural Jute Area Rug
 
-
 <figure class="article-section-image">
   <img src="{{ '/assets/img/organic-modern-living-room/section-1.png' | relative_url }}" alt="Embracing Organic Modern Living Rooms: A Guide to Natural Elegance section 1 interior styling detail" loading="lazy">
 </figure>
@@ -34,14 +33,9 @@ The base of your living room sets the tone. A natural jute area rug is ideal for
 
 When choosing a rug, scale is important. Opt for a size that allows your furniture legs to sit either fully on or fully off the rug to avoid awkward visual breaks. This helps ground conversation areas and ties together pieces like sofas, chairs, and coffee tables cohesively. Layering is possible too — consider a smaller, softer wool or linen rug atop the jute for an inviting softness underfoot.
 
-<div class="product-card">
-  <div class="product-title">Natural Jute Area Rug</div>
-  <p class="product-desc">Natural Jute Area Rug is a practical way to bring this section's styling direction home while keeping the look cohesive.</p>
-  <a href="https://amzn.to/4bJ14mU" class="product-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
-</div>
+A practical piece for this look is the [Natural Jute Area Rug](https://amzn.to/4bJ14mU).
 
 ## 2. Use a Wood and Metal Accent Shelf for Vertical Interest and Balance
-
 
 <figure class="article-section-image">
   <img src="{{ '/assets/img/organic-modern-living-room/section-2.png' | relative_url }}" alt="Embracing Organic Modern Living Rooms: A Guide to Natural Elegance section 2 interior styling detail" loading="lazy">
@@ -53,14 +47,9 @@ Styling this shelf with curated decor—think ceramic vessels, framed art, or gr
 
 Practicality is key: use the shelves not just as display, but for functional storage of favorite books or magazines, which maintains a lived-in warmth.
 
-<div class="product-card">
-  <div class="product-title">Wood and Metal Accent Shelf</div>
-  <p class="product-desc">Wood and Metal Accent Shelf is a practical way to bring this section's styling direction home while keeping the look cohesive.</p>
-  <a href="https://amzn.to/4sImwhB" class="product-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
-</div>
+A practical piece for this look is the [Wood and Metal Accent Shelf](https://amzn.to/4sImwhB).
 
 ## 3. Warm Up Corners with Handcrafted Terracotta Vases
-
 
 <figure class="article-section-image">
   <img src="{{ '/assets/img/organic-modern-living-room/section-3.png' | relative_url }}" alt="Embracing Organic Modern Living Rooms: A Guide to Natural Elegance section 3 interior styling detail" loading="lazy">
@@ -72,14 +61,9 @@ The organic shapes, often imperfect and rounded, bring softness to sharper-lined
 
 Try pairing these vases with dried grasses or simple foliage for an understated dimension that further connects your interior to the natural world.
 
-<div class="product-card">
-  <div class="product-title">Handcrafted Terracotta Vase Set</div>
-  <p class="product-desc">Handcrafted Terracotta Vase Set is a practical way to bring this section's styling direction home while keeping the look cohesive.</p>
-  <a href="https://amzn.to/4urjr7c" class="product-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
-</div>
+A practical piece for this look is the [Handcrafted Terracotta Vase Set](https://amzn.to/4urjr7c).
 
 ## 4. Introduce Warm Metallic Accents with a Brushed Brass Table Lamp
-
 
 <figure class="article-section-image">
   <img src="{{ '/assets/img/organic-modern-living-room/section-4.png' | relative_url }}" alt="Embracing Organic Modern Living Rooms: A Guide to Natural Elegance section 4 interior styling detail" loading="lazy">
@@ -91,14 +75,9 @@ Place the lamp on an oak side table beside a linen sofa to gently catch light an
 
 Its reflective quality contrasts beautifully with matte textures, creating visual interest and helping layers of texture come alive.
 
-<div class="product-card">
-  <div class="product-title">Brushed Brass Table Lamp</div>
-  <p class="product-desc">Brushed Brass Table Lamp is a practical way to bring this section's styling direction home while keeping the look cohesive.</p>
-  <a href="https://amzn.to/3P4rh6N" class="product-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
-</div>
+A practical piece for this look is the [Brushed Brass Table Lamp](https://amzn.to/3P4rh6N).
 
 ## 5. Layer Linen Textured Throw Pillow Covers for Cozy Sophistication
-
 
 <figure class="article-section-image">
   <img src="{{ '/assets/img/organic-modern-living-room/section-5.png' | relative_url }}" alt="Embracing Organic Modern Living Rooms: A Guide to Natural Elegance section 5 interior styling detail" loading="lazy">
@@ -110,11 +89,7 @@ Choose pillows in soft taupe, cream, or muted sage greens—their earthy palette
 
 Group pillows thoughtfully with varying sizes but keep the count moderate to avoid crowding. This allows the gentle creases and weave of the linen to become a design feature that enriches your room’s tactile appeal.
 
-<div class="product-card">
-  <div class="product-title">Linen Textured Throw Pillow Covers</div>
-  <p class="product-desc">Linen Textured Throw Pillow Covers is a practical way to bring this section's styling direction home while keeping the look cohesive.</p>
-  <a href="https://amzn.to/4bmQm4b" class="product-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
-</div>
+A practical piece for this look is the [Linen Textured Throw Pillow Covers](https://amzn.to/4bmQm4b).
 
 ## Conclusion
 
@@ -123,3 +98,38 @@ Nailing the organic modern living room look comes down to thoughtful layering th
 Finally, layer in soft textiles like linen throw pillows to complete the scene with cozy sophistication. Keep the palette muted and natural, textures tactile but understated, and the overall layout airy yet cohesive.
 
 With this checklist, you can create a living room that feels timeless, elegant, and inviting—a true modern sanctuary that honors nature in design.
+
+<section class="shop-the-look" aria-label="Shop the look">
+  <div class="shop-the-look-header">
+    <p class="shop-the-look-kicker">Shop the Look</p>
+    <h2>Bring the Look Home</h2>
+    <p>These are the pieces featured throughout the article, gathered in one place for easy browsing.</p>
+  </div>
+  <div class="shop-the-look-grid">
+  <article class="shop-the-look-item">
+    <h3 class="shop-the-look-title">Natural Jute Area Rug</h3>
+    <p class="shop-the-look-desc">Natural Jute Area Rug is an easy way to bring this look into your own space.</p>
+    <a href="https://amzn.to/4bJ14mU" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+  </article>
+  <article class="shop-the-look-item">
+    <h3 class="shop-the-look-title">Wood and Metal Accent Shelf</h3>
+    <p class="shop-the-look-desc">Wood and Metal Accent Shelf is an easy way to bring this look into your own space.</p>
+    <a href="https://amzn.to/4sImwhB" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+  </article>
+  <article class="shop-the-look-item">
+    <h3 class="shop-the-look-title">Handcrafted Terracotta Vase Set</h3>
+    <p class="shop-the-look-desc">Handcrafted Terracotta Vase Set is an easy way to bring this look into your own space.</p>
+    <a href="https://amzn.to/4urjr7c" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+  </article>
+  <article class="shop-the-look-item">
+    <h3 class="shop-the-look-title">Brushed Brass Table Lamp</h3>
+    <p class="shop-the-look-desc">Brushed Brass Table Lamp is an easy way to bring this look into your own space.</p>
+    <a href="https://amzn.to/3P4rh6N" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+  </article>
+  <article class="shop-the-look-item">
+    <h3 class="shop-the-look-title">Linen Textured Throw Pillow Covers</h3>
+    <p class="shop-the-look-desc">Linen Textured Throw Pillow Covers is an easy way to bring this look into your own space.</p>
+    <a href="https://amzn.to/4bmQm4b" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+  </article>
+  </div>
+</section>

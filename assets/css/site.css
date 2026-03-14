@@ -711,45 +711,83 @@ p {
   margin-top: 0;
 }
 
-.product-card {
-  margin: 1.35rem 0 1.6rem;
-  padding: 1.1rem 1.15rem 1.2rem;
-  border: 1px solid rgba(24, 24, 24, 0.09);
-  border-radius: 18px;
-  background: linear-gradient(180deg, rgba(245, 245, 242, 0.9), rgba(255, 255, 255, 0.98));
-  box-shadow: 0 10px 26px rgba(17, 17, 17, 0.05);
+.shop-the-look {
+  margin: 2.5rem 0 0.5rem;
+  padding: 1.35rem 1.35rem 1.45rem;
+  border: 1px solid rgba(24, 24, 24, 0.08);
+  border-radius: 22px;
+  background: linear-gradient(180deg, rgba(246, 244, 239, 0.7), rgba(255, 255, 255, 0.98));
+  box-shadow: 0 14px 32px rgba(17, 17, 17, 0.05);
 }
 
-.product-title {
-  margin-bottom: 0.45rem;
+.shop-the-look-header {
+  margin-bottom: 1.1rem;
+}
+
+.shop-the-look-kicker {
+  margin: 0 0 0.35rem;
+  color: var(--muted);
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.shop-the-look-header h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.shop-the-look-header p:last-child {
+  margin: 0.45rem 0 0;
+  color: var(--muted);
+  max-width: none;
+}
+
+.shop-the-look-grid {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.shop-the-look-item {
+  padding: 0.95rem 1rem;
+  border: 1px solid rgba(24, 24, 24, 0.07);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.shop-the-look-title {
+  margin: 0 0 0.35rem;
   font-family: "Segoe UI", Arial, sans-serif;
   font-size: 0.98rem;
   font-weight: 700;
   line-height: 1.35;
 }
 
-.product-desc {
-  margin-bottom: 0.9rem;
+.shop-the-look-desc {
+  margin: 0 0 0.8rem;
   color: var(--muted);
-  font-size: 0.96rem;
+  font-size: 0.95rem;
 }
 
-.product-button {
+.shop-the-look-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 42px;
-  padding: 0 1rem;
+  min-height: 40px;
+  padding: 0 0.95rem;
   border-radius: 999px;
+  border: 1px solid rgba(24, 24, 24, 0.12);
   background: var(--ink);
   color: #fff;
   font-family: "Segoe UI", Arial, sans-serif;
-  font-size: 0.86rem;
+  font-size: 0.84rem;
   font-weight: 600;
   text-decoration: none;
 }
 
-.product-button:hover {
+.shop-the-look-button:hover {
   background: #2a2a2a;
 }
 
