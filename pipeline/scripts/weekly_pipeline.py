@@ -12,7 +12,12 @@ from openai import OpenAI
 
 from fetch_products import Product, fetch_products_with_context
 from fetch_trends import fetch_candidate_trends
-from generate_article import generate_article_package_with_report, load_openai_api_key, slugify
+from generate_article import (
+    generate_article_package_with_report,
+    load_openai_api_key,
+    load_products_from_file,
+    slugify,
+)
 from generate_images import generate_and_save_images_with_report
 from generate_weekly_newsletter import generate_weekly_newsletter_draft
 from push_newsletter_to_kit import push_weekly_newsletter_to_kit
@@ -79,6 +84,15 @@ def parse_args() -> argparse.Namespace:
         default=None,
         choices=["mock", "amazon"],
         help="Optional product provider override (default: uses PRODUCT_PROVIDER env var).",
+    )
+    parser.add_argument(
+        "--products-file",
+        type=str,
+        default=None,
+        help=(
+            "Optional JSON file with manually selected product objects. "
+            "If provided, the pipeline uses these products directly and skips provider fetching."
+        ),
     )
     parser.add_argument(
         "--product-strict",
@@ -315,7 +329,15 @@ def fetch_products_for_pipeline(
     trend: str,
     product_provider: str | None,
     product_strict: bool,
+    products_file: str | None = None,
 ) -> tuple[list[Product], str]:
+    manual_products = load_products_from_file(products_file)
+    if manual_products is not None:
+        log_phase("loading manual products")
+        print(f"[products] source: manual products file")
+        print(f"[products] fetched: {len(manual_products)}")
+        return manual_products, "manual products"
+
     log_phase("fetching products")
     product_result = fetch_products_with_context(
         trend=trend,
@@ -447,6 +469,7 @@ def run_manual_mode(args: argparse.Namespace) -> int:
             trend=trend,
             product_provider=args.product_provider,
             product_strict=args.product_strict,
+            products_file=args.products_file,
         )
         post_path, image_paths, _, pinterest_result, cost_report_path = run_pipeline_for_trend(
             trend=trend,
@@ -552,6 +575,7 @@ def run_automatic_mode(args: argparse.Namespace) -> int:
                 trend=trend_keyword,
                 product_provider=args.product_provider,
                 product_strict=args.product_strict,
+                products_file=args.products_file,
             )
             post_path, image_paths, article_slug, pinterest_result, cost_report_path = run_pipeline_for_trend(
                 trend=trend_keyword,

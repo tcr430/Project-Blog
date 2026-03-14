@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --bg: #ffffff;
   --surface: #ffffff;
   --surface-soft: #f5f5f2;
@@ -97,18 +97,19 @@ p {
   display: inline-flex;
   align-items: center;
   line-height: 1;
+  flex-shrink: 0;
 }
 
 .site-logo-image {
   display: block;
-  height: 3rem;
+  height: 3.75rem;
   width: auto;
-  max-width: min(100%, 16.5rem);
+  max-width: min(100%, 18.5rem);
 }
 
 .footer-logo-image {
-  height: 3.4rem;
-  max-width: min(100%, 18rem);
+  height: 4.2rem;
+  max-width: min(100%, 20rem);
 }
 
 .site-nav {
@@ -582,7 +583,7 @@ p {
 .author-badge,
 .author-initials {
   width: 3rem;
-  height: 3rem;
+  height: 3.75rem;
   border-radius: 999px;
   display: grid;
   place-items: center;
