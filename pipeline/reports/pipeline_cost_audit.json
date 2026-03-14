@@ -1,0 +1,446 @@
+{
+  "generated_at": "2026-03-14T20:38:08.070769+00:00",
+  "scope": {
+    "audit_type": "per_article_pipeline_cost",
+    "notes": "Shared weekly tasks are included explicitly. In the current code, they are cost-neutral in API-billing terms because they do not use paid model calls."
+  },
+  "pricing": {
+    "retrieved_at": "2026-03-14",
+    "sources": {
+      "gpt_4_1_mini": "https://platform.openai.com/docs/pricing",
+      "gpt_image_1": "https://openai.com/api/pricing/"
+    },
+    "gpt_4_1_mini": {
+      "input_per_million_usd": 0.4,
+      "output_per_million_usd": 1.6
+    },
+    "gpt_image_1": {
+      "text_input_per_million_usd": 5.0,
+      "image_output_square_low_usd": 0.01,
+      "image_output_square_medium_usd": 0.04,
+      "image_output_square_high_usd": 0.17
+    }
+  },
+  "missing_requested_scripts": [
+    {
+      "script": "pipeline/scripts/validate_article.py",
+      "present": false,
+      "cost_effect": "not_applicable"
+    },
+    {
+      "script": "pipeline/scripts/generate_cluster_hubs.py",
+      "present": false,
+      "cost_effect": "not_applicable"
+    },
+    {
+      "script": "pipeline/scripts/generate_seo_report.py",
+      "present": false,
+      "cost_effect": "not_applicable"
+    }
+  ],
+  "observed_repo_signals": {
+    "recent_article_metadata_samples": 3,
+    "recent_article_package_samples": 2,
+    "recent_cost_report_samples": 2
+  },
+  "stages": [
+    {
+      "stage": "trend_selection_and_keyword_planning",
+      "script": "pipeline/scripts/weekly_pipeline.py, pipeline/scripts/fetch_trends.py, pipeline/scripts/select_trends.py, pipeline/scripts/generate_content_plan.py",
+      "external_cost_source": "none",
+      "estimated_cost_per_article_usd": 0.0,
+      "estimated_worst_case_cost_per_article_usd": 0.0,
+      "status": "cost_neutral",
+      "reason": "Topic selection, keyword targeting, cluster scoring, and content-plan generation are rule-based local operations with no model calls.",
+      "recent_feature_effects": [
+        {
+          "feature": "content planning engine",
+          "effect": "neutral",
+          "reason": "It reuses local cluster metadata and does not call a model."
+        },
+        {
+          "feature": "keyword targeting and topical clusters",
+          "effect": "neutral",
+          "reason": "Selection logic is local; only the article-generation prompt grew slightly."
+        }
+      ]
+    },
+    {
+      "stage": "product_fetching",
+      "script": "pipeline/scripts/fetch_products.py",
+      "external_cost_source": "Amazon PA-API or mock data (no direct usage fee modeled)",
+      "estimated_cost_per_article_usd": 0.0,
+      "estimated_worst_case_cost_per_article_usd": 0.0,
+      "status": "cost_neutral",
+      "reason": "Amazon/mock product fetching uses external APIs or local JSON, but the repo does not indicate a direct per-call usage fee. Operationally important, but treated as $0 marginal cost here.",
+      "recent_feature_effects": [
+        {
+          "feature": "partial affiliate coverage and manual products file support",
+          "effect": "neutral",
+          "reason": "These change behavior and resilience, not direct API spend."
+        }
+      ]
+    },
+    {
+      "stage": "article_generation",
+      "script": "pipeline/scripts/generate_article.py",
+      "model": "gpt-4.1-mini",
+      "external_cost_source": "OpenAI Responses API",
+      "expected_calls_per_article": 2.0,
+      "worst_case_calls_per_article": 3,
+      "estimated_input_tokens_per_call": 2385.67,
+      "estimated_output_tokens_per_call": 2544.5,
+      "estimated_cost_per_call_usd": 0.005,
+      "estimated_cost_per_article_usd": 0.0101,
+      "estimated_worst_case_cost_per_article_usd": 0.0151,
+      "observations": {
+        "average_article_words": 1040.5,
+        "cache_enabled": true,
+        "short_retry_limit": 1,
+        "product_retry_limit": 1
+      },
+      "recent_feature_effects": [
+        {
+          "feature": "keyword targeting and topical cluster context",
+          "effect": "increase",
+          "reason": "Adds prompt tokens to the same article-generation call, but does not add a new call."
+        },
+        {
+          "feature": "FAQ generation",
+          "effect": "increase",
+          "reason": "Adds article body and JSON output size inside the same call."
+        },
+        {
+          "feature": "affiliate card rendering",
+          "effect": "neutral",
+          "reason": "Rendering is local; affiliate product metadata already exists inside the article package flow."
+        }
+      ],
+      "prompt_samples": {
+        "sample_count": 3,
+        "samples": [
+          {
+            "trend": "small apartment dining nook ideas",
+            "system_tokens": 402,
+            "user_tokens": 1977
+          },
+          {
+            "trend": "organic modern living room ideas",
+            "system_tokens": 402,
+            "user_tokens": 1994
+          },
+          {
+            "trend": "linen and boucle decor ideas",
+            "system_tokens": 402,
+            "user_tokens": 1980
+          }
+        ],
+        "average_input_tokens": 2385.67
+      }
+    },
+    {
+      "stage": "basic_article_validation",
+      "script": "pipeline/scripts/generate_article.py",
+      "external_cost_source": "none",
+      "estimated_cost_per_article_usd": 0.0,
+      "estimated_worst_case_cost_per_article_usd": 0.0,
+      "status": "cost_neutral",
+      "reason": "Structure, FAQ, product-link, and reading-time checks are local validation logic inside article generation.",
+      "recent_feature_effects": [
+        {
+          "feature": "FAQ presence checks",
+          "effect": "neutral",
+          "reason": "Validation is local and deterministic."
+        }
+      ]
+    },
+    {
+      "stage": "advanced_seo_validation",
+      "script": "pipeline/scripts/validate_article_seo.py",
+      "external_cost_source": "none",
+      "estimated_cost_per_article_usd": 0.0,
+      "estimated_worst_case_cost_per_article_usd": 0.0,
+      "status": "cost_neutral",
+      "reason": "Cannibalization, semantic coverage, and title checks are all rule-based local comparisons against JSON metadata.",
+      "recent_feature_effects": [
+        {
+          "feature": "SEO validation layer",
+          "effect": "neutral",
+          "reason": "No model call is used; it only compares strings and headings locally."
+        }
+      ]
+    },
+    {
+      "stage": "publishing_and_affiliate_card_rendering",
+      "script": "pipeline/scripts/publish_post.py",
+      "external_cost_source": "none",
+      "estimated_cost_per_article_usd": 0.0,
+      "estimated_worst_case_cost_per_article_usd": 0.0,
+      "status": "cost_neutral",
+      "reason": "Publishing, internal-link surfacing, FAQ extraction, and affiliate-card HTML rendering are local file transformations.",
+      "recent_feature_effects": [
+        {
+          "feature": "affiliate card rendering",
+          "effect": "neutral",
+          "reason": "Cards are rendered from existing metadata and markdown without extra API calls."
+        },
+        {
+          "feature": "FAQ structured data",
+          "effect": "neutral",
+          "reason": "Schema is derived locally from article markdown."
+        }
+      ]
+    },
+    {
+      "stage": "image_generation",
+      "script": "pipeline/scripts/generate_images.py",
+      "model": "gpt-image-1",
+      "external_cost_source": "OpenAI Images API",
+      "expected_calls_per_article": 6.0,
+      "worst_case_calls_per_article": 7,
+      "configured_size": "1536x1024",
+      "configured_mix": {
+        "hero": {
+          "count": 1,
+          "quality": "high",
+          "estimated_cost_each_usd": 0.255
+        },
+        "sections": {
+          "count": 5,
+          "quality": "medium",
+          "estimated_cost_each_usd": 0.06
+        }
+      },
+      "estimated_cost_per_article_usd": 0.555,
+      "estimated_worst_case_cost_per_article_usd": 0.81,
+      "assumptions": {
+        "size_area_factor_vs_1024_square": 1.5,
+        "pricing_basis": "Official square-image pricing scaled by pixel area for 1536x1024 output."
+      },
+      "recent_feature_effects": [
+        {
+          "feature": "improved Pinterest pin templates",
+          "effect": "neutral",
+          "reason": "Pin templates render locally from the hero image and do not add OpenAI image calls."
+        },
+        {
+          "feature": "body section images",
+          "effect": "already accounted",
+          "reason": "This remains the largest direct cost driver because five section images are still generated per article."
+        }
+      ]
+    },
+    {
+      "stage": "image_quality_assurance",
+      "script": "pipeline/scripts/generate_images.py",
+      "model": "gpt-4.1-mini",
+      "external_cost_source": "OpenAI Responses API",
+      "expected_calls_per_article": 1.0,
+      "worst_case_calls_per_article": 2,
+      "estimated_input_tokens_per_call": 3000,
+      "estimated_output_tokens_per_call": 150,
+      "estimated_cost_per_call_usd": 0.0014,
+      "estimated_cost_per_article_usd": 0.0014,
+      "estimated_worst_case_cost_per_article_usd": 0.0029,
+      "assumptions": {
+        "note": "Image-input tokenization for vision QA is approximated as 3,000 input-token equivalents because the repo does not record exact billed image tokens."
+      },
+      "recent_feature_effects": [
+        {
+          "feature": "section-image QA removal",
+          "effect": "decrease",
+          "reason": "Only the hero image still receives a QA model pass."
+        }
+      ]
+    },
+    {
+      "stage": "pinterest_metadata_generation",
+      "script": "pipeline/scripts/generate_pin_metadata.py",
+      "external_cost_source": "none",
+      "estimated_cost_per_article_usd": 0.0,
+      "estimated_worst_case_cost_per_article_usd": 0.0,
+      "status": "cost_neutral",
+      "reason": "Pinterest title/description packaging, board selection, and strategy weighting are local logic.",
+      "recent_feature_effects": [
+        {
+          "feature": "improved Pinterest strategy weighting",
+          "effect": "neutral",
+          "reason": "Variant planning is local and uses saved analytics JSON only."
+        }
+      ]
+    },
+    {
+      "stage": "pinterest_pin_asset_rendering",
+      "script": "pipeline/scripts/generate_pin_assets.py",
+      "external_cost_source": "none",
+      "estimated_cost_per_article_usd": 0.0,
+      "estimated_worst_case_cost_per_article_usd": 0.0,
+      "status": "cost_neutral",
+      "reason": "Branded pin templates are rendered locally as SVGs from the existing hero image; no new image-generation API calls occur.",
+      "recent_feature_effects": [
+        {
+          "feature": "pin templates and branded overlays",
+          "effect": "neutral",
+          "reason": "This added local SVG rendering only."
+        }
+      ]
+    },
+    {
+      "stage": "pinterest_publishing_and_analytics",
+      "script": "pipeline/scripts/publish_pins.py, pipeline/scripts/fetch_pinterest_analytics.py",
+      "external_cost_source": "Pinterest API (no direct usage fee modeled)",
+      "estimated_cost_per_article_usd": 0.0,
+      "estimated_worst_case_cost_per_article_usd": 0.0,
+      "status": "cost_neutral",
+      "reason": "Pinterest publishing and analytics syncing use external APIs but no direct per-request usage fee is modeled in the repo.",
+      "recent_feature_effects": []
+    },
+    {
+      "stage": "newsletter_generation",
+      "script": "pipeline/scripts/generate_weekly_newsletter.py",
+      "external_cost_source": "none",
+      "estimated_cost_per_article_usd": 0.0,
+      "estimated_worst_case_cost_per_article_usd": 0.0,
+      "status": "cost_neutral",
+      "reason": "The weekly newsletter draft is assembled from local article metadata, not generated by a model.",
+      "recent_feature_effects": [
+        {
+          "feature": "newsletter generation",
+          "effect": "neutral",
+          "reason": "This is a local markdown assembly step."
+        }
+      ]
+    },
+    {
+      "stage": "newsletter_push_to_kit",
+      "script": "pipeline/scripts/push_newsletter_to_kit.py",
+      "external_cost_source": "Kit API (no direct usage fee modeled)",
+      "estimated_cost_per_article_usd": 0.0,
+      "estimated_worst_case_cost_per_article_usd": 0.0,
+      "status": "cost_neutral",
+      "reason": "Kit broadcast draft creation is an external API operation but no direct per-call usage fee is modeled.",
+      "recent_feature_effects": []
+    },
+    {
+      "stage": "cluster_reporting_and_pillar_pages",
+      "script": "pipeline/scripts/generate_cluster_report.py, pipeline/scripts/generate_pillar_pages.py",
+      "external_cost_source": "none",
+      "estimated_cost_per_article_usd": 0.0,
+      "estimated_worst_case_cost_per_article_usd": 0.0,
+      "status": "cost_neutral",
+      "reason": "Cluster reports, hub/pillar pages, and article-cluster indexes are generated from local JSON metadata.",
+      "recent_feature_effects": [
+        {
+          "feature": "cluster performance reports",
+          "effect": "neutral",
+          "reason": "These are local JSON summaries."
+        },
+        {
+          "feature": "cluster pillar pages",
+          "effect": "neutral",
+          "reason": "Static markdown pages are generated locally from the cluster index."
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "estimated_direct_cost_per_article_usd": 0.5665,
+    "estimated_direct_worst_case_cost_per_article_usd": 0.828,
+    "largest_cost_driver": "image_generation",
+    "largest_cost_driver_estimated_usd": 0.555
+  },
+  "feature_impact_since_last_audit": [
+    {
+      "feature": "keyword targeting and topical clusters",
+      "change_type": "increase",
+      "magnitude": "small",
+      "reason": "Slightly longer article prompts and article output, but still inside the single article-generation call."
+    },
+    {
+      "feature": "FAQ generation",
+      "change_type": "increase",
+      "magnitude": "small",
+      "reason": "Adds article body length and output JSON size to the same text-generation call."
+    },
+    {
+      "feature": "SEO validation layer",
+      "change_type": "neutral",
+      "magnitude": "none",
+      "reason": "Entirely local rule-based checks."
+    },
+    {
+      "feature": "cluster performance reports, content planning, hub pages, pillar pages",
+      "change_type": "neutral",
+      "magnitude": "none",
+      "reason": "Generated from local metadata and markdown only."
+    },
+    {
+      "feature": "newsletter generation and Kit draft creation",
+      "change_type": "neutral",
+      "magnitude": "none",
+      "reason": "No model calls were added; the draft is assembled locally."
+    },
+    {
+      "feature": "improved Pinterest pin generation and templates",
+      "change_type": "neutral",
+      "magnitude": "none",
+      "reason": "Metadata and branded pin rendering stay local and reuse the hero image."
+    },
+    {
+      "feature": "section-image QA reduction",
+      "change_type": "decrease",
+      "magnitude": "small",
+      "reason": "Only hero images still receive a QA model call."
+    },
+    {
+      "feature": "article and image caching",
+      "change_type": "decrease",
+      "magnitude": "large_on_reruns",
+      "reason": "Reruns can avoid most expensive model and image calls entirely."
+    }
+  ],
+  "comparison_with_previous_audit": {
+    "previous_audit_reference": {
+      "found_in_repo": false,
+      "reference_type": "conversation baseline",
+      "value_usd_per_article": 1.5,
+      "note": "No prior cost audit file was found in the repo. This baseline comes from the earlier project estimate mentioned in the task context."
+    },
+    "current_estimated_cost_per_article_usd": 0.5665,
+    "current_estimated_worst_case_cost_per_article_usd": 0.828,
+    "delta_vs_reference_usd": -0.9335,
+    "summary": "Recent SEO, cluster, newsletter, and Pinterest template additions are mostly cost-neutral because they are local transformations. The main direct spend still comes from one text-generation call plus six image-generation calls."
+  },
+  "optimization_recommendations": [
+    {
+      "priority": "high",
+      "opportunity": "Reduce section image count or make sections conditional on article type.",
+      "reason": "Five medium-quality section images remain the largest marginal cost driver.",
+      "estimated_effect": "Could reduce per-article cost by roughly $0.06 per skipped section image at current settings."
+    },
+    {
+      "priority": "high",
+      "opportunity": "Generate fewer fresh article images for low-priority or experimental posts.",
+      "reason": "Image generation dominates total cost; text generation is comparatively cheap.",
+      "estimated_effect": "A hero-only mode would likely cut fresh-article cost by more than half."
+    },
+    {
+      "priority": "medium",
+      "opportunity": "Track actual token usage from OpenAI responses if the SDK exposes usage consistently for article generation.",
+      "reason": "Current text costs are estimated from prompt/package size, not billed token counts.",
+      "estimated_effect": "Would improve audit accuracy more than it would reduce spend."
+    },
+    {
+      "priority": "medium",
+      "opportunity": "Skip Pinterest analytics sync and summary rebuild on runs where no pins were published.",
+      "reason": "These stages are cost-neutral in API-billing terms but add runtime and external dependency churn.",
+      "estimated_effect": "Operational simplification rather than direct cost savings."
+    },
+    {
+      "priority": "low",
+      "opportunity": "Bundle image QA signals into generation policy only if bad hero acceptance becomes an issue.",
+      "reason": "Hero QA cost is already very small after section QA removal.",
+      "estimated_effect": "Savings are marginal compared with image output costs."
+    }
+  ]
+}

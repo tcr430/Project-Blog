@@ -66,7 +66,27 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add _posts assets/img _data pipeline/data Gemfile _config.yml authors.md blog.md contact.md index.html _layouts _includes
+          git add \
+            _posts \
+            assets/img \
+            assets/pins \
+            _data \
+            clusters \
+            pipeline/data \
+            pipeline/reports \
+            Gemfile \
+            Gemfile.lock \
+            _config.yml \
+            CNAME \
+            robots.txt \
+            sitemap.md \
+            404.html \
+            index.html \
+            _layouts \
+            _includes \
+            _pages \
+            assets/css \
+            assets/js
 
           if git diff --cached --quiet; then
             echo "No generated changes to commit."
@@ -78,6 +98,11 @@ jobs:
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
+
+      - name: Set up Node for Pagefind
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
 
       - name: Set up Ruby for Jekyll build
         uses: ruby/setup-ruby@v1
@@ -94,6 +119,9 @@ jobs:
           bundle exec jekyll build \
             --destination ./_site \
             --config ./_config.yml
+
+      - name: Build Pagefind search index
+        run: npx --yes pagefind@1.1.0 --site ./_site
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

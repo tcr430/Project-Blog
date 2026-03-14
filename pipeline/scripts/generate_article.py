@@ -969,6 +969,7 @@ def normalize_and_validate(
         "slug": slug,
         "meta_description": meta_description,
         "keywords": keywords,
+        "affiliate_products": products[:SECTION_COUNT],
         "primary_keyword": topic_context["primary_keyword"],
         "secondary_keywords": topic_context["secondary_keywords"],
         "topical_cluster": topic_context["trend_cluster"],

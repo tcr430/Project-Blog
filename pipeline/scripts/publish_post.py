@@ -79,6 +79,32 @@ def normalize_string_list(value: Any, field_name: str, expected_count: int) -> l
     return items
 
 
+def normalize_affiliate_products(value: Any) -> list[dict[str, str]]:
+    if not isinstance(value, list):
+        return []
+
+    normalized_products: list[dict[str, str]] = []
+    for item in value:
+        if not isinstance(item, dict):
+            continue
+
+        title = str(item.get("title") or "").strip()
+        affiliate_url = str(item.get("affiliate_url") or "").strip()
+        short_reason = str(item.get("short_reason") or item.get("reason_for_recommendation") or "").strip()
+        if not title or not affiliate_url:
+            continue
+
+        normalized_products.append(
+            {
+                "title": title,
+                "affiliate_url": affiliate_url,
+                "short_reason": short_reason,
+            }
+        )
+
+    return normalized_products
+
+
 def choose_author(slug: str) -> str:
     digest = hashlib.sha256(slug.encode("utf-8")).hexdigest()
     index = int(digest, 16) % len(AUTHOR_IDS)
@@ -174,6 +200,7 @@ def validate_article_package(data: dict[str, Any]) -> dict[str, Any]:
         field_name="pinterest_descriptions",
         expected_count=PINTEREST_ITEM_COUNT,
     )
+    affiliate_products = normalize_affiliate_products(data.get("affiliate_products", []))
 
     if not title:
         raise ValueError("title cannot be empty.")
@@ -219,6 +246,7 @@ def validate_article_package(data: dict[str, Any]) -> dict[str, Any]:
         "section_image_prompts": section_image_prompts,
         "pinterest_titles": pinterest_titles,
         "pinterest_descriptions": pinterest_descriptions,
+        "affiliate_products": affiliate_products,
         "article_markdown": article_markdown,
         "author_id": author_id,
         "author_name": author_name,
@@ -298,6 +326,15 @@ def strip_markdown_formatting(text: str) -> str:
     return normalize_whitespace(cleaned)
 
 
+def strip_affiliate_url_only(text: str) -> str:
+    cleaned = re.sub(r"\[[^\]]+\]\s*\(https?://[^)]+\)", "", text)
+    cleaned = re.sub(r"https?://\S+", "", cleaned)
+    cleaned = cleaned.replace("()", "")
+    cleaned = re.sub(r"\s+([,.;:!?])", r"\1", cleaned)
+    cleaned = re.sub(r"\s{2,}", " ", cleaned)
+    return cleaned.strip(" \t\n-,:;")
+
+
 def extract_faq_items(article_markdown: str) -> list[dict[str, str]]:
     faq_match = re.search(
         r"(?ims)^##\s+(faq|frequently asked questions)\s*$\n(?P<body>.*?)(?=^##\s+|\Z)",
@@ -323,6 +360,95 @@ def extract_faq_items(article_markdown: str) -> list[dict[str, str]]:
         faq_items.append({"question": question_text, "answer": answer_text})
 
     return faq_items[:5]
+
+
+def build_product_card_html(title: str, description: str, affiliate_url: str) -> str:
+    safe_title = yaml_escape(title)
+    safe_description = yaml_escape(description)
+    safe_url = yaml_escape(affiliate_url)
+    return (
+        '<div class="product-card">\n'
+        f'  <div class="product-title">{safe_title}</div>\n'
+        f'  <p class="product-desc">{safe_description}</p>\n'
+        f'  <a href="{safe_url}" class="product-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>\n'
+        "</div>"
+    )
+
+
+def build_product_card_description(
+    product_title: str,
+    product_lookup: dict[str, dict[str, str]],
+    paragraph: str,
+) -> str:
+    product = product_lookup.get(product_title.lower())
+    if product:
+        reason = str(product.get("short_reason") or "").strip()
+        if reason:
+            return reason[0].upper() + reason[1:]
+
+    return f"{product_title} is a practical way to bring this section's styling direction home while keeping the look cohesive."
+
+
+def should_replace_whole_paragraph(paragraph: str) -> bool:
+    normalized = paragraph.strip().lower()
+    affiliate_cues = (
+        "this [",
+        "the [",
+        "consider this [",
+        "a polished way to bring this look home is with [",
+    )
+    return len(normalized) <= 280 or normalized.startswith(affiliate_cues)
+
+
+def convert_affiliate_links_to_product_cards(
+    article_markdown: str,
+    affiliate_products: list[dict[str, str]],
+) -> str:
+    link_pattern = re.compile(r"\[([^\]]+)\]\s*\((https?://[^)]+)\)")
+    product_lookup = {
+        str(product.get("title", "")).strip().lower(): product
+        for product in affiliate_products
+        if str(product.get("title", "")).strip()
+    }
+    paragraphs = article_markdown.split("\n\n")
+    converted_paragraphs: list[str] = []
+    rendered_urls: set[str] = set()
+
+    for paragraph in paragraphs:
+        matches = list(link_pattern.finditer(paragraph))
+        if not matches:
+            converted_paragraphs.append(paragraph)
+            continue
+
+        updated_paragraph = paragraph
+        appended_cards: list[str] = []
+        paragraph_replaced = False
+
+        for match in matches:
+            product_title = strip_markdown_formatting(match.group(1))
+            affiliate_url = match.group(2).strip()
+            if affiliate_url in rendered_urls:
+                updated_paragraph = updated_paragraph.replace(match.group(0), product_title, 1)
+                continue
+
+            description = build_product_card_description(product_title, product_lookup, paragraph)
+            card_html = build_product_card_html(product_title, description, affiliate_url)
+            rendered_urls.add(affiliate_url)
+
+            if should_replace_whole_paragraph(paragraph) and not paragraph_replaced:
+                converted_paragraphs.append(card_html)
+                paragraph_replaced = True
+            else:
+                updated_paragraph = updated_paragraph.replace(match.group(0), product_title, 1)
+                appended_cards.append(card_html)
+
+        if paragraph_replaced:
+            continue
+
+        converted_paragraphs.append(updated_paragraph)
+        converted_paragraphs.extend(appended_cards)
+
+    return "\n\n".join(block.rstrip() for block in converted_paragraphs if block.strip()).strip() + "\n"
 
 
 def strip_section_image_blocks(article_markdown: str) -> str:
@@ -590,6 +716,7 @@ def save_article_metadata(
         "section_image_alts": section_image_alts,
         "pinterest_titles": package["pinterest_titles"],
         "pinterest_descriptions": package["pinterest_descriptions"],
+        "affiliate_products": package.get("affiliate_products", []),
         "article_relative_url": post_relative_url,
         "faq_items": package.get("faq_items", []),
         "post_path": str(post_path),
@@ -604,7 +731,9 @@ def has_affiliate_links(article_markdown: str) -> bool:
 
 
 def count_visible_affiliate_links(article_markdown: str) -> int:
-    return len(re.findall(r"\[[^\]]+\]\(https?://[^)]+\)", article_markdown))
+    markdown_links = len(re.findall(r"\[[^\]]+\]\s*\(https?://[^)]+\)", article_markdown))
+    card_links = len(re.findall(r'class="product-button"[^>]+href="https?://', article_markdown))
+    return markdown_links + card_links
 
 
 def publish_post_from_package_file(package_json_path: str | Path) -> dict[str, Path]:
@@ -623,6 +752,10 @@ def publish_post_from_package_file(package_json_path: str | Path) -> dict[str, P
     markdown_body = strip_leading_title(package["article_markdown"])
     markdown_body = strip_intro_heading(markdown_body)
     markdown_body = strip_section_image_blocks(markdown_body)
+    markdown_body = convert_affiliate_links_to_product_cards(
+        article_markdown=markdown_body,
+        affiliate_products=package.get("affiliate_products", []),
+    )
     markdown_body = markdown_body.rstrip() + "\n"
     faq_items = extract_faq_items(markdown_body)
 

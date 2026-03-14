@@ -6,10 +6,10 @@ from typing import Any
 
 BASE_VARIANT_TYPES = ["trend_overview", "practical_tips", "product_led", "styling_angle"]
 STYLE_OPTIONS = {
-    "trend_overview": ["bottom-panel", "top-band"],
-    "practical_tips": ["center-card", "top-band"],
-    "product_led": ["product-focus", "bottom-panel"],
-    "styling_angle": ["top-band", "center-card"],
+    "trend_overview": ["bottom-title", "top-title"],
+    "practical_tips": ["centered-title", "top-title"],
+    "product_led": ["minimalist-overlay", "bottom-title"],
+    "styling_angle": ["top-title", "centered-title"],
 }
 SUMMARY_PATH = Path(__file__).resolve().parents[1] / "data" / "pinterest_performance_summary.json"
 ARTICLE_SCORES_PATH = Path(__file__).resolve().parents[1] / "data" / "pinterest_article_scores.json"

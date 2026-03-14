@@ -711,6 +711,48 @@ p {
   margin-top: 0;
 }
 
+.product-card {
+  margin: 1.35rem 0 1.6rem;
+  padding: 1.1rem 1.15rem 1.2rem;
+  border: 1px solid rgba(24, 24, 24, 0.09);
+  border-radius: 18px;
+  background: linear-gradient(180deg, rgba(245, 245, 242, 0.9), rgba(255, 255, 255, 0.98));
+  box-shadow: 0 10px 26px rgba(17, 17, 17, 0.05);
+}
+
+.product-title {
+  margin-bottom: 0.45rem;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 0.98rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.product-desc {
+  margin-bottom: 0.9rem;
+  color: var(--muted);
+  font-size: 0.96rem;
+}
+
+.product-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 1rem;
+  border-radius: 999px;
+  background: var(--ink);
+  color: #fff;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 0.86rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.product-button:hover {
+  background: #2a2a2a;
+}
+
 .prose p,
 .prose li {
   max-width: none;
@@ -947,3 +989,186 @@ p {
   margin-bottom: 0;
 }
 
+
+.cluster-listing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.cluster-card h2 {
+  margin-bottom: 0.4rem;
+}
+
+.cluster-card-meta {
+  margin-top: 1rem;
+}
+
+.cluster-empty-state {
+  margin-top: 2rem;
+}
+
+@media (max-width: 720px) {
+  .cluster-listing-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+body.search-open {
+  overflow: hidden;
+}
+
+.search-shell {
+  display: grid;
+  gap: 1.4rem;
+}
+
+.search-page-surface,
+.search-surface {
+  min-height: 12rem;
+}
+
+.search-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+}
+
+.search-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(17, 17, 17, 0.52);
+  backdrop-filter: blur(10px);
+}
+
+.search-modal-dialog {
+  position: relative;
+  width: min(860px, calc(100vw - 1.5rem));
+  margin: 5.5rem auto 0;
+  border: 1px solid rgba(60, 47, 38, 0.12);
+  border-radius: 24px;
+  background: rgba(255, 252, 248, 0.98);
+  box-shadow: 0 30px 90px rgba(17, 17, 17, 0.18);
+  padding: 1.5rem;
+}
+
+.search-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  min-height: 40px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--muted);
+  padding: 0 0.9rem;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.search-modal-intro,
+.search-error {
+  color: var(--muted);
+}
+
+.search-modal .search-surface,
+.search-page-surface {
+  margin-top: 1.25rem;
+}
+
+.pagefind-ui {
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.pagefind-ui__search-input {
+  width: 100%;
+  min-height: 56px;
+  border-radius: 18px;
+  border: 1px solid #d8d8d1;
+  background: #fff;
+  padding: 0 1.1rem;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 1rem;
+  color: var(--ink);
+}
+
+.pagefind-ui__search-input:focus {
+  outline: 2px solid rgba(239, 75, 42, 0.18);
+  border-color: rgba(239, 75, 42, 0.42);
+}
+
+.pagefind-ui__drawer {
+  margin-top: 1rem;
+}
+
+.pagefind-ui__message {
+  color: var(--muted);
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 0.95rem;
+}
+
+.pagefind-ui__results {
+  display: grid;
+  gap: 1rem;
+}
+
+.pagefind-ui__result {
+  padding: 1.15rem 1.2rem;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 14px 28px rgba(17, 17, 17, 0.04);
+}
+
+.pagefind-ui__result-link,
+.pagefind-ui__result-title {
+  color: var(--ink);
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 1.08rem;
+  font-weight: 700;
+}
+
+.pagefind-ui__result-excerpt {
+  margin-top: 0.55rem;
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.pagefind-ui__result mark,
+.pagefind-ui__result-excerpt mark,
+.pagefind-ui__button mark {
+  background: rgba(239, 75, 42, 0.14);
+  color: inherit;
+  padding: 0 0.15rem;
+  border-radius: 0.2rem;
+}
+
+.pagefind-ui__button {
+  min-height: 44px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  padding: 0 1rem;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 0.92rem;
+}
+
+.pagefind-ui__result-thumb {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .search-modal-dialog {
+    width: min(100vw - 1rem, 100%);
+    margin-top: 4.5rem;
+    border-radius: 20px;
+    padding: 1.1rem;
+  }
+}

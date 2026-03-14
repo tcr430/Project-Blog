@@ -23,7 +23,9 @@ from generate_weekly_newsletter import generate_weekly_newsletter_draft
 from push_newsletter_to_kit import push_weekly_newsletter_to_kit
 from generate_weekly_report import build_weekly_report
 from generate_cluster_report import build_cluster_intelligence_outputs
-from generate_cluster_pages import build_cluster_pages
+from generate_pillar_pages import build_pillar_pages
+from generate_content_plan import build_content_plan_outputs, select_topic_candidates_from_plan
+from validate_article_seo import validate_article_seo, write_validation_report
 from fetch_pinterest_analytics import should_sync_pinterest_analytics, sync_pinterest_analytics
 from generate_pin_assets import generate_pin_assets
 from pinterest_performance_summary import build_performance_summary
@@ -42,6 +44,8 @@ from trend_history import DEFAULT_NON_SEASONAL_COOLDOWN_DAYS, add_trend_entry
 
 PINTEREST_VARIANT_COUNT = 4
 COST_REPORTS_DIR = Path(__file__).resolve().parents[1] / "data" / "cost_reports"
+SEO_VALIDATION_REPORT_PATH = Path(__file__).resolve().parents[1] / "reports" / "article_seo_validation_report.json"
+CONTENT_PLAN_REPORT_PATH = Path(__file__).resolve().parents[1] / "reports" / "content_plan.json"
 
 
 def log_phase(message: str) -> None:
@@ -131,6 +135,11 @@ def parse_args() -> argparse.Namespace:
             f"(default: {DEFAULT_NON_SEASONAL_COOLDOWN_DAYS})."
         ),
     )
+    parser.add_argument(
+        "--use-content-plan",
+        action="store_true",
+        help="Use the generated content plan as the first source of automatic topic candidates.",
+    )
     return parser.parse_args()
 
 
@@ -214,6 +223,49 @@ def run_generate_step(
         topic_context=topic_context,
         products=products,
     )
+
+
+def run_seo_validation_step(project_root: Path, article_package: dict[str, Any]) -> dict[str, Any]:
+    log_phase("running advanced seo validation")
+    cluster_index_path = project_root / "pipeline" / "data" / "article_cluster_index.json"
+    cluster_report_path = project_root / "pipeline" / "data" / "keyword_cluster_report.json"
+    trend_history_path = project_root / "pipeline" / "data" / "trend_history.json"
+
+    existing_index_data: dict[str, Any] = {"articles": []}
+    if cluster_index_path.exists():
+        raw_index = cluster_index_path.read_text(encoding="utf-8-sig").strip()
+        if raw_index:
+            existing_index_data = json.loads(raw_index)
+
+    cluster_report_data: dict[str, Any] = {"clusters": []}
+    if cluster_report_path.exists():
+        raw_report = cluster_report_path.read_text(encoding="utf-8-sig").strip()
+        if raw_report:
+            cluster_report_data = json.loads(raw_report)
+
+    trend_history_data: dict[str, Any] = {"entries": []}
+    if trend_history_path.exists():
+        raw_history = trend_history_path.read_text(encoding="utf-8-sig").strip()
+        if raw_history:
+            trend_history_data = json.loads(raw_history)
+
+    result = validate_article_seo(
+        article_package=article_package,
+        existing_index_data=existing_index_data,
+        cluster_report_data=cluster_report_data,
+        trend_history_data=trend_history_data,
+    )
+    report_path = write_validation_report(SEO_VALIDATION_REPORT_PATH, result)
+    print(f"[seo] article validation: {result['validation_status']} ({report_path})")
+    for warning in result.get("warnings", []):
+        print(f"[seo][warning] {warning}")
+
+    if result["validation_status"] == "fail":
+        raise RuntimeError(
+            "Advanced SEO validation failed: " + "; ".join(result.get("errors", []))
+        )
+
+    return result
 
 
 def run_publish_step(project_root: Path, package_json_path: Path) -> tuple[Path, Path]:
@@ -391,6 +443,8 @@ def run_pipeline_for_trend(
         f"visible affiliate links: {article_report.get('generated_link_count', 0)}"
     )
 
+    seo_validation_result = run_seo_validation_step(project_root=project_root, article_package=article_package)
+
     log_phase("saving temporary article package")
     slug = slugify(str(article_package.get("slug") or article_package.get("title") or "decor-article"))
     package_json_path = build_temp_json_path(project_root=project_root, slug=slug)
@@ -414,6 +468,7 @@ def run_pipeline_for_trend(
             "trend": trend,
             "slug": slug,
             "article_generation": article_report,
+            "seo_validation": seo_validation_result,
             "image_generation": image_report,
             "pinterest": {
                 "variants_requested": PINTEREST_VARIANT_COUNT,
@@ -426,26 +481,19 @@ def run_pipeline_for_trend(
     return post_path, image_paths, slug, pinterest_result, cost_report_path
 
 
-def select_automatic_trends(
-    candidates_file: Path | None,
-    trend_source: str,
+def finalize_selected_trends(
+    raw_candidates: list[dict[str, Any]],
+    history_path: Path,
     top_trends: int,
     cooldown_days: int,
 ) -> list[dict[str, Any]]:
-    history_path = Path(__file__).resolve().parents[1] / "data" / "trend_history.json"
-
-    log_phase("selecting trends: fetching candidates")
-    raw_candidates = fetch_candidate_trends(candidates_file=candidates_file, source=trend_source)
-    if not raw_candidates:
-        raise RuntimeError("No candidate trends were fetched.")
-
     log_phase("selecting trends: normalizing candidates")
     normalized = normalize_candidates([dict(item) for item in raw_candidates])
 
     log_phase("selecting trends: filtering invalid and duplicate candidates")
     valid_unique = reject_invalid_and_duplicates(normalized)
     if not valid_unique:
-        raise RuntimeError("No valid candidate trends remained after normalization and deduplication.")
+        return []
 
     log_phase("selecting trends: filtering repeats from trend history")
     allowed = filter_recently_used(
@@ -455,11 +503,65 @@ def select_automatic_trends(
         cooldown_days=cooldown_days,
     )
     if not allowed:
-        raise RuntimeError("No candidate trends remained after trend history filtering.")
+        return []
 
     log_phase("selecting trends: scoring and selecting top trends")
     scored = score_candidates(allowed)
-    selected = select_diverse_top_trends(scored, top_n=top_trends)
+    return select_diverse_top_trends(scored, top_n=top_trends)
+
+
+def select_automatic_trends(
+    candidates_file: Path | None,
+    trend_source: str,
+    top_trends: int,
+    cooldown_days: int,
+    use_content_plan: bool = False,
+) -> list[dict[str, Any]]:
+    history_path = Path(__file__).resolve().parents[1] / "data" / "trend_history.json"
+
+    raw_candidates: list[dict[str, Any]] | None = None
+    project_root = Path(__file__).resolve().parents[2]
+
+    if use_content_plan:
+        log_phase("selecting trends: building content plan candidates")
+        plan_result = build_content_plan_outputs(
+            cluster_index_path=project_root / "pipeline" / "data" / "article_cluster_index.json",
+            cluster_report_path=project_root / "pipeline" / "data" / "keyword_cluster_report.json",
+            output_path=CONTENT_PLAN_REPORT_PATH,
+        )
+        planned_candidates = select_topic_candidates_from_plan(plan_result["plan"], limit=max(top_trends * 3, top_trends))
+        if planned_candidates:
+            raw_candidates = [dict(item) for item in planned_candidates]
+            print(f"[plan] using {len(raw_candidates)} planned topic candidate(s)")
+        else:
+            print("[plan] no content-plan candidates available; falling back to trend fetch")
+
+    if raw_candidates is None:
+        log_phase("selecting trends: fetching candidates")
+        raw_candidates = fetch_candidate_trends(candidates_file=candidates_file, source=trend_source)
+        if not raw_candidates:
+            raise RuntimeError("No candidate trends were fetched.")
+
+    selected = finalize_selected_trends(
+        raw_candidates=raw_candidates,
+        history_path=history_path,
+        top_trends=top_trends,
+        cooldown_days=cooldown_days,
+    )
+
+    if not selected and use_content_plan:
+        print("[plan] planned candidates were exhausted by validation/history filters; falling back to trend fetch")
+        log_phase("selecting trends: fetching fallback candidates")
+        fallback_candidates = fetch_candidate_trends(candidates_file=candidates_file, source=trend_source)
+        if not fallback_candidates:
+            raise RuntimeError("No candidate trends were fetched.")
+        selected = finalize_selected_trends(
+            raw_candidates=fallback_candidates,
+            history_path=history_path,
+            top_trends=top_trends,
+            cooldown_days=cooldown_days,
+        )
+
     if not selected:
         raise RuntimeError("No trends were selected.")
 
@@ -517,6 +619,7 @@ def run_manual_mode(args: argparse.Namespace) -> int:
         newsletter_path, kit_result = run_newsletter_step(project_root)
         run_report_step(project_root)
         run_seo_intelligence_step(project_root)
+        run_content_plan_step(project_root)
         run_cluster_pages_step(project_root)
         print(f"Newsletter draft: {newsletter_path}")
         if kit_result and kit_result.get("sidecar_path"):
@@ -579,15 +682,25 @@ def run_seo_intelligence_step(project_root: Path) -> dict[str, Any]:
     return result
 
 
-def run_cluster_pages_step(project_root: Path) -> dict[str, Any]:
-    log_phase("generating cluster hub pages")
-    result = build_cluster_pages(
+def run_content_plan_step(project_root: Path) -> dict[str, Any]:
+    log_phase("generating content plan")
+    result = build_content_plan_outputs(
         cluster_index_path=project_root / "pipeline" / "data" / "article_cluster_index.json",
         cluster_report_path=project_root / "pipeline" / "data" / "keyword_cluster_report.json",
-        output_dir=project_root / "clusters",
-        min_articles=3,
+        output_path=CONTENT_PLAN_REPORT_PATH,
     )
-    print(f"[seo] cluster hub pages: {result['generated_count']} generated, {result['removed_count']} removed")
+    print(f"[plan] content plan: {result['output_path']}")
+    return result
+
+
+def run_cluster_pages_step(project_root: Path) -> dict[str, Any]:
+    log_phase("generating cluster pillar pages")
+    result = build_pillar_pages(
+        cluster_index_path=project_root / "pipeline" / "data" / "article_cluster_index.json",
+        output_dir=project_root / "clusters",
+        min_articles=1,
+    )
+    print(f"[seo] cluster pillar pages: {result['generated_count']} generated, {result['removed_count']} removed")
     return result
 
 
@@ -605,6 +718,7 @@ def run_automatic_mode(args: argparse.Namespace) -> int:
             trend_source=args.trend_source,
             top_trends=args.top_trends,
             cooldown_days=args.cooldown_days,
+            use_content_plan=args.use_content_plan,
         )
 
         generated_posts: list[Path] = []
@@ -662,6 +776,7 @@ def run_automatic_mode(args: argparse.Namespace) -> int:
         newsletter_path, kit_result = run_newsletter_step(project_root)
         run_report_step(project_root)
         run_seo_intelligence_step(project_root)
+        run_content_plan_step(project_root)
         run_cluster_pages_step(project_root)
         print(f"Newsletter draft: {newsletter_path}")
         if kit_result and kit_result.get("sidecar_path"):

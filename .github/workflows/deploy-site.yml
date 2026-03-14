@@ -25,6 +25,11 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
+      - name: Set up Node for Pagefind
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -40,6 +45,9 @@ jobs:
           bundle exec jekyll build \
             --destination ./_site \
             --config ./_config.yml
+
+      - name: Build Pagefind search index
+        run: npx --yes pagefind@1.1.0 --site ./_site
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

@@ -1,8 +1,11 @@
 ﻿<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en" }}">
+<html lang="{{ site.lang | default: "en" }}" data-site-root="{{ '/' | relative_url }}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% if site.google_site_verification %}
+    <meta name="google-site-verification" content="{{ site.google_site_verification }}">
+    {% endif %}
     {% seo %}
     {% if page.noindex %}
     <meta name="robots" content="noindex, nofollow">
@@ -10,12 +13,23 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8952740060272084"
      crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+    <script defer src="{{ '/assets/js/site-search.js' | relative_url }}"></script>
   </head>
   <body class="page-{{ page.layout | default: 'default' }}">
     {% include site_header.html %}
-    <main class="site-main">
+    <main class="site-main"{% if page.noindex or page.search_exclude %}{% else %} data-pagefind-body{% endif %}>
       {{ content }}
     </main>
+    <div class="search-modal" id="site-search-modal" hidden data-search-modal data-pagefind-ignore>
+      <div class="search-modal-backdrop" data-search-close></div>
+      <div class="search-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="site-search-modal-title">
+        <button class="search-modal-close" type="button" aria-label="Close search" data-search-close>Close</button>
+        <p class="eyebrow-label">Site Search</p>
+        <h2 id="site-search-modal-title">Search The Livin' Edit</h2>
+        <p class="search-modal-intro">Find decor guides, room ideas, materials, and styling notes without leaving the page.</p>
+        <div class="search-surface" data-search-surface data-pagefind-ignore></div>
+      </div>
+    </div>
     {% include site_footer.html %}
   </body>
 </html>

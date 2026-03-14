@@ -1,27 +1,55 @@
 {
-  "generated_at": "2026-03-14T15:21:02.849549+00:00",
-  "cluster_count": 1,
+  "generated_at": "2026-03-14T19:59:07.170479+00:00",
+  "cluster_count": 3,
   "article_count": 3,
   "clusters": [
     {
-      "cluster_name": "uncategorized",
-      "article_count": 3,
+      "cluster_name": "linen and boucle styling",
+      "article_count": 1,
       "primary_keywords_used": [
-        "small-apartment-dining-nooks-cozy-corner-trend",
-        "organic-modern-living-room",
-        "linen-boucle-texture-mix"
+        "linen and boucle decor ideas"
       ],
       "latest_article_date": "2026-03-13",
       "representative_article_slugs": [
-        "small-apartment-dining-nooks-cozy-corner-trend",
-        "organic-modern-living-room",
         "linen-boucle-texture-mix"
       ],
-      "recent_article_count": 3,
-      "internal_link_targets_available": 2,
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
-      "status": "growing"
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_name": "organic modern living room",
+      "article_count": 1,
+      "primary_keywords_used": [
+        "organic modern living room ideas"
+      ],
+      "latest_article_date": "2026-03-13",
+      "representative_article_slugs": [
+        "organic-modern-living-room"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_name": "small dining nook",
+      "article_count": 1,
+      "primary_keywords_used": [
+        "small apartment dining nook ideas"
+      ],
+      "latest_article_date": "2026-03-13",
+      "representative_article_slugs": [
+        "small-apartment-dining-nooks-cozy-corner-trend"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "status": "underdeveloped"
     }
   ]
 }

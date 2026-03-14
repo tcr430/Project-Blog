@@ -4,11 +4,9 @@ permalink: /search/
 description: Search The Livin' Edit for decor posts, room ideas, materials, and trend notes.
 noindex: true
 sitemap: false
+search_exclude: true
 ---
-<div class="search-shell">
-  <p class="page-intro">Search is not connected to a backend yet, but the UI is ready for a future client-side or hosted search integration.</p>
-  <form class="search-placeholder" action="#" method="get">
-    <input type="search" placeholder="Search posts, rooms, materials, and trends" aria-label="Search posts">
-    <button type="submit">Search</button>
-  </form>
+<div class="search-shell" data-search-page>
+  <p class="page-intro">Search posts and pages across The Livin' Edit for styling guides, room ideas, and practical decor advice.</p>
+  <div class="search-page-surface" data-search-surface data-pagefind-ignore></div>
 </div>
