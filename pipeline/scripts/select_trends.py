@@ -14,6 +14,10 @@ from trend_history import DEFAULT_NON_SEASONAL_COOLDOWN_DAYS, is_trend_allowed
 class TrendCandidate(TypedDict):
     trend_cluster: str
     trend_keyword: str
+    primary_keyword: str
+    secondary_keywords: list[str]
+    cluster_keywords: list[str]
+    search_intent: str
     season: str
     holiday: str
     source: str
@@ -41,6 +45,10 @@ DECOR_KEYWORDS = {
 }
 
 USEFULNESS_HINTS = {
+    "how",
+    "best",
+    "compare",
+    "comparison",
     "small",
     "budget",
     "storage",
@@ -94,13 +102,35 @@ def normalize_text(value: Any) -> str:
 def normalize_candidate(raw: dict[str, Any]) -> TrendCandidate:
     keyword = normalize_text(raw.get("trend_keyword", ""))
     cluster = normalize_text(raw.get("trend_cluster", "")) or keyword
+    primary_keyword = normalize_text(raw.get("primary_keyword", "")) or keyword
     season = normalize_text(raw.get("season", ""))
     holiday = normalize_text(raw.get("holiday", ""))
     source = normalize_text(raw.get("source", "")) or "unknown"
+    search_intent = normalize_text(raw.get("search_intent", "")) or "styling_advice"
+
+    secondary_keywords_raw = raw.get("secondary_keywords", [])
+    cluster_keywords_raw = raw.get("cluster_keywords", [])
+
+    secondary_keywords = (
+        [normalize_text(item) for item in secondary_keywords_raw if normalize_text(item)]
+        if isinstance(secondary_keywords_raw, list)
+        else []
+    )
+    cluster_keywords = (
+        [normalize_text(item) for item in cluster_keywords_raw if normalize_text(item)]
+        if isinstance(cluster_keywords_raw, list)
+        else []
+    )
+    if not cluster_keywords:
+        cluster_keywords = [primary_keyword, *secondary_keywords]
 
     return {
         "trend_cluster": cluster,
         "trend_keyword": keyword,
+        "primary_keyword": primary_keyword,
+        "secondary_keywords": secondary_keywords,
+        "cluster_keywords": cluster_keywords,
+        "search_intent": search_intent,
         "season": season,
         "holiday": holiday,
         "source": source,
@@ -179,7 +209,7 @@ def score_candidate(candidate: TrendCandidate) -> tuple[int, list[str]]:
     score += 40
     notes.append("novelty: eligible by history rules (+40)")
 
-    keyword_words = [word for word in candidate["trend_keyword"].split() if word]
+    keyword_words = [word for word in candidate["primary_keyword"].split() if word]
     if 3 <= len(keyword_words) <= 6:
         score += 20
         notes.append("specificity: clear multi-word topic (+20)")
@@ -187,7 +217,13 @@ def score_candidate(candidate: TrendCandidate) -> tuple[int, list[str]]:
         score += 10
         notes.append("specificity: acceptable topic detail (+10)")
 
-    joined = f"{candidate['trend_cluster']} {candidate['trend_keyword']}"
+    joined = " ".join(
+        [
+            candidate["trend_cluster"],
+            candidate["primary_keyword"],
+            *candidate["secondary_keywords"],
+        ]
+    )
     decor_hits = sum(1 for token in DECOR_KEYWORDS if token in joined)
     decor_points = min(20, decor_hits * 5)
     score += decor_points
@@ -197,6 +233,27 @@ def score_candidate(candidate: TrendCandidate) -> tuple[int, list[str]]:
     usefulness_points = min(20, usefulness_hits * 5)
     score += usefulness_points
     notes.append(f"article usefulness: practical angle signals (+{usefulness_points})")
+
+    intent = candidate["search_intent"]
+    if intent == "how_to":
+        score += 18
+        notes.append("search intent: strong how-to query (+18)")
+    elif intent == "problem_solution":
+        score += 16
+        notes.append("search intent: problem-solution phrasing (+16)")
+    elif intent == "comparison":
+        score += 14
+        notes.append("search intent: comparison/commercial investigation (+14)")
+    elif intent == "ideas":
+        score += 12
+        notes.append("search intent: idea-led search phrasing (+12)")
+    else:
+        score += 8
+        notes.append("search intent: styling advice phrasing (+8)")
+
+    secondary_keyword_bonus = min(10, len(candidate["secondary_keywords"]) * 2)
+    score += secondary_keyword_bonus
+    notes.append(f"cluster support: related supporting keywords (+{secondary_keyword_bonus})")
 
     if candidate["season"] or candidate["holiday"]:
         score += 5
@@ -219,6 +276,33 @@ def score_candidates(candidates: list[TrendCandidate]) -> list[ScoredTrend]:
         )
 
     return sorted(scored, key=lambda item: (-item["score"], item["trend_keyword"]))
+
+
+def select_diverse_top_trends(scored_candidates: list[ScoredTrend], top_n: int) -> list[ScoredTrend]:
+    if top_n <= 0:
+        return []
+
+    selected: list[ScoredTrend] = []
+    used_clusters: set[str] = set()
+    remaining: list[ScoredTrend] = []
+
+    for candidate in scored_candidates:
+        cluster = candidate["trend_cluster"]
+        if cluster in used_clusters:
+            remaining.append(candidate)
+            continue
+
+        selected.append(candidate)
+        used_clusters.add(cluster)
+        if len(selected) >= top_n:
+            return selected
+
+    for candidate in remaining:
+        if len(selected) >= top_n:
+            break
+        selected.append(candidate)
+
+    return selected
 
 
 def select_top_trends(
@@ -244,7 +328,7 @@ def select_top_trends(
     )
 
     scored = score_candidates(allowed)
-    return scored[:top_n]
+    return select_diverse_top_trends(scored, top_n=top_n)
 
 
 def load_candidates_from_file(candidates_file: Path) -> list[dict[str, Any]]:

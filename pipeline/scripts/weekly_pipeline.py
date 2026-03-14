@@ -22,6 +22,8 @@ from generate_images import generate_and_save_images_with_report
 from generate_weekly_newsletter import generate_weekly_newsletter_draft
 from push_newsletter_to_kit import push_weekly_newsletter_to_kit
 from generate_weekly_report import build_weekly_report
+from generate_cluster_report import build_cluster_intelligence_outputs
+from generate_cluster_pages import build_cluster_pages
 from fetch_pinterest_analytics import should_sync_pinterest_analytics, sync_pinterest_analytics
 from generate_pin_assets import generate_pin_assets
 from pinterest_performance_summary import build_performance_summary
@@ -33,7 +35,9 @@ from select_trends import (
     normalize_candidates,
     reject_invalid_and_duplicates,
     score_candidates,
+    select_diverse_top_trends,
 )
+from topic_clusters import TopicCandidate, build_manual_topic_candidate
 from trend_history import DEFAULT_NON_SEASONAL_COOLDOWN_DAYS, add_trend_entry
 
 PINTEREST_VARIANT_COUNT = 4
@@ -197,6 +201,7 @@ def write_cost_report(output_path: Path, payload: dict[str, Any]) -> Path:
 def run_generate_step(
     trend: str,
     model: str,
+    topic_context: TopicCandidate,
     products: list[Product],
 ) -> tuple[dict[str, Any], dict[str, Any]]:
     log_phase("generating article")
@@ -206,6 +211,7 @@ def run_generate_step(
         client=client,
         trend=trend,
         model=model,
+        topic_context=topic_context,
         products=products,
     )
 
@@ -363,6 +369,7 @@ def fetch_products_for_pipeline(
 
 def run_pipeline_for_trend(
     trend: str,
+    topic_context: TopicCandidate,
     model: str,
     image_model: str,
     image_size: str,
@@ -371,9 +378,15 @@ def run_pipeline_for_trend(
 ) -> tuple[Path, list[Path], str, dict[str, Any] | None, Path]:
     project_root = Path(__file__).resolve().parents[2]
 
-    article_package, article_report = run_generate_step(trend=trend, model=model, products=products)
+    article_package, article_report = run_generate_step(
+        trend=trend,
+        model=model,
+        topic_context=topic_context,
+        products=products,
+    )
     print(
         f"[article] mode: {'affiliate-enabled' if article_report.get('affiliate_mode') else 'editorial-only'}; "
+        f"primary keyword: {article_report.get('primary_keyword', topic_context['primary_keyword'])}; "
         f"products passed: {article_report.get('selected_products', 0)}; "
         f"visible affiliate links: {article_report.get('generated_link_count', 0)}"
     )
@@ -446,7 +459,7 @@ def select_automatic_trends(
 
     log_phase("selecting trends: scoring and selecting top trends")
     scored = score_candidates(allowed)
-    selected = scored[:top_trends]
+    selected = select_diverse_top_trends(scored, top_n=top_trends)
     if not selected:
         raise RuntimeError("No trends were selected.")
 
@@ -465,6 +478,7 @@ def run_manual_mode(args: argparse.Namespace) -> int:
     try:
         log_phase("selecting trends: manual input")
         print(f"[manual] running pipeline for trend: {trend}")
+        topic_context = build_manual_topic_candidate(trend)
         products, source_label = fetch_products_for_pipeline(
             trend=trend,
             product_provider=args.product_provider,
@@ -473,6 +487,7 @@ def run_manual_mode(args: argparse.Namespace) -> int:
         )
         post_path, image_paths, _, pinterest_result, cost_report_path = run_pipeline_for_trend(
             trend=trend,
+            topic_context=topic_context,
             model=args.model,
             image_model=args.image_model,
             image_size=args.image_size,
@@ -501,6 +516,8 @@ def run_manual_mode(args: argparse.Namespace) -> int:
         project_root = Path(__file__).resolve().parents[2]
         newsletter_path, kit_result = run_newsletter_step(project_root)
         run_report_step(project_root)
+        run_seo_intelligence_step(project_root)
+        run_cluster_pages_step(project_root)
         print(f"Newsletter draft: {newsletter_path}")
         if kit_result and kit_result.get("sidecar_path"):
             print(f"Kit newsletter metadata: {kit_result['sidecar_path']}")
@@ -549,6 +566,31 @@ def run_report_step(project_root: Path) -> Path:
     return report_path
 
 
+def run_seo_intelligence_step(project_root: Path) -> dict[str, Any]:
+    log_phase("building seo cluster intelligence")
+    result = build_cluster_intelligence_outputs(
+        metadata_dir=project_root / "_data" / "article_metadata",
+        pinterest_summary_path=project_root / "pipeline" / "data" / "pinterest_performance_summary.json",
+        cluster_report_path=project_root / "pipeline" / "data" / "keyword_cluster_report.json",
+        cluster_index_path=project_root / "pipeline" / "data" / "article_cluster_index.json",
+    )
+    print(f"[seo] keyword cluster report: {result['cluster_report_path']}")
+    print(f"[seo] article cluster index: {result['cluster_index_path']}")
+    return result
+
+
+def run_cluster_pages_step(project_root: Path) -> dict[str, Any]:
+    log_phase("generating cluster hub pages")
+    result = build_cluster_pages(
+        cluster_index_path=project_root / "pipeline" / "data" / "article_cluster_index.json",
+        cluster_report_path=project_root / "pipeline" / "data" / "keyword_cluster_report.json",
+        output_dir=project_root / "clusters",
+        min_articles=3,
+    )
+    print(f"[seo] cluster hub pages: {result['generated_count']} generated, {result['removed_count']} removed")
+    return result
+
+
 def run_automatic_mode(args: argparse.Namespace) -> int:
     if args.top_trends <= 0:
         print("Error: --top-trends must be greater than zero.", file=sys.stderr)
@@ -579,6 +621,7 @@ def run_automatic_mode(args: argparse.Namespace) -> int:
             )
             post_path, image_paths, article_slug, pinterest_result, cost_report_path = run_pipeline_for_trend(
                 trend=trend_keyword,
+                topic_context=trend_item,
                 model=args.model,
                 image_model=args.image_model,
                 image_size=args.image_size,
@@ -618,6 +661,8 @@ def run_automatic_mode(args: argparse.Namespace) -> int:
         project_root = Path(__file__).resolve().parents[2]
         newsletter_path, kit_result = run_newsletter_step(project_root)
         run_report_step(project_root)
+        run_seo_intelligence_step(project_root)
+        run_cluster_pages_step(project_root)
         print(f"Newsletter draft: {newsletter_path}")
         if kit_result and kit_result.get("sidecar_path"):
             print(f"Kit newsletter metadata: {kit_result['sidecar_path']}")

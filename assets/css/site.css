@@ -897,3 +897,53 @@ p {
     padding: 1rem;
   }
 }
+
+.article-related-topic {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(60, 47, 38, 0.12);
+}
+
+.article-related-topic .popular-list {
+  margin-top: 1rem;
+}
+
+
+.cluster-shell {
+  max-width: 76rem;
+}
+
+.cluster-dek {
+  max-width: 52rem;
+  color: var(--muted);
+}
+
+.cluster-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.cluster-intro {
+  margin-bottom: 2rem;
+}
+
+.cluster-content h2 {
+  margin-top: 2rem;
+}
+
+.article-cluster-backlink {
+  margin: 1.5rem 0 2rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid rgba(60, 47, 38, 0.12);
+  border-radius: 1rem;
+  background: rgba(250, 247, 242, 0.9);
+}
+
+.article-cluster-backlink p:last-child {
+  margin-bottom: 0;
+}
+

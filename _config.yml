@@ -34,7 +34,6 @@ exclude:
   - node_modules
   - vendor
   - pipeline
-  - pipeline
 buy_me_a_coffee_url: "https://buymeacoffee.com/thelivinedit"
 newsletter_email: "thelivinedit@proton.me"
 affiliate_disclosure_text: "This article may contain affiliate links. If you buy through them, The Livin' Edit may earn a small commission at no extra cost to you."

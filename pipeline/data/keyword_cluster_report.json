@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-03-14T15:21:02.849549+00:00",
+  "cluster_count": 1,
+  "article_count": 3,
+  "clusters": [
+    {
+      "cluster_name": "uncategorized",
+      "article_count": 3,
+      "primary_keywords_used": [
+        "small-apartment-dining-nooks-cozy-corner-trend",
+        "organic-modern-living-room",
+        "linen-boucle-texture-mix"
+      ],
+      "latest_article_date": "2026-03-13",
+      "representative_article_slugs": [
+        "small-apartment-dining-nooks-cozy-corner-trend",
+        "organic-modern-living-room",
+        "linen-boucle-texture-mix"
+      ],
+      "recent_article_count": 3,
+      "internal_link_targets_available": 2,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "status": "growing"
+    }
+  ]
+}

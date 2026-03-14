@@ -14,6 +14,7 @@ from dotenv import load_dotenv
 from openai import OpenAI
 
 from fetch_products import Product, fetch_products_for_trend
+from topic_clusters import TopicCandidate, build_manual_topic_candidate, normalize_text as normalize_topic_text
 
 
 SYSTEM_PROMPT = """
@@ -38,10 +39,11 @@ Return only valid JSON with this exact shape:
 Rules:
 - The article must focus on exactly one decor trend.
 - Preferred length target: 1000 to 1300 words (hard valid range: 950 to 1600).
-- Include: introduction, exactly 5 main sections, and conclusion.
+- Include: introduction, exactly 5 main sections, a short FAQ section, and conclusion.
 - Do not label the introduction with a heading. Start with plain introductory paragraphs, then begin the 5 main sections with H2 headings.
 - Do not include an H1 title inside article_markdown; the site layout renders the post title separately.
 - Use markdown headings for structure with H2 headings for the 5 main sections and H3 only when useful inside a section.
+- Add a short FAQ section near the end using an H2 heading like "## FAQ" or "## Frequently Asked Questions" with 3 to 5 concise H3 question headings and short answers.
 - Keep tone editorial, practical, and human.
 - Avoid fake data, fake citations, and keyword stuffing.
 - Do not include any text outside the JSON.
@@ -216,6 +218,52 @@ def load_article_template() -> str:
     return content
 
 
+def normalize_topic_candidate(topic_context: TopicCandidate | dict[str, Any] | None, trend: str) -> TopicCandidate:
+    if topic_context is None:
+        return build_manual_topic_candidate(trend)
+
+    normalized: TopicCandidate = {
+        "trend_cluster": normalize_topic_text(topic_context.get("trend_cluster", trend)),
+        "trend_keyword": normalize_topic_text(topic_context.get("trend_keyword", trend)),
+        "primary_keyword": normalize_topic_text(topic_context.get("primary_keyword", trend)),
+        "secondary_keywords": [
+            normalize_topic_text(item)
+            for item in topic_context.get("secondary_keywords", [])
+            if normalize_topic_text(item)
+        ],
+        "cluster_keywords": [
+            normalize_topic_text(item)
+            for item in topic_context.get("cluster_keywords", [])
+            if normalize_topic_text(item)
+        ],
+        "search_intent": normalize_topic_text(topic_context.get("search_intent", "")) or "styling_advice",
+        "season": normalize_topic_text(topic_context.get("season", "")),
+        "holiday": normalize_topic_text(topic_context.get("holiday", "")),
+        "source": normalize_topic_text(topic_context.get("source", "")) or "manual",
+    }
+
+    if not normalized["cluster_keywords"]:
+        normalized["cluster_keywords"] = [
+            normalized["primary_keyword"],
+            *normalized["secondary_keywords"],
+        ]
+
+    if not normalized["trend_cluster"]:
+        normalized["trend_cluster"] = normalized["primary_keyword"]
+    if not normalized["trend_keyword"]:
+        normalized["trend_keyword"] = normalized["primary_keyword"]
+    if not normalized["primary_keyword"]:
+        normalized["primary_keyword"] = normalize_topic_text(trend)
+    if not normalized["secondary_keywords"]:
+        normalized["secondary_keywords"] = [
+            keyword
+            for keyword in normalized["cluster_keywords"]
+            if keyword != normalized["primary_keyword"]
+        ][:4]
+
+    return normalized
+
+
 def build_article_cache_key(
     trend: str,
     model: str,
@@ -224,6 +272,7 @@ def build_article_cache_key(
     article_template: str,
     format_prompt: str,
     persona_prompt: str,
+    topic_context: TopicCandidate,
     products: list[Product],
 ) -> str:
     payload = {
@@ -234,6 +283,7 @@ def build_article_cache_key(
         "article_template": article_template,
         "format_prompt": format_prompt,
         "persona_prompt": persona_prompt,
+        "topic_context": topic_context,
         "products": products,
         "min_words": MIN_WORDS,
         "max_words": MAX_WORDS,
@@ -255,6 +305,7 @@ def build_cache_artifacts(
     article_template: str,
     format_prompt: str,
     persona_prompt: str,
+    topic_context: TopicCandidate,
     products: list[Product],
 ) -> tuple[str, Path]:
     cache_key = build_article_cache_key(
@@ -265,12 +316,17 @@ def build_cache_artifacts(
         article_template=article_template,
         format_prompt=format_prompt,
         persona_prompt=persona_prompt,
+        topic_context=topic_context,
         products=products,
     )
     return cache_key, build_article_cache_path(cache_key)
 
 
-def load_cached_article_package(cache_path: Path, products: list[Product]) -> dict[str, Any] | None:
+def load_cached_article_package(
+    cache_path: Path,
+    products: list[Product],
+    topic_context: TopicCandidate,
+) -> dict[str, Any] | None:
     if not cache_path.exists():
         return None
 
@@ -287,7 +343,7 @@ def load_cached_article_package(cache_path: Path, products: list[Product]) -> di
         return None
 
     try:
-        return normalize_and_validate(package, products=products)
+        return normalize_and_validate(package, products=products, topic_context=topic_context)
     except Exception:
         return None
 
@@ -485,6 +541,29 @@ def build_products_prompt(products: list[Product]) -> str:
     )
 
 
+def build_search_strategy_prompt(topic_context: TopicCandidate) -> str:
+    secondary_keywords = topic_context["secondary_keywords"][:4]
+    cluster_keywords = topic_context["cluster_keywords"][:6]
+    secondary_lines = "\n".join(f"- {keyword}" for keyword in secondary_keywords) or "- None provided"
+    cluster_lines = "\n".join(f"- {keyword}" for keyword in cluster_keywords) or f"- {topic_context['primary_keyword']}"
+
+    return (
+        "Google SEO targeting rules:\n"
+        f"- Primary keyword: {topic_context['primary_keyword']}\n"
+        f"- Search intent: {topic_context['search_intent']}\n"
+        f"- Topical cluster: {topic_context['trend_cluster']}\n"
+        "- Secondary/supporting keywords:\n"
+        f"{secondary_lines}\n"
+        "- Broader cluster keyword set:\n"
+        f"{cluster_lines}\n"
+        "- Use the primary keyword naturally in the title, slug, opening paragraphs, and at least one H2.\n"
+        "- Use 2 to 4 of the supporting keywords naturally across the article where relevant.\n"
+        "- Keep phrasing editorial and human; do not stuff keywords.\n"
+        "- Aim to satisfy search intent with practical, specific answers and room-focused guidance.\n"
+        "- Add a short FAQ section near the end that answers 3 to 5 realistic search follow-up questions.\n"
+    )
+
+
 def strip_code_fences(text: str) -> str:
     match = re.search(r"```(?:json)?\s*(.*?)\s*```", text, flags=re.DOTALL)
     return match.group(1).strip() if match else text.strip()
@@ -650,6 +729,15 @@ def build_estimated_reading_time(word_count: int) -> str:
     return f"{minutes} min read"
 
 
+def has_faq_section(article_markdown: str) -> bool:
+    return bool(
+        re.search(
+            r"(?im)^##\s+(faq|frequently asked questions)\s*$",
+            article_markdown,
+        )
+    )
+
+
 class ArticleLengthError(ValueError):
     def __init__(self, word_count: int, min_words: int, max_words: int) -> None:
         super().__init__(
@@ -690,6 +778,7 @@ def request_article_json(
     trend: str,
     model: str,
     article_template: str,
+    topic_context: TopicCandidate,
     persona_name: str,
     persona_prompt: str,
     format_name: str,
@@ -706,6 +795,7 @@ def request_article_json(
         f"Use this writing persona ({persona_name}):\n"
         f"{persona_prompt}\n\n"
         f"{article_prompt}\n\n"
+        f"{build_search_strategy_prompt(topic_context)}\n\n"
         f"Use this article format template ({format_name}):\n"
         f"{format_prompt}\n\n"
         f"{build_products_prompt(products)}\n\n"
@@ -793,7 +883,11 @@ def validate_affiliate_link_usage(article_markdown: str, products: list[Product]
         )
 
 
-def normalize_and_validate(payload: dict[str, Any], products: list[Product]) -> dict[str, Any]:
+def normalize_and_validate(
+    payload: dict[str, Any],
+    products: list[Product],
+    topic_context: TopicCandidate,
+) -> dict[str, Any]:
     required_fields = {
         "title",
         "slug",
@@ -840,6 +934,9 @@ def normalize_and_validate(payload: dict[str, Any], products: list[Product]) -> 
     if word_count < MIN_WORDS or word_count > MAX_WORDS:
         raise ArticleLengthError(word_count=word_count, min_words=MIN_WORDS, max_words=MAX_WORDS)
 
+    if not has_faq_section(article_markdown):
+        raise ValueError("article_markdown must include a short FAQ section near the end.")
+
     validate_affiliate_link_usage(article_markdown=article_markdown, products=products)
 
     estimated_reading_time_raw = str(payload.get("estimated_reading_time", "")).strip()
@@ -872,6 +969,11 @@ def normalize_and_validate(payload: dict[str, Any], products: list[Product]) -> 
         "slug": slug,
         "meta_description": meta_description,
         "keywords": keywords,
+        "primary_keyword": topic_context["primary_keyword"],
+        "secondary_keywords": topic_context["secondary_keywords"],
+        "topical_cluster": topic_context["trend_cluster"],
+        "cluster_keywords": topic_context["cluster_keywords"],
+        "search_intent": topic_context["search_intent"],
         "estimated_reading_time": estimated_reading_time,
         "hero_image_prompt": hero_image_prompt,
         "section_image_prompts": section_image_prompts,
@@ -887,6 +989,7 @@ def generate_article_package(
     model: str,
     format_name: str | None = None,
     persona_name: str | None = None,
+    topic_context: TopicCandidate | dict[str, Any] | None = None,
     products: list[Product] | None = None,
 ) -> dict[str, Any]:
     package, _ = generate_article_package_with_report(
@@ -895,6 +998,7 @@ def generate_article_package(
         model=model,
         format_name=format_name,
         persona_name=persona_name,
+        topic_context=topic_context,
         products=products,
     )
     return package
@@ -906,6 +1010,7 @@ def generate_article_package_with_report(
     model: str,
     format_name: str | None = None,
     persona_name: str | None = None,
+    topic_context: TopicCandidate | dict[str, Any] | None = None,
     products: list[Product] | None = None,
 ) -> tuple[dict[str, Any], dict[str, Any]]:
     last_error: Exception | None = None
@@ -929,6 +1034,7 @@ def generate_article_package_with_report(
         else fetch_products_for_trend(trend=trend, limit=SECTION_COUNT)
     )
     selected_products = validate_products(selected_products)
+    normalized_topic_context = normalize_topic_candidate(topic_context=topic_context, trend=trend)
 
     if len(selected_products) < MIN_PRODUCTS_FOR_AFFILIATE_MODE:
         print(
@@ -948,12 +1054,18 @@ def generate_article_package_with_report(
         article_template=article_template,
         format_prompt=selected_format_prompt,
         persona_prompt=selected_persona_prompt,
+        topic_context=normalized_topic_context,
         products=selected_products,
     )
-    cached_package = load_cached_article_package(cache_path=cache_path, products=selected_products)
+    cached_package = load_cached_article_package(
+        cache_path=cache_path,
+        products=selected_products,
+        topic_context=normalized_topic_context,
+    )
     if cached_package:
         cached_link_count = count_markdown_links(cached_package["article_markdown"])
         print(f"[article] cache hit: {cache_path.name}")
+        print(f"[article] primary keyword: {normalized_topic_context['primary_keyword']}")
         print(f"[article] generated markdown visible affiliate links: {cached_link_count}")
         return cached_package, {
             "cache_hit": True,
@@ -965,9 +1077,12 @@ def generate_article_package_with_report(
             "selected_products": len(selected_products),
             "affiliate_mode": bool(selected_products),
             "generated_link_count": cached_link_count,
+            "primary_keyword": normalized_topic_context["primary_keyword"],
+            "topical_cluster": normalized_topic_context["trend_cluster"],
         }
 
     print(f"[article] cache miss: {cache_path.name}")
+    print(f"[article] primary keyword: {normalized_topic_context['primary_keyword']}")
 
     # One initial draft plus retries for short drafts or product-link rule failures.
     for _ in range(1 + SHORT_RETRY_LIMIT + PRODUCT_RETRY_LIMIT):
@@ -978,6 +1093,7 @@ def generate_article_package_with_report(
                 trend=trend,
                 model=model,
                 article_template=article_template,
+                topic_context=normalized_topic_context,
                 persona_name=selected_persona_name,
                 persona_prompt=selected_persona_prompt,
                 format_name=selected_format_name,
@@ -986,7 +1102,11 @@ def generate_article_package_with_report(
                 extra_instruction=extra_instruction,
             )
             try:
-                normalized_package = normalize_and_validate(payload, products=selected_products)
+                normalized_package = normalize_and_validate(
+                    payload,
+                    products=selected_products,
+                    topic_context=normalized_topic_context,
+                )
             except ProductLinkError:
                 if selected_products and isinstance(payload.get("article_markdown"), str):
                     repaired_payload = dict(payload)
@@ -995,7 +1115,11 @@ def generate_article_package_with_report(
                         products=selected_products,
                     )
                     print("[article] attempted automatic affiliate link repair")
-                    normalized_package = normalize_and_validate(repaired_payload, products=selected_products)
+                    normalized_package = normalize_and_validate(
+                        repaired_payload,
+                        products=selected_products,
+                        topic_context=normalized_topic_context,
+                    )
                 else:
                     raise
             generated_link_count = count_markdown_links(normalized_package["article_markdown"])
@@ -1011,6 +1135,8 @@ def generate_article_package_with_report(
                 "selected_products": len(selected_products),
                 "affiliate_mode": bool(selected_products),
                 "generated_link_count": generated_link_count,
+                "primary_keyword": normalized_topic_context["primary_keyword"],
+                "topical_cluster": normalized_topic_context["trend_cluster"],
             }
         except ArticleLengthError as exc:
             if exc.word_count < MIN_WORDS and short_retry_count < SHORT_RETRY_LIMIT:
@@ -1047,9 +1173,14 @@ def generate_article_package_with_report(
                     article_template=article_template,
                     format_prompt=selected_format_prompt,
                     persona_prompt=selected_persona_prompt,
+                    topic_context=normalized_topic_context,
                     products=selected_products,
                 )
-                cached_editorial_package = load_cached_article_package(cache_path=cache_path, products=selected_products)
+                cached_editorial_package = load_cached_article_package(
+                    cache_path=cache_path,
+                    products=selected_products,
+                    topic_context=normalized_topic_context,
+                )
                 if cached_editorial_package:
                     cached_link_count = count_markdown_links(cached_editorial_package["article_markdown"])
                     print(f"[article] cache hit after editorial fallback: {cache_path.name}")
@@ -1064,6 +1195,8 @@ def generate_article_package_with_report(
                         "selected_products": len(selected_products),
                         "affiliate_mode": bool(selected_products),
                         "generated_link_count": cached_link_count,
+                        "primary_keyword": normalized_topic_context["primary_keyword"],
+                        "topical_cluster": normalized_topic_context["trend_cluster"],
                     }
                 last_error = exc
                 continue

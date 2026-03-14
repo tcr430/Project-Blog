@@ -5,10 +5,21 @@ import json
 from pathlib import Path
 from typing import Any, TypedDict
 
+from topic_clusters import (
+    TopicCandidate,
+    build_topic_candidate,
+    expand_clusters_to_candidates,
+    load_default_topic_clusters,
+)
+
 
 class TrendCandidate(TypedDict):
     trend_cluster: str
     trend_keyword: str
+    primary_keyword: str
+    secondary_keywords: list[str]
+    cluster_keywords: list[str]
+    search_intent: str
     season: str
     holiday: str
     source: str
@@ -18,76 +29,28 @@ DEFAULT_CANDIDATES_PATH = Path(__file__).resolve().parents[1] / "data" / "candid
 
 
 BUILTIN_DECOR_TRENDS: list[TrendCandidate] = [
-    {
-        "trend_cluster": "kitchen decor",
-        "trend_keyword": "terracotta kitchen decor",
-        "season": "",
-        "holiday": "",
-        "source": "builtin",
-    },
-    {
-        "trend_cluster": "living room styling",
-        "trend_keyword": "organic modern living room",
-        "season": "",
-        "holiday": "",
-        "source": "builtin",
-    },
-    {
-        "trend_cluster": "bedroom decor",
-        "trend_keyword": "layered neutral bedroom",
-        "season": "",
-        "holiday": "",
-        "source": "builtin",
-    },
-    {
-        "trend_cluster": "bathroom decor",
-        "trend_keyword": "spa-style bathroom shelving",
-        "season": "",
-        "holiday": "",
-        "source": "builtin",
-    },
-    {
-        "trend_cluster": "small spaces",
-        "trend_keyword": "small apartment dining nook",
-        "season": "",
-        "holiday": "",
-        "source": "builtin",
-    },
-    {
-        "trend_cluster": "seasonal decor",
-        "trend_keyword": "spring mantel styling ideas",
-        "season": "spring",
-        "holiday": "",
-        "source": "builtin",
-    },
-    {
-        "trend_cluster": "seasonal decor",
-        "trend_keyword": "easter brunch table decor",
-        "season": "spring",
-        "holiday": "easter",
-        "source": "builtin",
-    },
-    {
-        "trend_cluster": "entryway decor",
-        "trend_keyword": "minimalist entryway storage",
-        "season": "",
-        "holiday": "",
-        "source": "builtin",
-    },
-    {
-        "trend_cluster": "textiles",
-        "trend_keyword": "linen and boucle texture mix",
-        "season": "",
-        "holiday": "",
-        "source": "builtin",
-    },
-    {
-        "trend_cluster": "color trends",
-        "trend_keyword": "sage green home accents",
-        "season": "",
-        "holiday": "",
-        "source": "builtin",
-    },
+    build_topic_candidate(
+        cluster_name="kitchen decor",
+        primary_keyword="kitchen decor ideas",
+        all_keywords=[
+            "kitchen decor ideas",
+            "how to style kitchen decor",
+            "warm kitchen decor ideas",
+            "kitchen decor mistakes to avoid",
+        ],
+        source="builtin",
+    ),
+    build_topic_candidate(
+        cluster_name="living room styling",
+        primary_keyword="organic modern living room ideas",
+        all_keywords=[
+            "organic modern living room ideas",
+            "how to style an organic modern living room",
+            "organic modern living room decor",
+            "mistakes to avoid in an organic modern living room",
+        ],
+        source="builtin",
+    ),
 ]
 
 
@@ -118,13 +81,33 @@ def _normalize_text(value: Any) -> str:
 def normalize_candidate(raw: dict[str, Any], source: str) -> TrendCandidate:
     keyword = _normalize_text(raw.get("trend_keyword", ""))
     cluster = _normalize_text(raw.get("trend_cluster", "")) or keyword
+    primary_keyword = _normalize_text(raw.get("primary_keyword", "")) or keyword
+    secondary_keywords_raw = raw.get("secondary_keywords", [])
+    cluster_keywords_raw = raw.get("cluster_keywords", [])
 
     if not keyword:
         raise ValueError("Candidate trend is missing trend_keyword.")
 
+    if isinstance(secondary_keywords_raw, list):
+        secondary_keywords = [_normalize_text(item) for item in secondary_keywords_raw if _normalize_text(item)]
+    else:
+        secondary_keywords = []
+
+    if isinstance(cluster_keywords_raw, list):
+        cluster_keywords = [_normalize_text(item) for item in cluster_keywords_raw if _normalize_text(item)]
+    else:
+        cluster_keywords = []
+
+    if not cluster_keywords:
+        cluster_keywords = [primary_keyword, *secondary_keywords]
+
     return {
         "trend_cluster": cluster,
         "trend_keyword": keyword,
+        "primary_keyword": primary_keyword,
+        "secondary_keywords": secondary_keywords,
+        "cluster_keywords": cluster_keywords,
+        "search_intent": _normalize_text(raw.get("search_intent", "")) or "styling_advice",
         "season": _normalize_text(raw.get("season", "")),
         "holiday": _normalize_text(raw.get("holiday", "")),
         "source": _normalize_text(raw.get("source", "")) or source,
@@ -144,6 +127,11 @@ def load_candidates_from_file(path: Path) -> list[TrendCandidate]:
 
 def load_mock_candidates() -> list[TrendCandidate]:
     return [dict(item) for item in BUILTIN_DECOR_TRENDS]
+
+
+def load_cluster_candidates() -> list[TrendCandidate]:
+    clusters = load_default_topic_clusters()
+    return [dict(item) for item in expand_clusters_to_candidates(clusters)]
 
 
 def fetch_candidate_trends(
@@ -170,6 +158,10 @@ def fetch_candidate_trends(
 
     if candidates_file is not None and candidates_file.exists():
         return load_candidates_from_file(candidates_file)
+
+    cluster_candidates = load_cluster_candidates()
+    if cluster_candidates:
+        return cluster_candidates
 
     if DEFAULT_CANDIDATES_PATH.exists():
         return load_candidates_from_file(DEFAULT_CANDIDATES_PATH)

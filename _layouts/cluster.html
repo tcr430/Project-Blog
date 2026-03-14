@@ -1,0 +1,32 @@
+---
+layout: default
+sitemap: true
+---
+
+<section class="container page-shell cluster-shell">
+  <div class="section-heading page-heading cluster-heading">
+    <div>
+      <p class="eyebrow-label">Topic Cluster</p>
+      <h1>{{ page.title }}</h1>
+      {% if page.description %}
+      <p class="cluster-dek">{{ page.description }}</p>
+      {% endif %}
+      <div class="cluster-meta">
+        {% if page.cluster_article_count %}<span>{{ page.cluster_article_count }} articles</span>{% endif %}
+        {% if page.cluster_primary_keywords and page.cluster_primary_keywords.size > 0 %}
+        <span>{{ page.cluster_primary_keywords | slice: 0, 3 | join: " · " }}</span>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  <div class="page-body cluster-page-body">
+    {% if page.cluster_intro %}
+    <section class="cluster-intro prose">
+      {{ page.cluster_intro | markdownify }}
+    </section>
+    {% endif %}
+    <div class="cluster-content prose">
+      {{ content }}
+    </div>
+  </div>
+</section>

@@ -50,6 +50,10 @@ def yaml_escape(text: str) -> str:
     return escaped
 
 
+def normalize_whitespace(text: str) -> str:
+    return re.sub(r"\s+", " ", text).strip()
+
+
 def normalize_tags(keywords: Any) -> list[str]:
     if isinstance(keywords, list):
         tags = [str(item).strip() for item in keywords if str(item).strip()]
@@ -126,6 +130,11 @@ def validate_article_package(data: dict[str, Any]) -> dict[str, Any]:
         "slug",
         "meta_description",
         "keywords",
+        "primary_keyword",
+        "secondary_keywords",
+        "topical_cluster",
+        "cluster_keywords",
+        "search_intent",
         "estimated_reading_time",
         "hero_image_prompt",
         "section_image_prompts",
@@ -143,8 +152,13 @@ def validate_article_package(data: dict[str, Any]) -> dict[str, Any]:
     article_markdown = str(data["article_markdown"]).strip()
     estimated_reading_time = str(data["estimated_reading_time"]).strip()
     hero_image_prompt = str(data["hero_image_prompt"]).strip()
+    primary_keyword = str(data["primary_keyword"]).strip()
+    topical_cluster = str(data["topical_cluster"]).strip()
+    search_intent = str(data["search_intent"]).strip()
 
     tags = normalize_tags(data["keywords"])
+    secondary_keywords = normalize_tags(data["secondary_keywords"])
+    cluster_keywords = normalize_tags(data["cluster_keywords"])
     section_image_prompts = normalize_string_list(
         data["section_image_prompts"],
         field_name="section_image_prompts",
@@ -173,6 +187,12 @@ def validate_article_package(data: dict[str, Any]) -> dict[str, Any]:
         raise ValueError("estimated_reading_time cannot be empty.")
     if not hero_image_prompt:
         raise ValueError("hero_image_prompt cannot be empty.")
+    if not primary_keyword:
+        raise ValueError("primary_keyword cannot be empty.")
+    if not topical_cluster:
+        raise ValueError("topical_cluster cannot be empty.")
+    if not search_intent:
+        raise ValueError("search_intent cannot be empty.")
 
     author_id = str(data.get("author_id") or data.get("author") or choose_author(slug)).strip()
     author_name = build_author_name(author_id)
@@ -189,6 +209,11 @@ def validate_article_package(data: dict[str, Any]) -> dict[str, Any]:
         "slug": slug,
         "meta_description": meta_description,
         "keywords": tags,
+        "primary_keyword": primary_keyword,
+        "secondary_keywords": secondary_keywords,
+        "topical_cluster": topical_cluster,
+        "cluster_keywords": cluster_keywords,
+        "search_intent": search_intent,
         "estimated_reading_time": estimated_reading_time,
         "hero_image_prompt": hero_image_prompt,
         "section_image_prompts": section_image_prompts,
@@ -262,6 +287,42 @@ def split_frontmatter(markdown_content: str) -> tuple[str, str]:
     if not match:
         return "", markdown_content
     return match.group(0), markdown_content[match.end():]
+
+
+def strip_markdown_formatting(text: str) -> str:
+    cleaned = re.sub(r"<[^>]+>", " ", text)
+    cleaned = re.sub(r"!\[[^\]]*\]\([^)]+\)", " ", cleaned)
+    cleaned = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", cleaned)
+    cleaned = cleaned.replace("**", "").replace("__", "").replace("*", "").replace("_", "")
+    cleaned = cleaned.replace("`", "")
+    return normalize_whitespace(cleaned)
+
+
+def extract_faq_items(article_markdown: str) -> list[dict[str, str]]:
+    faq_match = re.search(
+        r"(?ims)^##\s+(faq|frequently asked questions)\s*$\n(?P<body>.*?)(?=^##\s+|\Z)",
+        article_markdown,
+    )
+    if not faq_match:
+        return []
+
+    faq_body = faq_match.group("body").strip()
+    if not faq_body:
+        return []
+
+    question_matches = list(re.finditer(r"(?im)^###\s+(.+?)\s*$", faq_body))
+    faq_items: list[dict[str, str]] = []
+
+    for index, match in enumerate(question_matches):
+        question_text = strip_markdown_formatting(match.group(1))
+        start = match.end()
+        end = question_matches[index + 1].start() if index + 1 < len(question_matches) else len(faq_body)
+        answer_text = strip_markdown_formatting(faq_body[start:end])
+        if not question_text or not answer_text:
+            continue
+        faq_items.append({"question": question_text, "answer": answer_text})
+
+    return faq_items[:5]
 
 
 def strip_section_image_blocks(article_markdown: str) -> str:
@@ -409,12 +470,29 @@ def build_frontmatter(
     excerpt: str,
     featured: bool,
     affiliate_disclosure: bool,
+    primary_keyword: str,
+    secondary_keywords: list[str],
+    topical_cluster: str,
+    cluster_keywords: list[str],
+    search_intent: str,
+    faq_items: list[dict[str, str]],
 ) -> str:
     date_value = published_at.strftime("%Y-%m-%d %H:%M:%S")
     tag_values = ", ".join(f'"{yaml_escape(tag)}"' for tag in tags)
     category_values = ", ".join(f'"{yaml_escape(category)}"' for category in categories)
     featured_value = "true" if featured else "false"
     affiliate_disclosure_value = "true" if affiliate_disclosure else "false"
+    secondary_keyword_values = ", ".join(f'"{yaml_escape(keyword)}"' for keyword in secondary_keywords)
+    cluster_keyword_values = ", ".join(f'"{yaml_escape(keyword)}"' for keyword in cluster_keywords)
+    faq_lines = ""
+    if faq_items:
+        faq_lines = "faq_items:\n" + "".join(
+            (
+                f'  - question: "{yaml_escape(item["question"])}"\n'
+                f'    answer: "{yaml_escape(item["answer"])}"\n'
+            )
+            for item in faq_items
+        )
 
     return (
         "---\n"
@@ -429,6 +507,12 @@ def build_frontmatter(
         f"tags: [{tag_values}]\n"
         f"featured: {featured_value}\n"
         f'estimated_reading_time: "{yaml_escape(estimated_reading_time)}"\n'
+        f'primary_keyword: "{yaml_escape(primary_keyword)}"\n'
+        f"secondary_keywords: [{secondary_keyword_values}]\n"
+        f'topical_cluster: "{yaml_escape(topical_cluster)}"\n'
+        f"cluster_keywords: [{cluster_keyword_values}]\n"
+        f'search_intent: "{yaml_escape(search_intent)}"\n'
+        f"{faq_lines}"
         f'image: "{yaml_escape(hero_image_url)}"\n'
         f'image_alt: "{yaml_escape(hero_image_alt)}"\n'
         f'affiliate_disclosure: {affiliate_disclosure_value}\n'
@@ -481,12 +565,23 @@ def save_article_metadata(
         "title": package["title"],
         "slug": package["slug"],
         "meta_description": package["meta_description"],
+        "primary_keyword": package["primary_keyword"],
+        "secondary_keywords": package["secondary_keywords"],
+        "topical_cluster": package["topical_cluster"],
+        "cluster_keywords": package["cluster_keywords"],
+        "search_intent": package["search_intent"],
         "estimated_reading_time": package["estimated_reading_time"],
         "author_id": package["author_id"],
         "author_name": package["author_name"],
         "categories": package["categories"],
         "excerpt": package["excerpt"],
         "featured": package["featured"],
+        "keywords": package["keywords"],
+        "primary_keyword": package["primary_keyword"],
+        "secondary_keywords": package["secondary_keywords"],
+        "topical_cluster": package["topical_cluster"],
+        "cluster_keywords": package["cluster_keywords"],
+        "search_intent": package["search_intent"],
         "hero_image_prompt": package["hero_image_prompt"],
         "section_image_prompts": package["section_image_prompts"],
         "hero_image_path": build_image_url(slug=package["slug"], filename="hero.png"),
@@ -496,6 +591,7 @@ def save_article_metadata(
         "pinterest_titles": package["pinterest_titles"],
         "pinterest_descriptions": package["pinterest_descriptions"],
         "article_relative_url": post_relative_url,
+        "faq_items": package.get("faq_items", []),
         "post_path": str(post_path),
         "updated_at": datetime.now().isoformat(),
     }
@@ -528,6 +624,7 @@ def publish_post_from_package_file(package_json_path: str | Path) -> dict[str, P
     markdown_body = strip_intro_heading(markdown_body)
     markdown_body = strip_section_image_blocks(markdown_body)
     markdown_body = markdown_body.rstrip() + "\n"
+    faq_items = extract_faq_items(markdown_body)
 
     affiliate_disclosure = has_affiliate_links(markdown_body)
     visible_link_count = count_visible_affiliate_links(markdown_body)
@@ -539,6 +636,12 @@ def publish_post_from_package_file(package_json_path: str | Path) -> dict[str, P
         description=package["meta_description"],
         tags=package["keywords"],
         estimated_reading_time=package["estimated_reading_time"],
+        primary_keyword=package["primary_keyword"],
+        secondary_keywords=package["secondary_keywords"],
+        topical_cluster=package["topical_cluster"],
+        cluster_keywords=package["cluster_keywords"],
+        search_intent=package["search_intent"],
+        faq_items=faq_items,
         hero_image_url=hero_image_url,
         hero_image_alt=hero_image_alt,
         author_id=package["author_id"],
@@ -555,7 +658,7 @@ def publish_post_from_package_file(package_json_path: str | Path) -> dict[str, P
 
     metadata_path = build_metadata_path(project_root=project_root, post_path=output_path)
     save_article_metadata(
-        package=package,
+        package={**package, "faq_items": faq_items},
         post_path=output_path,
         metadata_path=metadata_path,
         published_at=published_at,
