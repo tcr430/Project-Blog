@@ -30,7 +30,7 @@ The base of your living room sets the tone. A natural jute area rug is ideal for
 
 When choosing a rug, scale is important. Opt for a size that allows your furniture legs to sit either fully on or fully off the rug to avoid awkward visual breaks. This helps ground conversation areas and ties together pieces like sofas, chairs, and coffee tables cohesively. Layering is possible too — consider a smaller, softer wool or linen rug atop the jute for an inviting softness underfoot.
 
-This [Natural Jute Area Rug](https://www.amazon.com/dp/B0RUG004?tag=decorblog-20) grounds the room with natural texture and helps tie furniture together, making your organic modern living room feel balanced and connected.
+This [Natural Jute Area Rug](https://amzn.to/4bJ14mU) grounds the room with natural texture and helps tie furniture together, making your organic modern living room feel balanced and connected.
 
 ## 2. Use a Wood and Metal Accent Shelf for Vertical Interest and Balance
 
@@ -45,7 +45,7 @@ Styling this shelf with curated decor—think ceramic vessels, framed art, or gr
 
 Practicality is key: use the shelves not just as display, but for functional storage of favorite books or magazines, which maintains a lived-in warmth.
 
-This [Wood and Metal Accent Shelf](https://www.amazon.com/dp/B0SHELF005?tag=decorblog-20) perfectly balances storage with styling and displays your cherished elements artfully.
+This [Wood and Metal Accent Shelf](https://amzn.to/4sImwhB) perfectly balances storage with styling and displays your cherished elements artfully.
 
 ## 3. Warm Up Corners with Handcrafted Terracotta Vases
 
@@ -60,7 +60,7 @@ The organic shapes, often imperfect and rounded, bring softness to sharper-lined
 
 Try pairing these vases with dried grasses or simple foliage for an understated dimension that further connects your interior to the natural world.
 
-The [Handcrafted Terracotta Vase Set](https://www.amazon.com/dp/B0TERRA001?tag=decorblog-20) beautifully adds color and organic shape, enriching shelves or counters with artisan appeal.
+The [Handcrafted Terracotta Vase Set](https://amzn.to/4urjr7c) beautifully adds color and organic shape, enriching shelves or counters with artisan appeal.
 
 ## 4. Introduce Warm Metallic Accents with a Brushed Brass Table Lamp
 
@@ -75,7 +75,7 @@ Place the lamp on an oak side table beside a linen sofa to gently catch light an
 
 Its reflective quality contrasts beautifully with matte textures, creating visual interest and helping layers of texture come alive.
 
-Consider this [Brushed Brass Table Lamp](https://www.amazon.com/dp/B0LAMP007?tag=decorblog-20) as a functional accent that lifts your living room’s look with just the right hint of metallic warmth.
+Consider this [Brushed Brass Table Lamp](https://amzn.to/3P4rh6N) as a functional accent that lifts your living room’s look with just the right hint of metallic warmth.
 
 ## 5. Layer Linen Textured Throw Pillow Covers for Cozy Sophistication
 
@@ -90,7 +90,7 @@ Choose pillows in soft taupe, cream, or muted sage greens—their earthy palette
 
 Group pillows thoughtfully with varying sizes but keep the count moderate to avoid crowding. This allows the gentle creases and weave of the linen to become a design feature that enriches your room’s tactile appeal.
 
-The [Linen Textured Throw Pillow Covers](https://www.amazon.com/dp/B0LINEN002?tag=decorblog-20) soften surfaces and layer texture beautifully, making your living room feel warm, approachable, and refined.
+The [Linen Textured Throw Pillow Covers](https://amzn.to/4bmQm4b) soften surfaces and layer texture beautifully, making your living room feel warm, approachable, and refined.
 
 ## Conclusion
 
