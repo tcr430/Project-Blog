@@ -1,4 +1,18 @@
 {
-  "generated_at": "",
-  "articles": []
+  "generated_at": "2026-03-15T20:54:06.959443+00:00",
+  "articles": [
+    {
+      "article_slug": "spring-living-room-styling-ideas-fresh-minimalism",
+      "cluster": "spring living room styling",
+      "primary_keyword": "spring living room styling ideas",
+      "validation_status": "warning",
+      "warnings": [
+        "Headings do not reflect the topic cluster strongly enough.",
+        "Main section headings may be too generic for the chosen keyword."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-03-15T20:54:06.959358+00:00"
+    }
+  ]
 }

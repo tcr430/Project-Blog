@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-14T19:59:07.170479+00:00",
-  "cluster_count": 3,
-  "article_count": 3,
+  "generated_at": "2026-03-15T20:57:03.614436+00:00",
+  "cluster_count": 4,
+  "article_count": 4,
   "clusters": [
     {
       "cluster_name": "linen and boucle styling",
@@ -9,11 +9,11 @@
       "primary_keywords_used": [
         "linen and boucle decor ideas"
       ],
-      "latest_article_date": "2026-03-13",
+      "latest_article_date": "",
       "representative_article_slugs": [
         "linen-boucle-texture-mix"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
@@ -25,11 +25,11 @@
       "primary_keywords_used": [
         "organic modern living room ideas"
       ],
-      "latest_article_date": "2026-03-13",
+      "latest_article_date": "",
       "representative_article_slugs": [
         "organic-modern-living-room"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
@@ -41,9 +41,25 @@
       "primary_keywords_used": [
         "small apartment dining nook ideas"
       ],
-      "latest_article_date": "2026-03-13",
+      "latest_article_date": "",
       "representative_article_slugs": [
         "small-apartment-dining-nooks-cozy-corner-trend"
+      ],
+      "recent_article_count": 0,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_name": "spring living room styling",
+      "article_count": 1,
+      "primary_keywords_used": [
+        "spring living room styling ideas"
+      ],
+      "latest_article_date": "2026-03-15",
+      "representative_article_slugs": [
+        "spring-living-room-styling-ideas-fresh-minimalism"
       ],
       "recent_article_count": 1,
       "internal_link_targets_available": 0,

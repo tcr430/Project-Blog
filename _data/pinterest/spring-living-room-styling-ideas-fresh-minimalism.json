@@ -1,0 +1,84 @@
+{
+  "article_title": "Spring Living Room Styling Ideas: Embrace Fresh Minimalism with Natural Touches",
+  "article_slug": "spring-living-room-styling-ideas-fresh-minimalism",
+  "article_relative_url": "/mistakes-fixes/2026/03/15/spring-living-room-styling-ideas-fresh-minimalism/",
+  "article_url": "https://thelivinedit.com/mistakes-fixes/2026/03/15/spring-living-room-styling-ideas-fresh-minimalism/",
+  "meta_description": "Explore spring living room styling ideas centered on fresh minimalism and natural materials. Learn how to combine strong lines, light textures, and practical layouts for a serene seasonal refresh.",
+  "hero_image_path": "/assets/img/spring-living-room-styling-ideas-fresh-minimalism/hero.png",
+  "site_root_url": "https://thelivinedit.com",
+  "variant_count": 4,
+  "strategy": {
+    "minimum_variant_count": 4,
+    "generated_variant_count": 4,
+    "bonus_slots": 0,
+    "ranked_variant_types": [
+      "trend_overview",
+      "practical_tips",
+      "product_led",
+      "styling_angle"
+    ],
+    "article_score": null,
+    "notes": [
+      "applying performance weighting: no historical lift yet, using balanced defaults"
+    ],
+    "board_config_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_boards.json"
+  },
+  "variants": [
+    {
+      "variant_key": "pin-1",
+      "variant_type": "trend_overview",
+      "style_name": "bottom-title",
+      "title": "Effortless Spring Living Room Refresh with Minimalist Natural Touches",
+      "description": "Discover practical spring living room styling ideas that blend minimalist design and natural materials for a serene seasonal update.",
+      "image_path": "/assets/pins/spring-living-room-styling-ideas-fresh-minimalism/pin-1.svg",
+      "board": {
+        "key": "living_room",
+        "name": "Living Room Styling"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 0
+    },
+    {
+      "variant_key": "pin-2",
+      "variant_type": "practical_tips",
+      "style_name": "centered-title",
+      "title": "Spring Living Room Styling Ideas: Embrace Fresh Minimalism with Natural Touches...",
+      "description": "Use these practical design moves to make spring living room styling ideas: embrace fresh minimalism with natural touches feel balanced, useful, and easy to live with.",
+      "image_path": "/assets/pins/spring-living-room-styling-ideas-fresh-minimalism/pin-2.svg",
+      "board": {
+        "key": "living_room",
+        "name": "Living Room Styling"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 1
+    },
+    {
+      "variant_key": "pin-3",
+      "variant_type": "product_led",
+      "style_name": "minimalist-overlay",
+      "title": "4 Pieces That Elevate Spring Living Room Styling Ideas: Embrace Fresh Minimalism with...",
+      "description": "Discover decor pieces and finishing details that help spring living room styling ideas: embrace fresh minimalism with natural touches feel more intentional without looking overdone.",
+      "image_path": "/assets/pins/spring-living-room-styling-ideas-fresh-minimalism/pin-3.svg",
+      "board": {
+        "key": "home_products",
+        "name": "Home Finds & Decor Picks"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 2
+    },
+    {
+      "variant_key": "pin-4",
+      "variant_type": "styling_angle",
+      "style_name": "top-title",
+      "title": "How to Style Spring Living Room Styling Ideas: Embrace Fresh Minimalism with Natural...",
+      "description": "See how color, texture, and room styling can shape spring living room styling ideas: embrace fresh minimalism with natural touches into a softer, more editorial look.",
+      "image_path": "/assets/pins/spring-living-room-styling-ideas-fresh-minimalism/pin-4.svg",
+      "board": {
+        "key": "living_room",
+        "name": "Living Room Styling"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 3
+    }
+  ]
+}
