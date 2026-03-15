@@ -10,6 +10,7 @@ from topic_clusters import TopicCandidate, build_manual_topic_candidate, build_t
 
 DEFAULT_CLUSTER_INDEX_PATH = Path(__file__).resolve().parents[1] / "data" / "article_cluster_index.json"
 DEFAULT_CLUSTER_REPORT_PATH = Path(__file__).resolve().parents[1] / "data" / "keyword_cluster_report.json"
+DEFAULT_PINTEREST_SIGNALS_PATH = Path(__file__).resolve().parents[1] / "reports" / "pinterest_topic_signals.json"
 DEFAULT_OUTPUT_PATH = Path(__file__).resolve().parents[1] / "reports" / "content_plan.json"
 
 STRONG_MIN_ARTICLES = 6
@@ -22,6 +23,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Generate a lightweight cluster-aware content plan.")
     parser.add_argument("--cluster-index-path", type=str, default=str(DEFAULT_CLUSTER_INDEX_PATH))
     parser.add_argument("--cluster-report-path", type=str, default=str(DEFAULT_CLUSTER_REPORT_PATH))
+    parser.add_argument("--pinterest-signals-path", type=str, default=str(DEFAULT_PINTEREST_SIGNALS_PATH))
     parser.add_argument("--output-path", type=str, default=str(DEFAULT_OUTPUT_PATH))
     return parser.parse_args()
 
@@ -86,11 +88,14 @@ def derive_related_topics(cluster_name: str, existing_keywords: list[str]) -> li
 def build_cluster_rows(
     index_data: dict[str, Any],
     report_data: dict[str, Any],
+    pinterest_signal_data: dict[str, Any],
 ) -> list[dict[str, Any]]:
     articles = index_data.get("articles", []) if isinstance(index_data, dict) else []
     report_rows = report_data.get("clusters", []) if isinstance(report_data, dict) else []
+    signal_rows = pinterest_signal_data.get("clusters", []) if isinstance(pinterest_signal_data, dict) else []
     article_map: dict[str, list[dict[str, Any]]] = {}
     report_map: dict[str, dict[str, Any]] = {}
+    signal_map: dict[str, dict[str, Any]] = {}
 
     for article in articles:
         if not isinstance(article, dict):
@@ -104,6 +109,12 @@ def build_cluster_rows(
         cluster_name = normalize_text(row.get("cluster_name") or "uncategorized") or "uncategorized"
         report_map[cluster_name] = row
 
+    for row in signal_rows:
+        if not isinstance(row, dict):
+            continue
+        cluster_name = normalize_text(row.get("cluster_name") or "uncategorized") or "uncategorized"
+        signal_map[cluster_name] = row
+
     clusters = load_default_topic_clusters()
     cluster_rows: list[dict[str, Any]] = []
     now = datetime.now(timezone.utc)
@@ -112,6 +123,7 @@ def build_cluster_rows(
         cluster_name = cluster["cluster_name"]
         cluster_articles = article_map.get(cluster_name, [])
         report_row = report_map.get(cluster_name, {})
+        signal_row = signal_map.get(cluster_name, {})
         article_count = len(cluster_articles)
         health_label = classify_cluster_health(article_count)
 
@@ -143,6 +155,22 @@ def build_cluster_rows(
                 if len(recommended_topics) >= RECOMMENDATIONS_PER_CLUSTER:
                     break
 
+        pinterest_signal = {
+            "label": str(signal_row.get("signal_label") or "no_data"),
+            "boost": int(signal_row.get("signal_boost") or 0),
+            "pinterest_article_count": int(signal_row.get("pinterest_article_count") or 0),
+            "strong_article_count": int(signal_row.get("strong_article_count") or 0),
+            "weak_article_count": int(signal_row.get("weak_article_count") or 0),
+            "average_score": float(signal_row.get("average_score") or 0.0),
+            "average_outbound_clicks": float(signal_row.get("average_outbound_clicks") or 0.0),
+            "average_saves": float(signal_row.get("average_saves") or 0.0),
+        }
+        priority_score = (
+            (25 if health_label == "missing" else 18 if health_label == "underdeveloped" else 8 if health_label == "growing" else 0)
+            + pinterest_signal["boost"]
+            + max(0, len(uncovered_keywords) * 2)
+        )
+
         cluster_rows.append(
             {
                 "cluster_name": cluster_name,
@@ -161,6 +189,8 @@ def build_cluster_rows(
                 "primary_keywords_used": report_row.get("primary_keywords_used", []),
                 "representative_article_slugs": report_row.get("representative_article_slugs", []),
                 "recommended_topics": recommended_topics,
+                "pinterest_signal": pinterest_signal,
+                "priority_score": priority_score,
                 "season": cluster.get("season", ""),
                 "holiday": cluster.get("holiday", ""),
                 "source": cluster.get("source", "cluster"),
@@ -171,16 +201,25 @@ def build_cluster_rows(
     cluster_rows.sort(
         key=lambda item: (
             priority_order.get(item["health_label"], 99),
+            -(item["priority_score"]),
             item["article_count"],
-            item["days_since_latest"] if item["days_since_latest"] is not None else 10**6,
+            -(item["days_since_latest"] if item["days_since_latest"] is not None else -1),
             item["cluster_name"],
         )
     )
     return cluster_rows
 
 
-def build_content_plan(index_data: dict[str, Any], report_data: dict[str, Any]) -> dict[str, Any]:
-    cluster_rows = build_cluster_rows(index_data=index_data, report_data=report_data)
+def build_content_plan(
+    index_data: dict[str, Any],
+    report_data: dict[str, Any],
+    pinterest_signal_data: dict[str, Any],
+) -> dict[str, Any]:
+    cluster_rows = build_cluster_rows(
+        index_data=index_data,
+        report_data=report_data,
+        pinterest_signal_data=pinterest_signal_data,
+    )
     summary = {
         "missing": sum(1 for row in cluster_rows if row["health_label"] == "missing"),
         "underdeveloped": sum(1 for row in cluster_rows if row["health_label"] == "underdeveloped"),
@@ -192,6 +231,11 @@ def build_content_plan(index_data: dict[str, Any], report_data: dict[str, Any]) 
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "total_clusters": len(cluster_rows),
         "summary": summary,
+        "top_pinterest_clusters": [
+            row["cluster_name"]
+            for row in cluster_rows
+            if row.get("pinterest_signal", {}).get("label") in {"hot", "warm"}
+        ][:5],
         "priority_clusters": [
             row["cluster_name"]
             for row in cluster_rows
@@ -211,11 +255,17 @@ def build_content_plan_outputs(
     *,
     cluster_index_path: Path,
     cluster_report_path: Path,
+    pinterest_signals_path: Path,
     output_path: Path,
 ) -> dict[str, Any]:
     index_data = load_json(cluster_index_path, {"articles": []})
     report_data = load_json(cluster_report_path, {"clusters": []})
-    plan = build_content_plan(index_data=index_data, report_data=report_data)
+    pinterest_signal_data = load_json(pinterest_signals_path, {"clusters": []})
+    plan = build_content_plan(
+        index_data=index_data,
+        report_data=report_data,
+        pinterest_signal_data=pinterest_signal_data,
+    )
     write_content_plan(output_path, plan)
     return {
         "output_path": output_path,
@@ -279,6 +329,7 @@ def main() -> int:
     result = build_content_plan_outputs(
         cluster_index_path=Path(args.cluster_index_path),
         cluster_report_path=Path(args.cluster_report_path),
+        pinterest_signals_path=Path(args.pinterest_signals_path),
         output_path=Path(args.output_path),
     )
     print(result["output_path"])

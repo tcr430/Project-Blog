@@ -25,6 +25,7 @@ from generate_weekly_report import build_weekly_report
 from generate_cluster_report import build_cluster_intelligence_outputs
 from generate_pillar_pages import build_pillar_pages
 from generate_content_plan import build_content_plan_outputs, select_topic_candidates_from_plan
+from generate_pinterest_topic_signals import build_pinterest_topic_signal_outputs
 from validate_article_seo import validate_article_seo, write_validation_report
 from fetch_pinterest_analytics import should_sync_pinterest_analytics, sync_pinterest_analytics
 from generate_pin_assets import generate_pin_assets
@@ -46,6 +47,7 @@ PINTEREST_VARIANT_COUNT = 4
 COST_REPORTS_DIR = Path(__file__).resolve().parents[1] / "data" / "cost_reports"
 SEO_VALIDATION_REPORT_PATH = Path(__file__).resolve().parents[1] / "reports" / "article_seo_validation_report.json"
 CONTENT_PLAN_REPORT_PATH = Path(__file__).resolve().parents[1] / "reports" / "content_plan.json"
+PINTEREST_TOPIC_SIGNALS_REPORT_PATH = Path(__file__).resolve().parents[1] / "reports" / "pinterest_topic_signals.json"
 
 
 def log_phase(message: str) -> None:
@@ -139,6 +141,11 @@ def parse_args() -> argparse.Namespace:
         "--use-content-plan",
         action="store_true",
         help="Use the generated content plan as the first source of automatic topic candidates.",
+    )
+    parser.add_argument(
+        "--skip-newsletter",
+        action="store_true",
+        help="Skip newsletter draft generation and Kit sync for this run.",
     )
     return parser.parse_args()
 
@@ -486,6 +493,7 @@ def finalize_selected_trends(
     history_path: Path,
     top_trends: int,
     cooldown_days: int,
+    pinterest_signal_data: dict[str, Any] | None = None,
 ) -> list[dict[str, Any]]:
     log_phase("selecting trends: normalizing candidates")
     normalized = normalize_candidates([dict(item) for item in raw_candidates])
@@ -506,7 +514,7 @@ def finalize_selected_trends(
         return []
 
     log_phase("selecting trends: scoring and selecting top trends")
-    scored = score_candidates(allowed)
+    scored = score_candidates(allowed, pinterest_signal_data=pinterest_signal_data)
     return select_diverse_top_trends(scored, top_n=top_trends)
 
 
@@ -521,12 +529,20 @@ def select_automatic_trends(
 
     raw_candidates: list[dict[str, Any]] | None = None
     project_root = Path(__file__).resolve().parents[2]
+    pinterest_signal_result = build_pinterest_topic_signal_outputs(
+        cluster_index_path=project_root / "pipeline" / "data" / "article_cluster_index.json",
+        pinterest_summary_path=project_root / "pipeline" / "data" / "pinterest_performance_summary.json",
+        output_path=PINTEREST_TOPIC_SIGNALS_REPORT_PATH,
+    )
+    pinterest_signal_data = pinterest_signal_result["signals"]
+    print(f"[pinterest] topic signals: {pinterest_signal_result['output_path']}")
 
     if use_content_plan:
         log_phase("selecting trends: building content plan candidates")
         plan_result = build_content_plan_outputs(
             cluster_index_path=project_root / "pipeline" / "data" / "article_cluster_index.json",
             cluster_report_path=project_root / "pipeline" / "data" / "keyword_cluster_report.json",
+            pinterest_signals_path=PINTEREST_TOPIC_SIGNALS_REPORT_PATH,
             output_path=CONTENT_PLAN_REPORT_PATH,
         )
         planned_candidates = select_topic_candidates_from_plan(plan_result["plan"], limit=max(top_trends * 3, top_trends))
@@ -547,6 +563,7 @@ def select_automatic_trends(
         history_path=history_path,
         top_trends=top_trends,
         cooldown_days=cooldown_days,
+        pinterest_signal_data=pinterest_signal_data,
     )
 
     if not selected and use_content_plan:
@@ -560,6 +577,7 @@ def select_automatic_trends(
             history_path=history_path,
             top_trends=top_trends,
             cooldown_days=cooldown_days,
+            pinterest_signal_data=pinterest_signal_data,
         )
 
     if not selected:
@@ -616,12 +634,18 @@ def run_manual_mode(args: argparse.Namespace) -> int:
                 print(f"Pins queued in: {pinterest_result['queue_path']}")
         print(f"Cost report: {cost_report_path}")
         project_root = Path(__file__).resolve().parents[2]
-        newsletter_path, kit_result = run_newsletter_step(project_root)
+        if args.skip_newsletter:
+            print("[newsletter] skipped for this run")
+            newsletter_path, kit_result = None, None
+        else:
+            newsletter_path, kit_result = run_newsletter_step(project_root)
         run_report_step(project_root)
         run_seo_intelligence_step(project_root)
+        run_pinterest_topic_signal_step(project_root)
         run_content_plan_step(project_root)
         run_cluster_pages_step(project_root)
-        print(f"Newsletter draft: {newsletter_path}")
+        if newsletter_path is not None:
+            print(f"Newsletter draft: {newsletter_path}")
         if kit_result and kit_result.get("sidecar_path"):
             print(f"Kit newsletter metadata: {kit_result['sidecar_path']}")
         return 0
@@ -687,9 +711,21 @@ def run_content_plan_step(project_root: Path) -> dict[str, Any]:
     result = build_content_plan_outputs(
         cluster_index_path=project_root / "pipeline" / "data" / "article_cluster_index.json",
         cluster_report_path=project_root / "pipeline" / "data" / "keyword_cluster_report.json",
+        pinterest_signals_path=project_root / "pipeline" / "reports" / "pinterest_topic_signals.json",
         output_path=CONTENT_PLAN_REPORT_PATH,
     )
     print(f"[plan] content plan: {result['output_path']}")
+    return result
+
+
+def run_pinterest_topic_signal_step(project_root: Path) -> dict[str, Any]:
+    log_phase("generating pinterest topic signals")
+    result = build_pinterest_topic_signal_outputs(
+        cluster_index_path=project_root / "pipeline" / "data" / "article_cluster_index.json",
+        pinterest_summary_path=project_root / "pipeline" / "data" / "pinterest_performance_summary.json",
+        output_path=project_root / "pipeline" / "reports" / "pinterest_topic_signals.json",
+    )
+    print(f"[pinterest] topic signals: {result['output_path']}")
     return result
 
 
@@ -773,12 +809,18 @@ def run_automatic_mode(args: argparse.Namespace) -> int:
             print(f"[auto] cost report: {cost_report_path}")
 
         project_root = Path(__file__).resolve().parents[2]
-        newsletter_path, kit_result = run_newsletter_step(project_root)
+        if args.skip_newsletter:
+            print("[newsletter] skipped for this run")
+            newsletter_path, kit_result = None, None
+        else:
+            newsletter_path, kit_result = run_newsletter_step(project_root)
         run_report_step(project_root)
         run_seo_intelligence_step(project_root)
+        run_pinterest_topic_signal_step(project_root)
         run_content_plan_step(project_root)
         run_cluster_pages_step(project_root)
-        print(f"Newsletter draft: {newsletter_path}")
+        if newsletter_path is not None:
+            print(f"Newsletter draft: {newsletter_path}")
         if kit_result and kit_result.get("sidecar_path"):
             print(f"Kit newsletter metadata: {kit_result['sidecar_path']}")
         print(f"Success: generated {len(generated_posts)} posts in automatic mode.")

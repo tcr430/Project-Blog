@@ -1,0 +1,169 @@
+{
+  "style_room_pairs": {
+    "styles": [
+      "organic modern",
+      "neutral",
+      "coastal",
+      "minimalist",
+      "rustic modern",
+      "scandinavian",
+      "moody",
+      "parisian",
+      "mediterranean",
+      "japandi",
+      "warm contemporary",
+      "cottage",
+      "vintage eclectic",
+      "modern farmhouse",
+      "quiet luxury",
+      "earthy",
+      "biophilic",
+      "tonal beige",
+      "transitional",
+      "california casual",
+      "english cottage",
+      "dark academia",
+      "desert modern",
+      "soft minimalism",
+      "collected vintage"
+    ],
+    "rooms": [
+      "living room",
+      "bedroom",
+      "bathroom",
+      "kitchen",
+      "dining room",
+      "entryway",
+      "home office",
+      "nursery",
+      "guest bedroom",
+      "laundry room",
+      "patio",
+      "balcony"
+    ]
+  },
+  "feature_room_pairs": {
+    "features": [
+      "lighting",
+      "wall decor",
+      "storage",
+      "shelving",
+      "rug styling",
+      "curtain styling",
+      "coffee table styling",
+      "art placement",
+      "window treatment ideas",
+      "decor layering"
+    ],
+    "rooms": [
+      "living room",
+      "bedroom",
+      "bathroom",
+      "kitchen",
+      "dining room",
+      "entryway",
+      "home office",
+      "nursery",
+      "laundry room",
+      "patio",
+      "balcony",
+      "small apartment"
+    ]
+  },
+  "material_room_pairs": {
+    "material_mixes": [
+      "linen and wood",
+      "boucle and oak",
+      "stone and brass",
+      "rattan and black metal",
+      "terracotta and cream",
+      "marble and walnut",
+      "glass and travertine",
+      "plaster and wood",
+      "ceramic and linen",
+      "jute and oak"
+    ],
+    "rooms": [
+      "living room",
+      "bedroom",
+      "bathroom",
+      "kitchen",
+      "dining room",
+      "entryway",
+      "home office",
+      "guest bedroom",
+      "patio",
+      "balcony"
+    ]
+  },
+  "color_room_pairs": {
+    "palettes": [
+      "sage green",
+      "terracotta",
+      "warm neutral",
+      "olive green",
+      "dusty blue",
+      "charcoal and camel",
+      "black and cream",
+      "sand and white"
+    ],
+    "rooms": [
+      "living room",
+      "bedroom",
+      "bathroom",
+      "kitchen",
+      "dining room",
+      "entryway",
+      "home office",
+      "guest bedroom"
+    ]
+  },
+  "small_space_clusters": [
+    "studio apartment decor",
+    "small apartment bedroom",
+    "tiny bathroom decor",
+    "small kitchen decor",
+    "compact home office",
+    "apartment balcony decor",
+    "narrow entryway decor",
+    "small dining nook",
+    "small living room layout",
+    "small laundry room styling"
+  ],
+  "seasonal_clusters": [
+    {
+      "cluster_name": "spring living room styling",
+      "season": "spring"
+    },
+    {
+      "cluster_name": "spring bedroom refresh",
+      "season": "spring"
+    },
+    {
+      "cluster_name": "summer patio decor",
+      "season": "summer"
+    },
+    {
+      "cluster_name": "summer balcony styling",
+      "season": "summer"
+    },
+    {
+      "cluster_name": "fall mantel styling",
+      "season": "fall"
+    },
+    {
+      "cluster_name": "fall entryway decor",
+      "season": "fall"
+    },
+    {
+      "cluster_name": "holiday dining table styling",
+      "season": "winter",
+      "holiday": "christmas"
+    },
+    {
+      "cluster_name": "holiday living room decor",
+      "season": "winter",
+      "holiday": "christmas"
+    }
+  ]
+}

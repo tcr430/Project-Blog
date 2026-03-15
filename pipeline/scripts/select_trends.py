@@ -65,6 +65,7 @@ USEFULNESS_HINTS = {
 
 
 DEFAULT_HISTORY_FILE = Path(__file__).resolve().parents[1] / "data" / "trend_history.json"
+DEFAULT_PINTEREST_SIGNALS_FILE = Path(__file__).resolve().parents[1] / "reports" / "pinterest_topic_signals.json"
 
 
 def parse_args() -> argparse.Namespace:
@@ -262,11 +263,67 @@ def score_candidate(candidate: TrendCandidate) -> tuple[int, list[str]]:
     return score, notes
 
 
-def score_candidates(candidates: list[TrendCandidate]) -> list[ScoredTrend]:
+def build_pinterest_signal_map(signal_data: dict[str, Any]) -> dict[str, dict[str, Any]]:
+    rows = signal_data.get("clusters", []) if isinstance(signal_data, dict) else []
+    signal_map: dict[str, dict[str, Any]] = {}
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        cluster_name = normalize_text(row.get("cluster_name", ""))
+        if not cluster_name:
+            continue
+        signal_map[cluster_name] = row
+    return signal_map
+
+
+def apply_pinterest_signal_boost(
+    candidate: TrendCandidate,
+    *,
+    score: int,
+    notes: list[str],
+    pinterest_signal_map: dict[str, dict[str, Any]],
+) -> tuple[int, list[str]]:
+    signal_row = pinterest_signal_map.get(candidate["trend_cluster"])
+    if not signal_row:
+        return score, notes
+
+    signal_label = normalize_text(signal_row.get("signal_label", "")) or "no_data"
+    signal_boost = int(signal_row.get("signal_boost") or 0)
+    if signal_boost:
+        score += signal_boost
+        notes.append(f"pinterest signal: {signal_label} cluster momentum ({signal_boost:+d})")
+
+    pinterest_article_count = int(signal_row.get("pinterest_article_count") or 0)
+    if pinterest_article_count <= 0:
+        return score, notes
+
+    tracked_keywords = {
+        normalize_text(keyword)
+        for keyword in list(signal_row.get("primary_keywords", [])) + list(signal_row.get("secondary_keywords", []))
+        if normalize_text(keyword)
+    }
+    if candidate["primary_keyword"] in tracked_keywords:
+        score += 4
+        notes.append("pinterest signal: keyword already aligned with performing cluster coverage (+4)")
+
+    return score, notes
+
+
+def score_candidates(
+    candidates: list[TrendCandidate],
+    pinterest_signal_data: dict[str, Any] | None = None,
+) -> list[ScoredTrend]:
     scored: list[ScoredTrend] = []
+    pinterest_signal_map = build_pinterest_signal_map(pinterest_signal_data or {})
 
     for candidate in candidates:
         score, notes = score_candidate(candidate)
+        score, notes = apply_pinterest_signal_boost(
+            candidate,
+            score=score,
+            notes=notes,
+            pinterest_signal_map=pinterest_signal_map,
+        )
         scored.append(
             {
                 **candidate,
@@ -311,6 +368,7 @@ def select_top_trends(
     top_n: int = 3,
     cooldown_days: int = DEFAULT_NON_SEASONAL_COOLDOWN_DAYS,
     now: datetime | None = None,
+    pinterest_signal_path: Path | None = None,
 ) -> list[ScoredTrend]:
     if top_n <= 0:
         raise ValueError("top_n must be greater than zero.")
@@ -327,7 +385,14 @@ def select_top_trends(
         cooldown_days=cooldown_days,
     )
 
-    scored = score_candidates(allowed)
+    signal_data = {"clusters": []}
+    selected_signal_path = pinterest_signal_path or DEFAULT_PINTEREST_SIGNALS_FILE
+    if selected_signal_path.exists():
+        raw_signal = selected_signal_path.read_text(encoding="utf-8-sig").strip()
+        if raw_signal:
+            signal_data = json.loads(raw_signal)
+
+    scored = score_candidates(allowed, pinterest_signal_data=signal_data)
     return select_diverse_top_trends(scored, top_n=top_n)
 
 

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-14T20:10:32.249188+00:00",
+  "generated_at": "2026-03-15T15:21:11.683060+00:00",
   "total_clusters": 6,
   "summary": {
     "missing": 3,
@@ -7,6 +7,7 @@
     "growing": 0,
     "strong": 0
   },
+  "top_pinterest_clusters": [],
   "priority_clusters": [
     "entryway storage styling",
     "neutral living room",
@@ -42,6 +43,17 @@
         "how to style a small entryway",
         "entryway storage decor ideas"
       ],
+      "pinterest_signal": {
+        "label": "no_data",
+        "boost": 0,
+        "pinterest_article_count": 0,
+        "strong_article_count": 0,
+        "weak_article_count": 0,
+        "average_score": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_saves": 0.0
+      },
+      "priority_score": 33,
       "season": "",
       "holiday": "",
       "source": "local cluster"
@@ -72,6 +84,17 @@
         "how to style a neutral living room",
         "neutral living room decor"
       ],
+      "pinterest_signal": {
+        "label": "no_data",
+        "boost": 0,
+        "pinterest_article_count": 0,
+        "strong_article_count": 0,
+        "weak_article_count": 0,
+        "average_score": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_saves": 0.0
+      },
+      "priority_score": 33,
       "season": "",
       "holiday": "",
       "source": "local cluster"
@@ -102,6 +125,17 @@
         "how to decorate a mantel for spring",
         "spring mantel decor ideas"
       ],
+      "pinterest_signal": {
+        "label": "no_data",
+        "boost": 0,
+        "pinterest_article_count": 0,
+        "strong_article_count": 0,
+        "weak_article_count": 0,
+        "average_score": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_saves": 0.0
+      },
+      "priority_score": 33,
       "season": "spring",
       "holiday": "",
       "source": "local cluster"
@@ -112,7 +146,7 @@
       "health_label": "underdeveloped",
       "article_count": 1,
       "latest_article_date": "2026-03-13",
-      "days_since_latest": 1,
+      "days_since_latest": 2,
       "keyword_coverage": {
         "total_keywords": 4,
         "covered_count": 4,
@@ -136,6 +170,17 @@
         "how to style linen and boucle",
         "linen and boucle decor"
       ],
+      "pinterest_signal": {
+        "label": "no_data",
+        "boost": 0,
+        "pinterest_article_count": 0,
+        "strong_article_count": 0,
+        "weak_article_count": 0,
+        "average_score": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_saves": 0.0
+      },
+      "priority_score": 18,
       "season": "",
       "holiday": "",
       "source": "local cluster"
@@ -146,7 +191,7 @@
       "health_label": "underdeveloped",
       "article_count": 1,
       "latest_article_date": "2026-03-13",
-      "days_since_latest": 1,
+      "days_since_latest": 2,
       "keyword_coverage": {
         "total_keywords": 4,
         "covered_count": 4,
@@ -170,6 +215,17 @@
         "best organic modern living room layout",
         "organic modern living room mistakes to avoid"
       ],
+      "pinterest_signal": {
+        "label": "no_data",
+        "boost": 0,
+        "pinterest_article_count": 0,
+        "strong_article_count": 0,
+        "weak_article_count": 0,
+        "average_score": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_saves": 0.0
+      },
+      "priority_score": 18,
       "season": "",
       "holiday": "",
       "source": "local cluster"
@@ -180,7 +236,7 @@
       "health_label": "underdeveloped",
       "article_count": 1,
       "latest_article_date": "2026-03-13",
-      "days_since_latest": 1,
+      "days_since_latest": 2,
       "keyword_coverage": {
         "total_keywords": 4,
         "covered_count": 4,
@@ -204,6 +260,17 @@
         "how to style small dining nook",
         "best small dining nook layout"
       ],
+      "pinterest_signal": {
+        "label": "no_data",
+        "boost": 0,
+        "pinterest_article_count": 0,
+        "strong_article_count": 0,
+        "weak_article_count": 0,
+        "average_score": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_saves": 0.0
+      },
+      "priority_score": 18,
       "season": "",
       "holiday": "",
       "source": "local cluster"
