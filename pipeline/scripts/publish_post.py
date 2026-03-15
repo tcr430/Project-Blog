@@ -10,6 +10,8 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
+from post_urls import build_post_relative_url
+
 
 SECTION_COUNT = 5
 PINTEREST_ITEM_COUNT = 5
@@ -716,11 +718,6 @@ def build_post_path(project_root: Path, slug: str, published_at: datetime) -> Pa
 def build_metadata_path(project_root: Path, post_path: Path) -> Path:
     metadata_dir = project_root / "_data" / "article_metadata"
     return metadata_dir / f"{post_path.stem}.json"
-
-
-def build_post_relative_url(categories: list[str], published_at: datetime, slug: str) -> str:
-    category_part = slugify_path_part(categories[0]) if categories else "posts"
-    return f"/{category_part}/{published_at.strftime('%Y/%m/%d')}/{slug}/"
 
 
 def save_article_metadata(

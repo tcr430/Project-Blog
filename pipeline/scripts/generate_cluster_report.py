@@ -6,6 +6,8 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
+from post_urls import build_post_relative_url
+
 
 DEFAULT_METADATA_DIR = Path(__file__).resolve().parents[2] / "_data" / "article_metadata"
 DEFAULT_PINTEREST_SUMMARY_PATH = Path(__file__).resolve().parents[1] / "data" / "pinterest_performance_summary.json"
@@ -54,21 +56,30 @@ def normalize_string_list(value: Any) -> list[str]:
     return []
 
 
+def extract_published_at(metadata_path: Path, metadata: dict[str, Any]) -> datetime | None:
+    return parse_publish_date(metadata_path, metadata)
+
+
 def build_article_entry(metadata_path: Path, metadata: dict[str, Any]) -> dict[str, Any]:
-    publish_date = parse_publish_date(metadata_path, metadata)
+    publish_date = extract_published_at(metadata_path, metadata)
     publish_date_iso = publish_date.date().isoformat() if publish_date else ""
     cluster_name = str(metadata.get("topical_cluster") or "").strip() or "uncategorized"
     primary_keyword = str(metadata.get("primary_keyword") or metadata.get("slug") or "").strip()
+    article_slug = str(metadata.get("slug") or metadata_path.stem).strip()
+    categories = normalize_string_list(metadata.get("categories"))
+    permalink = ""
+    if publish_date:
+        permalink = build_post_relative_url(categories=categories, published_at=publish_date, slug=article_slug)
 
     return {
-        "article_slug": str(metadata.get("slug") or metadata_path.stem).strip(),
+        "article_slug": article_slug,
         "article_title": str(metadata.get("title") or "").strip(),
         "primary_keyword": primary_keyword,
         "secondary_keywords": normalize_string_list(metadata.get("secondary_keywords")),
         "cluster_name": cluster_name,
         "publish_date": publish_date_iso,
         "tags": normalize_string_list(metadata.get("keywords") or metadata.get("tags")),
-        "permalink": str(metadata.get("article_relative_url") or "").strip(),
+        "permalink": permalink or str(metadata.get("article_relative_url") or "").strip(),
         "search_intent": str(metadata.get("search_intent") or "").strip(),
         "excerpt": str(metadata.get("excerpt") or metadata.get("meta_description") or "").strip(),
     }

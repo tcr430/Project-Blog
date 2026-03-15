@@ -7,7 +7,7 @@ cluster_name: "spring living room styling"
 cluster_slug: "spring-living-room-styling"
 cluster_article_count: 1
 cluster_primary_keywords: ["spring living room styling ideas"]
-cluster_generated_at: "2026-03-15T20:57:03.688698+00:00"
+cluster_generated_at: "2026-03-15T23:26:43.880629+00:00"
 cluster_intro: "Spring Living Room Styling is a useful decorating topic because it combines inspiration with practical decision-making. Readers usually arrive here looking for a clear style direction, help solving a room problem, or confidence about how to make the look feel intentional at home.
 
 This pillar page brings together the site's coverage around spring living room styling, with article angles shaped by keyword themes such as spring living room styling ideas. That mix helps the page support both broader search intent and more specific decorating questions without feeling repetitive.
@@ -21,7 +21,7 @@ pillar_page: true
 
 This article collection keeps every spring living room styling guide in one place so readers can compare ideas, follow related angles, and move deeper into the topic as the cluster grows. There are currently 1 linked article below.
 
-### [Spring Living Room Styling Ideas: Embrace Fresh Minimalism with Natural Touches](/mistakes-fixes/2026/03/15/spring-living-room-styling-ideas-fresh-minimalism/)
+### [Spring Living Room Styling Ideas: Embrace Fresh Minimalism with Natural Touches](/mistakes%20%26%20fixes/2026/03/15/spring-living-room-styling-ideas-fresh-minimalism/)
 *2026-03-15 | spring living room styling ideas*
 Explore spring living room styling ideas centered on fresh minimalism and natural materials. Learn how to combine strong lines, light textures, and practical layouts for a serene seasonal refresh.
-[Read the full article](/mistakes-fixes/2026/03/15/spring-living-room-styling-ideas-fresh-minimalism/)
+[Read the full article](/mistakes%20%26%20fixes/2026/03/15/spring-living-room-styling-ideas-fresh-minimalism/)
