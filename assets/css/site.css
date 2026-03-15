@@ -993,6 +993,16 @@ p {
   max-width: 76rem;
 }
 
+.cluster-listing-heading h1,
+.cluster-heading h1 {
+  margin-top: 0.7rem;
+}
+
+.cluster-listing-heading .cluster-dek,
+.cluster-heading .cluster-dek {
+  margin-top: 0.85rem;
+}
+
 .cluster-dek {
   max-width: 52rem;
   color: var(--muted);

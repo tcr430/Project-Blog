@@ -5,7 +5,7 @@ permalink: /clusters/
 description: Explore topic clusters from The Livin' Edit, including related decor articles grouped into practical hub pages.
 ---
 {% assign cluster_pages = site.pages | where: 'layout', 'cluster' | sort: 'title' %}
-<section class="cluster-listing-shell">
+<section class="container page-shell cluster-listing-shell">
   <div class="section-heading page-heading cluster-listing-heading">
     <div>
       <p class="eyebrow-label">Topic Hubs</p>
