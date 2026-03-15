@@ -109,33 +109,37 @@ With these five styling strategies, your dining nook will feel both inviting and
   <div class="shop-the-look-header">
     <p class="shop-the-look-kicker">Shop the Look</p>
     <h2>Bring the Look Home</h2>
-    <p>These are the pieces featured throughout the article, gathered in one place for easy browsing.</p>
   </div>
   <div class="shop-the-look-grid">
   <article class="shop-the-look-item">
-    <h3 class="shop-the-look-title">Round tables</h3>
-    <p class="shop-the-look-desc">Round tables is an easy way to bring this look into your own space.</p>
-    <a href="https://amzn.to/4sc4u7G" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+    <div class="shop-the-look-item-row">
+      <h3 class="shop-the-look-title">Round Tables</h3>
+      <a href="https://amzn.to/4sc4u7G" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+    </div>
   </article>
   <article class="shop-the-look-item">
-    <h3 class="shop-the-look-title">rattan-backed seating</h3>
-    <p class="shop-the-look-desc">rattan-backed seating is an easy way to bring this look into your own space.</p>
-    <a href="https://amzn.to/47MFkUP" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+    <div class="shop-the-look-item-row">
+      <h3 class="shop-the-look-title">Rattan-Backed Seating</h3>
+      <a href="https://amzn.to/47MFkUP" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+    </div>
   </article>
   <article class="shop-the-look-item">
-    <h3 class="shop-the-look-title">matte black</h3>
-    <p class="shop-the-look-desc">matte black is an easy way to bring this look into your own space.</p>
-    <a href="https://amzn.to/4dlYlB9" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+    <div class="shop-the-look-item-row">
+      <h3 class="shop-the-look-title">Matte Black</h3>
+      <a href="https://amzn.to/4dlYlB9" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+    </div>
   </article>
   <article class="shop-the-look-item">
-    <h3 class="shop-the-look-title">built-in bench</h3>
-    <p class="shop-the-look-desc">built-in bench is an easy way to bring this look into your own space.</p>
-    <a href="https://amzn.to/3Ny1uDv" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+    <div class="shop-the-look-item-row">
+      <h3 class="shop-the-look-title">Built-In Bench</h3>
+      <a href="https://amzn.to/3Ny1uDv" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+    </div>
   </article>
   <article class="shop-the-look-item">
-    <h3 class="shop-the-look-title">Foldable</h3>
-    <p class="shop-the-look-desc">Foldable is an easy way to bring this look into your own space.</p>
-    <a href="https://amzn.to/47MFw6v" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+    <div class="shop-the-look-item-row">
+      <h3 class="shop-the-look-title">Foldable</h3>
+      <a href="https://amzn.to/47MFw6v" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+    </div>
   </article>
   </div>
 </section>

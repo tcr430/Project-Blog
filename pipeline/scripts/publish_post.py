@@ -374,12 +374,13 @@ def extract_faq_items(article_markdown: str) -> list[dict[str, str]]:
     return faq_items[:5]
 
 
-def build_shop_the_look_description(product: dict[str, str]) -> str:
-    title = str(product.get("title") or "").strip()
-    reason = str(product.get("short_reason") or "").strip()
-    if reason:
-        return reason[0].upper() + reason[1:]
-    return f"{title} is an easy way to bring this look into your own space."
+def format_shop_the_look_title(title: str) -> str:
+    cleaned = normalize_whitespace(title)
+    if not cleaned:
+        return ""
+    if any(character.isupper() for character in cleaned[1:]):
+        return cleaned
+    return cleaned.title()
 
 
 def extract_affiliate_products_from_markdown(article_markdown: str) -> list[dict[str, str]]:
@@ -413,23 +414,23 @@ def build_shop_the_look_block(affiliate_products: list[dict[str, str]], article_
     product_items: list[str] = []
 
     for product in products:
-        title = str(product.get("title") or "").strip()
+        title = format_shop_the_look_title(str(product.get("title") or "").strip())
         affiliate_url = str(product.get("affiliate_url") or "").strip()
         if not title or not affiliate_url or affiliate_url in rendered_urls:
             continue
 
         rendered_urls.add(affiliate_url)
-        description = build_shop_the_look_description(product)
         product_items.append(
             "\n".join(
                 [
                     '  <article class="shop-the-look-item">',
-                    f'    <h3 class="shop-the-look-title">{yaml_escape(title)}</h3>',
-                    f'    <p class="shop-the-look-desc">{yaml_escape(description)}</p>',
+                    '    <div class="shop-the-look-item-row">',
+                    f'      <h3 class="shop-the-look-title">{yaml_escape(title)}</h3>',
                     (
-                        f'    <a href="{yaml_escape(affiliate_url)}" class="shop-the-look-button" '
+                        f'      <a href="{yaml_escape(affiliate_url)}" class="shop-the-look-button" '
                         'target="_blank" rel="nofollow sponsored noopener">View Product</a>'
                     ),
+                    "    </div>",
                     "  </article>",
                 ]
             )
@@ -443,7 +444,6 @@ def build_shop_the_look_block(affiliate_products: list[dict[str, str]], article_
         '  <div class="shop-the-look-header">\n'
         "    <p class=\"shop-the-look-kicker\">Shop the Look</p>\n"
         "    <h2>Bring the Look Home</h2>\n"
-        "    <p>These are the pieces featured throughout the article, gathered in one place for easy browsing.</p>\n"
         "  </div>\n"
         '  <div class="shop-the-look-grid">\n'
         f"{chr(10).join(product_items)}\n"

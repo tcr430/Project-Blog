@@ -99,33 +99,37 @@ Assess your room’s scale, use patterns, and color preferences to select the ap
   <div class="shop-the-look-header">
     <p class="shop-the-look-kicker">Shop the Look</p>
     <h2>Bring the Look Home</h2>
-    <p>These are the pieces featured throughout the article, gathered in one place for easy browsing.</p>
   </div>
   <div class="shop-the-look-grid">
   <article class="shop-the-look-item">
-    <h3 class="shop-the-look-title">throws</h3>
-    <p class="shop-the-look-desc">throws is an easy way to bring this look into your own space.</p>
-    <a href="https://amzn.to/4utYWqC" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+    <div class="shop-the-look-item-row">
+      <h3 class="shop-the-look-title">Throws</h3>
+      <a href="https://amzn.to/4utYWqC" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+    </div>
   </article>
   <article class="shop-the-look-item">
-    <h3 class="shop-the-look-title">armchair</h3>
-    <p class="shop-the-look-desc">armchair is an easy way to bring this look into your own space.</p>
-    <a href="https://amzn.to/40yAwyv" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+    <div class="shop-the-look-item-row">
+      <h3 class="shop-the-look-title">Armchair</h3>
+      <a href="https://amzn.to/40yAwyv" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+    </div>
   </article>
   <article class="shop-the-look-item">
-    <h3 class="shop-the-look-title">dining chair</h3>
-    <p class="shop-the-look-desc">dining chair is an easy way to bring this look into your own space.</p>
-    <a href="https://amzn.to/4buFQrT" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+    <div class="shop-the-look-item-row">
+      <h3 class="shop-the-look-title">Dining Chair</h3>
+      <a href="https://amzn.to/4buFQrT" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+    </div>
   </article>
   <article class="shop-the-look-item">
-    <h3 class="shop-the-look-title">duvet covers</h3>
-    <p class="shop-the-look-desc">duvet covers is an easy way to bring this look into your own space.</p>
-    <a href="https://amzn.to/4bmJP9I" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+    <div class="shop-the-look-item-row">
+      <h3 class="shop-the-look-title">Duvet Covers</h3>
+      <a href="https://amzn.to/4bmJP9I" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+    </div>
   </article>
   <article class="shop-the-look-item">
-    <h3 class="shop-the-look-title">bouclé ottomans</h3>
-    <p class="shop-the-look-desc">bouclé ottomans is an easy way to bring this look into your own space.</p>
-    <a href="https://amzn.to/4sIVOFy" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+    <div class="shop-the-look-item-row">
+      <h3 class="shop-the-look-title">Bouclé Ottomans</h3>
+      <a href="https://amzn.to/4sIVOFy" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+    </div>
   </article>
   </div>
 </section>

@@ -103,33 +103,37 @@ With this checklist, you can create a living room that feels timeless, elegant, 
   <div class="shop-the-look-header">
     <p class="shop-the-look-kicker">Shop the Look</p>
     <h2>Bring the Look Home</h2>
-    <p>These are the pieces featured throughout the article, gathered in one place for easy browsing.</p>
   </div>
   <div class="shop-the-look-grid">
   <article class="shop-the-look-item">
-    <h3 class="shop-the-look-title">Natural Jute Area Rug</h3>
-    <p class="shop-the-look-desc">Natural Jute Area Rug is an easy way to bring this look into your own space.</p>
-    <a href="https://amzn.to/4bJ14mU" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+    <div class="shop-the-look-item-row">
+      <h3 class="shop-the-look-title">Natural Jute Area Rug</h3>
+      <a href="https://amzn.to/4bJ14mU" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+    </div>
   </article>
   <article class="shop-the-look-item">
-    <h3 class="shop-the-look-title">Wood and Metal Accent Shelf</h3>
-    <p class="shop-the-look-desc">Wood and Metal Accent Shelf is an easy way to bring this look into your own space.</p>
-    <a href="https://amzn.to/4sImwhB" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+    <div class="shop-the-look-item-row">
+      <h3 class="shop-the-look-title">Wood and Metal Accent Shelf</h3>
+      <a href="https://amzn.to/4sImwhB" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+    </div>
   </article>
   <article class="shop-the-look-item">
-    <h3 class="shop-the-look-title">Handcrafted Terracotta Vase Set</h3>
-    <p class="shop-the-look-desc">Handcrafted Terracotta Vase Set is an easy way to bring this look into your own space.</p>
-    <a href="https://amzn.to/4urjr7c" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+    <div class="shop-the-look-item-row">
+      <h3 class="shop-the-look-title">Handcrafted Terracotta Vase Set</h3>
+      <a href="https://amzn.to/4urjr7c" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+    </div>
   </article>
   <article class="shop-the-look-item">
-    <h3 class="shop-the-look-title">Brushed Brass Table Lamp</h3>
-    <p class="shop-the-look-desc">Brushed Brass Table Lamp is an easy way to bring this look into your own space.</p>
-    <a href="https://amzn.to/3P4rh6N" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+    <div class="shop-the-look-item-row">
+      <h3 class="shop-the-look-title">Brushed Brass Table Lamp</h3>
+      <a href="https://amzn.to/3P4rh6N" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+    </div>
   </article>
   <article class="shop-the-look-item">
-    <h3 class="shop-the-look-title">Linen Textured Throw Pillow Covers</h3>
-    <p class="shop-the-look-desc">Linen Textured Throw Pillow Covers is an easy way to bring this look into your own space.</p>
-    <a href="https://amzn.to/4bmQm4b" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+    <div class="shop-the-look-item-row">
+      <h3 class="shop-the-look-title">Linen Textured Throw Pillow Covers</h3>
+      <a href="https://amzn.to/4bmQm4b" class="shop-the-look-button" target="_blank" rel="nofollow sponsored noopener">View Product</a>
+    </div>
   </article>
   </div>
 </section>
