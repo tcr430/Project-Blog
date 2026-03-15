@@ -6,7 +6,7 @@ description: "Explore spring living room styling ideas centered on fresh minimal
 excerpt: "Explore spring living room styling ideas centered on fresh minimalism and natural materials. Learn how to combine strong lines, light textures, and practical layouts for a serene seasonal refresh."
 author: "Marco Alvarez"
 author_id: "marco_alvarez"
-categories: ["Mistakes & Fixes"]
+categories: ["Ideas"]
 tags: ["spring living room styling ideas", "how to style spring living room styling", "spring living room styling decor", "spring living room styling mistakes to avoid"]
 featured: false
 estimated_reading_time: "8 min read"

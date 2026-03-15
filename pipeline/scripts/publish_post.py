@@ -121,7 +121,17 @@ def build_author_name(author_id: str) -> str:
     return cleaned.title() if cleaned else "The Livin' Edit"
 
 
-def derive_categories(title: str, tags: list[str]) -> list[str]:
+def derive_categories(title: str, tags: list[str], search_intent: str) -> list[str]:
+    normalized_intent = str(search_intent).strip().lower().replace("-", "_").replace(" ", "_")
+    if normalized_intent == "ideas":
+        return ["Ideas"]
+    if normalized_intent in {"mistakes", "mistakes_and_fixes", "mistakes_fixes"}:
+        return ["Mistakes & Fixes"]
+    if normalized_intent in {"trend", "trends"}:
+        return ["Trends"]
+    if normalized_intent in {"styling_advice", "how_to"}:
+        return ["Styling Advice"]
+
     haystack = f"{title} {' '.join(tags)}".lower()
     for category, keywords in CATEGORY_RULES:
         if any(keyword in haystack for keyword in keywords):
@@ -229,7 +239,7 @@ def validate_article_package(data: dict[str, Any]) -> dict[str, Any]:
     if isinstance(categories_raw, list):
         categories = [str(item).strip() for item in categories_raw if str(item).strip()]
     else:
-        categories = derive_categories(title=title, tags=tags)
+        categories = derive_categories(title=title, tags=tags, search_intent=search_intent)
     excerpt = str(data.get("excerpt") or derive_excerpt(meta_description, article_markdown)).strip()
     featured = bool(data.get("featured", derive_featured(categories, tags)))
 
