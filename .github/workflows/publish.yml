@@ -77,9 +77,9 @@ jobs:
           export PINTEREST_MODE="${PINTEREST_MODE:-queue}"
 
           if [ -n "${{ github.event.inputs.trend }}" ]; then
-            python pipeline/scripts/weekly_pipeline.py "${{ github.event.inputs.trend }}" --skip-newsletter
+            python pipeline/scripts/weekly_pipeline.py "${{ github.event.inputs.trend }}" --skip-newsletter --skip-affiliate-links
           else
-            python pipeline/scripts/weekly_pipeline.py --top-trends 1 --skip-newsletter
+            python pipeline/scripts/weekly_pipeline.py --top-trends 1 --skip-newsletter --skip-affiliate-links
           fi
 
       - name: Commit and push generated content

@@ -147,6 +147,11 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Skip newsletter draft generation and Kit sync for this run.",
     )
+    parser.add_argument(
+        "--skip-affiliate-links",
+        action="store_true",
+        help="Generate editorial-only posts with no automatic affiliate links.",
+    )
     return parser.parse_args()
 
 
@@ -395,7 +400,14 @@ def fetch_products_for_pipeline(
     product_provider: str | None,
     product_strict: bool,
     products_file: str | None = None,
+    skip_affiliate_links: bool = False,
 ) -> tuple[list[Product], str]:
+    if skip_affiliate_links:
+        log_phase("skipping affiliate products")
+        print("[products] source: affiliate links skipped")
+        print("[products] fetched: 0")
+        return [], "affiliate links skipped"
+
     manual_products = load_products_from_file(products_file)
     if manual_products is not None:
         log_phase("loading manual products")
@@ -604,6 +616,7 @@ def run_manual_mode(args: argparse.Namespace) -> int:
             product_provider=args.product_provider,
             product_strict=args.product_strict,
             products_file=args.products_file,
+            skip_affiliate_links=args.skip_affiliate_links,
         )
         post_path, image_paths, _, pinterest_result, cost_report_path = run_pipeline_for_trend(
             trend=trend,
@@ -768,6 +781,7 @@ def run_automatic_mode(args: argparse.Namespace) -> int:
                 product_provider=args.product_provider,
                 product_strict=args.product_strict,
                 products_file=args.products_file,
+                skip_affiliate_links=args.skip_affiliate_links,
             )
             post_path, image_paths, article_slug, pinterest_result, cost_report_path = run_pipeline_for_trend(
                 trend=trend_keyword,

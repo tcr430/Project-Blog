@@ -440,11 +440,23 @@ def build_shop_the_look_block(affiliate_products: list[dict[str, str]], article_
     )
 
 
+def strip_shop_the_look_block(article_markdown: str) -> str:
+    cleaned = re.sub(
+        r"\n*<section class=\"shop-the-look\" aria-label=\"Shop the look\">.*?</section>\n*",
+        "\n\n",
+        article_markdown,
+        flags=re.DOTALL,
+    )
+    cleaned = re.sub(r"\n{3,}", "\n\n", cleaned)
+    return cleaned.strip() + "\n"
+
+
 def append_shop_the_look_block(article_markdown: str, affiliate_products: list[dict[str, str]]) -> str:
-    shop_block = build_shop_the_look_block(affiliate_products, article_markdown=article_markdown)
+    cleaned_markdown = strip_shop_the_look_block(article_markdown)
+    shop_block = build_shop_the_look_block(affiliate_products, article_markdown=cleaned_markdown)
     if not shop_block:
-        return article_markdown.rstrip() + "\n"
-    return article_markdown.rstrip() + "\n\n" + shop_block + "\n"
+        return cleaned_markdown.rstrip() + "\n"
+    return cleaned_markdown.rstrip() + "\n\n" + shop_block + "\n"
 
 
 def convert_product_cards_to_inline_links(
@@ -608,6 +620,26 @@ def sync_post_images(post_path: str | Path, metadata_path: str | Path) -> Path:
         synced_body = cleaned_body.rstrip() + "\n"
 
     post_path.write_text(f"{frontmatter}{synced_body}", encoding="utf-8")
+    return post_path
+
+
+def sync_shop_the_look(post_path: str | Path, metadata_path: str | Path | None = None) -> Path:
+    post_path = Path(post_path)
+    if not post_path.exists():
+        raise FileNotFoundError(f"Post markdown file not found: {post_path}")
+
+    affiliate_products: list[dict[str, str]] = []
+    if metadata_path is not None:
+        metadata_path = Path(metadata_path)
+        if metadata_path.exists():
+            metadata_raw = metadata_path.read_text(encoding="utf-8")
+            metadata = json.loads(metadata_raw)
+            affiliate_products = normalize_affiliate_products(metadata.get("affiliate_products", []))
+
+    markdown_content = post_path.read_text(encoding="utf-8")
+    frontmatter, body = split_frontmatter(markdown_content)
+    updated_body = append_shop_the_look_block(body, affiliate_products)
+    post_path.write_text(f"{frontmatter}{updated_body}", encoding="utf-8")
     return post_path
 
 

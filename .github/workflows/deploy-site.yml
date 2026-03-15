@@ -35,6 +35,14 @@ jobs:
         with:
           ruby-version: "3.1"
 
+      - name: Set up Python for shop sync
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Sync Shop the Look blocks
+        run: python pipeline/scripts/sync_shop_the_look.py
+
       - name: Install Bundler dependencies
         run: bundle install
 
