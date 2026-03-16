@@ -8,7 +8,7 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any, TypedDict
 
-from trend_history import DEFAULT_NON_SEASONAL_COOLDOWN_DAYS, is_trend_allowed
+from trend_history import DEFAULT_NON_SEASONAL_COOLDOWN_DAYS, is_trend_allowed, load_trend_history
 
 
 class TrendCandidate(TypedDict):
@@ -203,6 +203,45 @@ def filter_recently_used(
     return allowed
 
 
+def build_recent_cluster_usage_map(
+    history_path: Path,
+    now: datetime,
+) -> dict[str, dict[str, int]]:
+    usage_map: dict[str, dict[str, int]] = {}
+    for entry in load_trend_history(history_path):
+        cluster = normalize_text(entry.get("trend_cluster", ""))
+        if not cluster:
+            continue
+
+        last_used_raw = str(entry.get("last_used", "")).strip()
+        if not last_used_raw:
+            continue
+
+        try:
+            used_at = datetime.fromisoformat(last_used_raw.replace("Z", "+00:00"))
+            if used_at.tzinfo is None:
+                used_at = used_at.replace(tzinfo=UTC)
+        except ValueError:
+            continue
+
+        days_since = max(0, (now - used_at).days)
+        existing = usage_map.get(cluster)
+        if existing is None or days_since < existing["days_since_last_used"]:
+            usage_map[cluster] = {
+                "days_since_last_used": days_since,
+                "recent_article_count": 0,
+            }
+
+        if days_since <= 60:
+            usage_map.setdefault(
+                cluster,
+                {"days_since_last_used": days_since, "recent_article_count": 0},
+            )
+            usage_map[cluster]["recent_article_count"] += 1
+
+    return usage_map
+
+
 def score_candidate(candidate: TrendCandidate) -> tuple[int, list[str]]:
     score = 0
     notes: list[str] = []
@@ -309,15 +348,70 @@ def apply_pinterest_signal_boost(
     return score, notes
 
 
+def apply_cluster_recency_preference(
+    candidate: TrendCandidate,
+    *,
+    score: int,
+    notes: list[str],
+    cluster_usage_map: dict[str, dict[str, int]],
+) -> tuple[int, list[str]]:
+    usage = cluster_usage_map.get(candidate["trend_cluster"])
+    if not usage:
+        score += 10
+        notes.append("cluster spread: no recent usage in history (+10)")
+        return score, notes
+
+    days_since = int(usage.get("days_since_last_used", 9999))
+    recent_article_count = int(usage.get("recent_article_count", 0))
+
+    if days_since >= 90:
+        score += 8
+        notes.append("cluster spread: cluster has been quiet for 90+ days (+8)")
+    elif days_since >= 45:
+        score += 5
+        notes.append("cluster spread: cluster has been quiet for 45+ days (+5)")
+    elif days_since >= 30:
+        score += 2
+        notes.append("cluster spread: cluster has been quiet for 30+ days (+2)")
+    elif days_since <= 7:
+        score -= 10
+        notes.append("cluster spread: cluster was used in the last week (-10)")
+    elif days_since <= 14:
+        score -= 6
+        notes.append("cluster spread: cluster was used in the last two weeks (-6)")
+
+    if recent_article_count >= 3:
+        score -= 8
+        notes.append("cluster spread: cluster already has 3+ recent posts (-8)")
+    elif recent_article_count == 2:
+        score -= 4
+        notes.append("cluster spread: cluster already has 2 recent posts (-4)")
+
+    return score, notes
+
+
 def score_candidates(
     candidates: list[TrendCandidate],
     pinterest_signal_data: dict[str, Any] | None = None,
+    history_path: Path | None = None,
+    now: datetime | None = None,
 ) -> list[ScoredTrend]:
     scored: list[ScoredTrend] = []
     pinterest_signal_map = build_pinterest_signal_map(pinterest_signal_data or {})
+    cluster_usage_map = (
+        build_recent_cluster_usage_map(history_path, now or datetime.now(UTC))
+        if history_path and history_path.exists()
+        else {}
+    )
 
     for candidate in candidates:
         score, notes = score_candidate(candidate)
+        score, notes = apply_cluster_recency_preference(
+            candidate,
+            score=score,
+            notes=notes,
+            cluster_usage_map=cluster_usage_map,
+        )
         score, notes = apply_pinterest_signal_boost(
             candidate,
             score=score,
@@ -392,7 +486,12 @@ def select_top_trends(
         if raw_signal:
             signal_data = json.loads(raw_signal)
 
-    scored = score_candidates(allowed, pinterest_signal_data=signal_data)
+    scored = score_candidates(
+        allowed,
+        pinterest_signal_data=signal_data,
+        history_path=selected_history_path,
+        now=current_time,
+    )
     return select_diverse_top_trends(scored, top_n=top_n)
 
 

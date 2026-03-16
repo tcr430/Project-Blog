@@ -15,7 +15,8 @@ class TrendHistoryEntry(TypedDict):
     article_slug: str
 
 
-DEFAULT_NON_SEASONAL_COOLDOWN_DAYS = 120
+DEFAULT_NON_SEASONAL_COOLDOWN_DAYS = 30
+DEFAULT_SEASONAL_CLUSTER_COOLDOWN_DAYS = 30
 
 
 def _default_history_path() -> Path:
@@ -117,7 +118,7 @@ def is_trend_allowed(
     history_path: Path | None = None,
     now: datetime | None = None,
 ) -> bool:
-    """Apply non-seasonal cooldown and seasonal once-per-year reuse rules."""
+    """Apply cluster cooldowns, with seasonal keyword reuse limited to once per year."""
     if cooldown_days < 0:
         raise ValueError("cooldown_days cannot be negative.")
 
@@ -129,18 +130,25 @@ def is_trend_allowed(
     holiday_key = holiday.strip().lower()
 
     if _is_seasonal(season_key, holiday_key):
+        seasonal_cluster_cutoff = current_time - timedelta(days=DEFAULT_SEASONAL_CLUSTER_COOLDOWN_DAYS)
         for entry in entries:
             if entry["trend_cluster"] != cluster_key:
                 continue
+
+            used_at = _parse_last_used(entry["last_used"])
+            if not used_at:
+                continue
+
+            if used_at >= seasonal_cluster_cutoff:
+                return False
+
             if entry["trend_keyword"] != keyword_key:
                 continue
             if entry["season"] != season_key:
                 continue
             if entry["holiday"] != holiday_key:
                 continue
-
-            used_at = _parse_last_used(entry["last_used"])
-            if used_at and used_at.year == current_time.year:
+            if used_at.year == current_time.year:
                 return False
         return True
 
