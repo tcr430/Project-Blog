@@ -1,19 +1,35 @@
 {
-  "generated_at": "2026-03-16T20:17:06.147318+00:00",
-  "cluster_count": 4,
-  "article_count": 4,
+  "generated_at": "2026-03-16T22:18:28.568530+00:00",
+  "cluster_count": 5,
+  "article_count": 5,
   "clusters": [
+    {
+      "cluster_name": "bedroom curtain styling",
+      "article_count": 1,
+      "primary_keywords_used": [
+        "best curtain styling for bedroom"
+      ],
+      "latest_article_date": "2026-03-16",
+      "representative_article_slugs": [
+        "best-curtain-styling-for-bedroom-mistakes-fixes"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "status": "underdeveloped"
+    },
     {
       "cluster_name": "linen and boucle styling",
       "article_count": 1,
       "primary_keywords_used": [
         "linen and boucle decor ideas"
       ],
-      "latest_article_date": "2026-03-13",
+      "latest_article_date": "",
       "representative_article_slugs": [
         "linen-boucle-texture-mix"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
@@ -25,11 +41,11 @@
       "primary_keywords_used": [
         "organic modern living room ideas"
       ],
-      "latest_article_date": "2026-03-13",
+      "latest_article_date": "",
       "representative_article_slugs": [
         "organic-modern-living-room"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
@@ -41,11 +57,11 @@
       "primary_keywords_used": [
         "small apartment dining nook ideas"
       ],
-      "latest_article_date": "2026-03-13",
+      "latest_article_date": "",
       "representative_article_slugs": [
         "small-apartment-dining-nooks-cozy-corner-trend"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,

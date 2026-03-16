@@ -1,38 +1,26 @@
 {
-  "generated_at": "2026-03-16T10:05:23.978271+00:00",
-  "total_clusters": 605,
+  "generated_at": "2026-03-16T22:18:28.627282+00:00",
+  "total_clusters": 569,
   "summary": {
-    "missing": 601,
-    "underdeveloped": 4,
+    "missing": 564,
+    "underdeveloped": 5,
     "growing": 0,
     "strong": 0
   },
   "top_pinterest_clusters": [],
   "priority_clusters": [
     "apartment balcony decor",
-    "balcony art placement",
-    "balcony coffee table styling",
-    "balcony curtain styling",
     "balcony decor layering",
     "balcony lighting",
-    "balcony rug styling",
-    "balcony shelving",
     "balcony storage",
-    "balcony wall decor",
-    "balcony window treatment ideas",
     "bathroom art placement",
-    "bathroom coffee table styling",
-    "bathroom curtain styling",
     "bathroom decor layering",
     "bathroom lighting",
-    "bathroom rug styling",
     "bathroom shelving",
     "bathroom storage",
     "bathroom wall decor",
     "bathroom window treatment ideas",
     "bedroom art placement",
-    "bedroom coffee table styling",
-    "bedroom curtain styling",
     "bedroom decor layering",
     "bedroom lighting",
     "bedroom rug styling",
@@ -162,7 +150,6 @@
     "desert modern nursery",
     "desert modern patio",
     "dining room art placement",
-    "dining room coffee table styling",
     "dining room curtain styling",
     "dining room decor layering",
     "dining room lighting",
@@ -204,8 +191,6 @@
     "english cottage nursery",
     "english cottage patio",
     "entryway art placement",
-    "entryway coffee table styling",
-    "entryway curtain styling",
     "entryway decor layering",
     "entryway lighting",
     "entryway rug styling",
@@ -213,7 +198,6 @@
     "entryway storage",
     "entryway storage styling",
     "entryway wall decor",
-    "entryway window treatment ideas",
     "fall entryway decor",
     "fall mantel styling",
     "glass and travertine balcony",
@@ -229,7 +213,6 @@
     "holiday dining table styling",
     "holiday living room decor",
     "home office art placement",
-    "home office coffee table styling",
     "home office curtain styling",
     "home office decor layering",
     "home office lighting",
@@ -260,22 +243,13 @@
     "jute and oak kitchen",
     "jute and oak living room",
     "jute and oak patio",
-    "kitchen art placement",
-    "kitchen coffee table styling",
-    "kitchen curtain styling",
     "kitchen decor layering",
     "kitchen lighting",
-    "kitchen rug styling",
     "kitchen shelving",
     "kitchen storage",
     "kitchen wall decor",
     "kitchen window treatment ideas",
-    "laundry room art placement",
-    "laundry room coffee table styling",
-    "laundry room curtain styling",
-    "laundry room decor layering",
     "laundry room lighting",
-    "laundry room rug styling",
     "laundry room shelving",
     "laundry room storage",
     "laundry room wall decor",
@@ -372,7 +346,6 @@
     "neutral nursery",
     "neutral patio",
     "nursery art placement",
-    "nursery coffee table styling",
     "nursery curtain styling",
     "nursery decor layering",
     "nursery lighting",
@@ -412,16 +385,9 @@
     "parisian living room",
     "parisian nursery",
     "parisian patio",
-    "patio art placement",
-    "patio coffee table styling",
-    "patio curtain styling",
     "patio decor layering",
     "patio lighting",
-    "patio rug styling",
-    "patio shelving",
     "patio storage",
-    "patio wall decor",
-    "patio window treatment ideas",
     "plaster and wood balcony",
     "plaster and wood bathroom",
     "plaster and wood bedroom",
@@ -496,15 +462,12 @@
     "scandinavian patio",
     "small apartment art placement",
     "small apartment bedroom",
-    "small apartment coffee table styling",
-    "small apartment curtain styling",
     "small apartment decor layering",
     "small apartment lighting",
     "small apartment rug styling",
     "small apartment shelving",
     "small apartment storage",
     "small apartment wall decor",
-    "small apartment window treatment ideas",
     "small kitchen decor",
     "small laundry room styling",
     "small living room layout",
@@ -610,10 +573,11 @@
     "warm neutral home office",
     "warm neutral kitchen",
     "warm neutral living room",
+    "spring living room styling",
+    "bedroom curtain styling",
     "linen and boucle styling",
     "organic modern living room",
-    "small dining nook",
-    "spring living room styling"
+    "small dining nook"
   ],
   "clusters": [
     {
@@ -656,129 +620,6 @@
       "season": "",
       "holiday": "",
       "source": "taxonomy small space"
-    },
-    {
-      "cluster_name": "balcony art placement",
-      "cluster_slug": "balcony-art-placement",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "balcony art placement ideas",
-          "how to style art placement in balcony",
-          "best art placement for balcony",
-          "balcony art placement mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "balcony art placement ideas",
-        "how to style art placement in balcony",
-        "best art placement for balcony"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
-    },
-    {
-      "cluster_name": "balcony coffee table styling",
-      "cluster_slug": "balcony-coffee-table-styling",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "balcony coffee table styling ideas",
-          "how to style coffee table styling in balcony",
-          "best coffee table styling for balcony",
-          "balcony coffee table styling mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "balcony coffee table styling ideas",
-        "how to style coffee table styling in balcony",
-        "best coffee table styling for balcony"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
-    },
-    {
-      "cluster_name": "balcony curtain styling",
-      "cluster_slug": "balcony-curtain-styling",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "balcony curtain styling ideas",
-          "how to style curtain styling in balcony",
-          "best curtain styling for balcony",
-          "balcony curtain styling mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "balcony curtain styling ideas",
-        "how to style curtain styling in balcony",
-        "best curtain styling for balcony"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
     },
     {
       "cluster_name": "balcony decor layering",
@@ -863,88 +704,6 @@
       "source": "taxonomy feature room"
     },
     {
-      "cluster_name": "balcony rug styling",
-      "cluster_slug": "balcony-rug-styling",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "balcony rug styling ideas",
-          "how to style rug styling in balcony",
-          "best rug styling for balcony",
-          "balcony rug styling mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "balcony rug styling ideas",
-        "how to style rug styling in balcony",
-        "best rug styling for balcony"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
-    },
-    {
-      "cluster_name": "balcony shelving",
-      "cluster_slug": "balcony-shelving",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "balcony shelving ideas",
-          "how to style shelving in balcony",
-          "best shelving for balcony",
-          "balcony shelving mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "balcony shelving ideas",
-        "how to style shelving in balcony",
-        "best shelving for balcony"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
-    },
-    {
       "cluster_name": "balcony storage",
       "cluster_slug": "balcony-storage",
       "health_label": "missing",
@@ -986,88 +745,6 @@
       "source": "taxonomy feature room"
     },
     {
-      "cluster_name": "balcony wall decor",
-      "cluster_slug": "balcony-wall-decor",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "balcony wall decor ideas",
-          "how to style wall decor in balcony",
-          "best wall decor for balcony",
-          "balcony wall decor mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "balcony wall decor ideas",
-        "how to style wall decor in balcony",
-        "best wall decor for balcony"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
-    },
-    {
-      "cluster_name": "balcony window treatment ideas",
-      "cluster_slug": "balcony-window-treatment-ideas",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "balcony window treatment ideas ideas",
-          "how to style window treatment ideas in balcony",
-          "best window treatment ideas for balcony",
-          "balcony window treatment ideas mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "balcony window treatment ideas ideas",
-        "how to style window treatment ideas in balcony",
-        "best window treatment ideas for balcony"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
-    },
-    {
       "cluster_name": "bathroom art placement",
       "cluster_slug": "bathroom-art-placement",
       "health_label": "missing",
@@ -1092,88 +769,6 @@
         "bathroom art placement ideas",
         "how to style art placement in bathroom",
         "best art placement for bathroom"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
-    },
-    {
-      "cluster_name": "bathroom coffee table styling",
-      "cluster_slug": "bathroom-coffee-table-styling",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "bathroom coffee table styling ideas",
-          "how to style coffee table styling in bathroom",
-          "best coffee table styling for bathroom",
-          "bathroom coffee table styling mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "bathroom coffee table styling ideas",
-        "how to style coffee table styling in bathroom",
-        "best coffee table styling for bathroom"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
-    },
-    {
-      "cluster_name": "bathroom curtain styling",
-      "cluster_slug": "bathroom-curtain-styling",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "bathroom curtain styling ideas",
-          "how to style curtain styling in bathroom",
-          "best curtain styling for bathroom",
-          "bathroom curtain styling mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "bathroom curtain styling ideas",
-        "how to style curtain styling in bathroom",
-        "best curtain styling for bathroom"
       ],
       "pinterest_signal": {
         "label": "no_data",
@@ -1256,47 +851,6 @@
         "bathroom lighting ideas",
         "how to style lighting in bathroom",
         "best lighting for bathroom"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
-    },
-    {
-      "cluster_name": "bathroom rug styling",
-      "cluster_slug": "bathroom-rug-styling",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "bathroom rug styling ideas",
-          "how to style rug styling in bathroom",
-          "best rug styling for bathroom",
-          "bathroom rug styling mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "bathroom rug styling ideas",
-        "how to style rug styling in bathroom",
-        "best rug styling for bathroom"
       ],
       "pinterest_signal": {
         "label": "no_data",
@@ -1502,88 +1056,6 @@
         "bedroom art placement ideas",
         "how to style art placement in bedroom",
         "best art placement for bedroom"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
-    },
-    {
-      "cluster_name": "bedroom coffee table styling",
-      "cluster_slug": "bedroom-coffee-table-styling",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "bedroom coffee table styling ideas",
-          "how to style coffee table styling in bedroom",
-          "best coffee table styling for bedroom",
-          "bedroom coffee table styling mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "bedroom coffee table styling ideas",
-        "how to style coffee table styling in bedroom",
-        "best coffee table styling for bedroom"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
-    },
-    {
-      "cluster_name": "bedroom curtain styling",
-      "cluster_slug": "bedroom-curtain-styling",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "bedroom curtain styling ideas",
-          "how to style curtain styling in bedroom",
-          "best curtain styling for bedroom",
-          "bedroom curtain styling mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "bedroom curtain styling ideas",
-        "how to style curtain styling in bedroom",
-        "best curtain styling for bedroom"
       ],
       "pinterest_signal": {
         "label": "no_data",
@@ -6890,47 +6362,6 @@
       "source": "taxonomy feature room"
     },
     {
-      "cluster_name": "dining room coffee table styling",
-      "cluster_slug": "dining-room-coffee-table-styling",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "dining room coffee table styling ideas",
-          "how to style coffee table styling in dining room",
-          "best coffee table styling for dining room",
-          "dining room coffee table styling mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "dining room coffee table styling ideas",
-        "how to style coffee table styling in dining room",
-        "best coffee table styling for dining room"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
-    },
-    {
       "cluster_name": "dining room curtain styling",
       "cluster_slug": "dining-room-curtain-styling",
       "health_label": "missing",
@@ -8612,88 +8043,6 @@
       "source": "taxonomy feature room"
     },
     {
-      "cluster_name": "entryway coffee table styling",
-      "cluster_slug": "entryway-coffee-table-styling",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "entryway coffee table styling ideas",
-          "how to style coffee table styling in entryway",
-          "best coffee table styling for entryway",
-          "entryway coffee table styling mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "entryway coffee table styling ideas",
-        "how to style coffee table styling in entryway",
-        "best coffee table styling for entryway"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
-    },
-    {
-      "cluster_name": "entryway curtain styling",
-      "cluster_slug": "entryway-curtain-styling",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "entryway curtain styling ideas",
-          "how to style curtain styling in entryway",
-          "best curtain styling for entryway",
-          "entryway curtain styling mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "entryway curtain styling ideas",
-        "how to style curtain styling in entryway",
-        "best curtain styling for entryway"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
-    },
-    {
       "cluster_name": "entryway decor layering",
       "cluster_slug": "entryway-decor-layering",
       "health_label": "missing",
@@ -8964,47 +8313,6 @@
         "entryway wall decor ideas",
         "how to style wall decor in entryway",
         "best wall decor for entryway"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
-    },
-    {
-      "cluster_name": "entryway window treatment ideas",
-      "cluster_slug": "entryway-window-treatment-ideas",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "entryway window treatment ideas ideas",
-          "how to style window treatment ideas in entryway",
-          "best window treatment ideas for entryway",
-          "entryway window treatment ideas mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "entryway window treatment ideas ideas",
-        "how to style window treatment ideas in entryway",
-        "best window treatment ideas for entryway"
       ],
       "pinterest_signal": {
         "label": "no_data",
@@ -9620,47 +8928,6 @@
         "home office art placement ideas",
         "how to style art placement in home office",
         "best art placement for home office"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
-    },
-    {
-      "cluster_name": "home office coffee table styling",
-      "cluster_slug": "home-office-coffee-table-styling",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "home office coffee table styling ideas",
-          "how to style coffee table styling in home office",
-          "best coffee table styling for home office",
-          "home office coffee table styling mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "home office coffee table styling ideas",
-        "how to style coffee table styling in home office",
-        "best coffee table styling for home office"
       ],
       "pinterest_signal": {
         "label": "no_data",
@@ -10908,129 +10175,6 @@
       "source": "taxonomy material room"
     },
     {
-      "cluster_name": "kitchen art placement",
-      "cluster_slug": "kitchen-art-placement",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "kitchen art placement ideas",
-          "how to style art placement in kitchen",
-          "best art placement for kitchen",
-          "kitchen art placement mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "kitchen art placement ideas",
-        "how to style art placement in kitchen",
-        "best art placement for kitchen"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
-    },
-    {
-      "cluster_name": "kitchen coffee table styling",
-      "cluster_slug": "kitchen-coffee-table-styling",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "kitchen coffee table styling ideas",
-          "how to style coffee table styling in kitchen",
-          "best coffee table styling for kitchen",
-          "kitchen coffee table styling mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "kitchen coffee table styling ideas",
-        "how to style coffee table styling in kitchen",
-        "best coffee table styling for kitchen"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
-    },
-    {
-      "cluster_name": "kitchen curtain styling",
-      "cluster_slug": "kitchen-curtain-styling",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "kitchen curtain styling ideas",
-          "how to style curtain styling in kitchen",
-          "best curtain styling for kitchen",
-          "kitchen curtain styling mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "kitchen curtain styling ideas",
-        "how to style curtain styling in kitchen",
-        "best curtain styling for kitchen"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
-    },
-    {
       "cluster_name": "kitchen decor layering",
       "cluster_slug": "kitchen-decor-layering",
       "health_label": "missing",
@@ -11096,47 +10240,6 @@
         "kitchen lighting ideas",
         "how to style lighting in kitchen",
         "best lighting for kitchen"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
-    },
-    {
-      "cluster_name": "kitchen rug styling",
-      "cluster_slug": "kitchen-rug-styling",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "kitchen rug styling ideas",
-          "how to style rug styling in kitchen",
-          "best rug styling for kitchen",
-          "kitchen rug styling mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "kitchen rug styling ideas",
-        "how to style rug styling in kitchen",
-        "best rug styling for kitchen"
       ],
       "pinterest_signal": {
         "label": "no_data",
@@ -11318,170 +10421,6 @@
       "source": "taxonomy feature room"
     },
     {
-      "cluster_name": "laundry room art placement",
-      "cluster_slug": "laundry-room-art-placement",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "laundry room art placement ideas",
-          "how to style art placement in laundry room",
-          "best art placement for laundry room",
-          "laundry room art placement mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "laundry room art placement ideas",
-        "how to style art placement in laundry room",
-        "best art placement for laundry room"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
-    },
-    {
-      "cluster_name": "laundry room coffee table styling",
-      "cluster_slug": "laundry-room-coffee-table-styling",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "laundry room coffee table styling ideas",
-          "how to style coffee table styling in laundry room",
-          "best coffee table styling for laundry room",
-          "laundry room coffee table styling mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "laundry room coffee table styling ideas",
-        "how to style coffee table styling in laundry room",
-        "best coffee table styling for laundry room"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
-    },
-    {
-      "cluster_name": "laundry room curtain styling",
-      "cluster_slug": "laundry-room-curtain-styling",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "laundry room curtain styling ideas",
-          "how to style curtain styling in laundry room",
-          "best curtain styling for laundry room",
-          "laundry room curtain styling mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "laundry room curtain styling ideas",
-        "how to style curtain styling in laundry room",
-        "best curtain styling for laundry room"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
-    },
-    {
-      "cluster_name": "laundry room decor layering",
-      "cluster_slug": "laundry-room-decor-layering",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "laundry room decor layering ideas",
-          "how to style decor layering in laundry room",
-          "best decor layering for laundry room",
-          "laundry room decor layering mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "laundry room decor layering ideas",
-        "how to style decor layering in laundry room",
-        "best decor layering for laundry room"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
-    },
-    {
       "cluster_name": "laundry room lighting",
       "cluster_slug": "laundry-room-lighting",
       "health_label": "missing",
@@ -11506,47 +10445,6 @@
         "laundry room lighting ideas",
         "how to style lighting in laundry room",
         "best lighting for laundry room"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
-    },
-    {
-      "cluster_name": "laundry room rug styling",
-      "cluster_slug": "laundry-room-rug-styling",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "laundry room rug styling ideas",
-          "how to style rug styling in laundry room",
-          "best rug styling for laundry room",
-          "laundry room rug styling mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "laundry room rug styling ideas",
-        "how to style rug styling in laundry room",
-        "best rug styling for laundry room"
       ],
       "pinterest_signal": {
         "label": "no_data",
@@ -15500,47 +14398,6 @@
       "source": "taxonomy feature room"
     },
     {
-      "cluster_name": "nursery coffee table styling",
-      "cluster_slug": "nursery-coffee-table-styling",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "nursery coffee table styling ideas",
-          "how to style coffee table styling in nursery",
-          "best coffee table styling for nursery",
-          "nursery coffee table styling mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "nursery coffee table styling ideas",
-        "how to style coffee table styling in nursery",
-        "best coffee table styling for nursery"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
-    },
-    {
       "cluster_name": "nursery curtain styling",
       "cluster_slug": "nursery-curtain-styling",
       "health_label": "missing",
@@ -17140,129 +15997,6 @@
       "source": "taxonomy style room"
     },
     {
-      "cluster_name": "patio art placement",
-      "cluster_slug": "patio-art-placement",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "patio art placement ideas",
-          "how to style art placement in patio",
-          "best art placement for patio",
-          "patio art placement mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "patio art placement ideas",
-        "how to style art placement in patio",
-        "best art placement for patio"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
-    },
-    {
-      "cluster_name": "patio coffee table styling",
-      "cluster_slug": "patio-coffee-table-styling",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "patio coffee table styling ideas",
-          "how to style coffee table styling in patio",
-          "best coffee table styling for patio",
-          "patio coffee table styling mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "patio coffee table styling ideas",
-        "how to style coffee table styling in patio",
-        "best coffee table styling for patio"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
-    },
-    {
-      "cluster_name": "patio curtain styling",
-      "cluster_slug": "patio-curtain-styling",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "patio curtain styling ideas",
-          "how to style curtain styling in patio",
-          "best curtain styling for patio",
-          "patio curtain styling mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "patio curtain styling ideas",
-        "how to style curtain styling in patio",
-        "best curtain styling for patio"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
-    },
-    {
       "cluster_name": "patio decor layering",
       "cluster_slug": "patio-decor-layering",
       "health_label": "missing",
@@ -17345,88 +16079,6 @@
       "source": "taxonomy feature room"
     },
     {
-      "cluster_name": "patio rug styling",
-      "cluster_slug": "patio-rug-styling",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "patio rug styling ideas",
-          "how to style rug styling in patio",
-          "best rug styling for patio",
-          "patio rug styling mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "patio rug styling ideas",
-        "how to style rug styling in patio",
-        "best rug styling for patio"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
-    },
-    {
-      "cluster_name": "patio shelving",
-      "cluster_slug": "patio-shelving",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "patio shelving ideas",
-          "how to style shelving in patio",
-          "best shelving for patio",
-          "patio shelving mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "patio shelving ideas",
-        "how to style shelving in patio",
-        "best shelving for patio"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
-    },
-    {
       "cluster_name": "patio storage",
       "cluster_slug": "patio-storage",
       "health_label": "missing",
@@ -17451,88 +16103,6 @@
         "patio storage ideas",
         "how to style storage in patio",
         "best storage for patio"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
-    },
-    {
-      "cluster_name": "patio wall decor",
-      "cluster_slug": "patio-wall-decor",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "patio wall decor ideas",
-          "how to style wall decor in patio",
-          "best wall decor for patio",
-          "patio wall decor mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "patio wall decor ideas",
-        "how to style wall decor in patio",
-        "best wall decor for patio"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
-    },
-    {
-      "cluster_name": "patio window treatment ideas",
-      "cluster_slug": "patio-window-treatment-ideas",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "patio window treatment ideas ideas",
-          "how to style window treatment ideas in patio",
-          "best window treatment ideas for patio",
-          "patio window treatment ideas mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "patio window treatment ideas ideas",
-        "how to style window treatment ideas in patio",
-        "best window treatment ideas for patio"
       ],
       "pinterest_signal": {
         "label": "no_data",
@@ -20584,88 +19154,6 @@
       "source": "taxonomy small space"
     },
     {
-      "cluster_name": "small apartment coffee table styling",
-      "cluster_slug": "small-apartment-coffee-table-styling",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "small apartment coffee table styling ideas",
-          "how to style coffee table styling in small apartment",
-          "best coffee table styling for small apartment",
-          "small apartment coffee table styling mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "small apartment coffee table styling ideas",
-        "how to style coffee table styling in small apartment",
-        "best coffee table styling for small apartment"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
-    },
-    {
-      "cluster_name": "small apartment curtain styling",
-      "cluster_slug": "small-apartment-curtain-styling",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "small apartment curtain styling ideas",
-          "how to style curtain styling in small apartment",
-          "best curtain styling for small apartment",
-          "small apartment curtain styling mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "small apartment curtain styling ideas",
-        "how to style curtain styling in small apartment",
-        "best curtain styling for small apartment"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
-    },
-    {
       "cluster_name": "small apartment decor layering",
       "cluster_slug": "small-apartment-decor-layering",
       "health_label": "missing",
@@ -20895,47 +19383,6 @@
         "small apartment wall decor ideas",
         "how to style wall decor in small apartment",
         "best wall decor for small apartment"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
-    },
-    {
-      "cluster_name": "small apartment window treatment ideas",
-      "cluster_slug": "small-apartment-window-treatment-ideas",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "small apartment window treatment ideas ideas",
-          "how to style window treatment ideas in small apartment",
-          "best window treatment ideas for small apartment",
-          "small apartment window treatment ideas mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "small apartment window treatment ideas ideas",
-        "how to style window treatment ideas in small apartment",
-        "best window treatment ideas for small apartment"
       ],
       "pinterest_signal": {
         "label": "no_data",
@@ -25258,6 +23705,96 @@
       "source": "taxonomy color room"
     },
     {
+      "cluster_name": "spring living room styling",
+      "cluster_slug": "spring-living-room-styling",
+      "health_label": "underdeveloped",
+      "article_count": 1,
+      "latest_article_date": "2026-03-15",
+      "days_since_latest": 1,
+      "keyword_coverage": {
+        "total_keywords": 4,
+        "covered_count": 4,
+        "coverage_ratio": 1.0,
+        "covered_keywords": [
+          "spring living room styling ideas",
+          "how to style spring living room styling",
+          "spring living room styling decor",
+          "spring living room styling mistakes to avoid"
+        ],
+        "uncovered_keywords": []
+      },
+      "primary_keywords_used": [
+        "spring living room styling ideas"
+      ],
+      "representative_article_slugs": [
+        "spring-living-room-styling-ideas-fresh-minimalism"
+      ],
+      "recommended_topics": [
+        "spring living room ideas",
+        "how to style spring living room",
+        "spring living room decor"
+      ],
+      "pinterest_signal": {
+        "label": "no_data",
+        "boost": 0,
+        "pinterest_article_count": 0,
+        "strong_article_count": 0,
+        "weak_article_count": 0,
+        "average_score": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_saves": 0.0
+      },
+      "priority_score": 18,
+      "season": "spring",
+      "holiday": "",
+      "source": "taxonomy seasonal"
+    },
+    {
+      "cluster_name": "bedroom curtain styling",
+      "cluster_slug": "bedroom-curtain-styling",
+      "health_label": "underdeveloped",
+      "article_count": 1,
+      "latest_article_date": "2026-03-16",
+      "days_since_latest": 0,
+      "keyword_coverage": {
+        "total_keywords": 4,
+        "covered_count": 4,
+        "coverage_ratio": 1.0,
+        "covered_keywords": [
+          "bedroom curtain styling ideas",
+          "how to style curtain styling in bedroom",
+          "best curtain styling for bedroom",
+          "bedroom curtain styling mistakes to avoid"
+        ],
+        "uncovered_keywords": []
+      },
+      "primary_keywords_used": [
+        "best curtain styling for bedroom"
+      ],
+      "representative_article_slugs": [
+        "best-curtain-styling-for-bedroom-mistakes-fixes"
+      ],
+      "recommended_topics": [
+        "bedroom curtain ideas",
+        "how to style bedroom curtain",
+        "bedroom curtain decor"
+      ],
+      "pinterest_signal": {
+        "label": "no_data",
+        "boost": 0,
+        "pinterest_article_count": 0,
+        "strong_article_count": 0,
+        "weak_article_count": 0,
+        "average_score": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_saves": 0.0
+      },
+      "priority_score": 18,
+      "season": "",
+      "holiday": "",
+      "source": "taxonomy feature room"
+    },
+    {
       "cluster_name": "linen and boucle styling",
       "cluster_slug": "linen-and-boucle-styling",
       "health_label": "underdeveloped",
@@ -25391,53 +23928,6 @@
       "season": "",
       "holiday": "",
       "source": "local cluster"
-    },
-    {
-      "cluster_name": "spring living room styling",
-      "cluster_slug": "spring-living-room-styling",
-      "health_label": "underdeveloped",
-      "article_count": 2,
-      "latest_article_date": "2026-03-16",
-      "days_since_latest": 0,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 4,
-        "coverage_ratio": 1.0,
-        "covered_keywords": [
-          "spring living room styling ideas",
-          "how to style spring living room styling",
-          "spring living room styling decor",
-          "spring living room styling mistakes to avoid"
-        ],
-        "uncovered_keywords": []
-      },
-      "primary_keywords_used": [
-        "spring living room styling decor",
-        "spring living room styling ideas"
-      ],
-      "representative_article_slugs": [
-        "spring-living-room-styling-decor",
-        "spring-living-room-styling-ideas-fresh-minimalism"
-      ],
-      "recommended_topics": [
-        "spring living room ideas",
-        "how to style spring living room",
-        "spring living room decor"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 18,
-      "season": "spring",
-      "holiday": "",
-      "source": "taxonomy seasonal"
     }
   ]
 }

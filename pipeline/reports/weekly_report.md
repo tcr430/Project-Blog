@@ -10,10 +10,10 @@ Pins Published: 0
 Repins Scheduled: 0
 
 ## Articles Published
+- best-curtain-styling-for-bedroom-mistakes-fixes
 - linen-boucle-texture-mix
 - organic-modern-living-room
 - small-apartment-dining-nooks-cozy-corner-trend
-- spring-living-room-styling-decor
 - spring-living-room-styling-ideas-fresh-minimalism
 
 ## Top Performing Pins
