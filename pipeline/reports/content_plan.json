@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-15T20:57:03.669071+00:00",
+  "generated_at": "2026-03-16T10:05:23.978271+00:00",
   "total_clusters": 605,
   "summary": {
     "missing": 601,
@@ -610,10 +610,10 @@
     "warm neutral home office",
     "warm neutral kitchen",
     "warm neutral living room",
-    "spring living room styling",
     "linen and boucle styling",
     "organic modern living room",
-    "small dining nook"
+    "small dining nook",
+    "spring living room styling"
   ],
   "clusters": [
     {
@@ -25258,51 +25258,6 @@
       "source": "taxonomy color room"
     },
     {
-      "cluster_name": "spring living room styling",
-      "cluster_slug": "spring-living-room-styling",
-      "health_label": "underdeveloped",
-      "article_count": 1,
-      "latest_article_date": "2026-03-15",
-      "days_since_latest": 0,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 4,
-        "coverage_ratio": 1.0,
-        "covered_keywords": [
-          "spring living room styling ideas",
-          "how to style spring living room styling",
-          "spring living room styling decor",
-          "spring living room styling mistakes to avoid"
-        ],
-        "uncovered_keywords": []
-      },
-      "primary_keywords_used": [
-        "spring living room styling ideas"
-      ],
-      "representative_article_slugs": [
-        "spring-living-room-styling-ideas-fresh-minimalism"
-      ],
-      "recommended_topics": [
-        "spring living room ideas",
-        "how to style spring living room",
-        "spring living room decor"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 18,
-      "season": "spring",
-      "holiday": "",
-      "source": "taxonomy seasonal"
-    },
-    {
       "cluster_name": "linen and boucle styling",
       "cluster_slug": "linen-and-boucle-styling",
       "health_label": "underdeveloped",
@@ -25436,6 +25391,53 @@
       "season": "",
       "holiday": "",
       "source": "local cluster"
+    },
+    {
+      "cluster_name": "spring living room styling",
+      "cluster_slug": "spring-living-room-styling",
+      "health_label": "underdeveloped",
+      "article_count": 2,
+      "latest_article_date": "2026-03-16",
+      "days_since_latest": 0,
+      "keyword_coverage": {
+        "total_keywords": 4,
+        "covered_count": 4,
+        "coverage_ratio": 1.0,
+        "covered_keywords": [
+          "spring living room styling ideas",
+          "how to style spring living room styling",
+          "spring living room styling decor",
+          "spring living room styling mistakes to avoid"
+        ],
+        "uncovered_keywords": []
+      },
+      "primary_keywords_used": [
+        "spring living room styling decor",
+        "spring living room styling ideas"
+      ],
+      "representative_article_slugs": [
+        "spring-living-room-styling-decor",
+        "spring-living-room-styling-ideas-fresh-minimalism"
+      ],
+      "recommended_topics": [
+        "spring living room ideas",
+        "how to style spring living room",
+        "spring living room decor"
+      ],
+      "pinterest_signal": {
+        "label": "no_data",
+        "boost": 0,
+        "pinterest_article_count": 0,
+        "strong_article_count": 0,
+        "weak_article_count": 0,
+        "average_score": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_saves": 0.0
+      },
+      "priority_score": 18,
+      "season": "spring",
+      "holiday": "",
+      "source": "taxonomy seasonal"
     }
   ]
 }

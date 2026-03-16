@@ -1,11 +1,11 @@
 # Weekly Pipeline Report
 
-Generated: 2026-03-15
+Generated: 2026-03-16
 Window: last 7 days
 
-Articles Published: 4  
-Pins Generated: 16  
-Pins Scheduled: 16  
+Articles Published: 5  
+Pins Generated: 20  
+Pins Scheduled: 20  
 Pins Published: 0  
 Repins Scheduled: 0
 
@@ -13,6 +13,7 @@ Repins Scheduled: 0
 - linen-boucle-texture-mix
 - organic-modern-living-room
 - small-apartment-dining-nooks-cozy-corner-trend
+- spring-living-room-styling-decor
 - spring-living-room-styling-ideas-fresh-minimalism
 
 ## Top Performing Pins

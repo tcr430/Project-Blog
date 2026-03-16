@@ -1,0 +1,26 @@
+{
+  "hero": {
+    "cache_key": "302a8cee7cf1dbdede2a38477507833c7187992df64545f158adf3f576305d96",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/spring-living-room-styling-decor/hero.png"
+  },
+  "section-1": {
+    "cache_key": "0bcbba043c060ee92f29ac6f25912634e989ec23497f19b204e8978ca9abc540",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/spring-living-room-styling-decor/section-1.png"
+  },
+  "section-2": {
+    "cache_key": "8142e04e6ba93d56a8e4b96421020683ce0fa692b903ef497e2fde82b178a590",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/spring-living-room-styling-decor/section-2.png"
+  },
+  "section-3": {
+    "cache_key": "c8add2a8fa7d58d02ef3a661880c8d1acc1ef2fb4551534633cfcddebc5f11b7",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/spring-living-room-styling-decor/section-3.png"
+  },
+  "section-4": {
+    "cache_key": "311773b919de49c27e75a483bd2b76553d68005a84e2781e2e3d483c1d70c58d",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/spring-living-room-styling-decor/section-4.png"
+  },
+  "section-5": {
+    "cache_key": "7c8abb0b9b637fc843fa638edfe484e0f655f2142fc6f4990a39a7e3e629464b",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/spring-living-room-styling-decor/section-5.png"
+  }
+}

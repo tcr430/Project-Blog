@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-15T20:57:03.615230+00:00",
+  "generated_at": "2026-03-16T10:05:23.898867+00:00",
   "cluster_count": 4,
   "summary": {
     "hot": 0,
@@ -79,17 +79,20 @@
     },
     {
       "cluster_name": "spring living room styling",
-      "article_count": 1,
+      "article_count": 2,
       "article_slugs": [
+        "spring-living-room-styling-decor",
         "spring-living-room-styling-ideas-fresh-minimalism"
       ],
       "primary_keywords": [
+        "spring living room styling decor",
         "spring living room styling ideas"
       ],
       "secondary_keywords": [
+        "spring living room styling ideas",
         "how to style spring living room styling",
-        "spring living room styling decor",
-        "spring living room styling mistakes to avoid"
+        "spring living room styling mistakes to avoid",
+        "spring living room styling decor"
       ],
       "pinterest_article_count": 0,
       "strong_article_count": 0,
