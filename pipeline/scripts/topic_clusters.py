@@ -228,8 +228,21 @@ def generate_taxonomy_clusters(taxonomy: dict[str, Any]) -> list[TopicCluster]:
     if isinstance(feature_room_pairs, dict):
         features = [normalize_text(item) for item in feature_room_pairs.get("features", []) if normalize_text(item)]
         rooms = [normalize_text(item) for item in feature_room_pairs.get("rooms", []) if normalize_text(item)]
+        raw_allowed_rooms = feature_room_pairs.get("allowed_rooms_by_feature", {})
+        allowed_rooms_by_feature = {
+            normalize_text(feature): {
+                normalize_text(room)
+                for room in allowed_rooms
+                if normalize_text(room)
+            }
+            for feature, allowed_rooms in raw_allowed_rooms.items()
+            if isinstance(allowed_rooms, list)
+        } if isinstance(raw_allowed_rooms, dict) else {}
         for room in rooms:
             for feature in features:
+                allowed_rooms = allowed_rooms_by_feature.get(feature)
+                if allowed_rooms is not None and room not in allowed_rooms:
+                    continue
                 generated.append(
                     normalize_cluster(
                         {

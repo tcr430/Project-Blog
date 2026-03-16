@@ -12,6 +12,7 @@ from openai import OpenAI
 
 from fetch_products import Product, fetch_products_with_context
 from fetch_trends import fetch_candidate_trends
+from fetch_pinterest_trends import DEFAULT_TRENDS_PATH, fetch_pinterest_trends
 from generate_article import (
     generate_article_package_with_report,
     load_openai_api_key,
@@ -49,6 +50,7 @@ COST_REPORTS_DIR = Path(__file__).resolve().parents[1] / "data" / "cost_reports"
 SEO_VALIDATION_REPORT_PATH = Path(__file__).resolve().parents[1] / "reports" / "article_seo_validation_report.json"
 CONTENT_PLAN_REPORT_PATH = Path(__file__).resolve().parents[1] / "reports" / "content_plan.json"
 PINTEREST_TOPIC_SIGNALS_REPORT_PATH = Path(__file__).resolve().parents[1] / "reports" / "pinterest_topic_signals.json"
+PINTEREST_TRENDS_DATA_PATH = DEFAULT_TRENDS_PATH
 
 
 def log_phase(message: str) -> None:
@@ -120,7 +122,7 @@ def parse_args() -> argparse.Namespace:
         "--trend-source",
         type=str,
         default="auto",
-        choices=["auto", "file", "mock"],
+        choices=["auto", "file", "mock", "pinterest"],
         help="Trend source for automatic mode (default: auto).",
     )
     parser.add_argument(
@@ -557,6 +559,24 @@ def select_automatic_trends(
 
     raw_candidates: list[dict[str, Any]] | None = None
     project_root = Path(__file__).resolve().parents[2]
+
+    try:
+        log_phase("fetching pinterest trends")
+        pinterest_trends = fetch_pinterest_trends(
+            project_root=project_root,
+            output_path=PINTEREST_TRENDS_DATA_PATH,
+            region="US",
+            trend_type="monthly",
+            interest="home_decor",
+            limit=50,
+        )
+        print(
+            f"[pinterest] trends fetched: {pinterest_trends.get('candidate_count', 0)} "
+            f"({PINTEREST_TRENDS_DATA_PATH})"
+        )
+    except Exception as exc:
+        print(f"[warning] Pinterest Trends fetch failed. Continuing with fallback sources. Details: {exc}")
+
     pinterest_signal_result = build_pinterest_topic_signal_outputs(
         cluster_index_path=project_root / "pipeline" / "data" / "article_cluster_index.json",
         pinterest_summary_path=project_root / "pipeline" / "data" / "pinterest_performance_summary.json",

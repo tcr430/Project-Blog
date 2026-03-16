@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 from typing import Any, TypedDict
 
+from fetch_pinterest_trends import DEFAULT_TRENDS_PATH, fetch_pinterest_trends
 from topic_clusters import (
     TopicCandidate,
     build_topic_candidate,
@@ -23,9 +24,11 @@ class TrendCandidate(TypedDict):
     season: str
     holiday: str
     source: str
+    pinterest_trend_score: int
 
 
 DEFAULT_CANDIDATES_PATH = Path(__file__).resolve().parents[1] / "data" / "candidate_trends.json"
+DEFAULT_PINTEREST_TRENDS_PATH = DEFAULT_TRENDS_PATH
 
 
 BUILTIN_DECOR_TRENDS: list[TrendCandidate] = [
@@ -68,7 +71,7 @@ def parse_args() -> argparse.Namespace:
         "--source",
         type=str,
         default="auto",
-        choices=["auto", "file", "mock"],
+        choices=["auto", "file", "mock", "pinterest"],
         help="Candidate source mode (default: auto).",
     )
     return parser.parse_args()
@@ -76,6 +79,13 @@ def parse_args() -> argparse.Namespace:
 
 def _normalize_text(value: Any) -> str:
     return str(value or "").strip().lower()
+
+
+def _parse_int(value: Any) -> int:
+    try:
+        return int(float(value))
+    except (TypeError, ValueError):
+        return 0
 
 
 def normalize_candidate(raw: dict[str, Any], source: str) -> TrendCandidate:
@@ -111,6 +121,7 @@ def normalize_candidate(raw: dict[str, Any], source: str) -> TrendCandidate:
         "season": _normalize_text(raw.get("season", "")),
         "holiday": _normalize_text(raw.get("holiday", "")),
         "source": _normalize_text(raw.get("source", "")) or source,
+        "pinterest_trend_score": _parse_int(raw.get("pinterest_trend_score")),
     }
 
 
@@ -132,6 +143,28 @@ def load_mock_candidates() -> list[TrendCandidate]:
 def load_cluster_candidates() -> list[TrendCandidate]:
     clusters = load_default_topic_clusters()
     return [dict(item) for item in expand_clusters_to_candidates(clusters)]
+
+
+def load_pinterest_candidates() -> list[TrendCandidate]:
+    project_root = Path(__file__).resolve().parents[2]
+    payload = fetch_pinterest_trends(project_root=project_root, output_path=DEFAULT_PINTEREST_TRENDS_PATH)
+    raw_candidates = payload.get("candidates", [])
+    if not isinstance(raw_candidates, list):
+        return []
+    return [normalize_candidate(item, source="pinterest") for item in raw_candidates if isinstance(item, dict)]
+
+
+def merge_candidates(*candidate_sets: list[TrendCandidate]) -> list[TrendCandidate]:
+    merged: list[TrendCandidate] = []
+    seen_keywords: set[str] = set()
+    for candidates in candidate_sets:
+        for candidate in candidates:
+            keyword = candidate["trend_keyword"]
+            if keyword in seen_keywords:
+                continue
+            seen_keywords.add(keyword)
+            merged.append(candidate)
+    return merged
 
 
 def fetch_candidate_trends(
@@ -156,12 +189,22 @@ def fetch_candidate_trends(
     if selected_source == "mock":
         return load_mock_candidates()
 
+    if selected_source == "pinterest":
+        return load_pinterest_candidates()
+
     if candidates_file is not None and candidates_file.exists():
         return load_candidates_from_file(candidates_file)
 
+    pinterest_candidates: list[TrendCandidate] = []
+    try:
+        pinterest_candidates = load_pinterest_candidates()
+    except Exception as exc:
+        print(f"[warning] Pinterest trends fetch failed. Falling back to local candidates. Details: {exc}")
+
     cluster_candidates = load_cluster_candidates()
-    if cluster_candidates:
-        return cluster_candidates
+    merged_candidates = merge_candidates(pinterest_candidates, cluster_candidates)
+    if merged_candidates:
+        return merged_candidates
 
     if DEFAULT_CANDIDATES_PATH.exists():
         return load_candidates_from_file(DEFAULT_CANDIDATES_PATH)

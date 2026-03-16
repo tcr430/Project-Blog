@@ -68,7 +68,113 @@
       "patio",
       "balcony",
       "small apartment"
-    ]
+    ],
+    "allowed_rooms_by_feature": {
+      "lighting": [
+        "living room",
+        "bedroom",
+        "bathroom",
+        "kitchen",
+        "dining room",
+        "entryway",
+        "home office",
+        "nursery",
+        "laundry room",
+        "patio",
+        "balcony",
+        "small apartment"
+      ],
+      "wall decor": [
+        "living room",
+        "bedroom",
+        "bathroom",
+        "kitchen",
+        "dining room",
+        "entryway",
+        "home office",
+        "nursery",
+        "laundry room",
+        "small apartment"
+      ],
+      "storage": [
+        "living room",
+        "bedroom",
+        "bathroom",
+        "kitchen",
+        "dining room",
+        "entryway",
+        "home office",
+        "nursery",
+        "laundry room",
+        "patio",
+        "balcony",
+        "small apartment"
+      ],
+      "shelving": [
+        "living room",
+        "bedroom",
+        "bathroom",
+        "kitchen",
+        "dining room",
+        "entryway",
+        "home office",
+        "nursery",
+        "laundry room",
+        "small apartment"
+      ],
+      "rug styling": [
+        "living room",
+        "bedroom",
+        "dining room",
+        "entryway",
+        "home office",
+        "nursery",
+        "small apartment"
+      ],
+      "curtain styling": [
+        "living room",
+        "bedroom",
+        "dining room",
+        "home office",
+        "nursery"
+      ],
+      "coffee table styling": [
+        "living room"
+      ],
+      "art placement": [
+        "living room",
+        "bedroom",
+        "bathroom",
+        "dining room",
+        "entryway",
+        "home office",
+        "nursery",
+        "small apartment"
+      ],
+      "window treatment ideas": [
+        "living room",
+        "bedroom",
+        "bathroom",
+        "kitchen",
+        "dining room",
+        "home office",
+        "nursery",
+        "laundry room"
+      ],
+      "decor layering": [
+        "living room",
+        "bedroom",
+        "bathroom",
+        "kitchen",
+        "dining room",
+        "entryway",
+        "home office",
+        "nursery",
+        "patio",
+        "balcony",
+        "small apartment"
+      ]
+    }
   },
   "material_room_pairs": {
     "material_mixes": [

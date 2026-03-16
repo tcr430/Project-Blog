@@ -21,6 +21,7 @@ class TrendCandidate(TypedDict):
     season: str
     holiday: str
     source: str
+    pinterest_trend_score: int
 
 
 class ScoredTrend(TrendCandidate):
@@ -101,6 +102,13 @@ def normalize_text(value: Any) -> str:
     return re.sub(r"\s+", " ", normalized)
 
 
+def parse_int(value: Any) -> int:
+    try:
+        return int(float(value))
+    except (TypeError, ValueError):
+        return 0
+
+
 def tokenize(value: Any) -> set[str]:
     return {token for token in normalize_text(value).split() if token}
 
@@ -168,6 +176,7 @@ def normalize_candidate(raw: dict[str, Any]) -> TrendCandidate:
         "season": season,
         "holiday": holiday,
         "source": source,
+        "pinterest_trend_score": parse_int(raw.get("pinterest_trend_score")),
     }
 
 
@@ -397,6 +406,16 @@ def score_candidate(candidate: TrendCandidate) -> tuple[int, list[str]]:
     if candidate["season"] or candidate["holiday"]:
         score += 5
         notes.append("seasonality: timely angle bonus (+5)")
+
+    if candidate["source"] == "pinterest_trends_api":
+        score += 8
+        notes.append("source: Pinterest monthly home decor trend (+8)")
+
+        trend_strength = max(0, parse_int(candidate.get("pinterest_trend_score")))
+        if trend_strength:
+            trend_points = min(8, max(2, trend_strength // 20))
+            score += trend_points
+            notes.append(f"source: Pinterest trend strength (+{trend_points})")
 
     return score, notes
 
