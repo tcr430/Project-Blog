@@ -1,6 +1,19 @@
 {
-  "generated_at": "2026-03-16T22:15:17.282685+00:00",
+  "generated_at": "2026-03-16T22:59:48.646717+00:00",
   "articles": [
+    {
+      "article_slug": "best-curtain-styling-for-living-room",
+      "cluster": "living room curtain styling",
+      "primary_keyword": "best curtain styling for living room",
+      "validation_status": "warning",
+      "warnings": [
+        "Main section headings may be too generic for the chosen keyword.",
+        "None of the secondary keywords appear in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-03-16T22:59:48.646620+00:00"
+    },
     {
       "article_slug": "best-curtain-styling-for-bedroom-mistakes-fixes",
       "cluster": "bedroom curtain styling",

@@ -3,14 +3,15 @@
 Generated: 2026-03-16
 Window: last 7 days
 
-Articles Published: 5  
-Pins Generated: 20  
-Pins Scheduled: 20  
+Articles Published: 6  
+Pins Generated: 24  
+Pins Scheduled: 24  
 Pins Published: 0  
 Repins Scheduled: 0
 
 ## Articles Published
 - best-curtain-styling-for-bedroom-mistakes-fixes
+- best-curtain-styling-for-living-room
 - linen-boucle-texture-mix
 - organic-modern-living-room
 - small-apartment-dining-nooks-cozy-corner-trend

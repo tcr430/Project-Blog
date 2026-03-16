@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-16T22:18:28.568530+00:00",
-  "cluster_count": 5,
-  "article_count": 5,
+  "generated_at": "2026-03-16T23:02:43.019846+00:00",
+  "cluster_count": 6,
+  "article_count": 6,
   "clusters": [
     {
       "cluster_name": "bedroom curtain styling",
@@ -30,6 +30,22 @@
         "linen-boucle-texture-mix"
       ],
       "recent_article_count": 0,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_name": "living room curtain styling",
+      "article_count": 1,
+      "primary_keywords_used": [
+        "best curtain styling for living room"
+      ],
+      "latest_article_date": "2026-03-16",
+      "representative_article_slugs": [
+        "best-curtain-styling-for-living-room"
+      ],
+      "recent_article_count": 1,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,

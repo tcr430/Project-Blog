@@ -1,0 +1,84 @@
+{
+  "article_title": "Best Curtain Styling for Living Room: Elegant Solutions for Balanced Spaces",
+  "article_slug": "best-curtain-styling-for-living-room",
+  "article_relative_url": "/mistakes%20%26%20fixes/2026/03/16/best-curtain-styling-for-living-room/",
+  "article_url": "https://thelivinedit.com/mistakes%20%26%20fixes/2026/03/16/best-curtain-styling-for-living-room/",
+  "meta_description": "Discover the best curtain styling for living rooms with expert tips on color balance, texture layering, proportion, light management, and layout. Create timeless, inviting spaces.",
+  "hero_image_path": "/assets/img/best-curtain-styling-for-living-room/hero.png",
+  "site_root_url": "https://thelivinedit.com",
+  "variant_count": 4,
+  "strategy": {
+    "minimum_variant_count": 4,
+    "generated_variant_count": 4,
+    "bonus_slots": 0,
+    "ranked_variant_types": [
+      "trend_overview",
+      "practical_tips",
+      "product_led",
+      "styling_angle"
+    ],
+    "article_score": null,
+    "notes": [
+      "applying performance weighting: no historical lift yet, using balanced defaults"
+    ],
+    "board_config_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_boards.json"
+  },
+  "variants": [
+    {
+      "variant_key": "pin-1",
+      "variant_type": "trend_overview",
+      "style_name": "bottom-title",
+      "title": "Elegant Curtain Styling Ideas for Timeless Living Rooms",
+      "description": "Explore warm, natural curtain styling for living rooms that enhance light flow and texture with linen and soft earthy neutrals.",
+      "image_path": "/assets/pins/best-curtain-styling-for-living-room/pin-1.svg",
+      "board": {
+        "key": "living_room",
+        "name": "Living Room Styling"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 0
+    },
+    {
+      "variant_key": "pin-2",
+      "variant_type": "practical_tips",
+      "style_name": "centered-title",
+      "title": "Best Curtain Styling for Living Room: Elegant Solutions for Balanced Spaces: Practical...",
+      "description": "Use these practical design moves to make best curtain styling for living room: elegant solutions for balanced spaces feel balanced, useful, and easy to live with.",
+      "image_path": "/assets/pins/best-curtain-styling-for-living-room/pin-2.svg",
+      "board": {
+        "key": "living_room",
+        "name": "Living Room Styling"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 1
+    },
+    {
+      "variant_key": "pin-3",
+      "variant_type": "product_led",
+      "style_name": "minimalist-overlay",
+      "title": "4 Pieces That Elevate Best Curtain Styling for Living Room: Elegant Solutions for...",
+      "description": "Discover decor pieces and finishing details that help best curtain styling for living room: elegant solutions for balanced spaces feel more intentional without looking overdone.",
+      "image_path": "/assets/pins/best-curtain-styling-for-living-room/pin-3.svg",
+      "board": {
+        "key": "home_products",
+        "name": "Home Finds & Decor Picks"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 2
+    },
+    {
+      "variant_key": "pin-4",
+      "variant_type": "styling_angle",
+      "style_name": "top-title",
+      "title": "How to Style Best Curtain Styling for Living Room: Elegant Solutions for Balanced...",
+      "description": "See how color, texture, and room styling can shape best curtain styling for living room: elegant solutions for balanced spaces into a softer, more editorial look.",
+      "image_path": "/assets/pins/best-curtain-styling-for-living-room/pin-4.svg",
+      "board": {
+        "key": "living_room",
+        "name": "Living Room Styling"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 3
+    }
+  ]
+}

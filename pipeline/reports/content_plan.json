@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-03-16T22:18:28.627282+00:00",
+  "generated_at": "2026-03-16T23:02:43.077840+00:00",
   "total_clusters": 569,
   "summary": {
-    "missing": 564,
-    "underdeveloped": 5,
+    "missing": 563,
+    "underdeveloped": 6,
     "growing": 0,
     "strong": 0
   },
@@ -266,7 +266,6 @@
     "linen and wood patio",
     "living room art placement",
     "living room coffee table styling",
-    "living room curtain styling",
     "living room decor layering",
     "living room lighting",
     "living room rug styling",
@@ -575,6 +574,7 @@
     "warm neutral living room",
     "spring living room styling",
     "bedroom curtain styling",
+    "living room curtain styling",
     "linen and boucle styling",
     "organic modern living room",
     "small dining nook"
@@ -11101,47 +11101,6 @@
         "living room coffee table styling ideas",
         "how to style coffee table styling in living room",
         "best coffee table styling for living room"
-      ],
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "priority_score": 33,
-      "season": "",
-      "holiday": "",
-      "source": "taxonomy feature room"
-    },
-    {
-      "cluster_name": "living room curtain styling",
-      "cluster_slug": "living-room-curtain-styling",
-      "health_label": "missing",
-      "article_count": 0,
-      "latest_article_date": "",
-      "days_since_latest": null,
-      "keyword_coverage": {
-        "total_keywords": 4,
-        "covered_count": 0,
-        "coverage_ratio": 0.0,
-        "covered_keywords": [],
-        "uncovered_keywords": [
-          "living room curtain styling ideas",
-          "how to style curtain styling in living room",
-          "best curtain styling for living room",
-          "living room curtain styling mistakes to avoid"
-        ]
-      },
-      "primary_keywords_used": [],
-      "representative_article_slugs": [],
-      "recommended_topics": [
-        "living room curtain styling ideas",
-        "how to style curtain styling in living room",
-        "best curtain styling for living room"
       ],
       "pinterest_signal": {
         "label": "no_data",
@@ -23778,6 +23737,51 @@
         "bedroom curtain ideas",
         "how to style bedroom curtain",
         "bedroom curtain decor"
+      ],
+      "pinterest_signal": {
+        "label": "no_data",
+        "boost": 0,
+        "pinterest_article_count": 0,
+        "strong_article_count": 0,
+        "weak_article_count": 0,
+        "average_score": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_saves": 0.0
+      },
+      "priority_score": 18,
+      "season": "",
+      "holiday": "",
+      "source": "taxonomy feature room"
+    },
+    {
+      "cluster_name": "living room curtain styling",
+      "cluster_slug": "living-room-curtain-styling",
+      "health_label": "underdeveloped",
+      "article_count": 1,
+      "latest_article_date": "2026-03-16",
+      "days_since_latest": 0,
+      "keyword_coverage": {
+        "total_keywords": 4,
+        "covered_count": 4,
+        "coverage_ratio": 1.0,
+        "covered_keywords": [
+          "living room curtain styling ideas",
+          "how to style curtain styling in living room",
+          "best curtain styling for living room",
+          "living room curtain styling mistakes to avoid"
+        ],
+        "uncovered_keywords": []
+      },
+      "primary_keywords_used": [
+        "best curtain styling for living room"
+      ],
+      "representative_article_slugs": [
+        "best-curtain-styling-for-living-room"
+      ],
+      "recommended_topics": [
+        "living room curtain ideas",
+        "how to style living room curtain",
+        "living room curtain decor"
       ],
       "pinterest_signal": {
         "label": "no_data",
