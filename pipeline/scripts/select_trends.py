@@ -66,6 +66,7 @@ USEFULNESS_HINTS = {
 
 DEFAULT_HISTORY_FILE = Path(__file__).resolve().parents[1] / "data" / "trend_history.json"
 DEFAULT_PINTEREST_SIGNALS_FILE = Path(__file__).resolve().parents[1] / "reports" / "pinterest_topic_signals.json"
+DEFAULT_CLUSTER_INDEX_FILE = Path(__file__).resolve().parents[1] / "data" / "article_cluster_index.json"
 
 
 def parse_args() -> argparse.Namespace:
@@ -98,6 +99,38 @@ def normalize_text(value: Any) -> str:
     normalized = str(value or "").strip().lower()
     normalized = normalized.replace("_", " ").replace("-", " ")
     return re.sub(r"\s+", " ", normalized)
+
+
+def tokenize(value: Any) -> set[str]:
+    return {token for token in normalize_text(value).split() if token}
+
+
+def jaccard_similarity(left: set[str], right: set[str]) -> float:
+    if not left or not right:
+        return 0.0
+    return len(left & right) / len(left | right)
+
+
+def detect_angle(*values: Any) -> str:
+    text = normalize_text(" ".join(str(value or "") for value in values))
+    if text.startswith("how to") or " how to " in f" {text} ":
+        return "how_to"
+    if any(token in text for token in {"mistake", "mistakes", "avoid", "fix", "fixes"}):
+        return "mistakes"
+    if any(token in text for token in {"ideas", "inspiration"}):
+        return "ideas"
+    if any(token in text for token in {"guide", "mastering", "complete"}):
+        return "guide"
+    if "trend" in text:
+        return "trend"
+    return "styling_advice"
+
+
+def normalize_semantic_core(value: Any) -> str:
+    text = normalize_text(value)
+    for phrase in ["how to", "mistakes to avoid", "mistakes", "decor", "ideas", "guide", "styling", "style"]:
+        text = text.replace(phrase, " ")
+    return re.sub(r"\s+", " ", text).strip()
 
 
 def normalize_candidate(raw: dict[str, Any]) -> TrendCandidate:
@@ -178,6 +211,72 @@ def reject_invalid_and_duplicates(candidates: list[TrendCandidate]) -> list[Tren
         unique.append(candidate)
 
     return unique
+
+
+def load_existing_articles(cluster_index_path: Path) -> list[dict[str, Any]]:
+    if not cluster_index_path.exists():
+        return []
+
+    raw = cluster_index_path.read_text(encoding="utf-8-sig").strip()
+    if not raw:
+        return []
+
+    payload = json.loads(raw)
+    if not isinstance(payload, dict):
+        return []
+
+    articles = payload.get("articles", [])
+    if not isinstance(articles, list):
+        return []
+
+    return [item for item in articles if isinstance(item, dict)]
+
+
+def exclude_overlapping_candidates(
+    candidates: list[TrendCandidate],
+    cluster_index_path: Path,
+) -> list[TrendCandidate]:
+    existing_articles = load_existing_articles(cluster_index_path)
+    if not existing_articles:
+        return candidates
+
+    filtered: list[TrendCandidate] = []
+    for candidate in candidates:
+        candidate_primary = normalize_text(candidate["primary_keyword"])
+        candidate_cluster = normalize_text(candidate["trend_cluster"])
+        candidate_angle = detect_angle(candidate["primary_keyword"], candidate["trend_keyword"])
+        candidate_primary_tokens = tokenize(candidate_primary)
+        candidate_core = normalize_semantic_core(candidate_primary)
+
+        should_exclude = False
+        for article in existing_articles:
+            existing_primary = normalize_text(article.get("primary_keyword", ""))
+            existing_cluster = normalize_text(article.get("cluster_name", ""))
+            existing_angle = detect_angle(article.get("article_title", ""), article.get("primary_keyword", ""))
+            existing_primary_tokens = tokenize(existing_primary)
+            existing_core = normalize_semantic_core(existing_primary)
+
+            if candidate_primary and candidate_primary == existing_primary:
+                should_exclude = True
+                break
+
+            similarity = jaccard_similarity(candidate_primary_tokens, existing_primary_tokens)
+            if candidate_cluster == existing_cluster and candidate_angle == existing_angle and similarity >= 0.55:
+                should_exclude = True
+                break
+
+            if candidate_core and existing_core and candidate_core == existing_core:
+                should_exclude = True
+                break
+
+            if similarity >= 0.75:
+                should_exclude = True
+                break
+
+        if not should_exclude:
+            filtered.append(candidate)
+
+    return filtered
 
 
 def filter_recently_used(
@@ -463,17 +562,20 @@ def select_top_trends(
     cooldown_days: int = DEFAULT_NON_SEASONAL_COOLDOWN_DAYS,
     now: datetime | None = None,
     pinterest_signal_path: Path | None = None,
+    cluster_index_path: Path | None = None,
 ) -> list[ScoredTrend]:
     if top_n <= 0:
         raise ValueError("top_n must be greater than zero.")
 
     normalized = normalize_candidates([dict(item) for item in raw_candidates])
     unique_valid = reject_invalid_and_duplicates(normalized)
+    selected_cluster_index_path = cluster_index_path or DEFAULT_CLUSTER_INDEX_FILE
+    overlap_filtered = exclude_overlapping_candidates(unique_valid, selected_cluster_index_path)
 
     current_time = now or datetime.now(UTC)
     selected_history_path = history_path or DEFAULT_HISTORY_FILE
     allowed = filter_recently_used(
-        candidates=unique_valid,
+        candidates=overlap_filtered,
         history_path=selected_history_path,
         now=current_time,
         cooldown_days=cooldown_days,
@@ -519,6 +621,7 @@ def main() -> int:
             top_n=args.top,
             cooldown_days=args.cooldown_days,
             now=datetime.now(UTC),
+            cluster_index_path=DEFAULT_CLUSTER_INDEX_FILE,
         )
 
         if not selected:

@@ -34,6 +34,7 @@ from plan_pinterest_repins import plan_pinterest_repins
 from generate_pin_metadata import generate_pinterest_metadata
 from publish_pins import publish_or_queue_pins
 from select_trends import (
+    exclude_overlapping_candidates,
     filter_recently_used,
     normalize_candidates,
     reject_invalid_and_duplicates,
@@ -510,14 +511,24 @@ def finalize_selected_trends(
     log_phase("selecting trends: normalizing candidates")
     normalized = normalize_candidates([dict(item) for item in raw_candidates])
 
+    project_root = Path(__file__).resolve().parents[2]
+
     log_phase("selecting trends: filtering invalid and duplicate candidates")
     valid_unique = reject_invalid_and_duplicates(normalized)
     if not valid_unique:
         return []
 
+    log_phase("selecting trends: excluding candidates too close to existing articles")
+    overlap_filtered = exclude_overlapping_candidates(
+        valid_unique,
+        project_root / "pipeline" / "data" / "article_cluster_index.json",
+    )
+    if not overlap_filtered:
+        return []
+
     log_phase("selecting trends: filtering repeats from trend history")
     allowed = filter_recently_used(
-        candidates=valid_unique,
+        candidates=overlap_filtered,
         history_path=history_path,
         now=datetime.now(timezone.utc),
         cooldown_days=cooldown_days,
@@ -526,7 +537,12 @@ def finalize_selected_trends(
         return []
 
     log_phase("selecting trends: scoring and selecting top trends")
-    scored = score_candidates(allowed, pinterest_signal_data=pinterest_signal_data)
+    scored = score_candidates(
+        allowed,
+        pinterest_signal_data=pinterest_signal_data,
+        history_path=history_path,
+        now=datetime.now(timezone.utc),
+    )
     return select_diverse_top_trends(scored, top_n=top_trends)
 
 
@@ -570,10 +586,11 @@ def select_automatic_trends(
         if not raw_candidates:
             raise RuntimeError("No candidate trends were fetched.")
 
+    selection_pool_size = max(top_trends * 8, top_trends + 5)
     selected = finalize_selected_trends(
         raw_candidates=raw_candidates,
         history_path=history_path,
-        top_trends=top_trends,
+        top_trends=selection_pool_size,
         cooldown_days=cooldown_days,
         pinterest_signal_data=pinterest_signal_data,
     )
@@ -587,7 +604,7 @@ def select_automatic_trends(
         selected = finalize_selected_trends(
             raw_candidates=fallback_candidates,
             history_path=history_path,
-            top_trends=top_trends,
+            top_trends=selection_pool_size,
             cooldown_days=cooldown_days,
             pinterest_signal_data=pinterest_signal_data,
         )
@@ -753,6 +770,11 @@ def run_cluster_pages_step(project_root: Path) -> dict[str, Any]:
     return result
 
 
+def is_retryable_auto_candidate_error(exc: Exception) -> bool:
+    message = str(exc)
+    return "Advanced SEO validation failed:" in message
+
+
 def run_automatic_mode(args: argparse.Namespace) -> int:
     if args.top_trends <= 0:
         print("Error: --top-trends must be greater than zero.", file=sys.stderr)
@@ -771,10 +793,15 @@ def run_automatic_mode(args: argparse.Namespace) -> int:
         )
 
         generated_posts: list[Path] = []
+        attempted_trends = 0
         for index, trend_item in enumerate(selected_trends, start=1):
+            if len(generated_posts) >= args.top_trends:
+                break
+
             trend_keyword = trend_item["trend_keyword"]
             log_phase(f"processing trend {index}/{len(selected_trends)}")
             print(f"[auto] trend: {trend_keyword}")
+            attempted_trends += 1
 
             products, source_label = fetch_products_for_pipeline(
                 trend=trend_keyword,
@@ -783,15 +810,22 @@ def run_automatic_mode(args: argparse.Namespace) -> int:
                 products_file=args.products_file,
                 skip_affiliate_links=args.skip_affiliate_links,
             )
-            post_path, image_paths, article_slug, pinterest_result, cost_report_path = run_pipeline_for_trend(
-                trend=trend_keyword,
-                topic_context=trend_item,
-                model=args.model,
-                image_model=args.image_model,
-                image_size=args.image_size,
-                image_quality=args.image_quality,
-                products=products,
-            )
+
+            try:
+                post_path, image_paths, article_slug, pinterest_result, cost_report_path = run_pipeline_for_trend(
+                    trend=trend_keyword,
+                    topic_context=trend_item,
+                    model=args.model,
+                    image_model=args.image_model,
+                    image_size=args.image_size,
+                    image_quality=args.image_quality,
+                    products=products,
+                )
+            except Exception as exc:
+                if is_retryable_auto_candidate_error(exc):
+                    print(f"[auto][skip] {trend_keyword}: {exc}")
+                    continue
+                raise
 
             add_trend_entry(
                 trend_cluster=trend_item["trend_cluster"],
@@ -821,6 +855,12 @@ def run_automatic_mode(args: argparse.Namespace) -> int:
                 if pinterest_result.get('mode') == 'queue':
                     print(f"[auto] pins queued in: {pinterest_result['queue_path']}")
             print(f"[auto] cost report: {cost_report_path}")
+
+        if len(generated_posts) < args.top_trends:
+            raise RuntimeError(
+                f"Automatic mode generated {len(generated_posts)} post(s) after trying {attempted_trends} candidate(s), "
+                f"below the requested {args.top_trends}."
+            )
 
         project_root = Path(__file__).resolve().parents[2]
         if args.skip_newsletter:
