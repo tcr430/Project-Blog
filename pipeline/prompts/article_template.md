@@ -44,6 +44,9 @@ Style rules:
 - keep paragraphs readable
 - avoid repetition across sections
 - do not pad with filler
+- let section headings feel specific to the topic, room, or styling problem rather than overly broad
+- keep SEO language natural; avoid stiff exact-match repetition
+- mention supporting search phrases only where they fit smoothly into the advice
 
 Return valid JSON only with this exact output structure:
 - title: string
