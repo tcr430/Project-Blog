@@ -1,0 +1,637 @@
+{
+  "generated_at": "2026-03-18T00:05:37.280297+00:00",
+  "review_window_days": 30,
+  "stale_cluster_days": 60,
+  "refresh_article_days": 90,
+  "summary": {
+    "architecture_cluster_count": 396,
+    "published_cluster_count": 6,
+    "article_count": 6,
+    "pin_count": 24,
+    "growing_cluster_count": 0,
+    "weak_or_stale_cluster_count": 396,
+    "undercovered_subtopic_count": 1791,
+    "angle_overuse_count": 0,
+    "refresh_opportunity_count": 2,
+    "manual_review_count": 0
+  },
+  "clusters_growing_well": [],
+  "clusters_weak_or_stale": [
+    {
+      "cluster_id": "living_room_textures_and_materials",
+      "cluster_name": "living room textures and materials",
+      "health_label": "underdeveloped",
+      "article_count": 1,
+      "latest_publication_date": "2026-03-13",
+      "days_since_latest": 5,
+      "missing_subtopics_count": 2,
+      "saturation_state": "needs_growth"
+    },
+    {
+      "cluster_id": "organic_modern_living_room",
+      "cluster_name": "organic modern living room",
+      "health_label": "underdeveloped",
+      "article_count": 1,
+      "latest_publication_date": "2026-03-13",
+      "days_since_latest": 5,
+      "missing_subtopics_count": 4,
+      "saturation_state": "needs_growth"
+    },
+    {
+      "cluster_id": "small_dining_nook",
+      "cluster_name": "small dining nook",
+      "health_label": "underdeveloped",
+      "article_count": 1,
+      "latest_publication_date": "2026-03-13",
+      "days_since_latest": 5,
+      "missing_subtopics_count": 2,
+      "saturation_state": "needs_growth"
+    },
+    {
+      "cluster_id": "spring_living_room_styling",
+      "cluster_name": "spring living room styling",
+      "health_label": "underdeveloped",
+      "article_count": 1,
+      "latest_publication_date": "2026-03-15",
+      "days_since_latest": 3,
+      "missing_subtopics_count": 2,
+      "saturation_state": "needs_growth"
+    },
+    {
+      "cluster_id": "bedroom_window_treatments",
+      "cluster_name": "bedroom window treatments",
+      "health_label": "underdeveloped",
+      "article_count": 1,
+      "latest_publication_date": "2026-03-16",
+      "days_since_latest": 2,
+      "missing_subtopics_count": 4,
+      "saturation_state": "needs_growth"
+    },
+    {
+      "cluster_id": "living_room_window_treatments",
+      "cluster_name": "living room window treatments",
+      "health_label": "underdeveloped",
+      "article_count": 1,
+      "latest_publication_date": "2026-03-16",
+      "days_since_latest": 2,
+      "missing_subtopics_count": 4,
+      "saturation_state": "needs_growth"
+    },
+    {
+      "cluster_id": "apartment_balcony_decor",
+      "cluster_name": "apartment balcony decor",
+      "health_label": "missing",
+      "article_count": 0,
+      "latest_publication_date": "",
+      "days_since_latest": null,
+      "missing_subtopics_count": 3,
+      "saturation_state": "empty"
+    },
+    {
+      "cluster_id": "balcony_lighting",
+      "cluster_name": "balcony lighting",
+      "health_label": "missing",
+      "article_count": 0,
+      "latest_publication_date": "",
+      "days_since_latest": null,
+      "missing_subtopics_count": 3,
+      "saturation_state": "empty"
+    }
+  ],
+  "subtopics_still_undercovered": [
+    {
+      "cluster_id": "apartment_balcony_decor",
+      "cluster_name": "apartment balcony decor",
+      "subtopic_id": "layout",
+      "subtopic_name": "Layout",
+      "health_label": "missing",
+      "recommended_next_concepts": [
+        {
+          "primary_keyword": "best layout for apartment balcony decor",
+          "angle_id": "best_options",
+          "intent_id": "comparison"
+        },
+        {
+          "primary_keyword": "best colors for apartment balcony decor",
+          "angle_id": "best_options",
+          "intent_id": "comparison"
+        }
+      ]
+    },
+    {
+      "cluster_id": "apartment_balcony_decor",
+      "cluster_name": "apartment balcony decor",
+      "subtopic_id": "light",
+      "subtopic_name": "Light and Openness",
+      "health_label": "missing",
+      "recommended_next_concepts": [
+        {
+          "primary_keyword": "best layout for apartment balcony decor",
+          "angle_id": "best_options",
+          "intent_id": "comparison"
+        },
+        {
+          "primary_keyword": "best colors for apartment balcony decor",
+          "angle_id": "best_options",
+          "intent_id": "comparison"
+        }
+      ]
+    },
+    {
+      "cluster_id": "apartment_balcony_decor",
+      "cluster_name": "apartment balcony decor",
+      "subtopic_id": "storage",
+      "subtopic_name": "Storage",
+      "health_label": "missing",
+      "recommended_next_concepts": [
+        {
+          "primary_keyword": "best layout for apartment balcony decor",
+          "angle_id": "best_options",
+          "intent_id": "comparison"
+        },
+        {
+          "primary_keyword": "best colors for apartment balcony decor",
+          "angle_id": "best_options",
+          "intent_id": "comparison"
+        }
+      ]
+    },
+    {
+      "cluster_id": "balcony_lighting",
+      "cluster_name": "balcony lighting",
+      "subtopic_id": "lamps",
+      "subtopic_name": "Lamps and Accent Lighting",
+      "health_label": "missing",
+      "recommended_next_concepts": [
+        {
+          "primary_keyword": "best lamps for balcony",
+          "angle_id": "best_options",
+          "intent_id": "comparison"
+        },
+        {
+          "primary_keyword": "best lighting for balcony",
+          "angle_id": "best_options",
+          "intent_id": "comparison"
+        }
+      ]
+    },
+    {
+      "cluster_id": "balcony_lighting",
+      "cluster_name": "balcony lighting",
+      "subtopic_id": "layering",
+      "subtopic_name": "Layered Lighting",
+      "health_label": "missing",
+      "recommended_next_concepts": [
+        {
+          "primary_keyword": "best lamps for balcony",
+          "angle_id": "best_options",
+          "intent_id": "comparison"
+        },
+        {
+          "primary_keyword": "best lighting for balcony",
+          "angle_id": "best_options",
+          "intent_id": "comparison"
+        }
+      ]
+    },
+    {
+      "cluster_id": "balcony_lighting",
+      "cluster_name": "balcony lighting",
+      "subtopic_id": "overhead",
+      "subtopic_name": "Overhead Fixtures",
+      "health_label": "missing",
+      "recommended_next_concepts": [
+        {
+          "primary_keyword": "best lamps for balcony",
+          "angle_id": "best_options",
+          "intent_id": "comparison"
+        },
+        {
+          "primary_keyword": "best lighting for balcony",
+          "angle_id": "best_options",
+          "intent_id": "comparison"
+        }
+      ]
+    },
+    {
+      "cluster_id": "balcony_storage",
+      "cluster_name": "balcony storage",
+      "subtopic_id": "ideas",
+      "subtopic_name": "Core Storage Ideas",
+      "health_label": "missing",
+      "recommended_next_concepts": [
+        {
+          "primary_keyword": "best storage for balcony",
+          "angle_id": "best_options",
+          "intent_id": "comparison"
+        },
+        {
+          "primary_keyword": "best hidden storage for balcony",
+          "angle_id": "best_options",
+          "intent_id": "comparison"
+        }
+      ]
+    },
+    {
+      "cluster_id": "balcony_storage",
+      "cluster_name": "balcony storage",
+      "subtopic_id": "hidden",
+      "subtopic_name": "Hidden Storage",
+      "health_label": "missing",
+      "recommended_next_concepts": [
+        {
+          "primary_keyword": "best storage for balcony",
+          "angle_id": "best_options",
+          "intent_id": "comparison"
+        },
+        {
+          "primary_keyword": "best hidden storage for balcony",
+          "angle_id": "best_options",
+          "intent_id": "comparison"
+        }
+      ]
+    },
+    {
+      "cluster_id": "balcony_storage",
+      "cluster_name": "balcony storage",
+      "subtopic_id": "shelving",
+      "subtopic_name": "Shelving",
+      "health_label": "missing",
+      "recommended_next_concepts": [
+        {
+          "primary_keyword": "best storage for balcony",
+          "angle_id": "best_options",
+          "intent_id": "comparison"
+        },
+        {
+          "primary_keyword": "best hidden storage for balcony",
+          "angle_id": "best_options",
+          "intent_id": "comparison"
+        }
+      ]
+    },
+    {
+      "cluster_id": "balcony_styling_details",
+      "cluster_name": "balcony styling details",
+      "subtopic_id": "accessories",
+      "subtopic_name": "Accessories and Finishing Touches",
+      "health_label": "missing",
+      "recommended_next_concepts": [
+        {
+          "primary_keyword": "budget shelf styling ideas for balcony",
+          "angle_id": "budget",
+          "intent_id": "decision_making"
+        },
+        {
+          "primary_keyword": "best decor accents for balcony",
+          "angle_id": "best_options",
+          "intent_id": "comparison"
+        }
+      ]
+    },
+    {
+      "cluster_id": "balcony_styling_details",
+      "cluster_name": "balcony styling details",
+      "subtopic_id": "shelves",
+      "subtopic_name": "Shelf Styling",
+      "health_label": "missing",
+      "recommended_next_concepts": [
+        {
+          "primary_keyword": "budget shelf styling ideas for balcony",
+          "angle_id": "budget",
+          "intent_id": "decision_making"
+        },
+        {
+          "primary_keyword": "best decor accents for balcony",
+          "angle_id": "best_options",
+          "intent_id": "comparison"
+        }
+      ]
+    },
+    {
+      "cluster_id": "balcony_styling_details",
+      "cluster_name": "balcony styling details",
+      "subtopic_id": "surfaces",
+      "subtopic_name": "Surface Styling",
+      "health_label": "missing",
+      "recommended_next_concepts": [
+        {
+          "primary_keyword": "budget shelf styling ideas for balcony",
+          "angle_id": "budget",
+          "intent_id": "decision_making"
+        },
+        {
+          "primary_keyword": "best decor accents for balcony",
+          "angle_id": "best_options",
+          "intent_id": "comparison"
+        }
+      ]
+    }
+  ],
+  "angles_overused": [],
+  "strong_pinterest_performers": {
+    "clusters": [
+      {
+        "cluster_id": "bedroom_window_treatments",
+        "cluster_name": "bedroom window treatments",
+        "pin_count": 4,
+        "published_pin_count": 0,
+        "analytics_ready_pin_count": 0,
+        "average_performance_score": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_impressions": 0.0
+      },
+      {
+        "cluster_id": "living_room_textures_and_materials",
+        "cluster_name": "living room textures and materials",
+        "pin_count": 4,
+        "published_pin_count": 0,
+        "analytics_ready_pin_count": 0,
+        "average_performance_score": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_impressions": 0.0
+      },
+      {
+        "cluster_id": "living_room_window_treatments",
+        "cluster_name": "living room window treatments",
+        "pin_count": 4,
+        "published_pin_count": 0,
+        "analytics_ready_pin_count": 0,
+        "average_performance_score": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_impressions": 0.0
+      },
+      {
+        "cluster_id": "organic_modern_living_room",
+        "cluster_name": "organic modern living room",
+        "pin_count": 4,
+        "published_pin_count": 0,
+        "analytics_ready_pin_count": 0,
+        "average_performance_score": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_impressions": 0.0
+      },
+      {
+        "cluster_id": "small_dining_nook",
+        "cluster_name": "small dining nook",
+        "pin_count": 4,
+        "published_pin_count": 0,
+        "analytics_ready_pin_count": 0,
+        "average_performance_score": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_impressions": 0.0
+      },
+      {
+        "cluster_id": "spring_living_room_styling",
+        "cluster_name": "spring living room styling",
+        "pin_count": 4,
+        "published_pin_count": 0,
+        "analytics_ready_pin_count": 0,
+        "average_performance_score": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_impressions": 0.0
+      }
+    ],
+    "subtopics": [
+      {
+        "subtopic_id": "curtain_styles",
+        "subtopic_name": "Curtain Styles",
+        "pin_count": 8,
+        "published_pin_count": 0,
+        "analytics_ready_pin_count": 0,
+        "average_performance_score": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_impressions": 0.0
+      },
+      {
+        "subtopic_id": "layout",
+        "subtopic_name": "Layout",
+        "pin_count": 4,
+        "published_pin_count": 0,
+        "analytics_ready_pin_count": 0,
+        "average_performance_score": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_impressions": 0.0
+      },
+      {
+        "subtopic_id": "mixes",
+        "subtopic_name": "Material Mixes",
+        "pin_count": 4,
+        "published_pin_count": 0,
+        "analytics_ready_pin_count": 0,
+        "average_performance_score": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_impressions": 0.0
+      },
+      {
+        "subtopic_id": "refresh",
+        "subtopic_name": "Seasonal Refresh",
+        "pin_count": 4,
+        "published_pin_count": 0,
+        "analytics_ready_pin_count": 0,
+        "average_performance_score": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_impressions": 0.0
+      },
+      {
+        "subtopic_id": "textures",
+        "subtopic_name": "Textures and Layers",
+        "pin_count": 4,
+        "published_pin_count": 0,
+        "analytics_ready_pin_count": 0,
+        "average_performance_score": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_impressions": 0.0
+      }
+    ],
+    "angles": [
+      {
+        "angle_id": "ideas",
+        "pin_count": 12,
+        "published_pin_count": 0,
+        "analytics_ready_pin_count": 0,
+        "average_performance_score": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_impressions": 0.0
+      },
+      {
+        "angle_id": "best_options",
+        "pin_count": 8,
+        "published_pin_count": 0,
+        "analytics_ready_pin_count": 0,
+        "average_performance_score": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_impressions": 0.0
+      },
+      {
+        "angle_id": "style_specific",
+        "pin_count": 4,
+        "published_pin_count": 0,
+        "analytics_ready_pin_count": 0,
+        "average_performance_score": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_impressions": 0.0
+      }
+    ],
+    "visual_styles": [
+      {
+        "visual_style_key": "bottom_panel|family_unspecified|shot_unspecified|inspiration",
+        "pin_count": 3,
+        "published_pin_count": 0,
+        "analytics_ready_pin_count": 0,
+        "average_performance_score": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_impressions": 0.0
+      },
+      {
+        "visual_style_key": "center_card|family_unspecified|shot_unspecified|inspiration",
+        "pin_count": 3,
+        "published_pin_count": 0,
+        "analytics_ready_pin_count": 0,
+        "average_performance_score": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_impressions": 0.0
+      },
+      {
+        "visual_style_key": "product_focus|family_unspecified|shot_unspecified|inspiration",
+        "pin_count": 3,
+        "published_pin_count": 0,
+        "analytics_ready_pin_count": 0,
+        "average_performance_score": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_impressions": 0.0
+      },
+      {
+        "visual_style_key": "top_band|family_unspecified|shot_unspecified|inspiration",
+        "pin_count": 3,
+        "published_pin_count": 0,
+        "analytics_ready_pin_count": 0,
+        "average_performance_score": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_impressions": 0.0
+      },
+      {
+        "visual_style_key": "bottom_title|family_unspecified|shot_unspecified|comparison",
+        "pin_count": 2,
+        "published_pin_count": 0,
+        "analytics_ready_pin_count": 0,
+        "average_performance_score": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_impressions": 0.0
+      },
+      {
+        "visual_style_key": "centered_title|family_unspecified|shot_unspecified|comparison",
+        "pin_count": 2,
+        "published_pin_count": 0,
+        "analytics_ready_pin_count": 0,
+        "average_performance_score": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_impressions": 0.0
+      },
+      {
+        "visual_style_key": "minimalist_overlay|family_unspecified|shot_unspecified|comparison",
+        "pin_count": 2,
+        "published_pin_count": 0,
+        "analytics_ready_pin_count": 0,
+        "average_performance_score": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_impressions": 0.0
+      },
+      {
+        "visual_style_key": "top_title|family_unspecified|shot_unspecified|comparison",
+        "pin_count": 2,
+        "published_pin_count": 0,
+        "analytics_ready_pin_count": 0,
+        "average_performance_score": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_impressions": 0.0
+      }
+    ]
+  },
+  "articles_refresh_or_expansion_opportunities": [
+    {
+      "article_slug": "best-curtain-styling-for-bedroom-mistakes-fixes",
+      "article_title": "Best Curtain Styling for Bedroom: Common Mistakes and How to Fix Them",
+      "permalink": "/mistakes%20%26%20fixes/2026/03/16/best-curtain-styling-for-bedroom-mistakes-fixes/",
+      "cluster_id": "bedroom_window_treatments",
+      "cluster_name": "bedroom window treatments",
+      "subtopic_id": "curtain_styles",
+      "angle_id": "best_options",
+      "publish_date": "2026-03-16",
+      "age_days": 2,
+      "opportunity_types": [
+        "better_monetization"
+      ],
+      "reasons": [
+        "Decision-led content has no affiliate products attached yet."
+      ],
+      "priority_score": 14
+    },
+    {
+      "article_slug": "best-curtain-styling-for-living-room",
+      "article_title": "Best Curtain Styling for Living Room: Elegant Solutions for Balanced Spaces",
+      "permalink": "/mistakes%20%26%20fixes/2026/03/16/best-curtain-styling-for-living-room/",
+      "cluster_id": "living_room_window_treatments",
+      "cluster_name": "living room window treatments",
+      "subtopic_id": "curtain_styles",
+      "angle_id": "best_options",
+      "publish_date": "2026-03-16",
+      "age_days": 2,
+      "opportunity_types": [
+        "better_monetization"
+      ],
+      "reasons": [
+        "Decision-led content has no affiliate products attached yet."
+      ],
+      "priority_score": 14
+    }
+  ],
+  "manual_review_items": [],
+  "planning_inputs": {
+    "priority_growth_clusters": [
+      "living_room_textures_and_materials",
+      "organic_modern_living_room",
+      "small_dining_nook",
+      "spring_living_room_styling",
+      "bedroom_window_treatments",
+      "living_room_window_treatments",
+      "apartment_balcony_decor",
+      "balcony_lighting"
+    ],
+    "deprioritize_clusters": [],
+    "refresh_priority_articles": [
+      "best-curtain-styling-for-bedroom-mistakes-fixes",
+      "best-curtain-styling-for-living-room"
+    ]
+  },
+  "notes": {
+    "pinterest_data_status": "limited_or_not_ready",
+    "heuristics": [
+      "Weak or stale clusters are based on health label, missing coverage, and days since latest publication.",
+      "Refresh opportunities use age, cluster weakness, internal linking gaps, monetization gaps, and Pinterest follow-through.",
+      "Pinterest performer rankings come from normalized pin performance rows, not speculative projections."
+    ]
+  }
+}

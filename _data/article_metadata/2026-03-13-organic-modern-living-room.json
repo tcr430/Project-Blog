@@ -64,5 +64,12 @@
     "organic modern living room decor",
     "mistakes to avoid in an organic modern living room"
   ],
-  "search_intent": "ideas"
+  "search_intent": "ideas",
+  "domain_id": "living_spaces",
+  "cluster_id": "organic_modern_living_room",
+  "subtopic_id": "textures",
+  "subtopic_name": "Textures and Layers",
+  "angle_id": "ideas",
+  "cluster_name": "organic modern living room",
+  "canonical_cluster_name": "organic modern living room"
 }

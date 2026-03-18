@@ -1,0 +1,523 @@
+from __future__ import annotations
+
+import json
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Any
+
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+PIPELINE_ROOT = PROJECT_ROOT / "pipeline"
+REPORT_JSON_PATH = PIPELINE_ROOT / "reports" / "repo_obsolescence_audit.json"
+REPORT_MD_PATH = PIPELINE_ROOT / "reports" / "repo_obsolescence_audit.md"
+
+
+def utc_now_iso() -> str:
+    return datetime.now(timezone.utc).isoformat()
+
+
+def file_exists(path: str) -> bool:
+    return (PROJECT_ROOT / path).exists()
+
+
+def build_report() -> dict[str, Any]:
+    findings: list[dict[str, Any]] = [
+        {
+            "path": "pipeline/scripts/generate_cluster_pages.py",
+            "item_type": "file",
+            "status": "likely obsolete",
+            "what_it_appears_to_do": "Older flat cluster hub generator that builds simple cluster pages from article_cluster_index.json and keyword_cluster_report.json.",
+            "likely_replaced_by": [
+                "pipeline/scripts/generate_pillar_pages.py",
+                "pipeline/scripts/weekly_pipeline.py",
+            ],
+            "evidence": [
+                "generate_cluster_pages.py defines build_cluster_pages() and writes generated_cluster_page markdown pages.",
+                "weekly_pipeline.py imports build_pillar_pages from generate_pillar_pages.py, not build_cluster_pages.",
+                "generate_pillar_pages.py preserves the same /clusters/<slug>/ URLs but adds subtopic grouping, featured entry points, related clusters, and reading paths.",
+                ".github/workflows/publish.yml only runs weekly_pipeline.py, which triggers generate_pillar_pages.py through the live pipeline path.",
+            ],
+            "still_referenced": "no",
+            "recommendation": "Review first in a future cleanup pass. It looks superseded by the active pillar-page generator.",
+            "risk_if_removed_now": "low",
+        },
+        {
+            "path": "pipeline/scripts/backfill_cluster_metadata.py",
+            "item_type": "file",
+            "status": "likely obsolete",
+            "what_it_appears_to_do": "Older backfill script that infers keyword-era metadata and rewrites post front matter using topic_clusters.json and topic_taxonomy.json assumptions.",
+            "likely_replaced_by": [
+                "pipeline/scripts/backfill_article_architecture.py",
+                "pipeline/scripts/backfill_historical_metadata.py",
+            ],
+            "evidence": [
+                "Imports load_default_topic_clusters() from topic_clusters.py and writes topical_cluster/search_intent/front matter fields.",
+                "backfill_historical_metadata.py imports backfill_article_architecture.py and generate_cluster_report.py, not backfill_cluster_metadata.py.",
+                "The newer backfill path focuses on cluster_id/subtopic_id/angle_id/canonical_cluster_name rather than keyword-only cluster inference.",
+            ],
+            "still_referenced": "no",
+            "recommendation": "Keep untouched for now, but review as an early removal candidate once the newer backfill path is fully trusted.",
+            "risk_if_removed_now": "low_to_moderate",
+        },
+        {
+            "path": "pipeline/scripts/topic_clusters.py",
+            "item_type": "file",
+            "status": "partially replaced",
+            "what_it_appears_to_do": "Mixed compatibility module: still provides TopicCandidate helpers and normalization utilities, but also contains the older keyword-first taxonomy expansion system.",
+            "likely_replaced_by": [
+                "pipeline/scripts/content_architecture.py",
+                "pipeline/data/content_clusters.json",
+                "pipeline/data/content_subtopics.json",
+                "pipeline/data/content_angles.json",
+            ],
+            "evidence": [
+                "content_architecture.py is now the persisted architecture source of truth for cluster/subtopic/angle concept generation.",
+                "fetch_trends.py still imports build_topic_candidate(), expand_clusters_to_candidates(), and load_default_topic_clusters() from topic_clusters.py as fallback paths.",
+                "weekly_pipeline.py, generate_article.py, and generate_content_plan.py still import TopicCandidate and build_manual_topic_candidate from topic_clusters.py.",
+            ],
+            "still_referenced": "yes",
+            "recommendation": "Do not remove as a whole. Split active compatibility helpers from legacy taxonomy-generation code in a later refactor.",
+            "risk_if_removed_now": "high",
+        },
+        {
+            "path": "pipeline/scripts/topic_clusters.py::build_feature_cluster_definition / build_material_room_cluster_definition / build_color_room_cluster_definition / build_small_space_keywords / build_seasonal_keywords / load_default_topic_clusters / expand_clusters_to_candidates",
+            "item_type": "function",
+            "status": "partially replaced",
+            "what_it_appears_to_do": "Keyword-era cluster and candidate construction logic driven by room/feature/material/palette combinations and taxonomy expansion.",
+            "likely_replaced_by": [
+                "pipeline/scripts/content_architecture.py::build_article_concepts",
+                "pipeline/data/content_clusters.json",
+                "pipeline/data/content_subtopics.json",
+                "pipeline/data/content_constraints.json",
+            ],
+            "evidence": [
+                "topic_clusters.py still defines these taxonomy-style generators.",
+                "fetch_trends.py only reaches them through load_cluster_candidates() after Pinterest and architecture candidates fail or are unavailable.",
+                "The active planning/selection/publishing flow now uses cluster_id/subtopic_id/angle_id and architecture-derived concepts first.",
+            ],
+            "still_referenced": "yes",
+            "recommendation": "Keep as fallback/compatibility logic for now. Review whether the fallback path is still desired before deleting any of these functions.",
+            "risk_if_removed_now": "moderate_to_high",
+        },
+        {
+            "path": "pipeline/data/topic_clusters.json",
+            "item_type": "data structure",
+            "status": "legacy but still needed for backward compatibility",
+            "what_it_appears_to_do": "Older flat cluster list used by topic_clusters.py for default keyword-era cluster loading.",
+            "likely_replaced_by": [
+                "pipeline/data/content_clusters.json",
+                "pipeline/data/content_subtopics.json",
+            ],
+            "evidence": [
+                "topic_clusters.py defines TOPIC_CLUSTERS_PATH and still loads topic_clusters.json.",
+                "fetch_trends.py still calls load_default_topic_clusters() through its fallback branch.",
+                "The new persisted architecture files now hold the primary cluster and subtopic definitions.",
+            ],
+            "still_referenced": "yes",
+            "recommendation": "Treat as transitional fallback data. Review only after fallback candidate generation is intentionally retired.",
+            "risk_if_removed_now": "moderate",
+        },
+        {
+            "path": "pipeline/data/topic_taxonomy.json",
+            "item_type": "data structure",
+            "status": "legacy but still needed for backward compatibility",
+            "what_it_appears_to_do": "Older taxonomy expansion source for generating room/feature/material/palette clusters.",
+            "likely_replaced_by": [
+                "pipeline/data/content_clusters.json",
+                "pipeline/data/content_subtopics.json",
+                "pipeline/data/content_constraints.json",
+            ],
+            "evidence": [
+                "topic_clusters.py defines TOPIC_TAXONOMY_PATH and uses it in the legacy cluster-building path.",
+                "The new architecture stores explicit clusters/subtopics/constraints rather than deriving them from taxonomy combinations.",
+            ],
+            "still_referenced": "yes",
+            "recommendation": "Keep until the keyword-era fallback generator is deliberately removed.",
+            "risk_if_removed_now": "moderate",
+        },
+        {
+            "path": "pipeline/data/candidate_trends.json",
+            "item_type": "data structure",
+            "status": "legacy but still needed for backward compatibility",
+            "what_it_appears_to_do": "Small fallback candidate source used when Pinterest and architecture candidate generation are unavailable.",
+            "likely_replaced_by": [
+                "pipeline/scripts/content_architecture.py",
+                "pipeline/scripts/fetch_pinterest_trends.py",
+            ],
+            "evidence": [
+                "fetch_trends.py defines DEFAULT_CANDIDATES_PATH and reads candidate_trends.json near the end of its fallback chain.",
+                "fetch_trends.py now prefers Pinterest candidates and architecture candidates first.",
+            ],
+            "still_referenced": "yes",
+            "recommendation": "Keep as a resilient fallback unless you explicitly decide the pipeline should hard-fail without richer candidate sources.",
+            "risk_if_removed_now": "moderate",
+        },
+        {
+            "path": "pipeline/scripts/fetch_trends.py::BUILTIN_DECOR_TRENDS / load_cluster_candidates / DEFAULT_CANDIDATES_PATH fallback branch",
+            "item_type": "function",
+            "status": "partially replaced",
+            "what_it_appears_to_do": "Candidate sourcing layer that now mixes active architecture-first logic with older mock, file, and keyword-cluster fallback paths.",
+            "likely_replaced_by": [
+                "pipeline/scripts/content_architecture.py::build_article_concepts",
+                "pipeline/scripts/fetch_pinterest_trends.py",
+            ],
+            "evidence": [
+                "fetch_trends.py now loads architecture candidates with load_architecture_candidates() and merges Pinterest + architecture sources first.",
+                "The same file still keeps BUILTIN_DECOR_TRENDS, load_cluster_candidates(), and candidate_trends.json fallback handling.",
+            ],
+            "still_referenced": "yes",
+            "recommendation": "Review as a duplicate-logic hotspot. The file is active, but its older fallback branches should be assessed for continued value.",
+            "risk_if_removed_now": "moderate",
+        },
+        {
+            "path": "pipeline/scripts/validate_article.py",
+            "item_type": "file",
+            "status": "duplicated",
+            "what_it_appears_to_do": "Wrapper CLI that runs both validate_article_seo.py and validate_article_editorial.py and writes a combined report.",
+            "likely_replaced_by": [
+                "pipeline/scripts/weekly_pipeline.py",
+                "pipeline/scripts/validate_article_seo.py",
+                "pipeline/scripts/validate_article_editorial.py",
+            ],
+            "evidence": [
+                "weekly_pipeline.py imports validate_article_seo and validate_article_editorial directly and writes their reports separately.",
+                "No workflow runs validate_article.py directly.",
+                "validate_article.py is still useful as a manual CLI convenience wrapper.",
+            ],
+            "still_referenced": "no",
+            "recommendation": "Keep as a manual utility if it is still helpful. Otherwise review as a cleanup candidate after confirming no one relies on the combined CLI.",
+            "risk_if_removed_now": "low",
+        },
+        {
+            "path": "pipeline/scripts/generate_pipeline_cost_audit.py",
+            "item_type": "file",
+            "status": "unclear / needs manual review",
+            "what_it_appears_to_do": "Standalone cost-audit utility for the pipeline.",
+            "likely_replaced_by": [],
+            "evidence": [
+                "No workflow references this script.",
+                "The file includes a MISSING_SCRIPTS list with entries such as generate_cluster_hubs.py and generate_seo_report.py that do not match the current repo layout.",
+                "It still models prompt construction using older search_intent and mock-product assumptions, which may now lag behind the live generation flow.",
+            ],
+            "still_referenced": "no",
+            "recommendation": "Review manually before trusting or deleting it. It may still be useful, but parts of its assumptions appear stale.",
+            "risk_if_removed_now": "low",
+        },
+        {
+            "path": "pipeline/reports/pipeline_cost_audit.json",
+            "item_type": "report",
+            "status": "unclear / needs manual review",
+            "what_it_appears_to_do": "Generated cost-audit output from generate_pipeline_cost_audit.py.",
+            "likely_replaced_by": [],
+            "evidence": [
+                "No workflow reads this report.",
+                "The live pipeline writes and reads many other reports, but this one appears informational only.",
+            ],
+            "still_referenced": "no",
+            "recommendation": "Treat as an informational artifact, not an authoritative runtime input.",
+            "risk_if_removed_now": "low",
+        },
+        {
+            "path": "pipeline/data/keyword_cluster_report.json",
+            "item_type": "data structure",
+            "status": "legacy but still needed for backward compatibility",
+            "what_it_appears_to_do": "Active cluster report output, but with a pre-migration name that still suggests a keyword-first system.",
+            "likely_replaced_by": [],
+            "evidence": [
+                "generate_cluster_report.py writes keyword_cluster_report.json as the main cluster-report output.",
+                "weekly_pipeline.py, generate_content_plan.py, validate_article_seo.py, and monthly/backfill scripts still read this file.",
+                "The contents now include architecture-aware fields such as cluster_id, subtopic coverage, angle distribution, and legacy cluster aliases.",
+            ],
+            "still_referenced": "yes",
+            "recommendation": "Keep for now. Rename only through a careful compatibility migration because it is still an active shared report.",
+            "risk_if_removed_now": "high",
+        },
+        {
+            "path": "front matter / metadata fields: topical_cluster and search_intent",
+            "item_type": "data structure",
+            "status": "legacy but still needed for backward compatibility",
+            "what_it_appears_to_do": "Pre-architecture metadata fields that still support category derivation, layouts, legacy content, and compatibility with older reports and posts.",
+            "likely_replaced_by": [
+                "cluster_id",
+                "subtopic_id",
+                "angle_id",
+                "intent_id",
+                "canonical_cluster_name",
+            ],
+            "evidence": [
+                "publish_post.py still validates and writes topical_cluster and search_intent.",
+                "_layouts/post.html still uses page.topical_cluster to find cluster hub backlinks and same-cluster related posts at render time.",
+                "generate_article.py still emits topical_cluster and search_intent alongside the newer architecture fields.",
+                "backfill_historical_metadata.py and generate_cluster_report.py still preserve and reconcile these legacy fields.",
+            ],
+            "still_referenced": "yes",
+            "recommendation": "Keep until the site templates and all report consumers are fully migrated off these fields.",
+            "risk_if_removed_now": "high",
+        },
+        {
+            "path": "_layouts/post.html::topical_cluster-based related-post logic",
+            "item_type": "template",
+            "status": "partially replaced",
+            "what_it_appears_to_do": "Runtime site template logic that builds cluster backlinks and related-post sections from page.topical_cluster.",
+            "likely_replaced_by": [
+                "pipeline/scripts/internal_linking.py",
+                "pipeline/scripts/generate_article.py",
+                "pipeline/scripts/publish_post.py",
+            ],
+            "evidence": [
+                "internal_linking.py now builds architecture-aware suggestions using cluster_id/subtopic_id/angle_id/intent_id.",
+                "generate_article.py feeds those suggestions into generation, and publish_post.py can append a Read Next block when internal links are sparse.",
+                "post.html still renders its own topical_cluster-based related content on the site, so the old and new systems currently coexist.",
+            ],
+            "still_referenced": "yes",
+            "recommendation": "Review as a duplicate-logic area, not an immediate deletion candidate. It still affects public pages.",
+            "risk_if_removed_now": "high",
+        },
+        {
+            "path": "pipeline/prompts/formats/trend_guide.md and pipeline/prompts/formats/styling_advice.md",
+            "item_type": "template",
+            "status": "partially replaced",
+            "what_it_appears_to_do": "Older format prompts from the broader pre-angle-intent model.",
+            "likely_replaced_by": [
+                "pipeline/prompts/formats/ideas_article.md",
+                "pipeline/prompts/formats/how_to_guide.md",
+                "pipeline/prompts/formats/mistakes_and_fixes.md",
+                "pipeline/prompts/formats/best_options.md",
+                "ANGLE_STRUCTURE_GUIDANCE in pipeline/scripts/generate_article.py",
+            ],
+            "evidence": [
+                "generate_article.py still includes both files in FORMAT_FILE_MAP.",
+                "ANGLE_FORMAT_MAP now prioritizes ideas/how_to/mistakes/best_options for the main angle-sensitive flow.",
+                "search_intent still defaults to styling_advice in several compatibility paths, so these prompts are not clearly dead yet.",
+            ],
+            "still_referenced": "yes",
+            "recommendation": "Keep until search_intent-based fallback formatting is deliberately retired.",
+            "risk_if_removed_now": "moderate",
+        },
+        {
+            "path": "pipeline/data/article-package-*.json and pipeline/data/article_packages/",
+            "item_type": "data structure",
+            "status": "legacy but still needed for backward compatibility",
+            "what_it_appears_to_do": "Generated article package artifacts and cache outputs used for debugging, caching, and manual inspection.",
+            "likely_replaced_by": [],
+            "evidence": [
+                "weekly_pipeline.py saves temp article packages under pipeline/data/article-package-<timestamp>-<slug>.json.",
+                "generate_article.py uses pipeline/data/article_packages as a cache directory.",
+                "These files are not source-of-truth content, but they are part of the current generation and recovery workflow.",
+            ],
+            "still_referenced": "yes",
+            "recommendation": "Treat as operational artifacts rather than authoritative data. Review retention policy later instead of deleting blindly.",
+            "risk_if_removed_now": "moderate",
+        },
+        {
+            "path": "pipeline/reports/article_seo_validation_report.json and pipeline/reports/article_editorial_validation_report.json",
+            "item_type": "report",
+            "status": "legacy but still needed for backward compatibility",
+            "what_it_appears_to_do": "Latest-run validation outputs for SEO and editorial checks.",
+            "likely_replaced_by": [],
+            "evidence": [
+                "weekly_pipeline.py writes these reports through write_validation_report() and write_editorial_validation_report().",
+                "They are not authoritative planning data, but they remain useful operational outputs for the current validation flow.",
+            ],
+            "still_referenced": "yes",
+            "recommendation": "Keep as transient operational reports. Treat them as diagnostic outputs rather than durable state.",
+            "risk_if_removed_now": "low_to_moderate",
+        },
+        {
+            "path": "pipeline/scripts/list_pinterest_boards.py",
+            "item_type": "file",
+            "status": "unclear / needs manual review",
+            "what_it_appears_to_do": "Manual Pinterest utility for listing boards.",
+            "likely_replaced_by": [],
+            "evidence": [
+                "No workflow references this script.",
+                "It appears to be a standalone operational helper rather than part of the automated publish path.",
+            ],
+            "still_referenced": "no",
+            "recommendation": "Keep if it is still part of manual Pinterest operations; otherwise review later as a utility-script cleanup candidate.",
+            "risk_if_removed_now": "low",
+        },
+    ]
+
+    active_pipeline_flow = {
+        "workflow_entrypoints": [
+            ".github/workflows/publish.yml -> pipeline/scripts/weekly_pipeline.py",
+            ".github/workflows/deploy-site.yml -> pipeline/scripts/sync_shop_the_look.py",
+            ".github/workflows/publish-pinterest-queue.yml -> pipeline/scripts/process_pinterest_queue.py",
+        ],
+        "authoritative_modules": {
+            "planning": "pipeline/scripts/generate_content_plan.py",
+            "article_generation": "pipeline/scripts/generate_article.py",
+            "publishing": "pipeline/scripts/publish_post.py",
+            "metadata_and_indexing": "pipeline/scripts/generate_cluster_report.py",
+            "architecture_schema": [
+                "pipeline/data/content_domains.json",
+                "pipeline/data/content_clusters.json",
+                "pipeline/data/content_subtopics.json",
+                "pipeline/data/content_angles.json",
+                "pipeline/data/content_constraints.json",
+                "pipeline/scripts/content_architecture.py",
+            ],
+            "cluster_pages": "pipeline/scripts/generate_pillar_pages.py",
+            "images": [
+                "pipeline/scripts/generate_image_prompts.py",
+                "pipeline/scripts/generate_images.py",
+            ],
+            "validation": [
+                "pipeline/scripts/validate_article_concept.py",
+                "pipeline/scripts/validate_article_seo.py",
+                "pipeline/scripts/validate_article_editorial.py",
+            ],
+            "pinterest": [
+                "pipeline/scripts/generate_pinterest_intelligence_report.py",
+                "pipeline/scripts/generate_pinterest_topic_signals.py",
+                "pipeline/scripts/generate_pin_metadata.py",
+                "pipeline/scripts/generate_pin_assets.py",
+                "pipeline/scripts/process_pinterest_queue.py",
+                "pipeline/scripts/publish_pins.py",
+            ],
+        },
+    }
+
+    summary = {
+        "likely_safe_future_cleanup_candidates": [
+            "pipeline/scripts/generate_cluster_pages.py",
+            "pipeline/scripts/backfill_cluster_metadata.py",
+            "pipeline/scripts/validate_article.py",
+            "pipeline/scripts/list_pinterest_boards.py",
+            "pipeline/reports/pipeline_cost_audit.json",
+        ],
+        "keep_for_backward_compatibility": [
+            "pipeline/scripts/topic_clusters.py (at least its shared types/helpers)",
+            "pipeline/data/topic_clusters.json",
+            "pipeline/data/topic_taxonomy.json",
+            "pipeline/data/candidate_trends.json",
+            "pipeline/data/keyword_cluster_report.json",
+            "front matter / metadata fields: topical_cluster and search_intent",
+        ],
+        "areas_with_duplicate_logic": [
+            "_layouts/post.html topical_cluster-based related-post logic vs architecture-aware internal_linking.py / publish_post.py",
+            "fetch_trends.py architecture-first candidate sourcing vs legacy keyword-cluster and mock/file fallbacks",
+            "validate_article.py wrapper CLI vs weekly_pipeline.py direct validation calls",
+            "generate_cluster_pages.py vs generate_pillar_pages.py",
+        ],
+        "areas_where_old_and_new_architectures_coexist": [
+            "cluster_id/subtopic_id/angle_id/intent_id coexist with topical_cluster/search_intent and stable cluster display names",
+            "content_architecture.py drives primary planning, but topic_clusters.py still provides fallback candidate generation and manual candidate helpers",
+            "keyword_cluster_report.json remains active even though its contents are now architecture-aware",
+            "prompt format selection is angle-sensitive first, but still retains styling_advice/trend_guide compatibility prompts",
+        ],
+        "highest_priority_cleanup_opportunities_for_later": [
+            "Split topic_clusters.py into active compatibility helpers vs removable keyword-era expansion logic.",
+            "Decide whether fetch_trends.py still needs cluster/file/mock fallback branches once architecture and Pinterest candidate sources are trusted.",
+            "Unify public related-link logic so _layouts/post.html and internal_linking.py are not maintaining parallel recommendation systems.",
+            "Rename or wrap keyword_cluster_report.json behind a clearer architecture-first name only after downstream readers are updated.",
+        ],
+    }
+
+    methodology = {
+        "active_logic_detection": [
+            "GitHub Actions workflow entrypoints",
+            "Imports and direct function calls from weekly_pipeline.py",
+            "Reads and writes to pipeline/data and pipeline/reports files",
+            "Template references in _layouts, _includes, and generated pages",
+        ],
+        "conservative_rules": [
+            "If something is still referenced by a live workflow, script import, or site template, it is not treated as dead.",
+            "If a file appears manual-only, it is marked unclear/manual utility unless evidence shows it is superseded.",
+            "Legacy names are treated separately from obsolete behavior; several files are still active despite misleading pre-migration names.",
+        ],
+    }
+
+    return {
+        "generated_at": utc_now_iso(),
+        "scope": {
+            "root": str(PROJECT_ROOT),
+            "audit_type": "repository obsolescence and coexistence audit",
+        },
+        "active_pipeline_flow": active_pipeline_flow,
+        "methodology": methodology,
+        "findings": findings,
+        "summary": summary,
+        "report_files_present": {
+            "report_json": file_exists("pipeline/reports/repo_obsolescence_audit.json"),
+            "report_markdown": file_exists("pipeline/reports/repo_obsolescence_audit.md"),
+        },
+    }
+
+
+def build_markdown(report: dict[str, Any]) -> str:
+    lines: list[str] = []
+    lines.append("# Repository Obsolescence Audit")
+    lines.append("")
+    lines.append(f"- Generated at: `{report['generated_at']}`")
+    lines.append(f"- Scope: `{report['scope']['root']}`")
+    lines.append("")
+    lines.append("## Active Pipeline Flow")
+    lines.append("")
+    lines.append("### Workflow entrypoints")
+    for item in report["active_pipeline_flow"]["workflow_entrypoints"]:
+        lines.append(f"- `{item}`")
+    lines.append("")
+    lines.append("### Source-of-truth modules")
+    for key, value in report["active_pipeline_flow"]["authoritative_modules"].items():
+        if isinstance(value, list):
+            lines.append(f"- `{key}`:")
+            for subitem in value:
+                lines.append(f"  - `{subitem}`")
+        else:
+            lines.append(f"- `{key}`: `{value}`")
+    lines.append("")
+    lines.append("## How This Audit Distinguished Active vs Legacy Logic")
+    lines.append("")
+    for item in report["methodology"]["active_logic_detection"]:
+        lines.append(f"- {item}")
+    lines.append("")
+    for item in report["methodology"]["conservative_rules"]:
+        lines.append(f"- {item}")
+    lines.append("")
+    lines.append("## Findings")
+    lines.append("")
+    for finding in report["findings"]:
+        lines.append(f"### {finding['path']}")
+        lines.append("")
+        lines.append(f"- Item type: `{finding['item_type']}`")
+        lines.append(f"- Status: `{finding['status']}`")
+        if finding["likely_replaced_by"]:
+            lines.append("- Likely replaced by:")
+            for item in finding["likely_replaced_by"]:
+                lines.append(f"  - `{item}`")
+        else:
+            lines.append("- Likely replaced by: none identified")
+        lines.append(f"- Still referenced: `{finding['still_referenced']}`")
+        lines.append(f"- Why flagged: {finding['what_it_appears_to_do']}")
+        lines.append("- Evidence:")
+        for item in finding["evidence"]:
+            lines.append(f"  - {item}")
+        lines.append(f"- Recommendation: {finding['recommendation']}")
+        lines.append(f"- Risk if removed now: `{finding['risk_if_removed_now']}`")
+        lines.append("")
+    lines.append("## High-Level Summary")
+    lines.append("")
+    for section_name, items in report["summary"].items():
+        heading = section_name.replace("_", " ").capitalize()
+        lines.append(f"### {heading}")
+        lines.append("")
+        for item in items:
+            lines.append(f"- {item}")
+        lines.append("")
+    return "\n".join(lines).rstrip() + "\n"
+
+
+def main() -> int:
+    report = build_report()
+    REPORT_JSON_PATH.parent.mkdir(parents=True, exist_ok=True)
+    REPORT_JSON_PATH.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+    REPORT_MD_PATH.write_text(build_markdown(report), encoding="utf-8")
+    print(REPORT_JSON_PATH)
+    print(REPORT_MD_PATH)
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

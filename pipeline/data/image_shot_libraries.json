@@ -1,0 +1,187 @@
+{
+  "default_library_id": "general_decor",
+  "libraries": [
+    {
+      "library_id": "general_decor",
+      "match_tokens": [],
+      "hero_subject_emphasis": "a balanced room story with one memorable focal point and believable depth",
+      "section_roles": [
+        "anchor vignette around the section's main styling move",
+        "close material and texture detail",
+        "functional corner or layout moment",
+        "styled shelf, console, or decorative surface vignette",
+        "finishing-touch composition with personality and restraint"
+      ],
+      "subject_emphasis": [
+        "overall styling balance",
+        "materials and finish interplay",
+        "layout and furniture rhythm",
+        "surface styling and accessories",
+        "editing and finishing touches"
+      ],
+      "composition_preferences": [
+        "wide establishing room shot",
+        "soft off-center framing",
+        "close tactile crop",
+        "eye-level corner view",
+        "restrained styled vignette"
+      ]
+    },
+    {
+      "library_id": "window_treatments",
+      "match_tokens": ["window treatments", "curtain", "drape", "sheer", "blackout", "shades", "rod"],
+      "hero_subject_emphasis": "window glow, drape movement, and height-enhancing lines that make the room feel finished",
+      "section_roles": [
+        "wide window-facing room shot with drape movement",
+        "close fabric, fold, and hem detail",
+        "hardware and rod placement close-up",
+        "light-filtering or privacy-focused corner view",
+        "styled room shot showing the treatment integrated with the rest of the space"
+      ],
+      "subject_emphasis": [
+        "window height and proportion",
+        "fabric texture and weight",
+        "hardware finish and placement",
+        "light filtering and privacy",
+        "curtain styling within the whole room"
+      ],
+      "composition_preferences": [
+        "window-facing perspective",
+        "soft side angle",
+        "cropped hardware detail",
+        "light-through-fabric close-up",
+        "balanced full-room framing"
+      ]
+    },
+    {
+      "library_id": "textures_materials",
+      "match_tokens": ["texture", "material", "linen", "boucle", "wood", "stone", "brass", "oak"],
+      "hero_subject_emphasis": "tactile layering, material contrast, and a room that feels touchable and rich without clutter",
+      "section_roles": [
+        "room-wide shot that shows layered materials working together",
+        "tight tactile close-up of fabric and finish interplay",
+        "furniture-and-surface composition highlighting material balance",
+        "small styling vignette with tactile contrast",
+        "quiet finishing composition focused on layered texture"
+      ],
+      "subject_emphasis": [
+        "fabric layering",
+        "wood and stone balance",
+        "finish contrast",
+        "soft-versus-hard texture interplay",
+        "restrained tactile depth"
+      ],
+      "composition_preferences": [
+        "tactile close crop",
+        "layered vignette",
+        "surface detail view",
+        "balanced material composition",
+        "quiet editorial crop"
+      ]
+    },
+    {
+      "library_id": "lighting",
+      "match_tokens": ["lighting", "lamp", "sconce", "pendant", "chandelier"],
+      "hero_subject_emphasis": "light source, glow quality, and how the fixture shapes the mood of the room",
+      "section_roles": [
+        "room shot led by the lighting statement",
+        "fixture detail close-up with surrounding materials",
+        "functional reading, bedside, or task-lighting corner",
+        "ambient glow shot showing atmosphere",
+        "styled composition showing the fixture integrated into the room"
+      ],
+      "subject_emphasis": [
+        "fixture form",
+        "light quality",
+        "ambient mood",
+        "task lighting function",
+        "style compatibility"
+      ],
+      "composition_preferences": [
+        "fixture-upward framing",
+        "ambient glow crop",
+        "eye-level corner shot",
+        "evening-like daylight balance",
+        "styled detail crop"
+      ]
+    },
+    {
+      "library_id": "storage_organization",
+      "match_tokens": ["storage", "organization", "entryway", "shelf", "console", "basket"],
+      "hero_subject_emphasis": "functional order that still feels styled, calm, and visually intentional",
+      "section_roles": [
+        "organized room or entryway establishing shot",
+        "container or shelf detail with styling restraint",
+        "functional drop-zone or organization corner",
+        "surface styling that keeps the setup practical",
+        "finished organized vignette with warmth and polish"
+      ],
+      "subject_emphasis": [
+        "storage function",
+        "visible organization",
+        "daily-use practicality",
+        "edited surfaces",
+        "calm styling"
+      ],
+      "composition_preferences": [
+        "front-facing organization view",
+        "functional corner framing",
+        "basket-and-shelf crop",
+        "entryway perspective",
+        "clean edited vignette"
+      ]
+    },
+    {
+      "library_id": "color_palette",
+      "match_tokens": ["color palette", "paint", "color", "neutral", "palette"],
+      "hero_subject_emphasis": "palette harmony, color relationships, and a room that clearly expresses the mood of the scheme",
+      "section_roles": [
+        "room-wide palette-led establishing shot",
+        "close-up showing color transitions and materials",
+        "furniture or textile composition emphasizing color balance",
+        "styled vignette with accent-color use",
+        "final composition showing the palette fully resolved"
+      ],
+      "subject_emphasis": [
+        "palette harmony",
+        "paint and textile interplay",
+        "accent balance",
+        "tone variation",
+        "overall mood"
+      ],
+      "composition_preferences": [
+        "palette-led wide shot",
+        "paint-and-textile crop",
+        "accent-color vignette",
+        "tonal layering view",
+        "soft editorial framing"
+      ]
+    },
+    {
+      "library_id": "seasonal_styling",
+      "match_tokens": ["spring", "summer", "fall", "autumn", "winter", "holiday", "seasonal"],
+      "hero_subject_emphasis": "seasonal freshness and atmosphere without turning the room into a themed prop set",
+      "section_roles": [
+        "wide seasonal refresh shot",
+        "close-up of seasonal materials or accents",
+        "styled mantel, table, or console moment",
+        "soft lived-in corner with seasonal cues",
+        "final seasonal edit with restraint and cohesion"
+      ],
+      "subject_emphasis": [
+        "seasonal palette",
+        "fresh accents",
+        "light seasonal styling",
+        "lived-in atmosphere",
+        "restrained finishing touches"
+      ],
+      "composition_preferences": [
+        "fresh wide shot",
+        "seasonal accent crop",
+        "mantel or table vignette",
+        "soft corner view",
+        "edited final composition"
+      ]
+    }
+  ]
+}

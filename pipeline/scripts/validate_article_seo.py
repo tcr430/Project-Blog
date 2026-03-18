@@ -7,6 +7,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from content_architecture import resolve_intent_id
+
 DEFAULT_CLUSTER_INDEX_PATH = Path(__file__).resolve().parents[1] / "data" / "article_cluster_index.json"
 DEFAULT_CLUSTER_REPORT_PATH = Path(__file__).resolve().parents[1] / "data" / "keyword_cluster_report.json"
 DEFAULT_TREND_HISTORY_PATH = Path(__file__).resolve().parents[1] / "data" / "trend_history.json"
@@ -134,17 +136,44 @@ def detect_angle(*values: str) -> str:
     return "styling_advice"
 
 
+def resolve_article_angle(article_like: dict[str, Any]) -> str:
+    angle_id = normalize_text(article_like.get("angle_id", ""))
+    if angle_id:
+        return angle_id
+    return detect_angle(
+        str(article_like.get("title") or article_like.get("article_title") or ""),
+        str(article_like.get("primary_keyword") or ""),
+        str(article_like.get("excerpt") or article_like.get("article_markdown") or ""),
+    )
+
+
+def resolve_article_intent(article_like: dict[str, Any]) -> str:
+    intent_id = normalize_text(article_like.get("intent_id", ""))
+    if intent_id:
+        return intent_id.replace(" ", "_")
+
+    angle_id = resolve_article_angle(article_like)
+    normalized_angle = normalize_text(angle_id).replace(" ", "_")
+    if not normalized_angle:
+        return "legacy_unspecified"
+    return resolve_intent_id(normalized_angle)
+
+
+def resolve_article_subtopic_id(article_like: dict[str, Any]) -> str:
+    return normalize_text(article_like.get("subtopic_id", "")) or "legacy_unspecified"
+
+
+def resolve_article_subtopic_name(article_like: dict[str, Any]) -> str:
+    return str(article_like.get("subtopic_name") or "").strip() or "Legacy / Unspecified"
+
+
 def build_existing_angle_maps(index_data: dict[str, Any], trend_history: dict[str, Any]) -> tuple[dict[str, dict[str, int]], dict[str, dict[str, int]]]:
     article_counts: dict[str, dict[str, int]] = {}
     for article in index_data.get("articles", []):
         if not isinstance(article, dict):
             continue
         cluster = str(article.get("cluster_name") or "uncategorized").strip()
-        angle = detect_angle(
-            str(article.get("article_title") or ""),
-            str(article.get("primary_keyword") or ""),
-            str(article.get("excerpt") or ""),
-        )
+        angle = resolve_article_angle(article)
         article_counts.setdefault(cluster, {})[angle] = article_counts.setdefault(cluster, {}).get(angle, 0) + 1
 
     history_counts: dict[str, dict[str, int]] = {}
@@ -152,7 +181,7 @@ def build_existing_angle_maps(index_data: dict[str, Any], trend_history: dict[st
         if not isinstance(entry, dict):
             continue
         cluster = str(entry.get("trend_cluster") or "uncategorized").strip()
-        angle = detect_angle(str(entry.get("trend_keyword") or ""))
+        angle = normalize_text(entry.get("angle_id", "")) or detect_angle(str(entry.get("trend_keyword") or ""))
         history_counts.setdefault(cluster, {})[angle] = history_counts.setdefault(cluster, {}).get(angle, 0) + 1
 
     return article_counts, history_counts
@@ -170,7 +199,8 @@ def evaluate_cannibalization(
     new_title = str(article_package.get("title") or "")
     new_primary = fallback_primary_keyword(article_package)
     new_cluster = fallback_cluster(article_package)
-    new_angle = detect_angle(new_title, new_primary)
+    new_angle = resolve_article_angle(article_package)
+    new_intent = resolve_article_intent(article_package)
     new_slug_tokens = tokenize(new_slug)
     new_title_tokens = tokenize(new_title)
     new_primary_tokens = tokenize(new_primary)
@@ -182,7 +212,8 @@ def evaluate_cannibalization(
         existing_title = str(article.get("article_title") or "")
         existing_primary = str(article.get("primary_keyword") or "")
         existing_cluster = str(article.get("cluster_name") or "uncategorized")
-        existing_angle = detect_angle(existing_title, existing_primary, str(article.get("excerpt") or ""))
+        existing_angle = resolve_article_angle(article)
+        existing_intent = resolve_article_intent(article)
 
         slug_similarity = jaccard_similarity(new_slug_tokens, tokenize(existing_slug))
         title_similarity = jaccard_similarity(new_title_tokens, tokenize(existing_title))
@@ -198,7 +229,12 @@ def evaluate_cannibalization(
             duplicates.append(existing_slug)
             continue
 
-        if new_primary and existing_primary and normalize_text(new_primary) == normalize_text(existing_primary) and new_angle == existing_angle:
+        if (
+            new_primary
+            and existing_primary
+            and normalize_text(new_primary) == normalize_text(existing_primary)
+            and new_intent == existing_intent
+        ):
             errors.append(f"Primary keyword and intent duplicate existing article '{existing_slug}'.")
             duplicates.append(existing_slug)
             continue
@@ -218,6 +254,7 @@ def evaluate_cannibalization(
 def evaluate_cluster_duplication(article_package: dict[str, Any], index_data: dict[str, Any]) -> list[str]:
     warnings: list[str] = []
     new_cluster = fallback_cluster(article_package)
+    new_subtopic_id = resolve_article_subtopic_id(article_package)
     if not new_cluster or new_cluster == "uncategorized":
         return warnings
 
@@ -230,6 +267,10 @@ def evaluate_cluster_duplication(article_package: dict[str, Any], index_data: di
 
         title_similarity = jaccard_similarity(new_title_tokens, tokenize(article.get("article_title") or ""))
         excerpt_similarity = jaccard_similarity(new_heading_tokens, tokenize(article.get("excerpt") or ""))
+        existing_subtopic_id = resolve_article_subtopic_id(article)
+        if new_subtopic_id == existing_subtopic_id and new_subtopic_id != "legacy_unspecified":
+            title_similarity += 0.08
+            excerpt_similarity += 0.05
         if title_similarity >= 0.55 or excerpt_similarity >= 0.45:
             warnings.append(
                 f"Cluster overlap is high with '{article.get('article_slug', '')}', so the angle may add limited new value."
@@ -301,17 +342,74 @@ def evaluate_repetitive_angles(
 ) -> list[str]:
     warnings: list[str] = []
     cluster = fallback_cluster(article_package)
-    angle = detect_angle(
-        str(article_package.get("title") or ""),
-        fallback_primary_keyword(article_package),
-        str(article_package.get("article_markdown") or ""),
-    )
+    angle = resolve_article_angle(article_package)
+    intent_id = resolve_article_intent(article_package)
     article_counts, history_counts = build_existing_angle_maps(index_data, trend_history)
     total_existing = article_counts.get(cluster, {}).get(angle, 0) + history_counts.get(cluster, {}).get(angle, 0)
 
     if total_existing >= 2:
         warnings.append(
             f"The '{angle}' angle is already used frequently in the '{cluster}' cluster."
+        )
+    intent_total_existing = 0
+    for article in index_data.get("articles", []):
+        if not isinstance(article, dict):
+            continue
+        if str(article.get("cluster_name") or "uncategorized").strip() != cluster:
+            continue
+        if resolve_article_intent(article) == intent_id:
+            intent_total_existing += 1
+    if intent_total_existing >= 3:
+        warnings.append(
+            f"The '{intent_id}' intent is already heavily represented in the '{cluster}' cluster."
+        )
+
+    return warnings
+
+
+def evaluate_subtopic_saturation(
+    article_package: dict[str, Any],
+    index_data: dict[str, Any],
+) -> list[str]:
+    warnings: list[str] = []
+    cluster = fallback_cluster(article_package)
+    subtopic_id = resolve_article_subtopic_id(article_package)
+    subtopic_name = resolve_article_subtopic_name(article_package)
+    angle_id = resolve_article_angle(article_package)
+    intent_id = resolve_article_intent(article_package)
+    if subtopic_id == "legacy_unspecified":
+        return warnings
+
+    matching_articles = [
+        article
+        for article in index_data.get("articles", [])
+        if isinstance(article, dict)
+        and str(article.get("cluster_name") or "uncategorized") == cluster
+        and resolve_article_subtopic_id(article) == subtopic_id
+    ]
+    if len(matching_articles) >= 2:
+        warnings.append(
+            f"The '{subtopic_name}' subtopic is already well-covered in the '{cluster}' cluster."
+        )
+
+    matching_angles = [
+        article
+        for article in matching_articles
+        if resolve_article_angle(article) == angle_id
+    ]
+    if len(matching_angles) >= 1:
+        warnings.append(
+            f"The '{angle_id}' angle already exists inside the '{subtopic_name}' subtopic for '{cluster}'."
+        )
+
+    matching_intents = [
+        article
+        for article in matching_articles
+        if resolve_article_intent(article) == intent_id
+    ]
+    if len(matching_intents) >= 1:
+        warnings.append(
+            f"The '{intent_id}' intent already exists inside the '{subtopic_name}' subtopic for '{cluster}'."
         )
 
     return warnings
@@ -336,6 +434,7 @@ def validate_article_seo(
     warnings.extend(evaluate_title_quality(article_package))
     warnings.extend(evaluate_semantic_coverage(article_package))
     warnings.extend(evaluate_repetitive_angles(article_package, existing_index_data, trend_history_data))
+    warnings.extend(evaluate_subtopic_saturation(article_package, existing_index_data))
 
     deduped_warnings = sorted(dict.fromkeys(warnings))
     deduped_errors = sorted(dict.fromkeys(errors))
@@ -344,6 +443,11 @@ def validate_article_seo(
     return {
         "article_slug": fallback_slug(article_package),
         "cluster": fallback_cluster(article_package),
+        "cluster_id": normalize_text(article_package.get("cluster_id", "")),
+        "subtopic_id": resolve_article_subtopic_id(article_package),
+        "subtopic_name": resolve_article_subtopic_name(article_package),
+        "angle_id": resolve_article_angle(article_package),
+        "intent_id": resolve_article_intent(article_package),
         "primary_keyword": fallback_primary_keyword(article_package),
         "validation_status": status,
         "warnings": deduped_warnings,

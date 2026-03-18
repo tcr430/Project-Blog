@@ -1,0 +1,41 @@
+{
+  "recent_window_article_count": 8,
+  "categories": {
+    "evergreen_authority": {
+      "display_name": "Evergreen Authority",
+      "target_share": 0.4,
+      "soft_min_share": 0.25,
+      "soft_max_share": 0.6,
+      "planning_boost": 8,
+      "selection_boost": 10,
+      "over_target_penalty": -6
+    },
+    "seasonal_opportunity": {
+      "display_name": "Seasonal Opportunity",
+      "target_share": 0.2,
+      "soft_min_share": 0.1,
+      "soft_max_share": 0.35,
+      "planning_boost": 7,
+      "selection_boost": 9,
+      "over_target_penalty": -4
+    },
+    "pinterest_responsive": {
+      "display_name": "Pinterest Responsive",
+      "target_share": 0.2,
+      "soft_min_share": 0.1,
+      "soft_max_share": 0.4,
+      "planning_boost": 6,
+      "selection_boost": 8,
+      "over_target_penalty": -4
+    },
+    "monetizable_decision": {
+      "display_name": "Monetizable Decision",
+      "target_share": 0.2,
+      "soft_min_share": 0.1,
+      "soft_max_share": 0.35,
+      "planning_boost": 7,
+      "selection_boost": 9,
+      "over_target_penalty": -5
+    }
+  }
+}

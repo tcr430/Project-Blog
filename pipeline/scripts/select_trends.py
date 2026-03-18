@@ -8,25 +8,57 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any, TypedDict
 
+from content_architecture import load_content_clusters, resolve_intent_id
+from editorial_mix import (
+    build_recent_editorial_mix_state,
+    classify_editorial_mix,
+    editorial_mix_adjustment,
+    load_editorial_mix_rules,
+    round_selection_mix_bonus,
+)
+from generate_content_plan import summarize_capacity_state
 from trend_history import DEFAULT_NON_SEASONAL_COOLDOWN_DAYS, is_trend_allowed, load_trend_history
+from validate_article_concept import filter_valid_article_concepts
 
 
 class TrendCandidate(TypedDict):
+    domain_id: str
+    cluster_id: str
     trend_cluster: str
     trend_keyword: str
     primary_keyword: str
     secondary_keywords: list[str]
     cluster_keywords: list[str]
     search_intent: str
+    intent_id: str
     season: str
     holiday: str
     source: str
     pinterest_trend_score: int
+    subtopic_id: str
+    subtopic_name: str
+    angle_id: str
+    modifier: str
+    editorial_mix_primary: str
+    editorial_mix_tags: list[str]
 
 
 class ScoredTrend(TrendCandidate):
     score: int
     scoring_notes: list[str]
+
+
+class ClusterGovernanceState(TypedDict):
+    cluster_id: str
+    cluster_name: str
+    article_count: int
+    article_capacity_target: int
+    capacity_ratio: float
+    saturation_state: str
+    selection_action: str
+    missing_subtopic_ids: list[str]
+    underused_angles: list[str]
+    overused_angles: list[str]
 
 
 DECOR_KEYWORDS = {
@@ -67,6 +99,7 @@ USEFULNESS_HINTS = {
 
 DEFAULT_HISTORY_FILE = Path(__file__).resolve().parents[1] / "data" / "trend_history.json"
 DEFAULT_PINTEREST_SIGNALS_FILE = Path(__file__).resolve().parents[1] / "reports" / "pinterest_topic_signals.json"
+DEFAULT_PINTEREST_INTELLIGENCE_FILE = Path(__file__).resolve().parents[1] / "reports" / "pinterest_intelligence_report.json"
 DEFAULT_CLUSTER_INDEX_FILE = Path(__file__).resolve().parents[1] / "data" / "article_cluster_index.json"
 
 
@@ -100,6 +133,10 @@ def normalize_text(value: Any) -> str:
     normalized = str(value or "").strip().lower()
     normalized = normalized.replace("_", " ").replace("-", " ")
     return re.sub(r"\s+", " ", normalized)
+
+
+def normalize_identifier(value: Any) -> str:
+    return normalize_text(value).replace(" ", "_")
 
 
 def parse_int(value: Any) -> int:
@@ -149,6 +186,11 @@ def normalize_candidate(raw: dict[str, Any]) -> TrendCandidate:
     holiday = normalize_text(raw.get("holiday", ""))
     source = normalize_text(raw.get("source", "")) or "unknown"
     search_intent = normalize_text(raw.get("search_intent", "")) or "styling_advice"
+    angle_id = normalize_identifier(raw.get("angle_id", ""))
+    intent_id = normalize_identifier(raw.get("intent_id", "")) or resolve_intent_id(
+        angle_id=angle_id,
+        explicit_intent_id=raw.get("intent_id", ""),
+    )
 
     secondary_keywords_raw = raw.get("secondary_keywords", [])
     cluster_keywords_raw = raw.get("cluster_keywords", [])
@@ -167,21 +209,37 @@ def normalize_candidate(raw: dict[str, Any]) -> TrendCandidate:
         cluster_keywords = [primary_keyword, *secondary_keywords]
 
     return {
+        "domain_id": normalize_identifier(raw.get("domain_id", "")),
+        "cluster_id": normalize_identifier(raw.get("cluster_id", "")),
         "trend_cluster": cluster,
         "trend_keyword": keyword,
         "primary_keyword": primary_keyword,
         "secondary_keywords": secondary_keywords,
         "cluster_keywords": cluster_keywords,
         "search_intent": search_intent,
+        "intent_id": intent_id,
         "season": season,
         "holiday": holiday,
         "source": source,
         "pinterest_trend_score": parse_int(raw.get("pinterest_trend_score")),
+        "subtopic_id": normalize_identifier(raw.get("subtopic_id", "")),
+        "subtopic_name": normalize_text(raw.get("subtopic_name", "")),
+        "angle_id": angle_id,
+        "modifier": normalize_text(raw.get("modifier", "")),
+        "editorial_mix_primary": "",
+        "editorial_mix_tags": [],
     }
 
 
 def normalize_candidates(raw_candidates: list[dict[str, Any]]) -> list[TrendCandidate]:
-    return [normalize_candidate(item) for item in raw_candidates]
+    normalized_candidates: list[TrendCandidate] = []
+    for item in raw_candidates:
+        candidate = normalize_candidate(item)
+        mix = classify_editorial_mix(candidate)
+        candidate["editorial_mix_primary"] = mix["primary"]
+        candidate["editorial_mix_tags"] = mix["tags"]
+        normalized_candidates.append(candidate)
+    return normalized_candidates
 
 
 def is_valid_candidate(candidate: TrendCandidate) -> bool:
@@ -219,7 +277,7 @@ def reject_invalid_and_duplicates(candidates: list[TrendCandidate]) -> list[Tren
         seen.add(key)
         unique.append(candidate)
 
-    return unique
+    return filter_valid_article_concepts(unique)
 
 
 def load_existing_articles(cluster_index_path: Path) -> list[dict[str, Any]]:
@@ -239,6 +297,92 @@ def load_existing_articles(cluster_index_path: Path) -> list[dict[str, Any]]:
         return []
 
     return [item for item in articles if isinstance(item, dict)]
+
+
+def build_cluster_governance_map(cluster_index_path: Path) -> dict[str, ClusterGovernanceState]:
+    clusters = load_content_clusters()
+    existing_articles = load_existing_articles(cluster_index_path)
+    if not clusters:
+        return {}
+
+    articles_by_cluster: dict[str, list[dict[str, Any]]] = {}
+    subtopic_counts_by_cluster: dict[str, dict[str, int]] = {}
+    angle_counts_by_cluster: dict[str, dict[str, int]] = {}
+
+    for article in existing_articles:
+        cluster_id = normalize_text(article.get("cluster_id", "")).replace(" ", "_")
+        cluster_name = normalize_text(article.get("cluster_name", "")).replace(" ", "_")
+        cluster_key = cluster_id or cluster_name
+        if not cluster_key:
+            continue
+
+        articles_by_cluster.setdefault(cluster_key, []).append(article)
+
+        subtopic_id = normalize_text(article.get("subtopic_id", "")).replace(" ", "_")
+        if subtopic_id:
+            row = subtopic_counts_by_cluster.setdefault(cluster_key, {})
+            row[subtopic_id] = row.get(subtopic_id, 0) + 1
+
+        angle_id = normalize_text(article.get("angle_id", "")).replace(" ", "_")
+        if angle_id:
+            row = angle_counts_by_cluster.setdefault(cluster_key, {})
+            row[angle_id] = row.get(angle_id, 0) + 1
+
+    governance_map: dict[str, ClusterGovernanceState] = {}
+    for cluster in clusters:
+        cluster_id = str(cluster.get("cluster_id", "")).strip()
+        cluster_name = normalize_text(cluster.get("cluster_name", "")).replace(" ", "_")
+        cluster_key = cluster_id or cluster_name
+        cluster_articles = articles_by_cluster.get(cluster_key, []) or articles_by_cluster.get(cluster_name, [])
+        article_count = len(cluster_articles)
+        subtopic_counts = subtopic_counts_by_cluster.get(cluster_key, {}) or subtopic_counts_by_cluster.get(cluster_name, {})
+        angle_counts = angle_counts_by_cluster.get(cluster_key, {}) or angle_counts_by_cluster.get(cluster_name, {})
+
+        missing_subtopic_ids = [
+            str(subtopic.get("subtopic_id", "")).strip()
+            for subtopic in cluster.get("subtopics", [])
+            if str(subtopic.get("subtopic_id", "")).strip() and subtopic_counts.get(str(subtopic.get("subtopic_id", "")).strip(), 0) <= 0
+        ]
+        allowed_angle_ids = [
+            normalize_text(angle_id).replace(" ", "_")
+            for angle_id in cluster.get("allowed_angle_ids", [])
+            if normalize_text(angle_id)
+        ]
+        underused_angles = [
+            angle_id
+            for angle_id in allowed_angle_ids
+            if int(angle_counts.get(angle_id, 0)) <= 1
+        ]
+        overused_angles = [
+            angle_id
+            for angle_id in allowed_angle_ids
+            if int(angle_counts.get(angle_id, 0)) >= 2 and int(angle_counts.get(angle_id, 0)) / max(article_count, 1) >= 0.5
+        ]
+
+        capacity_state = summarize_capacity_state(
+            article_count=article_count,
+            article_capacity_target=int(cluster.get("article_capacity_target", 8) or 8),
+            missing_subtopic_count=len(missing_subtopic_ids),
+            underused_angle_count=len(underused_angles),
+        )
+
+        governance: ClusterGovernanceState = {
+            "cluster_id": cluster_id,
+            "cluster_name": normalize_text(cluster.get("cluster_name", "")),
+            "article_count": article_count,
+            "article_capacity_target": int(capacity_state["article_capacity_target"]),
+            "capacity_ratio": float(capacity_state["capacity_ratio"]),
+            "saturation_state": str(capacity_state["saturation_state"]),
+            "selection_action": str(capacity_state["selection_action"]),
+            "missing_subtopic_ids": missing_subtopic_ids,
+            "underused_angles": underused_angles,
+            "overused_angles": overused_angles,
+        }
+        governance_map[cluster_key] = governance
+        if cluster_name and cluster_name not in governance_map:
+            governance_map[cluster_name] = governance
+
+    return governance_map
 
 
 def exclude_overlapping_candidates(
@@ -309,6 +453,44 @@ def filter_recently_used(
             allowed.append(candidate)
 
     return allowed
+
+
+def filter_capacity_blocked_candidates(
+    candidates: list[TrendCandidate],
+    cluster_governance_map: dict[str, ClusterGovernanceState],
+) -> list[TrendCandidate]:
+    if not cluster_governance_map:
+        return candidates
+
+    filtered: list[TrendCandidate] = []
+    for candidate in candidates:
+        cluster_key = candidate["cluster_id"] or normalize_text(candidate["trend_cluster"]).replace(" ", "_")
+        governance = cluster_governance_map.get(cluster_key)
+        if governance is None:
+            filtered.append(candidate)
+            continue
+
+        subtopic_id = candidate["subtopic_id"]
+        angle_id = candidate["angle_id"]
+        is_missing_subtopic = bool(subtopic_id) and subtopic_id in governance["missing_subtopic_ids"]
+        is_underused_angle = bool(angle_id) and angle_id in governance["underused_angles"]
+        is_repetitive = bool(subtopic_id) and not is_missing_subtopic and bool(angle_id) and angle_id in governance["overused_angles"]
+        is_clearly_saturated = (
+            governance["saturation_state"] == "saturated"
+            and governance["article_count"] >= governance["article_capacity_target"] + 2
+            and governance["capacity_ratio"] >= 1.2
+        )
+
+        if is_clearly_saturated and is_repetitive and not is_underused_angle:
+            print(
+                f"[capacity][reject] {candidate['primary_keyword']}: cluster '{governance['cluster_name']}' "
+                f"is saturated and this subtopic/angle path is already repetitive."
+            )
+            continue
+
+        filtered.append(candidate)
+
+    return filtered
 
 
 def build_recent_cluster_usage_map(
@@ -382,22 +564,39 @@ def score_candidate(candidate: TrendCandidate) -> tuple[int, list[str]]:
     score += usefulness_points
     notes.append(f"article usefulness: practical angle signals (+{usefulness_points})")
 
-    intent = candidate["search_intent"]
-    if intent == "how_to":
+    refined_intent = candidate["intent_id"]
+    if refined_intent == "implementation":
         score += 18
-        notes.append("search intent: strong how-to query (+18)")
-    elif intent == "problem_solution":
+        notes.append("refined intent: implementation-led query (+18)")
+    elif refined_intent == "problem_solving":
         score += 16
-        notes.append("search intent: problem-solution phrasing (+16)")
-    elif intent == "comparison":
+        notes.append("refined intent: problem-solving query (+16)")
+    elif refined_intent == "comparison":
         score += 14
-        notes.append("search intent: comparison/commercial investigation (+14)")
-    elif intent == "ideas":
+        notes.append("refined intent: comparison-led query (+14)")
+    elif refined_intent == "decision_making":
         score += 12
-        notes.append("search intent: idea-led search phrasing (+12)")
+        notes.append("refined intent: decision-making query (+12)")
+    elif refined_intent == "inspiration":
+        score += 10
+        notes.append("refined intent: inspiration-led query (+10)")
     else:
-        score += 8
-        notes.append("search intent: styling advice phrasing (+8)")
+        intent = candidate["search_intent"]
+        if intent == "how_to":
+            score += 18
+            notes.append("search intent: strong how-to query (+18)")
+        elif intent == "problem_solution":
+            score += 16
+            notes.append("search intent: problem-solution phrasing (+16)")
+        elif intent == "comparison":
+            score += 14
+            notes.append("search intent: comparison/commercial investigation (+14)")
+        elif intent == "ideas":
+            score += 12
+            notes.append("search intent: idea-led search phrasing (+12)")
+        else:
+            score += 8
+            notes.append("search intent: styling advice phrasing (+8)")
 
     secondary_keyword_bonus = min(10, len(candidate["secondary_keywords"]) * 2)
     score += secondary_keyword_bonus
@@ -431,6 +630,51 @@ def build_pinterest_signal_map(signal_data: dict[str, Any]) -> dict[str, dict[st
             continue
         signal_map[cluster_name] = row
     return signal_map
+
+
+def build_pinterest_intelligence_maps(report_data: dict[str, Any]) -> dict[str, dict[Any, dict[str, Any]]]:
+    if not isinstance(report_data, dict):
+        return {"clusters": {}, "subtopics": {}, "angles": {}}
+    return {
+        "clusters": {
+            str(row.get("cluster_id") or "").strip(): row
+            for row in report_data.get("best_performing_clusters", [])
+            if isinstance(row, dict) and str(row.get("cluster_id") or "").strip()
+        },
+        "subtopics": {
+            (str(row.get("cluster_id") or "").strip(), str(row.get("subtopic_id") or "").strip()): row
+            for row in report_data.get("best_performing_subtopics", [])
+            if isinstance(row, dict) and str(row.get("cluster_id") or "").strip() and str(row.get("subtopic_id") or "").strip()
+        },
+        "angles": {
+            str(row.get("angle_id") or "").strip(): row
+            for row in report_data.get("best_performing_angles", [])
+            if isinstance(row, dict) and str(row.get("angle_id") or "").strip()
+        },
+    }
+
+
+def apply_pinterest_intelligence_boost(
+    candidate: TrendCandidate,
+    *,
+    score: int,
+    notes: list[str],
+    intelligence_maps: dict[str, dict[Any, dict[str, Any]]],
+) -> tuple[int, list[str]]:
+    cluster_row = intelligence_maps["clusters"].get(candidate["cluster_id"])
+    subtopic_row = intelligence_maps["subtopics"].get((candidate["cluster_id"], candidate["subtopic_id"]))
+    angle_row = intelligence_maps["angles"].get(candidate["angle_id"])
+
+    cluster_boost = int((cluster_row or {}).get("signal_boost") or 0)
+    subtopic_boost = int((subtopic_row or {}).get("signal_boost") or 0)
+    angle_boost = int((angle_row or {}).get("signal_boost") or 0)
+    total_boost = cluster_boost + subtopic_boost + angle_boost
+    if total_boost:
+        score += total_boost
+        notes.append(
+            f"pinterest intelligence: architecture-aware boost ({total_boost:+d})"
+        )
+    return score, notes
 
 
 def apply_pinterest_signal_boost(
@@ -508,14 +752,89 @@ def apply_cluster_recency_preference(
     return score, notes
 
 
+def apply_cluster_capacity_governance(
+    candidate: TrendCandidate,
+    *,
+    score: int,
+    notes: list[str],
+    cluster_governance_map: dict[str, ClusterGovernanceState],
+) -> tuple[int, list[str]]:
+    cluster_key = candidate["cluster_id"] or normalize_text(candidate["trend_cluster"]).replace(" ", "_")
+    governance = cluster_governance_map.get(cluster_key)
+    if not governance:
+        return score, notes
+
+    subtopic_id = candidate["subtopic_id"]
+    angle_id = candidate["angle_id"]
+    is_missing_subtopic = bool(subtopic_id) and subtopic_id in governance["missing_subtopic_ids"]
+    is_underused_angle = bool(angle_id) and angle_id in governance["underused_angles"]
+    is_overused_angle = bool(angle_id) and angle_id in governance["overused_angles"]
+
+    action = governance["selection_action"]
+    if action == "boost":
+        score += 8
+        notes.append(
+            f"capacity: cluster is below target ({governance['article_count']}/{governance['article_capacity_target']}) (+8)"
+        )
+    elif action == "normal":
+        score += 3
+        notes.append(
+            f"capacity: cluster still has room to grow ({governance['article_count']}/{governance['article_capacity_target']}) (+3)"
+        )
+    elif action == "warn":
+        score -= 3
+        notes.append(
+            f"capacity: cluster is nearing target ({governance['article_count']}/{governance['article_capacity_target']}) (-3)"
+        )
+    elif action == "soft_suppress":
+        score -= 8
+        notes.append(
+            f"capacity: cluster is above target ({governance['article_count']}/{governance['article_capacity_target']}) (-8)"
+        )
+    elif action == "strong_suppress":
+        score -= 14
+        notes.append(
+            f"capacity: cluster is saturated ({governance['article_count']}/{governance['article_capacity_target']}) (-14)"
+        )
+
+    if is_missing_subtopic:
+        score += 10
+        notes.append("capacity exception: candidate covers an uncovered subtopic (+10)")
+    if is_underused_angle:
+        score += 6
+        notes.append("capacity exception: candidate improves weak angle diversity (+6)")
+    if candidate["source"] == "pinterest_trends_api" and (is_missing_subtopic or is_underused_angle):
+        score += 4
+        notes.append("capacity exception: strong trend maps to an uncovered architecture gap (+4)")
+    if governance["saturation_state"] in {"over_target", "saturated"} and is_overused_angle and not is_missing_subtopic:
+        score -= 6
+        notes.append("capacity: candidate repeats an already-heavy angle inside a full cluster (-6)")
+
+    return score, notes
+
+
 def score_candidates(
     candidates: list[TrendCandidate],
     pinterest_signal_data: dict[str, Any] | None = None,
+    pinterest_intelligence_data: dict[str, Any] | None = None,
     history_path: Path | None = None,
     now: datetime | None = None,
+    cluster_governance_map: dict[str, ClusterGovernanceState] | None = None,
+    editorial_mix_rules: dict[str, Any] | None = None,
+    editorial_mix_state: dict[str, Any] | None = None,
 ) -> list[ScoredTrend]:
     scored: list[ScoredTrend] = []
     pinterest_signal_map = build_pinterest_signal_map(pinterest_signal_data or {})
+    pinterest_intelligence_maps = build_pinterest_intelligence_maps(pinterest_intelligence_data or {})
+    selected_cluster_governance_map = cluster_governance_map or {}
+    selected_editorial_mix_rules = editorial_mix_rules or load_editorial_mix_rules()
+    selected_editorial_mix_state = editorial_mix_state or {
+        "window_article_count": 0,
+        "counts": {},
+        "shares": {},
+        "underrepresented": [],
+        "overrepresented": [],
+    }
     cluster_usage_map = (
         build_recent_cluster_usage_map(history_path, now or datetime.now(UTC))
         if history_path and history_path.exists()
@@ -536,6 +855,33 @@ def score_candidates(
             notes=notes,
             pinterest_signal_map=pinterest_signal_map,
         )
+        score, notes = apply_pinterest_intelligence_boost(
+            candidate,
+            score=score,
+            notes=notes,
+            intelligence_maps=pinterest_intelligence_maps,
+        )
+        score, notes = apply_cluster_capacity_governance(
+            candidate,
+            score=score,
+            notes=notes,
+            cluster_governance_map=selected_cluster_governance_map,
+        )
+        strong_opportunity = (
+            bool(candidate["season"] or candidate["holiday"])
+            or candidate["source"] == "pinterest_trends_api"
+            or candidate["intent_id"] in {"comparison", "decision_making"}
+        )
+        mix_adjustment, mix_reason = editorial_mix_adjustment(
+            candidate["editorial_mix_primary"] or "evergreen_authority",
+            rules=selected_editorial_mix_rules,
+            mix_state=selected_editorial_mix_state,
+            stage="selection",
+            strong_opportunity=strong_opportunity,
+        )
+        score += mix_adjustment
+        if mix_reason:
+            notes.append(mix_reason)
         scored.append(
             {
                 **candidate,
@@ -547,29 +893,45 @@ def score_candidates(
     return sorted(scored, key=lambda item: (-item["score"], item["trend_keyword"]))
 
 
-def select_diverse_top_trends(scored_candidates: list[ScoredTrend], top_n: int) -> list[ScoredTrend]:
+def select_diverse_top_trends(
+    scored_candidates: list[ScoredTrend],
+    top_n: int,
+    *,
+    editorial_mix_rules: dict[str, Any] | None = None,
+) -> list[ScoredTrend]:
     if top_n <= 0:
         return []
 
+    rules = editorial_mix_rules or load_editorial_mix_rules()
     selected: list[ScoredTrend] = []
+    remaining = list(scored_candidates)
     used_clusters: set[str] = set()
-    remaining: list[ScoredTrend] = []
+    selected_mix_counts: dict[str, int] = {}
 
-    for candidate in scored_candidates:
-        cluster = candidate["trend_cluster"]
-        if cluster in used_clusters:
-            remaining.append(candidate)
-            continue
+    while remaining and len(selected) < top_n:
+        best_index = 0
+        best_value: tuple[int, int, str] | None = None
 
-        selected.append(candidate)
-        used_clusters.add(cluster)
-        if len(selected) >= top_n:
-            return selected
+        for index, candidate in enumerate(remaining):
+            cluster_bonus = 5 if candidate["trend_cluster"] not in used_clusters else 0
+            mix_bonus, _ = round_selection_mix_bonus(
+                candidate["editorial_mix_primary"] or "evergreen_authority",
+                selected_counts=selected_mix_counts,
+                selected_total=len(selected),
+                rules=rules,
+            )
+            effective_score = int(candidate["score"]) + cluster_bonus + mix_bonus
+            tie_break = candidate["trend_keyword"]
+            current_value = (effective_score, cluster_bonus, tie_break)
+            if best_value is None or current_value > best_value:
+                best_value = current_value
+                best_index = index
 
-    for candidate in remaining:
-        if len(selected) >= top_n:
-            break
-        selected.append(candidate)
+        chosen = remaining.pop(best_index)
+        selected.append(chosen)
+        used_clusters.add(chosen["trend_cluster"])
+        category = chosen["editorial_mix_primary"] or "evergreen_authority"
+        selected_mix_counts[category] = selected_mix_counts.get(category, 0) + 1
 
     return selected
 
@@ -599,6 +961,13 @@ def select_top_trends(
         now=current_time,
         cooldown_days=cooldown_days,
     )
+    cluster_governance_map = build_cluster_governance_map(selected_cluster_index_path)
+    editorial_mix_rules = load_editorial_mix_rules()
+    editorial_mix_state = build_recent_editorial_mix_state(
+        {"articles": load_existing_articles(selected_cluster_index_path)},
+        editorial_mix_rules,
+    )
+    allowed = filter_capacity_blocked_candidates(allowed, cluster_governance_map)
 
     signal_data = {"clusters": []}
     selected_signal_path = pinterest_signal_path or DEFAULT_PINTEREST_SIGNALS_FILE
@@ -606,14 +975,27 @@ def select_top_trends(
         raw_signal = selected_signal_path.read_text(encoding="utf-8-sig").strip()
         if raw_signal:
             signal_data = json.loads(raw_signal)
+    intelligence_data = {
+        "best_performing_clusters": [],
+        "best_performing_subtopics": [],
+        "best_performing_angles": [],
+    }
+    if DEFAULT_PINTEREST_INTELLIGENCE_FILE.exists():
+        raw_intelligence = DEFAULT_PINTEREST_INTELLIGENCE_FILE.read_text(encoding="utf-8-sig").strip()
+        if raw_intelligence:
+            intelligence_data = json.loads(raw_intelligence)
 
     scored = score_candidates(
         allowed,
         pinterest_signal_data=signal_data,
+        pinterest_intelligence_data=intelligence_data,
         history_path=selected_history_path,
         now=current_time,
+        cluster_governance_map=cluster_governance_map,
+        editorial_mix_rules=editorial_mix_rules,
+        editorial_mix_state=editorial_mix_state,
     )
-    return select_diverse_top_trends(scored, top_n=top_n)
+    return select_diverse_top_trends(scored, top_n=top_n, editorial_mix_rules=editorial_mix_rules)
 
 
 def load_candidates_from_file(candidates_file: Path) -> list[dict[str, Any]]:

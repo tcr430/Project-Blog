@@ -1,15 +1,37 @@
 {
-  "generated_at": "2026-03-16T23:02:43.019846+00:00",
+  "generated_at": "2026-03-18T00:05:35.470600+00:00",
   "cluster_count": 6,
   "article_count": 6,
+  "subtopic_count": 5,
+  "angle_count": 3,
+  "angle_distribution": {
+    "best_options": 2,
+    "ideas": 3,
+    "style_specific": 1
+  },
   "clusters": [
     {
-      "cluster_name": "bedroom curtain styling",
+      "cluster_id": "bedroom_window_treatments",
+      "cluster_name": "bedroom window treatments",
+      "legacy_cluster_names": [
+        "bedroom curtain styling"
+      ],
+      "domain_ids": [
+        "bedrooms"
+      ],
       "article_count": 1,
       "primary_keywords_used": [
         "best curtain styling for bedroom"
       ],
       "latest_article_date": "2026-03-16",
+      "latest_publication": {
+        "article_slug": "best-curtain-styling-for-bedroom-mistakes-fixes",
+        "article_title": "Best Curtain Styling for Bedroom: Common Mistakes and How to Fix Them",
+        "publish_date": "2026-03-16",
+        "subtopic_id": "curtain_styles",
+        "subtopic_name": "Curtain Styles",
+        "angle_id": "best_options"
+      },
       "representative_article_slugs": [
         "best-curtain-styling-for-bedroom-mistakes-fixes"
       ],
@@ -17,31 +39,91 @@
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "curtain_styles",
+          "subtopic_name": "Curtain Styles",
+          "article_count": 1,
+          "latest_article_date": "2026-03-16",
+          "representative_article_slugs": [
+            "best-curtain-styling-for-bedroom-mistakes-fixes"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "best_options": 1
+      },
       "status": "underdeveloped"
     },
     {
-      "cluster_name": "linen and boucle styling",
+      "cluster_id": "living_room_textures_and_materials",
+      "cluster_name": "living room textures and materials",
+      "legacy_cluster_names": [
+        "linen and boucle styling"
+      ],
+      "domain_ids": [
+        "living_spaces"
+      ],
       "article_count": 1,
       "primary_keywords_used": [
         "linen and boucle decor ideas"
       ],
-      "latest_article_date": "",
+      "latest_article_date": "2026-03-13",
+      "latest_publication": {
+        "article_slug": "linen-boucle-texture-mix",
+        "article_title": "Mastering the Linen and Bouclé Texture Mix for Modern Interiors",
+        "publish_date": "2026-03-13",
+        "subtopic_id": "mixes",
+        "subtopic_name": "Material Mixes",
+        "angle_id": "style_specific"
+      },
       "representative_article_slugs": [
         "linen-boucle-texture-mix"
       ],
-      "recent_article_count": 0,
+      "recent_article_count": 1,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "mixes",
+          "subtopic_name": "Material Mixes",
+          "article_count": 1,
+          "latest_article_date": "2026-03-13",
+          "representative_article_slugs": [
+            "linen-boucle-texture-mix"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "style_specific": 1
+      },
       "status": "underdeveloped"
     },
     {
-      "cluster_name": "living room curtain styling",
+      "cluster_id": "living_room_window_treatments",
+      "cluster_name": "living room window treatments",
+      "legacy_cluster_names": [
+        "living room curtain styling"
+      ],
+      "domain_ids": [
+        "living_spaces"
+      ],
       "article_count": 1,
       "primary_keywords_used": [
         "best curtain styling for living room"
       ],
       "latest_article_date": "2026-03-16",
+      "latest_publication": {
+        "article_slug": "best-curtain-styling-for-living-room",
+        "article_title": "Best Curtain Styling for Living Room: Elegant Solutions for Balanced Spaces",
+        "publish_date": "2026-03-16",
+        "subtopic_id": "curtain_styles",
+        "subtopic_name": "Curtain Styles",
+        "angle_id": "best_options"
+      },
       "representative_article_slugs": [
         "best-curtain-styling-for-living-room"
       ],
@@ -49,47 +131,131 @@
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "curtain_styles",
+          "subtopic_name": "Curtain Styles",
+          "article_count": 1,
+          "latest_article_date": "2026-03-16",
+          "representative_article_slugs": [
+            "best-curtain-styling-for-living-room"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "best_options": 1
+      },
       "status": "underdeveloped"
     },
     {
+      "cluster_id": "organic_modern_living_room",
       "cluster_name": "organic modern living room",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "living_spaces"
+      ],
       "article_count": 1,
       "primary_keywords_used": [
         "organic modern living room ideas"
       ],
-      "latest_article_date": "",
+      "latest_article_date": "2026-03-13",
+      "latest_publication": {
+        "article_slug": "organic-modern-living-room",
+        "article_title": "Embracing Organic Modern Living Rooms: A Guide to Natural Elegance",
+        "publish_date": "2026-03-13",
+        "subtopic_id": "textures",
+        "subtopic_name": "Textures and Layers",
+        "angle_id": "ideas"
+      },
       "representative_article_slugs": [
         "organic-modern-living-room"
       ],
-      "recent_article_count": 0,
+      "recent_article_count": 1,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "textures",
+          "subtopic_name": "Textures and Layers",
+          "article_count": 1,
+          "latest_article_date": "2026-03-13",
+          "representative_article_slugs": [
+            "organic-modern-living-room"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "ideas": 1
+      },
       "status": "underdeveloped"
     },
     {
+      "cluster_id": "small_dining_nook",
       "cluster_name": "small dining nook",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "decor_foundations"
+      ],
       "article_count": 1,
       "primary_keywords_used": [
         "small apartment dining nook ideas"
       ],
-      "latest_article_date": "",
+      "latest_article_date": "2026-03-13",
+      "latest_publication": {
+        "article_slug": "small-apartment-dining-nooks-cozy-corner-trend",
+        "article_title": "Small Apartment Dining Nooks: Styling the Cozy Corner Trend",
+        "publish_date": "2026-03-13",
+        "subtopic_id": "layout",
+        "subtopic_name": "Layout",
+        "angle_id": "ideas"
+      },
       "representative_article_slugs": [
         "small-apartment-dining-nooks-cozy-corner-trend"
       ],
-      "recent_article_count": 0,
+      "recent_article_count": 1,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "layout",
+          "subtopic_name": "Layout",
+          "article_count": 1,
+          "latest_article_date": "2026-03-13",
+          "representative_article_slugs": [
+            "small-apartment-dining-nooks-cozy-corner-trend"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "ideas": 1
+      },
       "status": "underdeveloped"
     },
     {
+      "cluster_id": "spring_living_room_styling",
       "cluster_name": "spring living room styling",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "seasonal_styling"
+      ],
       "article_count": 1,
       "primary_keywords_used": [
         "spring living room styling ideas"
       ],
       "latest_article_date": "2026-03-15",
+      "latest_publication": {
+        "article_slug": "spring-living-room-styling-ideas-fresh-minimalism",
+        "article_title": "Spring Living Room Styling Ideas: Embrace Fresh Minimalism with Natural Touches",
+        "publish_date": "2026-03-15",
+        "subtopic_id": "refresh",
+        "subtopic_name": "Seasonal Refresh",
+        "angle_id": "ideas"
+      },
       "representative_article_slugs": [
         "spring-living-room-styling-ideas-fresh-minimalism"
       ],
@@ -97,6 +263,21 @@
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "refresh",
+          "subtopic_name": "Seasonal Refresh",
+          "article_count": 1,
+          "latest_article_date": "2026-03-15",
+          "representative_article_slugs": [
+            "spring-living-room-styling-ideas-fresh-minimalism"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "ideas": 1
+      },
       "status": "underdeveloped"
     }
   ]

@@ -1,0 +1,108 @@
+{
+  "generated_at": "2026-03-17T22:57:21.542948+00:00",
+  "write": true,
+  "scanned_records": 6,
+  "updated_records": 6,
+  "records_with_unresolved_issues": 0,
+  "records_requiring_manual_review": 0,
+  "normalized_records": [
+    {
+      "metadata_path": "D:\\Project\\Blog\\_data\\article_metadata\\2026-03-13-linen-boucle-texture-mix.json",
+      "post_path": "D:\\Project\\Blog\\_posts\\2026-03-13-linen-boucle-texture-mix.md",
+      "status": "updated",
+      "updated_fields": [
+        "canonical_cluster_name",
+        "cluster_name",
+        "legacy_cluster_name"
+      ],
+      "post_updated": false,
+      "cluster_id": "living_room_textures_and_materials",
+      "cluster_name": "linen and boucle styling",
+      "canonical_cluster_name": "living room textures and materials",
+      "unresolved": [],
+      "manual_review": []
+    },
+    {
+      "metadata_path": "D:\\Project\\Blog\\_data\\article_metadata\\2026-03-13-organic-modern-living-room.json",
+      "post_path": "D:\\Project\\Blog\\_posts\\2026-03-13-organic-modern-living-room.md",
+      "status": "updated",
+      "updated_fields": [
+        "canonical_cluster_name",
+        "cluster_name"
+      ],
+      "post_updated": false,
+      "cluster_id": "organic_modern_living_room",
+      "cluster_name": "organic modern living room",
+      "canonical_cluster_name": "organic modern living room",
+      "unresolved": [],
+      "manual_review": []
+    },
+    {
+      "metadata_path": "D:\\Project\\Blog\\_data\\article_metadata\\2026-03-13-small-apartment-dining-nooks-cozy-corner-trend.json",
+      "post_path": "D:\\Project\\Blog\\_posts\\2026-03-13-small-apartment-dining-nooks-cozy-corner-trend.md",
+      "status": "updated",
+      "updated_fields": [
+        "canonical_cluster_name",
+        "cluster_name"
+      ],
+      "post_updated": false,
+      "cluster_id": "small_dining_nook",
+      "cluster_name": "small dining nook",
+      "canonical_cluster_name": "small dining nook",
+      "unresolved": [],
+      "manual_review": []
+    },
+    {
+      "metadata_path": "D:\\Project\\Blog\\_data\\article_metadata\\2026-03-15-spring-living-room-styling-ideas-fresh-minimalism.json",
+      "post_path": "D:\\Project\\Blog\\_posts\\2026-03-15-spring-living-room-styling-ideas-fresh-minimalism.md",
+      "status": "updated",
+      "updated_fields": [
+        "canonical_cluster_name",
+        "cluster_name",
+        "post_path"
+      ],
+      "post_updated": false,
+      "cluster_id": "spring_living_room_styling",
+      "cluster_name": "spring living room styling",
+      "canonical_cluster_name": "spring living room styling",
+      "unresolved": [],
+      "manual_review": []
+    },
+    {
+      "metadata_path": "D:\\Project\\Blog\\_data\\article_metadata\\2026-03-16-best-curtain-styling-for-bedroom-mistakes-fixes.json",
+      "post_path": "D:\\Project\\Blog\\_posts\\2026-03-16-best-curtain-styling-for-bedroom-mistakes-fixes.md",
+      "status": "updated",
+      "updated_fields": [
+        "canonical_cluster_name",
+        "cluster_name",
+        "legacy_cluster_name",
+        "post_path"
+      ],
+      "post_updated": false,
+      "cluster_id": "bedroom_window_treatments",
+      "cluster_name": "bedroom curtain styling",
+      "canonical_cluster_name": "bedroom window treatments",
+      "unresolved": [],
+      "manual_review": []
+    },
+    {
+      "metadata_path": "D:\\Project\\Blog\\_data\\article_metadata\\2026-03-16-best-curtain-styling-for-living-room.json",
+      "post_path": "D:\\Project\\Blog\\_posts\\2026-03-16-best-curtain-styling-for-living-room.md",
+      "status": "updated",
+      "updated_fields": [
+        "canonical_cluster_name",
+        "cluster_name",
+        "legacy_cluster_name",
+        "post_path"
+      ],
+      "post_updated": false,
+      "cluster_id": "living_room_window_treatments",
+      "cluster_name": "living room curtain styling",
+      "canonical_cluster_name": "living room window treatments",
+      "unresolved": [],
+      "manual_review": []
+    }
+  ],
+  "unresolved_issues": [],
+  "manual_review": []
+}

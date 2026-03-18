@@ -13,8 +13,17 @@ from typing import Any
 from dotenv import load_dotenv
 from openai import OpenAI
 
+from content_architecture import resolve_intent_id
 from fetch_products import Product, fetch_products_for_trend
+from generate_image_prompts import generate_image_prompts
+from internal_linking import build_internal_link_suggestions
+from monetization_profiles import (
+    limit_products_for_profile,
+    resolve_affiliate_section_indexes,
+    resolve_monetization_profile,
+)
 from topic_clusters import TopicCandidate, build_manual_topic_candidate, normalize_text as normalize_topic_text
+from validate_article_concept import ConceptValidationError, ensure_valid_article_concept
 
 
 SYSTEM_PROMPT = """
@@ -44,7 +53,9 @@ Rules:
 - Do not include an H1 title inside article_markdown; the site layout renders the post title separately.
 - Use markdown headings for structure with H2 headings for the 5 main sections and H3 only when useful inside a section.
 - Add a short FAQ section near the end using an H2 heading like "## FAQ" or "## Frequently Asked Questions" with 3 to 5 concise H3 question headings and short answers.
+- Use the supplied angle brief to shape the section rhythm so different article angles do not feel interchangeable.
 - Keep tone editorial, practical, and human.
+- Avoid generic openings, bland headings, and advice that could fit almost any decor article.
 - Avoid fake data, fake citations, and keyword stuffing.
 - Do not include any text outside the JSON.
 """.strip()
@@ -52,6 +63,7 @@ Rules:
 
 ARTICLE_TEMPLATE_PATH = Path(__file__).resolve().parents[1] / "prompts" / "article_template.md"
 ARTICLE_CACHE_DIR = Path(__file__).resolve().parents[1] / "data" / "article_packages"
+BRAND_VOICE_GUIDE_PATH = Path(__file__).resolve().parents[1] / "data" / "brand_voice_guide.json"
 
 SHORT_RETRY_PROMPT_TEMPLATE = """
 The previous draft was too short at {word_count} words, below the minimum of {min_words}.
@@ -70,6 +82,7 @@ Every section must include:
 - practical application guidance
 - relevant colors/materials/textures/room context
 - enough explanation to avoid thin content
+- Preserve the angle-sensitive structure and section rhythm from the original brief.
 
 Additional instruction for this retry:
 {extra_strength_instruction}
@@ -118,7 +131,9 @@ Image prompt constraints (hero and section prompts):
 FORMAT_FILE_MAP = {
     "trend guide": "trend_guide.md",
     "ideas article": "ideas_article.md",
+    "how to guide": "how_to_guide.md",
     "styling advice": "styling_advice.md",
+    "best options": "best_options.md",
     "mistakes and fixes": "mistakes_and_fixes.md",
 }
 
@@ -136,8 +151,73 @@ SECTION_COUNT = 5
 SHORT_RETRY_LIMIT = 1
 PRODUCT_RETRY_LIMIT = 1
 PINTEREST_ITEM_COUNT = 5
-MIN_PRODUCTS_FOR_AFFILIATE_MODE = 3
 # Preferred guidance range is 1000-1300 words. Hard validation uses MIN_WORDS/MAX_WORDS.
+
+ANGLE_FORMAT_MAP = {
+    "ideas": "ideas article",
+    "how_to": "how to guide",
+    "mistakes": "mistakes and fixes",
+    "best_options": "best options",
+}
+
+ANGLE_STRUCTURE_GUIDANCE = {
+    "ideas": {
+        "name": "ideas-led",
+        "outline": [
+            "Introduction: open with an aspirational but grounded read on why this look is appealing right now and what kind of home it suits.",
+            "Section 1: establish the strongest foundational idea readers should understand first.",
+            "Section 2: introduce a contrasting or complementary idea that changes the mood, palette, or material story.",
+            "Section 3: shift into a room-zone, furniture, or styling layer that helps the look feel livable.",
+            "Section 4: show a more specific application, styling twist, or variation for a real home context.",
+            "Section 5: finish with a unifying idea that helps readers edit the look and choose what to try first.",
+            "Conclusion: leave the reader with a styling takeaway, not just a recap.",
+        ],
+        "heading_style": "Make H2s feel like distinct decor directions or styling lenses rather than generic tips.",
+        "faq_style": "FAQ should answer practical follow-up questions about applying the ideas in real rooms.",
+    },
+    "how_to": {
+        "name": "how-to",
+        "outline": [
+            "Introduction: frame the decorating problem clearly and explain what readers will be able to do by the end.",
+            "Section 1: define the first practical decision or setup step.",
+            "Section 2: walk through the next decision with clear implementation guidance.",
+            "Section 3: cover the most important adjustment readers often overlook in practice.",
+            "Section 4: explain how to refine, balance, or troubleshoot the look once the basics are in place.",
+            "Section 5: close the implementation path with finishing decisions, edits, or a simplified checklist in prose.",
+            "Conclusion: summarize the process in a calm, confidence-building way.",
+        ],
+        "heading_style": "Make H2s feel action-led and practical, with verbs like choose, layer, place, balance, or style where natural.",
+        "faq_style": "FAQ should answer common execution and troubleshooting questions.",
+    },
+    "mistakes": {
+        "name": "mistakes-and-fixes",
+        "outline": [
+            "Introduction: explain briefly why this look often goes wrong and why the details matter.",
+            "Section 1: identify one common mistake and immediately explain the fix.",
+            "Section 2: cover a second mistake with a different kind of correction or styling adjustment.",
+            "Section 3: move into a more subtle or easy-to-miss mistake that affects cohesion.",
+            "Section 4: address a practical mistake around proportion, materials, light, or placement.",
+            "Section 5: finish with the mistake that most affects the final feel of the room and how to correct it.",
+            "Conclusion: leave readers with a simple avoid/fix checklist tone, not alarmism.",
+        ],
+        "heading_style": "Let H2s signal either the mistake, the correction, or both, without making every heading read like a formula.",
+        "faq_style": "FAQ should answer short corrective questions readers might ask after realizing they made one of the mistakes.",
+    },
+    "best_options": {
+        "name": "best-options",
+        "outline": [
+            "Introduction: explain what makes choosing the right option difficult and what criteria matter most.",
+            "Section 1: establish the most important selection criteria or baseline standards.",
+            "Section 2: cover one strong option category, material family, or use case.",
+            "Section 3: compare another option category or a different reader need.",
+            "Section 4: help readers match options to room size, layout, budget, or style context.",
+            "Section 5: finish with buying or selection guidance that helps readers narrow the field confidently.",
+            "Conclusion: summarize how to choose the best fit rather than naming a fake universal winner.",
+        ],
+        "heading_style": "Make H2s feel recommendation-led, comparative, or criteria-led rather than purely inspirational.",
+        "faq_style": "FAQ should cover selection, fit, sizing, material, or buying concerns.",
+    },
+}
 
 
 def parse_args() -> argparse.Namespace:
@@ -207,6 +287,10 @@ def normalize_persona_name(persona_name: str) -> str:
     return re.sub(r"\s+", " ", normalized)
 
 
+def normalize_identifier(value: Any) -> str:
+    return normalize_topic_text(value).replace(" ", "_")
+
+
 def load_article_template() -> str:
     if not ARTICLE_TEMPLATE_PATH.exists():
         raise RuntimeError(f"Article prompt template not found: {ARTICLE_TEMPLATE_PATH}")
@@ -223,6 +307,8 @@ def normalize_topic_candidate(topic_context: TopicCandidate | dict[str, Any] | N
         return build_manual_topic_candidate(trend)
 
     normalized: TopicCandidate = {
+        "domain_id": normalize_identifier(topic_context.get("domain_id", "")),
+        "cluster_id": normalize_identifier(topic_context.get("cluster_id", "")),
         "trend_cluster": normalize_topic_text(topic_context.get("trend_cluster", trend)),
         "trend_keyword": normalize_topic_text(topic_context.get("trend_keyword", trend)),
         "primary_keyword": normalize_topic_text(topic_context.get("primary_keyword", trend)),
@@ -237,10 +323,23 @@ def normalize_topic_candidate(topic_context: TopicCandidate | dict[str, Any] | N
             if normalize_topic_text(item)
         ],
         "search_intent": normalize_topic_text(topic_context.get("search_intent", "")) or "styling_advice",
+        "intent_id": normalize_identifier(topic_context.get("intent_id", "")),
         "season": normalize_topic_text(topic_context.get("season", "")),
         "holiday": normalize_topic_text(topic_context.get("holiday", "")),
         "source": normalize_topic_text(topic_context.get("source", "")) or "manual",
+        "subtopic_id": normalize_identifier(topic_context.get("subtopic_id", "")),
+        "subtopic_name": normalize_topic_text(topic_context.get("subtopic_name", "")),
+        "angle_id": normalize_identifier(topic_context.get("angle_id", "")),
+        "modifier": normalize_topic_text(topic_context.get("modifier", "")),
     }
+
+    normalized["intent_id"] = (
+        normalized["intent_id"]
+        or resolve_intent_id(
+            angle_id=normalized["angle_id"],
+            explicit_intent_id=topic_context.get("intent_id", ""),
+        )
+    )
 
     if not normalized["cluster_keywords"]:
         normalized["cluster_keywords"] = [
@@ -274,6 +373,7 @@ def build_article_cache_key(
     persona_prompt: str,
     topic_context: TopicCandidate,
     products: list[Product],
+    monetization_profile: dict[str, Any],
 ) -> str:
     payload = {
         "trend": trend.strip(),
@@ -281,10 +381,12 @@ def build_article_cache_key(
         "format_name": format_name,
         "persona_name": persona_name,
         "article_template": article_template,
+        "brand_voice_prompt": build_brand_voice_prompt(),
         "format_prompt": format_prompt,
         "persona_prompt": persona_prompt,
         "topic_context": topic_context,
         "products": products,
+        "monetization_profile": monetization_profile,
         "min_words": MIN_WORDS,
         "max_words": MAX_WORDS,
         "section_count": SECTION_COUNT,
@@ -307,6 +409,7 @@ def build_cache_artifacts(
     persona_prompt: str,
     topic_context: TopicCandidate,
     products: list[Product],
+    monetization_profile: dict[str, Any],
 ) -> tuple[str, Path]:
     cache_key = build_article_cache_key(
         trend=trend,
@@ -318,6 +421,7 @@ def build_cache_artifacts(
         persona_prompt=persona_prompt,
         topic_context=topic_context,
         products=products,
+        monetization_profile=monetization_profile,
     )
     return cache_key, build_article_cache_path(cache_key)
 
@@ -326,6 +430,7 @@ def load_cached_article_package(
     cache_path: Path,
     products: list[Product],
     topic_context: TopicCandidate,
+    monetization_profile: dict[str, Any],
 ) -> dict[str, Any] | None:
     if not cache_path.exists():
         return None
@@ -343,7 +448,12 @@ def load_cached_article_package(
         return None
 
     try:
-        return normalize_and_validate(package, products=products, topic_context=topic_context)
+        return normalize_and_validate(
+            package,
+            products=products,
+            topic_context=topic_context,
+            monetization_profile=monetization_profile,
+        )
     except Exception:
         return None
 
@@ -376,6 +486,14 @@ def get_format_prompts() -> dict[str, str]:
     return prompts
 
 
+def load_brand_voice_guide() -> dict[str, Any]:
+    raw = BRAND_VOICE_GUIDE_PATH.read_text(encoding="utf-8")
+    data = json.loads(raw)
+    if not isinstance(data, dict):
+        raise ValueError("brand_voice_guide.json must contain an object.")
+    return data
+
+
 def get_persona_prompts() -> dict[str, str]:
     prompts_dir = Path(__file__).resolve().parents[1] / "prompts" / "personas"
     prompts: dict[str, str] = {}
@@ -404,6 +522,11 @@ def choose_format_name(trend: str, format_names: list[str]) -> str:
     return format_names[index]
 
 
+def resolve_angle_structure(angle_id: str) -> dict[str, Any]:
+    normalized_angle = normalize_identifier(angle_id or "")
+    return ANGLE_STRUCTURE_GUIDANCE.get(normalized_angle, ANGLE_STRUCTURE_GUIDANCE["ideas"])
+
+
 def choose_persona_name(trend: str, persona_names: list[str]) -> str:
     trend_key = trend.strip().lower()
     if not trend_key:
@@ -414,7 +537,11 @@ def choose_persona_name(trend: str, persona_names: list[str]) -> str:
     return persona_names[index]
 
 
-def resolve_format_prompt(trend: str, format_name: str | None) -> tuple[str, str]:
+def resolve_format_prompt(
+    trend: str,
+    format_name: str | None,
+    topic_context: TopicCandidate | None = None,
+) -> tuple[str, str]:
     prompts = get_format_prompts()
     available_names = sorted(prompts.keys())
 
@@ -425,7 +552,12 @@ def resolve_format_prompt(trend: str, format_name: str | None) -> tuple[str, str
             raise ValueError(f"Unknown format '{format_name}'. Valid formats: {valid}")
         selected_name = normalized
     else:
-        selected_name = choose_format_name(trend=trend, format_names=available_names)
+        inferred_angle = normalize_identifier((topic_context or {}).get("angle_id", ""))
+        angle_format = ANGLE_FORMAT_MAP.get(inferred_angle, "")
+        if angle_format and angle_format in prompts:
+            selected_name = angle_format
+        else:
+            selected_name = choose_format_name(trend=trend, format_names=available_names)
 
     return selected_name, prompts[selected_name]
 
@@ -511,7 +643,7 @@ def load_products_from_file(products_file: str | None) -> list[Product] | None:
     return validate_products(data)
 
 
-def build_products_prompt(products: list[Product]) -> str:
+def build_products_prompt(products: list[Product], monetization_profile: dict[str, Any]) -> str:
     if not products:
         return (
             "Product placement rules:\n"
@@ -521,16 +653,25 @@ def build_products_prompt(products: list[Product]) -> str:
         )
 
     serialized = json.dumps(products[:SECTION_COUNT], ensure_ascii=False, indent=2)
-    product_count = min(len(products), SECTION_COUNT)
+    product_count = min(
+        len(products),
+        int(monetization_profile.get("max_products") or SECTION_COUNT),
+        int(monetization_profile.get("max_inline_links") or SECTION_COUNT),
+        SECTION_COUNT,
+    )
     remaining_sections = SECTION_COUNT - product_count
+    section_indexes = resolve_affiliate_section_indexes(monetization_profile, product_count)
+    section_labels = ", ".join(str(index) for index in section_indexes)
     return (
         "Product placement rules:\n"
+        f"- Monetization profile: {monetization_profile.get('name', 'Editorial Soft')}.\n"
+        f"- Profile guidance: {monetization_profile.get('prompt_guidance', '').strip()}\n"
         f"- You have {product_count} validated affiliate products available.\n"
-        "- Use each provided product exactly once in a different main section.\n"
-        "- Only sections using a provided product may include an affiliate URL.\n"
+        f"- Use each provided product exactly once in these main section(s): {section_labels}.\n"
+        "- Only those selected sections may include an affiliate URL.\n"
         "- Each section may contain at most one affiliate URL.\n"
         f"- Keep the remaining {remaining_sections} section(s) editorial-only with no external links.\n"
-        "- In each affiliate-enabled section, add one visible markdown link in the prose.\n"
+        "- In each affiliate-enabled section, add one visible markdown link in the prose only where it fits naturally.\n"
         "- Use the product's exact title as the markdown link anchor text.\n"
         "- Use the product's exact title and exact affiliate_url in markdown links.\n"
         "- Use only the provided products and links.\n"
@@ -549,9 +690,14 @@ def build_search_strategy_prompt(topic_context: TopicCandidate) -> str:
 
     return (
         "Google SEO targeting rules:\n"
+        f"- Domain: {topic_context.get('domain_id', '') or 'general decor'}\n"
+        f"- Cluster ID: {topic_context.get('cluster_id', '') or topic_context['trend_cluster']}\n"
         f"- Primary keyword: {topic_context['primary_keyword']}\n"
         f"- Search intent: {topic_context['search_intent']}\n"
+        f"- Refined intent: {topic_context.get('intent_id', '') or 'not specified'}\n"
         f"- Topical cluster: {topic_context['trend_cluster']}\n"
+        f"- Subtopic: {topic_context.get('subtopic_name', '') or topic_context.get('subtopic_id', '') or 'not specified'}\n"
+        f"- Angle: {topic_context.get('angle_id', '') or 'not specified'}\n"
         "- Secondary/supporting keywords:\n"
         f"{secondary_lines}\n"
         "- Broader cluster keyword set:\n"
@@ -567,6 +713,144 @@ def build_search_strategy_prompt(topic_context: TopicCandidate) -> str:
     )
 
 
+def build_intent_prompt(topic_context: TopicCandidate) -> str:
+    intent_id = normalize_identifier(topic_context.get("intent_id", "")) or "inspiration"
+    guidance_map = {
+        "inspiration": {
+            "goal": "help readers imagine distinct, attractive ways to approach the look",
+            "focus": "surface visually different styling directions, moods, and combinations instead of repeating the same idea five times",
+            "heading_style": "Headings should feel evocative and topic-specific, not like generic decor filler.",
+        },
+        "decision_making": {
+            "goal": "help readers decide what fits their room, budget, and constraints best",
+            "focus": "highlight tradeoffs, scenarios, and practical differences that make the choice easier",
+            "heading_style": "Headings should clarify decisions, options, or tradeoffs in plain language.",
+        },
+        "problem_solving": {
+            "goal": "help readers recognize what is going wrong and fix it clearly",
+            "focus": "connect common problems to their causes and give specific corrections that feel realistic",
+            "heading_style": "Headings should name problems or corrections clearly without sounding repetitive.",
+        },
+        "comparison": {
+            "goal": "help readers compare strong options and choose the best fit",
+            "focus": "make differences, strengths, weaknesses, and use cases easy to scan and trust",
+            "heading_style": "Headings should feel criteria-led, recommendation-led, or comparative.",
+        },
+        "implementation": {
+            "goal": "help readers actually execute the look in a usable order",
+            "focus": "move through decisions in a practical sequence with enough detail to follow in a real room",
+            "heading_style": "Headings should feel actionable, concrete, and process-aware.",
+        },
+    }
+    guidance = guidance_map.get(intent_id, guidance_map["inspiration"])
+    return (
+        "Intent guidance:\n"
+        f"- Intent ID: {intent_id}\n"
+        f"- Core job: {guidance['goal']}.\n"
+        f"- Editorial focus: {guidance['focus']}.\n"
+        f"- Heading guidance: {guidance['heading_style']}\n"
+        "- Make the article's purpose obvious enough that it would not be confused with a nearby post in the same cluster.\n"
+    )
+
+
+def build_internal_linking_prompt(topic_context: TopicCandidate, article_title: str = "", article_slug: str = "") -> str:
+    suggestions = build_internal_link_suggestions(
+        topic_context=topic_context,
+        article_title=article_title,
+        article_slug=article_slug,
+        limit=4,
+    )
+    if not suggestions:
+        return (
+            "Internal linking guidance:\n"
+            "- No strong architecture-aware matches were found.\n"
+            "- If a natural internal link opportunity comes to mind from existing site coverage, keep it light and relevant.\n"
+        )
+
+    suggestion_lines = []
+    for suggestion in suggestions:
+        suggestion_lines.append(
+            f"- {suggestion['relationship']}: link to \"{suggestion['title']}\" "
+            f"({suggestion['permalink']}) using natural anchor text such as \"{suggestion['anchor_text']}\". "
+            f"Why: {suggestion['blurb']}"
+        )
+    return (
+        "Internal linking guidance:\n"
+        "- If it fits naturally, include 1 to 3 internal markdown links to existing site articles.\n"
+        "- Prioritize one same-cluster or adjacent-subtopic link first, then a complementary angle, then a related-cluster link if it improves the reader journey.\n"
+        "- Use only the provided internal URLs. Do not invent site URLs.\n"
+        "- Keep anchor text varied, specific, and editorial rather than repetitive exact-match phrases.\n"
+        "- Do not force links into every section; only use them where they genuinely help the reader.\n"
+        f"{chr(10).join(suggestion_lines)}\n"
+    )
+
+
+def build_brand_voice_prompt() -> str:
+    guide = load_brand_voice_guide()
+    brand_name = str(guide.get("brand_name") or "The Livin' Edit").strip()
+    editorial_positioning = str(guide.get("editorial_positioning") or "").strip()
+    tone = guide.get("tone", {}) if isinstance(guide.get("tone"), dict) else {}
+    vocabulary = guide.get("vocabulary", {}) if isinstance(guide.get("vocabulary"), dict) else {}
+    headline_style = guide.get("headline_style", {}) if isinstance(guide.get("headline_style"), dict) else {}
+    intro_style = guide.get("intro_style", {}) if isinstance(guide.get("intro_style"), dict) else {}
+    conclusion_style = guide.get("conclusion_style", {}) if isinstance(guide.get("conclusion_style"), dict) else {}
+    point_of_view = guide.get("editorial_point_of_view", {}) if isinstance(guide.get("editorial_point_of_view"), dict) else {}
+    variation_rules = guide.get("variation_rules", {}) if isinstance(guide.get("variation_rules"), dict) else {}
+
+    def bullet_lines(values: list[Any]) -> str:
+        cleaned = [f"- {str(item).strip()}" for item in values if str(item).strip()]
+        return "\n".join(cleaned) or "- None specified"
+
+    return (
+        "Publication brand voice rules:\n"
+        f"- Brand: {brand_name}\n"
+        f"- Editorial positioning: {editorial_positioning}\n"
+        "- Core tone traits:\n"
+        f"{bullet_lines(list(tone.get('core_traits', [])))}\n"
+        "- The writing should feel like:\n"
+        f"{bullet_lines(list(tone.get('should_feel_like', [])))}\n"
+        "- The writing should not feel like:\n"
+        f"{bullet_lines(list(tone.get('should_not_feel_like', [])))}\n"
+        "- Headline style:\n"
+        f"- {str(headline_style.get('description') or '').strip()}\n"
+        f"{bullet_lines(list(headline_style.get('prefer', [])))}\n"
+        "- Intro style:\n"
+        f"- {str(intro_style.get('description') or '').strip()}\n"
+        f"{bullet_lines(list(intro_style.get('must_do', [])))}\n"
+        "- Conclusion style:\n"
+        f"- {str(conclusion_style.get('description') or '').strip()}\n"
+        f"{bullet_lines(list(conclusion_style.get('prefer', [])))}\n"
+        "- Prefer vocabulary and ideas like:\n"
+        f"{bullet_lines(list(vocabulary.get('prefer', [])))}\n"
+        "- Avoid phrases and tones like:\n"
+        f"{bullet_lines(list(vocabulary.get('avoid', [])) + list(headline_style.get('avoid', [])) + list(intro_style.get('avoid', [])) + list(conclusion_style.get('avoid', [])))}\n"
+        "- Recurring editorial point of view:\n"
+        f"{bullet_lines(list(point_of_view.get('principles', [])))}\n"
+        "- Variation rules:\n"
+        f"- {str(variation_rules.get('description') or '').strip()}\n"
+        f"{bullet_lines(list(variation_rules.get('rules', [])))}\n"
+        "- Apply this voice consistently, but do not repeat signature phrases mechanically.\n"
+        "- Let the voice shape the title, intro, and conclusion most clearly while still fitting the article's search intent and angle.\n"
+    )
+
+
+def build_angle_structure_prompt(topic_context: TopicCandidate) -> str:
+    angle_id = normalize_identifier(topic_context.get("angle_id", "")) or "ideas"
+    structure = resolve_angle_structure(angle_id)
+    outline_lines = "\n".join(f"- {line}" for line in structure["outline"])
+    return (
+        "Angle-sensitive structure rules:\n"
+        f"- Angle ID: {angle_id}\n"
+        f"- Treat this as a {structure['name']} piece with its own editorial rhythm.\n"
+        "- Keep the overall markdown shape compatible with the pipeline: plain introduction, exactly 5 H2 main sections, FAQ, and conclusion.\n"
+        "- Do not make the article feel templated; use the following section rhythm as editorial guidance, not mechanical labels.\n"
+        f"{outline_lines}\n"
+        f"- Heading style: {structure['heading_style']}\n"
+        f"- FAQ style: {structure['faq_style']}\n"
+        "- Let the intro, H2 sequence, and conclusion reflect the angle clearly enough that a reader can feel the difference from other article types.\n"
+    )
+
+
 def strip_code_fences(text: str) -> str:
     match = re.search(r"```(?:json)?\s*(.*?)\s*```", text, flags=re.DOTALL)
     return match.group(1).strip() if match else text.strip()
@@ -574,6 +858,10 @@ def strip_code_fences(text: str) -> str:
 
 def count_words(text: str) -> int:
     return len(re.findall(r"\b\w+\b", text))
+
+
+def extract_main_headings(article_markdown: str) -> list[str]:
+    return [match.group(1).strip() for match in re.finditer(r"(?m)^##\s+(.+)$", article_markdown)]
 
 
 def extract_urls(text: str) -> set[str]:
@@ -604,18 +892,31 @@ def strip_provided_links_from_text(text: str, provided_urls: set[str]) -> str:
     return cleaned.strip()
 
 
-def build_affiliate_sentence(product: Product) -> str:
+def build_affiliate_sentence(product: Product, monetization_profile: dict[str, Any], section_index: int) -> str:
     reason = str(product.get("short_reason") or product.get("reason_for_recommendation") or "").strip()
+    templates = monetization_profile.get("inline_sentence_templates", [])
+    template_index = 0
+    if templates:
+        template_index = (max(section_index, 1) - 1) % len(templates)
+        template = str(templates[template_index]).strip()
+        sentence = template.format(title=product["title"], affiliate_url=product["affiliate_url"])
+    else:
+        sentence = f"A practical option here is [{product['title']}]({product['affiliate_url']})."
+
     if reason:
         reason = reason[:1].lower() + reason[1:]
-        return (
-            f"A polished way to bring this look home is with "
-            f"[{product['title']}]({product['affiliate_url']}), which {reason}"
-        )
-    return f"A polished way to bring this look home is with [{product['title']}]({product['affiliate_url']})."
+        if sentence.endswith("."):
+            sentence = sentence[:-1]
+        sentence = f"{sentence}, and {reason}."
+
+    return sentence
 
 
-def repair_affiliate_links(article_markdown: str, products: list[Product]) -> str:
+def repair_affiliate_links(
+    article_markdown: str,
+    products: list[Product],
+    monetization_profile: dict[str, Any],
+) -> str:
     provided_urls = {item["affiliate_url"] for item in products[:SECTION_COUNT]}
     split_parts = re.split(r"(?m)(^##\s+.+$)", article_markdown)
     if len(split_parts) < 3:
@@ -623,7 +924,18 @@ def repair_affiliate_links(article_markdown: str, products: list[Product]) -> st
 
     repaired_parts: list[str] = [strip_provided_links_from_text(split_parts[0], provided_urls)]
     body_section_index = 0
-    expected_product_count = min(len(products), SECTION_COUNT)
+    expected_product_count = min(
+        len(products),
+        int(monetization_profile.get("max_products") or SECTION_COUNT),
+        int(monetization_profile.get("max_inline_links") or SECTION_COUNT),
+        SECTION_COUNT,
+    )
+    target_section_indexes = set(resolve_affiliate_section_indexes(monetization_profile, expected_product_count))
+    product_lookup = {
+        section_index: products[offset]
+        for offset, section_index in enumerate(sorted(target_section_indexes))
+        if offset < expected_product_count
+    }
 
     for index in range(1, len(split_parts), 2):
         heading = split_parts[index]
@@ -635,8 +947,13 @@ def repair_affiliate_links(article_markdown: str, products: list[Product]) -> st
             repaired_parts.append(f"\n{cleaned_body}")
             continue
 
-        if body_section_index < expected_product_count:
-            affiliate_sentence = build_affiliate_sentence(products[body_section_index])
+        section_number = body_section_index + 1
+        if section_number in target_section_indexes and section_number in product_lookup:
+            affiliate_sentence = build_affiliate_sentence(
+                product_lookup[section_number],
+                monetization_profile=monetization_profile,
+                section_index=section_number,
+            )
             cleaned_body = f"{cleaned_body.rstrip()}\n\n{affiliate_sentence}"
 
         repaired_parts.append(f"\n{cleaned_body}")
@@ -754,6 +1071,70 @@ class ProductLinkError(ValueError):
     pass
 
 
+def validate_angle_structure(article_markdown: str, topic_context: TopicCandidate) -> None:
+    angle_id = normalize_topic_text(topic_context.get("angle_id", "")) or "ideas"
+    headings = extract_main_headings(article_markdown)
+    heading_text = " ".join(headings)
+    body_text = normalize_topic_text(article_markdown)
+    combined_text = f"{normalize_topic_text(heading_text)} {body_text}"
+
+    signal_sets = {
+        "ideas": {"idea", "palette", "look", "style", "layout", "layer", "mix"},
+        "how_to": {"how", "choose", "style", "layer", "place", "balance", "start", "use"},
+        "mistakes": {"mistake", "mistakes", "avoid", "fix", "fixes", "wrong", "problem"},
+        "best_options": {"best", "choose", "right", "options", "option", "for", "fit", "compare"},
+    }
+    required_matches = {
+        "ideas": 3,
+        "how_to": 4,
+        "mistakes": 4,
+        "best_options": 4,
+    }
+
+    signals = signal_sets.get(angle_id)
+    if not signals:
+        return
+
+    signal_hits = sum(1 for signal in signals if f" {signal} " in f" {combined_text} ")
+    if signal_hits < required_matches.get(angle_id, 3):
+        raise ValueError(
+            f"article_markdown does not reflect the '{angle_id}' structure strongly enough."
+        )
+
+    if angle_id == "mistakes":
+        mistake_like_headings = sum(
+            1
+            for heading in headings
+            if any(token in normalize_topic_text(heading).split() for token in {"mistake", "avoid", "fix", "problem"})
+        )
+        if mistake_like_headings < 2:
+            raise ValueError(
+                "Mistakes articles should signal the mistake/fix pattern in at least two main section headings."
+            )
+
+    if angle_id == "how_to":
+        action_headings = sum(
+            1
+            for heading in headings
+            if any(token in normalize_topic_text(heading).split() for token in {"how", "choose", "style", "layer", "place", "balance"})
+        )
+        if action_headings < 2:
+            raise ValueError(
+                "How-to articles should use action-led H2s in at least two main sections."
+            )
+
+    if angle_id == "best_options":
+        selection_headings = sum(
+            1
+            for heading in headings
+            if any(token in normalize_topic_text(heading).split() for token in {"best", "choose", "right", "fit", "options"})
+        )
+        if selection_headings < 2:
+            raise ValueError(
+                "Best-options articles should signal selection or comparison language in at least two main section headings."
+            )
+
+
 def build_short_retry_instruction(retry_number: int, word_count: int) -> str:
     if retry_number == 1:
         extra_strength_instruction = (
@@ -787,6 +1168,7 @@ def request_article_json(
     format_name: str,
     format_prompt: str,
     products: list[Product],
+    monetization_profile: dict[str, Any],
     extra_instruction: str | None = None,
 ) -> dict[str, Any]:
     try:
@@ -798,10 +1180,14 @@ def request_article_json(
         f"Use this writing persona ({persona_name}):\n"
         f"{persona_prompt}\n\n"
         f"{article_prompt}\n\n"
+        f"{build_brand_voice_prompt()}\n\n"
         f"{build_search_strategy_prompt(topic_context)}\n\n"
+        f"{build_intent_prompt(topic_context)}\n\n"
+        f"{build_internal_linking_prompt(topic_context)}\n\n"
+        f"{build_angle_structure_prompt(topic_context)}\n\n"
         f"Use this article format template ({format_name}):\n"
         f"{format_prompt}\n\n"
-        f"{build_products_prompt(products)}\n\n"
+        f"{build_products_prompt(products, monetization_profile=monetization_profile)}\n\n"
         f"{OUTPUT_REQUIREMENTS_PROMPT}"
     )
 
@@ -832,8 +1218,17 @@ def request_article_json(
     return payload
 
 
-def validate_affiliate_link_usage(article_markdown: str, products: list[Product]) -> None:
-    expected_product_count = min(len(products), SECTION_COUNT)
+def validate_affiliate_link_usage(
+    article_markdown: str,
+    products: list[Product],
+    monetization_profile: dict[str, Any],
+) -> None:
+    expected_product_count = min(
+        len(products),
+        int(monetization_profile.get("max_products") or SECTION_COUNT),
+        int(monetization_profile.get("max_inline_links") or SECTION_COUNT),
+        SECTION_COUNT,
+    )
     provided_urls = {item["affiliate_url"] for item in products[:SECTION_COUNT]}
     article_urls = extract_urls(article_markdown)
 
@@ -853,10 +1248,11 @@ def validate_affiliate_link_usage(article_markdown: str, products: list[Product]
             raise ProductLinkError("article_markdown cannot include affiliate URLs when no products are available.")
         return
 
+    target_sections = set(resolve_affiliate_section_indexes(monetization_profile, expected_product_count))
     used_urls_by_section: list[str] = []
     sections_with_links = 0
 
-    for section_text in main_sections:
+    for index, section_text in enumerate(main_sections, start=1):
         url_count = count_provided_url_occurrences(section_text, provided_urls)
         if url_count > 1:
             raise ProductLinkError(
@@ -864,6 +1260,11 @@ def validate_affiliate_link_usage(article_markdown: str, products: list[Product]
             )
 
         if url_count == 1:
+            if index not in target_sections:
+                allowed = ", ".join(str(item) for item in sorted(target_sections))
+                raise ProductLinkError(
+                    f"affiliate links are only allowed in section(s) {allowed} for this monetization profile."
+                )
             sections_with_links += 1
             section_urls = [url for url in provided_urls if url in section_text]
             used_urls_by_section.extend(section_urls)
@@ -890,6 +1291,7 @@ def normalize_and_validate(
     payload: dict[str, Any],
     products: list[Product],
     topic_context: TopicCandidate,
+    monetization_profile: dict[str, Any],
 ) -> dict[str, Any]:
     required_fields = {
         "title",
@@ -940,21 +1342,37 @@ def normalize_and_validate(
     if not has_faq_section(article_markdown):
         raise ValueError("article_markdown must include a short FAQ section near the end.")
 
-    validate_affiliate_link_usage(article_markdown=article_markdown, products=products)
+    validate_affiliate_link_usage(
+        article_markdown=article_markdown,
+        products=products,
+        monetization_profile=monetization_profile,
+    )
+    validate_angle_structure(article_markdown=article_markdown, topic_context=topic_context)
 
     estimated_reading_time_raw = str(payload.get("estimated_reading_time", "")).strip()
     estimated_reading_time = estimated_reading_time_raw or build_estimated_reading_time(word_count)
 
-    hero_image_prompt = ensure_image_prompt_constraints(str(payload["hero_image_prompt"]).strip())
-    if not hero_image_prompt:
-        raise ValueError("hero_image_prompt cannot be empty.")
+    section_headings = extract_main_headings(article_markdown)
+    if len(section_headings) != SECTION_COUNT:
+        raise ValueError("article_markdown must include exactly 5 H2 main sections.")
 
-    section_image_prompts_raw = normalize_string_list(
-        payload["section_image_prompts"],
-        field_name="section_image_prompts",
-        expected_count=SECTION_COUNT,
+    generated_image_prompt_package = generate_image_prompts(
+        title=title,
+        section_headings=section_headings,
+        cluster=topic_context["trend_cluster"],
+        cluster_id=str(topic_context.get("cluster_id", "")),
+        primary_keyword=topic_context["primary_keyword"],
+        angle=str(topic_context.get("angle_id", "")),
+        intent=str(topic_context.get("intent_id", "")),
+        season=topic_context["season"],
     )
-    section_image_prompts = [ensure_image_prompt_constraints(item) for item in section_image_prompts_raw]
+    hero_image_prompt = ensure_image_prompt_constraints(
+        str(generated_image_prompt_package["hero_image_prompt"]).strip()
+    )
+    section_image_prompts = [
+        ensure_image_prompt_constraints(item)
+        for item in generated_image_prompt_package["section_image_prompts"]
+    ]
 
     pinterest_titles = normalize_string_list(
         payload["pinterest_titles"],
@@ -966,6 +1384,12 @@ def normalize_and_validate(
         field_name="pinterest_descriptions",
         expected_count=PINTEREST_ITEM_COUNT,
     )
+    internal_link_suggestions = build_internal_link_suggestions(
+        topic_context=topic_context,
+        article_title=title,
+        article_slug=slug,
+        limit=4,
+    )
 
     return {
         "title": title,
@@ -973,14 +1397,25 @@ def normalize_and_validate(
         "meta_description": meta_description,
         "keywords": keywords,
         "affiliate_products": products[:SECTION_COUNT],
+        "monetization_profile": monetization_profile,
         "primary_keyword": topic_context["primary_keyword"],
         "secondary_keywords": topic_context["secondary_keywords"],
         "topical_cluster": topic_context["trend_cluster"],
         "cluster_keywords": topic_context["cluster_keywords"],
         "search_intent": topic_context["search_intent"],
+        "intent_id": str(topic_context.get("intent_id", "")),
+        "domain_id": str(topic_context.get("domain_id", "")),
+        "cluster_id": str(topic_context.get("cluster_id", "")),
+        "subtopic_id": str(topic_context.get("subtopic_id", "")),
+        "subtopic_name": str(topic_context.get("subtopic_name", "")),
+        "angle_id": str(topic_context.get("angle_id", "")),
+        "modifier": str(topic_context.get("modifier", "")),
+        "internal_link_suggestions": internal_link_suggestions,
         "estimated_reading_time": estimated_reading_time,
         "hero_image_prompt": hero_image_prompt,
         "section_image_prompts": section_image_prompts,
+        "visual_direction": generated_image_prompt_package["visual_direction"],
+        "image_prompt_diagnostics": generated_image_prompt_package.get("image_prompt_diagnostics", {}),
         "pinterest_titles": pinterest_titles,
         "pinterest_descriptions": pinterest_descriptions,
         "article_markdown": article_markdown,
@@ -1022,10 +1457,16 @@ def generate_article_package_with_report(
     short_retry_count = 0
     product_retry_count = 0
     generation_calls = 0
+    normalized_topic_context = normalize_topic_candidate(topic_context=topic_context, trend=trend)
+    monetization_profile = resolve_monetization_profile(
+        angle_id=str(normalized_topic_context.get("angle_id", "")),
+        intent_id=str(normalized_topic_context.get("intent_id", "")),
+    )
 
     selected_format_name, selected_format_prompt = resolve_format_prompt(
         trend=trend,
         format_name=format_name,
+        topic_context=normalized_topic_context,
     )
     selected_persona_name, selected_persona_prompt = resolve_persona_prompt(
         trend=trend,
@@ -1038,16 +1479,24 @@ def generate_article_package_with_report(
         else fetch_products_for_trend(trend=trend, limit=SECTION_COUNT)
     )
     selected_products = validate_products(selected_products)
-    normalized_topic_context = normalize_topic_candidate(topic_context=topic_context, trend=trend)
+    selected_products = limit_products_for_profile(selected_products, monetization_profile)
+    try:
+        ensure_valid_article_concept(normalized_topic_context)
+    except ConceptValidationError as exc:
+        raise RuntimeError(f"Article concept validation failed: {exc}") from exc
 
-    if len(selected_products) < MIN_PRODUCTS_FOR_AFFILIATE_MODE:
+    minimum_products = int(monetization_profile.get("min_products_to_enable") or 0)
+    if len(selected_products) < minimum_products:
         print(
             f"[article] affiliate mode disabled: only {len(selected_products)} validated product(s) available "
-            f"(minimum {MIN_PRODUCTS_FOR_AFFILIATE_MODE})"
+            f"(minimum {minimum_products} for {monetization_profile.get('profile_id', 'editorial_soft')})"
         )
         selected_products = []
     else:
-        print(f"[article] affiliate mode enabled with {len(selected_products)} product(s)")
+        print(
+            f"[article] affiliate mode enabled with {len(selected_products)} product(s) "
+            f"using {monetization_profile.get('profile_id', 'editorial_soft')}"
+        )
 
     article_template = load_article_template()
     _, cache_path = build_cache_artifacts(
@@ -1060,11 +1509,13 @@ def generate_article_package_with_report(
         persona_prompt=selected_persona_prompt,
         topic_context=normalized_topic_context,
         products=selected_products,
+        monetization_profile=monetization_profile,
     )
     cached_package = load_cached_article_package(
         cache_path=cache_path,
         products=selected_products,
         topic_context=normalized_topic_context,
+        monetization_profile=monetization_profile,
     )
     if cached_package:
         cached_link_count = count_markdown_links(cached_package["article_markdown"])
@@ -1077,10 +1528,11 @@ def generate_article_package_with_report(
             "model": model,
             "generation_calls": 0,
             "short_retries": 0,
-            "product_retries": 0,
-            "selected_products": len(selected_products),
-            "affiliate_mode": bool(selected_products),
-            "generated_link_count": cached_link_count,
+             "product_retries": 0,
+             "selected_products": len(selected_products),
+             "affiliate_mode": bool(selected_products),
+             "monetization_profile_id": monetization_profile.get("profile_id", "editorial_soft"),
+             "generated_link_count": cached_link_count,
             "primary_keyword": normalized_topic_context["primary_keyword"],
             "topical_cluster": normalized_topic_context["trend_cluster"],
         }
@@ -1103,6 +1555,7 @@ def generate_article_package_with_report(
                 format_name=selected_format_name,
                 format_prompt=selected_format_prompt,
                 products=selected_products,
+                monetization_profile=monetization_profile,
                 extra_instruction=extra_instruction,
             )
             try:
@@ -1110,6 +1563,7 @@ def generate_article_package_with_report(
                     payload,
                     products=selected_products,
                     topic_context=normalized_topic_context,
+                    monetization_profile=monetization_profile,
                 )
             except ProductLinkError:
                 if selected_products and isinstance(payload.get("article_markdown"), str):
@@ -1117,12 +1571,14 @@ def generate_article_package_with_report(
                     repaired_payload["article_markdown"] = repair_affiliate_links(
                         article_markdown=str(payload["article_markdown"]),
                         products=selected_products,
+                        monetization_profile=monetization_profile,
                     )
                     print("[article] attempted automatic affiliate link repair")
                     normalized_package = normalize_and_validate(
                         repaired_payload,
                         products=selected_products,
                         topic_context=normalized_topic_context,
+                        monetization_profile=monetization_profile,
                     )
                 else:
                     raise
@@ -1138,6 +1594,7 @@ def generate_article_package_with_report(
                 "product_retries": product_retry_count,
                 "selected_products": len(selected_products),
                 "affiliate_mode": bool(selected_products),
+                "monetization_profile_id": monetization_profile.get("profile_id", "editorial_soft"),
                 "generated_link_count": generated_link_count,
                 "primary_keyword": normalized_topic_context["primary_keyword"],
                 "topical_cluster": normalized_topic_context["trend_cluster"],
@@ -1159,12 +1616,13 @@ def generate_article_package_with_report(
                 extra_instruction = PRODUCT_RETRY_PROMPT_TEMPLATE
                 last_error = exc
                 continue
-            if selected_products and len(selected_products) >= MIN_PRODUCTS_FOR_AFFILIATE_MODE:
+            if selected_products and len(selected_products) >= minimum_products:
                 print(
                     "[article] falling back to editorial-only mode after affiliate validation failures"
                 )
                 selected_products = []
                 product_retry_count = 0
+                monetization_profile = resolve_monetization_profile(value={"profile_id": "editorial_soft"})
                 extra_instruction = (
                     "The affiliate placement draft could not be validated. Rewrite the full article package "
                     "in editorial-only mode with no external URLs and no product links. Keep the same trend focus and structure."
@@ -1179,11 +1637,13 @@ def generate_article_package_with_report(
                     persona_prompt=selected_persona_prompt,
                     topic_context=normalized_topic_context,
                     products=selected_products,
+                    monetization_profile=monetization_profile,
                 )
                 cached_editorial_package = load_cached_article_package(
                     cache_path=cache_path,
                     products=selected_products,
                     topic_context=normalized_topic_context,
+                    monetization_profile=monetization_profile,
                 )
                 if cached_editorial_package:
                     cached_link_count = count_markdown_links(cached_editorial_package["article_markdown"])
@@ -1198,6 +1658,7 @@ def generate_article_package_with_report(
                         "product_retries": product_retry_count,
                         "selected_products": len(selected_products),
                         "affiliate_mode": bool(selected_products),
+                        "monetization_profile_id": monetization_profile.get("profile_id", "editorial_soft"),
                         "generated_link_count": cached_link_count,
                         "primary_keyword": normalized_topic_context["primary_keyword"],
                         "topical_cluster": normalized_topic_context["trend_cluster"],

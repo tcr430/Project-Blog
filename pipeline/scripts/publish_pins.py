@@ -133,7 +133,13 @@ def build_queue_entries(payload: dict[str, Any], provider_mode: str) -> list[dic
         entries.append(
             {
                 "article_slug": payload["article_slug"],
+                "cluster_id": payload.get("cluster_id", ""),
+                "subtopic_id": payload.get("subtopic_id", ""),
+                "angle_id": payload.get("angle_id", ""),
+                "intent_id": payload.get("intent_id", ""),
+                "visual_direction": payload.get("visual_direction", {}),
                 "variant_type": variant_type,
+                "style_name": variant.get("style_name", ""),
                 "board": {
                     "key": board_key,
                     "name": board_name,
@@ -168,7 +174,13 @@ def build_queue_entries(payload: dict[str, Any], provider_mode: str) -> list[dic
 def build_history_entry(entry: dict[str, Any]) -> dict[str, Any]:
     return {
         "article_slug": entry["article_slug"],
+        "cluster_id": entry.get("cluster_id", ""),
+        "subtopic_id": entry.get("subtopic_id", ""),
+        "angle_id": entry.get("angle_id", ""),
+        "intent_id": entry.get("intent_id", ""),
+        "visual_direction": entry.get("visual_direction", {}),
         "variant_type": entry["variant_type"],
+        "style_name": entry.get("style_name", ""),
         "board": entry["board"],
         "title": entry["title"],
         "description": entry["description"],

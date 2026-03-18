@@ -21,6 +21,7 @@ class TopicCandidate(TypedDict):
     secondary_keywords: list[str]
     cluster_keywords: list[str]
     search_intent: str
+    intent_id: str
     season: str
     holiday: str
     source: str
@@ -124,6 +125,19 @@ def classify_search_intent(keyword: str) -> str:
     return "styling_advice"
 
 
+def classify_intent_id(keyword: str) -> str:
+    search_intent = classify_search_intent(keyword)
+    if search_intent == "how_to":
+        return "implementation"
+    if search_intent == "problem_solution":
+        return "problem_solving"
+    if search_intent == "comparison":
+        return "comparison"
+    if search_intent == "ideas":
+        return "inspiration"
+    return "decision_making"
+
+
 def normalize_cluster(raw: dict[str, Any], source: str) -> TopicCluster:
     cluster_name = normalize_text(raw.get("cluster_name") or raw.get("trend_cluster") or "")
     keywords_raw = raw.get("keywords", [])
@@ -187,15 +201,221 @@ def build_standard_cluster_keywords(base_phrase: str) -> list[str]:
     ]
 
 
-def build_feature_cluster_keywords(room: str, feature: str) -> list[str]:
+def dedupe_keywords(values: list[str]) -> list[str]:
+    deduped: list[str] = []
+    seen: set[str] = set()
+    for value in values:
+        normalized = normalize_text(value)
+        if not normalized or normalized in seen:
+            continue
+        seen.add(normalized)
+        deduped.append(normalized)
+    return deduped
+
+
+def merge_clusters_by_name(clusters: list[TopicCluster]) -> list[TopicCluster]:
+    merged: dict[str, TopicCluster] = {}
+    order: list[str] = []
+
+    for cluster in clusters:
+        cluster_name = cluster["cluster_name"]
+        if cluster_name not in merged:
+            merged[cluster_name] = {
+                "cluster_name": cluster_name,
+                "keywords": list(cluster["keywords"]),
+                "season": cluster["season"],
+                "holiday": cluster["holiday"],
+                "source": cluster["source"],
+            }
+            order.append(cluster_name)
+            continue
+
+        merged_cluster = merged[cluster_name]
+        merged_cluster["keywords"] = dedupe_keywords(
+            list(merged_cluster["keywords"]) + list(cluster["keywords"])
+        )
+        if not merged_cluster["season"] and cluster["season"]:
+            merged_cluster["season"] = cluster["season"]
+        if not merged_cluster["holiday"] and cluster["holiday"]:
+            merged_cluster["holiday"] = cluster["holiday"]
+
+    return [merged[name] for name in order]
+
+
+def build_style_room_keywords(style: str, room: str) -> list[str]:
+    normalized_style = normalize_text(style)
+    normalized_room = normalize_text(room)
+    base_phrase = f"{normalized_style} {normalized_room}"
+    return dedupe_keywords(
+        [
+            f"{base_phrase} ideas",
+            f"how to style a {base_phrase}",
+            f"{base_phrase} decor",
+            f"{base_phrase} furniture",
+            f"{base_phrase} color palette",
+            f"{base_phrase} lighting",
+            f"{base_phrase} layout ideas",
+            f"{base_phrase} mistakes to avoid",
+        ]
+    )
+
+
+def build_feature_cluster_definition(room: str, feature: str) -> tuple[str, list[str]]:
     normalized_room = normalize_text(room)
     normalized_feature = normalize_text(feature)
-    return [
+
+    if normalized_feature in {"curtain styling", "window treatment ideas"}:
+        cluster_name = f"{normalized_room} window treatments"
+        keywords = [
+            f"{normalized_room} curtain ideas",
+            f"best curtains for {normalized_room}",
+            f"{normalized_room} window treatment ideas",
+            f"how to choose curtains for {normalized_room}",
+            f"{normalized_room} drapes and curtain styling",
+            f"{normalized_room} sheer curtain ideas",
+            f"{normalized_room} blackout curtain ideas",
+            f"{normalized_room} window treatment mistakes to avoid",
+        ]
+        return cluster_name, dedupe_keywords(keywords)
+
+    if normalized_feature in {"wall decor", "art placement"}:
+        cluster_name = f"{normalized_room} wall decor"
+        keywords = [
+            f"{normalized_room} wall decor ideas",
+            f"how to decorate walls in {normalized_room}",
+            f"{normalized_room} art placement ideas",
+            f"gallery wall ideas for {normalized_room}",
+            f"{normalized_room} oversized art ideas",
+            f"{normalized_room} wall decor mistakes to avoid",
+        ]
+        return cluster_name, dedupe_keywords(keywords)
+
+    if normalized_feature in {"storage", "shelving"}:
+        cluster_name = f"{normalized_room} storage"
+        keywords = [
+            f"{normalized_room} storage ideas",
+            f"best storage for {normalized_room}",
+            f"{normalized_room} shelving ideas",
+            f"how to style shelves in {normalized_room}",
+            f"{normalized_room} hidden storage ideas",
+            f"{normalized_room} storage mistakes to avoid",
+        ]
+        return cluster_name, dedupe_keywords(keywords)
+
+    if normalized_feature == "lighting":
+        cluster_name = f"{normalized_room} lighting"
+        keywords = [
+            f"{normalized_room} lighting ideas",
+            f"best lighting for {normalized_room}",
+            f"how to layer lighting in {normalized_room}",
+            f"{normalized_room} lamp styling ideas",
+            f"{normalized_room} overhead lighting ideas",
+            f"{normalized_room} lighting mistakes to avoid",
+        ]
+        return cluster_name, dedupe_keywords(keywords)
+
+    if normalized_feature == "rug styling":
+        cluster_name = f"{normalized_room} rugs"
+        keywords = [
+            f"{normalized_room} rug ideas",
+            f"best rug size for {normalized_room}",
+            f"how to layer rugs in {normalized_room}",
+            f"{normalized_room} area rug styling",
+            f"{normalized_room} natural fiber rug ideas",
+            f"{normalized_room} rug mistakes to avoid",
+        ]
+        return cluster_name, dedupe_keywords(keywords)
+
+    if normalized_feature == "coffee table styling":
+        cluster_name = f"{normalized_room} styling details"
+        keywords = [
+            f"{normalized_room} coffee table styling",
+            f"{normalized_room} tabletop decor ideas",
+            f"how to style a coffee table in {normalized_room}",
+            f"{normalized_room} tray styling ideas",
+            f"{normalized_room} decorative object styling",
+            f"{normalized_room} coffee table styling mistakes to avoid",
+        ]
+        return cluster_name, dedupe_keywords(keywords)
+
+    if normalized_feature == "decor layering":
+        cluster_name = f"{normalized_room} styling details"
+        keywords = [
+            f"{normalized_room} decor layering ideas",
+            f"how to layer decor in {normalized_room}",
+            f"{normalized_room} shelf styling ideas",
+            f"{normalized_room} styling details that add depth",
+            f"{normalized_room} finishing touches decor",
+            f"{normalized_room} decor layering mistakes to avoid",
+        ]
+        return cluster_name, dedupe_keywords(keywords)
+
+    cluster_name = f"{normalized_room} {normalized_feature}"
+    keywords = [
         f"{normalized_room} {normalized_feature} ideas",
         f"how to style {normalized_feature} in {normalized_room}",
         f"best {normalized_feature} for {normalized_room}",
         f"{normalized_room} {normalized_feature} mistakes to avoid",
     ]
+    return cluster_name, dedupe_keywords(keywords)
+
+
+def build_material_room_cluster_definition(room: str, mix: str) -> tuple[str, list[str]]:
+    normalized_room = normalize_text(room)
+    normalized_mix = normalize_text(mix)
+    cluster_name = f"{normalized_room} textures and materials"
+    keywords = [
+        f"{normalized_room} texture ideas",
+        f"how to mix textures in {normalized_room}",
+        f"{normalized_mix} {normalized_room}",
+        f"{normalized_room} natural materials decor",
+        f"{normalized_room} layered materials styling",
+        f"{normalized_room} texture mistakes to avoid",
+    ]
+    return cluster_name, dedupe_keywords(keywords)
+
+
+def build_color_room_cluster_definition(room: str, palette: str) -> tuple[str, list[str]]:
+    normalized_room = normalize_text(room)
+    normalized_palette = normalize_text(palette)
+    cluster_name = f"{normalized_room} color palettes"
+    keywords = [
+        f"{normalized_room} color palette ideas",
+        f"{normalized_palette} {normalized_room}",
+        f"{normalized_room} paint color ideas",
+        f"{normalized_room} accent color ideas",
+        f"how to style a {normalized_palette} {normalized_room}",
+        f"{normalized_room} color mistakes to avoid",
+    ]
+    return cluster_name, dedupe_keywords(keywords)
+
+
+def build_small_space_keywords(cluster_name: str) -> list[str]:
+    normalized_cluster_name = normalize_text(cluster_name)
+    return dedupe_keywords(
+        [
+            f"{normalized_cluster_name} ideas",
+            f"how to style {normalized_cluster_name}",
+            f"{normalized_cluster_name} layout ideas",
+            f"{normalized_cluster_name} storage ideas",
+            f"{normalized_cluster_name} decor",
+            f"{normalized_cluster_name} mistakes to avoid",
+        ]
+    )
+
+
+def build_seasonal_keywords(cluster_name: str) -> list[str]:
+    normalized_cluster_name = normalize_text(cluster_name)
+    return dedupe_keywords(
+        [
+            f"{normalized_cluster_name} ideas",
+            f"how to style {normalized_cluster_name}",
+            f"{normalized_cluster_name} decor",
+            f"easy {normalized_cluster_name} refresh",
+            f"{normalized_cluster_name} color palette",
+            f"{normalized_cluster_name} mistakes to avoid",
+        ]
+    )
 
 
 def load_topic_taxonomy(path: Path = TOPIC_TAXONOMY_PATH) -> dict[str, Any]:
@@ -215,7 +435,7 @@ def generate_taxonomy_clusters(taxonomy: dict[str, Any]) -> list[TopicCluster]:
                     normalize_cluster(
                         {
                             "cluster_name": f"{style} {room}",
-                            "keywords": build_standard_cluster_keywords(f"{style} {room}"),
+                            "keywords": build_style_room_keywords(style, room),
                             "season": "",
                             "holiday": "",
                             "source": "taxonomy_style_room",
@@ -243,11 +463,12 @@ def generate_taxonomy_clusters(taxonomy: dict[str, Any]) -> list[TopicCluster]:
                 allowed_rooms = allowed_rooms_by_feature.get(feature)
                 if allowed_rooms is not None and room not in allowed_rooms:
                     continue
+                cluster_name, keywords = build_feature_cluster_definition(room, feature)
                 generated.append(
                     normalize_cluster(
                         {
-                            "cluster_name": f"{room} {feature}",
-                            "keywords": build_feature_cluster_keywords(room, feature),
+                            "cluster_name": cluster_name,
+                            "keywords": keywords,
                             "season": "",
                             "holiday": "",
                             "source": "taxonomy_feature_room",
@@ -262,11 +483,12 @@ def generate_taxonomy_clusters(taxonomy: dict[str, Any]) -> list[TopicCluster]:
         rooms = [normalize_text(item) for item in material_room_pairs.get("rooms", []) if normalize_text(item)]
         for mix in mixes:
             for room in rooms:
+                cluster_name, keywords = build_material_room_cluster_definition(room, mix)
                 generated.append(
                     normalize_cluster(
                         {
-                            "cluster_name": f"{mix} {room}",
-                            "keywords": build_standard_cluster_keywords(f"{mix} {room}"),
+                            "cluster_name": cluster_name,
+                            "keywords": keywords,
                             "season": "",
                             "holiday": "",
                             "source": "taxonomy_material_room",
@@ -281,11 +503,12 @@ def generate_taxonomy_clusters(taxonomy: dict[str, Any]) -> list[TopicCluster]:
         rooms = [normalize_text(item) for item in color_room_pairs.get("rooms", []) if normalize_text(item)]
         for palette in palettes:
             for room in rooms:
+                cluster_name, keywords = build_color_room_cluster_definition(room, palette)
                 generated.append(
                     normalize_cluster(
                         {
-                            "cluster_name": f"{palette} {room}",
-                            "keywords": build_standard_cluster_keywords(f"{palette} {room}"),
+                            "cluster_name": cluster_name,
+                            "keywords": keywords,
                             "season": "",
                             "holiday": "",
                             "source": "taxonomy_color_room",
@@ -304,7 +527,7 @@ def generate_taxonomy_clusters(taxonomy: dict[str, Any]) -> list[TopicCluster]:
                 normalize_cluster(
                     {
                         "cluster_name": normalized_cluster_name,
-                        "keywords": build_standard_cluster_keywords(normalized_cluster_name),
+                        "keywords": build_small_space_keywords(normalized_cluster_name),
                         "season": "",
                         "holiday": "",
                         "source": "taxonomy_small_space",
@@ -325,7 +548,7 @@ def generate_taxonomy_clusters(taxonomy: dict[str, Any]) -> list[TopicCluster]:
                 normalize_cluster(
                     {
                         "cluster_name": cluster_name,
-                        "keywords": build_standard_cluster_keywords(cluster_name),
+                        "keywords": build_seasonal_keywords(cluster_name),
                         "season": normalize_text(item.get("season", "")),
                         "holiday": normalize_text(item.get("holiday", "")),
                         "source": "taxonomy_seasonal",
@@ -334,15 +557,7 @@ def generate_taxonomy_clusters(taxonomy: dict[str, Any]) -> list[TopicCluster]:
                 )
             )
 
-    deduped_clusters: list[TopicCluster] = []
-    seen_cluster_names: set[str] = set()
-    for cluster in generated:
-        if cluster["cluster_name"] in seen_cluster_names:
-            continue
-        seen_cluster_names.add(cluster["cluster_name"])
-        deduped_clusters.append(cluster)
-
-    return deduped_clusters
+    return merge_clusters_by_name(generated)
 
 
 def load_default_topic_clusters() -> list[TopicCluster]:
@@ -355,13 +570,7 @@ def load_default_topic_clusters() -> list[TopicCluster]:
     generated_clusters = generate_taxonomy_clusters(taxonomy)
 
     merged_clusters: list[TopicCluster] = []
-    seen_cluster_names: set[str] = set()
-    for cluster in [*curated_clusters, *generated_clusters]:
-        if cluster["cluster_name"] in seen_cluster_names:
-            continue
-        seen_cluster_names.add(cluster["cluster_name"])
-        merged_clusters.append(cluster)
-
+    merged_clusters = merge_clusters_by_name([*curated_clusters, *generated_clusters])
     return merged_clusters
 
 
@@ -395,6 +604,7 @@ def build_topic_candidate(
         "secondary_keywords": secondary_keywords,
         "cluster_keywords": cluster_keywords,
         "search_intent": classify_search_intent(normalized_primary),
+        "intent_id": classify_intent_id(normalized_primary),
         "season": normalize_text(season),
         "holiday": normalize_text(holiday),
         "source": normalize_text(source) or "cluster",

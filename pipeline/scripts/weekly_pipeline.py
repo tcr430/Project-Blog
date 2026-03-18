@@ -13,6 +13,7 @@ from openai import OpenAI
 from fetch_products import Product, fetch_products_with_context
 from fetch_trends import fetch_candidate_trends
 from fetch_pinterest_trends import DEFAULT_TRENDS_PATH, fetch_pinterest_trends
+from editorial_mix import build_recent_editorial_mix_state, load_editorial_mix_rules
 from generate_article import (
     generate_article_package_with_report,
     load_openai_api_key,
@@ -26,7 +27,9 @@ from generate_weekly_report import build_weekly_report
 from generate_cluster_report import build_cluster_intelligence_outputs
 from generate_pillar_pages import build_pillar_pages
 from generate_content_plan import build_content_plan_outputs, select_topic_candidates_from_plan
+from generate_pinterest_intelligence_report import build_pinterest_intelligence_outputs
 from generate_pinterest_topic_signals import build_pinterest_topic_signal_outputs
+from validate_article_editorial import validate_article_editorial, write_validation_report as write_editorial_validation_report
 from validate_article_seo import validate_article_seo, write_validation_report
 from fetch_pinterest_analytics import should_sync_pinterest_analytics, sync_pinterest_analytics
 from generate_pin_assets import generate_pin_assets
@@ -48,8 +51,10 @@ from trend_history import DEFAULT_NON_SEASONAL_COOLDOWN_DAYS, add_trend_entry
 PINTEREST_VARIANT_COUNT = 4
 COST_REPORTS_DIR = Path(__file__).resolve().parents[1] / "data" / "cost_reports"
 SEO_VALIDATION_REPORT_PATH = Path(__file__).resolve().parents[1] / "reports" / "article_seo_validation_report.json"
+EDITORIAL_VALIDATION_REPORT_PATH = Path(__file__).resolve().parents[1] / "reports" / "article_editorial_validation_report.json"
 CONTENT_PLAN_REPORT_PATH = Path(__file__).resolve().parents[1] / "reports" / "content_plan.json"
 PINTEREST_TOPIC_SIGNALS_REPORT_PATH = Path(__file__).resolve().parents[1] / "reports" / "pinterest_topic_signals.json"
+PINTEREST_INTELLIGENCE_REPORT_PATH = Path(__file__).resolve().parents[1] / "reports" / "pinterest_intelligence_report.json"
 PINTEREST_TRENDS_DATA_PATH = DEFAULT_TRENDS_PATH
 
 
@@ -466,6 +471,10 @@ def run_pipeline_for_trend(
     )
 
     seo_validation_result = run_seo_validation_step(project_root=project_root, article_package=article_package)
+    editorial_validation_result = run_editorial_validation_step(
+        project_root=project_root,
+        article_package=article_package,
+    )
 
     log_phase("saving temporary article package")
     slug = slugify(str(article_package.get("slug") or article_package.get("title") or "decor-article"))
@@ -491,6 +500,7 @@ def run_pipeline_for_trend(
             "slug": slug,
             "article_generation": article_report,
             "seo_validation": seo_validation_result,
+            "editorial_validation": editorial_validation_result,
             "image_generation": image_report,
             "pinterest": {
                 "variants_requested": PINTEREST_VARIANT_COUNT,
@@ -509,6 +519,7 @@ def finalize_selected_trends(
     top_trends: int,
     cooldown_days: int,
     pinterest_signal_data: dict[str, Any] | None = None,
+    pinterest_intelligence_data: dict[str, Any] | None = None,
 ) -> list[dict[str, Any]]:
     log_phase("selecting trends: normalizing candidates")
     normalized = normalize_candidates([dict(item) for item in raw_candidates])
@@ -538,14 +549,26 @@ def finalize_selected_trends(
     if not allowed:
         return []
 
+    editorial_mix_rules = load_editorial_mix_rules()
+    cluster_index_path = project_root / "pipeline" / "data" / "article_cluster_index.json"
+    existing_index_data: dict[str, Any] = {"articles": []}
+    if cluster_index_path.exists():
+        raw_index = cluster_index_path.read_text(encoding="utf-8-sig").strip()
+        if raw_index:
+            existing_index_data = json.loads(raw_index)
+    editorial_mix_state = build_recent_editorial_mix_state(existing_index_data, editorial_mix_rules)
+
     log_phase("selecting trends: scoring and selecting top trends")
     scored = score_candidates(
         allowed,
         pinterest_signal_data=pinterest_signal_data,
+        pinterest_intelligence_data=pinterest_intelligence_data,
         history_path=history_path,
         now=datetime.now(timezone.utc),
+        editorial_mix_rules=editorial_mix_rules,
+        editorial_mix_state=editorial_mix_state,
     )
-    return select_diverse_top_trends(scored, top_n=top_trends)
+    return select_diverse_top_trends(scored, top_n=top_trends, editorial_mix_rules=editorial_mix_rules)
 
 
 def select_automatic_trends(
@@ -584,6 +607,15 @@ def select_automatic_trends(
     )
     pinterest_signal_data = pinterest_signal_result["signals"]
     print(f"[pinterest] topic signals: {pinterest_signal_result['output_path']}")
+    pinterest_intelligence_result = build_pinterest_intelligence_outputs(
+        history_path=project_root / "pipeline" / "data" / "pinterest_history.json",
+        summary_path=project_root / "pipeline" / "data" / "pinterest_performance_summary.json",
+        metadata_dir=project_root / "_data" / "article_metadata",
+        pinterest_metadata_dir=project_root / "_data" / "pinterest",
+        output_path=PINTEREST_INTELLIGENCE_REPORT_PATH,
+        normalized_output_path=project_root / "analytics" / "pin_performance.json",
+    )
+    print(f"[pinterest] intelligence report: {pinterest_intelligence_result['output_path']}")
 
     if use_content_plan:
         log_phase("selecting trends: building content plan candidates")
@@ -591,6 +623,7 @@ def select_automatic_trends(
             cluster_index_path=project_root / "pipeline" / "data" / "article_cluster_index.json",
             cluster_report_path=project_root / "pipeline" / "data" / "keyword_cluster_report.json",
             pinterest_signals_path=PINTEREST_TOPIC_SIGNALS_REPORT_PATH,
+            pinterest_intelligence_path=PINTEREST_INTELLIGENCE_REPORT_PATH,
             output_path=CONTENT_PLAN_REPORT_PATH,
         )
         planned_candidates = select_topic_candidates_from_plan(plan_result["plan"], limit=max(top_trends * 3, top_trends))
@@ -613,6 +646,7 @@ def select_automatic_trends(
         top_trends=selection_pool_size,
         cooldown_days=cooldown_days,
         pinterest_signal_data=pinterest_signal_data,
+        pinterest_intelligence_data=pinterest_intelligence_result["report"],
     )
 
     if not selected and use_content_plan:
@@ -627,13 +661,17 @@ def select_automatic_trends(
             top_trends=selection_pool_size,
             cooldown_days=cooldown_days,
             pinterest_signal_data=pinterest_signal_data,
+            pinterest_intelligence_data=pinterest_intelligence_result["report"],
         )
 
     if not selected:
         raise RuntimeError("No trends were selected.")
 
     for item in selected:
-        print(f"  selected: {item['trend_keyword']} (score={item['score']})")
+        print(
+            f"  selected: {item['trend_keyword']} "
+            f"(score={item['score']}, mix={item.get('editorial_mix_primary', 'unknown')})"
+        )
 
     return selected
 
@@ -762,9 +800,37 @@ def run_content_plan_step(project_root: Path) -> dict[str, Any]:
         cluster_index_path=project_root / "pipeline" / "data" / "article_cluster_index.json",
         cluster_report_path=project_root / "pipeline" / "data" / "keyword_cluster_report.json",
         pinterest_signals_path=project_root / "pipeline" / "reports" / "pinterest_topic_signals.json",
+        pinterest_intelligence_path=project_root / "pipeline" / "reports" / "pinterest_intelligence_report.json",
         output_path=CONTENT_PLAN_REPORT_PATH,
     )
     print(f"[plan] content plan: {result['output_path']}")
+    return result
+
+
+def run_editorial_validation_step(project_root: Path, article_package: dict[str, Any]) -> dict[str, Any]:
+    log_phase("running editorial quality validation")
+    cluster_index_path = project_root / "pipeline" / "data" / "article_cluster_index.json"
+
+    existing_index_data: dict[str, Any] = {"articles": []}
+    if cluster_index_path.exists():
+        raw_index = cluster_index_path.read_text(encoding="utf-8-sig").strip()
+        if raw_index:
+            existing_index_data = json.loads(raw_index)
+
+    result = validate_article_editorial(
+        article_package=article_package,
+        existing_index_data=existing_index_data,
+    )
+    report_path = write_editorial_validation_report(EDITORIAL_VALIDATION_REPORT_PATH, result)
+    print(f"[editorial] article validation: {result['validation_status']} ({report_path})")
+    for warning in result.get("warnings", []):
+        print(f"[editorial][warning] {warning}")
+
+    if result["validation_status"] == "fail":
+        raise RuntimeError(
+            "Editorial validation failed: " + "; ".join(result.get("errors", []))
+        )
+
     return result
 
 
@@ -792,7 +858,11 @@ def run_cluster_pages_step(project_root: Path) -> dict[str, Any]:
 
 def is_retryable_auto_candidate_error(exc: Exception) -> bool:
     message = str(exc)
-    return "Advanced SEO validation failed:" in message
+    return (
+        "Advanced SEO validation failed:" in message
+        or "Editorial validation failed:" in message
+        or "Article concept validation failed:" in message
+    )
 
 
 def run_automatic_mode(args: argparse.Namespace) -> int:

@@ -64,5 +64,13 @@
     "linen and boucle living room ideas",
     "boucle styling mistakes to avoid"
   ],
-  "search_intent": "ideas"
+  "search_intent": "ideas",
+  "domain_id": "living_spaces",
+  "cluster_id": "living_room_textures_and_materials",
+  "subtopic_id": "mixes",
+  "subtopic_name": "Material Mixes",
+  "angle_id": "style_specific",
+  "cluster_name": "linen and boucle styling",
+  "canonical_cluster_name": "living room textures and materials",
+  "legacy_cluster_name": "linen and boucle styling"
 }

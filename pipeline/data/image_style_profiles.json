@@ -1,0 +1,75 @@
+{
+  "visual_families": [
+    {
+      "id": "airy_editorial",
+      "mood": "airy, quiet, polished editorial styling",
+      "lighting": "soft natural daylight with gentle highlights",
+      "palette": "chalky whites, oat tones, pale woods, restrained contrast"
+    },
+    {
+      "id": "warm_layered",
+      "mood": "warm, tactile, layered and inviting styling",
+      "lighting": "late-morning daylight with warm reflected light",
+      "palette": "creams, camel, honey wood, soft terracotta accents"
+    },
+    {
+      "id": "crisp_modern",
+      "mood": "clean, sculptural, modern editorial restraint",
+      "lighting": "clear daylight with crisp shadow definition",
+      "palette": "soft white, black accents, stone, pale oak"
+    },
+    {
+      "id": "collected_natural",
+      "mood": "collected, natural, relaxed and lived-in styling",
+      "lighting": "diffused daylight with soft depth",
+      "palette": "linen, muted greens, walnut, handmade ceramic tones"
+    }
+  ],
+  "intent_profiles": {
+    "inspiration": {
+      "profile_id": "inspiration",
+      "visual_language": "aspirational, mood-led, layered, and magazine-worthy without feeling staged for ecommerce",
+      "hero_emphasis": "lead with atmosphere, a strong focal statement, and an emotionally legible room mood",
+      "section_emphasis": "show visually distinct styling directions rather than repeating the same setup",
+      "preferred_families": ["airy_editorial", "collected_natural", "warm_layered"],
+      "composition_styles": ["wide editorial sweep", "soft asymmetrical framing", "layered vignette crop"],
+      "detail_focus": ["palette harmony", "textural layering", "decor variation"]
+    },
+    "implementation": {
+      "profile_id": "implementation",
+      "visual_language": "clear, practical, legible, and grounded in real-room execution",
+      "hero_emphasis": "make the setup readable and believable, with practical room cues that help the viewer understand the process",
+      "section_emphasis": "prioritize useful focal clarity, sequence, and decision points",
+      "preferred_families": ["crisp_modern", "airy_editorial", "collected_natural"],
+      "composition_styles": ["eye-level practical view", "process-oriented corner framing", "clear front-facing setup"],
+      "detail_focus": ["placement clarity", "functional styling", "room proportions"]
+    },
+    "problem_solving": {
+      "profile_id": "problem_solving",
+      "visual_language": "corrective, practical, and specific while still attractive enough for editorial use",
+      "hero_emphasis": "show a convincing room that makes the fix or correction feel tangible",
+      "section_emphasis": "focus on problem areas, corrections, and proportion or material adjustments",
+      "preferred_families": ["crisp_modern", "warm_layered", "airy_editorial"],
+      "composition_styles": ["tight correction crop", "before-and-after style framing without literal split screens", "focused problem-area vignette"],
+      "detail_focus": ["scale fixes", "balance corrections", "material mismatches"]
+    },
+    "comparison": {
+      "profile_id": "comparison",
+      "visual_language": "criteria-led, option-aware, and polished enough to support recommendation content",
+      "hero_emphasis": "show a strong option category clearly, with a refined but useful editorial feel",
+      "section_emphasis": "differentiate option types, materials, or use cases visually",
+      "preferred_families": ["crisp_modern", "warm_layered", "airy_editorial"],
+      "composition_styles": ["clean comparison framing", "category-led vignette", "object-forward editorial crop"],
+      "detail_focus": ["material differences", "finish options", "style-fit signals"]
+    },
+    "decision_making": {
+      "profile_id": "decision_making",
+      "visual_language": "constraint-aware, reassuring, and practical with enough beauty to stay pin-worthy",
+      "hero_emphasis": "show a room scenario that makes the decision context easy to understand",
+      "section_emphasis": "highlight tradeoffs around size, budget, fit, and style context",
+      "preferred_families": ["warm_layered", "collected_natural", "crisp_modern"],
+      "composition_styles": ["scenario-led framing", "balanced choice vignette", "constraint-aware crop"],
+      "detail_focus": ["budget realism", "space constraints", "style compatibility"]
+    }
+  }
+}

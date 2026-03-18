@@ -1,0 +1,104 @@
+{
+  "brand_name": "The Livin' Edit",
+  "editorial_positioning": "A warm, polished home publication that translates good design into real-room decisions for everyday readers.",
+  "tone": {
+    "core_traits": [
+      "warm",
+      "polished",
+      "clear",
+      "editorial",
+      "grounded",
+      "practical"
+    ],
+    "should_feel_like": [
+      "a calm stylist with good taste",
+      "a useful editorial guide rather than a sales page",
+      "confident without sounding precious"
+    ],
+    "should_not_feel_like": [
+      "trend-chasing hype",
+      "generic AI decor filler",
+      "design-school jargon",
+      "breathless luxury copy"
+    ]
+  },
+  "vocabulary": {
+    "prefer": [
+      "layered",
+      "collected",
+      "grounded",
+      "soft contrast",
+      "quiet warmth",
+      "lived-in",
+      "visual balance",
+      "light flow",
+      "material mix",
+      "room-by-room"
+    ],
+    "avoid": [
+      "elevate your space",
+      "transform your home instantly",
+      "stunning",
+      "jaw-dropping",
+      "game-changer",
+      "must-have",
+      "luxury vibes",
+      "perfect aesthetic"
+    ]
+  },
+  "headline_style": {
+    "description": "Headlines should be clear, tasteful, and specific. They should promise a recognizable decorating point of view, not just a search phrase.",
+    "prefer": [
+      "specific room or styling context",
+      "practical but polished phrasing",
+      "real constraints like small rooms, layout, light, budget, or material choices"
+    ],
+    "avoid": [
+      "clickbait superlatives",
+      "empty hype adjectives",
+      "overly vague list-post phrasing"
+    ]
+  },
+  "intro_style": {
+    "description": "Open with a quick, specific editorial read on why the topic matters in a real home, then turn toward what the reader will understand or be able to do.",
+    "must_do": [
+      "anchor the intro in the actual room, material, mood, or design problem",
+      "sound like this article could only introduce this topic",
+      "move from point of view into practical direction quickly"
+    ],
+    "avoid": [
+      "broad interchangeable openings",
+      "opening with generic trend commentary alone",
+      "long scene-setting that delays the advice"
+    ]
+  },
+  "conclusion_style": {
+    "description": "Conclusions should feel lightly edited and decisive. End with a calm takeaway, first step, or framing thought rather than a generic recap.",
+    "prefer": [
+      "one grounded takeaway",
+      "encouraging clarity about what to try first",
+      "a sense of editorial edit rather than summary filler"
+    ],
+    "avoid": [
+      "repeating every section",
+      "hard CTAs",
+      "vague motivational wrap-ups"
+    ]
+  },
+  "editorial_point_of_view": {
+    "principles": [
+      "Good rooms feel intentional before they feel expensive.",
+      "Texture, proportion, and light usually matter more than adding more decor.",
+      "A home should feel lived-in and composed, not over-styled.",
+      "Readers should leave with a better eye, not just a shopping list."
+    ]
+  },
+  "variation_rules": {
+    "description": "Keep the voice consistent without sounding canned.",
+    "rules": [
+      "Do not repeat signature phrases multiple times in one article.",
+      "Use the editorial point of view as a lens, not a slogan.",
+      "Let persona, angle, and topic change the rhythm while the publication voice stays recognizable."
+    ]
+  }
+}

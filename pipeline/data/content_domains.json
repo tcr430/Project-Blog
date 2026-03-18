@@ -1,0 +1,42 @@
+[
+  {
+    "domain_id": "living_spaces",
+    "name": "Living Spaces",
+    "description": "Living rooms and shared spaces with a focus on style, comfort, layout, and finishing details."
+  },
+  {
+    "domain_id": "bedrooms",
+    "name": "Bedrooms",
+    "description": "Bedrooms, guest rooms, and nurseries with a focus on comfort, lighting, and softness."
+  },
+  {
+    "domain_id": "kitchens_dining",
+    "name": "Kitchens and Dining",
+    "description": "Kitchens, dining rooms, and breakfast corners with practical and visual styling guidance."
+  },
+  {
+    "domain_id": "utility_transition",
+    "name": "Utility and Transition Spaces",
+    "description": "Entryways, laundry rooms, bathrooms, and home offices where function and style overlap."
+  },
+  {
+    "domain_id": "small_space_living",
+    "name": "Small-Space Living",
+    "description": "Compact homes, apartment corners, and small-room solutions that need smarter styling."
+  },
+  {
+    "domain_id": "seasonal_styling",
+    "name": "Seasonal Styling",
+    "description": "Seasonal decor updates, timely refreshes, and holiday-adjacent styling moments."
+  },
+  {
+    "domain_id": "outdoor_living",
+    "name": "Outdoor Living",
+    "description": "Patios, balconies, and outdoor corners designed with comfort, texture, and atmosphere."
+  },
+  {
+    "domain_id": "decor_foundations",
+    "name": "Decor Foundations",
+    "description": "Textures, materials, palettes, and core styling systems that support many rooms."
+  }
+]

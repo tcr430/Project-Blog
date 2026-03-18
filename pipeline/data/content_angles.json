@@ -1,0 +1,51 @@
+[
+  {
+    "angle_id": "ideas",
+    "name": "Ideas",
+    "description": "Inspiration-led article with a broad set of attractive, usable directions.",
+    "intent_id": "inspiration",
+    "intent_description": "The reader is exploring possibilities, aesthetics, and styling directions before narrowing down a choice."
+  },
+  {
+    "angle_id": "how_to",
+    "name": "How-To",
+    "description": "Instructional or decision-making article with practical steps.",
+    "intent_id": "implementation",
+    "intent_description": "The reader wants a practical path they can follow to apply the look or solve the task."
+  },
+  {
+    "angle_id": "mistakes",
+    "name": "Mistakes",
+    "description": "Problem-prevention article that helps the reader avoid common styling errors.",
+    "intent_id": "problem_solving",
+    "intent_description": "The reader is trying to diagnose what is going wrong and correct it with clearer decisions."
+  },
+  {
+    "angle_id": "best_options",
+    "name": "Best Options",
+    "description": "Recommendation-led article focused on strong options, choices, and decision criteria.",
+    "intent_id": "comparison",
+    "intent_description": "The reader is weighing alternatives and wants tradeoffs, criteria, and best-fit recommendations."
+  },
+  {
+    "angle_id": "budget",
+    "name": "Budget",
+    "description": "Constraint-based article that keeps cost, simplicity, or accessibility in view.",
+    "intent_id": "decision_making",
+    "intent_description": "The reader needs help making a constrained decision based on budget, priorities, or tradeoffs."
+  },
+  {
+    "angle_id": "small_space",
+    "name": "Small-Space",
+    "description": "Article adapted to compact layouts, apartments, or narrow footprints.",
+    "intent_id": "decision_making",
+    "intent_description": "The reader needs to choose the best-fit approach for a specific constraint such as size, layout, or footprint."
+  },
+  {
+    "angle_id": "style_specific",
+    "name": "Style-Specific",
+    "description": "Article framed through a distinct decor style or visual direction.",
+    "intent_id": "inspiration",
+    "intent_description": "The reader wants a clearer visual language, aesthetic reference point, or style-led direction."
+  }
+]

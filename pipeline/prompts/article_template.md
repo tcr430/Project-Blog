@@ -13,17 +13,23 @@ Writing and business goals:
 - natural, human, warm, editorial voice
 - practical and useful (not generic filler)
 - SEO-aware with clear search intent alignment
-- suitable for affiliate integration later
+- suitable for monetization that matches the article intent rather than forcing the same product rhythm everywhere
 - suitable for Pinterest distribution
 - clear for mainstream readers
 - no robotic phrasing
 - no exaggerated marketing language
 - no mention of AI
+- sound like a recognizable publication with a calm editorial point of view, not just a technically correct article
+- let the article feel shaped by one clear subtopic and editorial angle rather than a loose list of generic tips
+- make each section move the reader forward through a coherent decor problem, styling choice, or decision path
 
 Mandatory article structure:
 - introduction
 - 5 main sections
+- short FAQ near the end
 - conclusion
+- The exact section rhythm should follow the angle-specific brief provided separately.
+- Keep the introduction unheaded, use H2 for the 5 main sections, and reserve H3 for useful support inside sections or FAQ questions.
 
 Word and depth guidance:
 - Introduction: 120-180 words
@@ -37,6 +43,7 @@ Section quality requirements (each of the 5 sections):
 - provide practical application advice readers can use at home
 - mention colors, materials, textures, or room context where relevant
 - include enough explanation to avoid thin content
+- let the section type change with the angle; some sections may read more like comparisons, corrections, or implementation steps as long as they stay natural
 
 Style rules:
 - vary sentence length and openings
@@ -44,6 +51,9 @@ Style rules:
 - keep paragraphs readable
 - avoid repetition across sections
 - do not pad with filler
+- make the title feel polished, specific, and tasteful rather than hype-driven
+- make the introduction feel article-specific, with a quick editorial read on why this topic matters in a real home
+- make the conclusion feel lightly edited and decisive, with one grounded takeaway instead of a generic recap
 - let section headings feel specific to the topic, room, or styling problem rather than overly broad
 - keep SEO language natural; avoid stiff exact-match repetition
 - mention supporting search phrases only where they fit smoothly into the advice

@@ -83,7 +83,7 @@ def load_metadata(metadata_path: Path) -> dict[str, Any]:
     return data
 
 
-def validate_metadata(data: dict[str, Any]) -> tuple[str, str, list[str]]:
+def validate_metadata(data: dict[str, Any]) -> tuple[str, str, list[str], dict[str, Any]]:
     required = ["slug", "hero_image_prompt", "section_image_prompts"]
     missing = [field for field in required if field not in data]
     if missing:
@@ -105,7 +105,11 @@ def validate_metadata(data: dict[str, Any]) -> tuple[str, str, list[str]]:
     if not section_prompts:
         raise ValueError("section_image_prompts cannot be empty.")
 
-    return slug, hero_prompt, section_prompts
+    diagnostics = data.get("image_prompt_diagnostics", {})
+    if not isinstance(diagnostics, dict):
+        diagnostics = {}
+
+    return slug, hero_prompt, section_prompts, diagnostics
 
 
 def build_image_cache_path(slug: str) -> Path:
@@ -404,7 +408,9 @@ def generate_and_save_images_with_report(
     quality: str,
 ) -> tuple[list[Path], dict[str, Any]]:
     metadata = load_metadata(metadata_path)
-    slug, hero_prompt, section_prompts = validate_metadata(metadata)
+    slug, hero_prompt, section_prompts, diagnostics = validate_metadata(metadata)
+    for warning in diagnostics.get("sameness_warnings", []) if isinstance(diagnostics, dict) else []:
+        print(f"[images][warning] {warning}")
 
     api_key = load_openai_api_key()
     client = OpenAI(api_key=api_key)

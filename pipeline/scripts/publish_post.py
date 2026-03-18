@@ -10,6 +10,8 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
+from internal_linking import build_internal_link_suggestions
+from monetization_profiles import resolve_monetization_profile
 from post_urls import build_post_relative_url
 
 
@@ -213,6 +215,11 @@ def validate_article_package(data: dict[str, Any]) -> dict[str, Any]:
         expected_count=PINTEREST_ITEM_COUNT,
     )
     affiliate_products = normalize_affiliate_products(data.get("affiliate_products", []))
+    monetization_profile = resolve_monetization_profile(
+        angle_id=str(data.get("angle_id") or "").strip(),
+        intent_id=str(data.get("intent_id") or "").strip(),
+        value=data.get("monetization_profile") if isinstance(data.get("monetization_profile"), dict) else None,
+    )
 
     if not title:
         raise ValueError("title cannot be empty.")
@@ -259,12 +266,23 @@ def validate_article_package(data: dict[str, Any]) -> dict[str, Any]:
         "pinterest_titles": pinterest_titles,
         "pinterest_descriptions": pinterest_descriptions,
         "affiliate_products": affiliate_products,
+        "monetization_profile": monetization_profile,
         "article_markdown": article_markdown,
         "author_id": author_id,
         "author_name": author_name,
         "categories": categories,
         "excerpt": excerpt,
         "featured": featured,
+        "domain_id": str(data.get("domain_id") or "").strip(),
+        "cluster_id": str(data.get("cluster_id") or "").strip(),
+        "subtopic_id": str(data.get("subtopic_id") or "").strip(),
+        "subtopic_name": str(data.get("subtopic_name") or "").strip(),
+        "angle_id": str(data.get("angle_id") or "").strip(),
+        "intent_id": str(data.get("intent_id") or "").strip(),
+        "modifier": str(data.get("modifier") or "").strip(),
+        "internal_link_suggestions": data.get("internal_link_suggestions", []) if isinstance(data.get("internal_link_suggestions"), list) else [],
+        "image_prompt_diagnostics": data.get("image_prompt_diagnostics") if isinstance(data.get("image_prompt_diagnostics"), dict) else {},
+        "visual_direction": data.get("visual_direction") if isinstance(data.get("visual_direction"), dict) else {},
     }
 
 
@@ -405,9 +423,17 @@ def extract_affiliate_products_from_markdown(article_markdown: str) -> list[dict
     return products
 
 
-def build_shop_the_look_block(affiliate_products: list[dict[str, str]], article_markdown: str = "") -> str:
+def build_shop_the_look_block(
+    affiliate_products: list[dict[str, str]],
+    article_markdown: str = "",
+    monetization_profile: dict[str, Any] | None = None,
+) -> str:
+    if monetization_profile is None:
+        profile = resolve_monetization_profile(value={"profile_id": "inspiration_blend"})
+    else:
+        profile = resolve_monetization_profile(value=monetization_profile)
     products = affiliate_products or extract_affiliate_products_from_markdown(article_markdown)
-    if not products:
+    if not products or not profile.get("shop_block_enabled", False):
         return ""
 
     rendered_urls: set[str] = set()
@@ -428,7 +454,7 @@ def build_shop_the_look_block(affiliate_products: list[dict[str, str]], article_
                     f'      <h3 class="shop-the-look-title">{yaml_escape(title)}</h3>',
                     (
                         f'      <a href="{yaml_escape(affiliate_url)}" class="shop-the-look-button" '
-                        'target="_blank" rel="nofollow sponsored noopener">View Product</a>'
+                        f'target="_blank" rel="nofollow sponsored noopener">{yaml_escape(profile.get("shop_button_label", "View Product"))}</a>'
                     ),
                     "    </div>",
                     "  </article>",
@@ -440,10 +466,10 @@ def build_shop_the_look_block(affiliate_products: list[dict[str, str]], article_
         return ""
 
     return (
-        '<section class="shop-the-look" aria-label="Shop the look">\n'
+        f'<section class="shop-the-look shop-the-look--{yaml_escape(profile.get("profile_id", "editorial_soft"))}" aria-label="Shop the look">\n'
         '  <div class="shop-the-look-header">\n'
-        "    <p class=\"shop-the-look-kicker\">Shop the Look</p>\n"
-        "    <h2>Bring the Look Home</h2>\n"
+        f'    <p class="shop-the-look-kicker">{yaml_escape(profile.get("shop_block_kicker", "Shop the Look"))}</p>\n'
+        f'    <h2>{yaml_escape(profile.get("shop_block_heading", "Bring the Look Home"))}</h2>\n'
         "  </div>\n"
         '  <div class="shop-the-look-grid">\n'
         f"{chr(10).join(product_items)}\n"
@@ -463,12 +489,64 @@ def strip_shop_the_look_block(article_markdown: str) -> str:
     return cleaned.strip() + "\n"
 
 
-def append_shop_the_look_block(article_markdown: str, affiliate_products: list[dict[str, str]]) -> str:
+def append_shop_the_look_block(
+    article_markdown: str,
+    affiliate_products: list[dict[str, str]],
+    monetization_profile: dict[str, Any] | None = None,
+) -> str:
     cleaned_markdown = strip_shop_the_look_block(article_markdown)
-    shop_block = build_shop_the_look_block(affiliate_products, article_markdown=cleaned_markdown)
+    shop_block = build_shop_the_look_block(
+        affiliate_products,
+        article_markdown=cleaned_markdown,
+        monetization_profile=monetization_profile,
+    )
     if not shop_block:
         return cleaned_markdown.rstrip() + "\n"
     return cleaned_markdown.rstrip() + "\n\n" + shop_block + "\n"
+
+
+def strip_read_next_block(article_markdown: str) -> str:
+    cleaned = re.sub(
+        r"\n*##\s+Read Next\s*\n(?:.*(?:\n|$))*?(?=\n##\s+|\n<section|\Z)",
+        "\n\n",
+        article_markdown,
+        flags=re.IGNORECASE,
+    )
+    cleaned = re.sub(r"\n{3,}", "\n\n", cleaned)
+    return cleaned.strip()
+
+
+def count_internal_markdown_links(article_markdown: str) -> int:
+    return len(re.findall(r"\[[^\]]+\]\s*\((/(?!/)[^)]+)\)", article_markdown))
+
+
+def build_read_next_block(internal_link_suggestions: list[dict[str, Any]]) -> str:
+    if not internal_link_suggestions:
+        return ""
+
+    lines = ["## Read Next", ""]
+    for suggestion in internal_link_suggestions[:3]:
+        title = str(suggestion.get("title") or "").strip()
+        permalink = str(suggestion.get("permalink") or "").strip()
+        blurb = str(suggestion.get("blurb") or "").strip()
+        if not title or not permalink:
+            continue
+        if blurb:
+            lines.append(f"- [{title}]({permalink}) — {blurb}")
+        else:
+            lines.append(f"- [{title}]({permalink})")
+
+    if len(lines) <= 2:
+        return ""
+    return "\n".join(lines)
+
+
+def append_read_next_block(article_markdown: str, internal_link_suggestions: list[dict[str, Any]]) -> str:
+    cleaned = strip_read_next_block(article_markdown)
+    read_next_block = build_read_next_block(internal_link_suggestions)
+    if not read_next_block:
+        return cleaned.rstrip() + "\n"
+    return cleaned.rstrip() + "\n\n" + read_next_block + "\n"
 
 
 def convert_product_cards_to_inline_links(
@@ -641,16 +719,23 @@ def sync_shop_the_look(post_path: str | Path, metadata_path: str | Path | None =
         raise FileNotFoundError(f"Post markdown file not found: {post_path}")
 
     affiliate_products: list[dict[str, str]] = []
+    monetization_profile: dict[str, Any] | None = None
     if metadata_path is not None:
         metadata_path = Path(metadata_path)
         if metadata_path.exists():
             metadata_raw = metadata_path.read_text(encoding="utf-8")
             metadata = json.loads(metadata_raw)
             affiliate_products = normalize_affiliate_products(metadata.get("affiliate_products", []))
+            if isinstance(metadata.get("monetization_profile"), dict):
+                monetization_profile = metadata["monetization_profile"]
 
     markdown_content = post_path.read_text(encoding="utf-8")
     frontmatter, body = split_frontmatter(markdown_content)
-    updated_body = append_shop_the_look_block(body, affiliate_products)
+    updated_body = append_shop_the_look_block(
+        body,
+        affiliate_products,
+        monetization_profile=monetization_profile,
+    )
     post_path.write_text(f"{frontmatter}{updated_body}", encoding="utf-8")
     return post_path
 
@@ -754,14 +839,21 @@ def save_article_metadata(
         published_at=published_at,
         slug=package["slug"],
     )
+    publish_date = published_at.date().isoformat()
+    published_at_iso = published_at.isoformat()
 
     payload = {
         "title": package["title"],
         "slug": package["slug"],
+        "publish_date": publish_date,
+        "published_at": published_at_iso,
         "meta_description": package["meta_description"],
+        "permalink": post_relative_url,
+        "article_relative_url": post_relative_url,
         "primary_keyword": package["primary_keyword"],
         "secondary_keywords": package["secondary_keywords"],
         "topical_cluster": package["topical_cluster"],
+        "cluster_name": package["topical_cluster"],
         "cluster_keywords": package["cluster_keywords"],
         "search_intent": package["search_intent"],
         "estimated_reading_time": package["estimated_reading_time"],
@@ -770,12 +862,15 @@ def save_article_metadata(
         "categories": package["categories"],
         "excerpt": package["excerpt"],
         "featured": package["featured"],
+        "domain_id": package.get("domain_id", ""),
+        "cluster_id": package.get("cluster_id", ""),
+        "subtopic_id": package.get("subtopic_id", ""),
+        "subtopic_name": package.get("subtopic_name", ""),
+        "angle_id": package.get("angle_id", ""),
+        "intent_id": package.get("intent_id", ""),
+        "modifier": package.get("modifier", ""),
+        "internal_link_suggestions": package.get("internal_link_suggestions", []),
         "keywords": package["keywords"],
-        "primary_keyword": package["primary_keyword"],
-        "secondary_keywords": package["secondary_keywords"],
-        "topical_cluster": package["topical_cluster"],
-        "cluster_keywords": package["cluster_keywords"],
-        "search_intent": package["search_intent"],
         "hero_image_prompt": package["hero_image_prompt"],
         "section_image_prompts": package["section_image_prompts"],
         "hero_image_path": build_image_url(slug=package["slug"], filename="hero.png"),
@@ -784,8 +879,10 @@ def save_article_metadata(
         "section_image_alts": section_image_alts,
         "pinterest_titles": package["pinterest_titles"],
         "pinterest_descriptions": package["pinterest_descriptions"],
+        "visual_direction": package.get("visual_direction", {}),
+        "image_prompt_diagnostics": package.get("image_prompt_diagnostics", {}),
         "affiliate_products": package.get("affiliate_products", []),
-        "article_relative_url": post_relative_url,
+        "monetization_profile": package.get("monetization_profile", {}),
         "faq_items": package.get("faq_items", []),
         "post_path": str(post_path),
         "updated_at": datetime.now().isoformat(),
@@ -824,9 +921,23 @@ def publish_post_from_package_file(package_json_path: str | Path) -> dict[str, P
         article_markdown=markdown_body,
         affiliate_products=package.get("affiliate_products", []),
     )
+    if count_internal_markdown_links(markdown_body) < 2:
+        internal_link_suggestions = package.get("internal_link_suggestions", [])
+        if not internal_link_suggestions:
+            internal_link_suggestions = build_internal_link_suggestions(
+                topic_context=package,
+                article_title=package["title"],
+                article_slug=package["slug"],
+                limit=4,
+            )
+        markdown_body = append_read_next_block(
+            article_markdown=markdown_body,
+            internal_link_suggestions=internal_link_suggestions,
+        )
     markdown_body = append_shop_the_look_block(
         article_markdown=markdown_body,
         affiliate_products=package.get("affiliate_products", []),
+        monetization_profile=package.get("monetization_profile", {}),
     )
     markdown_body = markdown_body.rstrip() + "\n"
     faq_items = extract_faq_items(markdown_body)
