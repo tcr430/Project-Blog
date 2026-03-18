@@ -21824,5 +21824,405 @@
         "natural"
       ]
     }
-  ]
+  ],
+  "compatibility_model": {
+    "default_classification": "valid",
+    "space_taxonomy": [
+      {
+        "space_id": "living_room",
+        "category": "room",
+        "match_terms": [
+          "living room",
+          "family room"
+        ],
+        "tags": [
+          "interior",
+          "social",
+          "anchor_furniture_ok",
+          "wall_mount_ok"
+        ]
+      },
+      {
+        "space_id": "bedroom",
+        "category": "room",
+        "match_terms": [
+          "bedroom",
+          "guest bedroom",
+          "nursery"
+        ],
+        "tags": [
+          "interior",
+          "sleep_zone",
+          "compact",
+          "wall_mount_ok"
+        ]
+      },
+      {
+        "space_id": "kitchen",
+        "category": "room",
+        "match_terms": [
+          "kitchen"
+        ],
+        "tags": [
+          "interior",
+          "utility",
+          "social"
+        ]
+      },
+      {
+        "space_id": "dining_room",
+        "category": "room",
+        "match_terms": [
+          "dining room"
+        ],
+        "tags": [
+          "interior",
+          "social"
+        ]
+      },
+      {
+        "space_id": "bathroom",
+        "category": "room",
+        "match_terms": [
+          "bathroom"
+        ],
+        "tags": [
+          "interior",
+          "wet_zone",
+          "compact"
+        ]
+      },
+      {
+        "space_id": "laundry_room",
+        "category": "room",
+        "match_terms": [
+          "laundry room"
+        ],
+        "tags": [
+          "interior",
+          "wet_zone",
+          "utility",
+          "compact"
+        ]
+      },
+      {
+        "space_id": "entryway",
+        "category": "space_context",
+        "match_terms": [
+          "entryway"
+        ],
+        "tags": [
+          "interior",
+          "circulation",
+          "compact",
+          "display_ok"
+        ]
+      },
+      {
+        "space_id": "home_office",
+        "category": "room",
+        "match_terms": [
+          "home office"
+        ],
+        "tags": [
+          "interior",
+          "work_zone"
+        ]
+      },
+      {
+        "space_id": "small_apartment",
+        "category": "space_context",
+        "match_terms": [
+          "small apartment"
+        ],
+        "tags": [
+          "interior",
+          "compact",
+          "multi_use"
+        ]
+      },
+      {
+        "space_id": "studio_apartment",
+        "category": "space_context",
+        "match_terms": [
+          "studio apartment"
+        ],
+        "tags": [
+          "interior",
+          "compact",
+          "multi_use"
+        ]
+      },
+      {
+        "space_id": "nook",
+        "category": "space_context",
+        "match_terms": [
+          "nook",
+          "dining nook",
+          "reading nook"
+        ],
+        "tags": [
+          "interior",
+          "compact",
+          "specialized"
+        ]
+      },
+      {
+        "space_id": "patio",
+        "category": "space_context",
+        "match_terms": [
+          "patio"
+        ],
+        "tags": [
+          "outdoor",
+          "semi_outdoor",
+          "social"
+        ]
+      },
+      {
+        "space_id": "balcony",
+        "category": "space_context",
+        "match_terms": [
+          "balcony"
+        ],
+        "tags": [
+          "outdoor",
+          "semi_outdoor",
+          "compact"
+        ]
+      }
+    ],
+    "feature_taxonomy": [
+      {
+        "feature_id": "storage",
+        "feature_family": "storage",
+        "match_terms": [
+          "storage",
+          "organization"
+        ],
+        "tags": [
+          "flexible_storage",
+          "organization"
+        ]
+      },
+      {
+        "feature_id": "shelving",
+        "feature_family": "storage",
+        "match_terms": [
+          "shelving",
+          "shelf",
+          "shelves"
+        ],
+        "tags": [
+          "vertical_storage",
+          "display",
+          "fixed_or_mounted"
+        ]
+      },
+      {
+        "feature_id": "hidden_storage",
+        "feature_family": "storage",
+        "match_terms": [
+          "hidden storage"
+        ],
+        "tags": [
+          "concealed_storage",
+          "flexible_storage"
+        ]
+      },
+      {
+        "feature_id": "wall_decor",
+        "feature_family": "wall_decor",
+        "match_terms": [
+          "wall decor"
+        ],
+        "tags": [
+          "wall_surface",
+          "display"
+        ]
+      },
+      {
+        "feature_id": "art_placement",
+        "feature_family": "wall_decor",
+        "match_terms": [
+          "art placement",
+          "gallery wall",
+          "oversized art",
+          "mirrors"
+        ],
+        "tags": [
+          "wall_surface",
+          "display",
+          "mounted_art"
+        ]
+      },
+      {
+        "feature_id": "window_treatments",
+        "feature_family": "window_treatments",
+        "match_terms": [
+          "window treatment ideas",
+          "window treatments",
+          "curtain styling",
+          "curtains",
+          "curtain rods",
+          "curtain rod"
+        ],
+        "tags": [
+          "window_focused",
+          "privacy",
+          "soft_furnishing"
+        ]
+      },
+      {
+        "feature_id": "rug_styling",
+        "feature_family": "textiles",
+        "match_terms": [
+          "rug styling",
+          "rugs",
+          "rug"
+        ],
+        "tags": [
+          "floor_textile",
+          "soft_furnishing"
+        ]
+      },
+      {
+        "feature_id": "coffee_table",
+        "feature_family": "tables",
+        "match_terms": [
+          "coffee table styling",
+          "coffee table"
+        ],
+        "tags": [
+          "anchor_furniture",
+          "bulky_anchor"
+        ]
+      },
+      {
+        "feature_id": "decor_layering",
+        "feature_family": "styling",
+        "match_terms": [
+          "decor layering",
+          "layering"
+        ],
+        "tags": [
+          "styling",
+          "accessories"
+        ]
+      },
+      {
+        "feature_id": "lighting",
+        "feature_family": "lighting",
+        "match_terms": [
+          "lighting",
+          "lamp",
+          "sconce",
+          "pendant"
+        ],
+        "tags": [
+          "fixture",
+          "ambient"
+        ]
+      },
+      {
+        "feature_id": "furniture",
+        "feature_family": "furniture",
+        "match_terms": [
+          "furniture"
+        ],
+        "tags": [
+          "anchor_furniture",
+          "variable_scale"
+        ]
+      }
+    ],
+    "hard_invalid_rules": [
+      {
+        "rule_id": "bathroom_coffee_table",
+        "space_ids_any": [
+          "bathroom"
+        ],
+        "feature_ids_any": [
+          "coffee_table"
+        ],
+        "classification": "invalid",
+        "reason": "Coffee table styling is not a realistic or useful bathroom decor concept."
+      },
+      {
+        "rule_id": "laundry_room_coffee_table",
+        "space_ids_any": [
+          "laundry_room"
+        ],
+        "feature_ids_any": [
+          "coffee_table"
+        ],
+        "classification": "invalid",
+        "reason": "Coffee table styling is not a realistic or useful laundry room decor concept."
+      }
+    ],
+    "contextual_rules": [
+      {
+        "rule_id": "outdoor_fixed_or_wall_features",
+        "space_tags_any": [
+          "outdoor"
+        ],
+        "feature_tags_any": [
+          "vertical_storage",
+          "fixed_or_mounted",
+          "wall_surface",
+          "mounted_art"
+        ],
+        "classification": "valid_with_constraints",
+        "reason": "Outdoor and semi-outdoor spaces can use these features, but the content should address mounting, exposure, and weather-safe materials."
+      },
+      {
+        "rule_id": "outdoor_window_treatments",
+        "space_tags_any": [
+          "outdoor"
+        ],
+        "feature_family_any": [
+          "window_treatments"
+        ],
+        "classification": "soft_warn",
+        "reason": "Outdoor privacy or shade topics can work, but they are narrower and should be framed around renter-friendly, screening, or durability constraints."
+      },
+      {
+        "rule_id": "wet_zone_soft_furnishings",
+        "space_tags_any": [
+          "wet_zone"
+        ],
+        "feature_tags_any": [
+          "soft_furnishing",
+          "floor_textile",
+          "privacy"
+        ],
+        "classification": "valid_with_constraints",
+        "reason": "Wet-zone spaces can support these features, but the framing should address moisture resistance, maintenance, or practicality."
+      },
+      {
+        "rule_id": "compact_anchor_furniture",
+        "space_tags_any": [
+          "compact",
+          "multi_use"
+        ],
+        "feature_tags_any": [
+          "anchor_furniture"
+        ],
+        "classification": "valid_with_constraints",
+        "reason": "Compact living contexts can cover larger furniture, but the concept should stay size-aware and practical."
+      },
+      {
+        "rule_id": "circulation_bulky_anchor",
+        "space_tags_any": [
+          "circulation",
+          "compact"
+        ],
+        "feature_tags_any": [
+          "bulky_anchor"
+        ],
+        "classification": "soft_warn",
+        "reason": "Bulky anchor furniture in circulation-heavy spaces is possible but usually needs unusually careful framing to avoid awkward guidance."
+      }
+    ]
+  }
 }

@@ -22,6 +22,7 @@ from monetization_profiles import (
     resolve_affiliate_section_indexes,
     resolve_monetization_profile,
 )
+from normalize_keyword_phrase import normalize_phrase, normalize_title
 from topic_clusters import TopicCandidate, build_manual_topic_candidate, normalize_text as normalize_topic_text
 from validate_article_concept import ConceptValidationError, ensure_valid_article_concept
 
@@ -340,6 +341,45 @@ def normalize_topic_candidate(topic_context: TopicCandidate | dict[str, Any] | N
             explicit_intent_id=topic_context.get("intent_id", ""),
         )
     )
+
+    normalized["primary_keyword"] = normalize_phrase(
+        normalized["primary_keyword"] or trend,
+        cluster=normalized["trend_cluster"],
+        subtopic=normalized["subtopic_name"],
+        angle=normalized["angle_id"],
+    )
+    normalized["trend_keyword"] = normalize_phrase(
+        normalized["trend_keyword"] or normalized["primary_keyword"] or trend,
+        cluster=normalized["trend_cluster"],
+        subtopic=normalized["subtopic_name"],
+        angle=normalized["angle_id"],
+    )
+    normalized["secondary_keywords"] = list(
+        dict.fromkeys(
+            normalize_phrase(
+                item,
+                cluster=normalized["trend_cluster"],
+                subtopic=normalized["subtopic_name"],
+                angle=normalized["angle_id"],
+            )
+            for item in normalized["secondary_keywords"]
+        )
+    )
+    normalized["secondary_keywords"] = [
+        item for item in normalized["secondary_keywords"] if item and item != normalized["primary_keyword"]
+    ]
+    normalized["cluster_keywords"] = list(
+        dict.fromkeys(
+            normalize_phrase(
+                item,
+                cluster=normalized["trend_cluster"],
+                subtopic=normalized["subtopic_name"],
+                angle=normalized["angle_id"],
+            )
+            for item in normalized["cluster_keywords"]
+        )
+    )
+    normalized["cluster_keywords"] = [item for item in normalized["cluster_keywords"] if item]
 
     if not normalized["cluster_keywords"]:
         normalized["cluster_keywords"] = [
@@ -861,7 +901,17 @@ def count_words(text: str) -> int:
 
 
 def extract_main_headings(article_markdown: str) -> list[str]:
-    return [match.group(1).strip() for match in re.finditer(r"(?m)^##\s+(.+)$", article_markdown)]
+    headings: list[str] = []
+    for match in re.finditer(r"(?m)^##\s+(.+)$", article_markdown):
+        full_heading = match.group(0)
+        if (
+            is_intro_section_heading(full_heading)
+            or is_conclusion_section_heading(full_heading)
+            or is_faq_section_heading(full_heading)
+        ):
+            continue
+        headings.append(match.group(1).strip())
+    return headings
 
 
 def extract_urls(text: str) -> set[str]:
@@ -981,11 +1031,18 @@ def is_conclusion_section_heading(heading_text: str) -> bool:
     )
 
 
+def is_faq_section_heading(heading_text: str) -> bool:
+    normalized = normalize_section_heading(heading_text)
+    return normalized in {"faq", "frequently asked questions"} or normalized.startswith("faq ")
+
+
 def split_main_sections(article_markdown: str) -> list[str]:
     heading_matches = [
         match
         for match in re.finditer(r"(?m)^##\s+.+$", article_markdown)
-        if not is_intro_section_heading(match.group(0)) and not is_conclusion_section_heading(match.group(0))
+        if not is_intro_section_heading(match.group(0))
+        and not is_conclusion_section_heading(match.group(0))
+        and not is_faq_section_heading(match.group(0))
     ]
     if len(heading_matches) < SECTION_COUNT:
         return []
@@ -1308,7 +1365,11 @@ def normalize_and_validate(
     if missing:
         raise ValueError(f"Missing required fields: {', '.join(missing)}")
 
-    title = str(payload["title"]).strip()
+    title = normalize_title(
+        str(payload["title"]).strip(),
+        primary_keyword=topic_context["primary_keyword"],
+        angle=str(topic_context.get("angle_id", "")),
+    )
     slug = str(payload["slug"]).strip()
     meta_description = str(payload["meta_description"]).strip()
     article_markdown = str(payload["article_markdown"]).strip()
@@ -1333,7 +1394,7 @@ def normalize_and_validate(
     if not slug:
         slug = slugify(title)
     else:
-        slug = slugify(slug)
+        slug = slugify(normalize_title(slug, primary_keyword=topic_context["primary_keyword"], angle=str(topic_context.get("angle_id", ""))))
 
     word_count = count_words(article_markdown)
     if word_count < MIN_WORDS or word_count > MAX_WORDS:
@@ -1481,9 +1542,15 @@ def generate_article_package_with_report(
     selected_products = validate_products(selected_products)
     selected_products = limit_products_for_profile(selected_products, monetization_profile)
     try:
-        ensure_valid_article_concept(normalized_topic_context)
+        concept_validation = ensure_valid_article_concept(normalized_topic_context)
     except ConceptValidationError as exc:
         raise RuntimeError(f"Article concept validation failed: {exc}") from exc
+    if concept_validation["compatibility_class"] in {"valid_with_constraints", "soft_warn"}:
+        warning_text = "; ".join(concept_validation["warnings"]) or "Context-sensitive concept."
+        print(
+            f"[article][compatibility][{concept_validation['compatibility_class']}] "
+            f"{normalized_topic_context['primary_keyword']}: {warning_text}"
+        )
 
     minimum_products = int(monetization_profile.get("min_products_to_enable") or 0)
     if len(selected_products) < minimum_products:

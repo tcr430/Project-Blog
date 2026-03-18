@@ -17,6 +17,7 @@ from editorial_mix import (
     round_selection_mix_bonus,
 )
 from generate_content_plan import summarize_capacity_state
+from normalize_keyword_phrase import normalize_phrase
 from trend_history import DEFAULT_NON_SEASONAL_COOLDOWN_DAYS, is_trend_allowed, load_trend_history
 from validate_article_concept import filter_valid_article_concepts
 
@@ -41,6 +42,9 @@ class TrendCandidate(TypedDict):
     modifier: str
     editorial_mix_primary: str
     editorial_mix_tags: list[str]
+    compatibility_class: str
+    compatibility_warnings: list[str]
+    compatibility_diagnostics: list[dict[str, Any]]
 
 
 class ScoredTrend(TrendCandidate):
@@ -102,6 +106,17 @@ DEFAULT_PINTEREST_SIGNALS_FILE = Path(__file__).resolve().parents[1] / "reports"
 DEFAULT_PINTEREST_INTELLIGENCE_FILE = Path(__file__).resolve().parents[1] / "reports" / "pinterest_intelligence_report.json"
 DEFAULT_CLUSTER_INDEX_FILE = Path(__file__).resolve().parents[1] / "data" / "article_cluster_index.json"
 
+SEASONAL_WINDOWS = {
+    "spring": ((2, 15), (6, 15)),
+    "summer": ((5, 15), (9, 15)),
+    "fall": ((8, 15), (11, 30)),
+    "winter": ((11, 15), (2, 15)),
+}
+
+HOLIDAY_WINDOWS = {
+    "christmas": ((10, 15), (1, 7)),
+}
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
@@ -144,6 +159,57 @@ def parse_int(value: Any) -> int:
         return int(float(value))
     except (TypeError, ValueError):
         return 0
+
+
+def month_day_key(month: int, day: int) -> int:
+    return month * 100 + day
+
+
+def is_date_within_window(now: datetime, start: tuple[int, int], end: tuple[int, int]) -> bool:
+    current = month_day_key(now.month, now.day)
+    start_key = month_day_key(*start)
+    end_key = month_day_key(*end)
+    if start_key <= end_key:
+        return start_key <= current <= end_key
+    return current >= start_key or current <= end_key
+
+
+def is_candidate_in_season(candidate: TrendCandidate, now: datetime) -> bool:
+    season = normalize_identifier(candidate.get("season", ""))
+    holiday = normalize_identifier(candidate.get("holiday", ""))
+
+    if holiday:
+        window = HOLIDAY_WINDOWS.get(holiday)
+        if not window:
+            return False
+        return is_date_within_window(now, window[0], window[1])
+
+    if season:
+        window = SEASONAL_WINDOWS.get(season)
+        if not window:
+            return False
+        return is_date_within_window(now, window[0], window[1])
+
+    return True
+
+
+def filter_out_of_season_candidates(
+    candidates: list[TrendCandidate],
+    *,
+    now: datetime,
+) -> list[TrendCandidate]:
+    allowed: list[TrendCandidate] = []
+    for candidate in candidates:
+        if is_candidate_in_season(candidate, now):
+            allowed.append(candidate)
+            continue
+
+        seasonal_label = candidate["holiday"] or candidate["season"] or "seasonal"
+        print(
+            f"[seasonality][reject] {candidate['primary_keyword']}: "
+            f"'{seasonal_label}' is outside the current publishing window."
+        )
+    return allowed
 
 
 def tokenize(value: Any) -> set[str]:
@@ -208,6 +274,44 @@ def normalize_candidate(raw: dict[str, Any]) -> TrendCandidate:
     if not cluster_keywords:
         cluster_keywords = [primary_keyword, *secondary_keywords]
 
+    subtopic_name = normalize_text(raw.get("subtopic_name", ""))
+    primary_keyword = normalize_phrase(
+        primary_keyword,
+        cluster=cluster,
+        subtopic=subtopic_name,
+        angle=angle_id,
+    )
+    keyword = normalize_phrase(
+        keyword or primary_keyword,
+        cluster=cluster,
+        subtopic=subtopic_name,
+        angle=angle_id,
+    )
+    secondary_keywords = list(
+        dict.fromkeys(
+            normalize_phrase(
+                item,
+                cluster=cluster,
+                subtopic=subtopic_name,
+                angle=angle_id,
+            )
+            for item in secondary_keywords
+        )
+    )
+    secondary_keywords = [item for item in secondary_keywords if item and item != primary_keyword]
+    cluster_keywords = list(
+        dict.fromkeys(
+            normalize_phrase(
+                item,
+                cluster=cluster,
+                subtopic=subtopic_name,
+                angle=angle_id,
+            )
+            for item in cluster_keywords
+        )
+    )
+    cluster_keywords = [item for item in cluster_keywords if item]
+
     return {
         "domain_id": normalize_identifier(raw.get("domain_id", "")),
         "cluster_id": normalize_identifier(raw.get("cluster_id", "")),
@@ -223,11 +327,14 @@ def normalize_candidate(raw: dict[str, Any]) -> TrendCandidate:
         "source": source,
         "pinterest_trend_score": parse_int(raw.get("pinterest_trend_score")),
         "subtopic_id": normalize_identifier(raw.get("subtopic_id", "")),
-        "subtopic_name": normalize_text(raw.get("subtopic_name", "")),
+        "subtopic_name": subtopic_name,
         "angle_id": angle_id,
         "modifier": normalize_text(raw.get("modifier", "")),
         "editorial_mix_primary": "",
         "editorial_mix_tags": [],
+        "compatibility_class": "valid",
+        "compatibility_warnings": [],
+        "compatibility_diagnostics": [],
     }
 
 
@@ -616,6 +723,14 @@ def score_candidate(candidate: TrendCandidate) -> tuple[int, list[str]]:
             score += trend_points
             notes.append(f"source: Pinterest trend strength (+{trend_points})")
 
+    compatibility_class = candidate.get("compatibility_class") or "valid"
+    if compatibility_class == "valid_with_constraints":
+        score -= 4
+        notes.append("compatibility: usable with constraints, slightly reduced priority (-4)")
+    elif compatibility_class == "soft_warn":
+        score -= 10
+        notes.append("compatibility: context-sensitive concept, reduced priority (-10)")
+
     return score, notes
 
 
@@ -961,6 +1076,7 @@ def select_top_trends(
         now=current_time,
         cooldown_days=cooldown_days,
     )
+    allowed = filter_out_of_season_candidates(allowed, now=current_time)
     cluster_governance_map = build_cluster_governance_map(selected_cluster_index_path)
     editorial_mix_rules = load_editorial_mix_rules()
     editorial_mix_state = build_recent_editorial_mix_state(

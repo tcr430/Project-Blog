@@ -5,6 +5,7 @@ from functools import lru_cache
 from pathlib import Path
 from typing import Any, TypedDict
 
+from normalize_keyword_phrase import normalize_phrase
 from topic_clusters import normalize_text
 
 DATA_DIR = Path(__file__).resolve().parents[1] / "data"
@@ -343,7 +344,13 @@ def build_cluster_keyword_pool(cluster: ContentCluster) -> list[str]:
     keywords: list[str] = list(cluster["seed_keywords"])
     for subtopic in cluster["subtopics"]:
         for template in subtopic.get("templates", {}).values():
-            keywords.append(render_template(str(template), cluster))
+            keywords.append(
+                normalize_phrase(
+                    render_template(str(template), cluster),
+                    cluster=cluster["cluster_name"],
+                    subtopic=subtopic["subtopic_name"],
+                )
+            )
         keywords.extend(subtopic.get("keyword_seeds", []))
     return list(dict.fromkeys(keyword for keyword in keywords if keyword))
 
@@ -358,7 +365,12 @@ def build_article_concepts() -> list[ArticleConcept]:
                 template = templates.get(angle_id)
                 if not template:
                     continue
-                primary_keyword = render_template(str(template), cluster)
+                primary_keyword = normalize_phrase(
+                    render_template(str(template), cluster),
+                    cluster=cluster["cluster_name"],
+                    subtopic=subtopic["subtopic_name"],
+                    angle=angle_id,
+                )
                 secondary_keywords = [keyword for keyword in keyword_pool if keyword != primary_keyword][:4]
                 concepts.append(
                     {
