@@ -1,7 +1,13 @@
 [
   {
     "article_slug": "linen-boucle-texture-mix",
+    "cluster_id": "",
+    "subtopic_id": "",
+    "angle_id": "",
+    "intent_id": "",
+    "visual_direction": {},
     "variant_type": "trend_overview",
+    "style_name": "",
     "board": {
       "key": "default",
       "name": "Home Decor Inspiration"
@@ -28,7 +34,13 @@
   },
   {
     "article_slug": "linen-boucle-texture-mix",
+    "cluster_id": "",
+    "subtopic_id": "",
+    "angle_id": "",
+    "intent_id": "",
+    "visual_direction": {},
     "variant_type": "practical_tips",
+    "style_name": "",
     "board": {
       "key": "default",
       "name": "Home Decor Inspiration"
@@ -55,7 +67,13 @@
   },
   {
     "article_slug": "linen-boucle-texture-mix",
+    "cluster_id": "",
+    "subtopic_id": "",
+    "angle_id": "",
+    "intent_id": "",
+    "visual_direction": {},
     "variant_type": "product_led",
+    "style_name": "",
     "board": {
       "key": "home_products",
       "name": "Home Finds & Decor Picks"
@@ -82,7 +100,13 @@
   },
   {
     "article_slug": "linen-boucle-texture-mix",
+    "cluster_id": "",
+    "subtopic_id": "",
+    "angle_id": "",
+    "intent_id": "",
+    "visual_direction": {},
     "variant_type": "styling_angle",
+    "style_name": "",
     "board": {
       "key": "default",
       "name": "Home Decor Inspiration"
@@ -109,7 +133,13 @@
   },
   {
     "article_slug": "small-apartment-dining-nooks-cozy-corner-trend",
+    "cluster_id": "",
+    "subtopic_id": "",
+    "angle_id": "",
+    "intent_id": "",
+    "visual_direction": {},
     "variant_type": "trend_overview",
+    "style_name": "",
     "board": {
       "key": "decor_trends",
       "name": "Interior Design Trends"
@@ -136,7 +166,13 @@
   },
   {
     "article_slug": "small-apartment-dining-nooks-cozy-corner-trend",
+    "cluster_id": "",
+    "subtopic_id": "",
+    "angle_id": "",
+    "intent_id": "",
+    "visual_direction": {},
     "variant_type": "practical_tips",
+    "style_name": "",
     "board": {
       "key": "default",
       "name": "Home Decor Inspiration"
@@ -163,7 +199,13 @@
   },
   {
     "article_slug": "small-apartment-dining-nooks-cozy-corner-trend",
+    "cluster_id": "",
+    "subtopic_id": "",
+    "angle_id": "",
+    "intent_id": "",
+    "visual_direction": {},
     "variant_type": "product_led",
+    "style_name": "",
     "board": {
       "key": "home_products",
       "name": "Home Finds & Decor Picks"
@@ -190,7 +232,13 @@
   },
   {
     "article_slug": "small-apartment-dining-nooks-cozy-corner-trend",
+    "cluster_id": "",
+    "subtopic_id": "",
+    "angle_id": "",
+    "intent_id": "",
+    "visual_direction": {},
     "variant_type": "styling_angle",
+    "style_name": "",
     "board": {
       "key": "default",
       "name": "Home Decor Inspiration"
@@ -202,8 +250,8 @@
     "created_at": "2026-03-13T19:25:39.010884+00:00",
     "scheduled_for": "2026-03-17T19:25:39.010884+00:00",
     "published_at": null,
-    "status": "scheduled",
-    "error_message": null,
+    "status": "failed",
+    "error_message": "Pinterest API error (403): {\"code\":29,\"message\":\"Apps with Trial access may not create Pins in production https://api.pinterest.com - use API Sandbox https://api-sandbox.pinterest.com instead.\"}",
     "provider_mode": "queue",
     "provider_pin_id": null,
     "priority_score": 0.0,
@@ -217,7 +265,13 @@
   },
   {
     "article_slug": "organic-modern-living-room",
+    "cluster_id": "",
+    "subtopic_id": "",
+    "angle_id": "",
+    "intent_id": "",
+    "visual_direction": {},
     "variant_type": "trend_overview",
+    "style_name": "",
     "board": {
       "key": "default",
       "name": "Home Decor Inspiration"
@@ -244,7 +298,13 @@
   },
   {
     "article_slug": "organic-modern-living-room",
+    "cluster_id": "",
+    "subtopic_id": "",
+    "angle_id": "",
+    "intent_id": "",
+    "visual_direction": {},
     "variant_type": "practical_tips",
+    "style_name": "",
     "board": {
       "key": "living_room",
       "name": "Living Room Styling"
@@ -271,7 +331,13 @@
   },
   {
     "article_slug": "organic-modern-living-room",
+    "cluster_id": "",
+    "subtopic_id": "",
+    "angle_id": "",
+    "intent_id": "",
+    "visual_direction": {},
     "variant_type": "product_led",
+    "style_name": "",
     "board": {
       "key": "living_room",
       "name": "Living Room Styling"
@@ -298,7 +364,13 @@
   },
   {
     "article_slug": "organic-modern-living-room",
+    "cluster_id": "",
+    "subtopic_id": "",
+    "angle_id": "",
+    "intent_id": "",
+    "visual_direction": {},
     "variant_type": "styling_angle",
+    "style_name": "",
     "board": {
       "key": "living_room",
       "name": "Living Room Styling"
@@ -310,8 +382,8 @@
     "created_at": "2026-03-13T20:26:17.488052+00:00",
     "scheduled_for": "2026-03-17T20:26:17.488052+00:00",
     "published_at": null,
-    "status": "scheduled",
-    "error_message": null,
+    "status": "failed",
+    "error_message": "Pinterest API error (403): {\"code\":29,\"message\":\"Apps with Trial access may not create Pins in production https://api.pinterest.com - use API Sandbox https://api-sandbox.pinterest.com instead.\"}",
     "provider_mode": "queue",
     "provider_pin_id": null,
     "priority_score": 0.0,
@@ -325,7 +397,13 @@
   },
   {
     "article_slug": "spring-living-room-styling-ideas-fresh-minimalism",
+    "cluster_id": "",
+    "subtopic_id": "",
+    "angle_id": "",
+    "intent_id": "",
+    "visual_direction": {},
     "variant_type": "trend_overview",
+    "style_name": "",
     "board": {
       "key": "living_room",
       "name": "Living Room Styling"
@@ -352,7 +430,13 @@
   },
   {
     "article_slug": "spring-living-room-styling-ideas-fresh-minimalism",
+    "cluster_id": "",
+    "subtopic_id": "",
+    "angle_id": "",
+    "intent_id": "",
+    "visual_direction": {},
     "variant_type": "practical_tips",
+    "style_name": "",
     "board": {
       "key": "living_room",
       "name": "Living Room Styling"
@@ -379,7 +463,13 @@
   },
   {
     "article_slug": "spring-living-room-styling-ideas-fresh-minimalism",
+    "cluster_id": "",
+    "subtopic_id": "",
+    "angle_id": "",
+    "intent_id": "",
+    "visual_direction": {},
     "variant_type": "product_led",
+    "style_name": "",
     "board": {
       "key": "home_products",
       "name": "Home Finds & Decor Picks"
@@ -391,8 +481,8 @@
     "created_at": "2026-03-15T20:57:03.587209+00:00",
     "scheduled_for": "2026-03-17T20:57:03.587209+00:00",
     "published_at": null,
-    "status": "scheduled",
-    "error_message": null,
+    "status": "failed",
+    "error_message": "Pinterest API error (403): {\"code\":29,\"message\":\"Apps with Trial access may not create Pins in production https://api.pinterest.com - use API Sandbox https://api-sandbox.pinterest.com instead.\"}",
     "provider_mode": "queue",
     "provider_pin_id": null,
     "priority_score": 0.0,
@@ -433,7 +523,13 @@
   },
   {
     "article_slug": "best-curtain-styling-for-bedroom-mistakes-fixes",
+    "cluster_id": "",
+    "subtopic_id": "",
+    "angle_id": "",
+    "intent_id": "",
+    "visual_direction": {},
     "variant_type": "trend_overview",
+    "style_name": "",
     "board": {
       "key": "bedroom",
       "name": "Bedroom Retreat Ideas"
@@ -460,7 +556,13 @@
   },
   {
     "article_slug": "best-curtain-styling-for-bedroom-mistakes-fixes",
+    "cluster_id": "",
+    "subtopic_id": "",
+    "angle_id": "",
+    "intent_id": "",
+    "visual_direction": {},
     "variant_type": "practical_tips",
+    "style_name": "",
     "board": {
       "key": "bedroom",
       "name": "Bedroom Retreat Ideas"
@@ -541,7 +643,13 @@
   },
   {
     "article_slug": "best-curtain-styling-for-living-room",
+    "cluster_id": "",
+    "subtopic_id": "",
+    "angle_id": "",
+    "intent_id": "",
+    "visual_direction": {},
     "variant_type": "trend_overview",
+    "style_name": "",
     "board": {
       "key": "living_room",
       "name": "Living Room Styling"
@@ -568,7 +676,13 @@
   },
   {
     "article_slug": "best-curtain-styling-for-living-room",
+    "cluster_id": "",
+    "subtopic_id": "",
+    "angle_id": "",
+    "intent_id": "",
+    "visual_direction": {},
     "variant_type": "practical_tips",
+    "style_name": "",
     "board": {
       "key": "living_room",
       "name": "Living Room Styling"
