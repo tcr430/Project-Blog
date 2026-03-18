@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-03-18T21:33:28.108656+00:00",
-  "cluster_count": 7,
+  "generated_at": "2026-03-18T22:42:57.316303+00:00",
+  "cluster_count": 6,
   "summary": {
     "hot": 0,
     "warm": 0,
     "cold": 0,
-    "no_data": 7
+    "no_data": 6
   },
   "clusters": [
     {
@@ -21,30 +21,6 @@
         "bedroom curtain styling ideas",
         "how to style curtain styling in bedroom",
         "bedroom curtain styling mistakes to avoid"
-      ],
-      "pinterest_article_count": 0,
-      "strong_article_count": 0,
-      "weak_article_count": 0,
-      "average_score": 0.0,
-      "average_outbound_clicks": 0.0,
-      "average_saves": 0.0,
-      "signal_label": "no_data",
-      "signal_boost": 0
-    },
-    {
-      "cluster_name": "holiday living room decor",
-      "article_count": 1,
-      "article_slugs": [
-        "budget-holiday-living-room-decor-ideas"
-      ],
-      "primary_keywords": [
-        "budget holiday living room decor ideas"
-      ],
-      "secondary_keywords": [
-        "holiday living room decor ideas",
-        "how to style holiday living room decor",
-        "holiday living room decor mistakes to avoid",
-        "holiday living room decor color palette"
       ],
       "pinterest_article_count": 0,
       "strong_article_count": 0,

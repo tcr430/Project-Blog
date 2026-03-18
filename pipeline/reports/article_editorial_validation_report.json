@@ -1,47 +1,4 @@
 {
   "generated_at": "2026-03-18T21:30:11.855805+00:00",
-  "articles": [
-    {
-      "article_slug": "budget-holiday-living-room-decor-ideas",
-      "cluster_id": "holiday_living_room_decor",
-      "subtopic_id": "refresh",
-      "angle_id": "budget",
-      "primary_keyword": "budget holiday living room decor ideas",
-      "validation_status": "pass",
-      "warnings": [],
-      "errors": [],
-      "checks": {
-        "generic_intro": {
-          "intro_word_count": 130,
-          "concept_overlap": 9,
-          "first_sentence": "Budget holiday living room decor ideas are all about creating a festive atmosphere that feels warm and welcoming without overspending or overdoing it."
-        },
-        "heading_quality": {
-          "heading_count": 5,
-          "vague_heading_count": 0,
-          "low_specificity_heading_count": 0,
-          "repeated_signature_count": 0,
-          "repeated_stem_count": 0,
-          "headings": [
-            "Start with a Versatile Natural Centerpiece to Ground Holiday Decor",
-            "Mix In Affordable Holiday Art and DIY Wall Decor for Color and Character",
-            "Layer Throws and Pillows to Create Cozy Nooks with Seasonal Textures",
-            "Use Small Seasonal Touches to Refresh Your Mantle with Glow and Greenery",
-            "Edit Thoughtfully and Personalize to Maintain Flow and Avoid Overcrowding"
-          ]
-        },
-        "specificity": {
-          "concept_token_hits": 15,
-          "specificity_term_hits": 7,
-          "secondary_keyword_hits": 2
-        },
-        "distinctiveness": {
-          "nearest_article_slug": "",
-          "max_similarity": 0.0,
-          "strongest_heading_overlap": 0
-        }
-      },
-      "timestamp": "2026-03-18T21:30:11.855720+00:00"
-    }
-  ]
+  "articles": []
 }

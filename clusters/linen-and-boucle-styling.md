@@ -7,7 +7,7 @@ cluster_name: "linen and boucle styling"
 cluster_slug: "linen-and-boucle-styling"
 cluster_article_count: 1
 cluster_primary_keywords: ["linen and boucle decor ideas"]
-cluster_generated_at: "2026-03-18T21:33:29.861442+00:00"
+cluster_generated_at: "2026-03-18T22:39:50.226806+00:00"
 cluster_intro: "Linen And Boucle Styling is a useful decorating topic because it combines inspiration with practical decision-making. Readers usually arrive here looking for a clear style direction, help solving a room problem, or confidence about how to make the look feel intentional at home.
 
 This pillar page brings together the site's coverage around linen and boucle styling, with article angles shaped by keyword themes such as linen and boucle decor ideas. That mix helps the page support both broader search intent and more specific decorating questions without feeling repetitive.
@@ -39,7 +39,7 @@ Material Mixes coverage for living room textures and materials. In this cluster,
 Use this section to get oriented in material mixes first, then follow the reading path below to expand into adjacent decisions.
 
 ### [Mastering the Linen and Bouclé Texture Mix for Modern Interiors](/styling%20advice/2026/03/13/linen-boucle-texture-mix/)
-*linen and boucle decor ideas*
+*2026-03-13 | linen and boucle decor ideas*
 Explore how mixing linen and bouclé textures adds depth and warmth to your home decor with expert tips on layout, material pairing, and color choices.
 [Read the full article](/styling%20advice/2026/03/13/linen-boucle-texture-mix/)
 
