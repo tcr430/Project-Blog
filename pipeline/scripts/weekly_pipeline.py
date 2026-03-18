@@ -39,6 +39,7 @@ from generate_pin_metadata import generate_pinterest_metadata
 from publish_pins import publish_or_queue_pins
 from select_trends import (
     exclude_overlapping_candidates,
+    filter_out_of_season_candidates,
     filter_recently_used,
     normalize_candidates,
     reject_invalid_and_duplicates,
@@ -545,6 +546,14 @@ def finalize_selected_trends(
         history_path=history_path,
         now=datetime.now(timezone.utc),
         cooldown_days=cooldown_days,
+    )
+    if not allowed:
+        return []
+
+    log_phase("selecting trends: removing out-of-season candidates")
+    allowed = filter_out_of_season_candidates(
+        allowed,
+        now=datetime.now(timezone.utc),
     )
     if not allowed:
         return []

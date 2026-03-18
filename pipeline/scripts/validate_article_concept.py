@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from functools import lru_cache
 from typing import Any, TypedDict
 
 from content_architecture import load_content_clusters, load_content_constraints
@@ -56,6 +57,13 @@ def _normalize_id(value: Any) -> str:
     return normalize_text(value).replace(" ", "_")
 
 
+@lru_cache(maxsize=1)
+def _get_constraints() -> dict[str, Any]:
+    constraints = load_content_constraints()
+    return constraints if isinstance(constraints, dict) else {}
+
+
+@lru_cache(maxsize=1)
 def _build_cluster_map() -> dict[str, dict[str, Any]]:
     return {
         str(cluster.get("cluster_id") or "").strip(): cluster
@@ -64,7 +72,9 @@ def _build_cluster_map() -> dict[str, dict[str, Any]]:
     }
 
 
-def _build_subtopic_map(cluster: dict[str, Any]) -> dict[str, dict[str, Any]]:
+@lru_cache(maxsize=None)
+def _build_subtopic_map(cluster_id: str) -> dict[str, dict[str, Any]]:
+    cluster = _build_cluster_map().get(cluster_id, {})
     return {
         str(subtopic.get("subtopic_id") or "").strip(): subtopic
         for subtopic in cluster.get("subtopics", [])
@@ -107,7 +117,7 @@ def _validate_cluster_subtopic_angle(topic_context: dict[str, Any], errors: list
         errors.append(f"Unknown cluster_id '{cluster_id}'.")
         return
 
-    subtopic_map = _build_subtopic_map(cluster)
+    subtopic_map = _build_subtopic_map(cluster_id)
     subtopic = subtopic_map.get(subtopic_id)
     if subtopic is None:
         errors.append(f"Subtopic '{subtopic_id}' does not belong to cluster '{cluster_id}'.")
@@ -145,6 +155,11 @@ def _validate_cluster_subtopic_angle(topic_context: dict[str, Any], errors: list
 def _get_compatibility_model(constraints: dict[str, Any]) -> dict[str, Any]:
     payload = constraints.get("compatibility_model", {})
     return payload if isinstance(payload, dict) else {}
+
+
+@lru_cache(maxsize=1)
+def _get_cached_compatibility_model() -> dict[str, Any]:
+    return _get_compatibility_model(_get_constraints())
 
 
 def _build_haystack(topic_context: dict[str, Any]) -> str:
@@ -283,8 +298,7 @@ def _match_rules(
 
 
 def _evaluate_compatibility_model(topic_context: dict[str, Any]) -> tuple[str, list[str], list[CompatibilityDiagnostic], dict[str, Any]]:
-    constraints = load_content_constraints()
-    compatibility_model = _get_compatibility_model(constraints)
+    compatibility_model = _get_cached_compatibility_model()
     ontology = _extract_ontology(topic_context, compatibility_model)
 
     diagnostics: list[CompatibilityDiagnostic] = []
@@ -325,7 +339,7 @@ def _evaluate_legacy_constraints(
     *,
     ontology: dict[str, Any],
 ) -> list[CompatibilityDiagnostic]:
-    constraints = load_content_constraints()
+    constraints = _get_constraints()
     diagnostics: list[CompatibilityDiagnostic] = []
     haystack = ontology.get("haystack") or _build_haystack(topic_context)
     modern_spaces_present = bool(ontology.get("space_ids"))

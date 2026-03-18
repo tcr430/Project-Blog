@@ -1,0 +1,125 @@
+{
+  "generated_at": "2026-03-18T22:22:38Z",
+  "current_date_context": "2026-03-18",
+  "candidate_sources": {
+    "auto_candidates": {
+      "count": 7227,
+      "seconds": 2.782
+    },
+    "architecture_concepts": {
+      "count": 7188,
+      "seconds": 2.356
+    },
+    "pinterest_trends": {
+      "candidate_count": 50,
+      "seconds": 0.021
+    },
+    "content_plan": {
+      "cluster_count": 9,
+      "seconds": 2.89
+    }
+  },
+  "validation_benchmarks": [
+    {
+      "sample_size": 50,
+      "seconds": 0.046,
+      "per_candidate_ms": 0.928
+    },
+    {
+      "sample_size": 100,
+      "seconds": 0.373,
+      "per_candidate_ms": 3.73
+    },
+    {
+      "sample_size": 200,
+      "seconds": 0.112,
+      "per_candidate_ms": 0.561
+    }
+  ],
+  "stage_breakdown": {
+    "full_normalized_count": 7227,
+    "sample_size": 200,
+    "reject_invalid_and_duplicates": {
+      "seconds": 0.108,
+      "output_count": 193
+    },
+    "exclude_overlapping_candidates": {
+      "seconds": 0.051,
+      "output_count": 186
+    },
+    "filter_recently_used": {
+      "seconds": 0.027,
+      "output_count": 186
+    },
+    "filter_out_of_season_candidates": {
+      "seconds": 0.001,
+      "output_count": 186
+    },
+    "score_candidates": {
+      "seconds": 0.005,
+      "output_count": 186
+    },
+    "select_diverse_top_trends": {
+      "seconds": 0.004,
+      "output_count": 8
+    }
+  },
+  "loader_costs": [
+    {
+      "function": "load_content_clusters",
+      "iterations": 10,
+      "seconds": 3.249,
+      "per_call_ms": 324.921
+    },
+    {
+      "function": "load_content_constraints",
+      "iterations": 10,
+      "seconds": 0.072,
+      "per_call_ms": 7.169
+    }
+  ],
+  "estimated_full_validation_seconds": 4.1,
+  "likely_hotspots": [
+    {
+      "path": "pipeline/scripts/validate_article_concept.py",
+      "area": "filter_valid_article_concepts -> validate_article_concept",
+      "status": "primary_bottleneck",
+      "evidence": [
+        "Validation dominates the 200-candidate stage breakdown.",
+        "Per-candidate validation cost rises materially with sample size.",
+        "Validation rebuilds cluster maps through load_content_clusters()."
+      ]
+    },
+    {
+      "path": "pipeline/scripts/content_architecture.py",
+      "area": "load_content_clusters",
+      "status": "expensive_dependency",
+      "evidence": [
+        "Measured at hundreds of milliseconds per call.",
+        "Called indirectly during concept validation."
+      ]
+    },
+    {
+      "path": "pipeline/scripts/generate_content_plan.py",
+      "area": "build_content_plan_outputs",
+      "status": "secondary_cost",
+      "evidence": [
+        "Noticeable runtime but far below validation cost.",
+        "Runs before weekly selection when plan-driven flow is enabled."
+      ]
+    }
+  ],
+  "conclusions": {
+    "dominant_bottleneck": "concept_validation",
+    "secondary_bottleneck": "content_plan_generation",
+    "not_primary": [
+      "candidate_fetch",
+      "pinterest_fetch",
+      "overlap_filtering",
+      "history_filtering",
+      "seasonality_filtering",
+      "final_diverse_selection"
+    ],
+    "next_step": "Optimize validation caching first, then remeasure the end-to-end weekly selection path."
+  }
+}
