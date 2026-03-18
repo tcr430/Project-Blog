@@ -1,0 +1,99 @@
+{
+  "article_title": "Budget Holiday Living Room Decor Ideas That Feel Both Festive and Fresh",
+  "article_slug": "budget-holiday-living-room-decor-ideas",
+  "article_relative_url": "/styling%20advice/2026/03/18/budget-holiday-living-room-decor-ideas/",
+  "article_url": "https://thelivinedit.com/styling%20advice/2026/03/18/budget-holiday-living-room-decor-ideas/",
+  "meta_description": "Discover budget-friendly holiday living room decor ideas that balance warmth, style, and function. Learn how to mix colors and textures for a festive yet lived-in space.",
+  "cluster_id": "holiday_living_room_decor",
+  "subtopic_id": "refresh",
+  "angle_id": "budget",
+  "intent_id": "decision_making",
+  "visual_direction": {
+    "family_id": "warm_layered",
+    "mood": "warm, tactile, layered and inviting styling",
+    "lighting": "late-morning daylight with warm reflected light",
+    "palette": "creams, camel, honey wood, soft terracotta accents",
+    "intent_id": "decision_making",
+    "profile_id": "decision_making",
+    "shot_library_id": "seasonal_styling"
+  },
+  "hero_image_path": "/assets/img/budget-holiday-living-room-decor-ideas/hero.png",
+  "site_root_url": "https://thelivinedit.com",
+  "variant_count": 4,
+  "strategy": {
+    "minimum_variant_count": 4,
+    "generated_variant_count": 4,
+    "bonus_slots": 0,
+    "ranked_variant_types": [
+      "trend_overview",
+      "practical_tips",
+      "product_led",
+      "styling_angle"
+    ],
+    "article_score": null,
+    "notes": [
+      "applying performance weighting: no historical lift yet, using balanced defaults",
+      "exploring board default",
+      "exploring board living_room"
+    ],
+    "board_config_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_boards.json"
+  },
+  "variants": [
+    {
+      "variant_key": "pin-1",
+      "variant_type": "trend_overview",
+      "style_name": "bottom-title",
+      "title": "Affordable Holiday Living Room Styling Ideas You'll Love",
+      "description": "Explore inexpensive holiday living room decor ideas to bring warmth and style without breaking the bank. Layer textures and colors for a festive feel.",
+      "image_path": "/assets/pins/budget-holiday-living-room-decor-ideas/pin-1.svg",
+      "board": {
+        "key": "default",
+        "name": "Home Decor Inspiration"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 0
+    },
+    {
+      "variant_key": "pin-2",
+      "variant_type": "practical_tips",
+      "style_name": "centered-title",
+      "title": "Budget Holiday Living Room Decor Ideas That Feel Both Festive and Fresh: Practical...",
+      "description": "Use these practical design moves to make budget holiday living room decor ideas that feel both festive and fresh feel balanced, useful, and easy to live with.",
+      "image_path": "/assets/pins/budget-holiday-living-room-decor-ideas/pin-2.svg",
+      "board": {
+        "key": "living_room",
+        "name": "Living Room Styling"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 1
+    },
+    {
+      "variant_key": "pin-3",
+      "variant_type": "product_led",
+      "style_name": "minimalist-overlay",
+      "title": "4 Pieces That Elevate Budget Holiday Living Room Decor Ideas That Feel Both Festive...",
+      "description": "Discover decor pieces and finishing details that help budget holiday living room decor ideas that feel both festive and fresh feel more intentional without looking overdone.",
+      "image_path": "/assets/pins/budget-holiday-living-room-decor-ideas/pin-3.svg",
+      "board": {
+        "key": "living_room",
+        "name": "Living Room Styling"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 2
+    },
+    {
+      "variant_key": "pin-4",
+      "variant_type": "styling_angle",
+      "style_name": "top-title",
+      "title": "How to Style Budget Holiday Living Room Decor Ideas That Feel Both Festive and Fresh...",
+      "description": "See how color, texture, and room styling can shape budget holiday living room decor ideas that feel both festive and fresh into a softer, more editorial look.",
+      "image_path": "/assets/pins/budget-holiday-living-room-decor-ideas/pin-4.svg",
+      "board": {
+        "key": "living_room",
+        "name": "Living Room Styling"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 3
+    }
+  ]
+}
