@@ -1,4 +1,94 @@
 {
-  "generated_at": "2026-03-18T21:30:11.855805+00:00",
-  "articles": []
+  "generated_at": "2026-03-18T22:46:44.298266+00:00",
+  "articles": [
+    {
+      "article_slug": "best-furniture-for-earthy-bedroom",
+      "cluster_id": "earthy_bedroom",
+      "subtopic_id": "furniture",
+      "angle_id": "best_options",
+      "primary_keyword": "best furniture for an earthy bedroom",
+      "validation_status": "pass",
+      "warnings": [],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 141,
+          "concept_overlap": 11,
+          "first_sentence": "Finding the best furniture for an earthy bedroom can feel challenging given the many natural materials, textures, and styles available."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 1,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Understanding the Core Furniture Qualities for an Earthy Bedroom",
+            "Solid Oak: A Timeless Choice Rooted in Warmth and Durability",
+            "Reclaimed Wood: Adding Character and Sustainable Edge to Earthy Bedrooms",
+            "Matching Furniture Choices to Room Size and Layout in Earthy Bedrooms",
+            "Practical Tips for Confidently Choosing Earthy Bedroom Furniture"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 13,
+          "specificity_term_hits": 9,
+          "secondary_keyword_hits": 2
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-03-18T22:46:44.298186+00:00"
+    },
+    {
+      "article_slug": "spring-bedroom-refresh-mistakes-to-avoid",
+      "cluster_id": "spring_bedroom_refresh",
+      "subtopic_id": "refresh",
+      "angle_id": "mistakes",
+      "primary_keyword": "spring bedroom refresh mistakes to avoid",
+      "validation_status": "fail",
+      "warnings": [
+        "Section headings rely on repetitive formulas instead of distinct editorial moves.",
+        "Several section headings do not signal the topic strongly enough."
+      ],
+      "errors": [
+        "Section headings are too unspecific to support a strong editorial frame."
+      ],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 86,
+          "concept_overlap": 6,
+          "first_sentence": "Sprucing up a bedroom for spring is a welcome ritual, but it can easily slip into feeling disjointed or overdone without thoughtful planning."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 5,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 1,
+          "headings": [
+            "Mistake 1: Ignoring Cohesive Color Strategy Creates Visual Noise",
+            "Mistake 2: Overusing Bright Pastels on Walls Costs Warmth and Depth",
+            "Mistake 3: Mixing Too Many Floral Prints Disrupts Visual Flow",
+            "Mistake 4: Over- or Under-Scaling Furniture and Fixtures Undermines Comfort",
+            "Mistake 5: Neglecting Textural Layering Flattens the Room Ambience"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 9,
+          "specificity_term_hits": 10,
+          "secondary_keyword_hits": 2
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-03-18T22:46:19.353820+00:00"
+    }
+  ]
 }

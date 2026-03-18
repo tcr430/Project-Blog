@@ -1,66 +1,38 @@
 {
-  "generated_at": "2026-03-18T22:39:51.509626+00:00",
-  "article_count": 6,
+  "generated_at": "2026-03-18T22:49:44.115565+00:00",
+  "article_count": 7,
   "articles": [
     {
-      "article_slug": "best-curtain-styling-for-living-room",
-      "article_title": "Best Curtain Styling for Living Room: Elegant Solutions for Balanced Spaces",
-      "domain_id": "living_spaces",
-      "cluster_id": "living_room_window_treatments",
-      "subtopic_id": "curtain_styles",
-      "subtopic_name": "Curtain Styles",
-      "angle_id": "best_options",
-      "modifier": "",
-      "primary_keyword": "best curtain styling for living room",
-      "secondary_keywords": [
-        "living room curtain styling ideas",
-        "how to style curtain styling in living room",
-        "living room curtain styling mistakes to avoid"
-      ],
-      "cluster_name": "living room curtain styling",
-      "canonical_cluster_name": "living room window treatments",
-      "legacy_cluster_name": "living room curtain styling",
-      "publish_date": "2026-03-16",
-      "published_at": "2026-03-16T00:00:00+00:00",
-      "tags": [
-        "best curtain styling for living room",
-        "living room curtain styling ideas",
-        "how to style curtain styling in living room",
-        "living room curtain styling mistakes to avoid"
-      ],
-      "permalink": "/mistakes%20%26%20fixes/2026/03/16/best-curtain-styling-for-living-room/",
-      "search_intent": "comparison",
-      "excerpt": "Discover the best curtain styling for living rooms with expert tips on color balance, texture layering, proportion, light management, and layout. Create timeless, inviting spaces."
-    },
-    {
-      "article_slug": "best-curtain-styling-for-bedroom-mistakes-fixes",
-      "article_title": "Best Curtain Styling for Bedroom: Common Mistakes and How to Fix Them",
+      "article_slug": "best-furniture-for-earthy-bedroom",
+      "article_title": "The Best Furniture for an Earthy Bedroom: a Practical Guide to Warm, Natural Comfort",
       "domain_id": "bedrooms",
-      "cluster_id": "bedroom_window_treatments",
-      "subtopic_id": "curtain_styles",
-      "subtopic_name": "Curtain Styles",
+      "cluster_id": "earthy_bedroom",
+      "subtopic_id": "furniture",
+      "subtopic_name": "furniture and anchors",
       "angle_id": "best_options",
       "modifier": "",
-      "primary_keyword": "best curtain styling for bedroom",
+      "primary_keyword": "best furniture for an earthy bedroom",
       "secondary_keywords": [
-        "bedroom curtain styling ideas",
-        "how to style curtain styling in bedroom",
-        "bedroom curtain styling mistakes to avoid"
+        "earthy bedroom ideas",
+        "how to style a earthy bedroom",
+        "earthy bedroom decor",
+        "earthy bedroom layout ideas"
       ],
-      "cluster_name": "bedroom curtain styling",
-      "canonical_cluster_name": "bedroom window treatments",
-      "legacy_cluster_name": "bedroom curtain styling",
-      "publish_date": "2026-03-16",
-      "published_at": "2026-03-16T00:00:00+00:00",
+      "cluster_name": "earthy bedroom",
+      "canonical_cluster_name": "earthy bedroom",
+      "legacy_cluster_name": "",
+      "publish_date": "2026-03-18",
+      "published_at": "2026-03-18T22:46:44.307429+00:00",
       "tags": [
-        "best curtain styling for bedroom",
-        "bedroom curtain styling ideas",
-        "how to style curtain styling in bedroom",
-        "bedroom curtain styling mistakes to avoid"
+        "best furniture for an earthy bedroom",
+        "earthy bedroom ideas",
+        "earthy bedroom decor",
+        "earthy bedroom layout ideas",
+        "how to style an earthy bedroom"
       ],
-      "permalink": "/mistakes%20%26%20fixes/2026/03/16/best-curtain-styling-for-bedroom-mistakes-fixes/",
+      "permalink": "/ideas/2026/03/18/best-furniture-for-earthy-bedroom/",
       "search_intent": "comparison",
-      "excerpt": "Discover common mistakes in bedroom curtain styling and learn practical fixes that enhance natural light, texture, and balance for a timeless-modern look."
+      "excerpt": "Explore the best furniture choices to create a warm, earthy bedroom with natural materials, balanced textures, and soothing neutrals. Practical tips for styling and layout."
     },
     {
       "article_slug": "spring-living-room-styling-ideas-fresh-minimalism",
@@ -80,8 +52,8 @@
       "cluster_name": "spring living room styling",
       "canonical_cluster_name": "spring living room styling",
       "legacy_cluster_name": "",
-      "publish_date": "2026-03-15",
-      "published_at": "2026-03-15T00:00:00+00:00",
+      "publish_date": "",
+      "published_at": "",
       "tags": [
         "spring living room styling ideas",
         "how to style spring living room styling",
@@ -110,8 +82,8 @@
       "cluster_name": "small dining nook",
       "canonical_cluster_name": "small dining nook",
       "legacy_cluster_name": "",
-      "publish_date": "2026-03-13",
-      "published_at": "2026-03-13T00:00:00+00:00",
+      "publish_date": "",
+      "published_at": "",
       "tags": [],
       "permalink": "/ideas/2026/03/13/small-apartment-dining-nooks-cozy-corner-trend/",
       "search_intent": "ideas",
@@ -135,8 +107,8 @@
       "cluster_name": "organic modern living room",
       "canonical_cluster_name": "organic modern living room",
       "legacy_cluster_name": "",
-      "publish_date": "2026-03-13",
-      "published_at": "2026-03-13T00:00:00+00:00",
+      "publish_date": "",
+      "published_at": "",
       "tags": [],
       "permalink": "/styling%20advice/2026/03/13/organic-modern-living-room/",
       "search_intent": "ideas",
@@ -160,12 +132,72 @@
       "cluster_name": "linen and boucle styling",
       "canonical_cluster_name": "living room textures and materials",
       "legacy_cluster_name": "linen and boucle styling",
-      "publish_date": "2026-03-13",
-      "published_at": "2026-03-13T00:00:00+00:00",
+      "publish_date": "",
+      "published_at": "",
       "tags": [],
       "permalink": "/styling%20advice/2026/03/13/linen-boucle-texture-mix/",
       "search_intent": "ideas",
       "excerpt": "Explore how mixing linen and bouclé textures adds depth and warmth to your home decor with expert tips on layout, material pairing, and color choices."
+    },
+    {
+      "article_slug": "best-curtain-styling-for-living-room",
+      "article_title": "Best Curtain Styling for Living Room: Elegant Solutions for Balanced Spaces",
+      "domain_id": "living_spaces",
+      "cluster_id": "living_room_window_treatments",
+      "subtopic_id": "curtain_styles",
+      "subtopic_name": "Curtain Styles",
+      "angle_id": "best_options",
+      "modifier": "",
+      "primary_keyword": "best curtain styling for living room",
+      "secondary_keywords": [
+        "living room curtain styling ideas",
+        "how to style curtain styling in living room",
+        "living room curtain styling mistakes to avoid"
+      ],
+      "cluster_name": "living room curtain styling",
+      "canonical_cluster_name": "living room window treatments",
+      "legacy_cluster_name": "living room curtain styling",
+      "publish_date": "",
+      "published_at": "",
+      "tags": [
+        "best curtain styling for living room",
+        "living room curtain styling ideas",
+        "how to style curtain styling in living room",
+        "living room curtain styling mistakes to avoid"
+      ],
+      "permalink": "/mistakes%20%26%20fixes/2026/03/16/best-curtain-styling-for-living-room/",
+      "search_intent": "comparison",
+      "excerpt": "Discover the best curtain styling for living rooms with expert tips on color balance, texture layering, proportion, light management, and layout. Create timeless, inviting spaces."
+    },
+    {
+      "article_slug": "best-curtain-styling-for-bedroom-mistakes-fixes",
+      "article_title": "Best Curtain Styling for Bedroom: Common Mistakes and How to Fix Them",
+      "domain_id": "bedrooms",
+      "cluster_id": "bedroom_window_treatments",
+      "subtopic_id": "curtain_styles",
+      "subtopic_name": "Curtain Styles",
+      "angle_id": "best_options",
+      "modifier": "",
+      "primary_keyword": "best curtain styling for bedroom",
+      "secondary_keywords": [
+        "bedroom curtain styling ideas",
+        "how to style curtain styling in bedroom",
+        "bedroom curtain styling mistakes to avoid"
+      ],
+      "cluster_name": "bedroom curtain styling",
+      "canonical_cluster_name": "bedroom window treatments",
+      "legacy_cluster_name": "bedroom curtain styling",
+      "publish_date": "",
+      "published_at": "",
+      "tags": [
+        "best curtain styling for bedroom",
+        "bedroom curtain styling ideas",
+        "how to style curtain styling in bedroom",
+        "bedroom curtain styling mistakes to avoid"
+      ],
+      "permalink": "/mistakes%20%26%20fixes/2026/03/16/best-curtain-styling-for-bedroom-mistakes-fixes/",
+      "search_intent": "comparison",
+      "excerpt": "Discover common mistakes in bedroom curtain styling and learn practical fixes that enhance natural light, texture, and balance for a timeless-modern look."
     }
   ]
 }

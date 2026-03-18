@@ -1,0 +1,97 @@
+{
+  "article_title": "The Best Furniture for an Earthy Bedroom: a Practical Guide to Warm, Natural Comfort",
+  "article_slug": "best-furniture-for-earthy-bedroom",
+  "article_relative_url": "/ideas/2026/03/18/best-furniture-for-earthy-bedroom/",
+  "article_url": "https://thelivinedit.com/ideas/2026/03/18/best-furniture-for-earthy-bedroom/",
+  "meta_description": "Explore the best furniture choices to create a warm, earthy bedroom with natural materials, balanced textures, and soothing neutrals. Practical tips for styling and layout.",
+  "cluster_id": "earthy_bedroom",
+  "subtopic_id": "furniture",
+  "angle_id": "best_options",
+  "intent_id": "comparison",
+  "visual_direction": {
+    "family_id": "warm_layered",
+    "mood": "warm, tactile, layered and inviting styling",
+    "lighting": "late-morning daylight with warm reflected light",
+    "palette": "creams, camel, honey wood, soft terracotta accents",
+    "intent_id": "comparison",
+    "profile_id": "comparison",
+    "shot_library_id": "general_decor"
+  },
+  "hero_image_path": "/assets/img/best-furniture-for-earthy-bedroom/hero.png",
+  "site_root_url": "https://thelivinedit.com",
+  "variant_count": 4,
+  "strategy": {
+    "minimum_variant_count": 4,
+    "generated_variant_count": 4,
+    "bonus_slots": 0,
+    "ranked_variant_types": [
+      "trend_overview",
+      "practical_tips",
+      "product_led",
+      "styling_angle"
+    ],
+    "article_score": null,
+    "notes": [
+      "applying performance weighting: no historical lift yet, using balanced defaults"
+    ],
+    "board_config_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_boards.json"
+  },
+  "variants": [
+    {
+      "variant_key": "pin-1",
+      "variant_type": "trend_overview",
+      "style_name": "bottom-title",
+      "title": "Choosing the Best Furniture for a Cozy Earthy Bedroom",
+      "description": "Discover practical tips for selecting warm, natural furniture to create a serene earthy bedroom with genuine comfort and layered textures.",
+      "image_path": "/assets/pins/best-furniture-for-earthy-bedroom/pin-1.svg",
+      "board": {
+        "key": "bedroom",
+        "name": "Bedroom Retreat Ideas"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 0
+    },
+    {
+      "variant_key": "pin-2",
+      "variant_type": "practical_tips",
+      "style_name": "centered-title",
+      "title": "The Best Furniture for an Earthy Bedroom: a Practical Guide to Warm, Natural Comfort...",
+      "description": "Use these practical design moves to make the best furniture for an earthy bedroom: a practical guide to warm, natural comfort feel balanced, useful, and easy to live with.",
+      "image_path": "/assets/pins/best-furniture-for-earthy-bedroom/pin-2.svg",
+      "board": {
+        "key": "bedroom",
+        "name": "Bedroom Retreat Ideas"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 1
+    },
+    {
+      "variant_key": "pin-3",
+      "variant_type": "product_led",
+      "style_name": "minimalist-overlay",
+      "title": "4 Pieces That Elevate The Best Furniture for an Earthy Bedroom: a Practical Guide to...",
+      "description": "Discover decor pieces and finishing details that help the best furniture for an earthy bedroom: a practical guide to warm, natural comfort feel more intentional without looking overdone.",
+      "image_path": "/assets/pins/best-furniture-for-earthy-bedroom/pin-3.svg",
+      "board": {
+        "key": "home_products",
+        "name": "Home Finds & Decor Picks"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 2
+    },
+    {
+      "variant_key": "pin-4",
+      "variant_type": "styling_angle",
+      "style_name": "top-title",
+      "title": "How to Style The Best Furniture for an Earthy Bedroom: a Practical Guide to Warm...",
+      "description": "See how color, texture, and room styling can shape the best furniture for an earthy bedroom: a practical guide to warm, natural comfort into a softer, more editorial look.",
+      "image_path": "/assets/pins/best-furniture-for-earthy-bedroom/pin-4.svg",
+      "board": {
+        "key": "bedroom",
+        "name": "Bedroom Retreat Ideas"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 3
+    }
+  ]
+}

@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-03-18T22:39:51.508244+00:00",
-  "cluster_count": 6,
-  "article_count": 6,
-  "subtopic_count": 5,
+  "generated_at": "2026-03-18T22:49:44.114958+00:00",
+  "cluster_count": 7,
+  "article_count": 7,
+  "subtopic_count": 6,
   "angle_count": 3,
   "angle_distribution": {
-    "best_options": 2,
+    "best_options": 3,
     "ideas": 3,
     "style_specific": 1
   },
@@ -23,11 +23,11 @@
       "primary_keywords_used": [
         "best curtain styling for bedroom"
       ],
-      "latest_article_date": "2026-03-16",
+      "latest_article_date": "",
       "latest_publication": {
         "article_slug": "best-curtain-styling-for-bedroom-mistakes-fixes",
         "article_title": "Best Curtain Styling for Bedroom: Common Mistakes and How to Fix Them",
-        "publish_date": "2026-03-16",
+        "publish_date": "",
         "subtopic_id": "curtain_styles",
         "subtopic_name": "Curtain Styles",
         "angle_id": "best_options"
@@ -35,7 +35,7 @@
       "representative_article_slugs": [
         "best-curtain-styling-for-bedroom-mistakes-fixes"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
@@ -45,9 +45,53 @@
           "subtopic_id": "curtain_styles",
           "subtopic_name": "Curtain Styles",
           "article_count": 1,
-          "latest_article_date": "2026-03-16",
+          "latest_article_date": "",
           "representative_article_slugs": [
             "best-curtain-styling-for-bedroom-mistakes-fixes"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "best_options": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_id": "earthy_bedroom",
+      "cluster_name": "earthy bedroom",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "bedrooms"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "best furniture for an earthy bedroom"
+      ],
+      "latest_article_date": "2026-03-18",
+      "latest_publication": {
+        "article_slug": "best-furniture-for-earthy-bedroom",
+        "article_title": "The Best Furniture for an Earthy Bedroom: a Practical Guide to Warm, Natural Comfort",
+        "publish_date": "2026-03-18",
+        "subtopic_id": "furniture",
+        "subtopic_name": "furniture and anchors",
+        "angle_id": "best_options"
+      },
+      "representative_article_slugs": [
+        "best-furniture-for-earthy-bedroom"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "furniture",
+          "subtopic_name": "furniture and anchors",
+          "article_count": 1,
+          "latest_article_date": "2026-03-18",
+          "representative_article_slugs": [
+            "best-furniture-for-earthy-bedroom"
           ]
         }
       ],
@@ -69,11 +113,11 @@
       "primary_keywords_used": [
         "linen and boucle decor ideas"
       ],
-      "latest_article_date": "2026-03-13",
+      "latest_article_date": "",
       "latest_publication": {
         "article_slug": "linen-boucle-texture-mix",
         "article_title": "Mastering the Linen and Bouclé Texture Mix for Modern Interiors",
-        "publish_date": "2026-03-13",
+        "publish_date": "",
         "subtopic_id": "mixes",
         "subtopic_name": "Material Mixes",
         "angle_id": "style_specific"
@@ -81,7 +125,7 @@
       "representative_article_slugs": [
         "linen-boucle-texture-mix"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
@@ -91,7 +135,7 @@
           "subtopic_id": "mixes",
           "subtopic_name": "Material Mixes",
           "article_count": 1,
-          "latest_article_date": "2026-03-13",
+          "latest_article_date": "",
           "representative_article_slugs": [
             "linen-boucle-texture-mix"
           ]
@@ -115,11 +159,11 @@
       "primary_keywords_used": [
         "best curtain styling for living room"
       ],
-      "latest_article_date": "2026-03-16",
+      "latest_article_date": "",
       "latest_publication": {
         "article_slug": "best-curtain-styling-for-living-room",
         "article_title": "Best Curtain Styling for Living Room: Elegant Solutions for Balanced Spaces",
-        "publish_date": "2026-03-16",
+        "publish_date": "",
         "subtopic_id": "curtain_styles",
         "subtopic_name": "Curtain Styles",
         "angle_id": "best_options"
@@ -127,7 +171,7 @@
       "representative_article_slugs": [
         "best-curtain-styling-for-living-room"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
@@ -137,7 +181,7 @@
           "subtopic_id": "curtain_styles",
           "subtopic_name": "Curtain Styles",
           "article_count": 1,
-          "latest_article_date": "2026-03-16",
+          "latest_article_date": "",
           "representative_article_slugs": [
             "best-curtain-styling-for-living-room"
           ]
@@ -159,11 +203,11 @@
       "primary_keywords_used": [
         "organic modern living room ideas"
       ],
-      "latest_article_date": "2026-03-13",
+      "latest_article_date": "",
       "latest_publication": {
         "article_slug": "organic-modern-living-room",
         "article_title": "Embracing Organic Modern Living Rooms: A Guide to Natural Elegance",
-        "publish_date": "2026-03-13",
+        "publish_date": "",
         "subtopic_id": "textures",
         "subtopic_name": "Textures and Layers",
         "angle_id": "ideas"
@@ -171,7 +215,7 @@
       "representative_article_slugs": [
         "organic-modern-living-room"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
@@ -181,7 +225,7 @@
           "subtopic_id": "textures",
           "subtopic_name": "Textures and Layers",
           "article_count": 1,
-          "latest_article_date": "2026-03-13",
+          "latest_article_date": "",
           "representative_article_slugs": [
             "organic-modern-living-room"
           ]
@@ -203,11 +247,11 @@
       "primary_keywords_used": [
         "small apartment dining nook ideas"
       ],
-      "latest_article_date": "2026-03-13",
+      "latest_article_date": "",
       "latest_publication": {
         "article_slug": "small-apartment-dining-nooks-cozy-corner-trend",
         "article_title": "Small Apartment Dining Nooks: Styling the Cozy Corner Trend",
-        "publish_date": "2026-03-13",
+        "publish_date": "",
         "subtopic_id": "layout",
         "subtopic_name": "Layout",
         "angle_id": "ideas"
@@ -215,7 +259,7 @@
       "representative_article_slugs": [
         "small-apartment-dining-nooks-cozy-corner-trend"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
@@ -225,7 +269,7 @@
           "subtopic_id": "layout",
           "subtopic_name": "Layout",
           "article_count": 1,
-          "latest_article_date": "2026-03-13",
+          "latest_article_date": "",
           "representative_article_slugs": [
             "small-apartment-dining-nooks-cozy-corner-trend"
           ]
@@ -247,11 +291,11 @@
       "primary_keywords_used": [
         "spring living room styling ideas"
       ],
-      "latest_article_date": "2026-03-15",
+      "latest_article_date": "",
       "latest_publication": {
         "article_slug": "spring-living-room-styling-ideas-fresh-minimalism",
         "article_title": "Spring Living Room Styling Ideas: Embrace Fresh Minimalism with Natural Touches",
-        "publish_date": "2026-03-15",
+        "publish_date": "",
         "subtopic_id": "refresh",
         "subtopic_name": "Seasonal Refresh",
         "angle_id": "ideas"
@@ -259,7 +303,7 @@
       "representative_article_slugs": [
         "spring-living-room-styling-ideas-fresh-minimalism"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
@@ -269,7 +313,7 @@
           "subtopic_id": "refresh",
           "subtopic_name": "Seasonal Refresh",
           "article_count": 1,
-          "latest_article_date": "2026-03-15",
+          "latest_article_date": "",
           "representative_article_slugs": [
             "spring-living-room-styling-ideas-fresh-minimalism"
           ]

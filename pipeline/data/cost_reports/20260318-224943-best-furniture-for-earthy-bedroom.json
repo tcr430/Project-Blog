@@ -1,0 +1,150 @@
+{
+  "generated_at": "2026-03-18T22:49:43.937785+00:00",
+  "trend": "best furniture for an earthy bedroom",
+  "slug": "best-furniture-for-earthy-bedroom",
+  "article_generation": {
+    "cache_hit": false,
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/article_packages/3bf6fbc4b8d41f296de1cf76fcda24264efa150bc385bebe99483c207ab0d82a.json",
+    "model": "gpt-4.1-mini",
+    "generation_calls": 1,
+    "short_retries": 0,
+    "product_retries": 0,
+    "selected_products": 0,
+    "affiliate_mode": false,
+    "monetization_profile_id": "commercial_strong",
+    "generated_link_count": 0,
+    "primary_keyword": "best furniture for an earthy bedroom",
+    "topical_cluster": "earthy bedroom"
+  },
+  "seo_validation": {
+    "article_slug": "best-furniture-for-earthy-bedroom",
+    "cluster": "earthy bedroom",
+    "cluster_id": "earthy bedroom",
+    "subtopic_id": "furniture",
+    "subtopic_name": "furniture and anchors",
+    "angle_id": "best options",
+    "intent_id": "comparison",
+    "primary_keyword": "best furniture for an earthy bedroom",
+    "validation_status": "warning",
+    "warnings": [
+      "Primary keyword appears very lightly in the article body."
+    ],
+    "errors": [],
+    "duplicate_candidate_slugs": [],
+    "timestamp": "2026-03-18T22:46:44.295616+00:00"
+  },
+  "editorial_validation": {
+    "article_slug": "best-furniture-for-earthy-bedroom",
+    "cluster_id": "earthy_bedroom",
+    "subtopic_id": "furniture",
+    "angle_id": "best_options",
+    "primary_keyword": "best furniture for an earthy bedroom",
+    "validation_status": "pass",
+    "warnings": [],
+    "errors": [],
+    "checks": {
+      "generic_intro": {
+        "intro_word_count": 141,
+        "concept_overlap": 11,
+        "first_sentence": "Finding the best furniture for an earthy bedroom can feel challenging given the many natural materials, textures, and styles available."
+      },
+      "heading_quality": {
+        "heading_count": 5,
+        "vague_heading_count": 0,
+        "low_specificity_heading_count": 1,
+        "repeated_signature_count": 0,
+        "repeated_stem_count": 0,
+        "headings": [
+          "Understanding the Core Furniture Qualities for an Earthy Bedroom",
+          "Solid Oak: A Timeless Choice Rooted in Warmth and Durability",
+          "Reclaimed Wood: Adding Character and Sustainable Edge to Earthy Bedrooms",
+          "Matching Furniture Choices to Room Size and Layout in Earthy Bedrooms",
+          "Practical Tips for Confidently Choosing Earthy Bedroom Furniture"
+        ]
+      },
+      "specificity": {
+        "concept_token_hits": 13,
+        "specificity_term_hits": 9,
+        "secondary_keyword_hits": 2
+      },
+      "distinctiveness": {
+        "nearest_article_slug": "",
+        "max_similarity": 0.0,
+        "strongest_heading_overlap": 0
+      }
+    },
+    "timestamp": "2026-03-18T22:46:44.298186+00:00"
+  },
+  "image_generation": {
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/image_generation_cache/best-furniture-for-earthy-bedroom.json",
+    "model": "gpt-image-1",
+    "size": "1536x1024",
+    "hero_quality": "high",
+    "section_quality": "medium",
+    "generated_images": 6,
+    "cache_hits": 0,
+    "generation_calls": 6,
+    "qa_calls": 1,
+    "details": [
+      {
+        "label": "hero",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 1,
+        "quality": "high",
+        "qa_enabled": true
+      },
+      {
+        "label": "section-1",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false
+      },
+      {
+        "label": "section-2",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false
+      },
+      {
+        "label": "section-3",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false
+      },
+      {
+        "label": "section-4",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false
+      },
+      {
+        "label": "section-5",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false
+      }
+    ]
+  },
+  "pinterest": {
+    "variants_requested": 4,
+    "pin_assets_generated": true,
+    "mode": "publish"
+  }
+}
