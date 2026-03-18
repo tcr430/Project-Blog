@@ -22202,14 +22202,13 @@
       {
         "rule_id": "compact_anchor_furniture",
         "space_tags_any": [
-          "compact",
           "multi_use"
         ],
         "feature_tags_any": [
-          "anchor_furniture"
+          "bulky_anchor"
         ],
         "classification": "valid_with_constraints",
-        "reason": "Compact living contexts can cover larger furniture, but the concept should stay size-aware and practical."
+        "reason": "Multi-use compact spaces can cover bulkier furniture, but the concept should stay size-aware and practical."
       },
       {
         "rule_id": "circulation_bulky_anchor",
