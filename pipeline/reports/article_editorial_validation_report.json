@@ -1,39 +1,41 @@
 {
-  "generated_at": "2026-03-18T22:46:44.298266+00:00",
+  "generated_at": "2026-03-20T09:38:13.658231+00:00",
   "articles": [
     {
-      "article_slug": "best-furniture-for-earthy-bedroom",
-      "cluster_id": "earthy_bedroom",
-      "subtopic_id": "furniture",
-      "angle_id": "best_options",
-      "primary_keyword": "best furniture for an earthy bedroom",
-      "validation_status": "pass",
-      "warnings": [],
+      "article_slug": "how-to-style-a-neutral-bathroom",
+      "cluster_id": "neutral_bathroom",
+      "subtopic_id": "layout",
+      "angle_id": "how_to",
+      "primary_keyword": "how to style a neutral bathroom",
+      "validation_status": "warning",
+      "warnings": [
+        "Several section headings do not signal the topic strongly enough."
+      ],
       "errors": [],
       "checks": {
         "generic_intro": {
-          "intro_word_count": 141,
-          "concept_overlap": 11,
-          "first_sentence": "Finding the best furniture for an earthy bedroom can feel challenging given the many natural materials, textures, and styles available."
+          "intro_word_count": 91,
+          "concept_overlap": 4,
+          "first_sentence": "Neutral bathrooms hold a quiet allure, offering a calm retreat within the home."
         },
         "heading_quality": {
           "heading_count": 5,
           "vague_heading_count": 0,
-          "low_specificity_heading_count": 1,
+          "low_specificity_heading_count": 3,
           "repeated_signature_count": 0,
           "repeated_stem_count": 0,
           "headings": [
-            "Understanding the Core Furniture Qualities for an Earthy Bedroom",
-            "Solid Oak: A Timeless Choice Rooted in Warmth and Durability",
-            "Reclaimed Wood: Adding Character and Sustainable Edge to Earthy Bedrooms",
-            "Matching Furniture Choices to Room Size and Layout in Earthy Bedrooms",
-            "Practical Tips for Confidently Choosing Earthy Bedroom Furniture"
+            "Choose a Foundation with Balanced Natural Materials",
+            "Layer Texture Thoughtfully for Depth and Warmth",
+            "Place Fixtures with Intent to Enhance Material Contrast",
+            "Balance Lighting and Mirror Placement for Visual Flow",
+            "Style with Curated Accessories for a Composed Look"
           ]
         },
         "specificity": {
-          "concept_token_hits": 13,
-          "specificity_term_hits": 9,
-          "secondary_keyword_hits": 2
+          "concept_token_hits": 8,
+          "specificity_term_hits": 11,
+          "secondary_keyword_hits": 1
         },
         "distinctiveness": {
           "nearest_article_slug": "",
@@ -41,7 +43,54 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-03-18T22:46:44.298186+00:00"
+      "timestamp": "2026-03-20T09:38:13.658125+00:00"
+    },
+    {
+      "article_slug": "how-to-style-a-neutral-bedroom",
+      "cluster_id": "neutral_bedroom",
+      "subtopic_id": "layout",
+      "angle_id": "how_to",
+      "primary_keyword": "how to style a neutral bedroom",
+      "validation_status": "fail",
+      "warnings": [
+        "Several section headings do not signal the topic strongly enough.",
+        "Supporting keyword ideas are barely reflected in the body."
+      ],
+      "errors": [
+        "Section headings are too unspecific to support a strong editorial frame."
+      ],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 104,
+          "concept_overlap": 7,
+          "first_sentence": "Neutral bedrooms remain a timeless choice for creating calm retreats—spaces where subtlety crafts comfort."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 5,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Place the Bed as a Clear Architectural Anchor",
+            "Layer Natural Textiles to Add Depth and Warmth",
+            "Adjust Lighting Scale and Placement for Subtle Focus",
+            "Balance Material Contrast to Avoid Visual Flatness",
+            "Complete Styling with Purposeful Accents and Plants"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 9,
+          "specificity_term_hits": 15,
+          "secondary_keyword_hits": 0
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-03-20T09:37:41.564814+00:00"
     },
     {
       "article_slug": "spring-bedroom-refresh-mistakes-to-avoid",
@@ -88,7 +137,49 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-03-18T22:46:19.353820+00:00"
+      "timestamp": "2026-03-20T09:36:39.267899+00:00"
+    },
+    {
+      "article_slug": "best-furniture-for-earthy-bedroom",
+      "cluster_id": "earthy_bedroom",
+      "subtopic_id": "furniture",
+      "angle_id": "best_options",
+      "primary_keyword": "best furniture for an earthy bedroom",
+      "validation_status": "pass",
+      "warnings": [],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 141,
+          "concept_overlap": 11,
+          "first_sentence": "Finding the best furniture for an earthy bedroom can feel challenging given the many natural materials, textures, and styles available."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 1,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Understanding the Core Furniture Qualities for an Earthy Bedroom",
+            "Solid Oak: A Timeless Choice Rooted in Warmth and Durability",
+            "Reclaimed Wood: Adding Character and Sustainable Edge to Earthy Bedrooms",
+            "Matching Furniture Choices to Room Size and Layout in Earthy Bedrooms",
+            "Practical Tips for Confidently Choosing Earthy Bedroom Furniture"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 13,
+          "specificity_term_hits": 9,
+          "secondary_keyword_hits": 2
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-03-18T22:46:44.298186+00:00"
     }
   ]
 }

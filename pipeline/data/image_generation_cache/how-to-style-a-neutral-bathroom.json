@@ -1,0 +1,26 @@
+{
+  "hero": {
+    "cache_key": "b1330a938549b76326585aa383fda11c9ba16fdaf3a6ffe697038599887bc33d",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/how-to-style-a-neutral-bathroom/hero.png"
+  },
+  "section-1": {
+    "cache_key": "ec5165d397aef06b871c85e8c412c4c2ae21120e25c9b73387a44914198c1146",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/how-to-style-a-neutral-bathroom/section-1.png"
+  },
+  "section-2": {
+    "cache_key": "4892df5d071c28f42747bbaa30dc24f52a9475e9163fe4eb27bf0738b9f60a29",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/how-to-style-a-neutral-bathroom/section-2.png"
+  },
+  "section-3": {
+    "cache_key": "330dd501ef7943427d79e3d0c01d4e9fd9c0745fb66cbd0e2bd8c39e54a7cad8",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/how-to-style-a-neutral-bathroom/section-3.png"
+  },
+  "section-4": {
+    "cache_key": "f845086e32382760cc0eff3682d75f62825926b6bdf3fe6fd210c5dc5786dead",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/how-to-style-a-neutral-bathroom/section-4.png"
+  },
+  "section-5": {
+    "cache_key": "ecd8cc36b21d1c41ae3b2428dfb83ac4d6a339ce226fd82dac06dbcc5ed79413",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/how-to-style-a-neutral-bathroom/section-5.png"
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "generated_at": "2026-03-20T09:41:29.939336+00:00",
+  "trend": "how to style a neutral bathroom",
+  "slug": "how-to-style-a-neutral-bathroom",
+  "article_generation": {
+    "cache_hit": false,
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/article_packages/4202fa6635600f59d171b9215fddeecb35800a233ee672e560f9711e5d1afac5.json",
+    "model": "gpt-4.1-mini",
+    "generation_calls": 1,
+    "short_retries": 0,
+    "product_retries": 0,
+    "selected_products": 0,
+    "affiliate_mode": false,
+    "monetization_profile_id": "utility_light",
+    "generated_link_count": 0,
+    "primary_keyword": "how to style a neutral bathroom",
+    "topical_cluster": "neutral bathroom"
+  },
+  "seo_validation": {
+    "article_slug": "how-to-style-a-neutral-bathroom",
+    "cluster": "neutral bathroom",
+    "cluster_id": "neutral bathroom",
+    "subtopic_id": "layout",
+    "subtopic_name": "layout and foundation",
+    "angle_id": "how to",
+    "intent_id": "implementation",
+    "primary_keyword": "how to style a neutral bathroom",
+    "validation_status": "warning",
+    "warnings": [
+      "Main section headings may be too generic for the chosen keyword.",
+      "Primary keyword appears very lightly in the article body."
+    ],
+    "errors": [],
+    "duplicate_candidate_slugs": [],
+    "timestamp": "2026-03-20T09:38:13.655847+00:00"
+  },
+  "editorial_validation": {
+    "article_slug": "how-to-style-a-neutral-bathroom",
+    "cluster_id": "neutral_bathroom",
+    "subtopic_id": "layout",
+    "angle_id": "how_to",
+    "primary_keyword": "how to style a neutral bathroom",
+    "validation_status": "warning",
+    "warnings": [
+      "Several section headings do not signal the topic strongly enough."
+    ],
+    "errors": [],
+    "checks": {
+      "generic_intro": {
+        "intro_word_count": 91,
+        "concept_overlap": 4,
+        "first_sentence": "Neutral bathrooms hold a quiet allure, offering a calm retreat within the home."
+      },
+      "heading_quality": {
+        "heading_count": 5,
+        "vague_heading_count": 0,
+        "low_specificity_heading_count": 3,
+        "repeated_signature_count": 0,
+        "repeated_stem_count": 0,
+        "headings": [
+          "Choose a Foundation with Balanced Natural Materials",
+          "Layer Texture Thoughtfully for Depth and Warmth",
+          "Place Fixtures with Intent to Enhance Material Contrast",
+          "Balance Lighting and Mirror Placement for Visual Flow",
+          "Style with Curated Accessories for a Composed Look"
+        ]
+      },
+      "specificity": {
+        "concept_token_hits": 8,
+        "specificity_term_hits": 11,
+        "secondary_keyword_hits": 1
+      },
+      "distinctiveness": {
+        "nearest_article_slug": "",
+        "max_similarity": 0.0,
+        "strongest_heading_overlap": 0
+      }
+    },
+    "timestamp": "2026-03-20T09:38:13.658125+00:00"
+  },
+  "image_generation": {
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/image_generation_cache/how-to-style-a-neutral-bathroom.json",
+    "model": "gpt-image-1",
+    "size": "1536x1024",
+    "hero_quality": "high",
+    "section_quality": "medium",
+    "generated_images": 6,
+    "cache_hits": 0,
+    "generation_calls": 6,
+    "qa_calls": 1,
+    "details": [
+      {
+        "label": "hero",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 1,
+        "quality": "high",
+        "qa_enabled": true
+      },
+      {
+        "label": "section-1",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false
+      },
+      {
+        "label": "section-2",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false
+      },
+      {
+        "label": "section-3",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false
+      },
+      {
+        "label": "section-4",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false
+      },
+      {
+        "label": "section-5",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false
+      }
+    ]
+  },
+  "pinterest": {
+    "variants_requested": 4,
+    "pin_assets_generated": true,
+    "mode": "publish"
+  }
+}

@@ -1,19 +1,303 @@
 {
-  "generated_at": "2026-03-18T22:44:44.708909+00:00",
+  "generated_at": "2026-03-20T09:36:24.887055+00:00",
   "overview": {
-    "pin_count": 0,
+    "pin_count": 4,
     "published_pin_count": 0,
     "analytics_ready_pin_count": 0,
-    "tracked_article_count": 0
+    "tracked_article_count": 1
   },
-  "best_performing_clusters": [],
-  "best_performing_subtopics": [],
-  "best_performing_angles": [],
-  "best_performing_visual_styles": [],
+  "best_performing_clusters": [
+    {
+      "cluster_id": "earthy_bedroom",
+      "cluster_name": "earthy bedroom",
+      "pin_count": 4,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-for-earthy-bedroom"
+      ]
+    }
+  ],
+  "best_performing_subtopics": [
+    {
+      "cluster_id": "earthy_bedroom",
+      "subtopic_id": "furniture",
+      "subtopic_name": "furniture and anchors",
+      "pin_count": 4,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-for-earthy-bedroom"
+      ]
+    }
+  ],
+  "best_performing_angles": [
+    {
+      "angle_id": "best_options",
+      "pin_count": 4,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-for-earthy-bedroom"
+      ]
+    }
+  ],
+  "best_performing_visual_styles": [
+    {
+      "visual_style_key": "bottom_title|warm_layered|general_decor|comparison",
+      "style_name": "bottom-title",
+      "visual_family_id": "warm_layered",
+      "shot_library_id": "general_decor",
+      "intent_id": "comparison",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-for-earthy-bedroom"
+      ]
+    },
+    {
+      "visual_style_key": "centered_title|warm_layered|general_decor|comparison",
+      "style_name": "centered-title",
+      "visual_family_id": "warm_layered",
+      "shot_library_id": "general_decor",
+      "intent_id": "comparison",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-for-earthy-bedroom"
+      ]
+    },
+    {
+      "visual_style_key": "minimalist_overlay|warm_layered|general_decor|comparison",
+      "style_name": "minimalist-overlay",
+      "visual_family_id": "warm_layered",
+      "shot_library_id": "general_decor",
+      "intent_id": "comparison",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-for-earthy-bedroom"
+      ]
+    },
+    {
+      "visual_style_key": "top_title|warm_layered|general_decor|comparison",
+      "style_name": "top-title",
+      "visual_family_id": "warm_layered",
+      "shot_library_id": "general_decor",
+      "intent_id": "comparison",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-for-earthy-bedroom"
+      ]
+    }
+  ],
   "top_rankings": {
-    "clusters": [],
-    "subtopics": [],
-    "angles": [],
-    "visual_styles": []
+    "clusters": [
+      {
+        "cluster_id": "earthy_bedroom",
+        "cluster_name": "earthy bedroom",
+        "pin_count": 4,
+        "published_pin_count": 0,
+        "analytics_ready_count": 0,
+        "average_score": 0.0,
+        "average_impressions": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_pin_clicks": 0.0,
+        "average_closeups": 0.0,
+        "signal_label": "no_data",
+        "signal_boost": 0,
+        "top_article_slugs": [
+          "best-furniture-for-earthy-bedroom"
+        ]
+      }
+    ],
+    "subtopics": [
+      {
+        "cluster_id": "earthy_bedroom",
+        "subtopic_id": "furniture",
+        "subtopic_name": "furniture and anchors",
+        "pin_count": 4,
+        "published_pin_count": 0,
+        "analytics_ready_count": 0,
+        "average_score": 0.0,
+        "average_impressions": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_pin_clicks": 0.0,
+        "average_closeups": 0.0,
+        "signal_label": "no_data",
+        "signal_boost": 0,
+        "top_article_slugs": [
+          "best-furniture-for-earthy-bedroom"
+        ]
+      }
+    ],
+    "angles": [
+      {
+        "angle_id": "best_options",
+        "pin_count": 4,
+        "published_pin_count": 0,
+        "analytics_ready_count": 0,
+        "average_score": 0.0,
+        "average_impressions": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_pin_clicks": 0.0,
+        "average_closeups": 0.0,
+        "signal_label": "no_data",
+        "signal_boost": 0,
+        "top_article_slugs": [
+          "best-furniture-for-earthy-bedroom"
+        ]
+      }
+    ],
+    "visual_styles": [
+      {
+        "visual_style_key": "bottom_title|warm_layered|general_decor|comparison",
+        "style_name": "bottom-title",
+        "visual_family_id": "warm_layered",
+        "shot_library_id": "general_decor",
+        "intent_id": "comparison",
+        "pin_count": 1,
+        "published_pin_count": 0,
+        "analytics_ready_count": 0,
+        "average_score": 0.0,
+        "average_impressions": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_pin_clicks": 0.0,
+        "average_closeups": 0.0,
+        "signal_label": "no_data",
+        "signal_boost": 0,
+        "top_article_slugs": [
+          "best-furniture-for-earthy-bedroom"
+        ]
+      },
+      {
+        "visual_style_key": "centered_title|warm_layered|general_decor|comparison",
+        "style_name": "centered-title",
+        "visual_family_id": "warm_layered",
+        "shot_library_id": "general_decor",
+        "intent_id": "comparison",
+        "pin_count": 1,
+        "published_pin_count": 0,
+        "analytics_ready_count": 0,
+        "average_score": 0.0,
+        "average_impressions": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_pin_clicks": 0.0,
+        "average_closeups": 0.0,
+        "signal_label": "no_data",
+        "signal_boost": 0,
+        "top_article_slugs": [
+          "best-furniture-for-earthy-bedroom"
+        ]
+      },
+      {
+        "visual_style_key": "minimalist_overlay|warm_layered|general_decor|comparison",
+        "style_name": "minimalist-overlay",
+        "visual_family_id": "warm_layered",
+        "shot_library_id": "general_decor",
+        "intent_id": "comparison",
+        "pin_count": 1,
+        "published_pin_count": 0,
+        "analytics_ready_count": 0,
+        "average_score": 0.0,
+        "average_impressions": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_pin_clicks": 0.0,
+        "average_closeups": 0.0,
+        "signal_label": "no_data",
+        "signal_boost": 0,
+        "top_article_slugs": [
+          "best-furniture-for-earthy-bedroom"
+        ]
+      },
+      {
+        "visual_style_key": "top_title|warm_layered|general_decor|comparison",
+        "style_name": "top-title",
+        "visual_family_id": "warm_layered",
+        "shot_library_id": "general_decor",
+        "intent_id": "comparison",
+        "pin_count": 1,
+        "published_pin_count": 0,
+        "analytics_ready_count": 0,
+        "average_score": 0.0,
+        "average_impressions": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_pin_clicks": 0.0,
+        "average_closeups": 0.0,
+        "signal_label": "no_data",
+        "signal_boost": 0,
+        "top_article_slugs": [
+          "best-furniture-for-earthy-bedroom"
+        ]
+      }
+    ]
   }
 }

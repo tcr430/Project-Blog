@@ -1,0 +1,97 @@
+{
+  "article_title": "How to Style a Neutral Bathroom with Timeless Modern Elegance",
+  "article_slug": "how-to-style-a-neutral-bathroom",
+  "article_relative_url": "/styling%20advice/2026/03/20/how-to-style-a-neutral-bathroom/",
+  "article_url": "https://thelivinedit.com/styling%20advice/2026/03/20/how-to-style-a-neutral-bathroom/",
+  "meta_description": "Discover practical and elegant ways to style a neutral bathroom using layered textures, natural materials, and soft earthy tones for a balanced, welcoming space.",
+  "cluster_id": "neutral_bathroom",
+  "subtopic_id": "layout",
+  "angle_id": "how_to",
+  "intent_id": "implementation",
+  "visual_direction": {
+    "family_id": "airy_editorial",
+    "mood": "airy, quiet, polished editorial styling",
+    "lighting": "soft natural daylight with gentle highlights",
+    "palette": "chalky whites, oat tones, pale woods, restrained contrast",
+    "intent_id": "implementation",
+    "profile_id": "implementation",
+    "shot_library_id": "color_palette"
+  },
+  "hero_image_path": "/assets/img/how-to-style-a-neutral-bathroom/hero.png",
+  "site_root_url": "https://thelivinedit.com",
+  "variant_count": 4,
+  "strategy": {
+    "minimum_variant_count": 4,
+    "generated_variant_count": 4,
+    "bonus_slots": 0,
+    "ranked_variant_types": [
+      "trend_overview",
+      "practical_tips",
+      "product_led",
+      "styling_angle"
+    ],
+    "article_score": null,
+    "notes": [
+      "applying performance weighting: no historical lift yet, using balanced defaults"
+    ],
+    "board_config_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_boards.json"
+  },
+  "variants": [
+    {
+      "variant_key": "pin-1",
+      "variant_type": "trend_overview",
+      "style_name": "bottom-title",
+      "title": "Elegant Neutral Bathroom Styling Tips for Everyday Living",
+      "description": "Explore how to style a neutral bathroom with natural textures, soft earthy tones, and thoughtful layering for a lived-in yet polished feel.",
+      "image_path": "/assets/pins/how-to-style-a-neutral-bathroom/pin-1.svg",
+      "board": {
+        "key": "bathroom",
+        "name": "Bathroom Styling Notes"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 0
+    },
+    {
+      "variant_key": "pin-2",
+      "variant_type": "practical_tips",
+      "style_name": "centered-title",
+      "title": "How to Style a Neutral Bathroom with Timeless Modern Elegance: Practical Tips That...",
+      "description": "Use these practical design moves to make how to style a neutral bathroom with timeless modern elegance feel balanced, useful, and easy to live with.",
+      "image_path": "/assets/pins/how-to-style-a-neutral-bathroom/pin-2.svg",
+      "board": {
+        "key": "bathroom",
+        "name": "Bathroom Styling Notes"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 1
+    },
+    {
+      "variant_key": "pin-3",
+      "variant_type": "product_led",
+      "style_name": "minimalist-overlay",
+      "title": "4 Pieces That Elevate How to Style a Neutral Bathroom with Timeless Modern Elegance",
+      "description": "Discover decor pieces and finishing details that help how to style a neutral bathroom with timeless modern elegance feel more intentional without looking overdone.",
+      "image_path": "/assets/pins/how-to-style-a-neutral-bathroom/pin-3.svg",
+      "board": {
+        "key": "home_products",
+        "name": "Home Finds & Decor Picks"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 2
+    },
+    {
+      "variant_key": "pin-4",
+      "variant_type": "styling_angle",
+      "style_name": "top-title",
+      "title": "How to Style How to Style a Neutral Bathroom with Timeless Modern Elegance for a More...",
+      "description": "See how color, texture, and room styling can shape how to style a neutral bathroom with timeless modern elegance into a softer, more editorial look.",
+      "image_path": "/assets/pins/how-to-style-a-neutral-bathroom/pin-4.svg",
+      "board": {
+        "key": "bathroom",
+        "name": "Bathroom Styling Notes"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 3
+    }
+  ]
+}
