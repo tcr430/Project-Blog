@@ -1,0 +1,153 @@
+{
+  "generated_at": "2026-03-23T10:02:13.502295+00:00",
+  "trend": "best furniture for an earthy bathroom",
+  "slug": "best-furniture-for-an-earthy-bathroom",
+  "article_generation": {
+    "cache_hit": false,
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/article_packages/1a8bf86649655bae373c372bb7a9860e29cb17742799bb590a1becf322f143e6.json",
+    "model": "gpt-4.1-mini",
+    "generation_calls": 1,
+    "short_retries": 0,
+    "product_retries": 0,
+    "selected_products": 0,
+    "affiliate_mode": false,
+    "monetization_profile_id": "commercial_strong",
+    "generated_link_count": 0,
+    "primary_keyword": "best furniture for an earthy bathroom",
+    "topical_cluster": "earthy bathroom"
+  },
+  "seo_validation": {
+    "article_slug": "best-furniture-for-an-earthy-bathroom",
+    "cluster": "earthy bathroom",
+    "cluster_id": "earthy bathroom",
+    "subtopic_id": "furniture",
+    "subtopic_name": "furniture and anchors",
+    "angle_id": "best options",
+    "intent_id": "comparison",
+    "primary_keyword": "best furniture for an earthy bathroom",
+    "validation_status": "warning",
+    "warnings": [
+      "None of the secondary keywords appear in the article body.",
+      "Primary keyword appears very lightly in the article body."
+    ],
+    "errors": [],
+    "duplicate_candidate_slugs": [],
+    "timestamp": "2026-03-23T09:59:19.495351+00:00"
+  },
+  "editorial_validation": {
+    "article_slug": "best-furniture-for-an-earthy-bathroom",
+    "cluster_id": "earthy_bathroom",
+    "subtopic_id": "furniture",
+    "angle_id": "best_options",
+    "primary_keyword": "best furniture for an earthy bathroom",
+    "validation_status": "warning",
+    "warnings": [
+      "Supporting keyword ideas are barely reflected in the body."
+    ],
+    "errors": [],
+    "checks": {
+      "generic_intro": {
+        "intro_word_count": 168,
+        "concept_overlap": 6,
+        "first_sentence": "Choosing furniture for an earthy bathroom involves more than just picking natural-looking pieces."
+      },
+      "heading_quality": {
+        "heading_count": 5,
+        "vague_heading_count": 0,
+        "low_specificity_heading_count": 0,
+        "repeated_signature_count": 0,
+        "repeated_stem_count": 0,
+        "headings": [
+          "Prioritizing Durability and Texture: What Earthy Bathroom Furniture Must Do",
+          "Bamboo and Rattan: Lightweight Natural Choices for Flexible Styling",
+          "Stone and Concrete Furniture: Anchoring Luxury with Textural Contrast",
+          "Matching Furniture to Room Size, Layout, and Budget Without Compromise",
+          "Narrowing Down Your Furniture Choices: A Confident Selection Process"
+        ]
+      },
+      "specificity": {
+        "concept_token_hits": 8,
+        "specificity_term_hits": 8,
+        "secondary_keyword_hits": 0
+      },
+      "distinctiveness": {
+        "nearest_article_slug": "",
+        "max_similarity": 0.0,
+        "strongest_heading_overlap": 0
+      }
+    },
+    "timestamp": "2026-03-23T09:59:19.498169+00:00"
+  },
+  "image_generation": {
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/image_generation_cache/best-furniture-for-an-earthy-bathroom.json",
+    "model": "gpt-image-1",
+    "size": "1536x1024",
+    "hero_quality": "high",
+    "section_quality": "medium",
+    "generated_images": 6,
+    "cache_hits": 0,
+    "generation_calls": 6,
+    "qa_calls": 1,
+    "details": [
+      {
+        "label": "hero",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 1,
+        "quality": "high",
+        "qa_enabled": true
+      },
+      {
+        "label": "section-1",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false
+      },
+      {
+        "label": "section-2",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false
+      },
+      {
+        "label": "section-3",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false
+      },
+      {
+        "label": "section-4",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false
+      },
+      {
+        "label": "section-5",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false
+      }
+    ]
+  },
+  "pinterest": {
+    "variants_requested": 4,
+    "pin_assets_generated": true,
+    "mode": "publish"
+  }
+}

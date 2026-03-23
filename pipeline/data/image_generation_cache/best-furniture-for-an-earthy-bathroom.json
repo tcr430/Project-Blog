@@ -1,0 +1,26 @@
+{
+  "hero": {
+    "cache_key": "d4f0a8b551c2d6c1b023e8791bf261778d878a28482a7c60a1f4f3cae6bf66a8",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-an-earthy-bathroom/hero.png"
+  },
+  "section-1": {
+    "cache_key": "f139263b8244f144933c917f61a56a984148f14456b6c093976984cfc47ecd30",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-an-earthy-bathroom/section-1.png"
+  },
+  "section-2": {
+    "cache_key": "9bf2f2769c0d2f617deef715eb3d0f09f202d9ff50fb68e25e5e16d53510d3ee",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-an-earthy-bathroom/section-2.png"
+  },
+  "section-3": {
+    "cache_key": "904dd488fafc636d181a5e4ea6862d1673c39cfea9e3d87408c816c9a02eb224",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-an-earthy-bathroom/section-3.png"
+  },
+  "section-4": {
+    "cache_key": "fb2fca0bc7fe7b0ab5c5445031771e194777c225fe969901d73bcd8a74355af6",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-an-earthy-bathroom/section-4.png"
+  },
+  "section-5": {
+    "cache_key": "81db01546a5342d02f01cff07a8bd1ebe73988ef931bb7419ff8060201ab09b6",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-an-earthy-bathroom/section-5.png"
+  }
+}

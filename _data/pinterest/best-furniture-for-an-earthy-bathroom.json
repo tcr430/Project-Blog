@@ -1,0 +1,99 @@
+{
+  "article_title": "Best Furniture for an Earthy Bathroom: Finding the Perfect Natural Anchors",
+  "article_slug": "best-furniture-for-an-earthy-bathroom",
+  "article_relative_url": "/ideas/2026/03/23/best-furniture-for-an-earthy-bathroom/",
+  "article_url": "https://thelivinedit.com/ideas/2026/03/23/best-furniture-for-an-earthy-bathroom/",
+  "meta_description": "Discover the best furniture choices for creating a warm, earthy bathroom. Explore material options, sizing tips, and styling advice for a balanced, natural retreat.",
+  "cluster_id": "earthy_bathroom",
+  "subtopic_id": "furniture",
+  "angle_id": "best_options",
+  "intent_id": "comparison",
+  "visual_direction": {
+    "family_id": "crisp_modern",
+    "mood": "clean, sculptural, modern editorial restraint",
+    "lighting": "clear daylight with crisp shadow definition",
+    "palette": "soft white, black accents, stone, pale oak",
+    "intent_id": "comparison",
+    "profile_id": "comparison",
+    "shot_library_id": "general_decor"
+  },
+  "hero_image_path": "/assets/img/best-furniture-for-an-earthy-bathroom/hero.png",
+  "site_root_url": "https://thelivinedit.com",
+  "variant_count": 4,
+  "strategy": {
+    "minimum_variant_count": 4,
+    "generated_variant_count": 4,
+    "bonus_slots": 0,
+    "ranked_variant_types": [
+      "trend_overview",
+      "practical_tips",
+      "product_led",
+      "styling_angle"
+    ],
+    "article_score": null,
+    "notes": [
+      "applying performance weighting: no historical lift yet, using balanced defaults",
+      "exploring board default",
+      "exploring board bathroom"
+    ],
+    "board_config_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_boards.json"
+  },
+  "variants": [
+    {
+      "variant_key": "pin-1",
+      "variant_type": "trend_overview",
+      "style_name": "bottom-title",
+      "title": "5 Best Furniture Types for an Earthy Bathroom",
+      "description": "Discover the best furniture for creating an earthy bathroom sanctuary with natural materials and functional style.",
+      "image_path": "/assets/pins/best-furniture-for-an-earthy-bathroom/pin-1.svg",
+      "board": {
+        "key": "default",
+        "name": "Home Decor Inspiration"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 0
+    },
+    {
+      "variant_key": "pin-2",
+      "variant_type": "practical_tips",
+      "style_name": "centered-title",
+      "title": "Best Furniture for an Earthy Bathroom: Finding the Perfect Natural Anchors: Practical...",
+      "description": "Use these practical design moves to make best furniture for an earthy bathroom: finding the perfect natural anchors feel balanced, useful, and easy to live with.",
+      "image_path": "/assets/pins/best-furniture-for-an-earthy-bathroom/pin-2.svg",
+      "board": {
+        "key": "bathroom",
+        "name": "Bathroom Styling Notes"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 1
+    },
+    {
+      "variant_key": "pin-3",
+      "variant_type": "product_led",
+      "style_name": "minimalist-overlay",
+      "title": "4 Pieces That Elevate Best Furniture for an Earthy Bathroom: Finding the Perfect...",
+      "description": "Discover decor pieces and finishing details that help best furniture for an earthy bathroom: finding the perfect natural anchors feel more intentional without looking overdone.",
+      "image_path": "/assets/pins/best-furniture-for-an-earthy-bathroom/pin-3.svg",
+      "board": {
+        "key": "bathroom",
+        "name": "Bathroom Styling Notes"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 2
+    },
+    {
+      "variant_key": "pin-4",
+      "variant_type": "styling_angle",
+      "style_name": "top-title",
+      "title": "How to Style Best Furniture for an Earthy Bathroom: Finding the Perfect Natural...",
+      "description": "See how color, texture, and room styling can shape best furniture for an earthy bathroom: finding the perfect natural anchors into a softer, more editorial look.",
+      "image_path": "/assets/pins/best-furniture-for-an-earthy-bathroom/pin-4.svg",
+      "board": {
+        "key": "bathroom",
+        "name": "Bathroom Styling Notes"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 3
+    }
+  ]
+}
