@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-03-23T10:02:15.192676+00:00",
+  "generated_at": "2026-03-25T09:54:49.958044+00:00",
   "total_clusters": 396,
   "summary": {
-    "missing": 387,
-    "underdeveloped": 9,
+    "missing": 386,
+    "underdeveloped": 10,
     "growing": 0,
     "strong": 0,
     "saturated": 0
   },
   "saturation_summary": {
-    "empty": 387,
-    "needs_growth": 9
+    "empty": 386,
+    "needs_growth": 10
   },
   "editorial_mix_rules": {
     "recent_window_article_count": 8,
@@ -346,7 +346,6 @@
     "tonal beige patio",
     "transitional balcony",
     "transitional bathroom",
-    "transitional bedroom",
     "transitional dining room",
     "transitional entryway",
     "transitional guest bedroom",
@@ -472,6 +471,7 @@
     "earthy bedroom",
     "neutral bathroom",
     "earthy bathroom",
+    "transitional bedroom",
     "living room textures and materials",
     "small dining nook"
   ],
@@ -57829,220 +57829,6 @@
       ]
     },
     {
-      "cluster_id": "transitional_bedroom",
-      "cluster_name": "transitional bedroom",
-      "domain_id": "bedrooms",
-      "health_label": "missing",
-      "article_count": 0,
-      "article_capacity_target": 14,
-      "capacity_ratio": 0.0,
-      "growth_openings": 10,
-      "saturation_state": "empty",
-      "selection_action": "boost",
-      "latest_publication_date": "",
-      "days_since_latest": null,
-      "subtopics_total": 5,
-      "subtopics_covered": [],
-      "subtopic_ids_covered": [],
-      "subtopics_missing": [
-        "Layout and Foundation",
-        "Color Palette",
-        "Furniture and Anchors",
-        "Lighting",
-        "Textures and Layers"
-      ],
-      "subtopic_ids_missing": [
-        "layout",
-        "colors",
-        "furniture",
-        "lighting",
-        "textures"
-      ],
-      "angle_distribution": {
-        "ideas": 0,
-        "how_to": 0,
-        "mistakes": 0,
-        "best_options": 0,
-        "style_specific": 0
-      },
-      "underused_angles": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "style_specific"
-      ],
-      "overused_angles": [],
-      "intent_distribution": {
-        "comparison": 0,
-        "decision_making": 0,
-        "implementation": 0,
-        "inspiration": 0,
-        "problem_solving": 0
-      },
-      "underused_intents": [
-        "comparison",
-        "decision_making",
-        "implementation",
-        "inspiration",
-        "problem_solving"
-      ],
-      "overused_intents": [],
-      "recommended_concepts": [
-        {
-          "cluster_id": "transitional_bedroom",
-          "cluster_name": "transitional bedroom",
-          "domain_id": "bedrooms",
-          "subtopic_id": "furniture",
-          "subtopic_name": "Furniture and Anchors",
-          "angle_id": "best_options",
-          "intent_id": "comparison",
-          "modifier": "",
-          "primary_keyword": "best furniture for a transitional bedroom",
-          "secondary_keywords": [
-            "transitional bedroom ideas",
-            "how to style a transitional bedroom",
-            "transitional bedroom decor",
-            "transitional bedroom layout ideas"
-          ],
-          "search_intent": "comparison",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "monetizable_decision",
-          "editorial_mix_tags": [
-            "monetizable_decision",
-            "evergreen_authority"
-          ],
-          "score": 96,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "transitional_bedroom",
-          "cluster_name": "transitional bedroom",
-          "domain_id": "bedrooms",
-          "subtopic_id": "layout",
-          "subtopic_name": "Layout and Foundation",
-          "angle_id": "best_options",
-          "intent_id": "comparison",
-          "modifier": "",
-          "primary_keyword": "best layout for a transitional bedroom",
-          "secondary_keywords": [
-            "transitional bedroom ideas",
-            "how to style a transitional bedroom",
-            "transitional bedroom decor",
-            "transitional bedroom layout ideas"
-          ],
-          "search_intent": "comparison",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "monetizable_decision",
-          "editorial_mix_tags": [
-            "monetizable_decision",
-            "evergreen_authority"
-          ],
-          "score": 96,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "transitional_bedroom",
-          "cluster_name": "transitional bedroom",
-          "domain_id": "bedrooms",
-          "subtopic_id": "lighting",
-          "subtopic_name": "Lighting",
-          "angle_id": "best_options",
-          "intent_id": "comparison",
-          "modifier": "",
-          "primary_keyword": "best lighting for a transitional bedroom",
-          "secondary_keywords": [
-            "transitional bedroom ideas",
-            "how to style a transitional bedroom",
-            "transitional bedroom decor",
-            "transitional bedroom layout ideas"
-          ],
-          "search_intent": "comparison",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "monetizable_decision",
-          "editorial_mix_tags": [
-            "monetizable_decision",
-            "evergreen_authority"
-          ],
-          "score": 96,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        }
-      ],
-      "recommended_topics": [
-        "best furniture for a transitional bedroom",
-        "best layout for a transitional bedroom",
-        "best lighting for a transitional bedroom"
-      ],
-      "priority_score": 100,
-      "season": "",
-      "holiday": "",
-      "source": "content architecture",
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "pinterest_intelligence": {
-        "cluster_signal_label": "no_data",
-        "cluster_signal_boost": 0
-      },
-      "seed_keywords": [
-        "transitional bedroom ideas",
-        "how to style a transitional bedroom",
-        "transitional bedroom decor",
-        "transitional bedroom layout ideas",
-        "transitional bedroom color palette"
-      ],
-      "allowed_angle_ids": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "style_specific"
-      ]
-    },
-    {
       "cluster_id": "transitional_dining_room",
       "cluster_name": "transitional dining room",
       "domain_id": "kitchens_dining",
@@ -83715,7 +83501,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-18",
-      "days_since_latest": 4,
+      "days_since_latest": 6,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -83928,7 +83714,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-20",
-      "days_since_latest": 3,
+      "days_since_latest": 5,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation"
@@ -84143,7 +83929,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-23",
-      "days_since_latest": 0,
+      "days_since_latest": 1,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -84335,6 +84121,219 @@
         "earthy bathroom decor",
         "earthy bathroom layout ideas",
         "earthy bathroom color palette"
+      ],
+      "allowed_angle_ids": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "style_specific"
+      ]
+    },
+    {
+      "cluster_id": "transitional_bedroom",
+      "cluster_name": "transitional bedroom",
+      "domain_id": "bedrooms",
+      "health_label": "underdeveloped",
+      "article_count": 1,
+      "article_capacity_target": 14,
+      "capacity_ratio": 0.07,
+      "growth_openings": 9,
+      "saturation_state": "needs_growth",
+      "selection_action": "boost",
+      "latest_publication_date": "2026-03-25",
+      "days_since_latest": 0,
+      "subtopics_total": 5,
+      "subtopics_covered": [
+        "Furniture and Anchors"
+      ],
+      "subtopic_ids_covered": [
+        "furniture"
+      ],
+      "subtopics_missing": [
+        "Layout and Foundation",
+        "Color Palette",
+        "Lighting",
+        "Textures and Layers"
+      ],
+      "subtopic_ids_missing": [
+        "layout",
+        "colors",
+        "lighting",
+        "textures"
+      ],
+      "angle_distribution": {
+        "ideas": 0,
+        "how_to": 0,
+        "mistakes": 0,
+        "best_options": 1,
+        "style_specific": 0
+      },
+      "underused_angles": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "style_specific"
+      ],
+      "overused_angles": [],
+      "intent_distribution": {
+        "comparison": 1,
+        "decision_making": 0,
+        "implementation": 0,
+        "inspiration": 0,
+        "problem_solving": 0
+      },
+      "underused_intents": [
+        "comparison",
+        "decision_making",
+        "implementation",
+        "inspiration",
+        "problem_solving"
+      ],
+      "overused_intents": [],
+      "recommended_concepts": [
+        {
+          "cluster_id": "transitional_bedroom",
+          "cluster_name": "transitional bedroom",
+          "domain_id": "bedrooms",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "how_to",
+          "intent_id": "implementation",
+          "modifier": "",
+          "primary_keyword": "how to choose colors for a transitional bedroom",
+          "secondary_keywords": [
+            "transitional bedroom ideas",
+            "how to style a transitional bedroom",
+            "transitional bedroom decor",
+            "transitional bedroom layout ideas"
+          ],
+          "search_intent": "how_to",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 68,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": "editorial mix: evergreen_authority is overrepresented recently (-6)"
+          }
+        },
+        {
+          "cluster_id": "transitional_bedroom",
+          "cluster_name": "transitional bedroom",
+          "domain_id": "bedrooms",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "ideas",
+          "intent_id": "inspiration",
+          "modifier": "",
+          "primary_keyword": "transitional bedroom color palette ideas",
+          "secondary_keywords": [
+            "transitional bedroom ideas",
+            "how to style a transitional bedroom",
+            "transitional bedroom decor",
+            "transitional bedroom layout ideas"
+          ],
+          "search_intent": "ideas",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 68,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": "editorial mix: evergreen_authority is overrepresented recently (-6)"
+          }
+        },
+        {
+          "cluster_id": "transitional_bedroom",
+          "cluster_name": "transitional bedroom",
+          "domain_id": "bedrooms",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "mistakes",
+          "intent_id": "problem_solving",
+          "modifier": "",
+          "primary_keyword": "transitional bedroom color mistakes to avoid",
+          "secondary_keywords": [
+            "transitional bedroom ideas",
+            "how to style a transitional bedroom",
+            "transitional bedroom decor",
+            "transitional bedroom layout ideas"
+          ],
+          "search_intent": "problem_solution",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 68,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": "editorial mix: evergreen_authority is overrepresented recently (-6)"
+          }
+        }
+      ],
+      "recommended_topics": [
+        "how to choose colors for a transitional bedroom",
+        "transitional bedroom color palette ideas",
+        "transitional bedroom color mistakes to avoid"
+      ],
+      "priority_score": 70,
+      "season": "",
+      "holiday": "",
+      "source": "content architecture",
+      "pinterest_signal": {
+        "label": "no_data",
+        "boost": 0,
+        "pinterest_article_count": 0,
+        "strong_article_count": 0,
+        "weak_article_count": 0,
+        "average_score": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_saves": 0.0
+      },
+      "pinterest_intelligence": {
+        "cluster_signal_label": "no_data",
+        "cluster_signal_boost": 0
+      },
+      "seed_keywords": [
+        "transitional bedroom ideas",
+        "how to style a transitional bedroom",
+        "transitional bedroom decor",
+        "transitional bedroom layout ideas",
+        "transitional bedroom color palette"
       ],
       "allowed_angle_ids": [
         "ideas",

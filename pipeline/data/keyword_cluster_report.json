@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-03-23T10:02:13.681755+00:00",
-  "cluster_count": 9,
-  "article_count": 9,
+  "generated_at": "2026-03-25T09:54:48.495899+00:00",
+  "cluster_count": 10,
+  "article_count": 10,
   "subtopic_count": 6,
   "angle_count": 4,
   "angle_distribution": {
-    "best_options": 4,
+    "best_options": 5,
     "how_to": 1,
     "ideas": 3,
     "style_specific": 1
@@ -410,6 +410,50 @@
       ],
       "angle_distribution": {
         "ideas": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_id": "transitional_bedroom",
+      "cluster_name": "transitional bedroom",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "bedrooms"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "best furniture for a transitional bedroom"
+      ],
+      "latest_article_date": "2026-03-25",
+      "latest_publication": {
+        "article_slug": "best-furniture-transitional-bedroom",
+        "article_title": "The Best Furniture for a Transitional Bedroom: a Practical Selection Guide",
+        "publish_date": "2026-03-25",
+        "subtopic_id": "furniture",
+        "subtopic_name": "furniture and anchors",
+        "angle_id": "best_options"
+      },
+      "representative_article_slugs": [
+        "best-furniture-transitional-bedroom"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "furniture",
+          "subtopic_name": "furniture and anchors",
+          "article_count": 1,
+          "latest_article_date": "2026-03-25",
+          "representative_article_slugs": [
+            "best-furniture-transitional-bedroom"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "best_options": 1
       },
       "status": "underdeveloped"
     }

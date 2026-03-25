@@ -1,0 +1,98 @@
+{
+  "article_title": "The Best Furniture for a Transitional Bedroom: a Practical Selection Guide",
+  "article_slug": "best-furniture-transitional-bedroom",
+  "article_relative_url": "/ideas/2026/03/25/best-furniture-transitional-bedroom/",
+  "article_url": "https://thelivinedit.com/ideas/2026/03/25/best-furniture-transitional-bedroom/",
+  "meta_description": "Discover the best furniture options for a transitional bedroom. Learn how to balance modern and traditional styles with practical tips for materials, layouts, and budget-friendly choices.",
+  "cluster_id": "transitional_bedroom",
+  "subtopic_id": "furniture",
+  "angle_id": "best_options",
+  "intent_id": "comparison",
+  "visual_direction": {
+    "family_id": "warm_layered",
+    "mood": "warm, tactile, layered and inviting styling",
+    "lighting": "late-morning daylight with warm reflected light",
+    "palette": "creams, camel, honey wood, soft terracotta accents",
+    "intent_id": "comparison",
+    "profile_id": "comparison",
+    "shot_library_id": "general_decor"
+  },
+  "hero_image_path": "/assets/img/best-furniture-transitional-bedroom/hero.png",
+  "site_root_url": "https://thelivinedit.com",
+  "variant_count": 4,
+  "strategy": {
+    "minimum_variant_count": 4,
+    "generated_variant_count": 4,
+    "bonus_slots": 0,
+    "ranked_variant_types": [
+      "trend_overview",
+      "practical_tips",
+      "product_led",
+      "styling_angle"
+    ],
+    "article_score": null,
+    "notes": [
+      "applying performance weighting: no historical lift yet, using balanced defaults",
+      "exploring board default"
+    ],
+    "board_config_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_boards.json"
+  },
+  "variants": [
+    {
+      "variant_key": "pin-1",
+      "variant_type": "trend_overview",
+      "style_name": "bottom-title",
+      "title": "How to Choose the Best Furniture for Your Transitional Bedroom",
+      "description": "Explore practical furniture options that create a warm and balanced transitional bedroom, blending classic and modern elements seamlessly.",
+      "image_path": "/assets/pins/best-furniture-transitional-bedroom/pin-1.svg",
+      "board": {
+        "key": "bedroom",
+        "name": "Bedroom Retreat Ideas"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 0
+    },
+    {
+      "variant_key": "pin-2",
+      "variant_type": "practical_tips",
+      "style_name": "centered-title",
+      "title": "The Best Furniture for a Transitional Bedroom: a Practical Selection Guide: Practical...",
+      "description": "Use these practical design moves to make the best furniture for a transitional bedroom: a practical selection guide feel balanced, useful, and easy to live with.",
+      "image_path": "/assets/pins/best-furniture-transitional-bedroom/pin-2.svg",
+      "board": {
+        "key": "bedroom",
+        "name": "Bedroom Retreat Ideas"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 1
+    },
+    {
+      "variant_key": "pin-3",
+      "variant_type": "product_led",
+      "style_name": "minimalist-overlay",
+      "title": "4 Pieces That Elevate The Best Furniture for a Transitional Bedroom: a Practical...",
+      "description": "Discover decor pieces and finishing details that help the best furniture for a transitional bedroom: a practical selection guide feel more intentional without looking overdone.",
+      "image_path": "/assets/pins/best-furniture-transitional-bedroom/pin-3.svg",
+      "board": {
+        "key": "home_products",
+        "name": "Home Finds & Decor Picks"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 2
+    },
+    {
+      "variant_key": "pin-4",
+      "variant_type": "styling_angle",
+      "style_name": "top-title",
+      "title": "How to Style The Best Furniture for a Transitional Bedroom: a Practical Selection...",
+      "description": "See how color, texture, and room styling can shape the best furniture for a transitional bedroom: a practical selection guide into a softer, more editorial look.",
+      "image_path": "/assets/pins/best-furniture-transitional-bedroom/pin-4.svg",
+      "board": {
+        "key": "default",
+        "name": "Home Decor Inspiration"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 3
+    }
+  ]
+}

@@ -1,12 +1,30 @@
 {
-  "generated_at": "2026-03-23T09:58:27.906770+00:00",
+  "generated_at": "2026-03-25T09:50:02.247177+00:00",
   "overview": {
-    "pin_count": 8,
+    "pin_count": 12,
     "published_pin_count": 0,
     "analytics_ready_pin_count": 0,
-    "tracked_article_count": 2
+    "tracked_article_count": 3
   },
   "best_performing_clusters": [
+    {
+      "cluster_id": "earthy_bathroom",
+      "cluster_name": "earthy bathroom",
+      "pin_count": 4,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-for-an-earthy-bathroom"
+      ]
+    },
     {
       "cluster_id": "earthy_bedroom",
       "cluster_name": "earthy bedroom",
@@ -45,6 +63,25 @@
     }
   ],
   "best_performing_subtopics": [
+    {
+      "cluster_id": "earthy_bathroom",
+      "subtopic_id": "furniture",
+      "subtopic_name": "furniture and anchors",
+      "pin_count": 4,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-for-an-earthy-bathroom"
+      ]
+    },
     {
       "cluster_id": "earthy_bedroom",
       "subtopic_id": "furniture",
@@ -87,7 +124,7 @@
   "best_performing_angles": [
     {
       "angle_id": "best_options",
-      "pin_count": 4,
+      "pin_count": 8,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -99,6 +136,7 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
+        "best-furniture-for-an-earthy-bathroom",
         "best-furniture-for-earthy-bedroom"
       ]
     },
@@ -140,6 +178,27 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "how-to-style-a-neutral-bathroom"
+      ]
+    },
+    {
+      "visual_style_key": "bottom_title|crisp_modern|general_decor|comparison",
+      "style_name": "bottom-title",
+      "visual_family_id": "crisp_modern",
+      "shot_library_id": "general_decor",
+      "intent_id": "comparison",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-for-an-earthy-bathroom"
       ]
     },
     {
@@ -185,6 +244,27 @@
       ]
     },
     {
+      "visual_style_key": "centered_title|crisp_modern|general_decor|comparison",
+      "style_name": "centered-title",
+      "visual_family_id": "crisp_modern",
+      "shot_library_id": "general_decor",
+      "intent_id": "comparison",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-for-an-earthy-bathroom"
+      ]
+    },
+    {
       "visual_style_key": "centered_title|warm_layered|general_decor|comparison",
       "style_name": "centered-title",
       "visual_family_id": "warm_layered",
@@ -224,6 +304,27 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "how-to-style-a-neutral-bathroom"
+      ]
+    },
+    {
+      "visual_style_key": "minimalist_overlay|crisp_modern|general_decor|comparison",
+      "style_name": "minimalist-overlay",
+      "visual_family_id": "crisp_modern",
+      "shot_library_id": "general_decor",
+      "intent_id": "comparison",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-for-an-earthy-bathroom"
       ]
     },
     {
@@ -269,6 +370,27 @@
       ]
     },
     {
+      "visual_style_key": "top_title|crisp_modern|general_decor|comparison",
+      "style_name": "top-title",
+      "visual_family_id": "crisp_modern",
+      "shot_library_id": "general_decor",
+      "intent_id": "comparison",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-for-an-earthy-bathroom"
+      ]
+    },
+    {
       "visual_style_key": "top_title|warm_layered|general_decor|comparison",
       "style_name": "top-title",
       "visual_family_id": "warm_layered",
@@ -292,6 +414,24 @@
   ],
   "top_rankings": {
     "clusters": [
+      {
+        "cluster_id": "earthy_bathroom",
+        "cluster_name": "earthy bathroom",
+        "pin_count": 4,
+        "published_pin_count": 0,
+        "analytics_ready_count": 0,
+        "average_score": 0.0,
+        "average_impressions": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_pin_clicks": 0.0,
+        "average_closeups": 0.0,
+        "signal_label": "no_data",
+        "signal_boost": 0,
+        "top_article_slugs": [
+          "best-furniture-for-an-earthy-bathroom"
+        ]
+      },
       {
         "cluster_id": "earthy_bedroom",
         "cluster_name": "earthy bedroom",
@@ -330,6 +470,25 @@
       }
     ],
     "subtopics": [
+      {
+        "cluster_id": "earthy_bathroom",
+        "subtopic_id": "furniture",
+        "subtopic_name": "furniture and anchors",
+        "pin_count": 4,
+        "published_pin_count": 0,
+        "analytics_ready_count": 0,
+        "average_score": 0.0,
+        "average_impressions": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_pin_clicks": 0.0,
+        "average_closeups": 0.0,
+        "signal_label": "no_data",
+        "signal_boost": 0,
+        "top_article_slugs": [
+          "best-furniture-for-an-earthy-bathroom"
+        ]
+      },
       {
         "cluster_id": "earthy_bedroom",
         "subtopic_id": "furniture",
@@ -372,7 +531,7 @@
     "angles": [
       {
         "angle_id": "best_options",
-        "pin_count": 4,
+        "pin_count": 8,
         "published_pin_count": 0,
         "analytics_ready_count": 0,
         "average_score": 0.0,
@@ -384,6 +543,7 @@
         "signal_label": "no_data",
         "signal_boost": 0,
         "top_article_slugs": [
+          "best-furniture-for-an-earthy-bathroom",
           "best-furniture-for-earthy-bedroom"
         ]
       },
@@ -425,6 +585,27 @@
         "signal_boost": 0,
         "top_article_slugs": [
           "how-to-style-a-neutral-bathroom"
+        ]
+      },
+      {
+        "visual_style_key": "bottom_title|crisp_modern|general_decor|comparison",
+        "style_name": "bottom-title",
+        "visual_family_id": "crisp_modern",
+        "shot_library_id": "general_decor",
+        "intent_id": "comparison",
+        "pin_count": 1,
+        "published_pin_count": 0,
+        "analytics_ready_count": 0,
+        "average_score": 0.0,
+        "average_impressions": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_pin_clicks": 0.0,
+        "average_closeups": 0.0,
+        "signal_label": "no_data",
+        "signal_boost": 0,
+        "top_article_slugs": [
+          "best-furniture-for-an-earthy-bathroom"
         ]
       },
       {
@@ -470,9 +651,9 @@
         ]
       },
       {
-        "visual_style_key": "centered_title|warm_layered|general_decor|comparison",
+        "visual_style_key": "centered_title|crisp_modern|general_decor|comparison",
         "style_name": "centered-title",
-        "visual_family_id": "warm_layered",
+        "visual_family_id": "crisp_modern",
         "shot_library_id": "general_decor",
         "intent_id": "comparison",
         "pin_count": 1,
@@ -487,28 +668,7 @@
         "signal_label": "no_data",
         "signal_boost": 0,
         "top_article_slugs": [
-          "best-furniture-for-earthy-bedroom"
-        ]
-      },
-      {
-        "visual_style_key": "minimalist_overlay|airy_editorial|color_palette|implementation",
-        "style_name": "minimalist-overlay",
-        "visual_family_id": "airy_editorial",
-        "shot_library_id": "color_palette",
-        "intent_id": "implementation",
-        "pin_count": 1,
-        "published_pin_count": 0,
-        "analytics_ready_count": 0,
-        "average_score": 0.0,
-        "average_impressions": 0.0,
-        "average_saves": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_pin_clicks": 0.0,
-        "average_closeups": 0.0,
-        "signal_label": "no_data",
-        "signal_boost": 0,
-        "top_article_slugs": [
-          "how-to-style-a-neutral-bathroom"
+          "best-furniture-for-an-earthy-bathroom"
         ]
       }
     ]

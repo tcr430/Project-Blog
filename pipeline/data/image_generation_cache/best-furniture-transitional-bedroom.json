@@ -1,0 +1,26 @@
+{
+  "hero": {
+    "cache_key": "dd7439be621792af4e83e62a924b26f1d2b682fe5c18bd781eafefe99bafe6df",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-transitional-bedroom/hero.png"
+  },
+  "section-1": {
+    "cache_key": "d174f8d9d418c4065a1669e688891091077ee88a5d3a0161d14a9100dbe12b5a",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-transitional-bedroom/section-1.png"
+  },
+  "section-2": {
+    "cache_key": "893ee8fca75b6a2c8d3e98125d72de595d6bc49901f5a37f67875c13b84686ab",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-transitional-bedroom/section-2.png"
+  },
+  "section-3": {
+    "cache_key": "24c582d8dbd134cf0d17013dd437ba09563059dfff8f91477e708c05ac19fb78",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-transitional-bedroom/section-3.png"
+  },
+  "section-4": {
+    "cache_key": "9d868a2e33adc1aa94bdcba599efe0b4e15883a995e508a8acf885dd6e95d141",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-transitional-bedroom/section-4.png"
+  },
+  "section-5": {
+    "cache_key": "6d2c0c7d0fd6a7c0e0ae9e8da5057a5f3b5ea75c207bc7212931b3332248257a",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-transitional-bedroom/section-5.png"
+  }
+}

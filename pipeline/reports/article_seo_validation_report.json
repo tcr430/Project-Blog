@@ -1,23 +1,22 @@
 {
-  "generated_at": "2026-03-23T09:59:19.495456+00:00",
+  "generated_at": "2026-03-25T09:51:50.940633+00:00",
   "articles": [
     {
-      "article_slug": "best-furniture-for-an-earthy-bathroom",
-      "cluster": "earthy bathroom",
-      "cluster_id": "earthy bathroom",
+      "article_slug": "best-furniture-transitional-bedroom",
+      "cluster": "transitional bedroom",
+      "cluster_id": "transitional bedroom",
       "subtopic_id": "furniture",
       "subtopic_name": "furniture and anchors",
       "angle_id": "best options",
       "intent_id": "comparison",
-      "primary_keyword": "best furniture for an earthy bathroom",
+      "primary_keyword": "best furniture for a transitional bedroom",
       "validation_status": "warning",
       "warnings": [
-        "None of the secondary keywords appear in the article body.",
-        "Primary keyword appears very lightly in the article body."
+        "None of the secondary keywords appear in the article body."
       ],
       "errors": [],
       "duplicate_candidate_slugs": [],
-      "timestamp": "2026-03-23T09:59:19.495351+00:00"
+      "timestamp": "2026-03-25T09:51:50.940542+00:00"
     },
     {
       "article_slug": "spring-bedroom-refresh-mistakes-to-avoid",
@@ -36,7 +35,25 @@
       ],
       "errors": [],
       "duplicate_candidate_slugs": [],
-      "timestamp": "2026-03-23T09:58:42.261649+00:00"
+      "timestamp": "2026-03-25T09:50:16.771718+00:00"
+    },
+    {
+      "article_slug": "best-furniture-for-an-earthy-bathroom",
+      "cluster": "earthy bathroom",
+      "cluster_id": "earthy bathroom",
+      "subtopic_id": "furniture",
+      "subtopic_name": "furniture and anchors",
+      "angle_id": "best options",
+      "intent_id": "comparison",
+      "primary_keyword": "best furniture for an earthy bathroom",
+      "validation_status": "warning",
+      "warnings": [
+        "None of the secondary keywords appear in the article body.",
+        "Primary keyword appears very lightly in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-03-23T09:59:19.495351+00:00"
     },
     {
       "article_slug": "how-to-style-a-neutral-bathroom",

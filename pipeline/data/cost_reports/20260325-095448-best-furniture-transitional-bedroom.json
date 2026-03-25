@@ -1,0 +1,152 @@
+{
+  "generated_at": "2026-03-25T09:54:48.262013+00:00",
+  "trend": "best furniture for a transitional bedroom",
+  "slug": "best-furniture-transitional-bedroom",
+  "article_generation": {
+    "cache_hit": false,
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/article_packages/3d88d377c924777f0c2165c29378715d1bfeb1a7a3bb3a38b7182c8bcd42b6e3.json",
+    "model": "gpt-4.1-mini",
+    "generation_calls": 3,
+    "short_retries": 1,
+    "product_retries": 0,
+    "selected_products": 0,
+    "affiliate_mode": false,
+    "monetization_profile_id": "commercial_strong",
+    "generated_link_count": 0,
+    "primary_keyword": "best furniture for a transitional bedroom",
+    "topical_cluster": "transitional bedroom"
+  },
+  "seo_validation": {
+    "article_slug": "best-furniture-transitional-bedroom",
+    "cluster": "transitional bedroom",
+    "cluster_id": "transitional bedroom",
+    "subtopic_id": "furniture",
+    "subtopic_name": "furniture and anchors",
+    "angle_id": "best options",
+    "intent_id": "comparison",
+    "primary_keyword": "best furniture for a transitional bedroom",
+    "validation_status": "warning",
+    "warnings": [
+      "None of the secondary keywords appear in the article body."
+    ],
+    "errors": [],
+    "duplicate_candidate_slugs": [],
+    "timestamp": "2026-03-25T09:51:50.940542+00:00"
+  },
+  "editorial_validation": {
+    "article_slug": "best-furniture-transitional-bedroom",
+    "cluster_id": "transitional_bedroom",
+    "subtopic_id": "furniture",
+    "angle_id": "best_options",
+    "primary_keyword": "best furniture for a transitional bedroom",
+    "validation_status": "warning",
+    "warnings": [
+      "Supporting keyword ideas are barely reflected in the body."
+    ],
+    "errors": [],
+    "checks": {
+      "generic_intro": {
+        "intro_word_count": 153,
+        "concept_overlap": 6,
+        "first_sentence": "Choosing the best furniture for a transitional bedroom can feel a bit like walking a design tightrope."
+      },
+      "heading_quality": {
+        "heading_count": 5,
+        "vague_heading_count": 0,
+        "low_specificity_heading_count": 0,
+        "repeated_signature_count": 0,
+        "repeated_stem_count": 0,
+        "headings": [
+          "Defining the Essential Criteria for Transitional Bedroom Furniture",
+          "Warm Wood Furniture: Classic Backbone for Transitional Bedrooms",
+          "Metal and Glass Furniture for Sleek, Modern Touches",
+          "Matching Furniture Choices to Room Size and Layout Needs",
+          "Confident Selection: How to Narrow Your Bed, Storage, and Seating Options"
+        ]
+      },
+      "specificity": {
+        "concept_token_hits": 8,
+        "specificity_term_hits": 14,
+        "secondary_keyword_hits": 0
+      },
+      "distinctiveness": {
+        "nearest_article_slug": "",
+        "max_similarity": 0.0,
+        "strongest_heading_overlap": 0
+      }
+    },
+    "timestamp": "2026-03-25T09:51:50.942878+00:00"
+  },
+  "image_generation": {
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/image_generation_cache/best-furniture-transitional-bedroom.json",
+    "model": "gpt-image-1",
+    "size": "1536x1024",
+    "hero_quality": "high",
+    "section_quality": "medium",
+    "generated_images": 6,
+    "cache_hits": 0,
+    "generation_calls": 6,
+    "qa_calls": 1,
+    "details": [
+      {
+        "label": "hero",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 1,
+        "quality": "high",
+        "qa_enabled": true
+      },
+      {
+        "label": "section-1",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false
+      },
+      {
+        "label": "section-2",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false
+      },
+      {
+        "label": "section-3",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false
+      },
+      {
+        "label": "section-4",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false
+      },
+      {
+        "label": "section-5",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false
+      }
+    ]
+  },
+  "pinterest": {
+    "variants_requested": 4,
+    "pin_assets_generated": true,
+    "mode": "publish"
+  }
+}
