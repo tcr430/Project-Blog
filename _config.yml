@@ -30,7 +30,9 @@ defaults:
     values:
       layout: page
 exclude:
+  - AGENTS.md
   - Gemfile.lock
+  - google_search_console.md
   - node_modules
   - vendor
   - pipeline
