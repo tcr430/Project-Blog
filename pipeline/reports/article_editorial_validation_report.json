@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-03-25T09:51:50.942999+00:00",
+  "generated_at": "2026-03-27T09:52:25.195740+00:00",
   "articles": [
     {
-      "article_slug": "best-furniture-transitional-bedroom",
-      "cluster_id": "transitional_bedroom",
+      "article_slug": "best-furniture-for-transitional-bathroom",
+      "cluster_id": "transitional_bathroom",
       "subtopic_id": "furniture",
       "angle_id": "best_options",
-      "primary_keyword": "best furniture for a transitional bedroom",
+      "primary_keyword": "best furniture for a transitional bathroom",
       "validation_status": "warning",
       "warnings": [
         "Supporting keyword ideas are barely reflected in the body."
@@ -14,9 +14,9 @@
       "errors": [],
       "checks": {
         "generic_intro": {
-          "intro_word_count": 153,
-          "concept_overlap": 6,
-          "first_sentence": "Choosing the best furniture for a transitional bedroom can feel a bit like walking a design tightrope."
+          "intro_word_count": 112,
+          "concept_overlap": 8,
+          "first_sentence": "Choosing the best furniture for a transitional bathroom is a careful balancing act."
         },
         "heading_quality": {
           "heading_count": 5,
@@ -25,16 +25,16 @@
           "repeated_signature_count": 0,
           "repeated_stem_count": 0,
           "headings": [
-            "Defining the Essential Criteria for Transitional Bedroom Furniture",
-            "Warm Wood Furniture: Classic Backbone for Transitional Bedrooms",
-            "Metal and Glass Furniture for Sleek, Modern Touches",
-            "Matching Furniture Choices to Room Size and Layout Needs",
-            "Confident Selection: How to Narrow Your Bed, Storage, and Seating Options"
+            "Prioritizing Material Mix and Finish for Transitional Bathroom Furniture",
+            "Floating Vanities: A Modern Anchor for Transitional Bathrooms",
+            "Freestanding Storage: Balancing Accessibility with Design Intent",
+            "Tailoring Furniture Choices to Bathroom Size and Layout Constraints",
+            "Confident Selection: Navigating Choices for Lasting Transitional Bathroom Furniture"
           ]
         },
         "specificity": {
-          "concept_token_hits": 8,
-          "specificity_term_hits": 14,
+          "concept_token_hits": 9,
+          "specificity_term_hits": 9,
           "secondary_keyword_hits": 0
         },
         "distinctiveness": {
@@ -43,7 +43,7 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-03-25T09:51:50.942878+00:00"
+      "timestamp": "2026-03-27T09:52:25.195608+00:00"
     },
     {
       "article_slug": "spring-bedroom-refresh-mistakes-to-avoid",
@@ -90,7 +90,51 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-03-25T09:50:16.775203+00:00"
+      "timestamp": "2026-03-27T09:51:21.163127+00:00"
+    },
+    {
+      "article_slug": "best-furniture-transitional-bedroom",
+      "cluster_id": "transitional_bedroom",
+      "subtopic_id": "furniture",
+      "angle_id": "best_options",
+      "primary_keyword": "best furniture for a transitional bedroom",
+      "validation_status": "warning",
+      "warnings": [
+        "Supporting keyword ideas are barely reflected in the body."
+      ],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 153,
+          "concept_overlap": 6,
+          "first_sentence": "Choosing the best furniture for a transitional bedroom can feel a bit like walking a design tightrope."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 0,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Defining the Essential Criteria for Transitional Bedroom Furniture",
+            "Warm Wood Furniture: Classic Backbone for Transitional Bedrooms",
+            "Metal and Glass Furniture for Sleek, Modern Touches",
+            "Matching Furniture Choices to Room Size and Layout Needs",
+            "Confident Selection: How to Narrow Your Bed, Storage, and Seating Options"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 8,
+          "specificity_term_hits": 14,
+          "secondary_keyword_hits": 0
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-03-25T09:51:50.942878+00:00"
     },
     {
       "article_slug": "best-furniture-for-an-earthy-bathroom",
