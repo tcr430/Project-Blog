@@ -2,6 +2,7 @@
 
 import argparse
 import json
+import re
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
@@ -12,6 +13,24 @@ DATA_DIR = Path(__file__).resolve().parents[1] / "data"
 QUEUE_FILE_PATH = DATA_DIR / "pinterest_queue.json"
 HISTORY_FILE_PATH = DATA_DIR / "pinterest_history.json"
 SCHEDULE_OFFSETS_HOURS = [0, 18, 48, 96]
+MAX_PINS_PER_RUN = 1
+MAX_PINS_PER_DAY = 1
+MIN_HOURS_BETWEEN_SAME_ARTICLE = 24 * 7
+MIN_HOURS_BETWEEN_SAME_BOARD_IN_RUN = 12
+DEFER_HOURS_AFTER_FAILURE = 24
+SEASONAL_WINDOWS = {
+    "spring": ((2, 15), (6, 15)),
+    "summer": ((5, 15), (9, 15)),
+    "fall": ((8, 15), (11, 30)),
+    "winter": ((11, 15), (2, 15)),
+}
+HOLIDAY_WINDOWS = {
+    "christmas": ((10, 15), (1, 7)),
+    "easter": ((2, 15), (4, 20)),
+    "halloween": ((9, 1), (10, 31)),
+    "thanksgiving": ((10, 15), (11, 30)),
+    "valentines": ((1, 10), (2, 14)),
+}
 
 
 def parse_args() -> argparse.Namespace:
@@ -73,6 +92,124 @@ def build_public_asset_url(site_root_url: str, image_path: str) -> str:
     clean_root = site_root_url.rstrip("/")
     clean_path = image_path if image_path.startswith("/") else f"/{image_path}"
     return f"{clean_root}{clean_path}"
+
+
+def normalize_text(value: Any) -> str:
+    normalized = str(value or "").strip().lower()
+    normalized = normalized.replace("_", " ").replace("-", " ")
+    return re.sub(r"\s+", " ", normalized)
+
+
+def normalize_identifier(value: Any) -> str:
+    return normalize_text(value).replace(" ", "_")
+
+
+def month_day_key(month: int, day: int) -> int:
+    return month * 100 + day
+
+
+def is_date_within_window(now: datetime, start: tuple[int, int], end: tuple[int, int]) -> bool:
+    current = month_day_key(now.month, now.day)
+    start_key = month_day_key(*start)
+    end_key = month_day_key(*end)
+    if start_key <= end_key:
+        return start_key <= current <= end_key
+    return current >= start_key or current <= end_key
+
+
+def infer_entry_season(value: str) -> str:
+    normalized = normalize_text(value)
+    for season in ("spring", "summer", "fall", "autumn", "winter"):
+        if season in normalized:
+            return "fall" if season == "autumn" else season
+    return ""
+
+
+def infer_entry_holiday(value: str) -> str:
+    normalized = normalize_text(value)
+    for holiday in ("christmas", "easter", "halloween", "thanksgiving", "valentines", "valentine"):
+        if holiday in normalized:
+            return "valentines" if holiday == "valentine" else holiday
+    return ""
+
+
+def resolve_entry_seasonality(entry: dict[str, Any]) -> tuple[str, str]:
+    season = normalize_identifier(entry.get("season", ""))
+    holiday = normalize_identifier(entry.get("holiday", ""))
+    if season or holiday:
+        return season, holiday
+
+    haystack = " ".join(
+        [
+            str(entry.get("title", "")),
+            str(entry.get("description", "")),
+            str(entry.get("target_url", "")),
+            str(entry.get("article_slug", "")),
+        ]
+    )
+    inferred_season = infer_entry_season(haystack)
+    inferred_holiday = infer_entry_holiday(haystack)
+    return normalize_identifier(inferred_season), normalize_identifier(inferred_holiday)
+
+
+def is_entry_in_season(entry: dict[str, Any], now: datetime) -> bool:
+    season, holiday = resolve_entry_seasonality(entry)
+    if holiday:
+        window = HOLIDAY_WINDOWS.get(holiday)
+        if not window:
+            return False
+        return is_date_within_window(now, window[0], window[1])
+
+    if season:
+        window = SEASONAL_WINDOWS.get(season)
+        if not window:
+            return False
+        return is_date_within_window(now, window[0], window[1])
+
+    return True
+
+
+def history_published_at(entry: dict[str, Any]) -> datetime | None:
+    return parse_timestamp(str(entry.get("published_at", "")), "published_at")
+
+
+def count_published_today(history_data: list[dict[str, Any]], now: datetime) -> int:
+    count = 0
+    for entry in history_data:
+        if str(entry.get("status", "")).strip().lower() != "published":
+            continue
+        published_at = history_published_at(entry)
+        if not published_at:
+            continue
+        if published_at.date() == now.date():
+            count += 1
+    return count
+
+
+def has_recent_article_publish(
+    *,
+    history_data: list[dict[str, Any]],
+    article_slug: str,
+    now: datetime,
+) -> bool:
+    cutoff = now - timedelta(hours=MIN_HOURS_BETWEEN_SAME_ARTICLE)
+    for entry in history_data:
+        if str(entry.get("status", "")).strip().lower() != "published":
+            continue
+        if str(entry.get("article_slug", "")).strip() != article_slug:
+            continue
+        published_at = history_published_at(entry)
+        if published_at and published_at >= cutoff:
+            return True
+    return False
+
+
+def defer_entry(entry: dict[str, Any], *, now: datetime, hours: int, reason: str) -> dict[str, Any]:
+    deferred = dict(entry)
+    deferred["status"] = "scheduled"
+    deferred["scheduled_for"] = (now + timedelta(hours=hours)).isoformat()
+    deferred["error_message"] = reason
+    return deferred
 
 
 def schedule_variant_time(created_at: datetime, index: int) -> datetime:
@@ -137,6 +274,8 @@ def build_queue_entries(payload: dict[str, Any], provider_mode: str) -> list[dic
                 "subtopic_id": payload.get("subtopic_id", ""),
                 "angle_id": payload.get("angle_id", ""),
                 "intent_id": payload.get("intent_id", ""),
+                "season": payload.get("season", ""),
+                "holiday": payload.get("holiday", ""),
                 "visual_direction": payload.get("visual_direction", {}),
                 "variant_type": variant_type,
                 "style_name": variant.get("style_name", ""),
@@ -178,6 +317,8 @@ def build_history_entry(entry: dict[str, Any]) -> dict[str, Any]:
         "subtopic_id": entry.get("subtopic_id", ""),
         "angle_id": entry.get("angle_id", ""),
         "intent_id": entry.get("intent_id", ""),
+        "season": entry.get("season", ""),
+        "holiday": entry.get("holiday", ""),
         "visual_direction": entry.get("visual_direction", {}),
         "variant_type": entry["variant_type"],
         "style_name": entry.get("style_name", ""),
@@ -276,8 +417,23 @@ def process_queue(client: PinterestClient, queue_path: Path, history_path: Path)
     skipped_count = 0
     now = datetime.now(timezone.utc)
     remaining_entries: list[dict[str, Any]] = []
+    published_today = count_published_today(history_data, now)
+    selected_board_keys: set[str] = set()
+    selected_article_slugs: set[str] = set()
+    publish_budget_remaining = max(0, MAX_PINS_PER_DAY - published_today)
+    publish_budget_remaining = min(publish_budget_remaining, MAX_PINS_PER_RUN)
 
-    for entry in queue_data:
+    ordered_queue = sorted(
+        queue_data,
+        key=lambda item: (
+            parse_timestamp(str(item.get("scheduled_for", "")), "scheduled_for") or now,
+            parse_timestamp(str(item.get("created_at", "")), "created_at") or now,
+            str(item.get("article_slug", "")),
+            str(item.get("variant_key", "")),
+        ),
+    )
+
+    for entry in ordered_queue:
         status = str(entry.get("status", "queued")).strip().lower() or "queued"
         if status == "published":
             upsert_history_entry(history_data, entry)
@@ -295,8 +451,67 @@ def process_queue(client: PinterestClient, queue_path: Path, history_path: Path)
             remaining_entries.append(entry)
             continue
 
+        if not is_entry_in_season(entry, now):
+            skipped_count += 1
+            season, holiday = resolve_entry_seasonality(entry)
+            seasonal_label = holiday or season or "seasonal"
+            deferred = defer_entry(
+                entry,
+                now=now,
+                hours=24 * 14,
+                reason=f"Deferred because '{seasonal_label}' is outside the current publishing window.",
+            )
+            remaining_entries.append(deferred)
+            print(
+                f"[pinterest] pin deferred because out of season: {variant_label} "
+                f"({seasonal_label})"
+            )
+            continue
+
+        article_slug = str(entry.get("article_slug", "")).strip()
         board = entry.get("board") or {}
         board_key = str(board.get("key", "default")).strip() or "default"
+
+        if publish_budget_remaining <= 0:
+            skipped_count += 1
+            deferred = defer_entry(
+                entry,
+                now=now,
+                hours=12,
+                reason="Deferred because the safe daily publish cap has been reached.",
+            )
+            remaining_entries.append(deferred)
+            print(f"[pinterest] pin deferred by daily cap: {variant_label}")
+            continue
+
+        if article_slug in selected_article_slugs or has_recent_article_publish(
+            history_data=history_data,
+            article_slug=article_slug,
+            now=now,
+        ):
+            skipped_count += 1
+            deferred = defer_entry(
+                entry,
+                now=now,
+                hours=MIN_HOURS_BETWEEN_SAME_ARTICLE,
+                reason="Deferred to avoid publishing multiple pins for the same article too close together.",
+            )
+            remaining_entries.append(deferred)
+            print(f"[pinterest] pin deferred by article spacing: {variant_label} ({article_slug})")
+            continue
+
+        if board_key in selected_board_keys:
+            skipped_count += 1
+            deferred = defer_entry(
+                entry,
+                now=now,
+                hours=MIN_HOURS_BETWEEN_SAME_BOARD_IN_RUN,
+                reason="Deferred to rotate boards instead of publishing repeatedly to the same board in one run.",
+            )
+            remaining_entries.append(deferred)
+            print(f"[pinterest] pin deferred by board rotation: {variant_label} ({board_key})")
+            continue
+
         image_url = build_public_asset_url(
             site_root_url=str(entry["site_root_url"]),
             image_path=str(entry["image_path"]),
@@ -313,6 +528,11 @@ def process_queue(client: PinterestClient, queue_path: Path, history_path: Path)
                 image_url=image_url,
             )
             published_count += 1
+            publish_budget_remaining -= 1
+            if article_slug:
+                selected_article_slugs.add(article_slug)
+            if board_key:
+                selected_board_keys.add(board_key)
             entry["status"] = "published"
             entry["published_at"] = datetime.now(timezone.utc).isoformat()
             entry["error_message"] = None
@@ -323,10 +543,15 @@ def process_queue(client: PinterestClient, queue_path: Path, history_path: Path)
                 print(f"[pinterest] analytics unavailable: provider pin ID missing for {variant_label}")
         except Exception as exc:
             failed_count += 1
-            entry["status"] = "failed"
-            entry["error_message"] = str(exc)
-            remaining_entries.append(entry)
-            upsert_history_entry(history_data, entry)
+            failed_entry = defer_entry(
+                entry,
+                now=now,
+                hours=DEFER_HOURS_AFTER_FAILURE,
+                reason=str(exc),
+            )
+            failed_entry["status"] = "failed"
+            remaining_entries.append(failed_entry)
+            upsert_history_entry(history_data, failed_entry)
             print(f"[pinterest] pin failed: {variant_label} ({exc})")
 
     save_queue(queue_path=queue_path, queue_data=remaining_entries)
