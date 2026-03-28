@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-03-27T09:55:35.064798+00:00",
+  "generated_at": "2026-03-28T17:46:00.134977+00:00",
   "total_clusters": 396,
   "summary": {
-    "missing": 385,
-    "underdeveloped": 11,
+    "missing": 384,
+    "underdeveloped": 12,
     "growing": 0,
     "strong": 0,
     "saturated": 0
   },
   "saturation_summary": {
-    "empty": 385,
-    "needs_growth": 11
+    "empty": 384,
+    "needs_growth": 12
   },
   "editorial_mix_rules": {
     "recent_window_article_count": 8,
@@ -56,16 +56,16 @@
   "editorial_mix_state": {
     "window_article_count": 8,
     "counts": {
-      "evergreen_authority": 4,
+      "evergreen_authority": 3,
       "seasonal_opportunity": 0,
       "pinterest_responsive": 0,
-      "monetizable_decision": 4
+      "monetizable_decision": 5
     },
     "shares": {
-      "evergreen_authority": 0.5,
+      "evergreen_authority": 0.375,
       "seasonal_opportunity": 0.0,
       "pinterest_responsive": 0.0,
-      "monetizable_decision": 0.5
+      "monetizable_decision": 0.625
     },
     "underrepresented": [
       "seasonal_opportunity",
@@ -309,7 +309,6 @@
     "rustic modern patio",
     "scandinavian balcony",
     "scandinavian bathroom",
-    "scandinavian bedroom",
     "scandinavian dining room",
     "scandinavian entryway",
     "scandinavian guest bedroom",
@@ -471,6 +470,7 @@
     "earthy bathroom",
     "transitional bedroom",
     "transitional bathroom",
+    "scandinavian bedroom",
     "living room textures and materials",
     "small dining nook"
   ],
@@ -49434,217 +49434,6 @@
       ]
     },
     {
-      "cluster_id": "scandinavian_bedroom",
-      "cluster_name": "scandinavian bedroom",
-      "domain_id": "bedrooms",
-      "health_label": "missing",
-      "article_count": 0,
-      "article_capacity_target": 14,
-      "capacity_ratio": 0.0,
-      "growth_openings": 10,
-      "saturation_state": "empty",
-      "selection_action": "boost",
-      "latest_publication_date": "",
-      "days_since_latest": null,
-      "subtopics_total": 5,
-      "subtopics_covered": [],
-      "subtopic_ids_covered": [],
-      "subtopics_missing": [
-        "Layout and Foundation",
-        "Color Palette",
-        "Furniture and Anchors",
-        "Lighting",
-        "Textures and Layers"
-      ],
-      "subtopic_ids_missing": [
-        "layout",
-        "colors",
-        "furniture",
-        "lighting",
-        "textures"
-      ],
-      "angle_distribution": {
-        "ideas": 0,
-        "how_to": 0,
-        "mistakes": 0,
-        "best_options": 0,
-        "style_specific": 0
-      },
-      "underused_angles": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "style_specific"
-      ],
-      "overused_angles": [],
-      "intent_distribution": {
-        "comparison": 0,
-        "decision_making": 0,
-        "implementation": 0,
-        "inspiration": 0,
-        "problem_solving": 0
-      },
-      "underused_intents": [
-        "comparison",
-        "decision_making",
-        "implementation",
-        "inspiration",
-        "problem_solving"
-      ],
-      "overused_intents": [],
-      "recommended_concepts": [
-        {
-          "cluster_id": "scandinavian_bedroom",
-          "cluster_name": "scandinavian bedroom",
-          "domain_id": "bedrooms",
-          "subtopic_id": "colors",
-          "subtopic_name": "Color Palette",
-          "angle_id": "how_to",
-          "intent_id": "implementation",
-          "modifier": "",
-          "primary_keyword": "how to choose colors for a scandinavian bedroom",
-          "secondary_keywords": [
-            "scandinavian bedroom ideas",
-            "how to style a scandinavian bedroom",
-            "scandinavian bedroom decor",
-            "scandinavian bedroom layout ideas"
-          ],
-          "search_intent": "how_to",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 96,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "scandinavian_bedroom",
-          "cluster_name": "scandinavian bedroom",
-          "domain_id": "bedrooms",
-          "subtopic_id": "colors",
-          "subtopic_name": "Color Palette",
-          "angle_id": "ideas",
-          "intent_id": "inspiration",
-          "modifier": "",
-          "primary_keyword": "scandinavian bedroom color palette ideas",
-          "secondary_keywords": [
-            "scandinavian bedroom ideas",
-            "how to style a scandinavian bedroom",
-            "scandinavian bedroom decor",
-            "scandinavian bedroom layout ideas"
-          ],
-          "search_intent": "ideas",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 96,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "scandinavian_bedroom",
-          "cluster_name": "scandinavian bedroom",
-          "domain_id": "bedrooms",
-          "subtopic_id": "colors",
-          "subtopic_name": "Color Palette",
-          "angle_id": "mistakes",
-          "intent_id": "problem_solving",
-          "modifier": "",
-          "primary_keyword": "scandinavian bedroom color mistakes to avoid",
-          "secondary_keywords": [
-            "scandinavian bedroom ideas",
-            "how to style a scandinavian bedroom",
-            "scandinavian bedroom decor",
-            "scandinavian bedroom layout ideas"
-          ],
-          "search_intent": "problem_solution",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 96,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        }
-      ],
-      "recommended_topics": [
-        "how to choose colors for a scandinavian bedroom",
-        "scandinavian bedroom color palette ideas",
-        "scandinavian bedroom color mistakes to avoid"
-      ],
-      "priority_score": 100,
-      "season": "",
-      "holiday": "",
-      "source": "content architecture",
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "pinterest_intelligence": {
-        "cluster_signal_label": "no_data",
-        "cluster_signal_boost": 0
-      },
-      "seed_keywords": [
-        "scandinavian bedroom ideas",
-        "how to style a scandinavian bedroom",
-        "scandinavian bedroom decor",
-        "scandinavian bedroom layout ideas",
-        "scandinavian bedroom color palette"
-      ],
-      "allowed_angle_ids": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "style_specific"
-      ]
-    },
-    {
       "cluster_id": "scandinavian_dining_room",
       "cluster_name": "scandinavian dining room",
       "domain_id": "kitchens_dining",
@@ -82253,7 +82042,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-18",
-      "days_since_latest": 8,
+      "days_since_latest": 9,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -82466,7 +82255,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-20",
-      "days_since_latest": 7,
+      "days_since_latest": 8,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation"
@@ -82679,7 +82468,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-23",
-      "days_since_latest": 3,
+      "days_since_latest": 5,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -82892,7 +82681,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-25",
-      "days_since_latest": 2,
+      "days_since_latest": 3,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -83105,7 +82894,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-27",
-      "days_since_latest": 0,
+      "days_since_latest": 1,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -83297,6 +83086,219 @@
         "transitional bathroom decor",
         "transitional bathroom layout ideas",
         "transitional bathroom color palette"
+      ],
+      "allowed_angle_ids": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "style_specific"
+      ]
+    },
+    {
+      "cluster_id": "scandinavian_bedroom",
+      "cluster_name": "scandinavian bedroom",
+      "domain_id": "bedrooms",
+      "health_label": "underdeveloped",
+      "article_count": 1,
+      "article_capacity_target": 14,
+      "capacity_ratio": 0.07,
+      "growth_openings": 9,
+      "saturation_state": "needs_growth",
+      "selection_action": "boost",
+      "latest_publication_date": "2026-03-28",
+      "days_since_latest": 0,
+      "subtopics_total": 5,
+      "subtopics_covered": [
+        "Furniture and Anchors"
+      ],
+      "subtopic_ids_covered": [
+        "furniture"
+      ],
+      "subtopics_missing": [
+        "Layout and Foundation",
+        "Color Palette",
+        "Lighting",
+        "Textures and Layers"
+      ],
+      "subtopic_ids_missing": [
+        "layout",
+        "colors",
+        "lighting",
+        "textures"
+      ],
+      "angle_distribution": {
+        "ideas": 0,
+        "how_to": 0,
+        "mistakes": 0,
+        "best_options": 1,
+        "style_specific": 0
+      },
+      "underused_angles": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "style_specific"
+      ],
+      "overused_angles": [],
+      "intent_distribution": {
+        "comparison": 1,
+        "decision_making": 0,
+        "implementation": 0,
+        "inspiration": 0,
+        "problem_solving": 0
+      },
+      "underused_intents": [
+        "comparison",
+        "decision_making",
+        "implementation",
+        "inspiration",
+        "problem_solving"
+      ],
+      "overused_intents": [],
+      "recommended_concepts": [
+        {
+          "cluster_id": "scandinavian_bedroom",
+          "cluster_name": "scandinavian bedroom",
+          "domain_id": "bedrooms",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "how_to",
+          "intent_id": "implementation",
+          "modifier": "",
+          "primary_keyword": "how to choose colors for a scandinavian bedroom",
+          "secondary_keywords": [
+            "scandinavian bedroom ideas",
+            "how to style a scandinavian bedroom",
+            "scandinavian bedroom decor",
+            "scandinavian bedroom layout ideas"
+          ],
+          "search_intent": "how_to",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 74,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        },
+        {
+          "cluster_id": "scandinavian_bedroom",
+          "cluster_name": "scandinavian bedroom",
+          "domain_id": "bedrooms",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "ideas",
+          "intent_id": "inspiration",
+          "modifier": "",
+          "primary_keyword": "scandinavian bedroom color palette ideas",
+          "secondary_keywords": [
+            "scandinavian bedroom ideas",
+            "how to style a scandinavian bedroom",
+            "scandinavian bedroom decor",
+            "scandinavian bedroom layout ideas"
+          ],
+          "search_intent": "ideas",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 74,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        },
+        {
+          "cluster_id": "scandinavian_bedroom",
+          "cluster_name": "scandinavian bedroom",
+          "domain_id": "bedrooms",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "mistakes",
+          "intent_id": "problem_solving",
+          "modifier": "",
+          "primary_keyword": "scandinavian bedroom color mistakes to avoid",
+          "secondary_keywords": [
+            "scandinavian bedroom ideas",
+            "how to style a scandinavian bedroom",
+            "scandinavian bedroom decor",
+            "scandinavian bedroom layout ideas"
+          ],
+          "search_intent": "problem_solution",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 74,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        }
+      ],
+      "recommended_topics": [
+        "how to choose colors for a scandinavian bedroom",
+        "scandinavian bedroom color palette ideas",
+        "scandinavian bedroom color mistakes to avoid"
+      ],
+      "priority_score": 70,
+      "season": "",
+      "holiday": "",
+      "source": "content architecture",
+      "pinterest_signal": {
+        "label": "no_data",
+        "boost": 0,
+        "pinterest_article_count": 0,
+        "strong_article_count": 0,
+        "weak_article_count": 0,
+        "average_score": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_saves": 0.0
+      },
+      "pinterest_intelligence": {
+        "cluster_signal_label": "no_data",
+        "cluster_signal_boost": 0
+      },
+      "seed_keywords": [
+        "scandinavian bedroom ideas",
+        "how to style a scandinavian bedroom",
+        "scandinavian bedroom decor",
+        "scandinavian bedroom layout ideas",
+        "scandinavian bedroom color palette"
       ],
       "allowed_angle_ids": [
         "ideas",

@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-03-27T09:51:06.468339+00:00",
+  "generated_at": "2026-03-28T17:42:04.217898+00:00",
   "overview": {
-    "pin_count": 16,
+    "pin_count": 20,
     "published_pin_count": 0,
     "analytics_ready_pin_count": 0,
-    "tracked_article_count": 4
+    "tracked_article_count": 5
   },
   "best_performing_clusters": [
     {
@@ -59,6 +59,24 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "how-to-style-a-neutral-bathroom"
+      ]
+    },
+    {
+      "cluster_id": "transitional_bathroom",
+      "cluster_name": "transitional bathroom",
+      "pin_count": 4,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-for-transitional-bathroom"
       ]
     },
     {
@@ -120,6 +138,25 @@
       ]
     },
     {
+      "cluster_id": "transitional_bathroom",
+      "subtopic_id": "furniture",
+      "subtopic_name": "furniture and anchors",
+      "pin_count": 4,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-for-transitional-bathroom"
+      ]
+    },
+    {
       "cluster_id": "transitional_bedroom",
       "subtopic_id": "furniture",
       "subtopic_name": "furniture and anchors",
@@ -161,7 +198,7 @@
   "best_performing_angles": [
     {
       "angle_id": "best_options",
-      "pin_count": 12,
+      "pin_count": 16,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -175,6 +212,7 @@
       "top_article_slugs": [
         "best-furniture-for-an-earthy-bathroom",
         "best-furniture-for-earthy-bedroom",
+        "best-furniture-for-transitional-bathroom",
         "best-furniture-transitional-bedroom"
       ]
     },
@@ -224,7 +262,7 @@
       "visual_family_id": "crisp_modern",
       "shot_library_id": "general_decor",
       "intent_id": "comparison",
-      "pin_count": 1,
+      "pin_count": 2,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -236,7 +274,8 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
-        "best-furniture-for-an-earthy-bathroom"
+        "best-furniture-for-an-earthy-bathroom",
+        "best-furniture-for-transitional-bathroom"
       ]
     },
     {
@@ -288,7 +327,7 @@
       "visual_family_id": "crisp_modern",
       "shot_library_id": "general_decor",
       "intent_id": "comparison",
-      "pin_count": 1,
+      "pin_count": 2,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -300,7 +339,8 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
-        "best-furniture-for-an-earthy-bathroom"
+        "best-furniture-for-an-earthy-bathroom",
+        "best-furniture-for-transitional-bathroom"
       ]
     },
     {
@@ -352,7 +392,7 @@
       "visual_family_id": "crisp_modern",
       "shot_library_id": "general_decor",
       "intent_id": "comparison",
-      "pin_count": 1,
+      "pin_count": 2,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -364,7 +404,8 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
-        "best-furniture-for-an-earthy-bathroom"
+        "best-furniture-for-an-earthy-bathroom",
+        "best-furniture-for-transitional-bathroom"
       ]
     },
     {
@@ -416,7 +457,7 @@
       "visual_family_id": "crisp_modern",
       "shot_library_id": "general_decor",
       "intent_id": "comparison",
-      "pin_count": 1,
+      "pin_count": 2,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -428,7 +469,8 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
-        "best-furniture-for-an-earthy-bathroom"
+        "best-furniture-for-an-earthy-bathroom",
+        "best-furniture-for-transitional-bathroom"
       ]
     },
     {
@@ -511,6 +553,24 @@
         ]
       },
       {
+        "cluster_id": "transitional_bathroom",
+        "cluster_name": "transitional bathroom",
+        "pin_count": 4,
+        "published_pin_count": 0,
+        "analytics_ready_count": 0,
+        "average_score": 0.0,
+        "average_impressions": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_pin_clicks": 0.0,
+        "average_closeups": 0.0,
+        "signal_label": "no_data",
+        "signal_boost": 0,
+        "top_article_slugs": [
+          "best-furniture-for-transitional-bathroom"
+        ]
+      },
+      {
         "cluster_id": "transitional_bedroom",
         "cluster_name": "transitional bedroom",
         "pin_count": 4,
@@ -569,6 +629,25 @@
         ]
       },
       {
+        "cluster_id": "transitional_bathroom",
+        "subtopic_id": "furniture",
+        "subtopic_name": "furniture and anchors",
+        "pin_count": 4,
+        "published_pin_count": 0,
+        "analytics_ready_count": 0,
+        "average_score": 0.0,
+        "average_impressions": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_pin_clicks": 0.0,
+        "average_closeups": 0.0,
+        "signal_label": "no_data",
+        "signal_boost": 0,
+        "top_article_slugs": [
+          "best-furniture-for-transitional-bathroom"
+        ]
+      },
+      {
         "cluster_id": "transitional_bedroom",
         "subtopic_id": "furniture",
         "subtopic_name": "furniture and anchors",
@@ -610,7 +689,7 @@
     "angles": [
       {
         "angle_id": "best_options",
-        "pin_count": 12,
+        "pin_count": 16,
         "published_pin_count": 0,
         "analytics_ready_count": 0,
         "average_score": 0.0,
@@ -624,6 +703,7 @@
         "top_article_slugs": [
           "best-furniture-for-an-earthy-bathroom",
           "best-furniture-for-earthy-bedroom",
+          "best-furniture-for-transitional-bathroom",
           "best-furniture-transitional-bedroom"
         ]
       },
@@ -673,7 +753,7 @@
         "visual_family_id": "crisp_modern",
         "shot_library_id": "general_decor",
         "intent_id": "comparison",
-        "pin_count": 1,
+        "pin_count": 2,
         "published_pin_count": 0,
         "analytics_ready_count": 0,
         "average_score": 0.0,
@@ -685,7 +765,8 @@
         "signal_label": "no_data",
         "signal_boost": 0,
         "top_article_slugs": [
-          "best-furniture-for-an-earthy-bathroom"
+          "best-furniture-for-an-earthy-bathroom",
+          "best-furniture-for-transitional-bathroom"
         ]
       },
       {
@@ -737,7 +818,7 @@
         "visual_family_id": "crisp_modern",
         "shot_library_id": "general_decor",
         "intent_id": "comparison",
-        "pin_count": 1,
+        "pin_count": 2,
         "published_pin_count": 0,
         "analytics_ready_count": 0,
         "average_score": 0.0,
@@ -749,7 +830,8 @@
         "signal_label": "no_data",
         "signal_boost": 0,
         "top_article_slugs": [
-          "best-furniture-for-an-earthy-bathroom"
+          "best-furniture-for-an-earthy-bathroom",
+          "best-furniture-for-transitional-bathroom"
         ]
       }
     ]

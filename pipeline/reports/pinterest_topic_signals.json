@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-03-27T09:55:33.508795+00:00",
-  "cluster_count": 11,
+  "generated_at": "2026-03-28T17:45:58.651681+00:00",
+  "cluster_count": 12,
   "summary": {
     "hot": 0,
     "warm": 0,
     "cold": 0,
-    "no_data": 11
+    "no_data": 12
   },
   "clusters": [
     {
@@ -162,6 +162,30 @@
         "how to style an organic modern living room",
         "organic modern living room decor",
         "mistakes to avoid in an organic modern living room"
+      ],
+      "pinterest_article_count": 0,
+      "strong_article_count": 0,
+      "weak_article_count": 0,
+      "average_score": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_saves": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0
+    },
+    {
+      "cluster_name": "scandinavian bedroom",
+      "article_count": 1,
+      "article_slugs": [
+        "best-furniture-for-scandinavian-bedroom"
+      ],
+      "primary_keywords": [
+        "best furniture for a scandinavian bedroom"
+      ],
+      "secondary_keywords": [
+        "scandinavian bedroom ideas",
+        "how to style a scandinavian bedroom",
+        "scandinavian bedroom decor",
+        "scandinavian bedroom layout ideas"
       ],
       "pinterest_article_count": 0,
       "strong_article_count": 0,

@@ -1,22 +1,42 @@
 {
-  "generated_at": "2026-03-27T09:52:25.193485+00:00",
+  "generated_at": "2026-03-28T17:42:50.869456+00:00",
   "articles": [
     {
-      "article_slug": "best-furniture-for-transitional-bathroom",
-      "cluster": "transitional bathroom",
-      "cluster_id": "transitional bathroom",
+      "article_slug": "best-furniture-for-scandinavian-bedroom",
+      "cluster": "scandinavian bedroom",
+      "cluster_id": "scandinavian bedroom",
       "subtopic_id": "furniture",
       "subtopic_name": "furniture and anchors",
       "angle_id": "best options",
       "intent_id": "comparison",
-      "primary_keyword": "best furniture for a transitional bathroom",
+      "primary_keyword": "best furniture for a scandinavian bedroom",
       "validation_status": "warning",
       "warnings": [
         "None of the secondary keywords appear in the article body."
       ],
       "errors": [],
       "duplicate_candidate_slugs": [],
-      "timestamp": "2026-03-27T09:52:25.193388+00:00"
+      "timestamp": "2026-03-28T17:42:50.869362+00:00"
+    },
+    {
+      "article_slug": "how-to-style-a-neutral-bedroom",
+      "cluster": "neutral bedroom",
+      "cluster_id": "neutral bedroom",
+      "subtopic_id": "layout",
+      "subtopic_name": "layout and foundation",
+      "angle_id": "how to",
+      "intent_id": "implementation",
+      "primary_keyword": "how to style a neutral bedroom",
+      "validation_status": "warning",
+      "warnings": [
+        "Headings do not reflect the topic cluster strongly enough.",
+        "Main section headings may be too generic for the chosen keyword.",
+        "None of the secondary keywords appear in the article body.",
+        "Primary keyword appears very lightly in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-03-28T17:42:19.229888+00:00"
     },
     {
       "article_slug": "spring-bedroom-refresh-mistakes-to-avoid",
@@ -35,7 +55,24 @@
       ],
       "errors": [],
       "duplicate_candidate_slugs": [],
-      "timestamp": "2026-03-27T09:51:21.159689+00:00"
+      "timestamp": "2026-03-28T17:42:19.026631+00:00"
+    },
+    {
+      "article_slug": "best-furniture-for-transitional-bathroom",
+      "cluster": "transitional bathroom",
+      "cluster_id": "transitional bathroom",
+      "subtopic_id": "furniture",
+      "subtopic_name": "furniture and anchors",
+      "angle_id": "best options",
+      "intent_id": "comparison",
+      "primary_keyword": "best furniture for a transitional bathroom",
+      "validation_status": "warning",
+      "warnings": [
+        "None of the secondary keywords appear in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-03-27T09:52:25.193388+00:00"
     },
     {
       "article_slug": "best-furniture-transitional-bedroom",
@@ -89,26 +126,6 @@
       "errors": [],
       "duplicate_candidate_slugs": [],
       "timestamp": "2026-03-20T09:38:13.655847+00:00"
-    },
-    {
-      "article_slug": "how-to-style-a-neutral-bedroom",
-      "cluster": "neutral bedroom",
-      "cluster_id": "neutral bedroom",
-      "subtopic_id": "layout",
-      "subtopic_name": "layout and foundation",
-      "angle_id": "how to",
-      "intent_id": "implementation",
-      "primary_keyword": "how to style a neutral bedroom",
-      "validation_status": "warning",
-      "warnings": [
-        "Headings do not reflect the topic cluster strongly enough.",
-        "Main section headings may be too generic for the chosen keyword.",
-        "None of the secondary keywords appear in the article body.",
-        "Primary keyword appears very lightly in the article body."
-      ],
-      "errors": [],
-      "duplicate_candidate_slugs": [],
-      "timestamp": "2026-03-20T09:37:41.562660+00:00"
     },
     {
       "article_slug": "best-furniture-for-earthy-bedroom",
