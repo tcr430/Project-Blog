@@ -94,6 +94,32 @@ def build_public_asset_url(site_root_url: str, image_path: str) -> str:
     return f"{clean_root}{clean_path}"
 
 
+def resolve_publishable_image_path(image_path: str) -> str:
+    clean_path = image_path.strip()
+    if not clean_path.lower().endswith(".svg"):
+        return clean_path
+
+    project_root = Path(__file__).resolve().parents[2]
+    png_relative = f"{clean_path[:-4]}.png"
+    png_path = project_root / png_relative.lstrip("/")
+    if png_path.exists():
+        return png_relative
+
+    slug = png_path.parent.name
+    pinterest_metadata_path = project_root / "_data" / "pinterest" / f"{slug}.json"
+    if pinterest_metadata_path.exists():
+        try:
+            from generate_pin_assets import generate_pin_assets
+
+            print(f"[pinterest] regenerating PNG pin assets for {slug}")
+            generate_pin_assets(pinterest_metadata_path)
+        except Exception as exc:
+            print(f"[pinterest] could not regenerate PNG assets for {slug}: {exc}")
+        if png_path.exists():
+            return png_relative
+    return clean_path
+
+
 def normalize_text(value: Any) -> str:
     normalized = str(value or "").strip().lower()
     normalized = normalized.replace("_", " ").replace("-", " ")
@@ -512,9 +538,10 @@ def process_queue(client: PinterestClient, queue_path: Path, history_path: Path)
             print(f"[pinterest] pin deferred by board rotation: {variant_label} ({board_key})")
             continue
 
+        publishable_image_path = resolve_publishable_image_path(str(entry["image_path"]))
         image_url = build_public_asset_url(
             site_root_url=str(entry["site_root_url"]),
-            image_path=str(entry["image_path"]),
+            image_path=publishable_image_path,
         )
         title = str(entry["title"])
         print(f"[pinterest] publishing due pin: {variant_label} - {title}")

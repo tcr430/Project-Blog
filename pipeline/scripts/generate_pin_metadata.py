@@ -223,7 +223,7 @@ def validate_article_metadata(data: dict[str, Any], variant_count: int) -> dict[
 
 
 def build_pin_image_path(slug: str, index: int) -> str:
-    return f"/assets/pins/{slug}/pin-{index}.svg"
+    return f"/assets/pins/{slug}/pin-{index}.png"
 
 
 def pick_candidate(candidates: list[str], index: int) -> str:

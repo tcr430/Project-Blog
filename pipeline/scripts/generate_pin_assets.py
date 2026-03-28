@@ -1,21 +1,22 @@
 from __future__ import annotations
 
 import argparse
-import base64
 import json
 import re
 from pathlib import Path
 from typing import Any
-from xml.sax.saxutils import escape
+
+from PIL import Image, ImageColor, ImageDraw, ImageFont
 
 PIN_WIDTH = 1000
 PIN_HEIGHT = 1500
 TITLE_FONT_SIZE = 68
 TITLE_LINE_HEIGHT = 78
-TITLE_STROKE_WIDTH = 7
+TITLE_STROKE_WIDTH = 4
 BRAND_FONT_SIZE = 22
 DESCRIPTION_FONT_SIZE = 19
 TITLE_MAX_LENGTH = 110
+PIN_BORDER_RADIUS = 32
 
 TEMPLATE_ALIASES = {
     "bottom-panel": "bottom-title",
@@ -132,22 +133,10 @@ def normalize_image_path(image_path: str) -> Path:
     return project_root / image_path.lstrip("/")
 
 
-def detect_mime_type(path: Path) -> str:
-    suffix = path.suffix.lower()
-    if suffix in {".jpg", ".jpeg"}:
-        return "image/jpeg"
-    if suffix == ".webp":
-        return "image/webp"
-    return "image/png"
-
-
-def encode_image_as_data_uri(image_path: Path) -> str:
+def load_base_image(image_path: Path) -> Image.Image:
     if not image_path.exists():
         raise FileNotFoundError(f"Base hero image not found for pin generation: {image_path}")
-
-    mime_type = detect_mime_type(image_path)
-    encoded = base64.b64encode(image_path.read_bytes()).decode("utf-8")
-    return f"data:{mime_type};base64,{encoded}"
+    return Image.open(image_path).convert("RGBA")
 
 
 def normalize_copy(text: str) -> str:
@@ -205,176 +194,232 @@ def resolve_template(style_name: str) -> dict[str, Any]:
     return STYLE_TEMPLATES.get(canonical_name, STYLE_TEMPLATES["bottom-title"])
 
 
-def build_title_svg(lines: list[str], x: int, y: int, fill: str, anchor: str) -> str:
-    shadow_tspans: list[str] = []
-    title_tspans: list[str] = []
-    for index, line in enumerate(lines):
-        line_y = y + index * TITLE_LINE_HEIGHT
-        escaped = escape(line)
-        shadow_tspans.append(f'<tspan x="{x}" y="{line_y}">{escaped}</tspan>')
-        title_tspans.append(f'<tspan x="{x}" y="{line_y}">{escaped}</tspan>')
+def parse_rgba(value: str) -> tuple[int, int, int, int]:
+    normalized = value.strip()
+    if normalized.startswith("rgba(") and normalized.endswith(")"):
+        parts = [part.strip() for part in normalized[5:-1].split(",")]
+        if len(parts) == 4:
+            red = int(float(parts[0]))
+            green = int(float(parts[1]))
+            blue = int(float(parts[2]))
+            alpha = max(0, min(255, round(float(parts[3]) * 255)))
+            return (red, green, blue, alpha)
+    rgb = ImageColor.getrgb(normalized)
+    return (rgb[0], rgb[1], rgb[2], 255)
 
-    shadow = (
-        f'<text font-family="Georgia, Times New Roman, serif" '
-        f'font-size="{TITLE_FONT_SIZE}" font-weight="700" text-anchor="{anchor}" '
-        f'fill="rgba(0,0,0,0.18)" stroke="rgba(0,0,0,0.18)" stroke-width="{TITLE_STROKE_WIDTH}" '
-        f'stroke-linejoin="round">{"".join(shadow_tspans)}</text>'
+
+def find_font(candidates: list[str], size: int) -> ImageFont.FreeTypeFont | ImageFont.ImageFont:
+    font_paths = [
+        Path("/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf"),
+        Path("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"),
+        Path("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"),
+        Path("C:/Windows/Fonts/georgiab.ttf"),
+        Path("C:/Windows/Fonts/segoeuib.ttf"),
+        Path("C:/Windows/Fonts/segoeui.ttf"),
+    ]
+    for path in font_paths:
+        if not path.exists():
+            continue
+        path_text = str(path).replace("\\", "/").lower()
+        if candidates and not any(candidate in path_text for candidate in candidates):
+            continue
+        try:
+            return ImageFont.truetype(str(path), size=size)
+        except OSError:
+            continue
+    return ImageFont.load_default()
+
+
+def title_font(size: int) -> ImageFont.FreeTypeFont | ImageFont.ImageFont:
+    return find_font(["georgia", "dejavuserif"], size)
+
+
+def ui_font(size: int) -> ImageFont.FreeTypeFont | ImageFont.ImageFont:
+    return find_font(["segoe", "dejavusans"], size)
+
+
+def crop_to_pin_size(image: Image.Image) -> Image.Image:
+    source_ratio = image.width / image.height
+    target_ratio = PIN_WIDTH / PIN_HEIGHT
+    if source_ratio > target_ratio:
+        new_width = int(image.height * target_ratio)
+        left = max(0, (image.width - new_width) // 2)
+        image = image.crop((left, 0, left + new_width, image.height))
+    else:
+        new_height = int(image.width / target_ratio)
+        top = max(0, (image.height - new_height) // 2)
+        image = image.crop((0, top, image.width, top + new_height))
+    return image.resize((PIN_WIDTH, PIN_HEIGHT), Image.Resampling.LANCZOS)
+
+
+def apply_gradient_overlay(base: Image.Image, gradient_mode: str) -> Image.Image:
+    overlay = Image.new("RGBA", (PIN_WIDTH, PIN_HEIGHT), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(overlay)
+    if gradient_mode == "top-heavy":
+        for y in range(PIN_HEIGHT):
+            alpha = int(max(12, 90 - (y / PIN_HEIGHT) * 90))
+            draw.line([(0, y), (PIN_WIDTH, y)], fill=(10, 9, 8, alpha))
+    elif gradient_mode == "center-focus":
+        center_y = PIN_HEIGHT * 0.44
+        for y in range(PIN_HEIGHT):
+            distance = abs(y - center_y) / PIN_HEIGHT
+            alpha = int(min(72, max(8, distance * 96)))
+            draw.line([(0, y), (PIN_WIDTH, y)], fill=(12, 10, 8, alpha))
+    elif gradient_mode == "minimal-dark":
+        for y in range(PIN_HEIGHT):
+            alpha = int(30 + (y / PIN_HEIGHT) * 110)
+            draw.line([(0, y), (PIN_WIDTH, y)], fill=(10, 9, 8, alpha))
+    else:
+        for y in range(PIN_HEIGHT):
+            alpha = int(10 + (y / PIN_HEIGHT) * 78)
+            draw.line([(0, y), (PIN_WIDTH, y)], fill=(12, 10, 8, alpha))
+    return Image.alpha_composite(base, overlay)
+
+
+def draw_rounded_panel(canvas: Image.Image, style: dict[str, Any]) -> None:
+    if int(style["panel_width"]) <= 0 or int(style["panel_height"]) <= 0:
+        return
+    overlay = Image.new("RGBA", canvas.size, (0, 0, 0, 0))
+    draw = ImageDraw.Draw(overlay)
+    draw.rounded_rectangle(
+        (
+            int(style["panel_x"]),
+            int(style["panel_y"]),
+            int(style["panel_x"]) + int(style["panel_width"]),
+            int(style["panel_y"]) + int(style["panel_height"]),
+        ),
+        radius=32,
+        fill=parse_rgba(str(style["panel_fill"])),
     )
-    title_text = (
-        f'<text font-family="Georgia, Times New Roman, serif" '
-        f'font-size="{TITLE_FONT_SIZE}" font-weight="700" text-anchor="{anchor}" '
-        f'fill="{fill}">{"".join(title_tspans)}</text>'
+    canvas.alpha_composite(overlay)
+
+
+def measure_text(font: ImageFont.FreeTypeFont | ImageFont.ImageFont, text: str) -> tuple[int, int]:
+    dummy = Image.new("RGBA", (10, 10), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(dummy)
+    left, top, right, bottom = draw.textbbox((0, 0), text, font=font)
+    return right - left, bottom - top
+
+
+def anchored_x(x: int, anchor: str, text_width: int) -> int:
+    if anchor == "middle":
+        return int(x - (text_width / 2))
+    return x
+
+
+def draw_brand_label(canvas: Image.Image, brand_name: str, x: int, y: int, anchor: str) -> None:
+    overlay = Image.new("RGBA", canvas.size, (0, 0, 0, 0))
+    draw = ImageDraw.Draw(overlay)
+    label = normalize_copy(brand_name).upper()
+    font = ui_font(BRAND_FONT_SIZE)
+    label_width, label_height = measure_text(font, label)
+    padding_x = 18
+    padding_y = 12
+    text_x = anchored_x(x, anchor, label_width)
+    rect_x = text_x - padding_x
+    rect_y = y - label_height
+    rect_width = label_width + padding_x * 2
+    rect_height = label_height + padding_y * 2
+    draw.rounded_rectangle(
+        (rect_x, rect_y - 10, rect_x + rect_width, rect_y - 10 + rect_height),
+        radius=23,
+        fill=(255, 255, 255, 148),
     )
-    return shadow + title_text
+    draw.text((text_x, y - label_height), label, font=font, fill=(24, 21, 18, 224))
+    canvas.alpha_composite(overlay)
 
 
-def build_multiline_text_svg(
+def draw_multiline_text(
+    canvas: Image.Image,
     *,
     lines: list[str],
     x: int,
     y: int,
-    fill: str,
     anchor: str,
-    font_size: int,
+    font: ImageFont.FreeTypeFont | ImageFont.ImageFont,
+    fill: tuple[int, int, int, int],
     line_height: int,
-    font_family: str,
-    font_weight: int,
-) -> str:
-    tspans: list[str] = []
+    stroke_fill: tuple[int, int, int, int] | None = None,
+    stroke_width: int = 0,
+) -> None:
+    draw = ImageDraw.Draw(canvas)
     for index, line in enumerate(lines):
-        line_y = y + index * line_height
-        tspans.append(f'<tspan x="{x}" y="{line_y}">{escape(line)}</tspan>')
-    return (
-        f'<text font-family="{font_family}" font-size="{font_size}" font-weight="{font_weight}" '
-        f'text-anchor="{anchor}" fill="{fill}">{"".join(tspans)}</text>'
-    )
+        line_width, line_height_px = measure_text(font, line)
+        draw_x = anchored_x(x, anchor, line_width)
+        draw_y = y + index * line_height - line_height_px
+        draw.text(
+            (draw_x, draw_y),
+            line,
+            font=font,
+            fill=fill,
+            stroke_width=stroke_width,
+            stroke_fill=stroke_fill,
+        )
 
 
-def build_description_svg(text: str, x: int, y: int, fill: str, anchor: str, line_length: int) -> str:
-    lines = wrap_copy(text, line_length=line_length, max_lines=2)
-    if not lines:
-        return ""
-    return build_multiline_text_svg(
-        lines=lines,
-        x=x,
-        y=y,
-        fill=fill,
-        anchor=anchor,
-        font_size=DESCRIPTION_FONT_SIZE,
-        line_height=28,
-        font_family="Segoe UI, Arial, sans-serif",
-        font_weight=600,
-    )
+def rounded_mask(size: tuple[int, int], radius: int) -> Image.Image:
+    mask = Image.new("L", size, 0)
+    draw = ImageDraw.Draw(mask)
+    draw.rounded_rectangle((0, 0, size[0], size[1]), radius=radius, fill=255)
+    return mask
 
 
-def build_brand_label_svg(brand_name: str, x: int, y: int, anchor: str) -> str:
-    label = escape(brand_name.upper())
-    if anchor == "middle":
-        rect_x = x - 142
-    else:
-        rect_x = x - 18
-    rect_y = y - 34
-    return (
-        f'<rect x="{rect_x}" y="{rect_y}" width="284" height="46" rx="23" ry="23" '
-        f'fill="rgba(255,255,255,0.58)" />'
-        f'<text x="{x}" y="{y}" font-family="Segoe UI, Arial, sans-serif" '
-        f'font-size="{BRAND_FONT_SIZE}" font-weight="700" text-anchor="{anchor}" '
-        f'fill="rgba(24,21,18,0.88)" letter-spacing="1.2">{label}</text>'
-    )
-
-
-def build_gradient_defs(gradient_mode: str) -> str:
-    gradients = {
-        "bottom-heavy": """
-    <linearGradient id="imageShade" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="rgba(12,10,8,0.04)"/>
-      <stop offset="58%" stop-color="rgba(12,10,8,0.08)"/>
-      <stop offset="100%" stop-color="rgba(12,10,8,0.34)"/>
-    </linearGradient>
-""",
-        "top-heavy": """
-    <linearGradient id="imageShade" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="rgba(12,10,8,0.30)"/>
-      <stop offset="36%" stop-color="rgba(12,10,8,0.12)"/>
-      <stop offset="100%" stop-color="rgba(12,10,8,0.05)"/>
-    </linearGradient>
-""",
-        "center-focus": """
-    <radialGradient id="imageShade" cx="50%" cy="44%" r="72%">
-      <stop offset="0%" stop-color="rgba(12,10,8,0.02)"/>
-      <stop offset="62%" stop-color="rgba(12,10,8,0.14)"/>
-      <stop offset="100%" stop-color="rgba(12,10,8,0.28)"/>
-    </radialGradient>
-""",
-        "minimal-dark": """
-    <linearGradient id="imageShade" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="rgba(10,9,8,0.16)"/>
-      <stop offset="54%" stop-color="rgba(10,9,8,0.08)"/>
-      <stop offset="100%" stop-color="rgba(10,9,8,0.56)"/>
-    </linearGradient>
-""",
-    }
-    return gradients.get(gradient_mode, gradients["bottom-heavy"])
-
-
-def build_pin_svg(
-    data_uri: str,
+def build_pin_image(
+    base_image: Image.Image,
     title: str,
     brand_name: str,
     description: str,
     style_name: str,
-    variant_type: str,
-) -> str:
+) -> Image.Image:
     style = resolve_template(style_name)
     anchor = str(style["title_anchor"])
-    title_lines = wrap_title(
-        title,
-        line_length=int(style["title_line_length"]),
-        max_lines=int(style["max_title_lines"]),
-    )
-    description_text = truncate_text(description, 160)
-    title_svg = build_title_svg(
-        lines=title_lines,
-        x=int(style["title_x"]),
-        y=int(style["title_y"]),
-        fill=str(style["title_fill"]),
-        anchor=anchor,
-    )
-    description_svg = build_description_svg(
-        text=description_text,
-        x=int(style["description_x"]),
-        y=int(style["description_y"]),
-        fill=str(style["description_fill"]),
-        anchor=anchor,
-        line_length=int(style["description_line_length"]),
-    )
-    brand_svg = build_brand_label_svg(
+
+    canvas = Image.new("RGBA", (PIN_WIDTH, PIN_HEIGHT), (239, 232, 223, 255))
+    hero = crop_to_pin_size(base_image.copy())
+    hero.putalpha(rounded_mask(hero.size, PIN_BORDER_RADIUS))
+    canvas.alpha_composite(hero)
+    canvas = apply_gradient_overlay(canvas, str(style["gradient_mode"]))
+    draw_rounded_panel(canvas, style)
+    draw_brand_label(
+        canvas,
         brand_name=brand_name,
         x=int(style["brand_x"]),
         y=int(style["brand_y"]),
         anchor=anchor,
     )
-    panel_svg = ""
-    if int(style["panel_width"]) > 0 and int(style["panel_height"]) > 0:
-        panel_svg = (
-            f'<rect x="{style["panel_x"]}" y="{style["panel_y"]}" '
-            f'width="{style["panel_width"]}" height="{style["panel_height"]}" '
-            f'rx="32" ry="32" fill="{style["panel_fill"]}"/>'
+
+    title_lines = wrap_title(
+        title,
+        line_length=int(style["title_line_length"]),
+        max_lines=int(style["max_title_lines"]),
+    )
+    draw_multiline_text(
+        canvas,
+        lines=title_lines,
+        x=int(style["title_x"]),
+        y=int(style["title_y"]),
+        anchor=anchor,
+        font=title_font(TITLE_FONT_SIZE),
+        fill=parse_rgba(str(style["title_fill"])),
+        line_height=TITLE_LINE_HEIGHT,
+        stroke_fill=(0, 0, 0, 46),
+        stroke_width=TITLE_STROKE_WIDTH,
+    )
+
+    description_lines = wrap_copy(truncate_text(description, 160), line_length=int(style["description_line_length"]), max_lines=2)
+    if description_lines:
+        draw_multiline_text(
+            canvas,
+            lines=description_lines,
+            x=int(style["description_x"]),
+            y=int(style["description_y"]),
+            anchor=anchor,
+            font=ui_font(DESCRIPTION_FONT_SIZE),
+            fill=parse_rgba(str(style["description_fill"])),
+            line_height=28,
         )
 
-    gradient_defs = build_gradient_defs(str(style["gradient_mode"]))
-
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{PIN_WIDTH}" height="{PIN_HEIGHT}" viewBox="0 0 {PIN_WIDTH} {PIN_HEIGHT}" role="img" aria-label="{escape(title)}">
-  <defs>{gradient_defs}  </defs>
-  <rect width="100%" height="100%" fill="#efe8df" rx="32" ry="32"/>
-  <image href="{data_uri}" x="0" y="0" width="{PIN_WIDTH}" height="{PIN_HEIGHT}" preserveAspectRatio="xMidYMid slice" clip-path="inset(0 round 32px)"/>
-  <rect width="100%" height="100%" fill="url(#imageShade)" rx="32" ry="32"/>
-  {panel_svg}
-  {brand_svg}
-  {title_svg}
-  {description_svg}
-  <metadata>{escape(variant_type)}</metadata>
-</svg>'''
+    return canvas.convert("RGB")
 
 
 def load_brand_name(project_root: Path) -> str:
@@ -391,7 +436,7 @@ def generate_pin_assets(pinterest_metadata_path: Path) -> list[Path]:
     payload = load_json(pinterest_metadata_path)
 
     hero_image_path = normalize_image_path(str(payload["hero_image_path"]).strip())
-    data_uri = encode_image_as_data_uri(hero_image_path)
+    base_image = load_base_image(hero_image_path)
     slug = str(payload["article_slug"]).strip()
     brand_name = load_brand_name(project_root)
 
@@ -415,16 +460,15 @@ def generate_pin_assets(pinterest_metadata_path: Path) -> list[Path]:
         if not description:
             raise ValueError(f"Variant {index} is missing a description.")
 
-        svg = build_pin_svg(
-            data_uri=data_uri,
+        image = build_pin_image(
+            base_image=base_image,
             title=title,
             brand_name=brand_name,
             description=description,
             style_name=style_name,
-            variant_type=variant_type,
         )
-        output_path = output_dir / f"pin-{index}.svg"
-        output_path.write_text(svg, encoding="utf-8")
+        output_path = output_dir / f"pin-{index}.png"
+        image.save(output_path, format="PNG", optimize=True)
         print(f"[pinterest] generated {style_name} pin at {output_path}")
         saved_paths.append(output_path)
 
