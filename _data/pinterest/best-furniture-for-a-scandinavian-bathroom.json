@@ -1,0 +1,99 @@
+{
+  "article_title": "Best Furniture for a Scandinavian Bathroom: Practical Choices with Iconic Style",
+  "article_slug": "best-furniture-for-a-scandinavian-bathroom",
+  "article_relative_url": "/ideas/2026/03/30/best-furniture-for-a-scandinavian-bathroom/",
+  "article_url": "https://thelivinedit.com/ideas/2026/03/30/best-furniture-for-a-scandinavian-bathroom/",
+  "meta_description": "Discover the best furniture options for a Scandinavian bathroom. From durable wood vanities to space-saving storage, learn how to combine style and function effortlessly.",
+  "cluster_id": "scandinavian_bathroom",
+  "subtopic_id": "furniture",
+  "angle_id": "best_options",
+  "intent_id": "comparison",
+  "visual_direction": {
+    "family_id": "airy_editorial",
+    "mood": "airy, quiet, polished editorial styling",
+    "lighting": "soft natural daylight with gentle highlights",
+    "palette": "chalky whites, oat tones, pale woods, restrained contrast",
+    "intent_id": "comparison",
+    "profile_id": "comparison",
+    "shot_library_id": "general_decor"
+  },
+  "hero_image_path": "/assets/img/best-furniture-for-a-scandinavian-bathroom/hero.png",
+  "site_root_url": "https://thelivinedit.com",
+  "variant_count": 4,
+  "strategy": {
+    "minimum_variant_count": 4,
+    "generated_variant_count": 4,
+    "bonus_slots": 0,
+    "ranked_variant_types": [
+      "trend_overview",
+      "practical_tips",
+      "product_led",
+      "styling_angle"
+    ],
+    "article_score": null,
+    "notes": [
+      "applying performance weighting: no historical lift yet, using balanced defaults",
+      "exploring board default",
+      "exploring board bathroom"
+    ],
+    "board_config_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_boards.json"
+  },
+  "variants": [
+    {
+      "variant_key": "pin-1",
+      "variant_type": "trend_overview",
+      "style_name": "bottom-title",
+      "title": "Top Furniture Picks for a Scandinavian Bathroom with Function and Style",
+      "description": "Explore the best furniture choices designed for a Scandinavian bathroom, balancing clean lines, natural materials, and everyday function.",
+      "image_path": "/assets/pins/best-furniture-for-a-scandinavian-bathroom/pin-1.png",
+      "board": {
+        "key": "default",
+        "name": "Home Decor Inspiration"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 0
+    },
+    {
+      "variant_key": "pin-2",
+      "variant_type": "practical_tips",
+      "style_name": "centered-title",
+      "title": "Best Furniture for a Scandinavian Bathroom: Practical Choices with Iconic Style...",
+      "description": "Use these practical design moves to make best furniture for a scandinavian bathroom: practical choices with iconic style feel balanced, useful, and easy to live with.",
+      "image_path": "/assets/pins/best-furniture-for-a-scandinavian-bathroom/pin-2.png",
+      "board": {
+        "key": "bathroom",
+        "name": "Bathroom Styling Notes"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 1
+    },
+    {
+      "variant_key": "pin-3",
+      "variant_type": "product_led",
+      "style_name": "minimalist-overlay",
+      "title": "4 Pieces That Elevate Best Furniture for a Scandinavian Bathroom: Practical Choices...",
+      "description": "Discover decor pieces and finishing details that help best furniture for a scandinavian bathroom: practical choices with iconic style feel more intentional without looking overdone.",
+      "image_path": "/assets/pins/best-furniture-for-a-scandinavian-bathroom/pin-3.png",
+      "board": {
+        "key": "bathroom",
+        "name": "Bathroom Styling Notes"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 2
+    },
+    {
+      "variant_key": "pin-4",
+      "variant_type": "styling_angle",
+      "style_name": "top-title",
+      "title": "How to Style Best Furniture for a Scandinavian Bathroom: Practical Choices with Iconic...",
+      "description": "See how color, texture, and room styling can shape best furniture for a scandinavian bathroom: practical choices with iconic style into a softer, more editorial look.",
+      "image_path": "/assets/pins/best-furniture-for-a-scandinavian-bathroom/pin-4.png",
+      "board": {
+        "key": "bathroom",
+        "name": "Bathroom Styling Notes"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 3
+    }
+  ]
+}

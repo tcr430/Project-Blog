@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-03-28T17:45:58.649825+00:00",
-  "cluster_count": 12,
-  "article_count": 12,
+  "generated_at": "2026-03-30T10:17:30.589262+00:00",
+  "cluster_count": 13,
+  "article_count": 13,
   "subtopic_count": 6,
   "angle_count": 4,
   "angle_distribution": {
-    "best_options": 7,
+    "best_options": 8,
     "how_to": 1,
     "ideas": 3,
     "style_specific": 1
@@ -322,6 +322,50 @@
       ],
       "angle_distribution": {
         "ideas": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_id": "scandinavian_bathroom",
+      "cluster_name": "scandinavian bathroom",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "utility_transition"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "best furniture for a scandinavian bathroom"
+      ],
+      "latest_article_date": "2026-03-30",
+      "latest_publication": {
+        "article_slug": "best-furniture-for-a-scandinavian-bathroom",
+        "article_title": "Best Furniture for a Scandinavian Bathroom: Practical Choices with Iconic Style",
+        "publish_date": "2026-03-30",
+        "subtopic_id": "furniture",
+        "subtopic_name": "furniture and anchors",
+        "angle_id": "best_options"
+      },
+      "representative_article_slugs": [
+        "best-furniture-for-a-scandinavian-bathroom"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "furniture",
+          "subtopic_name": "furniture and anchors",
+          "article_count": 1,
+          "latest_article_date": "2026-03-30",
+          "representative_article_slugs": [
+            "best-furniture-for-a-scandinavian-bathroom"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "best_options": 1
       },
       "status": "underdeveloped"
     },

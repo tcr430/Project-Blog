@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-03-28T17:42:04.217898+00:00",
+  "generated_at": "2026-03-30T10:13:35.969132+00:00",
   "overview": {
-    "pin_count": 20,
+    "pin_count": 24,
     "published_pin_count": 0,
     "analytics_ready_pin_count": 0,
-    "tracked_article_count": 5
+    "tracked_article_count": 6
   },
   "best_performing_clusters": [
     {
@@ -59,6 +59,24 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "how-to-style-a-neutral-bathroom"
+      ]
+    },
+    {
+      "cluster_id": "scandinavian_bedroom",
+      "cluster_name": "scandinavian bedroom",
+      "pin_count": 4,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-for-scandinavian-bedroom"
       ]
     },
     {
@@ -138,6 +156,25 @@
       ]
     },
     {
+      "cluster_id": "scandinavian_bedroom",
+      "subtopic_id": "furniture",
+      "subtopic_name": "furniture and anchors",
+      "pin_count": 4,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-for-scandinavian-bedroom"
+      ]
+    },
+    {
       "cluster_id": "transitional_bathroom",
       "subtopic_id": "furniture",
       "subtopic_name": "furniture and anchors",
@@ -198,7 +235,7 @@
   "best_performing_angles": [
     {
       "angle_id": "best_options",
-      "pin_count": 16,
+      "pin_count": 20,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -212,6 +249,7 @@
       "top_article_slugs": [
         "best-furniture-for-an-earthy-bathroom",
         "best-furniture-for-earthy-bedroom",
+        "best-furniture-for-scandinavian-bedroom",
         "best-furniture-for-transitional-bathroom",
         "best-furniture-transitional-bedroom"
       ]
@@ -284,7 +322,7 @@
       "visual_family_id": "warm_layered",
       "shot_library_id": "general_decor",
       "intent_id": "comparison",
-      "pin_count": 2,
+      "pin_count": 3,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -297,6 +335,7 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "best-furniture-for-earthy-bedroom",
+        "best-furniture-for-scandinavian-bedroom",
         "best-furniture-transitional-bedroom"
       ]
     },
@@ -349,7 +388,7 @@
       "visual_family_id": "warm_layered",
       "shot_library_id": "general_decor",
       "intent_id": "comparison",
-      "pin_count": 2,
+      "pin_count": 3,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -362,6 +401,7 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "best-furniture-for-earthy-bedroom",
+        "best-furniture-for-scandinavian-bedroom",
         "best-furniture-transitional-bedroom"
       ]
     },
@@ -414,7 +454,7 @@
       "visual_family_id": "warm_layered",
       "shot_library_id": "general_decor",
       "intent_id": "comparison",
-      "pin_count": 2,
+      "pin_count": 3,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -427,6 +467,7 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "best-furniture-for-earthy-bedroom",
+        "best-furniture-for-scandinavian-bedroom",
         "best-furniture-transitional-bedroom"
       ]
     },
@@ -479,7 +520,7 @@
       "visual_family_id": "warm_layered",
       "shot_library_id": "general_decor",
       "intent_id": "comparison",
-      "pin_count": 2,
+      "pin_count": 3,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -492,6 +533,7 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "best-furniture-for-earthy-bedroom",
+        "best-furniture-for-scandinavian-bedroom",
         "best-furniture-transitional-bedroom"
       ]
     }
@@ -553,6 +595,24 @@
         ]
       },
       {
+        "cluster_id": "scandinavian_bedroom",
+        "cluster_name": "scandinavian bedroom",
+        "pin_count": 4,
+        "published_pin_count": 0,
+        "analytics_ready_count": 0,
+        "average_score": 0.0,
+        "average_impressions": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_pin_clicks": 0.0,
+        "average_closeups": 0.0,
+        "signal_label": "no_data",
+        "signal_boost": 0,
+        "top_article_slugs": [
+          "best-furniture-for-scandinavian-bedroom"
+        ]
+      },
+      {
         "cluster_id": "transitional_bathroom",
         "cluster_name": "transitional bathroom",
         "pin_count": 4,
@@ -568,24 +628,6 @@
         "signal_boost": 0,
         "top_article_slugs": [
           "best-furniture-for-transitional-bathroom"
-        ]
-      },
-      {
-        "cluster_id": "transitional_bedroom",
-        "cluster_name": "transitional bedroom",
-        "pin_count": 4,
-        "published_pin_count": 0,
-        "analytics_ready_count": 0,
-        "average_score": 0.0,
-        "average_impressions": 0.0,
-        "average_saves": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_pin_clicks": 0.0,
-        "average_closeups": 0.0,
-        "signal_label": "no_data",
-        "signal_boost": 0,
-        "top_article_slugs": [
-          "best-furniture-transitional-bedroom"
         ]
       }
     ],
@@ -629,6 +671,25 @@
         ]
       },
       {
+        "cluster_id": "scandinavian_bedroom",
+        "subtopic_id": "furniture",
+        "subtopic_name": "furniture and anchors",
+        "pin_count": 4,
+        "published_pin_count": 0,
+        "analytics_ready_count": 0,
+        "average_score": 0.0,
+        "average_impressions": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_pin_clicks": 0.0,
+        "average_closeups": 0.0,
+        "signal_label": "no_data",
+        "signal_boost": 0,
+        "top_article_slugs": [
+          "best-furniture-for-scandinavian-bedroom"
+        ]
+      },
+      {
         "cluster_id": "transitional_bathroom",
         "subtopic_id": "furniture",
         "subtopic_name": "furniture and anchors",
@@ -665,31 +726,12 @@
         "top_article_slugs": [
           "best-furniture-transitional-bedroom"
         ]
-      },
-      {
-        "cluster_id": "neutral_bathroom",
-        "subtopic_id": "layout",
-        "subtopic_name": "layout and foundation",
-        "pin_count": 4,
-        "published_pin_count": 0,
-        "analytics_ready_count": 0,
-        "average_score": 0.0,
-        "average_impressions": 0.0,
-        "average_saves": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_pin_clicks": 0.0,
-        "average_closeups": 0.0,
-        "signal_label": "no_data",
-        "signal_boost": 0,
-        "top_article_slugs": [
-          "how-to-style-a-neutral-bathroom"
-        ]
       }
     ],
     "angles": [
       {
         "angle_id": "best_options",
-        "pin_count": 16,
+        "pin_count": 20,
         "published_pin_count": 0,
         "analytics_ready_count": 0,
         "average_score": 0.0,
@@ -703,6 +745,7 @@
         "top_article_slugs": [
           "best-furniture-for-an-earthy-bathroom",
           "best-furniture-for-earthy-bedroom",
+          "best-furniture-for-scandinavian-bedroom",
           "best-furniture-for-transitional-bathroom",
           "best-furniture-transitional-bedroom"
         ]
@@ -775,7 +818,7 @@
         "visual_family_id": "warm_layered",
         "shot_library_id": "general_decor",
         "intent_id": "comparison",
-        "pin_count": 2,
+        "pin_count": 3,
         "published_pin_count": 0,
         "analytics_ready_count": 0,
         "average_score": 0.0,
@@ -788,6 +831,7 @@
         "signal_boost": 0,
         "top_article_slugs": [
           "best-furniture-for-earthy-bedroom",
+          "best-furniture-for-scandinavian-bedroom",
           "best-furniture-transitional-bedroom"
         ]
       },

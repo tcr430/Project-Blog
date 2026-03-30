@@ -1,16 +1,16 @@
 # Weekly Pipeline Report
 
-Generated: 2026-03-28
+Generated: 2026-03-30
 Window: last 7 days
 
 Articles Published: 4  
 Pins Generated: 16  
-Pins Scheduled: 24  
+Pins Scheduled: 28  
 Pins Published: 0  
 Repins Scheduled: 0
 
 ## Articles Published
-- best-furniture-for-an-earthy-bathroom
+- best-furniture-for-a-scandinavian-bathroom
 - best-furniture-for-scandinavian-bedroom
 - best-furniture-for-transitional-bathroom
 - best-furniture-transitional-bedroom

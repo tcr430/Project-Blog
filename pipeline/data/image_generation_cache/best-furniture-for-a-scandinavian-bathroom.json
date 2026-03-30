@@ -1,0 +1,26 @@
+{
+  "hero": {
+    "cache_key": "fe5cd47ca3fc5d9e21066b7445325f1ceed53a7785364ec3837749fee1242771",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-a-scandinavian-bathroom/hero.png"
+  },
+  "section-1": {
+    "cache_key": "5cd6e4830a25206448ae025c64d8f128d4510c25a4318fca2349a2f9b0367884",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-a-scandinavian-bathroom/section-1.png"
+  },
+  "section-2": {
+    "cache_key": "c0adfebe6cbed434e48e91276ce49732af82905c017bfa4a58f7accb0941619a",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-a-scandinavian-bathroom/section-2.png"
+  },
+  "section-3": {
+    "cache_key": "b0240dd8b74ba677daa5aba3a0f410ba2e2dbe6940fcc370179088d241c248d1",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-a-scandinavian-bathroom/section-3.png"
+  },
+  "section-4": {
+    "cache_key": "17595c70562becf9027b7265c5da34a918b7e3b6c2b1279ac0e9415063cca22e",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-a-scandinavian-bathroom/section-4.png"
+  },
+  "section-5": {
+    "cache_key": "dcf4cda400f2f87091f986360901c6b3eb67b8526500718f6a8b60f519e03132",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-a-scandinavian-bathroom/section-5.png"
+  }
+}
