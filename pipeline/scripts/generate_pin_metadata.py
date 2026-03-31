@@ -9,6 +9,7 @@ from typing import Any
 from dotenv import load_dotenv
 
 from pinterest_strategy import build_pin_distribution_strategy
+from pinterest_pin_design import build_pin_copy_variant, load_design_system, select_template_family
 
 DEFAULT_VARIANT_COUNT = 4
 BOARD_CONFIG_PATH = Path(__file__).resolve().parents[1] / "data" / "pinterest_boards.json"
@@ -214,6 +215,9 @@ def validate_article_metadata(data: dict[str, Any], variant_count: int) -> dict[
         "subtopic_id": str(data.get("subtopic_id") or "").strip(),
         "angle_id": str(data.get("angle_id") or "").strip(),
         "intent_id": str(data.get("intent_id") or "").strip(),
+        "primary_keyword": str(data.get("primary_keyword") or "").strip(),
+        "cluster_name": str(data.get("cluster_name") or "").strip(),
+        "subtopic_name": str(data.get("subtopic_name") or "").strip(),
         "visual_direction": data.get("visual_direction") if isinstance(data.get("visual_direction"), dict) else {},
         "pinterest_titles": title_candidates,
         "pinterest_descriptions": description_candidates,
@@ -269,6 +273,7 @@ def build_variant_description(
 
 
 def build_variant_payloads(article_metadata: dict[str, Any], board_config: dict[str, str]) -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    design_system = load_design_system()
     topic_text = f"{article_metadata['title']} {article_metadata['meta_description']} {article_metadata['slug']}"
     topic_board = infer_topic_board(topic_text, board_config=board_config)
     strategy = build_pin_distribution_strategy(
@@ -293,11 +298,19 @@ def build_variant_payloads(article_metadata: dict[str, Any], board_config: dict[
     variants: list[dict[str, Any]] = []
     for index, plan in enumerate(plans, start=1):
         variant_type = str(plan["variant_type"])
+        copy_variant = build_pin_copy_variant(article_metadata, variant_type=variant_type)
+        template_family = select_template_family(
+            article_metadata=article_metadata,
+            variant_type=variant_type,
+            duplicate_index=int(plan.get("duplicate_index", 0)),
+            design_system=design_system,
+        )
         variants.append(
             {
                 "variant_key": f"pin-{index}",
                 "variant_type": variant_type,
                 "style_name": str(plan["style_name"]),
+                "template_family": template_family,
                 "title": build_variant_title(
                     variant_type=variant_type,
                     topic_phrase=article_metadata["topic_phrase"],
@@ -311,6 +324,11 @@ def build_variant_payloads(article_metadata: dict[str, Any], board_config: dict[
                     meta_description=article_metadata["meta_description"],
                     index=index - 1,
                 ),
+                "display_headline": copy_variant["headline"],
+                "display_subheadline": copy_variant["subheadline"],
+                "display_kicker": copy_variant["kicker"],
+                "cta_label": copy_variant["cta_label"],
+                "topic_style": copy_variant["topic_style"],
                 "image_path": build_pin_image_path(slug=article_metadata["slug"], index=index),
                 "board": dict(plan["board"]),
                 "priority_score": plan["priority_score"],
@@ -326,6 +344,7 @@ def build_variant_payloads(article_metadata: dict[str, Any], board_config: dict[
         "article_score": strategy["article_score"],
         "notes": strategy["notes"],
         "board_config_path": str(BOARD_CONFIG_PATH),
+        "design_system_path": str((Path(__file__).resolve().parents[1] / "data" / "pinterest_pin_design_system.json")),
     }
 
 

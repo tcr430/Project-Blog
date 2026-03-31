@@ -1,0 +1,159 @@
+﻿{
+  "canvas": {
+    "width": 1000,
+    "height": 1500,
+    "border_radius": 36,
+    "safe_margin": 68
+  },
+  "brand": {
+    "background": "#F4EFE8",
+    "ink": "#161311",
+    "muted_ink": "#4E463F",
+    "paper": "#F8F4EE",
+    "paper_soft": "#F2ECE4",
+    "accent": "#A16E4A",
+    "accent_soft": "#D9C0A8",
+    "cta_text": "See the Guide"
+  },
+  "topic_styles": {
+    "editorial": {
+      "accent": "#A16E4A",
+      "panel": "rgba(248,244,238,0.94)",
+      "overlay_strength": 0.22,
+      "kicker_prefix": "Editor\u2019s Note"
+    },
+    "tutorial": {
+      "accent": "#6F7C63",
+      "panel": "rgba(247,245,240,0.95)",
+      "overlay_strength": 0.18,
+      "kicker_prefix": "Step-by-Step"
+    },
+    "decision": {
+      "accent": "#7B5C49",
+      "panel": "rgba(249,245,240,0.95)",
+      "overlay_strength": 0.2,
+      "kicker_prefix": "Worth Knowing"
+    },
+    "insight": {
+      "accent": "#5F6E7A",
+      "panel": "rgba(246,247,248,0.94)",
+      "overlay_strength": 0.24,
+      "kicker_prefix": "Insight"
+    }
+  },
+  "template_families": {
+    "editorial_split": {
+      "headline_font_size": 76,
+      "headline_line_height": 80,
+      "headline_max_lines": 3,
+      "headline_max_chars": 68,
+      "subheadline_font_size": 25,
+      "subheadline_line_height": 34,
+      "subheadline_max_lines": 3,
+      "kicker_font_size": 18,
+      "kicker_tracking": 12,
+      "headline_box": {"x": 86, "y": 860, "width": 760},
+      "subheadline_box": {"x": 86, "y": 1140, "width": 720},
+      "panel": {"x": 58, "y": 772, "width": 838, "height": 576, "radius": 32},
+      "image_mode": "top_crop",
+      "overlay_mode": "bottom_fade",
+      "cta_enabled": true,
+      "cta_x": 86,
+      "cta_y": 1326
+    },
+    "minimal_frame": {
+      "headline_font_size": 82,
+      "headline_line_height": 84,
+      "headline_max_lines": 3,
+      "headline_max_chars": 62,
+      "subheadline_font_size": 24,
+      "subheadline_line_height": 34,
+      "subheadline_max_lines": 2,
+      "kicker_font_size": 18,
+      "kicker_tracking": 10,
+      "headline_box": {"x": 88, "y": 1010, "width": 820},
+      "subheadline_box": {"x": 88, "y": 1260, "width": 760},
+      "panel": {"x": 0, "y": 0, "width": 0, "height": 0, "radius": 0},
+      "image_mode": "full_bleed",
+      "overlay_mode": "deep_bottom_band",
+      "cta_enabled": false,
+      "cta_x": 0,
+      "cta_y": 0
+    },
+    "utility_stack": {
+      "headline_font_size": 70,
+      "headline_line_height": 76,
+      "headline_max_lines": 4,
+      "headline_max_chars": 72,
+      "subheadline_font_size": 23,
+      "subheadline_line_height": 32,
+      "subheadline_max_lines": 3,
+      "kicker_font_size": 17,
+      "kicker_tracking": 10,
+      "headline_box": {"x": 98, "y": 274, "width": 780},
+      "subheadline_box": {"x": 98, "y": 620, "width": 748},
+      "panel": {"x": 70, "y": 170, "width": 860, "height": 650, "radius": 28},
+      "image_mode": "right_weighted",
+      "overlay_mode": "soft_scrim",
+      "cta_enabled": true,
+      "cta_x": 98,
+      "cta_y": 764
+    },
+    "comparison_panel": {
+      "headline_font_size": 72,
+      "headline_line_height": 76,
+      "headline_max_lines": 3,
+      "headline_max_chars": 66,
+      "subheadline_font_size": 24,
+      "subheadline_line_height": 33,
+      "subheadline_max_lines": 3,
+      "kicker_font_size": 18,
+      "kicker_tracking": 12,
+      "headline_box": {"x": 94, "y": 918, "width": 812},
+      "subheadline_box": {"x": 94, "y": 1170, "width": 790},
+      "panel": {"x": 66, "y": 836, "width": 868, "height": 514, "radius": 30},
+      "image_mode": "left_focus",
+      "overlay_mode": "editorial_scrim",
+      "cta_enabled": true,
+      "cta_x": 94,
+      "cta_y": 1320
+    },
+    "insight_band": {
+      "headline_font_size": 74,
+      "headline_line_height": 78,
+      "headline_max_lines": 3,
+      "headline_max_chars": 64,
+      "subheadline_font_size": 24,
+      "subheadline_line_height": 33,
+      "subheadline_max_lines": 2,
+      "kicker_font_size": 17,
+      "kicker_tracking": 12,
+      "headline_box": {"x": 94, "y": 136, "width": 760},
+      "subheadline_box": {"x": 94, "y": 420, "width": 720},
+      "panel": {"x": 64, "y": 74, "width": 822, "height": 472, "radius": 28},
+      "image_mode": "bottom_showcase",
+      "overlay_mode": "top_editorial",
+      "cta_enabled": false,
+      "cta_x": 0,
+      "cta_y": 0
+    }
+  },
+  "variant_rules": {
+    "trend_overview": {
+      "template_preferences": ["editorial_split", "minimal_frame", "insight_band"],
+      "copy_mode": "evergreen"
+    },
+    "practical_tips": {
+      "template_preferences": ["utility_stack", "editorial_split", "minimal_frame"],
+      "copy_mode": "utility"
+    },
+    "product_led": {
+      "template_preferences": ["comparison_panel", "editorial_split", "minimal_frame"],
+      "copy_mode": "decision"
+    },
+    "styling_angle": {
+      "template_preferences": ["minimal_frame", "editorial_split", "insight_band"],
+      "copy_mode": "curiosity"
+    }
+  }
+}

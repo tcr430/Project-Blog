@@ -1,26 +1,38 @@
 {
   "hero": {
-    "cache_key": "0ca88e59aab7eb2a331b3d5e8f72b78c3acabcfcf4086cf98f63009ccc286740",
-    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/spring-living-room-styling-ideas-fresh-minimalism/hero.png"
+    "cache_key": "5cc75e570f5deeda62ca2ed5d1be56df1f7c9115bfd17ca239c5a2f05b311b93",
+    "output_path": "D:\\Project\\Blog\\assets\\img\\spring-living-room-styling-ideas-fresh-minimalism\\hero.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
   },
   "section-1": {
-    "cache_key": "d552f5deb531fa6731e365bf5e21985bc89cb1dc936716711c19db43d7f0cca2",
-    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/spring-living-room-styling-ideas-fresh-minimalism/section-1.png"
+    "cache_key": "f19c3c10cadec5cf3e45ecfdab536249cb5f457436877cc19e1e1e1e705c648c",
+    "output_path": "D:\\Project\\Blog\\assets\\img\\spring-living-room-styling-ideas-fresh-minimalism\\section-1.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
   },
   "section-2": {
-    "cache_key": "82bd801fe12074b5b2454bd48da1c1b88e0d0f65a892e9a0feb0ef6b4252362d",
-    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/spring-living-room-styling-ideas-fresh-minimalism/section-2.png"
+    "cache_key": "f0ffa15d7fae3d1f4c54e6b5bf50ac646134e6899ec13ba49b0b5c53009a7af3",
+    "output_path": "D:\\Project\\Blog\\assets\\img\\spring-living-room-styling-ideas-fresh-minimalism\\section-2.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
   },
   "section-3": {
-    "cache_key": "9590d2c4f7f33735f655b561e0045d1527f9c522e67c367039b73848a09f8f9a",
-    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/spring-living-room-styling-ideas-fresh-minimalism/section-3.png"
+    "cache_key": "dde550c20d6f483f134fc65c4d288d9c58ca23c83628e0e8ae5eced59542a8bf",
+    "output_path": "D:\\Project\\Blog\\assets\\img\\spring-living-room-styling-ideas-fresh-minimalism\\section-3.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
   },
   "section-4": {
-    "cache_key": "898e881846a102d4d21f6f304559d5f8298030c6ef8b0d422213cb84cce7d921",
-    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/spring-living-room-styling-ideas-fresh-minimalism/section-4.png"
+    "cache_key": "7ebe472430b892ec2528d25432bbe3a4e53305710b90cb6a32f52c690a712edf",
+    "output_path": "D:\\Project\\Blog\\assets\\img\\spring-living-room-styling-ideas-fresh-minimalism\\section-4.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
   },
   "section-5": {
-    "cache_key": "c6fd98a259a6377a532f4f81aca72e4b08654c1fe241ce791e9508379d639bc7",
-    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/spring-living-room-styling-ideas-fresh-minimalism/section-5.png"
+    "cache_key": "5fee7b38f3c08ef46e35aaebc5fc37062e6613f8e01116e71c20889c3e3a4384",
+    "output_path": "D:\\Project\\Blog\\assets\\img\\spring-living-room-styling-ideas-fresh-minimalism\\section-5.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
   }
 }

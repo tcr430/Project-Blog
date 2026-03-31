@@ -80,10 +80,35 @@ def parse_args() -> argparse.Namespace:
         help="OpenAI model to use for article generation (default: gpt-4.1-mini).",
     )
     parser.add_argument(
+        "--image-provider",
+        type=str,
+        default=None,
+        choices=["flux", "openai"],
+        help="Primary article image provider (default: IMAGE_PROVIDER env or flux).",
+    )
+    parser.add_argument(
+        "--image-fallback-provider",
+        type=str,
+        default=None,
+        choices=["flux", "openai", "none"],
+        help="Fallback article image provider (default: IMAGE_FALLBACK_PROVIDER env or openai).",
+    )
+    parser.add_argument(
+        "--disable-image-fallback",
+        action="store_true",
+        help="Disable automatic fallback between article image providers.",
+    )
+    parser.add_argument(
         "--image-model",
         type=str,
-        default="gpt-image-1",
-        help="OpenAI image model to use (default: gpt-image-1).",
+        default=None,
+        help="Primary article image model override (provider-specific).",
+    )
+    parser.add_argument(
+        "--image-fallback-model",
+        type=str,
+        default=None,
+        help="Fallback article image model override.",
     )
     parser.add_argument(
         "--image-size",
@@ -96,6 +121,18 @@ def parse_args() -> argparse.Namespace:
         type=str,
         default="high",
         help="Generated image quality hint (default: high).",
+    )
+    parser.add_argument(
+        "--flux-timeout-seconds",
+        type=float,
+        default=None,
+        help="FLUX polling timeout for article images in seconds.",
+    )
+    parser.add_argument(
+        "--flux-poll-interval-seconds",
+        type=float,
+        default=None,
+        help="FLUX polling interval for article images in seconds.",
     )
     parser.add_argument(
         "--product-provider",
@@ -328,17 +365,29 @@ def run_image_step(
     project_root: Path,
     post_path: Path,
     metadata_path: Path,
+    image_provider: str | None,
+    image_fallback_provider: str | None,
+    disable_image_fallback: bool,
     image_model: str,
+    image_fallback_model: str | None,
     image_size: str,
     image_quality: str,
+    flux_timeout_seconds: float | None,
+    flux_poll_interval_seconds: float | None,
 ) -> tuple[list[Path], dict[str, Any]]:
     log_phase("generating images")
     try:
         saved_paths, image_report = generate_and_save_images_with_report(
             metadata_path=metadata_path,
+            provider=image_provider,
+            fallback_provider=image_fallback_provider,
+            disable_fallback=disable_image_fallback,
             model=image_model,
+            fallback_model=image_fallback_model,
             size=image_size,
             quality=image_quality,
+            flux_timeout_seconds=flux_timeout_seconds,
+            flux_poll_interval_seconds=flux_poll_interval_seconds,
         )
 
         log_phase("syncing post body images")
@@ -451,9 +500,15 @@ def run_pipeline_for_trend(
     trend: str,
     topic_context: TopicCandidate,
     model: str,
+    image_provider: str | None,
+    image_fallback_provider: str | None,
+    disable_image_fallback: bool,
     image_model: str,
+    image_fallback_model: str | None,
     image_size: str,
     image_quality: str,
+    flux_timeout_seconds: float | None,
+    flux_poll_interval_seconds: float | None,
     products: list[Product],
 ) -> tuple[Path, list[Path], str, dict[str, Any] | None, Path]:
     project_root = Path(__file__).resolve().parents[2]
@@ -487,9 +542,15 @@ def run_pipeline_for_trend(
         project_root=project_root,
         post_path=post_path,
         metadata_path=metadata_path,
+        image_provider=image_provider,
+        image_fallback_provider=image_fallback_provider,
+        disable_image_fallback=disable_image_fallback,
         image_model=image_model,
+        image_fallback_model=image_fallback_model,
         image_size=image_size,
         image_quality=image_quality,
+        flux_timeout_seconds=flux_timeout_seconds,
+        flux_poll_interval_seconds=flux_poll_interval_seconds,
     )
     pinterest_result = run_pinterest_step(metadata_path=metadata_path)
 
@@ -706,9 +767,15 @@ def run_manual_mode(args: argparse.Namespace) -> int:
             trend=trend,
             topic_context=topic_context,
             model=args.model,
+            image_provider=args.image_provider,
+            image_fallback_provider=args.image_fallback_provider,
+            disable_image_fallback=args.disable_image_fallback,
             image_model=args.image_model,
+            image_fallback_model=args.image_fallback_model,
             image_size=args.image_size,
             image_quality=args.image_quality,
+            flux_timeout_seconds=args.flux_timeout_seconds,
+            flux_poll_interval_seconds=args.flux_poll_interval_seconds,
             products=products,
         )
 
@@ -915,9 +982,15 @@ def run_automatic_mode(args: argparse.Namespace) -> int:
                     trend=trend_keyword,
                     topic_context=trend_item,
                     model=args.model,
+                    image_provider=args.image_provider,
+                    image_fallback_provider=args.image_fallback_provider,
+                    disable_image_fallback=args.disable_image_fallback,
                     image_model=args.image_model,
+                    image_fallback_model=args.image_fallback_model,
                     image_size=args.image_size,
                     image_quality=args.image_quality,
+                    flux_timeout_seconds=args.flux_timeout_seconds,
+                    flux_poll_interval_seconds=args.flux_poll_interval_seconds,
                     products=products,
                 )
             except Exception as exc:

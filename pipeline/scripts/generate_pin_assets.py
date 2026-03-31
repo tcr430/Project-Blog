@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Any
 
 from PIL import Image, ImageColor, ImageDraw, ImageFont
+from pinterest_pin_design import classify_topic_style, load_design_system
 
 PIN_WIDTH = 1000
 PIN_HEIGHT = 1500
@@ -17,6 +18,7 @@ BRAND_FONT_SIZE = 22
 DESCRIPTION_FONT_SIZE = 19
 TITLE_MAX_LENGTH = 110
 PIN_BORDER_RADIUS = 32
+QUALITY_SCORE_MINIMUM = 70
 
 TEMPLATE_ALIASES = {
     "bottom-panel": "bottom-title",
@@ -128,6 +130,10 @@ def load_json(path: Path) -> dict[str, Any]:
     return data
 
 
+def load_pinterest_design_system() -> dict[str, Any]:
+    return load_design_system()
+
+
 def normalize_image_path(image_path: str) -> Path:
     project_root = Path(__file__).resolve().parents[2]
     return project_root / image_path.lstrip("/")
@@ -189,9 +195,21 @@ def wrap_title(title: str, line_length: int, max_lines: int) -> list[str]:
     return wrap_copy(shortened, line_length=line_length, max_lines=max_lines) or [shortened]
 
 
-def resolve_template(style_name: str) -> dict[str, Any]:
+def resolve_template(style_name: str, *, template_family: str = "", design_system: dict[str, Any] | None = None) -> tuple[str, dict[str, Any]]:
+    system = design_system or load_pinterest_design_system()
+    templates = system.get("template_families", {})
+    if template_family and template_family in templates:
+        return template_family, dict(templates[template_family])
+
     canonical_name = TEMPLATE_ALIASES.get(style_name, style_name)
-    return STYLE_TEMPLATES.get(canonical_name, STYLE_TEMPLATES["bottom-title"])
+    fallback_map = {
+        "bottom-title": "editorial_split",
+        "top-title": "insight_band",
+        "centered-title": "utility_stack",
+        "minimalist-overlay": "minimal_frame",
+    }
+    mapped_family = fallback_map.get(canonical_name, "editorial_split")
+    return mapped_family, dict(templates.get(mapped_family, {}))
 
 
 def parse_rgba(value: str) -> tuple[int, int, int, int]:
@@ -238,40 +256,67 @@ def ui_font(size: int) -> ImageFont.FreeTypeFont | ImageFont.ImageFont:
     return find_font(["segoe", "dejavusans"], size)
 
 
-def crop_to_pin_size(image: Image.Image) -> Image.Image:
+def crop_to_pin_size(image: Image.Image, mode: str = "full_bleed") -> Image.Image:
     source_ratio = image.width / image.height
     target_ratio = PIN_WIDTH / PIN_HEIGHT
     if source_ratio > target_ratio:
         new_width = int(image.height * target_ratio)
-        left = max(0, (image.width - new_width) // 2)
+        left_ratio_map = {
+            "left_focus": 0.25,
+            "right_weighted": 0.75,
+        }
+        left_ratio = left_ratio_map.get(mode, 0.5)
+        left = max(0, int((image.width - new_width) * left_ratio))
         image = image.crop((left, 0, left + new_width, image.height))
     else:
         new_height = int(image.width / target_ratio)
-        top = max(0, (image.height - new_height) // 2)
+        top_ratio_map = {
+            "top_crop": 0.18,
+            "bottom_showcase": 0.78,
+        }
+        top_ratio = top_ratio_map.get(mode, 0.5)
+        top = max(0, int((image.height - new_height) * top_ratio))
         image = image.crop((0, top, image.width, top + new_height))
     return image.resize((PIN_WIDTH, PIN_HEIGHT), Image.Resampling.LANCZOS)
 
 
-def apply_gradient_overlay(base: Image.Image, gradient_mode: str) -> Image.Image:
+def apply_gradient_overlay(base: Image.Image, gradient_mode: str, overlay_strength: float = 0.22) -> Image.Image:
     overlay = Image.new("RGBA", (PIN_WIDTH, PIN_HEIGHT), (0, 0, 0, 0))
     draw = ImageDraw.Draw(overlay)
-    if gradient_mode == "top-heavy":
+    max_alpha = max(20, min(170, int(255 * overlay_strength)))
+    if gradient_mode == "top_editorial":
         for y in range(PIN_HEIGHT):
-            alpha = int(max(12, 90 - (y / PIN_HEIGHT) * 90))
+            alpha = int(max_alpha - (y / PIN_HEIGHT) * max_alpha)
+            draw.line([(0, y), (PIN_WIDTH, y)], fill=(10, 9, 8, alpha))
+    elif gradient_mode == "soft_scrim":
+        for y in range(PIN_HEIGHT):
+            alpha = int(max_alpha * 0.45)
+            draw.line([(0, y), (PIN_WIDTH, y)], fill=(17, 15, 13, alpha))
+    elif gradient_mode == "editorial_scrim":
+        for y in range(PIN_HEIGHT):
+            alpha = int((max_alpha * 0.25) + ((y / PIN_HEIGHT) * max_alpha * 0.75))
+            draw.line([(0, y), (PIN_WIDTH, y)], fill=(12, 10, 8, alpha))
+    elif gradient_mode == "deep_bottom_band":
+        for y in range(PIN_HEIGHT):
+            alpha = int((y / PIN_HEIGHT) ** 2 * max_alpha * 1.2)
+            draw.line([(0, y), (PIN_WIDTH, y)], fill=(10, 9, 8, alpha))
+    elif gradient_mode == "top-heavy":
+        for y in range(PIN_HEIGHT):
+            alpha = int(max(12, max_alpha - (y / PIN_HEIGHT) * max_alpha))
             draw.line([(0, y), (PIN_WIDTH, y)], fill=(10, 9, 8, alpha))
     elif gradient_mode == "center-focus":
         center_y = PIN_HEIGHT * 0.44
         for y in range(PIN_HEIGHT):
             distance = abs(y - center_y) / PIN_HEIGHT
-            alpha = int(min(72, max(8, distance * 96)))
+            alpha = int(min(max_alpha, max(8, distance * max_alpha * 1.2)))
             draw.line([(0, y), (PIN_WIDTH, y)], fill=(12, 10, 8, alpha))
     elif gradient_mode == "minimal-dark":
         for y in range(PIN_HEIGHT):
-            alpha = int(30 + (y / PIN_HEIGHT) * 110)
+            alpha = int(max_alpha * 0.35 + (y / PIN_HEIGHT) * max_alpha)
             draw.line([(0, y), (PIN_WIDTH, y)], fill=(10, 9, 8, alpha))
     else:
         for y in range(PIN_HEIGHT):
-            alpha = int(10 + (y / PIN_HEIGHT) * 78)
+            alpha = int(max_alpha * 0.2 + (y / PIN_HEIGHT) * max_alpha * 0.8)
             draw.line([(0, y), (PIN_WIDTH, y)], fill=(12, 10, 8, alpha))
     return Image.alpha_composite(base, overlay)
 
@@ -329,6 +374,28 @@ def draw_brand_label(canvas: Image.Image, brand_name: str, x: int, y: int, ancho
     canvas.alpha_composite(overlay)
 
 
+def draw_kicker(canvas: Image.Image, text: str, x: int, y: int, accent: tuple[int, int, int, int]) -> None:
+    draw = ImageDraw.Draw(canvas)
+    font = ui_font(18)
+    label = normalize_copy(text).upper()
+    draw.text((x, y), label, font=font, fill=accent)
+    width, _ = measure_text(font, label)
+    draw.line((x, y + 28, x + width + 18, y + 28), fill=accent, width=3)
+
+
+def draw_cta_chip(canvas: Image.Image, text: str, x: int, y: int, accent: tuple[int, int, int, int]) -> None:
+    overlay = Image.new("RGBA", canvas.size, (0, 0, 0, 0))
+    draw = ImageDraw.Draw(overlay)
+    font = ui_font(19)
+    label = normalize_copy(text)
+    width, height = measure_text(font, label)
+    chip_width = width + 34
+    chip_height = height + 20
+    draw.rounded_rectangle((x, y - height, x + chip_width, y - height + chip_height), radius=18, fill=accent)
+    draw.text((x + 17, y - height + 8), label, font=font, fill=(255, 255, 255, 255))
+    canvas.alpha_composite(overlay)
+
+
 def draw_multiline_text(
     canvas: Image.Image,
     *,
@@ -364,62 +431,141 @@ def rounded_mask(size: tuple[int, int], radius: int) -> Image.Image:
     return mask
 
 
-def build_pin_image(
-    base_image: Image.Image,
-    title: str,
-    brand_name: str,
-    description: str,
-    style_name: str,
-) -> Image.Image:
-    style = resolve_template(style_name)
-    anchor = str(style["title_anchor"])
+def validate_layout(
+    *,
+    headline_lines: list[str],
+    subheadline_lines: list[str],
+    template: dict[str, Any],
+) -> tuple[int, list[str]]:
+    score = 100
+    warnings: list[str] = []
 
-    canvas = Image.new("RGBA", (PIN_WIDTH, PIN_HEIGHT), (239, 232, 223, 255))
-    hero = crop_to_pin_size(base_image.copy())
+    if len(headline_lines) > int(template["headline_max_lines"]):
+        score -= 35
+        warnings.append("headline overflow")
+    if len(subheadline_lines) > int(template["subheadline_max_lines"]):
+        score -= 25
+        warnings.append("subheadline overflow")
+    longest_headline = max((len(line) for line in headline_lines), default=0)
+    if longest_headline > 34:
+        score -= 10
+        warnings.append("headline lines are too wide")
+    if not headline_lines:
+        score -= 40
+        warnings.append("headline missing")
+    return score, warnings
+
+
+def build_pin_image(
+    *,
+    base_image: Image.Image,
+    brand_name: str,
+    variant: dict[str, Any],
+    article_payload: dict[str, Any],
+    design_system: dict[str, Any],
+) -> tuple[Image.Image, dict[str, Any]]:
+    topic_style_key = str(variant.get("topic_style") or classify_topic_style(article_payload)).strip() or "editorial"
+    topic_style = dict(design_system.get("topic_styles", {}).get(topic_style_key, {}))
+    template_name, template = resolve_template(
+        str(variant.get("style_name", "bottom-title")),
+        template_family=str(variant.get("template_family", "")),
+        design_system=design_system,
+    )
+
+    headline = normalize_copy(str(variant.get("display_headline") or variant.get("title") or ""))
+    subheadline = normalize_copy(str(variant.get("display_subheadline") or variant.get("description") or ""))
+    kicker = normalize_copy(str(variant.get("display_kicker") or topic_style.get("kicker_prefix") or ""))
+    cta_label = normalize_copy(str(variant.get("cta_label") or design_system.get("brand", {}).get("cta_text") or ""))
+
+    title_lines = wrap_copy(
+        truncate_text(headline, int(template["headline_max_chars"])),
+        line_length=max(16, int(template["headline_max_chars"] // max(1, int(template["headline_max_lines"])))),
+        max_lines=int(template["headline_max_lines"]),
+    )
+    subheadline_lines = wrap_copy(
+        truncate_text(subheadline, 140),
+        line_length=42,
+        max_lines=int(template["subheadline_max_lines"]),
+    )
+    quality_score, quality_warnings = validate_layout(
+        headline_lines=title_lines,
+        subheadline_lines=subheadline_lines,
+        template=template,
+    )
+
+    canvas = Image.new("RGBA", (PIN_WIDTH, PIN_HEIGHT), parse_rgba(design_system["brand"]["background"]))
+    hero = crop_to_pin_size(base_image.copy(), mode=str(template.get("image_mode", "full_bleed")))
     hero.putalpha(rounded_mask(hero.size, PIN_BORDER_RADIUS))
     canvas.alpha_composite(hero)
-    canvas = apply_gradient_overlay(canvas, str(style["gradient_mode"]))
-    draw_rounded_panel(canvas, style)
-    draw_brand_label(
+    canvas = apply_gradient_overlay(
         canvas,
-        brand_name=brand_name,
-        x=int(style["brand_x"]),
-        y=int(style["brand_y"]),
-        anchor=anchor,
+        str(template.get("overlay_mode", "bottom_fade")),
+        overlay_strength=float(topic_style.get("overlay_strength", 0.22)),
     )
 
-    title_lines = wrap_title(
-        title,
-        line_length=int(style["title_line_length"]),
-        max_lines=int(style["max_title_lines"]),
-    )
+    panel = template.get("panel", {})
+    panel_template = {
+        "panel_x": int(panel.get("x", 0)),
+        "panel_y": int(panel.get("y", 0)),
+        "panel_width": int(panel.get("width", 0)),
+        "panel_height": int(panel.get("height", 0)),
+        "panel_fill": str(topic_style.get("panel", design_system["brand"]["paper"])),
+    }
+    draw_rounded_panel(canvas, panel_template)
+
+    headline_box = template["headline_box"]
+    subheadline_box = template["subheadline_box"]
+    accent_color = parse_rgba(str(topic_style.get("accent", design_system["brand"]["accent"])))
+    ink = parse_rgba(design_system["brand"]["ink"])
+    muted_ink = parse_rgba(design_system["brand"]["muted_ink"])
+    headline_fill = ink if template_name != "minimal_frame" else (255, 255, 255, 255)
+    subheadline_fill = muted_ink if template_name != "minimal_frame" else (255, 255, 255, 230)
+
+    draw_brand_label(canvas, brand_name=brand_name, x=int(headline_box["x"]), y=int(headline_box["y"]) - 72, anchor="start")
+    if kicker:
+        draw_kicker(canvas, kicker, int(headline_box["x"]), int(headline_box["y"]) - 20, accent_color)
+
     draw_multiline_text(
         canvas,
         lines=title_lines,
-        x=int(style["title_x"]),
-        y=int(style["title_y"]),
-        anchor=anchor,
-        font=title_font(TITLE_FONT_SIZE),
-        fill=parse_rgba(str(style["title_fill"])),
-        line_height=TITLE_LINE_HEIGHT,
-        stroke_fill=(0, 0, 0, 46),
-        stroke_width=TITLE_STROKE_WIDTH,
+        x=int(headline_box["x"]),
+        y=int(headline_box["y"]) + 126,
+        anchor="start",
+        font=title_font(int(template["headline_font_size"])),
+        fill=headline_fill,
+        line_height=int(template["headline_line_height"]),
+        stroke_fill=(0, 0, 0, 48) if template_name == "minimal_frame" else None,
+        stroke_width=2 if template_name == "minimal_frame" else 0,
     )
 
-    description_lines = wrap_copy(truncate_text(description, 160), line_length=int(style["description_line_length"]), max_lines=2)
-    if description_lines:
+    if subheadline_lines:
         draw_multiline_text(
             canvas,
-            lines=description_lines,
-            x=int(style["description_x"]),
-            y=int(style["description_y"]),
-            anchor=anchor,
-            font=ui_font(DESCRIPTION_FONT_SIZE),
-            fill=parse_rgba(str(style["description_fill"])),
-            line_height=28,
+            lines=subheadline_lines,
+            x=int(subheadline_box["x"]),
+            y=int(subheadline_box["y"]) + 34,
+            anchor="start",
+            font=ui_font(int(template["subheadline_font_size"])),
+            fill=subheadline_fill,
+            line_height=int(template["subheadline_line_height"]),
         )
 
-    return canvas.convert("RGB")
+    if bool(template.get("cta_enabled")) and cta_label:
+        draw_cta_chip(
+            canvas,
+            cta_label,
+            int(template.get("cta_x", subheadline_box["x"])),
+            int(template.get("cta_y", subheadline_box["y"])) ,
+            accent_color,
+        )
+
+    diagnostics = {
+        "template_family": template_name,
+        "topic_style": topic_style_key,
+        "quality_score": quality_score,
+        "quality_warnings": quality_warnings,
+    }
+    return canvas.convert("RGB"), diagnostics
 
 
 def load_brand_name(project_root: Path) -> str:
@@ -434,6 +580,7 @@ def load_brand_name(project_root: Path) -> str:
 def generate_pin_assets(pinterest_metadata_path: Path) -> list[Path]:
     project_root = Path(__file__).resolve().parents[2]
     payload = load_json(pinterest_metadata_path)
+    design_system = load_pinterest_design_system()
 
     hero_image_path = normalize_image_path(str(payload["hero_image_path"]).strip())
     base_image = load_base_image(hero_image_path)
@@ -451,27 +598,50 @@ def generate_pin_assets(pinterest_metadata_path: Path) -> list[Path]:
         raise ValueError("Pinterest metadata must contain at least 4 variants.")
 
     for index, variant in enumerate(variants, start=1):
-        title = normalize_copy(str(variant.get("title", "")))
-        description = normalize_copy(str(variant.get("description", "")))
         style_name = str(variant.get("style_name", "bottom-title")).strip() or "bottom-title"
         variant_type = str(variant.get("variant_type", "")).strip() or f"variant_{index}"
-        if not title:
-            raise ValueError(f"Variant {index} is missing a title.")
-        if not description:
-            raise ValueError(f"Variant {index} is missing a description.")
+        if not str(variant.get("display_headline") or variant.get("title") or "").strip():
+            raise ValueError(f"Variant {index} is missing a usable headline.")
+        if not str(variant.get("display_subheadline") or variant.get("description") or "").strip():
+            raise ValueError(f"Variant {index} is missing a usable subheadline.")
 
-        image = build_pin_image(
-            base_image=base_image,
-            title=title,
-            brand_name=brand_name,
-            description=description,
-            style_name=style_name,
-        )
+        image: Image.Image | None = None
+        diagnostics: dict[str, Any] = {}
+        template_preferences = design_system.get("variant_rules", {}).get(variant_type, {}).get("template_preferences", [])
+        template_candidates = [str(variant.get("template_family", "")).strip()] + [name for name in template_preferences if name]
+        seen_templates: set[str] = set()
+        for template_name in template_candidates:
+            if not template_name or template_name in seen_templates:
+                continue
+            seen_templates.add(template_name)
+            candidate_variant = dict(variant)
+            candidate_variant["template_family"] = template_name
+            candidate_image, candidate_diagnostics = build_pin_image(
+                base_image=base_image,
+                brand_name=brand_name,
+                variant=candidate_variant,
+                article_payload=payload,
+                design_system=design_system,
+            )
+            image = candidate_image
+            diagnostics = candidate_diagnostics
+            if candidate_diagnostics["quality_score"] >= QUALITY_SCORE_MINIMUM:
+                variant["template_family"] = template_name
+                break
+
+        if image is None:
+            raise ValueError(f"Variant {index} could not render a valid pin image.")
+
+        variant["render_diagnostics"] = diagnostics
         output_path = output_dir / f"pin-{index}.png"
         image.save(output_path, format="PNG", optimize=True)
-        print(f"[pinterest] generated {style_name} pin at {output_path}")
+        print(
+            f"[pinterest] generated {style_name} / {variant.get('template_family', 'unknown')} pin at {output_path} "
+            f"(quality={diagnostics.get('quality_score', 0)})"
+        )
         saved_paths.append(output_path)
 
+    pinterest_metadata_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     return saved_paths
 
 
