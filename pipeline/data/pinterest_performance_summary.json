@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-03-31T01:12:44.266219+00:00",
+  "generated_at": "2026-03-31T06:59:57.382228+00:00",
   "history_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_history.json",
-  "published_pin_count": 0,
+  "published_pin_count": 1,
   "global_metrics": {
-    "published_pins": 0,
+    "published_pins": 1,
     "analytics_ready_pins": 0,
     "average_impressions": null,
     "average_saves": null,
@@ -12,13 +12,108 @@
     "average_closeups": null,
     "average_engagement_rate": null
   },
-  "performance_by_variant_type": [],
-  "performance_by_board": [],
-  "performance_by_article": [],
+  "performance_by_variant_type": [
+    {
+      "variant_type": "practical_tips",
+      "published_pins": 1,
+      "analytics_ready_pins": 0,
+      "average_impressions": null,
+      "average_saves": null,
+      "average_outbound_clicks": null,
+      "average_pin_clicks": null,
+      "average_closeups": null,
+      "average_engagement_rate": null
+    }
+  ],
+  "performance_by_board": [
+    {
+      "board_key": "bathroom",
+      "published_pins": 1,
+      "analytics_ready_pins": 0,
+      "average_impressions": null,
+      "average_saves": null,
+      "average_outbound_clicks": null,
+      "average_pin_clicks": null,
+      "average_closeups": null,
+      "average_engagement_rate": null,
+      "board_name": "Bathroom Styling Notes"
+    }
+  ],
+  "performance_by_article": [
+    {
+      "article_slug": "best-furniture-for-a-scandinavian-bathroom",
+      "published_pins": 1,
+      "analytics_ready_pins": 0,
+      "average_impressions": null,
+      "average_saves": null,
+      "average_outbound_clicks": null,
+      "average_pin_clicks": null,
+      "average_closeups": null,
+      "average_engagement_rate": null,
+      "score": 0,
+      "classification": "underperforming",
+      "reasons": []
+    }
+  ],
   "rankings": {
-    "top_variant_types": [],
-    "top_boards": [],
-    "top_articles": [],
-    "weak_articles": []
+    "top_variant_types": [
+      {
+        "variant_type": "practical_tips",
+        "published_pins": 1,
+        "analytics_ready_pins": 0,
+        "average_impressions": null,
+        "average_saves": null,
+        "average_outbound_clicks": null,
+        "average_pin_clicks": null,
+        "average_closeups": null,
+        "average_engagement_rate": null
+      }
+    ],
+    "top_boards": [
+      {
+        "board_key": "bathroom",
+        "published_pins": 1,
+        "analytics_ready_pins": 0,
+        "average_impressions": null,
+        "average_saves": null,
+        "average_outbound_clicks": null,
+        "average_pin_clicks": null,
+        "average_closeups": null,
+        "average_engagement_rate": null,
+        "board_name": "Bathroom Styling Notes"
+      }
+    ],
+    "top_articles": [
+      {
+        "article_slug": "best-furniture-for-a-scandinavian-bathroom",
+        "published_pins": 1,
+        "analytics_ready_pins": 0,
+        "average_impressions": null,
+        "average_saves": null,
+        "average_outbound_clicks": null,
+        "average_pin_clicks": null,
+        "average_closeups": null,
+        "average_engagement_rate": null,
+        "score": 0,
+        "classification": "underperforming",
+        "reasons": []
+      }
+    ],
+    "weak_articles": [
+      {
+        "article_slug": "best-furniture-for-a-scandinavian-bathroom",
+        "published_pins": 1,
+        "analytics_ready_pins": 0,
+        "average_impressions": null,
+        "average_saves": null,
+        "average_outbound_clicks": null,
+        "average_pin_clicks": null,
+        "average_closeups": null,
+        "average_engagement_rate": null,
+        "score": 0,
+        "classification": "underperforming",
+        "reasons": []
+      }
+    ]
   }
 }
