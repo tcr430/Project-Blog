@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-03-30T10:14:19.954467+00:00",
+  "generated_at": "2026-04-01T19:10:15.921104+00:00",
   "articles": [
     {
-      "article_slug": "best-furniture-for-a-scandinavian-bathroom",
-      "cluster": "scandinavian bathroom",
-      "cluster_id": "scandinavian bathroom",
+      "article_slug": "best-furniture-parisian-bedroom",
+      "cluster": "parisian bedroom",
+      "cluster_id": "parisian bedroom",
       "subtopic_id": "furniture",
       "subtopic_name": "furniture and anchors",
       "angle_id": "best options",
       "intent_id": "comparison",
-      "primary_keyword": "best furniture for a scandinavian bathroom",
+      "primary_keyword": "best furniture for a parisian bedroom",
       "validation_status": "warning",
       "warnings": [
         "None of the secondary keywords appear in the article body."
       ],
       "errors": [],
       "duplicate_candidate_slugs": [],
-      "timestamp": "2026-03-30T10:14:19.954371+00:00"
+      "timestamp": "2026-04-01T19:10:15.921006+00:00"
     },
     {
       "article_slug": "how-to-style-a-neutral-bedroom",
@@ -36,7 +36,7 @@
       ],
       "errors": [],
       "duplicate_candidate_slugs": [],
-      "timestamp": "2026-03-30T10:13:51.220470+00:00"
+      "timestamp": "2026-04-01T19:09:46.964310+00:00"
     },
     {
       "article_slug": "spring-bedroom-refresh-mistakes-to-avoid",
@@ -55,7 +55,24 @@
       ],
       "errors": [],
       "duplicate_candidate_slugs": [],
-      "timestamp": "2026-03-30T10:13:51.017770+00:00"
+      "timestamp": "2026-04-01T19:09:46.765279+00:00"
+    },
+    {
+      "article_slug": "best-furniture-for-a-scandinavian-bathroom",
+      "cluster": "scandinavian bathroom",
+      "cluster_id": "scandinavian bathroom",
+      "subtopic_id": "furniture",
+      "subtopic_name": "furniture and anchors",
+      "angle_id": "best options",
+      "intent_id": "comparison",
+      "primary_keyword": "best furniture for a scandinavian bathroom",
+      "validation_status": "warning",
+      "warnings": [
+        "None of the secondary keywords appear in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-03-30T10:14:19.954371+00:00"
     },
     {
       "article_slug": "best-furniture-for-scandinavian-bedroom",

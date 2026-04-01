@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-03-30T10:13:35.969132+00:00",
+  "generated_at": "2026-04-01T19:09:32.810082+00:00",
   "overview": {
-    "pin_count": 24,
-    "published_pin_count": 0,
+    "pin_count": 28,
+    "published_pin_count": 1,
     "analytics_ready_pin_count": 0,
-    "tracked_article_count": 6
+    "tracked_article_count": 7
   },
   "best_performing_clusters": [
     {
@@ -59,6 +59,24 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "how-to-style-a-neutral-bathroom"
+      ]
+    },
+    {
+      "cluster_id": "scandinavian_bathroom",
+      "cluster_name": "scandinavian bathroom",
+      "pin_count": 4,
+      "published_pin_count": 1,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-for-a-scandinavian-bathroom"
       ]
     },
     {
@@ -117,6 +135,25 @@
     }
   ],
   "best_performing_subtopics": [
+    {
+      "cluster_id": "scandinavian_bathroom",
+      "subtopic_id": "furniture",
+      "subtopic_name": "furniture and anchors",
+      "pin_count": 4,
+      "published_pin_count": 1,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-for-a-scandinavian-bathroom"
+      ]
+    },
     {
       "cluster_id": "earthy_bathroom",
       "subtopic_id": "furniture",
@@ -235,8 +272,8 @@
   "best_performing_angles": [
     {
       "angle_id": "best_options",
-      "pin_count": 20,
-      "published_pin_count": 0,
+      "pin_count": 24,
+      "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -247,11 +284,11 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
+        "best-furniture-for-a-scandinavian-bathroom",
         "best-furniture-for-an-earthy-bathroom",
         "best-furniture-for-earthy-bedroom",
         "best-furniture-for-scandinavian-bedroom",
-        "best-furniture-for-transitional-bathroom",
-        "best-furniture-transitional-bedroom"
+        "best-furniture-for-transitional-bathroom"
       ]
     },
     {
@@ -292,6 +329,27 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "how-to-style-a-neutral-bathroom"
+      ]
+    },
+    {
+      "visual_style_key": "bottom_title|airy_editorial|general_decor|comparison",
+      "style_name": "bottom-title",
+      "visual_family_id": "airy_editorial",
+      "shot_library_id": "general_decor",
+      "intent_id": "comparison",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-for-a-scandinavian-bathroom"
       ]
     },
     {
@@ -361,6 +419,27 @@
       ]
     },
     {
+      "visual_style_key": "centered_title|airy_editorial|general_decor|comparison",
+      "style_name": "centered-title",
+      "visual_family_id": "airy_editorial",
+      "shot_library_id": "general_decor",
+      "intent_id": "comparison",
+      "pin_count": 1,
+      "published_pin_count": 1,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-for-a-scandinavian-bathroom"
+      ]
+    },
+    {
       "visual_style_key": "centered_title|crisp_modern|general_decor|comparison",
       "style_name": "centered-title",
       "visual_family_id": "crisp_modern",
@@ -427,6 +506,27 @@
       ]
     },
     {
+      "visual_style_key": "minimalist_overlay|airy_editorial|general_decor|comparison",
+      "style_name": "minimalist-overlay",
+      "visual_family_id": "airy_editorial",
+      "shot_library_id": "general_decor",
+      "intent_id": "comparison",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-for-a-scandinavian-bathroom"
+      ]
+    },
+    {
       "visual_style_key": "minimalist_overlay|crisp_modern|general_decor|comparison",
       "style_name": "minimalist-overlay",
       "visual_family_id": "crisp_modern",
@@ -490,6 +590,27 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "how-to-style-a-neutral-bathroom"
+      ]
+    },
+    {
+      "visual_style_key": "top_title|airy_editorial|general_decor|comparison",
+      "style_name": "top-title",
+      "visual_family_id": "airy_editorial",
+      "shot_library_id": "general_decor",
+      "intent_id": "comparison",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-for-a-scandinavian-bathroom"
       ]
     },
     {
@@ -595,6 +716,24 @@
         ]
       },
       {
+        "cluster_id": "scandinavian_bathroom",
+        "cluster_name": "scandinavian bathroom",
+        "pin_count": 4,
+        "published_pin_count": 1,
+        "analytics_ready_count": 0,
+        "average_score": 0.0,
+        "average_impressions": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_pin_clicks": 0.0,
+        "average_closeups": 0.0,
+        "signal_label": "no_data",
+        "signal_boost": 0,
+        "top_article_slugs": [
+          "best-furniture-for-a-scandinavian-bathroom"
+        ]
+      },
+      {
         "cluster_id": "scandinavian_bedroom",
         "cluster_name": "scandinavian bedroom",
         "pin_count": 4,
@@ -611,12 +750,15 @@
         "top_article_slugs": [
           "best-furniture-for-scandinavian-bedroom"
         ]
-      },
+      }
+    ],
+    "subtopics": [
       {
-        "cluster_id": "transitional_bathroom",
-        "cluster_name": "transitional bathroom",
+        "cluster_id": "scandinavian_bathroom",
+        "subtopic_id": "furniture",
+        "subtopic_name": "furniture and anchors",
         "pin_count": 4,
-        "published_pin_count": 0,
+        "published_pin_count": 1,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,
@@ -627,11 +769,9 @@
         "signal_label": "no_data",
         "signal_boost": 0,
         "top_article_slugs": [
-          "best-furniture-for-transitional-bathroom"
+          "best-furniture-for-a-scandinavian-bathroom"
         ]
-      }
-    ],
-    "subtopics": [
+      },
       {
         "cluster_id": "earthy_bathroom",
         "subtopic_id": "furniture",
@@ -707,32 +847,13 @@
         "top_article_slugs": [
           "best-furniture-for-transitional-bathroom"
         ]
-      },
-      {
-        "cluster_id": "transitional_bedroom",
-        "subtopic_id": "furniture",
-        "subtopic_name": "furniture and anchors",
-        "pin_count": 4,
-        "published_pin_count": 0,
-        "analytics_ready_count": 0,
-        "average_score": 0.0,
-        "average_impressions": 0.0,
-        "average_saves": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_pin_clicks": 0.0,
-        "average_closeups": 0.0,
-        "signal_label": "no_data",
-        "signal_boost": 0,
-        "top_article_slugs": [
-          "best-furniture-transitional-bedroom"
-        ]
       }
     ],
     "angles": [
       {
         "angle_id": "best_options",
-        "pin_count": 20,
-        "published_pin_count": 0,
+        "pin_count": 24,
+        "published_pin_count": 1,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,
@@ -743,11 +864,11 @@
         "signal_label": "no_data",
         "signal_boost": 0,
         "top_article_slugs": [
+          "best-furniture-for-a-scandinavian-bathroom",
           "best-furniture-for-an-earthy-bathroom",
           "best-furniture-for-earthy-bedroom",
           "best-furniture-for-scandinavian-bedroom",
-          "best-furniture-for-transitional-bathroom",
-          "best-furniture-transitional-bedroom"
+          "best-furniture-for-transitional-bathroom"
         ]
       },
       {
@@ -788,6 +909,27 @@
         "signal_boost": 0,
         "top_article_slugs": [
           "how-to-style-a-neutral-bathroom"
+        ]
+      },
+      {
+        "visual_style_key": "bottom_title|airy_editorial|general_decor|comparison",
+        "style_name": "bottom-title",
+        "visual_family_id": "airy_editorial",
+        "shot_library_id": "general_decor",
+        "intent_id": "comparison",
+        "pin_count": 1,
+        "published_pin_count": 0,
+        "analytics_ready_count": 0,
+        "average_score": 0.0,
+        "average_impressions": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_pin_clicks": 0.0,
+        "average_closeups": 0.0,
+        "signal_label": "no_data",
+        "signal_boost": 0,
+        "top_article_slugs": [
+          "best-furniture-for-a-scandinavian-bathroom"
         ]
       },
       {
@@ -854,28 +996,6 @@
         "signal_boost": 0,
         "top_article_slugs": [
           "how-to-style-a-neutral-bathroom"
-        ]
-      },
-      {
-        "visual_style_key": "centered_title|crisp_modern|general_decor|comparison",
-        "style_name": "centered-title",
-        "visual_family_id": "crisp_modern",
-        "shot_library_id": "general_decor",
-        "intent_id": "comparison",
-        "pin_count": 2,
-        "published_pin_count": 0,
-        "analytics_ready_count": 0,
-        "average_score": 0.0,
-        "average_impressions": 0.0,
-        "average_saves": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_pin_clicks": 0.0,
-        "average_closeups": 0.0,
-        "signal_label": "no_data",
-        "signal_boost": 0,
-        "top_article_slugs": [
-          "best-furniture-for-an-earthy-bathroom",
-          "best-furniture-for-transitional-bathroom"
         ]
       }
     ]

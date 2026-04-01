@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-03-30T10:14:19.957027+00:00",
+  "generated_at": "2026-04-01T19:10:15.923623+00:00",
   "articles": [
     {
-      "article_slug": "best-furniture-for-a-scandinavian-bathroom",
-      "cluster_id": "scandinavian_bathroom",
+      "article_slug": "best-furniture-parisian-bedroom",
+      "cluster_id": "parisian_bedroom",
       "subtopic_id": "furniture",
       "angle_id": "best_options",
-      "primary_keyword": "best furniture for a scandinavian bathroom",
+      "primary_keyword": "best furniture for a parisian bedroom",
       "validation_status": "warning",
       "warnings": [
         "Supporting keyword ideas are barely reflected in the body."
@@ -14,27 +14,28 @@
       "errors": [],
       "checks": {
         "generic_intro": {
-          "intro_word_count": 104,
-          "concept_overlap": 6,
-          "first_sentence": "Bathrooms designed with Scandinavian principles are all about calming simplicity, clean lines, and the perfect balance of form and function."
+          "intro_word_count": 137,
+          "concept_overlap": 7,
+          "first_sentence": "Parisian bedrooms hold a unique appeal, blending an effortless sense of chic with everyday comfort."
         },
         "heading_quality": {
-          "heading_count": 5,
+          "heading_count": 6,
           "vague_heading_count": 0,
-          "low_specificity_heading_count": 0,
+          "low_specificity_heading_count": 1,
           "repeated_signature_count": 0,
           "repeated_stem_count": 0,
           "headings": [
-            "Defining Criteria: What to Look For in Scandinavian Bathroom Furniture",
-            "Classic Wood Vanities: The Scandinavian Bathroom Staple",
-            "Metal and Glass Pieces: When Sleek Meets Practical in Scandinavian Decor",
-            "Matching Furniture to Bathroom Size and Layout Constraints",
-            "How to Confidently Narrow Down Your Scandinavian Bathroom Furniture Choices"
+            "Key Criteria for Selecting Furniture in a Parisian Bedroom",
+            "Solid Wood Furniture: The Natural Anchor of Parisian Bedrooms",
+            "Upholstered Versus Ornate Bed Frames: Finding the Right Headboard Style",
+            "Adjusting Furniture Choices to Room Size and Layout",
+            "Narrowing Down Purchasing Decisions: Anchors, Accessories, and Longevity",
+            "Conclusion"
           ]
         },
         "specificity": {
-          "concept_token_hits": 8,
-          "specificity_term_hits": 10,
+          "concept_token_hits": 11,
+          "specificity_term_hits": 12,
           "secondary_keyword_hits": 0
         },
         "distinctiveness": {
@@ -43,7 +44,7 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-03-30T10:14:19.956879+00:00"
+      "timestamp": "2026-04-01T19:10:15.923451+00:00"
     },
     {
       "article_slug": "how-to-style-a-neutral-bedroom",
@@ -90,7 +91,7 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-03-30T10:13:51.222903+00:00"
+      "timestamp": "2026-04-01T19:09:46.966784+00:00"
     },
     {
       "article_slug": "spring-bedroom-refresh-mistakes-to-avoid",
@@ -137,7 +138,51 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-03-30T10:13:51.021221+00:00"
+      "timestamp": "2026-04-01T19:09:46.768619+00:00"
+    },
+    {
+      "article_slug": "best-furniture-for-a-scandinavian-bathroom",
+      "cluster_id": "scandinavian_bathroom",
+      "subtopic_id": "furniture",
+      "angle_id": "best_options",
+      "primary_keyword": "best furniture for a scandinavian bathroom",
+      "validation_status": "warning",
+      "warnings": [
+        "Supporting keyword ideas are barely reflected in the body."
+      ],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 104,
+          "concept_overlap": 6,
+          "first_sentence": "Bathrooms designed with Scandinavian principles are all about calming simplicity, clean lines, and the perfect balance of form and function."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 0,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Defining Criteria: What to Look For in Scandinavian Bathroom Furniture",
+            "Classic Wood Vanities: The Scandinavian Bathroom Staple",
+            "Metal and Glass Pieces: When Sleek Meets Practical in Scandinavian Decor",
+            "Matching Furniture to Bathroom Size and Layout Constraints",
+            "How to Confidently Narrow Down Your Scandinavian Bathroom Furniture Choices"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 8,
+          "specificity_term_hits": 10,
+          "secondary_keyword_hits": 0
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-03-30T10:14:19.956879+00:00"
     },
     {
       "article_slug": "best-furniture-for-scandinavian-bedroom",

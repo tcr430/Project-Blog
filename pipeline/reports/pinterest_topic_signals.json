@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-03-30T10:17:30.591120+00:00",
-  "cluster_count": 13,
+  "generated_at": "2026-04-01T19:18:32.962946+00:00",
+  "cluster_count": 14,
   "summary": {
     "hot": 0,
     "warm": 0,
-    "cold": 0,
+    "cold": 1,
     "no_data": 13
   },
   "clusters": [
@@ -173,6 +173,30 @@
       "signal_boost": 0
     },
     {
+      "cluster_name": "parisian bedroom",
+      "article_count": 1,
+      "article_slugs": [
+        "best-furniture-parisian-bedroom"
+      ],
+      "primary_keywords": [
+        "best furniture for a parisian bedroom"
+      ],
+      "secondary_keywords": [
+        "parisian bedroom ideas",
+        "how to style a parisian bedroom",
+        "parisian bedroom decor",
+        "parisian bedroom layout ideas"
+      ],
+      "pinterest_article_count": 0,
+      "strong_article_count": 0,
+      "weak_article_count": 0,
+      "average_score": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_saves": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0
+    },
+    {
       "cluster_name": "scandinavian bathroom",
       "article_count": 1,
       "article_slugs": [
@@ -187,14 +211,14 @@
         "scandinavian bathroom decor",
         "scandinavian bathroom layout ideas"
       ],
-      "pinterest_article_count": 0,
+      "pinterest_article_count": 1,
       "strong_article_count": 0,
-      "weak_article_count": 0,
+      "weak_article_count": 1,
       "average_score": 0.0,
       "average_outbound_clicks": 0.0,
       "average_saves": 0.0,
-      "signal_label": "no_data",
-      "signal_boost": 0
+      "signal_label": "cold",
+      "signal_boost": -6
     },
     {
       "cluster_name": "scandinavian bedroom",

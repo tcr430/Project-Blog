@@ -1,0 +1,146 @@
+{
+  "article_title": "The Best Furniture for a Parisian Bedroom: Timeless Options for Everyday Elegance",
+  "article_slug": "best-furniture-parisian-bedroom",
+  "article_relative_url": "/ideas/2026/04/01/best-furniture-parisian-bedroom/",
+  "article_url": "https://thelivinedit.com/ideas/2026/04/01/best-furniture-parisian-bedroom/",
+  "meta_description": "Discover how to choose the best furniture for a Parisian bedroom, with practical advice on style, materials, and layout that balance timeless elegance with everyday comfort.",
+  "cluster_id": "parisian_bedroom",
+  "subtopic_id": "furniture",
+  "angle_id": "best_options",
+  "intent_id": "comparison",
+  "visual_direction": {
+    "family_id": "crisp_modern",
+    "mood": "clean, sculptural, modern editorial restraint",
+    "lighting": "clear daylight with crisp shadow definition",
+    "palette": "soft white, black accents, stone, pale oak",
+    "intent_id": "comparison",
+    "profile_id": "comparison",
+    "shot_library_id": "general_decor"
+  },
+  "hero_image_path": "/assets/img/best-furniture-parisian-bedroom/hero.png",
+  "site_root_url": "https://thelivinedit.com",
+  "variant_count": 4,
+  "strategy": {
+    "minimum_variant_count": 4,
+    "generated_variant_count": 4,
+    "bonus_slots": 0,
+    "ranked_variant_types": [
+      "trend_overview",
+      "practical_tips",
+      "product_led",
+      "styling_angle"
+    ],
+    "article_score": null,
+    "notes": [
+      "applying performance weighting: no historical lift yet, using balanced defaults"
+    ],
+    "board_config_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_boards.json",
+    "design_system_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_pin_design_system.json"
+  },
+  "variants": [
+    {
+      "variant_key": "pin-1",
+      "variant_type": "trend_overview",
+      "style_name": "bottom-title",
+      "template_family": "editorial_split",
+      "title": "How to Choose the Best Furniture for a Parisian Bedroom",
+      "description": "Explore expert tips on selecting furniture that embodies Parisian charm with natural materials and timeless design in your bedroom.",
+      "display_headline": "Where to Start with a Parisian Bedroom",
+      "display_subheadline": "If you want stronger choices without guesswork, start with these grounded selection principles.",
+      "display_kicker": "Save this guide",
+      "cta_label": "Read the full article",
+      "topic_style": "decision",
+      "image_path": "/assets/pins/best-furniture-parisian-bedroom/pin-1.png",
+      "board": {
+        "key": "bedroom",
+        "name": "Bedroom Retreat Ideas"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 0,
+      "render_diagnostics": {
+        "template_family": "editorial_split",
+        "topic_style": "decision",
+        "quality_score": 100,
+        "quality_warnings": []
+      }
+    },
+    {
+      "variant_key": "pin-2",
+      "variant_type": "practical_tips",
+      "style_name": "centered-title",
+      "template_family": "utility_stack",
+      "title": "The Best Furniture for a Parisian Bedroom: Timeless Options for Everyday Elegance...",
+      "description": "Use these practical design moves to make the best furniture for a parisian bedroom: timeless options for everyday elegance feel balanced, useful, and easy to live with.",
+      "display_headline": "What Actually Works in a Parisian Bedroom",
+      "display_subheadline": "Useful design moves to make best furniture for a parisian bedroom feel calmer, clearer, and more pulled together.",
+      "display_kicker": "Practical guide",
+      "cta_label": "Use these ideas",
+      "topic_style": "decision",
+      "image_path": "/assets/pins/best-furniture-parisian-bedroom/pin-2.png",
+      "board": {
+        "key": "bedroom",
+        "name": "Bedroom Retreat Ideas"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 1,
+      "render_diagnostics": {
+        "template_family": "utility_stack",
+        "topic_style": "decision",
+        "quality_score": 100,
+        "quality_warnings": []
+      }
+    },
+    {
+      "variant_key": "pin-3",
+      "variant_type": "product_led",
+      "style_name": "minimalist-overlay",
+      "template_family": "comparison_panel",
+      "title": "4 Pieces That Elevate The Best Furniture for a Parisian Bedroom: Timeless Options for...",
+      "description": "Discover decor pieces and finishing details that help the best furniture for a parisian bedroom: timeless options for everyday elegance feel more intentional without looking overdone.",
+      "display_headline": "Before You Buy for a Parisian Bedroom",
+      "display_subheadline": "A decision-friendly breakdown of the materials, shapes, and details worth prioritizing.",
+      "display_kicker": "Worth comparing",
+      "cta_label": "Compare the options",
+      "topic_style": "decision",
+      "image_path": "/assets/pins/best-furniture-parisian-bedroom/pin-3.png",
+      "board": {
+        "key": "home_products",
+        "name": "Home Finds & Decor Picks"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 2,
+      "render_diagnostics": {
+        "template_family": "comparison_panel",
+        "topic_style": "decision",
+        "quality_score": 100,
+        "quality_warnings": []
+      }
+    },
+    {
+      "variant_key": "pin-4",
+      "variant_type": "styling_angle",
+      "style_name": "top-title",
+      "template_family": "minimal_frame",
+      "title": "How to Style The Best Furniture for a Parisian Bedroom: Timeless Options for Everyday...",
+      "description": "See how color, texture, and room styling can shape the best furniture for a parisian bedroom: timeless options for everyday elegance into a softer, more editorial look.",
+      "display_headline": "The Detail That Changes Parisian Bedroom",
+      "display_subheadline": "An editorial take on how best furniture for a parisian bedroom can feel more elevated without getting overdone.",
+      "display_kicker": "Editorial angle",
+      "cta_label": "See the styling move",
+      "topic_style": "decision",
+      "image_path": "/assets/pins/best-furniture-parisian-bedroom/pin-4.png",
+      "board": {
+        "key": "bedroom",
+        "name": "Bedroom Retreat Ideas"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 3,
+      "render_diagnostics": {
+        "template_family": "minimal_frame",
+        "topic_style": "decision",
+        "quality_score": 100,
+        "quality_warnings": []
+      }
+    }
+  ]
+}

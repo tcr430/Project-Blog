@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "795dc24f16225aa220aced4b069a9c706bc77ce40415c69bfba0b049032c3a73",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-parisian-bedroom/hero.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-1": {
+    "cache_key": "83cabc291b54aad78709cc000e66052718a53ce5b87e6a0ca75e6c7239e9c582",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-parisian-bedroom/section-1.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-2": {
+    "cache_key": "4fa5b0118424fd6af808d88ab8d9cfe017b84ec21cd5b3421f68332726a11b93",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-parisian-bedroom/section-2.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-3": {
+    "cache_key": "89cf40904588b761204ed88dcdb5694492dbdd2a6d22fe970ae397b8de22214a",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-parisian-bedroom/section-3.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-4": {
+    "cache_key": "3363aa1dca4d47b811f5ef1a6ac4c4d87380722f49cf549d65bf9a7f2b970f23",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-parisian-bedroom/section-4.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-5": {
+    "cache_key": "e9e3fba68b6a4b0d1f1eb7b9102bf8746a94971d8b099ea5fa286d607aabc951",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-parisian-bedroom/section-5.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  }
+}

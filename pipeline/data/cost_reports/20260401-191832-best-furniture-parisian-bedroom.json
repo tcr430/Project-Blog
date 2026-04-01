@@ -1,0 +1,299 @@
+{
+  "generated_at": "2026-04-01T19:18:32.783432+00:00",
+  "trend": "best furniture for a parisian bedroom",
+  "slug": "best-furniture-parisian-bedroom",
+  "article_generation": {
+    "cache_hit": false,
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/article_packages/f2de95e2ad55258556a6269bd39152080bafc75abb57b024ef857e337ed14f7b.json",
+    "model": "gpt-4.1-mini",
+    "generation_calls": 1,
+    "short_retries": 0,
+    "product_retries": 0,
+    "selected_products": 0,
+    "affiliate_mode": false,
+    "monetization_profile_id": "commercial_strong",
+    "generated_link_count": 0,
+    "primary_keyword": "best furniture for a parisian bedroom",
+    "topical_cluster": "parisian bedroom"
+  },
+  "seo_validation": {
+    "article_slug": "best-furniture-parisian-bedroom",
+    "cluster": "parisian bedroom",
+    "cluster_id": "parisian bedroom",
+    "subtopic_id": "furniture",
+    "subtopic_name": "furniture and anchors",
+    "angle_id": "best options",
+    "intent_id": "comparison",
+    "primary_keyword": "best furniture for a parisian bedroom",
+    "validation_status": "warning",
+    "warnings": [
+      "None of the secondary keywords appear in the article body."
+    ],
+    "errors": [],
+    "duplicate_candidate_slugs": [],
+    "timestamp": "2026-04-01T19:10:15.921006+00:00"
+  },
+  "editorial_validation": {
+    "article_slug": "best-furniture-parisian-bedroom",
+    "cluster_id": "parisian_bedroom",
+    "subtopic_id": "furniture",
+    "angle_id": "best_options",
+    "primary_keyword": "best furniture for a parisian bedroom",
+    "validation_status": "warning",
+    "warnings": [
+      "Supporting keyword ideas are barely reflected in the body."
+    ],
+    "errors": [],
+    "checks": {
+      "generic_intro": {
+        "intro_word_count": 137,
+        "concept_overlap": 7,
+        "first_sentence": "Parisian bedrooms hold a unique appeal, blending an effortless sense of chic with everyday comfort."
+      },
+      "heading_quality": {
+        "heading_count": 6,
+        "vague_heading_count": 0,
+        "low_specificity_heading_count": 1,
+        "repeated_signature_count": 0,
+        "repeated_stem_count": 0,
+        "headings": [
+          "Key Criteria for Selecting Furniture in a Parisian Bedroom",
+          "Solid Wood Furniture: The Natural Anchor of Parisian Bedrooms",
+          "Upholstered Versus Ornate Bed Frames: Finding the Right Headboard Style",
+          "Adjusting Furniture Choices to Room Size and Layout",
+          "Narrowing Down Purchasing Decisions: Anchors, Accessories, and Longevity",
+          "Conclusion"
+        ]
+      },
+      "specificity": {
+        "concept_token_hits": 11,
+        "specificity_term_hits": 12,
+        "secondary_keyword_hits": 0
+      },
+      "distinctiveness": {
+        "nearest_article_slug": "",
+        "max_similarity": 0.0,
+        "strongest_heading_overlap": 0
+      }
+    },
+    "timestamp": "2026-04-01T19:10:15.923451+00:00"
+  },
+  "image_generation": {
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/image_generation_cache/best-furniture-parisian-bedroom.json",
+    "provider": "flux",
+    "provider_model": "flux-2-max",
+    "model": "flux-2-max",
+    "fallback_provider": "openai",
+    "fallback_model": "gpt-image-1",
+    "size": "1536x1024",
+    "hero_quality": "high",
+    "section_quality": "medium",
+    "allow_fallback": true,
+    "fallback_events": 1,
+    "generated_images": 6,
+    "cache_hits": 0,
+    "generation_calls": 7,
+    "qa_calls": 1,
+    "details": [
+      {
+        "label": "hero",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 1,
+        "quality": "high",
+        "qa_enabled": true,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "80a169f8-8bfb-4312-a98f-291e001a454e",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=80a169f8-8bfb-4312-a98f-291e001a454e",
+            "poll_attempts": 56,
+            "provider_status": "Ready",
+            "elapsed_seconds": 96.36,
+            "quality": "high",
+            "elapsed_seconds_total": 96.36,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation",
+        "qa_reason": "The image perfectly aligns with the prompt showing a Parisian bedroom styled vignette with a clear memorable focal point (the bed), clean and modern editorial restraint, realistic materials, natural daylight and a soft, neutral palette with black accents. There are no text, logos, people or heavy clutter, making it suitable for a decor blog."
+      },
+      {
+        "label": "section-1",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "6ec79198-54f6-4f87-94bc-cd4840df01ce",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=6ec79198-54f6-4f87-94bc-cd4840df01ce",
+            "poll_attempts": 22,
+            "provider_status": "Ready",
+            "elapsed_seconds": 29.91,
+            "quality": "medium",
+            "elapsed_seconds_total": 29.91,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-2",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "08661442-7a07-4b4a-8e02-d19a326d34aa",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=08661442-7a07-4b4a-8e02-d19a326d34aa",
+            "poll_attempts": 49,
+            "provider_status": "Ready",
+            "elapsed_seconds": 85.28,
+            "quality": "medium",
+            "elapsed_seconds_total": 85.28,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-3",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 2,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "openai",
+        "provider_model": "gpt-image-1",
+        "fallback_used": true,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "error": "FLUX generation timed out after 180.0s (last status: Pending)."
+          },
+          {
+            "provider": "openai",
+            "model": "gpt-image-1",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "quality": "medium",
+            "elapsed_seconds_total": 25.51,
+            "width": 1536,
+            "height": 1024,
+            "format": "PNG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-4",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "cbfbb89f-9b63-4975-a3d0-e8059b1747bc",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=cbfbb89f-9b63-4975-a3d0-e8059b1747bc",
+            "poll_attempts": 18,
+            "provider_status": "Ready",
+            "elapsed_seconds": 32.55,
+            "quality": "medium",
+            "elapsed_seconds_total": 32.55,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-5",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "ba640352-9b69-4420-85e0-4d15ac721b1e",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=ba640352-9b69-4420-85e0-4d15ac721b1e",
+            "poll_attempts": 24,
+            "provider_status": "Ready",
+            "elapsed_seconds": 31.87,
+            "quality": "medium",
+            "elapsed_seconds_total": 31.87,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      }
+    ]
+  },
+  "pinterest": {
+    "variants_requested": 4,
+    "pin_assets_generated": false,
+    "mode": null
+  }
+}
