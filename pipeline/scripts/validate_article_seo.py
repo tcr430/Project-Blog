@@ -7,6 +7,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from article_title_generation import evaluate_title_set
 from content_architecture import resolve_intent_id
 
 DEFAULT_CLUSTER_INDEX_PATH = Path(__file__).resolve().parents[1] / "data" / "article_cluster_index.json"
@@ -282,6 +283,7 @@ def evaluate_cluster_duplication(article_package: dict[str, Any], index_data: di
 def evaluate_title_quality(article_package: dict[str, Any]) -> list[str]:
     warnings: list[str] = []
     title = str(article_package.get("title") or "").strip()
+    seo_title = str(article_package.get("seo_title") or "").strip() or title
     primary_keyword = str(article_package.get("primary_keyword") or "").strip()
     title_tokens = tokenize(title)
     primary_tokens = tokenize(primary_keyword)
@@ -305,6 +307,14 @@ def evaluate_title_quality(article_package: dict[str, Any]) -> list[str]:
     normalized_title = normalize_text(title)
     if any(re.search(pattern, normalized_title) for pattern in weak_patterns):
         warnings.append("Title matches a weak generic SEO pattern.")
+
+    warnings.extend(
+        evaluate_title_set(
+            display_title=title,
+            seo_title=seo_title,
+            title_candidates=article_package.get("title_candidates", []),
+        )
+    )
 
     return sorted(dict.fromkeys(warnings))
 

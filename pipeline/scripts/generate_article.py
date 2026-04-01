@@ -13,6 +13,7 @@ from typing import Any
 from dotenv import load_dotenv
 from openai import OpenAI
 
+from article_title_generation import choose_title_set
 from content_architecture import resolve_intent_id
 from fetch_products import Product, fetch_products_for_trend
 from generate_image_prompts import generate_image_prompts
@@ -427,6 +428,7 @@ def build_article_cache_key(
         "topic_context": topic_context,
         "products": products,
         "monetization_profile": monetization_profile,
+        "title_generation_version": 2,
         "min_words": MIN_WORDS,
         "max_words": MAX_WORDS,
         "section_count": SECTION_COUNT,
@@ -1365,11 +1367,22 @@ def normalize_and_validate(
     if missing:
         raise ValueError(f"Missing required fields: {', '.join(missing)}")
 
-    title = normalize_title(
+    raw_title = normalize_title(
         str(payload["title"]).strip(),
         primary_keyword=topic_context["primary_keyword"],
         angle=str(topic_context.get("angle_id", "")),
     )
+    title_set = choose_title_set(
+        current_title=raw_title,
+        primary_keyword=topic_context["primary_keyword"],
+        angle_id=str(topic_context.get("angle_id", "")),
+        intent_id=str(topic_context.get("intent_id", "")),
+        cluster_name=topic_context["trend_cluster"],
+        subtopic_name=str(topic_context.get("subtopic_name", "")),
+        cluster_id=str(topic_context.get("cluster_id", "")),
+    )
+    title = title_set["display_title"]
+    seo_title = title_set["seo_title"]
     slug = str(payload["slug"]).strip()
     meta_description = str(payload["meta_description"]).strip()
     article_markdown = str(payload["article_markdown"]).strip()
@@ -1454,6 +1467,10 @@ def normalize_and_validate(
 
     return {
         "title": title,
+        "seo_title": seo_title,
+        "title_family": title_set["title_family"],
+        "seo_title_family": title_set["seo_title_family"],
+        "title_candidates": title_set["candidates"],
         "slug": slug,
         "meta_description": meta_description,
         "keywords": keywords,

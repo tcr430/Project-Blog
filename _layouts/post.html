@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 sitemap: true
 ---
@@ -44,7 +44,7 @@ sitemap: true
         <span>{{ page.date | date: "%d %b %Y" }}</span>
         {% if page.estimated_reading_time %}<span>{{ page.estimated_reading_time }}</span>{% endif %}
       </div>
-      <h1>{{ page.title }}</h1>
+      <h1>{{ page.display_title | default: page.title }}</h1>
       {% if page.excerpt or page.description %}
       <p class="article-dek">{{ page.excerpt | default: page.description }}</p>
       {% endif %}
@@ -56,7 +56,7 @@ sitemap: true
       {% endif %}
       {% if page.image %}
       <figure class="article-hero">
-        <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title }}" loading="eager">
+        <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.display_title | default: page.title }}" loading="eager">
       </figure>
       {% endif %}
     </header>
@@ -193,3 +193,4 @@ sitemap: true
     </div>
   </aside>
 </section>
+

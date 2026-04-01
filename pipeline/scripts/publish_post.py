@@ -187,6 +187,7 @@ def validate_article_package(data: dict[str, Any]) -> dict[str, Any]:
         raise ValueError(f"Missing required fields: {', '.join(missing)}")
 
     title = str(data["title"]).strip()
+    seo_title = str(data.get("seo_title") or title).strip()
     slug = slugify(str(data["slug"]).strip())
     meta_description = str(data["meta_description"]).strip()
     article_markdown = str(data["article_markdown"]).strip()
@@ -252,6 +253,10 @@ def validate_article_package(data: dict[str, Any]) -> dict[str, Any]:
 
     return {
         "title": title,
+        "seo_title": seo_title,
+        "title_family": str(data.get("title_family") or "").strip(),
+        "seo_title_family": str(data.get("seo_title_family") or "").strip(),
+        "title_candidates": data.get("title_candidates", []) if isinstance(data.get("title_candidates"), list) else [],
         "slug": slug,
         "meta_description": meta_description,
         "keywords": tags,
@@ -742,6 +747,7 @@ def sync_shop_the_look(post_path: str | Path, metadata_path: str | Path | None =
 
 def build_frontmatter(
     title: str,
+    display_title: str,
     published_at: datetime,
     description: str,
     tags: list[str],
@@ -782,6 +788,7 @@ def build_frontmatter(
         "---\n"
         "layout: post\n"
         f'title: "{yaml_escape(title)}"\n'
+        f'display_title: "{yaml_escape(display_title)}"\n'
         f'date: "{date_value}"\n'
         f'description: "{yaml_escape(description)}"\n'
         f'excerpt: "{yaml_escape(excerpt)}"\n'
@@ -844,6 +851,10 @@ def save_article_metadata(
 
     payload = {
         "title": package["title"],
+        "seo_title": package.get("seo_title", package["title"]),
+        "title_family": package.get("title_family", ""),
+        "seo_title_family": package.get("seo_title_family", ""),
+        "title_candidates": package.get("title_candidates", []),
         "slug": package["slug"],
         "publish_date": publish_date,
         "published_at": published_at_iso,
@@ -947,7 +958,8 @@ def publish_post_from_package_file(package_json_path: str | Path) -> dict[str, P
     print(f"[publish] generated markdown visible affiliate links: {visible_link_count}")
 
     frontmatter = build_frontmatter(
-        title=package["title"],
+        title=package.get("seo_title", package["title"]),
+        display_title=package["title"],
         published_at=published_at,
         description=package["meta_description"],
         tags=package["keywords"],

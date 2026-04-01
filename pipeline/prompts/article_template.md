@@ -52,6 +52,10 @@ Style rules:
 - avoid repetition across sections
 - do not pad with filler
 - make the title feel polished, specific, and tasteful rather than hype-driven
+- vary title structure naturally instead of defaulting to the same rigid SEO formula
+- avoid unnecessary year tokens unless the topic is genuinely time-sensitive
+- avoid repetitive openings like "How to", "Best", "Complete Guide", or "Ultimate Guide" unless they are clearly the strongest fit
+- avoid awkward noun stacking or keyword-first phrasing that sounds machine-generated
 - make the introduction feel article-specific, with a quick editorial read on why this topic matters in a real home
 - make the conclusion feel lightly edited and decisive, with one grounded takeaway instead of a generic recap
 - let section headings feel specific to the topic, room, or styling problem rather than overly broad

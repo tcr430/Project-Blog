@@ -89,6 +89,98 @@ def infer_room(cluster: str, primary_keyword: str, title: str) -> str:
     return "interior"
 
 
+def infer_primary_anchor(room: str, cluster: str, primary_keyword: str, title: str) -> str:
+    haystack = normalize_text(" ".join([cluster, primary_keyword, title]))
+    keyword_rules = [
+        ("bed", ["bedroom", "bed ", " bed", "bedframe", "nightstand"]),
+        ("vanity", ["bathroom", "vanity"]),
+        ("sofa", ["living room", "sofa", "sectional"]),
+        ("table", ["dining room", "dining nook", "table", "breakfast nook"]),
+        ("desk", ["home office", "desk", "workspace"]),
+    ]
+    for anchor, tokens in keyword_rules:
+        if any(token in haystack for token in tokens):
+            return anchor
+
+    default_by_room = {
+        "bedroom": "bed",
+        "bathroom": "vanity",
+        "living room": "sofa",
+        "kitchen": "island",
+        "dining room": "table",
+        "entryway": "console",
+        "home office": "desk",
+        "nursery": "crib",
+        "patio": "seating area",
+        "balcony": "seating area",
+    }
+    return default_by_room.get(room, "focal furnishing")
+
+
+def build_scene_logic_constraints(
+    *,
+    room: str,
+    cluster: str,
+    primary_keyword: str,
+    title: str,
+    section_heading: str = "",
+    section_role: str = "",
+) -> str:
+    haystack = normalize_text(" ".join([cluster, primary_keyword, title, section_heading, section_role]))
+    anchor = infer_primary_anchor(room=room, cluster=cluster, primary_keyword=primary_keyword, title=title)
+
+    constraints: list[str] = [
+        "Keep the architecture believable and the furniture layout realistic for a real home.",
+        "Do not duplicate the main focal furnishing unless the prompt clearly calls for a shared or twin-room setup.",
+        "Avoid mirrored, side-by-side, or repeated hero objects that make the room read as AI-generated.",
+    ]
+
+    if anchor == "bed":
+        constraints.extend(
+            [
+                "Show one primary bed only, not two different beds side-by-side.",
+                "If bedside pieces appear, they should support a single coherent bedroom layout.",
+            ]
+        )
+    elif anchor == "vanity":
+        constraints.extend(
+            [
+                "Show one coherent vanity or sink zone, not multiple competing vanities.",
+                "Avoid duplicated mirrors, sinks, or parallel bathroom setups in one frame.",
+            ]
+        )
+    elif anchor == "sofa":
+        constraints.extend(
+            [
+                "Use one main seating anchor rather than multiple unrelated sofas fighting for focus.",
+            ]
+        )
+    elif anchor == "table":
+        constraints.extend(
+            [
+                "Use one clear table setup rather than multiple overlapping dining arrangements.",
+            ]
+        )
+    elif anchor == "desk":
+        constraints.extend(
+            [
+                "Show one clear workspace anchor rather than duplicated desks or office zones.",
+            ]
+        )
+
+    if any(token in haystack for token in {"comparison", "options", "best", "guide", "product"}):
+        constraints.append(
+            "If multiple pieces appear, they should read as one coherent styled room or one clearly curated comparison vignette, not duplicated room setups."
+        )
+
+    if section_heading and any(token in haystack for token in {"materials", "textures", "detail", "accessories"}):
+        constraints.append(
+            "For detail-driven images, prefer a tight crop of one believable setup instead of widening into multiple duplicated furniture groupings."
+        )
+
+    return " ".join(dict.fromkeys(constraints))
+
+
 def load_style_profiles() -> dict[str, Any]:
     payload = load_json(STYLE_PROFILES_PATH, {})
     return payload if isinstance(payload, dict) else {}
@@ -209,6 +301,7 @@ def build_base_style_block(
     shot_library: dict[str, Any],
     composition_style: str,
     alternate_composition: str,
+    scene_logic_constraints: str,
 ) -> str:
     visual_language = str(intent_profile.get("visual_language", "")).strip()
     subject_emphasis = str(shot_library.get("hero_subject_emphasis", "")).strip()
@@ -222,7 +315,8 @@ def build_base_style_block(
         f"Primary composition: {composition_style}. "
         f"Occasional variation: {alternate_composition}. "
         "Medium: editorial interior photography. "
-        "Constraints: realistic materials, no text, no logos, no people, no artificial collage effects."
+        "Constraints: realistic materials, no text, no logos, no people, no artificial collage effects. "
+        f"{scene_logic_constraints}"
     )
 
 
@@ -252,6 +346,12 @@ def build_hero_image_prompt(
         seed_text=f"{title}|hero-alt|{cluster_id}|{angle}|{intent}",
         fallback="soft asymmetrical framing",
     )
+    scene_logic_constraints = build_scene_logic_constraints(
+        room=room,
+        cluster=cluster,
+        primary_keyword=primary_keyword,
+        title=title,
+    )
     style = build_base_style_block(
         visual_family=visual_family,
         room=room,
@@ -259,6 +359,7 @@ def build_hero_image_prompt(
         shot_library=shot_library,
         composition_style=composition_style,
         alternate_composition=alternate_composition,
+        scene_logic_constraints=scene_logic_constraints,
     )
     hero_emphasis = str(intent_profile.get("hero_emphasis", "")).strip()
     return (
@@ -291,6 +392,14 @@ def build_section_image_prompt(
     shot_role = section_roles[min(section_index - 1, len(section_roles) - 1)] if section_roles else "specific editorial section vignette"
     emphasis = subject_emphasis[min(section_index - 1, len(subject_emphasis) - 1)] if subject_emphasis else "section-specific styling detail"
     detail = detail_focus[min((section_index - 1) % max(len(detail_focus), 1), len(detail_focus) - 1)] if detail_focus else "distinct styling detail"
+    scene_logic_constraints = build_scene_logic_constraints(
+        room=room,
+        cluster=cluster,
+        primary_keyword=primary_keyword,
+        title=title,
+        section_heading=section_heading,
+        section_role=shot_role,
+    )
     style = build_base_style_block(
         visual_family=visual_family,
         room=room,
@@ -298,6 +407,7 @@ def build_section_image_prompt(
         shot_library=shot_library,
         composition_style=composition_style,
         alternate_composition=alternate_composition,
+        scene_logic_constraints=scene_logic_constraints,
     )
     section_emphasis = str(intent_profile.get("section_emphasis", "")).strip()
     return (
