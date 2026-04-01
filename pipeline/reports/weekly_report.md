@@ -3,9 +3,9 @@
 Generated: 2026-04-01
 Window: last 7 days
 
-Articles Published: 4  
-Pins Generated: 16  
-Pins Scheduled: 31  
+Articles Published: 5  
+Pins Generated: 20  
+Pins Scheduled: 35  
 Pins Published: 1  
 Repins Scheduled: 0
 
@@ -14,6 +14,7 @@ Repins Scheduled: 0
 - best-furniture-for-scandinavian-bedroom
 - best-furniture-for-transitional-bathroom
 - best-furniture-parisian-bedroom
+- how-to-style-a-neutral-bedroom
 
 ## Top Performing Pins
 - Best Furniture for a Scandinavian Bathroom: Practical Choices with Iconic Style... (practical_tips, Bathroom Styling Notes) - 0 clicks, 0 saves, 0 impressions

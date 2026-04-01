@@ -1,6 +1,25 @@
 {
-  "generated_at": "2026-04-01T19:10:15.921104+00:00",
+  "generated_at": "2026-04-01T20:52:19.249536+00:00",
   "articles": [
+    {
+      "article_slug": "how-to-style-a-neutral-bedroom",
+      "cluster": "neutral bedroom",
+      "cluster_id": "neutral bedroom",
+      "subtopic_id": "layout",
+      "subtopic_name": "layout and foundation",
+      "angle_id": "how to",
+      "intent_id": "implementation",
+      "primary_keyword": "how to style a neutral bedroom",
+      "validation_status": "warning",
+      "warnings": [
+        "Main section headings may be too generic for the chosen keyword.",
+        "Primary keyword appears very lightly in the article body.",
+        "Title does not reflect the primary keyword strongly enough."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-04-01T20:52:19.249416+00:00"
+    },
     {
       "article_slug": "best-furniture-parisian-bedroom",
       "cluster": "parisian bedroom",
@@ -17,26 +36,6 @@
       "errors": [],
       "duplicate_candidate_slugs": [],
       "timestamp": "2026-04-01T19:10:15.921006+00:00"
-    },
-    {
-      "article_slug": "how-to-style-a-neutral-bedroom",
-      "cluster": "neutral bedroom",
-      "cluster_id": "neutral bedroom",
-      "subtopic_id": "layout",
-      "subtopic_name": "layout and foundation",
-      "angle_id": "how to",
-      "intent_id": "implementation",
-      "primary_keyword": "how to style a neutral bedroom",
-      "validation_status": "warning",
-      "warnings": [
-        "Headings do not reflect the topic cluster strongly enough.",
-        "Main section headings may be too generic for the chosen keyword.",
-        "None of the secondary keywords appear in the article body.",
-        "Primary keyword appears very lightly in the article body."
-      ],
-      "errors": [],
-      "duplicate_candidate_slugs": [],
-      "timestamp": "2026-04-01T19:09:46.964310+00:00"
     },
     {
       "article_slug": "spring-bedroom-refresh-mistakes-to-avoid",

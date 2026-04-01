@@ -1,0 +1,300 @@
+{
+  "generated_at": "2026-04-01T20:59:42.669292+00:00",
+  "trend": "how to style a neutral bedroom",
+  "slug": "how-to-style-a-neutral-bedroom",
+  "article_generation": {
+    "cache_hit": false,
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/article_packages/a921716d8890e7b2eef9feccae36fe514e82bae91996fa3482c8a1deca6ac5f3.json",
+    "model": "gpt-4.1-mini",
+    "generation_calls": 2,
+    "short_retries": 1,
+    "product_retries": 0,
+    "selected_products": 0,
+    "affiliate_mode": false,
+    "monetization_profile_id": "utility_light",
+    "generated_link_count": 0,
+    "primary_keyword": "how to style a neutral bedroom",
+    "topical_cluster": "neutral bedroom"
+  },
+  "seo_validation": {
+    "article_slug": "how-to-style-a-neutral-bedroom",
+    "cluster": "neutral bedroom",
+    "cluster_id": "neutral bedroom",
+    "subtopic_id": "layout",
+    "subtopic_name": "layout and foundation",
+    "angle_id": "how to",
+    "intent_id": "implementation",
+    "primary_keyword": "how to style a neutral bedroom",
+    "validation_status": "warning",
+    "warnings": [
+      "Main section headings may be too generic for the chosen keyword.",
+      "Primary keyword appears very lightly in the article body.",
+      "Title does not reflect the primary keyword strongly enough."
+    ],
+    "errors": [],
+    "duplicate_candidate_slugs": [],
+    "timestamp": "2026-04-01T20:52:19.249416+00:00"
+  },
+  "editorial_validation": {
+    "article_slug": "how-to-style-a-neutral-bedroom",
+    "cluster_id": "neutral_bedroom",
+    "subtopic_id": "layout",
+    "angle_id": "how_to",
+    "primary_keyword": "how to style a neutral bedroom",
+    "validation_status": "warning",
+    "warnings": [
+      "Several section headings do not signal the topic strongly enough."
+    ],
+    "errors": [],
+    "checks": {
+      "generic_intro": {
+        "intro_word_count": 120,
+        "concept_overlap": 5,
+        "first_sentence": "Neutral bedrooms often strike a delicate balance between restraint and comfort."
+      },
+      "heading_quality": {
+        "heading_count": 5,
+        "vague_heading_count": 0,
+        "low_specificity_heading_count": 3,
+        "repeated_signature_count": 0,
+        "repeated_stem_count": 0,
+        "headings": [
+          "Establish a Grounded Layout with Clear Visual Flow",
+          "Choose a Nuanced Neutral Color Palette to Layer Warmth and Coolness",
+          "Layer Textures Thoughtfully to Add Depth Without Clutter",
+          "Balance Scale and Contrast to Prevent Visual Flatness",
+          "Finish with Clear Focal Points and Restrained Accessories for Resolved Calm"
+        ]
+      },
+      "specificity": {
+        "concept_token_hits": 7,
+        "specificity_term_hits": 12,
+        "secondary_keyword_hits": 1
+      },
+      "distinctiveness": {
+        "nearest_article_slug": "",
+        "max_similarity": 0.0,
+        "strongest_heading_overlap": 0
+      }
+    },
+    "timestamp": "2026-04-01T20:52:19.252514+00:00"
+  },
+  "image_generation": {
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/image_generation_cache/how-to-style-a-neutral-bedroom.json",
+    "provider": "flux",
+    "provider_model": "flux-2-max",
+    "model": "flux-2-max",
+    "fallback_provider": "openai",
+    "fallback_model": "gpt-image-1",
+    "size": "1536x1024",
+    "hero_quality": "high",
+    "section_quality": "medium",
+    "allow_fallback": true,
+    "fallback_events": 1,
+    "generated_images": 6,
+    "cache_hits": 0,
+    "generation_calls": 7,
+    "qa_calls": 1,
+    "details": [
+      {
+        "label": "hero",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 1,
+        "quality": "high",
+        "qa_enabled": true,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "f0b1c4f2-086a-4d77-9ae8-692ebf77b8df",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=f0b1c4f2-086a-4d77-9ae8-692ebf77b8df",
+            "poll_attempts": 28,
+            "provider_status": "Ready",
+            "elapsed_seconds": 50.71,
+            "quality": "high",
+            "elapsed_seconds_total": 50.71,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation",
+        "qa_reason": "The image perfectly aligns with the prompt, showcasing a neutral bedroom with a tonal layering view. It features a single bed, believable and realistic materials, clear spatial depth, daylight lighting with crisp shadows, and a harmonious palette of soft white, black accents, stone, and pale oak. The setup is editorial in style, clean and modern, without any text, logos, people, or clutter."
+      },
+      {
+        "label": "section-1",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 2,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "openai",
+        "provider_model": "gpt-image-1",
+        "fallback_used": true,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "error": "FLUX generation timed out after 180.0s (last status: Pending)."
+          },
+          {
+            "provider": "openai",
+            "model": "gpt-image-1",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "quality": "medium",
+            "elapsed_seconds_total": 27.28,
+            "width": 1536,
+            "height": 1024,
+            "format": "PNG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-2",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "651110c6-422e-40df-be3b-fef6779d5e06",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=651110c6-422e-40df-be3b-fef6779d5e06",
+            "poll_attempts": 27,
+            "provider_status": "Ready",
+            "elapsed_seconds": 36.94,
+            "quality": "medium",
+            "elapsed_seconds_total": 36.94,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-3",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "763bf5e0-57ef-49e7-a600-cbdfc91ebccd",
+            "polling_url": "https://api.us3.bfl.ai/v1/get_result?id=763bf5e0-57ef-49e7-a600-cbdfc91ebccd",
+            "poll_attempts": 42,
+            "provider_status": "Ready",
+            "elapsed_seconds": 52.8,
+            "quality": "medium",
+            "elapsed_seconds_total": 52.8,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-4",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "2b9bbf05-e3e6-4881-9b68-51d254c39f32",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=2b9bbf05-e3e6-4881-9b68-51d254c39f32",
+            "poll_attempts": 28,
+            "provider_status": "Ready",
+            "elapsed_seconds": 46.33,
+            "quality": "medium",
+            "elapsed_seconds_total": 46.33,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-5",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "8c14e2f2-d80e-445d-8575-57b347dbed02",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=8c14e2f2-d80e-445d-8575-57b347dbed02",
+            "poll_attempts": 20,
+            "provider_status": "Ready",
+            "elapsed_seconds": 33.6,
+            "quality": "medium",
+            "elapsed_seconds_total": 33.6,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      }
+    ]
+  },
+  "pinterest": {
+    "variants_requested": 4,
+    "pin_assets_generated": false,
+    "mode": null
+  }
+}

@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-04-01T19:18:32.962946+00:00",
-  "cluster_count": 14,
+  "generated_at": "2026-04-01T20:59:42.835312+00:00",
+  "cluster_count": 15,
   "summary": {
     "hot": 0,
     "warm": 0,
     "cold": 1,
-    "no_data": 13
+    "no_data": 14
   },
   "clusters": [
     {
@@ -139,6 +139,30 @@
         "neutral bathroom decor",
         "neutral bathroom layout ideas",
         "neutral bathroom color palette"
+      ],
+      "pinterest_article_count": 0,
+      "strong_article_count": 0,
+      "weak_article_count": 0,
+      "average_score": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_saves": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0
+    },
+    {
+      "cluster_name": "neutral bedroom",
+      "article_count": 1,
+      "article_slugs": [
+        "how-to-style-a-neutral-bedroom"
+      ],
+      "primary_keywords": [
+        "how to style a neutral bedroom"
+      ],
+      "secondary_keywords": [
+        "neutral bedroom ideas",
+        "neutral bedroom decor",
+        "neutral bedroom layout ideas",
+        "neutral bedroom color palette"
       ],
       "pinterest_article_count": 0,
       "strong_article_count": 0,

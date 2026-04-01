@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-04-01T19:18:32.961079+00:00",
-  "cluster_count": 14,
-  "article_count": 14,
+  "generated_at": "2026-04-01T20:59:42.833554+00:00",
+  "cluster_count": 15,
+  "article_count": 15,
   "subtopic_count": 6,
   "angle_count": 4,
   "angle_distribution": {
     "best_options": 9,
-    "how_to": 1,
+    "how_to": 2,
     "ideas": 3,
     "style_specific": 1
   },
@@ -273,6 +273,50 @@
           "latest_article_date": "2026-03-20",
           "representative_article_slugs": [
             "how-to-style-a-neutral-bathroom"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "how_to": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_id": "neutral_bedroom",
+      "cluster_name": "neutral bedroom",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "bedrooms"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "how to style a neutral bedroom"
+      ],
+      "latest_article_date": "2026-04-01",
+      "latest_publication": {
+        "article_slug": "how-to-style-a-neutral-bedroom",
+        "article_title": "Neutral Bedroom: How to Get It Right",
+        "publish_date": "2026-04-01",
+        "subtopic_id": "layout",
+        "subtopic_name": "layout and foundation",
+        "angle_id": "how_to"
+      },
+      "representative_article_slugs": [
+        "how-to-style-a-neutral-bedroom"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "layout",
+          "subtopic_name": "layout and foundation",
+          "article_count": 1,
+          "latest_article_date": "2026-04-01",
+          "representative_article_slugs": [
+            "how-to-style-a-neutral-bedroom"
           ]
         }
       ],

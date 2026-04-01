@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-01T19:09:32.810082+00:00",
+  "generated_at": "2026-04-01T20:50:56.440716+00:00",
   "overview": {
-    "pin_count": 28,
+    "pin_count": 32,
     "published_pin_count": 1,
     "analytics_ready_pin_count": 0,
-    "tracked_article_count": 7
+    "tracked_article_count": 8
   },
   "best_performing_clusters": [
     {
@@ -59,6 +59,24 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "how-to-style-a-neutral-bathroom"
+      ]
+    },
+    {
+      "cluster_id": "parisian_bedroom",
+      "cluster_name": "parisian bedroom",
+      "pin_count": 4,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-parisian-bedroom"
       ]
     },
     {
@@ -231,6 +249,25 @@
       ]
     },
     {
+      "cluster_id": "parisian_bedroom",
+      "subtopic_id": "furniture",
+      "subtopic_name": "furniture and anchors",
+      "pin_count": 4,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-parisian-bedroom"
+      ]
+    },
+    {
       "cluster_id": "transitional_bedroom",
       "subtopic_id": "furniture",
       "subtopic_name": "furniture and anchors",
@@ -272,7 +309,7 @@
   "best_performing_angles": [
     {
       "angle_id": "best_options",
-      "pin_count": 24,
+      "pin_count": 28,
       "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -358,7 +395,7 @@
       "visual_family_id": "crisp_modern",
       "shot_library_id": "general_decor",
       "intent_id": "comparison",
-      "pin_count": 2,
+      "pin_count": 3,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -371,7 +408,8 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "best-furniture-for-an-earthy-bathroom",
-        "best-furniture-for-transitional-bathroom"
+        "best-furniture-for-transitional-bathroom",
+        "best-furniture-parisian-bedroom"
       ]
     },
     {
@@ -445,7 +483,7 @@
       "visual_family_id": "crisp_modern",
       "shot_library_id": "general_decor",
       "intent_id": "comparison",
-      "pin_count": 2,
+      "pin_count": 3,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -458,7 +496,8 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "best-furniture-for-an-earthy-bathroom",
-        "best-furniture-for-transitional-bathroom"
+        "best-furniture-for-transitional-bathroom",
+        "best-furniture-parisian-bedroom"
       ]
     },
     {
@@ -532,7 +571,7 @@
       "visual_family_id": "crisp_modern",
       "shot_library_id": "general_decor",
       "intent_id": "comparison",
-      "pin_count": 2,
+      "pin_count": 3,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -545,7 +584,8 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "best-furniture-for-an-earthy-bathroom",
-        "best-furniture-for-transitional-bathroom"
+        "best-furniture-for-transitional-bathroom",
+        "best-furniture-parisian-bedroom"
       ]
     },
     {
@@ -619,7 +659,7 @@
       "visual_family_id": "crisp_modern",
       "shot_library_id": "general_decor",
       "intent_id": "comparison",
-      "pin_count": 2,
+      "pin_count": 3,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -632,7 +672,8 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "best-furniture-for-an-earthy-bathroom",
-        "best-furniture-for-transitional-bathroom"
+        "best-furniture-for-transitional-bathroom",
+        "best-furniture-parisian-bedroom"
       ]
     },
     {
@@ -716,6 +757,24 @@
         ]
       },
       {
+        "cluster_id": "parisian_bedroom",
+        "cluster_name": "parisian bedroom",
+        "pin_count": 4,
+        "published_pin_count": 0,
+        "analytics_ready_count": 0,
+        "average_score": 0.0,
+        "average_impressions": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_pin_clicks": 0.0,
+        "average_closeups": 0.0,
+        "signal_label": "no_data",
+        "signal_boost": 0,
+        "top_article_slugs": [
+          "best-furniture-parisian-bedroom"
+        ]
+      },
+      {
         "cluster_id": "scandinavian_bathroom",
         "cluster_name": "scandinavian bathroom",
         "pin_count": 4,
@@ -731,24 +790,6 @@
         "signal_boost": 0,
         "top_article_slugs": [
           "best-furniture-for-a-scandinavian-bathroom"
-        ]
-      },
-      {
-        "cluster_id": "scandinavian_bedroom",
-        "cluster_name": "scandinavian bedroom",
-        "pin_count": 4,
-        "published_pin_count": 0,
-        "analytics_ready_count": 0,
-        "average_score": 0.0,
-        "average_impressions": 0.0,
-        "average_saves": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_pin_clicks": 0.0,
-        "average_closeups": 0.0,
-        "signal_label": "no_data",
-        "signal_boost": 0,
-        "top_article_slugs": [
-          "best-furniture-for-scandinavian-bedroom"
         ]
       }
     ],
@@ -852,7 +893,7 @@
     "angles": [
       {
         "angle_id": "best_options",
-        "pin_count": 24,
+        "pin_count": 28,
         "published_pin_count": 1,
         "analytics_ready_count": 0,
         "average_score": 0.0,
@@ -938,7 +979,7 @@
         "visual_family_id": "crisp_modern",
         "shot_library_id": "general_decor",
         "intent_id": "comparison",
-        "pin_count": 2,
+        "pin_count": 3,
         "published_pin_count": 0,
         "analytics_ready_count": 0,
         "average_score": 0.0,
@@ -951,7 +992,8 @@
         "signal_boost": 0,
         "top_article_slugs": [
           "best-furniture-for-an-earthy-bathroom",
-          "best-furniture-for-transitional-bathroom"
+          "best-furniture-for-transitional-bathroom",
+          "best-furniture-parisian-bedroom"
         ]
       },
       {

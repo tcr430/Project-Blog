@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "38e875b83600a145ac4cac1de59b3fe8dcc5cfc8a837da85c8e5935fa5561aec",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/how-to-style-a-neutral-bedroom/hero.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-1": {
+    "cache_key": "a886237e55f6173da4b905833a4edf9ed169aa633e0a395f0b7b84f0c4b256b8",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/how-to-style-a-neutral-bedroom/section-1.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-2": {
+    "cache_key": "1a26949cae3010b4815c56295468d89dda80cc05319e9bcebda389d4838c1869",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/how-to-style-a-neutral-bedroom/section-2.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-3": {
+    "cache_key": "c53bb38cddaf0fe5d0a8ec3070c9140a2e0655fc822846d12844a028c6561188",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/how-to-style-a-neutral-bedroom/section-3.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-4": {
+    "cache_key": "655790ea06e2f784c9b7baefb1ac11393a782d1d175035040f1439084e3ff77e",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/how-to-style-a-neutral-bedroom/section-4.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-5": {
+    "cache_key": "1fb5b0fef53983c21286228a4b5279c2b704909c812e4484037c3fc4ec67d9cd",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/how-to-style-a-neutral-bedroom/section-5.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "article_title": "Neutral Bedroom: How to Get It Right",
+  "article_slug": "how-to-style-a-neutral-bedroom",
+  "article_relative_url": "/styling%20advice/2026/04/01/how-to-style-a-neutral-bedroom/",
+  "article_url": "https://thelivinedit.com/styling%20advice/2026/04/01/how-to-style-a-neutral-bedroom/",
+  "meta_description": "Discover practical strategies to design a neutral bedroom that balances simplicity with visual depth. Learn step-by-step how to layer materials, control scale, and create serene flow for everyday use.",
+  "cluster_id": "neutral_bedroom",
+  "subtopic_id": "layout",
+  "angle_id": "how_to",
+  "intent_id": "implementation",
+  "visual_direction": {
+    "family_id": "crisp_modern",
+    "mood": "clean, sculptural, modern editorial restraint",
+    "lighting": "clear daylight with crisp shadow definition",
+    "palette": "soft white, black accents, stone, pale oak",
+    "intent_id": "implementation",
+    "profile_id": "implementation",
+    "shot_library_id": "color_palette"
+  },
+  "hero_image_path": "/assets/img/how-to-style-a-neutral-bedroom/hero.png",
+  "site_root_url": "https://thelivinedit.com",
+  "variant_count": 4,
+  "strategy": {
+    "minimum_variant_count": 4,
+    "generated_variant_count": 4,
+    "bonus_slots": 0,
+    "ranked_variant_types": [
+      "trend_overview",
+      "practical_tips",
+      "product_led",
+      "styling_angle"
+    ],
+    "article_score": null,
+    "notes": [
+      "applying performance weighting: no historical lift yet, using balanced defaults",
+      "exploring board default"
+    ],
+    "board_config_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_boards.json",
+    "design_system_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_pin_design_system.json"
+  },
+  "variants": [
+    {
+      "variant_key": "pin-1",
+      "variant_type": "trend_overview",
+      "style_name": "bottom-title",
+      "template_family": "editorial_split",
+      "title": "Create a Balanced Neutral Bedroom That Feels Warm and Clean",
+      "description": "Learn how to craft a neutral bedroom that balances warmth and simplicity with wood and matte textures. Practical tips on layout and material pairing included.",
+      "display_headline": "How to Get a Neutral Bedroom Right",
+      "display_subheadline": "Simple, high-impact guidance that makes how to style a neutral bedroom easier to apply in real life.",
+      "display_kicker": "Save this guide",
+      "cta_label": "Read the full article",
+      "topic_style": "tutorial",
+      "image_path": "/assets/pins/how-to-style-a-neutral-bedroom/pin-1.png",
+      "board": {
+        "key": "bedroom",
+        "name": "Bedroom Retreat Ideas"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 0,
+      "render_diagnostics": {
+        "template_family": "editorial_split",
+        "topic_style": "tutorial",
+        "quality_score": 100,
+        "quality_warnings": []
+      }
+    },
+    {
+      "variant_key": "pin-2",
+      "variant_type": "practical_tips",
+      "style_name": "centered-title",
+      "template_family": "utility_stack",
+      "title": "Neutral Bedroom: How to Get It Right: Practical Tips That Make It Work",
+      "description": "Use these practical design moves to make neutral bedroom: how to get it right feel balanced, useful, and easy to live with.",
+      "display_headline": "What Actually Works in a Neutral Bedroom",
+      "display_subheadline": "Useful design moves to make how to style a neutral bedroom feel calmer, clearer, and more pulled together.",
+      "display_kicker": "Practical guide",
+      "cta_label": "Use these ideas",
+      "topic_style": "tutorial",
+      "image_path": "/assets/pins/how-to-style-a-neutral-bedroom/pin-2.png",
+      "board": {
+        "key": "default",
+        "name": "Home Decor Inspiration"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 1,
+      "render_diagnostics": {
+        "template_family": "utility_stack",
+        "topic_style": "tutorial",
+        "quality_score": 100,
+        "quality_warnings": []
+      }
+    },
+    {
+      "variant_key": "pin-3",
+      "variant_type": "product_led",
+      "style_name": "minimalist-overlay",
+      "template_family": "comparison_panel",
+      "title": "4 Pieces That Elevate Neutral Bedroom: How to Get It Right",
+      "description": "Discover decor pieces and finishing details that help neutral bedroom: how to get it right feel more intentional without looking overdone.",
+      "display_headline": "Before You Buy for a Neutral Bedroom",
+      "display_subheadline": "A decision-friendly breakdown of the materials, shapes, and details worth prioritizing.",
+      "display_kicker": "Worth comparing",
+      "cta_label": "Compare the options",
+      "topic_style": "tutorial",
+      "image_path": "/assets/pins/how-to-style-a-neutral-bedroom/pin-3.png",
+      "board": {
+        "key": "home_products",
+        "name": "Home Finds & Decor Picks"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 2,
+      "render_diagnostics": {
+        "template_family": "comparison_panel",
+        "topic_style": "tutorial",
+        "quality_score": 100,
+        "quality_warnings": []
+      }
+    },
+    {
+      "variant_key": "pin-4",
+      "variant_type": "styling_angle",
+      "style_name": "top-title",
+      "template_family": "minimal_frame",
+      "title": "How to Style Neutral Bedroom: How to Get It Right for a More Collected Look",
+      "description": "See how color, texture, and room styling can shape neutral bedroom: how to get it right into a softer, more editorial look.",
+      "display_headline": "The Detail That Changes Neutral Bedroom",
+      "display_subheadline": "An editorial take on how how to style a neutral bedroom can feel more elevated without getting overdone.",
+      "display_kicker": "Editorial angle",
+      "cta_label": "See the styling move",
+      "topic_style": "tutorial",
+      "image_path": "/assets/pins/how-to-style-a-neutral-bedroom/pin-4.png",
+      "board": {
+        "key": "bedroom",
+        "name": "Bedroom Retreat Ideas"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 3,
+      "render_diagnostics": {
+        "template_family": "minimal_frame",
+        "topic_style": "tutorial",
+        "quality_score": 100,
+        "quality_warnings": []
+      }
+    }
+  ]
+}

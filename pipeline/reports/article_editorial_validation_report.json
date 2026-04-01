@@ -1,6 +1,50 @@
 {
-  "generated_at": "2026-04-01T19:10:15.923623+00:00",
+  "generated_at": "2026-04-01T20:52:19.252692+00:00",
   "articles": [
+    {
+      "article_slug": "how-to-style-a-neutral-bedroom",
+      "cluster_id": "neutral_bedroom",
+      "subtopic_id": "layout",
+      "angle_id": "how_to",
+      "primary_keyword": "how to style a neutral bedroom",
+      "validation_status": "warning",
+      "warnings": [
+        "Several section headings do not signal the topic strongly enough."
+      ],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 120,
+          "concept_overlap": 5,
+          "first_sentence": "Neutral bedrooms often strike a delicate balance between restraint and comfort."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 3,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Establish a Grounded Layout with Clear Visual Flow",
+            "Choose a Nuanced Neutral Color Palette to Layer Warmth and Coolness",
+            "Layer Textures Thoughtfully to Add Depth Without Clutter",
+            "Balance Scale and Contrast to Prevent Visual Flatness",
+            "Finish with Clear Focal Points and Restrained Accessories for Resolved Calm"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 7,
+          "specificity_term_hits": 12,
+          "secondary_keyword_hits": 1
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-04-01T20:52:19.252514+00:00"
+    },
     {
       "article_slug": "best-furniture-parisian-bedroom",
       "cluster_id": "parisian_bedroom",
@@ -45,53 +89,6 @@
         }
       },
       "timestamp": "2026-04-01T19:10:15.923451+00:00"
-    },
-    {
-      "article_slug": "how-to-style-a-neutral-bedroom",
-      "cluster_id": "neutral_bedroom",
-      "subtopic_id": "layout",
-      "angle_id": "how_to",
-      "primary_keyword": "how to style a neutral bedroom",
-      "validation_status": "fail",
-      "warnings": [
-        "Several section headings do not signal the topic strongly enough.",
-        "Supporting keyword ideas are barely reflected in the body."
-      ],
-      "errors": [
-        "Section headings are too unspecific to support a strong editorial frame."
-      ],
-      "checks": {
-        "generic_intro": {
-          "intro_word_count": 104,
-          "concept_overlap": 7,
-          "first_sentence": "Neutral bedrooms remain a timeless choice for creating calm retreats—spaces where subtlety crafts comfort."
-        },
-        "heading_quality": {
-          "heading_count": 5,
-          "vague_heading_count": 0,
-          "low_specificity_heading_count": 5,
-          "repeated_signature_count": 0,
-          "repeated_stem_count": 0,
-          "headings": [
-            "Place the Bed as a Clear Architectural Anchor",
-            "Layer Natural Textiles to Add Depth and Warmth",
-            "Adjust Lighting Scale and Placement for Subtle Focus",
-            "Balance Material Contrast to Avoid Visual Flatness",
-            "Complete Styling with Purposeful Accents and Plants"
-          ]
-        },
-        "specificity": {
-          "concept_token_hits": 9,
-          "specificity_term_hits": 15,
-          "secondary_keyword_hits": 0
-        },
-        "distinctiveness": {
-          "nearest_article_slug": "",
-          "max_similarity": 0.0,
-          "strongest_heading_overlap": 0
-        }
-      },
-      "timestamp": "2026-04-01T19:09:46.966784+00:00"
     },
     {
       "article_slug": "spring-bedroom-refresh-mistakes-to-avoid",
