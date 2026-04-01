@@ -48,6 +48,15 @@ jobs:
       - name: Run weekly pipeline
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          BFL_API_KEY: ${{ secrets.BFL_API_KEY }}
+          IMAGE_PROVIDER: ${{ vars.IMAGE_PROVIDER }}
+          IMAGE_FALLBACK_PROVIDER: ${{ vars.IMAGE_FALLBACK_PROVIDER }}
+          IMAGE_ALLOW_FALLBACK: ${{ vars.IMAGE_ALLOW_FALLBACK }}
+          FLUX_IMAGE_MODEL: ${{ vars.FLUX_IMAGE_MODEL }}
+          OPENAI_IMAGE_MODEL: ${{ vars.OPENAI_IMAGE_MODEL }}
+          IMAGE_FALLBACK_MODEL: ${{ vars.IMAGE_FALLBACK_MODEL }}
+          FLUX_TIMEOUT_SECONDS: ${{ vars.FLUX_TIMEOUT_SECONDS }}
+          FLUX_POLL_INTERVAL_SECONDS: ${{ vars.FLUX_POLL_INTERVAL_SECONDS }}
           PRODUCT_PROVIDER: ${{ secrets.PRODUCT_PROVIDER }}
           AMAZON_API_FLAVOR: ${{ secrets.AMAZON_API_FLAVOR }}
           AMAZON_MARKETPLACE: ${{ secrets.AMAZON_MARKETPLACE }}
@@ -72,6 +81,13 @@ jobs:
           PINTEREST_BOARD_ID_KIDS_DECOR: ${{ secrets.PINTEREST_BOARD_ID_KIDS_DECOR }}
           PINTEREST_SYNC_ANALYTICS: ${{ secrets.PINTEREST_SYNC_ANALYTICS }}
         run: |
+          export IMAGE_PROVIDER="${IMAGE_PROVIDER:-flux}"
+          export IMAGE_FALLBACK_PROVIDER="${IMAGE_FALLBACK_PROVIDER:-openai}"
+          export IMAGE_ALLOW_FALLBACK="${IMAGE_ALLOW_FALLBACK:-true}"
+          export FLUX_IMAGE_MODEL="${FLUX_IMAGE_MODEL:-flux-2-max}"
+          export OPENAI_IMAGE_MODEL="${OPENAI_IMAGE_MODEL:-gpt-image-1}"
+          export FLUX_TIMEOUT_SECONDS="${FLUX_TIMEOUT_SECONDS:-180}"
+          export FLUX_POLL_INTERVAL_SECONDS="${FLUX_POLL_INTERVAL_SECONDS:-1.2}"
           export PRODUCT_PROVIDER="${PRODUCT_PROVIDER:-mock}"
           export AMAZON_FALLBACK_TO_MOCK="${AMAZON_FALLBACK_TO_MOCK:-true}"
           export PINTEREST_MODE="${PINTEREST_MODE:-queue}"
