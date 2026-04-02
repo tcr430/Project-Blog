@@ -1,6 +1,51 @@
 {
-  "generated_at": "2026-04-01T20:52:19.252692+00:00",
+  "generated_at": "2026-04-02T09:45:39.432036+00:00",
   "articles": [
+    {
+      "article_slug": "spring-bedroom-refresh-mistakes-to-avoid",
+      "cluster_id": "spring_bedroom_refresh",
+      "subtopic_id": "refresh",
+      "angle_id": "mistakes",
+      "primary_keyword": "spring bedroom refresh mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Section headings rely on repetitive formulas instead of distinct editorial moves.",
+        "Several section headings do not signal the topic strongly enough."
+      ],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 145,
+          "concept_overlap": 5,
+          "first_sentence": "Refreshing your bedroom for spring seems straightforward—the opportunity to lighten up, swap chilly textiles for airy fabrics, and invite a breath of seasonal change."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 3,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 1,
+          "headings": [
+            "Mistake 1: Overloading the Bed with Seasonal Accessories",
+            "Mistake 2: Mismatched Spring Colors That Clash Instead of Cohere",
+            "Mistake 3: Neglecting Texture Consistency Across Touchpoints",
+            "Mistake 4: Overlooking Proportion and Furniture Placement for Light Flow",
+            "Mistake 5: Excessive Decor Cluttering the Final Composition"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 8,
+          "specificity_term_hits": 11,
+          "secondary_keyword_hits": 2
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-04-02T09:45:39.431851+00:00"
+    },
     {
       "article_slug": "how-to-style-a-neutral-bedroom",
       "cluster_id": "neutral_bedroom",
@@ -89,53 +134,6 @@
         }
       },
       "timestamp": "2026-04-01T19:10:15.923451+00:00"
-    },
-    {
-      "article_slug": "spring-bedroom-refresh-mistakes-to-avoid",
-      "cluster_id": "spring_bedroom_refresh",
-      "subtopic_id": "refresh",
-      "angle_id": "mistakes",
-      "primary_keyword": "spring bedroom refresh mistakes to avoid",
-      "validation_status": "fail",
-      "warnings": [
-        "Section headings rely on repetitive formulas instead of distinct editorial moves.",
-        "Several section headings do not signal the topic strongly enough."
-      ],
-      "errors": [
-        "Section headings are too unspecific to support a strong editorial frame."
-      ],
-      "checks": {
-        "generic_intro": {
-          "intro_word_count": 86,
-          "concept_overlap": 6,
-          "first_sentence": "Sprucing up a bedroom for spring is a welcome ritual, but it can easily slip into feeling disjointed or overdone without thoughtful planning."
-        },
-        "heading_quality": {
-          "heading_count": 5,
-          "vague_heading_count": 0,
-          "low_specificity_heading_count": 5,
-          "repeated_signature_count": 0,
-          "repeated_stem_count": 1,
-          "headings": [
-            "Mistake 1: Ignoring Cohesive Color Strategy Creates Visual Noise",
-            "Mistake 2: Overusing Bright Pastels on Walls Costs Warmth and Depth",
-            "Mistake 3: Mixing Too Many Floral Prints Disrupts Visual Flow",
-            "Mistake 4: Over- or Under-Scaling Furniture and Fixtures Undermines Comfort",
-            "Mistake 5: Neglecting Textural Layering Flattens the Room Ambience"
-          ]
-        },
-        "specificity": {
-          "concept_token_hits": 9,
-          "specificity_term_hits": 10,
-          "secondary_keyword_hits": 2
-        },
-        "distinctiveness": {
-          "nearest_article_slug": "",
-          "max_similarity": 0.0,
-          "strongest_heading_overlap": 0
-        }
-      },
-      "timestamp": "2026-04-01T19:09:46.768619+00:00"
     },
     {
       "article_slug": "best-furniture-for-a-scandinavian-bathroom",

@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "9db5abcff8bbc4b3aff5938c7eabdffe02d9a49756959112e7bc296d7c634fb1",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/spring-bedroom-refresh-mistakes-to-avoid/hero.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-1": {
+    "cache_key": "254d210263542d8bdf91c0174fedd8a325d9513f5ede941b238ffe6df642d145",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/spring-bedroom-refresh-mistakes-to-avoid/section-1.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-2": {
+    "cache_key": "9c142e2a310a7ed90e0cc8a3e150408340a1e0b23126d09d6d43a89cf220d740",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/spring-bedroom-refresh-mistakes-to-avoid/section-2.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-3": {
+    "cache_key": "204133d795f33603b499cfabbf792865d76e25ce28e8ce2f205841fb10ccdb0b",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/spring-bedroom-refresh-mistakes-to-avoid/section-3.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-4": {
+    "cache_key": "fbb4c48aec231f06edf67e85da6c64cf0b5788d1ca01155d7400b823f2e26f1e",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/spring-bedroom-refresh-mistakes-to-avoid/section-4.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-5": {
+    "cache_key": "de04708a500d0bd3b0ba67abbe43e4f9a7e324d8846ed175114e5e418fa1a3e4",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/spring-bedroom-refresh-mistakes-to-avoid/section-5.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  }
+}

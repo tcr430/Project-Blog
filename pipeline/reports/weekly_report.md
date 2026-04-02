@@ -1,11 +1,11 @@
 # Weekly Pipeline Report
 
-Generated: 2026-04-01
+Generated: 2026-04-02
 Window: last 7 days
 
-Articles Published: 5  
-Pins Generated: 20  
-Pins Scheduled: 35  
+Articles Published: 6  
+Pins Generated: 24  
+Pins Scheduled: 39  
 Pins Published: 1  
 Repins Scheduled: 0
 
@@ -15,6 +15,7 @@ Repins Scheduled: 0
 - best-furniture-for-transitional-bathroom
 - best-furniture-parisian-bedroom
 - how-to-style-a-neutral-bedroom
+- spring-bedroom-refresh-mistakes-to-avoid
 
 ## Top Performing Pins
 - Best Furniture for a Scandinavian Bathroom: Practical Choices with Iconic Style... (practical_tips, Bathroom Styling Notes) - 0 clicks, 0 saves, 0 impressions

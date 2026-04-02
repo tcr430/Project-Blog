@@ -1,0 +1,300 @@
+{
+  "generated_at": "2026-04-02T09:52:41.952753+00:00",
+  "trend": "spring bedroom refresh mistakes to avoid",
+  "slug": "spring-bedroom-refresh-mistakes-to-avoid",
+  "article_generation": {
+    "cache_hit": false,
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/article_packages/b978b7c4f476a34ab32e562d33b228db5854661c90ccb72cd82f487a10bf2333.json",
+    "model": "gpt-4.1-mini",
+    "generation_calls": 3,
+    "short_retries": 1,
+    "angle_retries": 1,
+    "product_retries": 0,
+    "selected_products": 0,
+    "affiliate_mode": false,
+    "monetization_profile_id": "fix_oriented",
+    "generated_link_count": 0,
+    "primary_keyword": "spring bedroom refresh mistakes to avoid",
+    "topical_cluster": "spring bedroom refresh"
+  },
+  "seo_validation": {
+    "article_slug": "spring-bedroom-refresh-mistakes-to-avoid",
+    "cluster": "spring bedroom refresh",
+    "cluster_id": "spring bedroom refresh",
+    "subtopic_id": "refresh",
+    "subtopic_name": "seasonal refresh",
+    "angle_id": "mistakes",
+    "intent_id": "problem_solving",
+    "primary_keyword": "spring bedroom refresh mistakes to avoid",
+    "validation_status": "warning",
+    "warnings": [
+      "Main section headings may be too generic for the chosen keyword.",
+      "Primary keyword appears very lightly in the article body."
+    ],
+    "errors": [],
+    "duplicate_candidate_slugs": [],
+    "timestamp": "2026-04-02T09:45:39.428296+00:00"
+  },
+  "editorial_validation": {
+    "article_slug": "spring-bedroom-refresh-mistakes-to-avoid",
+    "cluster_id": "spring_bedroom_refresh",
+    "subtopic_id": "refresh",
+    "angle_id": "mistakes",
+    "primary_keyword": "spring bedroom refresh mistakes to avoid",
+    "validation_status": "warning",
+    "warnings": [
+      "Section headings rely on repetitive formulas instead of distinct editorial moves.",
+      "Several section headings do not signal the topic strongly enough."
+    ],
+    "errors": [],
+    "checks": {
+      "generic_intro": {
+        "intro_word_count": 145,
+        "concept_overlap": 5,
+        "first_sentence": "Refreshing your bedroom for spring seems straightforward—the opportunity to lighten up, swap chilly textiles for airy fabrics, and invite a breath of seasonal change."
+      },
+      "heading_quality": {
+        "heading_count": 5,
+        "vague_heading_count": 0,
+        "low_specificity_heading_count": 3,
+        "repeated_signature_count": 0,
+        "repeated_stem_count": 1,
+        "headings": [
+          "Mistake 1: Overloading the Bed with Seasonal Accessories",
+          "Mistake 2: Mismatched Spring Colors That Clash Instead of Cohere",
+          "Mistake 3: Neglecting Texture Consistency Across Touchpoints",
+          "Mistake 4: Overlooking Proportion and Furniture Placement for Light Flow",
+          "Mistake 5: Excessive Decor Cluttering the Final Composition"
+        ]
+      },
+      "specificity": {
+        "concept_token_hits": 8,
+        "specificity_term_hits": 11,
+        "secondary_keyword_hits": 2
+      },
+      "distinctiveness": {
+        "nearest_article_slug": "",
+        "max_similarity": 0.0,
+        "strongest_heading_overlap": 0
+      }
+    },
+    "timestamp": "2026-04-02T09:45:39.431851+00:00"
+  },
+  "image_generation": {
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/image_generation_cache/spring-bedroom-refresh-mistakes-to-avoid.json",
+    "provider": "flux",
+    "provider_model": "flux-2-max",
+    "model": "flux-2-max",
+    "fallback_provider": "openai",
+    "fallback_model": "gpt-image-1",
+    "size": "1536x1024",
+    "hero_quality": "high",
+    "section_quality": "medium",
+    "allow_fallback": true,
+    "fallback_events": 0,
+    "generated_images": 6,
+    "cache_hits": 0,
+    "generation_calls": 6,
+    "qa_calls": 1,
+    "details": [
+      {
+        "label": "hero",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 1,
+        "quality": "high",
+        "qa_enabled": true,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "3d6d92fe-7b8f-4226-8af0-7e9a47c5f2b3",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=3d6d92fe-7b8f-4226-8af0-7e9a47c5f2b3",
+            "poll_attempts": 41,
+            "provider_status": "Ready",
+            "elapsed_seconds": 68.28,
+            "quality": "high",
+            "elapsed_seconds_total": 68.28,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation",
+        "qa_reason": "The image depicts a softly lit bedroom corner with an editorial style fitting the 'Spring Bedroom Refresh' theme. It uses an airy, quiet palette of pale woods, chalky whites, and oat tones with one clear focal point on the bed and side table. The materials appear realistic and the composition natural and believable for a home setting. There is no text, logo, people, or heavy clutter."
+      },
+      {
+        "label": "section-1",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "d1f72a1c-1d20-4126-8c88-a40a76927c93",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=d1f72a1c-1d20-4126-8c88-a40a76927c93",
+            "poll_attempts": 32,
+            "provider_status": "Ready",
+            "elapsed_seconds": 53.21,
+            "quality": "medium",
+            "elapsed_seconds_total": 53.21,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-2",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "50d836d3-45b8-48bd-a849-434503261c2b",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=50d836d3-45b8-48bd-a849-434503261c2b",
+            "poll_attempts": 97,
+            "provider_status": "Ready",
+            "elapsed_seconds": 156.47,
+            "quality": "medium",
+            "elapsed_seconds_total": 156.47,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-3",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "9c67631a-527b-4aac-874e-6d4663c2fce9",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=9c67631a-527b-4aac-874e-6d4663c2fce9",
+            "poll_attempts": 39,
+            "provider_status": "Ready",
+            "elapsed_seconds": 51.83,
+            "quality": "medium",
+            "elapsed_seconds_total": 51.83,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-4",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "d4f75141-0de4-424d-b0b8-016ee8a292eb",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=d4f75141-0de4-424d-b0b8-016ee8a292eb",
+            "poll_attempts": 21,
+            "provider_status": "Ready",
+            "elapsed_seconds": 35.37,
+            "quality": "medium",
+            "elapsed_seconds_total": 35.37,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-5",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "0ebf34ba-cf2c-4eef-8fce-4c4392147d06",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=0ebf34ba-cf2c-4eef-8fce-4c4392147d06",
+            "poll_attempts": 28,
+            "provider_status": "Ready",
+            "elapsed_seconds": 46.75,
+            "quality": "medium",
+            "elapsed_seconds_total": 46.75,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      }
+    ]
+  },
+  "pinterest": {
+    "variants_requested": 4,
+    "pin_assets_generated": false,
+    "mode": null
+  }
+}

@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-04-01T20:59:44.214067+00:00",
+  "generated_at": "2026-04-02T09:52:43.631858+00:00",
   "total_clusters": 396,
   "summary": {
-    "missing": 381,
-    "underdeveloped": 15,
+    "missing": 380,
+    "underdeveloped": 16,
     "growing": 0,
     "strong": 0,
     "saturated": 0
   },
   "saturation_summary": {
-    "empty": 381,
-    "needs_growth": 15
+    "empty": 380,
+    "needs_growth": 16
   },
   "editorial_mix_rules": {
     "recent_window_article_count": 8,
@@ -396,7 +396,6 @@
     "nursery styling details",
     "patio styling details",
     "small apartment styling details",
-    "spring bedroom refresh",
     "summer balcony styling",
     "summer patio decor",
     "apartment balcony decor",
@@ -472,7 +471,8 @@
     "parisian bedroom",
     "living room textures and materials",
     "small dining nook",
-    "scandinavian bathroom"
+    "scandinavian bathroom",
+    "spring bedroom refresh"
   ],
   "clusters": [
     {
@@ -67767,216 +67767,6 @@
       ]
     },
     {
-      "cluster_id": "spring_bedroom_refresh",
-      "cluster_name": "spring bedroom refresh",
-      "domain_id": "seasonal_styling",
-      "health_label": "missing",
-      "article_count": 0,
-      "article_capacity_target": 10,
-      "capacity_ratio": 0.0,
-      "growth_openings": 9,
-      "saturation_state": "empty",
-      "selection_action": "boost",
-      "latest_publication_date": "",
-      "days_since_latest": null,
-      "subtopics_total": 3,
-      "subtopics_covered": [],
-      "subtopic_ids_covered": [],
-      "subtopics_missing": [
-        "Seasonal Refresh",
-        "Palette and Mood",
-        "Textiles and Layers"
-      ],
-      "subtopic_ids_missing": [
-        "refresh",
-        "palette",
-        "textures"
-      ],
-      "angle_distribution": {
-        "ideas": 0,
-        "how_to": 0,
-        "mistakes": 0,
-        "budget": 0,
-        "style_specific": 0,
-        "best_options": 0
-      },
-      "underused_angles": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "budget",
-        "style_specific",
-        "best_options"
-      ],
-      "overused_angles": [],
-      "intent_distribution": {
-        "comparison": 0,
-        "decision_making": 0,
-        "implementation": 0,
-        "inspiration": 0,
-        "problem_solving": 0
-      },
-      "underused_intents": [
-        "comparison",
-        "decision_making",
-        "implementation",
-        "inspiration",
-        "problem_solving"
-      ],
-      "overused_intents": [],
-      "recommended_concepts": [
-        {
-          "cluster_id": "spring_bedroom_refresh",
-          "cluster_name": "spring bedroom refresh",
-          "domain_id": "seasonal_styling",
-          "subtopic_id": "palette",
-          "subtopic_name": "Palette and Mood",
-          "angle_id": "how_to",
-          "intent_id": "implementation",
-          "modifier": "",
-          "primary_keyword": "how to choose colors for spring bedroom refresh",
-          "secondary_keywords": [
-            "spring bedroom refresh ideas",
-            "how to style spring bedroom refresh",
-            "spring bedroom refresh mistakes to avoid",
-            "budget spring bedroom refresh ideas"
-          ],
-          "search_intent": "how_to",
-          "season": "spring",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "seasonal_opportunity",
-          "editorial_mix_tags": [
-            "seasonal_opportunity",
-            "evergreen_authority"
-          ],
-          "score": 103,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": "editorial mix: seasonal_opportunity is underrepresented in recent publishing (+7)"
-          }
-        },
-        {
-          "cluster_id": "spring_bedroom_refresh",
-          "cluster_name": "spring bedroom refresh",
-          "domain_id": "seasonal_styling",
-          "subtopic_id": "palette",
-          "subtopic_name": "Palette and Mood",
-          "angle_id": "ideas",
-          "intent_id": "inspiration",
-          "modifier": "",
-          "primary_keyword": "spring bedroom refresh color palette",
-          "secondary_keywords": [
-            "spring bedroom refresh ideas",
-            "how to style spring bedroom refresh",
-            "spring bedroom refresh mistakes to avoid",
-            "budget spring bedroom refresh ideas"
-          ],
-          "search_intent": "ideas",
-          "season": "spring",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "seasonal_opportunity",
-          "editorial_mix_tags": [
-            "seasonal_opportunity",
-            "evergreen_authority"
-          ],
-          "score": 103,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": "editorial mix: seasonal_opportunity is underrepresented in recent publishing (+7)"
-          }
-        },
-        {
-          "cluster_id": "spring_bedroom_refresh",
-          "cluster_name": "spring bedroom refresh",
-          "domain_id": "seasonal_styling",
-          "subtopic_id": "palette",
-          "subtopic_name": "Palette and Mood",
-          "angle_id": "mistakes",
-          "intent_id": "problem_solving",
-          "modifier": "",
-          "primary_keyword": "spring bedroom refresh color mistakes to avoid",
-          "secondary_keywords": [
-            "spring bedroom refresh ideas",
-            "how to style spring bedroom refresh",
-            "spring bedroom refresh mistakes to avoid",
-            "budget spring bedroom refresh ideas"
-          ],
-          "search_intent": "problem_solution",
-          "season": "spring",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "seasonal_opportunity",
-          "editorial_mix_tags": [
-            "seasonal_opportunity",
-            "evergreen_authority"
-          ],
-          "score": 103,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": "editorial mix: seasonal_opportunity is underrepresented in recent publishing (+7)"
-          }
-        }
-      ],
-      "recommended_topics": [
-        "how to choose colors for spring bedroom refresh",
-        "spring bedroom refresh color palette",
-        "spring bedroom refresh color mistakes to avoid"
-      ],
-      "priority_score": 92,
-      "season": "spring",
-      "holiday": "",
-      "source": "content architecture",
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "pinterest_intelligence": {
-        "cluster_signal_label": "no_data",
-        "cluster_signal_boost": 0
-      },
-      "seed_keywords": [
-        "spring bedroom refresh ideas",
-        "how to style spring bedroom refresh"
-      ],
-      "allowed_angle_ids": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "budget",
-        "style_specific",
-        "best_options"
-      ]
-    },
-    {
       "cluster_id": "summer_balcony_styling",
       "cluster_name": "summer balcony styling",
       "domain_id": "seasonal_styling",
@@ -81409,7 +81199,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-18",
-      "days_since_latest": 13,
+      "days_since_latest": 14,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -81622,7 +81412,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-20",
-      "days_since_latest": 12,
+      "days_since_latest": 13,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation"
@@ -82048,7 +81838,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-25",
-      "days_since_latest": 7,
+      "days_since_latest": 8,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -82261,7 +82051,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-27",
-      "days_since_latest": 5,
+      "days_since_latest": 6,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -83733,6 +83523,218 @@
         "mistakes",
         "best_options",
         "style_specific"
+      ]
+    },
+    {
+      "cluster_id": "spring_bedroom_refresh",
+      "cluster_name": "spring bedroom refresh",
+      "domain_id": "seasonal_styling",
+      "health_label": "underdeveloped",
+      "article_count": 1,
+      "article_capacity_target": 10,
+      "capacity_ratio": 0.1,
+      "growth_openings": 8,
+      "saturation_state": "needs_growth",
+      "selection_action": "boost",
+      "latest_publication_date": "2026-04-02",
+      "days_since_latest": 0,
+      "subtopics_total": 3,
+      "subtopics_covered": [
+        "Seasonal Refresh"
+      ],
+      "subtopic_ids_covered": [
+        "refresh"
+      ],
+      "subtopics_missing": [
+        "Palette and Mood",
+        "Textiles and Layers"
+      ],
+      "subtopic_ids_missing": [
+        "palette",
+        "textures"
+      ],
+      "angle_distribution": {
+        "ideas": 0,
+        "how_to": 0,
+        "mistakes": 1,
+        "budget": 0,
+        "style_specific": 0,
+        "best_options": 0
+      },
+      "underused_angles": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "budget",
+        "style_specific",
+        "best_options"
+      ],
+      "overused_angles": [],
+      "intent_distribution": {
+        "comparison": 0,
+        "decision_making": 0,
+        "implementation": 0,
+        "inspiration": 0,
+        "problem_solving": 1
+      },
+      "underused_intents": [
+        "comparison",
+        "decision_making",
+        "implementation",
+        "inspiration",
+        "problem_solving"
+      ],
+      "overused_intents": [],
+      "recommended_concepts": [
+        {
+          "cluster_id": "spring_bedroom_refresh",
+          "cluster_name": "spring bedroom refresh",
+          "domain_id": "seasonal_styling",
+          "subtopic_id": "palette",
+          "subtopic_name": "Palette and Mood",
+          "angle_id": "how_to",
+          "intent_id": "implementation",
+          "modifier": "",
+          "primary_keyword": "how to choose colors for spring bedroom refresh",
+          "secondary_keywords": [
+            "spring bedroom refresh ideas",
+            "how to style spring bedroom refresh",
+            "spring bedroom refresh mistakes to avoid",
+            "budget spring bedroom refresh ideas"
+          ],
+          "search_intent": "how_to",
+          "season": "spring",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "seasonal_opportunity",
+          "editorial_mix_tags": [
+            "seasonal_opportunity",
+            "evergreen_authority"
+          ],
+          "score": 81,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": "editorial mix: seasonal_opportunity is underrepresented in recent publishing (+7)"
+          }
+        },
+        {
+          "cluster_id": "spring_bedroom_refresh",
+          "cluster_name": "spring bedroom refresh",
+          "domain_id": "seasonal_styling",
+          "subtopic_id": "palette",
+          "subtopic_name": "Palette and Mood",
+          "angle_id": "ideas",
+          "intent_id": "inspiration",
+          "modifier": "",
+          "primary_keyword": "spring bedroom refresh color palette",
+          "secondary_keywords": [
+            "spring bedroom refresh ideas",
+            "how to style spring bedroom refresh",
+            "spring bedroom refresh mistakes to avoid",
+            "budget spring bedroom refresh ideas"
+          ],
+          "search_intent": "ideas",
+          "season": "spring",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "seasonal_opportunity",
+          "editorial_mix_tags": [
+            "seasonal_opportunity",
+            "evergreen_authority"
+          ],
+          "score": 81,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": "editorial mix: seasonal_opportunity is underrepresented in recent publishing (+7)"
+          }
+        },
+        {
+          "cluster_id": "spring_bedroom_refresh",
+          "cluster_name": "spring bedroom refresh",
+          "domain_id": "seasonal_styling",
+          "subtopic_id": "palette",
+          "subtopic_name": "Palette and Mood",
+          "angle_id": "style_specific",
+          "intent_id": "inspiration",
+          "modifier": "",
+          "primary_keyword": "natural spring bedroom refresh ideas",
+          "secondary_keywords": [
+            "spring bedroom refresh ideas",
+            "how to style spring bedroom refresh",
+            "spring bedroom refresh mistakes to avoid",
+            "budget spring bedroom refresh ideas"
+          ],
+          "search_intent": "styling_advice",
+          "season": "spring",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "seasonal_opportunity",
+          "editorial_mix_tags": [
+            "seasonal_opportunity",
+            "evergreen_authority"
+          ],
+          "score": 81,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": "editorial mix: seasonal_opportunity is underrepresented in recent publishing (+7)"
+          }
+        }
+      ],
+      "recommended_topics": [
+        "how to choose colors for spring bedroom refresh",
+        "spring bedroom refresh color palette",
+        "natural spring bedroom refresh ideas"
+      ],
+      "priority_score": 62,
+      "season": "spring",
+      "holiday": "",
+      "source": "content architecture",
+      "pinterest_signal": {
+        "label": "no_data",
+        "boost": 0,
+        "pinterest_article_count": 0,
+        "strong_article_count": 0,
+        "weak_article_count": 0,
+        "average_score": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_saves": 0.0
+      },
+      "pinterest_intelligence": {
+        "cluster_signal_label": "no_data",
+        "cluster_signal_boost": 0
+      },
+      "seed_keywords": [
+        "spring bedroom refresh ideas",
+        "how to style spring bedroom refresh"
+      ],
+      "allowed_angle_ids": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "budget",
+        "style_specific",
+        "best_options"
       ]
     }
   ]

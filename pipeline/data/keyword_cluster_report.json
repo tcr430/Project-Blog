@@ -1,13 +1,14 @@
 {
-  "generated_at": "2026-04-01T20:59:42.833554+00:00",
-  "cluster_count": 15,
-  "article_count": 15,
+  "generated_at": "2026-04-02T09:52:42.127226+00:00",
+  "cluster_count": 16,
+  "article_count": 16,
   "subtopic_count": 6,
-  "angle_count": 4,
+  "angle_count": 5,
   "angle_distribution": {
     "best_options": 9,
     "how_to": 2,
     "ideas": 3,
+    "mistakes": 1,
     "style_specific": 1
   },
   "clusters": [
@@ -542,6 +543,50 @@
       ],
       "angle_distribution": {
         "ideas": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_id": "spring_bedroom_refresh",
+      "cluster_name": "spring bedroom refresh",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "seasonal_styling"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "spring bedroom refresh mistakes to avoid"
+      ],
+      "latest_article_date": "2026-04-02",
+      "latest_publication": {
+        "article_slug": "spring-bedroom-refresh-mistakes-to-avoid",
+        "article_title": "Spring Bedroom Refresh Mistakes to Avoid",
+        "publish_date": "2026-04-02",
+        "subtopic_id": "refresh",
+        "subtopic_name": "seasonal refresh",
+        "angle_id": "mistakes"
+      },
+      "representative_article_slugs": [
+        "spring-bedroom-refresh-mistakes-to-avoid"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "refresh",
+          "subtopic_name": "seasonal refresh",
+          "article_count": 1,
+          "latest_article_date": "2026-04-02",
+          "representative_article_slugs": [
+            "spring-bedroom-refresh-mistakes-to-avoid"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "mistakes": 1
       },
       "status": "underdeveloped"
     },
