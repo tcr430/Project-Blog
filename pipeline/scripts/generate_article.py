@@ -1190,6 +1190,21 @@ MISTAKE_HEADING_PHRASES = [
     "what makes it",
 ]
 
+MISTAKE_BODY_PHRASES = [
+    "the fix",
+    "how to correct",
+    "how to fix",
+    "what to avoid",
+    "what goes wrong",
+    "where it goes wrong",
+    "can make the room feel",
+    "can make the space feel",
+    "easy to overlook",
+    "throws the look off",
+    "starts to feel flat",
+    "starts to feel dated",
+]
+
 
 def heading_signals_mistake_pattern(heading: str) -> bool:
     normalized_heading = normalize_topic_text(heading)
@@ -1197,6 +1212,17 @@ def heading_signals_mistake_pattern(heading: str) -> bool:
     if heading_tokens & MISTAKE_HEADING_TOKENS:
         return True
     return any(phrase in normalized_heading for phrase in MISTAKE_HEADING_PHRASES)
+
+
+def measure_mistake_body_signal(body_text: str) -> tuple[int, int]:
+    normalized_body = normalize_topic_text(body_text)
+    body_token_hits = sum(
+        1
+        for signal in {"mistake", "mistakes", "avoid", "fix", "fixes", "wrong", "problem", "correct"}
+        if f" {signal} " in f" {normalized_body} "
+    )
+    body_phrase_hits = sum(1 for phrase in MISTAKE_BODY_PHRASES if phrase in normalized_body)
+    return body_token_hits, body_phrase_hits
 
 
 def is_angle_structure_error(exc: Exception) -> bool:
@@ -1248,6 +1274,21 @@ def validate_angle_structure(article_markdown: str, topic_context: TopicCandidat
             for heading in headings
             if heading_signals_mistake_pattern(heading)
         )
+        body_signal_hits, body_phrase_hits = measure_mistake_body_signal(body_text)
+        strong_body_support = (
+            body_signal_hits >= 4
+            or body_phrase_hits >= 2
+            or (body_signal_hits >= 3 and body_phrase_hits >= 1)
+        )
+        very_strong_body_support = body_signal_hits >= 5 and body_phrase_hits >= 2
+
+        if mistake_like_headings >= 2:
+            return
+        if mistake_like_headings >= 1 and strong_body_support:
+            return
+        if mistake_like_headings == 0 and very_strong_body_support:
+            return
+
         if mistake_like_headings < 2:
             raise ValueError(
                 "Mistakes articles should signal the mistake/fix pattern in at least two main section headings."
