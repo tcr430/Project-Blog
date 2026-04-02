@@ -3,6 +3,8 @@
 import argparse
 import json
 import re
+import urllib.error
+import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
@@ -18,6 +20,8 @@ MAX_PINS_PER_DAY = 1
 MIN_HOURS_BETWEEN_SAME_ARTICLE = 24 * 7
 MIN_HOURS_BETWEEN_SAME_BOARD_IN_RUN = 12
 DEFER_HOURS_AFTER_FAILURE = 24
+DEFAULT_PUBLIC_IMAGE_TIMEOUT_SECONDS = 180
+DEFAULT_PUBLIC_IMAGE_POLL_INTERVAL_SECONDS = 5
 SEASONAL_WINDOWS = {
     "spring": ((2, 15), (6, 15)),
     "summer": ((5, 15), (9, 15)),
@@ -92,6 +96,36 @@ def build_public_asset_url(site_root_url: str, image_path: str) -> str:
     clean_root = site_root_url.rstrip("/")
     clean_path = image_path if image_path.startswith("/") else f"/{image_path}"
     return f"{clean_root}{clean_path}"
+
+
+def is_public_image_reachable(image_url: str) -> bool:
+    request = urllib.request.Request(
+        image_url,
+        headers={"User-Agent": "The-Livin-Edit-Pinterest/1.0"},
+        method="GET",
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=20) as response:
+            content_type = response.headers.get("Content-Type", "").lower()
+            return response.status == 200 and content_type.startswith("image/")
+    except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError):
+        return False
+
+
+def wait_for_public_image(
+    image_url: str,
+    *,
+    timeout_seconds: int = DEFAULT_PUBLIC_IMAGE_TIMEOUT_SECONDS,
+    poll_interval_seconds: int = DEFAULT_PUBLIC_IMAGE_POLL_INTERVAL_SECONDS,
+) -> bool:
+    deadline = datetime.now(timezone.utc) + timedelta(seconds=max(1, timeout_seconds))
+    while datetime.now(timezone.utc) <= deadline:
+        if is_public_image_reachable(image_url):
+            return True
+        import time
+
+        time.sleep(max(1, poll_interval_seconds))
+    return False
 
 
 def resolve_publishable_image_path(image_path: str) -> str:
@@ -273,6 +307,51 @@ def extract_provider_pin_id(response_payload: dict[str, Any]) -> str | None:
         if isinstance(value, str) and value.strip():
             return value.strip()
     return None
+
+
+def publish_single_entry(
+    *,
+    client: PinterestClient,
+    entry: dict[str, Any],
+    wait_for_image: bool = False,
+    image_timeout_seconds: int = DEFAULT_PUBLIC_IMAGE_TIMEOUT_SECONDS,
+    image_poll_interval_seconds: int = DEFAULT_PUBLIC_IMAGE_POLL_INTERVAL_SECONDS,
+) -> dict[str, Any]:
+    publishable_image_path = resolve_publishable_image_path(str(entry["image_path"]))
+    image_url = build_public_asset_url(
+        site_root_url=str(entry["site_root_url"]),
+        image_path=publishable_image_path,
+    )
+    if wait_for_image:
+        print(f"[pinterest] waiting for public image to become reachable: {image_url}")
+        if not wait_for_public_image(
+            image_url,
+            timeout_seconds=image_timeout_seconds,
+            poll_interval_seconds=image_poll_interval_seconds,
+        ):
+            raise RuntimeError(
+                f"Public pin image did not become reachable in time: {image_url}"
+            )
+
+    title = str(entry["title"])
+    variant_label = str(entry.get("variant_type", entry.get("variant_key", "pin")))
+    board = entry.get("board") or {}
+    board_key = str(board.get("key", "default")).strip() or "default"
+    print(f"[pinterest] publishing due pin: {variant_label} - {title}")
+    response_payload = client.publish_variant(
+        board_key=board_key,
+        title=title,
+        description=str(entry["description"]),
+        article_url=str(entry["target_url"]),
+        image_url=image_url,
+    )
+    published_entry = dict(entry)
+    published_entry["status"] = "published"
+    published_entry["published_at"] = datetime.now(timezone.utc).isoformat()
+    published_entry["error_message"] = None
+    published_entry["provider_pin_id"] = extract_provider_pin_id(response_payload)
+    published_entry["image_path"] = publishable_image_path
+    return published_entry
 
 
 def build_queue_entries(payload: dict[str, Any], provider_mode: str) -> list[dict[str, Any]]:
@@ -538,21 +617,10 @@ def process_queue(client: PinterestClient, queue_path: Path, history_path: Path)
             print(f"[pinterest] pin deferred by board rotation: {variant_label} ({board_key})")
             continue
 
-        publishable_image_path = resolve_publishable_image_path(str(entry["image_path"]))
-        image_url = build_public_asset_url(
-            site_root_url=str(entry["site_root_url"]),
-            image_path=publishable_image_path,
-        )
-        title = str(entry["title"])
-        print(f"[pinterest] publishing due pin: {variant_label} - {title}")
-
         try:
-            response_payload = client.publish_variant(
-                board_key=board_key,
-                title=title,
-                description=str(entry["description"]),
-                article_url=str(entry["target_url"]),
-                image_url=image_url,
+            published_entry = publish_single_entry(
+                client=client,
+                entry=entry,
             )
             published_count += 1
             publish_budget_remaining -= 1
@@ -560,13 +628,9 @@ def process_queue(client: PinterestClient, queue_path: Path, history_path: Path)
                 selected_article_slugs.add(article_slug)
             if board_key:
                 selected_board_keys.add(board_key)
-            entry["status"] = "published"
-            entry["published_at"] = datetime.now(timezone.utc).isoformat()
-            entry["error_message"] = None
-            entry["provider_pin_id"] = extract_provider_pin_id(response_payload)
-            upsert_history_entry(history_data, entry)
+            upsert_history_entry(history_data, published_entry)
             print(f"[pinterest] pin published: {variant_label}")
-            if not entry["provider_pin_id"]:
+            if not published_entry["provider_pin_id"]:
                 print(f"[pinterest] analytics unavailable: provider pin ID missing for {variant_label}")
         except Exception as exc:
             failed_count += 1
@@ -588,6 +652,73 @@ def process_queue(client: PinterestClient, queue_path: Path, history_path: Path)
         "published_count": published_count,
         "failed_count": failed_count,
         "skipped_count": skipped_count,
+        "queue_path": queue_path,
+        "history_path": history_path,
+    }
+
+
+def select_primary_article_entry(
+    queue_data: list[dict[str, Any]],
+    *,
+    article_slug: str,
+) -> tuple[int, dict[str, Any]] | None:
+    candidates: list[tuple[int, dict[str, Any]]] = []
+    for index, entry in enumerate(queue_data):
+        if str(entry.get("article_slug", "")).strip() != article_slug:
+            continue
+        if str(entry.get("status", "")).strip().lower() == "published":
+            continue
+        candidates.append((index, entry))
+
+    if not candidates:
+        return None
+
+    def sort_key(item: tuple[int, dict[str, Any]]) -> tuple[datetime, int, datetime]:
+        _, entry = item
+        created_at = parse_timestamp(str(entry.get("created_at", "")), "created_at") or datetime.min.replace(
+            tzinfo=timezone.utc
+        )
+        schedule_rank = int(entry.get("schedule_rank", 9999))
+        scheduled_for = parse_timestamp(str(entry.get("scheduled_for", "")), "scheduled_for") or datetime.max.replace(
+            tzinfo=timezone.utc
+        )
+        return (-created_at.timestamp(), schedule_rank, scheduled_for)
+
+    return sorted(candidates, key=sort_key)[0]
+
+
+def publish_primary_article_pin(
+    *,
+    client: PinterestClient,
+    article_slug: str,
+    queue_path: Path = QUEUE_FILE_PATH,
+    history_path: Path = HISTORY_FILE_PATH,
+    wait_for_image: bool = True,
+    image_timeout_seconds: int = DEFAULT_PUBLIC_IMAGE_TIMEOUT_SECONDS,
+    image_poll_interval_seconds: int = DEFAULT_PUBLIC_IMAGE_POLL_INTERVAL_SECONDS,
+) -> dict[str, Any]:
+    queue_data = load_queue(queue_path)
+    history_data = load_history(history_path)
+    selected = select_primary_article_entry(queue_data, article_slug=article_slug)
+    if selected is None:
+        raise RuntimeError(f"No queued Pinterest entry found for article slug '{article_slug}'.")
+
+    entry_index, entry = selected
+    published_entry = publish_single_entry(
+        client=client,
+        entry=entry,
+        wait_for_image=wait_for_image,
+        image_timeout_seconds=image_timeout_seconds,
+        image_poll_interval_seconds=image_poll_interval_seconds,
+    )
+    queue_data.pop(entry_index)
+    upsert_history_entry(history_data, published_entry)
+    save_queue(queue_path=queue_path, queue_data=queue_data)
+    save_history(history_path=history_path, history_data=history_data)
+    return {
+        "article_slug": article_slug,
+        "variant_type": published_entry.get("variant_type", ""),
+        "provider_pin_id": published_entry.get("provider_pin_id"),
         "queue_path": queue_path,
         "history_path": history_path,
     }

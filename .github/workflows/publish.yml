@@ -90,7 +90,7 @@ jobs:
           export FLUX_POLL_INTERVAL_SECONDS="${FLUX_POLL_INTERVAL_SECONDS:-1.2}"
           export PRODUCT_PROVIDER="${PRODUCT_PROVIDER:-mock}"
           export AMAZON_FALLBACK_TO_MOCK="${AMAZON_FALLBACK_TO_MOCK:-true}"
-          export PINTEREST_MODE="${PINTEREST_MODE:-queue}"
+          export PINTEREST_MODE="queue"
 
           if [ -n "${{ github.event.inputs.trend }}" ]; then
             python pipeline/scripts/weekly_pipeline.py "${{ github.event.inputs.trend }}" --skip-newsletter --skip-affiliate-links
@@ -168,3 +168,40 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Publish primary Pinterest pin after deploy
+        env:
+          PINTEREST_MODE: publish
+          PINTEREST_ACCESS_TOKEN: ${{ secrets.PINTEREST_ACCESS_TOKEN }}
+          PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
+          PINTEREST_CLIENT_ID: ${{ secrets.PINTEREST_CLIENT_ID }}
+          PINTEREST_CLIENT_SECRET: ${{ secrets.PINTEREST_CLIENT_SECRET }}
+          PINTEREST_REDIRECT_URI: ${{ secrets.PINTEREST_REDIRECT_URI }}
+          PINTEREST_BOARD_ID: ${{ secrets.PINTEREST_BOARD_ID }}
+          PINTEREST_BOARD_ID_DECOR_TRENDS: ${{ secrets.PINTEREST_BOARD_ID_DECOR_TRENDS }}
+          PINTEREST_BOARD_ID_STYLING_TIPS: ${{ secrets.PINTEREST_BOARD_ID_STYLING_TIPS }}
+          PINTEREST_BOARD_ID_DECOR_FINDS: ${{ secrets.PINTEREST_BOARD_ID_DECOR_FINDS }}
+          PINTEREST_BOARD_ID_KITCHEN_DECOR: ${{ secrets.PINTEREST_BOARD_ID_KITCHEN_DECOR }}
+          PINTEREST_BOARD_ID_LIVING_ROOM_DECOR: ${{ secrets.PINTEREST_BOARD_ID_LIVING_ROOM_DECOR }}
+          PINTEREST_BOARD_ID_BEDROOM_DECOR: ${{ secrets.PINTEREST_BOARD_ID_BEDROOM_DECOR }}
+          PINTEREST_BOARD_ID_BATHROOM_DECOR: ${{ secrets.PINTEREST_BOARD_ID_BATHROOM_DECOR }}
+          PINTEREST_BOARD_ID_KIDS_DECOR: ${{ secrets.PINTEREST_BOARD_ID_KIDS_DECOR }}
+        run: |
+          python pipeline/scripts/publish_latest_article_pin.py
+
+      - name: Commit and push Pinterest queue state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add \
+            pipeline/data/pinterest_queue.json \
+            pipeline/data/pinterest_history.json
+
+          if git diff --cached --quiet; then
+            echo "No Pinterest queue state changes to commit."
+            exit 0
+          fi
+
+          git commit -m "chore(pinterest): publish primary article pin"
+          git push origin "${{ github.ref_name }}"
