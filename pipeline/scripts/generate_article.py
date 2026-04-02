@@ -111,6 +111,26 @@ Return only the required JSON object.
 """.strip()
 
 
+ANGLE_RETRY_PROMPT_TEMPLATE = """
+The previous draft did not follow the required angle structure strongly enough.
+Rewrite the full article package and keep the same topic, argument, and quality level, but tighten the section framing.
+
+Angle-structure correction rules:
+- Keep the article natural and editorial, not formulaic.
+- Revise the 5 main H2 headings so they clearly reflect the assigned angle.
+- For mistakes-and-fixes articles specifically, at least 2 H2 headings must clearly signal a corrective or mistake-led angle through wording about:
+  - what goes wrong
+  - what to avoid
+  - what throws the look off
+  - how to correct the issue
+- Do not turn every heading into the same pattern.
+- Keep headings specific to the room, styling problem, or design decision being discussed.
+- Preserve the FAQ and conclusion.
+
+Return only the required JSON object.
+""".strip()
+
+
 OUTPUT_REQUIREMENTS_PROMPT = """
 Output requirements:
 - Keep existing fields unchanged: title, slug, meta_description, keywords, article_markdown.
@@ -152,6 +172,7 @@ PREFERRED_MAX_WORDS = 1300
 SECTION_COUNT = 5
 SHORT_RETRY_LIMIT = 1
 PRODUCT_RETRY_LIMIT = 1
+ANGLE_RETRY_LIMIT = 1
 PINTEREST_ITEM_COUNT = 5
 # Preferred guidance range is 1000-1300 words. Hard validation uses MIN_WORDS/MAX_WORDS.
 
@@ -1178,6 +1199,19 @@ def heading_signals_mistake_pattern(heading: str) -> bool:
     return any(phrase in normalized_heading for phrase in MISTAKE_HEADING_PHRASES)
 
 
+def is_angle_structure_error(exc: Exception) -> bool:
+    message = str(exc)
+    return (
+        "does not reflect the '" in message and "structure strongly enough" in message
+    ) or (
+        "Mistakes articles should signal the mistake/fix pattern" in message
+    ) or (
+        "How-to articles should use action-led H2s" in message
+    ) or (
+        "Best-options articles should signal selection or comparison language" in message
+    )
+
+
 def validate_angle_structure(article_markdown: str, topic_context: TopicCandidate) -> None:
     angle_id = normalize_topic_text(topic_context.get("angle_id", "")) or "ideas"
     headings = extract_main_headings(article_markdown)
@@ -1582,6 +1616,7 @@ def generate_article_package_with_report(
     extra_instruction: str | None = None
     short_retry_count = 0
     product_retry_count = 0
+    angle_retry_count = 0
     generation_calls = 0
     normalized_topic_context = normalize_topic_candidate(topic_context=topic_context, trend=trend)
     monetization_profile = resolve_monetization_profile(
@@ -1660,6 +1695,7 @@ def generate_article_package_with_report(
             "model": model,
             "generation_calls": 0,
             "short_retries": 0,
+             "angle_retries": 0,
              "product_retries": 0,
              "selected_products": len(selected_products),
              "affiliate_mode": bool(selected_products),
@@ -1672,8 +1708,9 @@ def generate_article_package_with_report(
     print(f"[article] cache miss: {cache_path.name}")
     print(f"[article] primary keyword: {normalized_topic_context['primary_keyword']}")
 
-    # One initial draft plus retries for short drafts or product-link rule failures.
-    for _ in range(1 + SHORT_RETRY_LIMIT + PRODUCT_RETRY_LIMIT):
+    # One initial draft plus focused retries for short drafts, angle-structure misses,
+    # or product-link rule failures.
+    for _ in range(1 + SHORT_RETRY_LIMIT + ANGLE_RETRY_LIMIT + PRODUCT_RETRY_LIMIT):
         try:
             generation_calls += 1
             payload = request_article_json(
@@ -1723,6 +1760,7 @@ def generate_article_package_with_report(
                 "model": model,
                 "generation_calls": generation_calls,
                 "short_retries": short_retry_count,
+                "angle_retries": angle_retry_count,
                 "product_retries": product_retry_count,
                 "selected_products": len(selected_products),
                 "affiliate_mode": bool(selected_products),
@@ -1787,6 +1825,7 @@ def generate_article_package_with_report(
                         "model": model,
                         "generation_calls": generation_calls,
                         "short_retries": short_retry_count,
+                        "angle_retries": angle_retry_count,
                         "product_retries": product_retry_count,
                         "selected_products": len(selected_products),
                         "affiliate_mode": bool(selected_products),
@@ -1795,6 +1834,14 @@ def generate_article_package_with_report(
                         "primary_keyword": normalized_topic_context["primary_keyword"],
                         "topical_cluster": normalized_topic_context["trend_cluster"],
                     }
+                last_error = exc
+                continue
+            last_error = exc
+        except ValueError as exc:
+            if is_angle_structure_error(exc) and angle_retry_count < ANGLE_RETRY_LIMIT:
+                angle_retry_count += 1
+                extra_instruction = ANGLE_RETRY_PROMPT_TEMPLATE
+                print(f"[article] retrying after angle-structure validation failure: {exc}")
                 last_error = exc
                 continue
             last_error = exc
