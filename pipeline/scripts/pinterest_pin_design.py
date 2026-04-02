@@ -26,6 +26,13 @@ STOP_WORDS = {
     'tips', 'tip', 'best', 'how', 'style', 'styling', 'decor', 'to', 'of'
 }
 
+HEADLINE_FILLER_PATTERNS = [
+    r'^\s*the\s+',
+    r'\s*:\s*a\s+practical guide.*$',
+    r'\s*:\s*a\s+clear guide.*$',
+    r'\s*:\s*practical tips.*$',
+]
+
 
 def simplify_topic_phrase(text: str) -> str:
     cleaned = normalize_text(text)
@@ -33,6 +40,29 @@ def simplify_topic_phrase(text: str) -> str:
     cleaned = re.sub(r'\s*:\s*.*$', '', cleaned)
     cleaned = cleaned.strip(' .')
     return cleaned
+
+
+def shorten_pin_headline(text: str) -> str:
+    cleaned = normalize_text(text)
+    if not cleaned:
+        return cleaned
+    for pattern in HEADLINE_FILLER_PATTERNS:
+        cleaned = re.sub(pattern, '', cleaned, flags=re.IGNORECASE)
+    cleaned = re.sub(r'\s*:\s*.*$', '', cleaned)
+    cleaned = re.sub(r'\s{2,}', ' ', cleaned).strip(' .:')
+    return cleaned or normalize_text(text)
+
+
+def tighten_pin_subheadline(text: str) -> str:
+    cleaned = normalize_text(text)
+    if not cleaned:
+        return cleaned
+    parts = re.split(r'(?<=[.!?])\s+', cleaned)
+    first_sentence = parts[0].strip() if parts else cleaned
+    if len(first_sentence) <= 120:
+        return first_sentence
+    shortened = first_sentence[:117].rsplit(' ', 1)[0].strip()
+    return (shortened or first_sentence[:117]).rstrip(' ,;:-') + '...'
 
 
 ROOM_HINTS = ['living room', 'bedroom', 'bathroom', 'kitchen', 'entryway', 'balcony', 'patio', 'nursery']
@@ -101,14 +131,25 @@ def build_pin_copy_variant(article_metadata: dict[str, Any], *, variant_type: st
         subheadline = f'Simple, high-impact guidance that makes {topic_phrase.lower()} easier to apply in real life.'
 
     return {
-        'headline': normalize_text(headline),
-        'subheadline': normalize_text(subheadline),
+        'headline': shorten_pin_headline(headline),
+        'subheadline': tighten_pin_subheadline(subheadline),
         'kicker': kicker,
         'cta_label': cta,
         'topic_style': style,
         'topic_phrase': topic_phrase,
         'room_phrase': room_phrase,
     }
+
+
+def classify_copy_density(headline: str, subheadline: str) -> str:
+    headline_length = len(normalize_text(headline))
+    subheadline_length = len(normalize_text(subheadline))
+    combined = headline_length + subheadline_length
+    if headline_length >= 66 or combined >= 170:
+        return 'long'
+    if headline_length <= 38 and combined <= 110:
+        return 'short'
+    return 'medium'
 
 
 def select_template_family(
@@ -125,4 +166,11 @@ def select_template_family(
     candidates = [name for name in rule.get('template_preferences', []) if name in templates]
     if not candidates:
         candidates = list(templates.keys())
-    return candidates[duplicate_index % len(candidates)]
+    copy_variant = build_pin_copy_variant(article_metadata, variant_type=variant_type)
+    density = classify_copy_density(copy_variant['headline'], copy_variant['subheadline'])
+    density_matches = [
+        name for name in candidates
+        if str(templates.get(name, {}).get('density_profile', 'medium')) == density
+    ]
+    ordered = density_matches or candidates
+    return ordered[duplicate_index % len(ordered)]
