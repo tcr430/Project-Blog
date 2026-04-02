@@ -202,7 +202,11 @@ ANGLE_STRUCTURE_GUIDANCE = {
             "Section 5: finish with the mistake that most affects the final feel of the room and how to correct it.",
             "Conclusion: leave readers with a simple avoid/fix checklist tone, not alarmism.",
         ],
-        "heading_style": "Let H2s signal either the mistake, the correction, or both, without making every heading read like a formula.",
+        "heading_style": (
+            "Let H2s signal either the mistake, the correction, or both, without making every heading read like a formula. "
+            "At least two of the five H2s should clearly reflect a corrective angle through wording about what goes wrong, "
+            "what to avoid, what throws the look off, or how to fix the issue."
+        ),
         "faq_style": "FAQ should answer short corrective questions readers might ask after realizing they made one of the mistakes.",
     },
     "best_options": {
@@ -1130,6 +1134,50 @@ class ProductLinkError(ValueError):
     pass
 
 
+MISTAKE_HEADING_TOKENS = {
+    "mistake",
+    "mistakes",
+    "avoid",
+    "fix",
+    "fixes",
+    "wrong",
+    "problem",
+    "problems",
+    "correct",
+    "correcting",
+    "off",
+    "dated",
+    "flat",
+    "awkward",
+    "overdone",
+    "unbalanced",
+}
+
+MISTAKE_HEADING_PHRASES = [
+    "goes wrong",
+    "gets wrong",
+    "what to avoid",
+    "what throws",
+    "throws the look off",
+    "starts to feel",
+    "feels flat",
+    "looks dated",
+    "how to correct",
+    "how to fix",
+    "how to avoid",
+    "where the room",
+    "what makes it",
+]
+
+
+def heading_signals_mistake_pattern(heading: str) -> bool:
+    normalized_heading = normalize_topic_text(heading)
+    heading_tokens = set(normalized_heading.split())
+    if heading_tokens & MISTAKE_HEADING_TOKENS:
+        return True
+    return any(phrase in normalized_heading for phrase in MISTAKE_HEADING_PHRASES)
+
+
 def validate_angle_structure(article_markdown: str, topic_context: TopicCandidate) -> None:
     angle_id = normalize_topic_text(topic_context.get("angle_id", "")) or "ideas"
     headings = extract_main_headings(article_markdown)
@@ -1164,7 +1212,7 @@ def validate_angle_structure(article_markdown: str, topic_context: TopicCandidat
         mistake_like_headings = sum(
             1
             for heading in headings
-            if any(token in normalize_topic_text(heading).split() for token in {"mistake", "avoid", "fix", "problem"})
+            if heading_signals_mistake_pattern(heading)
         )
         if mistake_like_headings < 2:
             raise ValueError(
