@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-04-02T09:52:43.631858+00:00",
+  "generated_at": "2026-04-03T09:55:42.878585+00:00",
   "total_clusters": 396,
   "summary": {
-    "missing": 380,
-    "underdeveloped": 16,
+    "missing": 379,
+    "underdeveloped": 17,
     "growing": 0,
     "strong": 0,
     "saturated": 0
   },
   "saturation_summary": {
-    "empty": 380,
-    "needs_growth": 16
+    "empty": 379,
+    "needs_growth": 17
   },
   "editorial_mix_rules": {
     "recent_window_article_count": 8,
@@ -56,16 +56,16 @@
   "editorial_mix_state": {
     "window_article_count": 8,
     "counts": {
-      "evergreen_authority": 2,
+      "evergreen_authority": 3,
       "seasonal_opportunity": 0,
       "pinterest_responsive": 0,
-      "monetizable_decision": 6
+      "monetizable_decision": 5
     },
     "shares": {
-      "evergreen_authority": 0.25,
+      "evergreen_authority": 0.375,
       "seasonal_opportunity": 0.0,
       "pinterest_responsive": 0.0,
-      "monetizable_decision": 0.75
+      "monetizable_decision": 0.625
     },
     "underrepresented": [
       "seasonal_opportunity",
@@ -271,7 +271,6 @@
     "organic modern nursery",
     "organic modern patio",
     "parisian balcony",
-    "parisian bathroom",
     "parisian dining room",
     "parisian entryway",
     "parisian guest bedroom",
@@ -468,10 +467,11 @@
     "transitional bathroom",
     "scandinavian bedroom",
     "neutral bedroom",
-    "parisian bedroom",
+    "parisian bathroom",
     "living room textures and materials",
     "small dining nook",
     "scandinavian bathroom",
+    "parisian bedroom",
     "spring bedroom refresh"
   ],
   "clusters": [
@@ -41416,217 +41416,6 @@
       ]
     },
     {
-      "cluster_id": "parisian_bathroom",
-      "cluster_name": "parisian bathroom",
-      "domain_id": "utility_transition",
-      "health_label": "missing",
-      "article_count": 0,
-      "article_capacity_target": 14,
-      "capacity_ratio": 0.0,
-      "growth_openings": 10,
-      "saturation_state": "empty",
-      "selection_action": "boost",
-      "latest_publication_date": "",
-      "days_since_latest": null,
-      "subtopics_total": 5,
-      "subtopics_covered": [],
-      "subtopic_ids_covered": [],
-      "subtopics_missing": [
-        "Layout and Foundation",
-        "Color Palette",
-        "Furniture and Anchors",
-        "Lighting",
-        "Textures and Layers"
-      ],
-      "subtopic_ids_missing": [
-        "layout",
-        "colors",
-        "furniture",
-        "lighting",
-        "textures"
-      ],
-      "angle_distribution": {
-        "ideas": 0,
-        "how_to": 0,
-        "mistakes": 0,
-        "best_options": 0,
-        "style_specific": 0
-      },
-      "underused_angles": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "style_specific"
-      ],
-      "overused_angles": [],
-      "intent_distribution": {
-        "comparison": 0,
-        "decision_making": 0,
-        "implementation": 0,
-        "inspiration": 0,
-        "problem_solving": 0
-      },
-      "underused_intents": [
-        "comparison",
-        "decision_making",
-        "implementation",
-        "inspiration",
-        "problem_solving"
-      ],
-      "overused_intents": [],
-      "recommended_concepts": [
-        {
-          "cluster_id": "parisian_bathroom",
-          "cluster_name": "parisian bathroom",
-          "domain_id": "utility_transition",
-          "subtopic_id": "colors",
-          "subtopic_name": "Color Palette",
-          "angle_id": "how_to",
-          "intent_id": "implementation",
-          "modifier": "",
-          "primary_keyword": "how to choose colors for a parisian bathroom",
-          "secondary_keywords": [
-            "parisian bathroom ideas",
-            "how to style a parisian bathroom",
-            "parisian bathroom decor",
-            "parisian bathroom layout ideas"
-          ],
-          "search_intent": "how_to",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 96,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "parisian_bathroom",
-          "cluster_name": "parisian bathroom",
-          "domain_id": "utility_transition",
-          "subtopic_id": "colors",
-          "subtopic_name": "Color Palette",
-          "angle_id": "ideas",
-          "intent_id": "inspiration",
-          "modifier": "",
-          "primary_keyword": "parisian bathroom color palette ideas",
-          "secondary_keywords": [
-            "parisian bathroom ideas",
-            "how to style a parisian bathroom",
-            "parisian bathroom decor",
-            "parisian bathroom layout ideas"
-          ],
-          "search_intent": "ideas",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 96,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "parisian_bathroom",
-          "cluster_name": "parisian bathroom",
-          "domain_id": "utility_transition",
-          "subtopic_id": "colors",
-          "subtopic_name": "Color Palette",
-          "angle_id": "mistakes",
-          "intent_id": "problem_solving",
-          "modifier": "",
-          "primary_keyword": "parisian bathroom color mistakes to avoid",
-          "secondary_keywords": [
-            "parisian bathroom ideas",
-            "how to style a parisian bathroom",
-            "parisian bathroom decor",
-            "parisian bathroom layout ideas"
-          ],
-          "search_intent": "problem_solution",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 96,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        }
-      ],
-      "recommended_topics": [
-        "how to choose colors for a parisian bathroom",
-        "parisian bathroom color palette ideas",
-        "parisian bathroom color mistakes to avoid"
-      ],
-      "priority_score": 100,
-      "season": "",
-      "holiday": "",
-      "source": "content architecture",
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "pinterest_intelligence": {
-        "cluster_signal_label": "no_data",
-        "cluster_signal_boost": 0
-      },
-      "seed_keywords": [
-        "parisian bathroom ideas",
-        "how to style a parisian bathroom",
-        "parisian bathroom decor",
-        "parisian bathroom layout ideas",
-        "parisian bathroom color palette"
-      ],
-      "allowed_angle_ids": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "style_specific"
-      ]
-    },
-    {
       "cluster_id": "parisian_dining_room",
       "cluster_name": "parisian dining room",
       "domain_id": "kitchens_dining",
@@ -81199,7 +80988,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-18",
-      "days_since_latest": 14,
+      "days_since_latest": 15,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -81412,7 +81201,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-20",
-      "days_since_latest": 13,
+      "days_since_latest": 14,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation"
@@ -81625,7 +81414,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-23",
-      "days_since_latest": 9,
+      "days_since_latest": 10,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -81838,7 +81627,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-25",
-      "days_since_latest": 8,
+      "days_since_latest": 9,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -82051,7 +81840,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-27",
-      "days_since_latest": 6,
+      "days_since_latest": 7,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -82264,7 +82053,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-28",
-      "days_since_latest": 4,
+      "days_since_latest": 5,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -82477,7 +82266,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-01",
-      "days_since_latest": 0,
+      "days_since_latest": 1,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation"
@@ -82679,9 +82468,9 @@
       ]
     },
     {
-      "cluster_id": "parisian_bedroom",
-      "cluster_name": "parisian bedroom",
-      "domain_id": "bedrooms",
+      "cluster_id": "parisian_bathroom",
+      "cluster_name": "parisian bathroom",
+      "domain_id": "utility_transition",
       "health_label": "underdeveloped",
       "article_count": 1,
       "article_capacity_target": 14,
@@ -82689,32 +82478,32 @@
       "growth_openings": 9,
       "saturation_state": "needs_growth",
       "selection_action": "boost",
-      "latest_publication_date": "2026-04-01",
+      "latest_publication_date": "2026-04-03",
       "days_since_latest": 0,
       "subtopics_total": 5,
       "subtopics_covered": [
-        "Furniture and Anchors"
+        "Textures and Layers"
       ],
       "subtopic_ids_covered": [
-        "furniture"
+        "textures"
       ],
       "subtopics_missing": [
         "Layout and Foundation",
         "Color Palette",
-        "Lighting",
-        "Textures and Layers"
+        "Furniture and Anchors",
+        "Lighting"
       ],
       "subtopic_ids_missing": [
         "layout",
         "colors",
-        "lighting",
-        "textures"
+        "furniture",
+        "lighting"
       ],
       "angle_distribution": {
         "ideas": 0,
         "how_to": 0,
-        "mistakes": 0,
-        "best_options": 1,
+        "mistakes": 1,
+        "best_options": 0,
         "style_specific": 0
       },
       "underused_angles": [
@@ -82726,11 +82515,11 @@
       ],
       "overused_angles": [],
       "intent_distribution": {
-        "comparison": 1,
+        "comparison": 0,
         "decision_making": 0,
         "implementation": 0,
         "inspiration": 0,
-        "problem_solving": 0
+        "problem_solving": 1
       },
       "underused_intents": [
         "comparison",
@@ -82742,20 +82531,20 @@
       "overused_intents": [],
       "recommended_concepts": [
         {
-          "cluster_id": "parisian_bedroom",
-          "cluster_name": "parisian bedroom",
-          "domain_id": "bedrooms",
+          "cluster_id": "parisian_bathroom",
+          "cluster_name": "parisian bathroom",
+          "domain_id": "utility_transition",
           "subtopic_id": "colors",
           "subtopic_name": "Color Palette",
           "angle_id": "how_to",
           "intent_id": "implementation",
           "modifier": "",
-          "primary_keyword": "how to choose colors for a parisian bedroom",
+          "primary_keyword": "how to choose colors for a parisian bathroom",
           "secondary_keywords": [
-            "parisian bedroom ideas",
-            "how to style a parisian bedroom",
-            "parisian bedroom decor",
-            "parisian bedroom layout ideas"
+            "parisian bathroom ideas",
+            "how to style a parisian bathroom",
+            "parisian bathroom decor",
+            "parisian bathroom layout ideas"
           ],
           "search_intent": "how_to",
           "season": "",
@@ -82779,20 +82568,20 @@
           }
         },
         {
-          "cluster_id": "parisian_bedroom",
-          "cluster_name": "parisian bedroom",
-          "domain_id": "bedrooms",
+          "cluster_id": "parisian_bathroom",
+          "cluster_name": "parisian bathroom",
+          "domain_id": "utility_transition",
           "subtopic_id": "colors",
           "subtopic_name": "Color Palette",
           "angle_id": "ideas",
           "intent_id": "inspiration",
           "modifier": "",
-          "primary_keyword": "parisian bedroom color palette ideas",
+          "primary_keyword": "parisian bathroom color palette ideas",
           "secondary_keywords": [
-            "parisian bedroom ideas",
-            "how to style a parisian bedroom",
-            "parisian bedroom decor",
-            "parisian bedroom layout ideas"
+            "parisian bathroom ideas",
+            "how to style a parisian bathroom",
+            "parisian bathroom decor",
+            "parisian bathroom layout ideas"
           ],
           "search_intent": "ideas",
           "season": "",
@@ -82816,22 +82605,22 @@
           }
         },
         {
-          "cluster_id": "parisian_bedroom",
-          "cluster_name": "parisian bedroom",
-          "domain_id": "bedrooms",
+          "cluster_id": "parisian_bathroom",
+          "cluster_name": "parisian bathroom",
+          "domain_id": "utility_transition",
           "subtopic_id": "colors",
           "subtopic_name": "Color Palette",
-          "angle_id": "mistakes",
-          "intent_id": "problem_solving",
+          "angle_id": "style_specific",
+          "intent_id": "inspiration",
           "modifier": "",
-          "primary_keyword": "parisian bedroom color mistakes to avoid",
+          "primary_keyword": "parisian bathroom paint and color ideas",
           "secondary_keywords": [
-            "parisian bedroom ideas",
-            "how to style a parisian bedroom",
-            "parisian bedroom decor",
-            "parisian bedroom layout ideas"
+            "parisian bathroom ideas",
+            "how to style a parisian bathroom",
+            "parisian bathroom decor",
+            "parisian bathroom layout ideas"
           ],
-          "search_intent": "problem_solution",
+          "search_intent": "styling_advice",
           "season": "",
           "holiday": "",
           "source": "content_plan",
@@ -82854,9 +82643,9 @@
         }
       ],
       "recommended_topics": [
-        "how to choose colors for a parisian bedroom",
-        "parisian bedroom color palette ideas",
-        "parisian bedroom color mistakes to avoid"
+        "how to choose colors for a parisian bathroom",
+        "parisian bathroom color palette ideas",
+        "parisian bathroom paint and color ideas"
       ],
       "priority_score": 70,
       "season": "",
@@ -82877,11 +82666,11 @@
         "cluster_signal_boost": 0
       },
       "seed_keywords": [
-        "parisian bedroom ideas",
-        "how to style a parisian bedroom",
-        "parisian bedroom decor",
-        "parisian bedroom layout ideas",
-        "parisian bedroom color palette"
+        "parisian bathroom ideas",
+        "how to style a parisian bathroom",
+        "parisian bathroom decor",
+        "parisian bathroom layout ideas",
+        "parisian bathroom color palette"
       ],
       "allowed_angle_ids": [
         "ideas",
@@ -83324,7 +83113,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-30",
-      "days_since_latest": 2,
+      "days_since_latest": 3,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -83526,6 +83315,219 @@
       ]
     },
     {
+      "cluster_id": "parisian_bedroom",
+      "cluster_name": "parisian bedroom",
+      "domain_id": "bedrooms",
+      "health_label": "underdeveloped",
+      "article_count": 1,
+      "article_capacity_target": 14,
+      "capacity_ratio": 0.07,
+      "growth_openings": 9,
+      "saturation_state": "needs_growth",
+      "selection_action": "boost",
+      "latest_publication_date": "2026-04-01",
+      "days_since_latest": 1,
+      "subtopics_total": 5,
+      "subtopics_covered": [
+        "Furniture and Anchors"
+      ],
+      "subtopic_ids_covered": [
+        "furniture"
+      ],
+      "subtopics_missing": [
+        "Layout and Foundation",
+        "Color Palette",
+        "Lighting",
+        "Textures and Layers"
+      ],
+      "subtopic_ids_missing": [
+        "layout",
+        "colors",
+        "lighting",
+        "textures"
+      ],
+      "angle_distribution": {
+        "ideas": 0,
+        "how_to": 0,
+        "mistakes": 0,
+        "best_options": 1,
+        "style_specific": 0
+      },
+      "underused_angles": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "style_specific"
+      ],
+      "overused_angles": [],
+      "intent_distribution": {
+        "comparison": 1,
+        "decision_making": 0,
+        "implementation": 0,
+        "inspiration": 0,
+        "problem_solving": 0
+      },
+      "underused_intents": [
+        "comparison",
+        "decision_making",
+        "implementation",
+        "inspiration",
+        "problem_solving"
+      ],
+      "overused_intents": [],
+      "recommended_concepts": [
+        {
+          "cluster_id": "parisian_bedroom",
+          "cluster_name": "parisian bedroom",
+          "domain_id": "bedrooms",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "how_to",
+          "intent_id": "implementation",
+          "modifier": "",
+          "primary_keyword": "how to choose colors for a parisian bedroom",
+          "secondary_keywords": [
+            "parisian bedroom ideas",
+            "how to style a parisian bedroom",
+            "parisian bedroom decor",
+            "parisian bedroom layout ideas"
+          ],
+          "search_intent": "how_to",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 68,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        },
+        {
+          "cluster_id": "parisian_bedroom",
+          "cluster_name": "parisian bedroom",
+          "domain_id": "bedrooms",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "ideas",
+          "intent_id": "inspiration",
+          "modifier": "",
+          "primary_keyword": "parisian bedroom color palette ideas",
+          "secondary_keywords": [
+            "parisian bedroom ideas",
+            "how to style a parisian bedroom",
+            "parisian bedroom decor",
+            "parisian bedroom layout ideas"
+          ],
+          "search_intent": "ideas",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 68,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        },
+        {
+          "cluster_id": "parisian_bedroom",
+          "cluster_name": "parisian bedroom",
+          "domain_id": "bedrooms",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "mistakes",
+          "intent_id": "problem_solving",
+          "modifier": "",
+          "primary_keyword": "parisian bedroom color mistakes to avoid",
+          "secondary_keywords": [
+            "parisian bedroom ideas",
+            "how to style a parisian bedroom",
+            "parisian bedroom decor",
+            "parisian bedroom layout ideas"
+          ],
+          "search_intent": "problem_solution",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 68,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        }
+      ],
+      "recommended_topics": [
+        "how to choose colors for a parisian bedroom",
+        "parisian bedroom color palette ideas",
+        "parisian bedroom color mistakes to avoid"
+      ],
+      "priority_score": 64,
+      "season": "",
+      "holiday": "",
+      "source": "content architecture",
+      "pinterest_signal": {
+        "label": "cold",
+        "boost": -6,
+        "pinterest_article_count": 1,
+        "strong_article_count": 0,
+        "weak_article_count": 1,
+        "average_score": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_saves": 0.0
+      },
+      "pinterest_intelligence": {
+        "cluster_signal_label": "no_data",
+        "cluster_signal_boost": 0
+      },
+      "seed_keywords": [
+        "parisian bedroom ideas",
+        "how to style a parisian bedroom",
+        "parisian bedroom decor",
+        "parisian bedroom layout ideas",
+        "parisian bedroom color palette"
+      ],
+      "allowed_angle_ids": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "style_specific"
+      ]
+    },
+    {
       "cluster_id": "spring_bedroom_refresh",
       "cluster_name": "spring bedroom refresh",
       "domain_id": "seasonal_styling",
@@ -83537,7 +83539,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-02",
-      "days_since_latest": 0,
+      "days_since_latest": 1,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Seasonal Refresh"
@@ -83611,7 +83613,7 @@
             "seasonal_opportunity",
             "evergreen_authority"
           ],
-          "score": 81,
+          "score": 75,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -83649,7 +83651,7 @@
             "seasonal_opportunity",
             "evergreen_authority"
           ],
-          "score": 81,
+          "score": 75,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -83687,7 +83689,7 @@
             "seasonal_opportunity",
             "evergreen_authority"
           ],
-          "score": 81,
+          "score": 75,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -83706,16 +83708,16 @@
         "spring bedroom refresh color palette",
         "natural spring bedroom refresh ideas"
       ],
-      "priority_score": 62,
+      "priority_score": 56,
       "season": "spring",
       "holiday": "",
       "source": "content architecture",
       "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
+        "label": "cold",
+        "boost": -6,
+        "pinterest_article_count": 1,
         "strong_article_count": 0,
-        "weak_article_count": 0,
+        "weak_article_count": 1,
         "average_score": 0.0,
         "average_outbound_clicks": 0.0,
         "average_saves": 0.0

@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-02T09:44:11.808658+00:00",
+  "generated_at": "2026-04-03T09:48:58.789362+00:00",
   "overview": {
-    "pin_count": 36,
-    "published_pin_count": 1,
+    "pin_count": 40,
+    "published_pin_count": 3,
     "analytics_ready_pin_count": 0,
-    "tracked_article_count": 9
+    "tracked_article_count": 10
   },
   "best_performing_clusters": [
     {
@@ -83,7 +83,7 @@
       "cluster_id": "parisian_bedroom",
       "cluster_name": "parisian bedroom",
       "pin_count": 4,
-      "published_pin_count": 0,
+      "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -131,6 +131,24 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "best-furniture-for-scandinavian-bedroom"
+      ]
+    },
+    {
+      "cluster_id": "spring_bedroom_refresh",
+      "cluster_name": "spring bedroom refresh",
+      "pin_count": 4,
+      "published_pin_count": 1,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "spring-bedroom-refresh-mistakes-to-avoid"
       ]
     },
     {
@@ -271,7 +289,7 @@
       "subtopic_id": "furniture",
       "subtopic_name": "furniture and anchors",
       "pin_count": 4,
-      "published_pin_count": 0,
+      "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -341,13 +359,32 @@
       "top_article_slugs": [
         "how-to-style-a-neutral-bedroom"
       ]
+    },
+    {
+      "cluster_id": "spring_bedroom_refresh",
+      "subtopic_id": "refresh",
+      "subtopic_name": "seasonal refresh",
+      "pin_count": 4,
+      "published_pin_count": 1,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "spring-bedroom-refresh-mistakes-to-avoid"
+      ]
     }
   ],
   "best_performing_angles": [
     {
       "angle_id": "best_options",
       "pin_count": 28,
-      "published_pin_count": 1,
+      "published_pin_count": 2,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -381,6 +418,23 @@
       "top_article_slugs": [
         "how-to-style-a-neutral-bathroom",
         "how-to-style-a-neutral-bedroom"
+      ]
+    },
+    {
+      "angle_id": "mistakes",
+      "pin_count": 4,
+      "published_pin_count": 1,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "spring-bedroom-refresh-mistakes-to-avoid"
       ]
     }
   ],
@@ -428,6 +482,27 @@
       ]
     },
     {
+      "visual_style_key": "bottom_title|airy_editorial|seasonal_styling|problem_solving",
+      "style_name": "bottom-title",
+      "visual_family_id": "airy_editorial",
+      "shot_library_id": "seasonal_styling",
+      "intent_id": "problem_solving",
+      "pin_count": 1,
+      "published_pin_count": 1,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "spring-bedroom-refresh-mistakes-to-avoid"
+      ]
+    },
+    {
       "visual_style_key": "bottom_title|crisp_modern|color_palette|implementation",
       "style_name": "bottom-title",
       "visual_family_id": "crisp_modern",
@@ -455,7 +530,7 @@
       "shot_library_id": "general_decor",
       "intent_id": "comparison",
       "pin_count": 3,
-      "published_pin_count": 0,
+      "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -534,6 +609,27 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "best-furniture-for-a-scandinavian-bathroom"
+      ]
+    },
+    {
+      "visual_style_key": "centered_title|airy_editorial|seasonal_styling|problem_solving",
+      "style_name": "centered-title",
+      "visual_family_id": "airy_editorial",
+      "shot_library_id": "seasonal_styling",
+      "intent_id": "problem_solving",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "spring-bedroom-refresh-mistakes-to-avoid"
       ]
     },
     {
@@ -646,6 +742,27 @@
       ]
     },
     {
+      "visual_style_key": "minimalist_overlay|airy_editorial|seasonal_styling|problem_solving",
+      "style_name": "minimalist-overlay",
+      "visual_family_id": "airy_editorial",
+      "shot_library_id": "seasonal_styling",
+      "intent_id": "problem_solving",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "spring-bedroom-refresh-mistakes-to-avoid"
+      ]
+    },
+    {
       "visual_style_key": "minimalist_overlay|crisp_modern|color_palette|implementation",
       "style_name": "minimalist-overlay",
       "visual_family_id": "crisp_modern",
@@ -752,6 +869,27 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "best-furniture-for-a-scandinavian-bathroom"
+      ]
+    },
+    {
+      "visual_style_key": "top_title|airy_editorial|seasonal_styling|problem_solving",
+      "style_name": "top-title",
+      "visual_family_id": "airy_editorial",
+      "shot_library_id": "seasonal_styling",
+      "intent_id": "problem_solving",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "spring-bedroom-refresh-mistakes-to-avoid"
       ]
     },
     {
@@ -900,7 +1038,7 @@
         "cluster_id": "parisian_bedroom",
         "cluster_name": "parisian bedroom",
         "pin_count": 4,
-        "published_pin_count": 0,
+        "published_pin_count": 1,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,
@@ -1016,7 +1154,7 @@
       {
         "angle_id": "best_options",
         "pin_count": 28,
-        "published_pin_count": 1,
+        "published_pin_count": 2,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,
@@ -1050,6 +1188,23 @@
         "top_article_slugs": [
           "how-to-style-a-neutral-bathroom",
           "how-to-style-a-neutral-bedroom"
+        ]
+      },
+      {
+        "angle_id": "mistakes",
+        "pin_count": 4,
+        "published_pin_count": 1,
+        "analytics_ready_count": 0,
+        "average_score": 0.0,
+        "average_impressions": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_pin_clicks": 0.0,
+        "average_closeups": 0.0,
+        "signal_label": "no_data",
+        "signal_boost": 0,
+        "top_article_slugs": [
+          "spring-bedroom-refresh-mistakes-to-avoid"
         ]
       }
     ],
@@ -1097,6 +1252,27 @@
         ]
       },
       {
+        "visual_style_key": "bottom_title|airy_editorial|seasonal_styling|problem_solving",
+        "style_name": "bottom-title",
+        "visual_family_id": "airy_editorial",
+        "shot_library_id": "seasonal_styling",
+        "intent_id": "problem_solving",
+        "pin_count": 1,
+        "published_pin_count": 1,
+        "analytics_ready_count": 0,
+        "average_score": 0.0,
+        "average_impressions": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_pin_clicks": 0.0,
+        "average_closeups": 0.0,
+        "signal_label": "no_data",
+        "signal_boost": 0,
+        "top_article_slugs": [
+          "spring-bedroom-refresh-mistakes-to-avoid"
+        ]
+      },
+      {
         "visual_style_key": "bottom_title|crisp_modern|color_palette|implementation",
         "style_name": "bottom-title",
         "visual_family_id": "crisp_modern",
@@ -1124,7 +1300,7 @@
         "shot_library_id": "general_decor",
         "intent_id": "comparison",
         "pin_count": 3,
-        "published_pin_count": 0,
+        "published_pin_count": 1,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,
@@ -1138,29 +1314,6 @@
           "best-furniture-for-an-earthy-bathroom",
           "best-furniture-for-transitional-bathroom",
           "best-furniture-parisian-bedroom"
-        ]
-      },
-      {
-        "visual_style_key": "bottom_title|warm_layered|general_decor|comparison",
-        "style_name": "bottom-title",
-        "visual_family_id": "warm_layered",
-        "shot_library_id": "general_decor",
-        "intent_id": "comparison",
-        "pin_count": 3,
-        "published_pin_count": 0,
-        "analytics_ready_count": 0,
-        "average_score": 0.0,
-        "average_impressions": 0.0,
-        "average_saves": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_pin_clicks": 0.0,
-        "average_closeups": 0.0,
-        "signal_label": "no_data",
-        "signal_boost": 0,
-        "top_article_slugs": [
-          "best-furniture-for-earthy-bedroom",
-          "best-furniture-for-scandinavian-bedroom",
-          "best-furniture-transitional-bedroom"
         ]
       }
     ]

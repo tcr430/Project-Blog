@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-04-02T09:52:42.129382+00:00",
-  "cluster_count": 16,
+  "generated_at": "2026-04-03T09:55:41.339164+00:00",
+  "cluster_count": 17,
   "summary": {
     "hot": 0,
     "warm": 0,
-    "cold": 1,
-    "no_data": 15
+    "cold": 3,
+    "no_data": 14
   },
   "clusters": [
     {
@@ -197,6 +197,30 @@
       "signal_boost": 0
     },
     {
+      "cluster_name": "parisian bathroom",
+      "article_count": 1,
+      "article_slugs": [
+        "parisian-bathroom-texture-mistakes-to-avoid"
+      ],
+      "primary_keywords": [
+        "parisian bathroom texture mistakes to avoid"
+      ],
+      "secondary_keywords": [
+        "parisian bathroom ideas",
+        "how to style a parisian bathroom",
+        "parisian bathroom decor",
+        "parisian bathroom layout ideas"
+      ],
+      "pinterest_article_count": 0,
+      "strong_article_count": 0,
+      "weak_article_count": 0,
+      "average_score": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_saves": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0
+    },
+    {
       "cluster_name": "parisian bedroom",
       "article_count": 1,
       "article_slugs": [
@@ -211,14 +235,14 @@
         "parisian bedroom decor",
         "parisian bedroom layout ideas"
       ],
-      "pinterest_article_count": 0,
+      "pinterest_article_count": 1,
       "strong_article_count": 0,
-      "weak_article_count": 0,
+      "weak_article_count": 1,
       "average_score": 0.0,
       "average_outbound_clicks": 0.0,
       "average_saves": 0.0,
-      "signal_label": "no_data",
-      "signal_boost": 0
+      "signal_label": "cold",
+      "signal_boost": -6
     },
     {
       "cluster_name": "scandinavian bathroom",
@@ -306,14 +330,14 @@
         "budget spring bedroom refresh ideas",
         "spring bedroom refresh color palette"
       ],
-      "pinterest_article_count": 0,
+      "pinterest_article_count": 1,
       "strong_article_count": 0,
-      "weak_article_count": 0,
+      "weak_article_count": 1,
       "average_score": 0.0,
       "average_outbound_clicks": 0.0,
       "average_saves": 0.0,
-      "signal_label": "no_data",
-      "signal_boost": 0
+      "signal_label": "cold",
+      "signal_boost": -6
     },
     {
       "cluster_name": "spring living room styling",

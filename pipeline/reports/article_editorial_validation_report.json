@@ -1,6 +1,51 @@
 {
-  "generated_at": "2026-04-02T09:45:39.432036+00:00",
+  "generated_at": "2026-04-03T09:49:40.624540+00:00",
   "articles": [
+    {
+      "article_slug": "parisian-bathroom-texture-mistakes-to-avoid",
+      "cluster_id": "parisian_bathroom",
+      "subtopic_id": "textures",
+      "angle_id": "mistakes",
+      "primary_keyword": "parisian bathroom texture mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Introduction opens with a broad interchangeable framing pattern.",
+        "Several section headings do not signal the topic strongly enough."
+      ],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 122,
+          "concept_overlap": 5,
+          "first_sentence": "Creating a Parisian bathroom is a beloved design goal—its understated elegance, soft earthy tones, and mix of natural materials promise a serene and timeless space."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 2,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "When Too Much Shine Steals the Subtlety",
+            "Avoiding Textural Overload by Choosing a Cohesive Palette",
+            "Overlooking Layered Texture Harmonics",
+            "Portraying Texture in Proportion to Space and Light",
+            "Losing the Intimate Warmth: When Natural Textures Are Forgotten"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 8,
+          "specificity_term_hits": 12,
+          "secondary_keyword_hits": 1
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-04-03T09:49:40.624352+00:00"
+    },
     {
       "article_slug": "spring-bedroom-refresh-mistakes-to-avoid",
       "cluster_id": "spring_bedroom_refresh",

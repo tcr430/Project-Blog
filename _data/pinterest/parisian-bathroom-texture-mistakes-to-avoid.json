@@ -1,0 +1,184 @@
+{
+  "article_title": "Parisian Bathroom Texture Mistakes to Avoid",
+  "article_slug": "parisian-bathroom-texture-mistakes-to-avoid",
+  "article_relative_url": "/mistakes%20%26%20fixes/2026/04/03/parisian-bathroom-texture-mistakes-to-avoid/",
+  "article_url": "https://thelivinedit.com/mistakes%20%26%20fixes/2026/04/03/parisian-bathroom-texture-mistakes-to-avoid/",
+  "meta_description": "Discover how to avoid the common texture mistakes in Parisian bathroom decor. Learn practical fixes to create a serene, layered space with timeless materials and soft neutrals.",
+  "cluster_id": "parisian_bathroom",
+  "subtopic_id": "textures",
+  "angle_id": "mistakes",
+  "intent_id": "problem_solving",
+  "visual_direction": {
+    "family_id": "airy_editorial",
+    "mood": "airy, quiet, polished editorial styling",
+    "lighting": "soft natural daylight with gentle highlights",
+    "palette": "chalky whites, oat tones, pale woods, restrained contrast",
+    "intent_id": "problem_solving",
+    "profile_id": "problem_solving",
+    "shot_library_id": "textures_materials"
+  },
+  "hero_image_path": "/assets/img/parisian-bathroom-texture-mistakes-to-avoid/hero.png",
+  "site_root_url": "https://thelivinedit.com",
+  "variant_count": 4,
+  "strategy": {
+    "minimum_variant_count": 4,
+    "generated_variant_count": 4,
+    "bonus_slots": 0,
+    "ranked_variant_types": [
+      "trend_overview",
+      "practical_tips",
+      "product_led",
+      "styling_angle"
+    ],
+    "article_score": null,
+    "notes": [
+      "applying performance weighting: no historical lift yet, using balanced defaults",
+      "exploring board default",
+      "exploring board bathroom"
+    ],
+    "board_config_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_boards.json",
+    "design_system_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_pin_design_system.json"
+  },
+  "variants": [
+    {
+      "variant_key": "pin-1",
+      "variant_type": "trend_overview",
+      "style_name": "bottom-title",
+      "template_family": "editorial_split",
+      "title": "Avoid These Texture Mistakes for a Chic Parisian Bathroom",
+      "description": "Learn which texture pitfalls to avoid for a refined Parisian bathroom that feels inviting and balanced. Clear tips for layering natural materials.",
+      "display_headline": "How to Get a Parisian Bathroom Right",
+      "display_subheadline": "Simple, high-impact guidance that makes parisian bathroom texture mistakes to avoid easier to apply in real life.",
+      "display_kicker": "Save this guide",
+      "cta_label": "Read the full article",
+      "topic_style": "tutorial",
+      "image_path": "/assets/pins/parisian-bathroom-texture-mistakes-to-avoid/pin-1.png",
+      "board": {
+        "key": "default",
+        "name": "Home Decor Inspiration"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 0,
+      "render_diagnostics": {
+        "template_family": "editorial_split",
+        "topic_style": "tutorial",
+        "content_density": "medium",
+        "headline_font_size": 76,
+        "subheadline_font_size": 21,
+        "headline_truncated": false,
+        "subheadline_truncated": false,
+        "subheadline_requested": true,
+        "used_height": 505,
+        "content_box_height": 524,
+        "quality_score": 100,
+        "quality_warnings": []
+      }
+    },
+    {
+      "variant_key": "pin-2",
+      "variant_type": "practical_tips",
+      "style_name": "centered-title",
+      "template_family": "editorial_split",
+      "title": "Parisian Bathroom Texture Mistakes to Avoid: Practical Tips That Make It Work",
+      "description": "Use these practical design moves to make parisian bathroom texture mistakes to avoid feel balanced, useful, and easy to live with.",
+      "display_headline": "What Actually Works in a Parisian Bathroom",
+      "display_subheadline": "Useful design moves to make parisian bathroom texture mistakes to avoid feel calmer, clearer, and more pulled together.",
+      "display_kicker": "Practical guide",
+      "cta_label": "Use these ideas",
+      "topic_style": "tutorial",
+      "image_path": "/assets/pins/parisian-bathroom-texture-mistakes-to-avoid/pin-2.png",
+      "board": {
+        "key": "bathroom",
+        "name": "Bathroom Styling Notes"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 1,
+      "render_diagnostics": {
+        "template_family": "editorial_split",
+        "topic_style": "tutorial",
+        "content_density": "medium",
+        "headline_font_size": 76,
+        "subheadline_font_size": 21,
+        "headline_truncated": true,
+        "subheadline_truncated": false,
+        "subheadline_requested": true,
+        "used_height": 505,
+        "content_box_height": 524,
+        "quality_score": 92,
+        "quality_warnings": [
+          "headline truncated"
+        ]
+      }
+    },
+    {
+      "variant_key": "pin-3",
+      "variant_type": "product_led",
+      "style_name": "minimalist-overlay",
+      "template_family": "comparison_panel",
+      "title": "4 Pieces That Elevate Parisian Bathroom Texture Mistakes to Avoid",
+      "description": "Discover decor pieces and finishing details that help parisian bathroom texture mistakes to avoid feel more intentional without looking overdone.",
+      "display_headline": "Before You Buy for a Parisian Bathroom",
+      "display_subheadline": "A decision-friendly breakdown of the materials, shapes, and details worth prioritizing.",
+      "display_kicker": "Worth comparing",
+      "cta_label": "Compare the options",
+      "topic_style": "tutorial",
+      "image_path": "/assets/pins/parisian-bathroom-texture-mistakes-to-avoid/pin-3.png",
+      "board": {
+        "key": "bathroom",
+        "name": "Bathroom Styling Notes"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 2,
+      "render_diagnostics": {
+        "template_family": "comparison_panel",
+        "topic_style": "tutorial",
+        "content_density": "medium",
+        "headline_font_size": 72,
+        "subheadline_font_size": null,
+        "headline_truncated": false,
+        "subheadline_truncated": false,
+        "subheadline_requested": true,
+        "used_height": 414,
+        "content_box_height": 462,
+        "quality_score": 82,
+        "quality_warnings": [
+          "subheadline dropped"
+        ]
+      }
+    },
+    {
+      "variant_key": "pin-4",
+      "variant_type": "styling_angle",
+      "style_name": "top-title",
+      "template_family": "editorial_split",
+      "title": "How to Style Parisian Bathroom Texture Mistakes to Avoid for a More Collected Look",
+      "description": "See how color, texture, and room styling can shape parisian bathroom texture mistakes to avoid into a softer, more editorial look.",
+      "display_headline": "Detail That Changes Parisian Bathroom",
+      "display_subheadline": "An editorial take on how parisian bathroom texture mistakes to avoid can feel more elevated without getting overdone.",
+      "display_kicker": "Editorial angle",
+      "cta_label": "See the styling move",
+      "topic_style": "tutorial",
+      "image_path": "/assets/pins/parisian-bathroom-texture-mistakes-to-avoid/pin-4.png",
+      "board": {
+        "key": "bathroom",
+        "name": "Bathroom Styling Notes"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 3,
+      "render_diagnostics": {
+        "template_family": "editorial_split",
+        "topic_style": "tutorial",
+        "content_density": "medium",
+        "headline_font_size": 76,
+        "subheadline_font_size": 21,
+        "headline_truncated": false,
+        "subheadline_truncated": false,
+        "subheadline_requested": true,
+        "used_height": 509,
+        "content_box_height": 524,
+        "quality_score": 100,
+        "quality_warnings": []
+      }
+    }
+  ]
+}

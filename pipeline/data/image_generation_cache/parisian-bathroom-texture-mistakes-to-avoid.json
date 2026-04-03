@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "765783fb918023e8f024f9704c2ed5886c9af20a1d19e28b05d64abb376d1fa4",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/parisian-bathroom-texture-mistakes-to-avoid/hero.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-1": {
+    "cache_key": "2e40d2d4d34c288d44625ad3490660fc66cfddac2a3f6fe745863ad760b05e23",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/parisian-bathroom-texture-mistakes-to-avoid/section-1.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-2": {
+    "cache_key": "b43108fa4b572246e3d7349d15724b47f9f7b57074b744c8d072c93b4e8e1eaa",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/parisian-bathroom-texture-mistakes-to-avoid/section-2.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-3": {
+    "cache_key": "87f13e9f696fdcf645fb402e400f4d44e32a9d509c2ee91413391eb26ab02be4",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/parisian-bathroom-texture-mistakes-to-avoid/section-3.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-4": {
+    "cache_key": "2e2182ebfc4db7d3f0f0677dc97b7e0143dc9d9c6d8cb346941e891b1d6e8e26",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/parisian-bathroom-texture-mistakes-to-avoid/section-4.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-5": {
+    "cache_key": "797fc1d94bced6c3026091589e465710065b0c7e5ea2a76dfb60a27cd4d00c45",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/parisian-bathroom-texture-mistakes-to-avoid/section-5.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  }
+}

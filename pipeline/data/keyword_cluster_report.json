@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-04-02T09:52:42.127226+00:00",
-  "cluster_count": 16,
-  "article_count": 16,
+  "generated_at": "2026-04-03T09:55:41.336748+00:00",
+  "cluster_count": 17,
+  "article_count": 17,
   "subtopic_count": 6,
   "angle_count": 5,
   "angle_distribution": {
     "best_options": 9,
     "how_to": 2,
     "ideas": 3,
-    "mistakes": 1,
+    "mistakes": 2,
     "style_specific": 1
   },
   "clusters": [
@@ -371,6 +371,50 @@
       "status": "underdeveloped"
     },
     {
+      "cluster_id": "parisian_bathroom",
+      "cluster_name": "parisian bathroom",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "utility_transition"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "parisian bathroom texture mistakes to avoid"
+      ],
+      "latest_article_date": "2026-04-03",
+      "latest_publication": {
+        "article_slug": "parisian-bathroom-texture-mistakes-to-avoid",
+        "article_title": "Parisian Bathroom Texture Mistakes to Avoid",
+        "publish_date": "2026-04-03",
+        "subtopic_id": "textures",
+        "subtopic_name": "textures and layers",
+        "angle_id": "mistakes"
+      },
+      "representative_article_slugs": [
+        "parisian-bathroom-texture-mistakes-to-avoid"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "textures",
+          "subtopic_name": "textures and layers",
+          "article_count": 1,
+          "latest_article_date": "2026-04-03",
+          "representative_article_slugs": [
+            "parisian-bathroom-texture-mistakes-to-avoid"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "mistakes": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
       "cluster_id": "parisian_bedroom",
       "cluster_name": "parisian bedroom",
       "legacy_cluster_names": [],
@@ -395,8 +439,8 @@
       ],
       "recent_article_count": 1,
       "internal_link_targets_available": 0,
-      "promoted_article_count": 0,
-      "weak_article_count": 0,
+      "promoted_article_count": 1,
+      "weak_article_count": 1,
       "subtopic_count": 1,
       "subtopic_coverage": [
         {
@@ -571,8 +615,8 @@
       ],
       "recent_article_count": 1,
       "internal_link_targets_available": 0,
-      "promoted_article_count": 0,
-      "weak_article_count": 0,
+      "promoted_article_count": 1,
+      "weak_article_count": 1,
       "subtopic_count": 1,
       "subtopic_coverage": [
         {
