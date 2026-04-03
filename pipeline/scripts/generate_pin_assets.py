@@ -9,7 +9,7 @@ from typing import Any
 
 from PIL import Image, ImageColor, ImageDraw, ImageFont
 
-from pinterest_pin_design import classify_topic_style, load_design_system
+from pinterest_pin_design import build_pin_copy_variant, classify_topic_style, load_design_system
 
 PIN_WIDTH = 1000
 PIN_HEIGHT = 1500
@@ -17,6 +17,9 @@ PIN_BORDER_RADIUS = 32
 DEFAULT_QUALITY_SCORE_MINIMUM = 82
 HEADLINE_HARD_MAX_LENGTH = 116
 SUBHEADLINE_HARD_MAX_LENGTH = 150
+TEXT_COLUMN_MIN_WIDTH = 540
+TEXT_COLUMN_MAX_WIDTH = 680
+LONG_TEXT_COLUMN_MAX_WIDTH = 720
 
 
 @dataclass
@@ -29,6 +32,7 @@ class TextLayout:
     height: int
     truncated: bool
     box: dict[str, int]
+    balance_score: float
 
 
 def parse_args() -> argparse.Namespace:
@@ -125,6 +129,15 @@ def measure_text(font: ImageFont.FreeTypeFont | ImageFont.ImageFont, text: str) 
     draw = ImageDraw.Draw(dummy)
     left, top, right, bottom = draw.textbbox((0, 0), text, font=font)
     return right - left, bottom - top
+
+
+def measure_text_bbox(
+    font: ImageFont.FreeTypeFont | ImageFont.ImageFont,
+    text: str,
+) -> tuple[int, int, int, int]:
+    dummy = Image.new("RGBA", (10, 10), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(dummy)
+    return draw.textbbox((0, 0), text, font=font)
 
 
 def anchored_x(x: int, anchor: str, text_width: int) -> int:
@@ -270,6 +283,58 @@ def wrap_words_to_width(
     return [line for line in lines if line.strip()], truncated
 
 
+def rebalance_lines(
+    lines: list[str],
+    *,
+    font: ImageFont.FreeTypeFont | ImageFont.ImageFont,
+    max_width: int,
+) -> list[str]:
+    if len(lines) < 2:
+        return lines
+    balanced = list(lines)
+    improved = True
+    while improved:
+        improved = False
+        for index in range(len(balanced) - 1):
+            current_words = balanced[index].split()
+            next_words = balanced[index + 1].split()
+            if len(current_words) <= 1 or not next_words:
+                continue
+            candidate_current = " ".join(current_words[:-1])
+            candidate_next = " ".join([current_words[-1], *next_words])
+            current_width, _ = measure_text(font, candidate_current)
+            next_width, _ = measure_text(font, candidate_next)
+            if current_width > max_width or next_width > max_width:
+                continue
+            old_delta = abs(measure_text(font, balanced[index])[0] - measure_text(font, balanced[index + 1])[0])
+            new_delta = abs(current_width - next_width)
+            if new_delta + 12 < old_delta:
+                balanced[index] = candidate_current
+                balanced[index + 1] = candidate_next
+                improved = True
+    return balanced
+
+
+def compute_line_balance_score(
+    lines: list[str],
+    *,
+    font: ImageFont.FreeTypeFont | ImageFont.ImageFont,
+    max_width: int,
+) -> float:
+    if not lines:
+        return 0.0
+    widths = [measure_text(font, line)[0] for line in lines]
+    if len(widths) == 1:
+        return 1.0
+    width_ratios = [width / max_width for width in widths if max_width > 0]
+    avg_ratio = sum(width_ratios) / len(width_ratios)
+    variance = sum(abs(ratio - avg_ratio) for ratio in width_ratios) / len(width_ratios)
+    shortest = min(widths)
+    longest = max(widths)
+    shortest_ratio = shortest / longest if longest else 1.0
+    return max(0.0, 1.0 - min(1.0, variance * 1.8) - max(0.0, (0.52 - shortest_ratio) * 0.8))
+
+
 def fit_text_layout(
     *,
     text: str,
@@ -283,6 +348,8 @@ def fit_text_layout(
     hard_max_length: int,
 ) -> TextLayout | None:
     cropped_text, truncated_from_length = truncate_text(text, hard_max_length)
+    best_layout: TextLayout | None = None
+    best_score = -1.0
     for font_size in range(max_font_size, min_font_size - 1, -2):
         font = font_loader(font_size)
         lines, truncated_from_wrap = wrap_words_to_width(
@@ -293,11 +360,16 @@ def fit_text_layout(
         )
         if not lines:
             continue
+        lines = rebalance_lines(lines, font=font, max_width=box["width"])
         line_height = max(min_line_height, int(font_size * line_height_ratio))
         max_line_width = max(measure_text(font, line)[0] for line in lines)
         total_height = line_height * len(lines)
         if max_line_width <= box["width"] and total_height <= box["height"]:
-            return TextLayout(
+            balance_score = compute_line_balance_score(lines, font=font, max_width=box["width"])
+            fill_ratio = total_height / box["height"] if box["height"] else 1.0
+            comfort_penalty = max(0.0, fill_ratio - 0.78) * 1.5
+            score = (font_size / max_font_size) * 0.45 + balance_score * 0.4 + (1.0 - comfort_penalty) * 0.15
+            layout = TextLayout(
                 text=cropped_text,
                 lines=lines,
                 font_size=font_size,
@@ -306,8 +378,12 @@ def fit_text_layout(
                 height=total_height,
                 truncated=truncated_from_length or truncated_from_wrap,
                 box=box,
+                balance_score=balance_score,
             )
-    return None
+            if score > best_score:
+                best_layout = layout
+                best_score = score
+    return best_layout
 
 
 def pick_density_bucket(headline: str, subheadline: str) -> str:
@@ -356,6 +432,24 @@ def select_template_candidates(
     return ordered
 
 
+def choose_composition_class(
+    *,
+    template_name: str,
+    density: str,
+    design_system: dict[str, Any],
+) -> str:
+    compositions = design_system.get("composition_classes", {})
+    if density == "long":
+        if template_name in {"minimal_frame_long", "editorial_split_long", "utility_stack_long"}:
+            return "long_title_premium"
+        return "dense_title_safe"
+    if template_name in {"minimal_frame", "minimal_frame_long"}:
+        return "image_forward"
+    if density == "short":
+        return "minimal_copy"
+    return "spacious_editorial"
+
+
 def render_text_block(
     canvas: Image.Image,
     *,
@@ -369,8 +463,8 @@ def render_text_block(
     font = font_loader(layout.font_size)
     baseline_y = layout.box["y"]
     for index, line in enumerate(layout.lines):
-        _, line_height_px = measure_text(font, line)
-        draw_y = baseline_y + index * layout.line_height - line_height_px
+        _, top, _, _ = measure_text_bbox(font, line)
+        draw_y = baseline_y + index * layout.line_height - top
         draw.text(
             (layout.box["x"], draw_y),
             line,
@@ -403,6 +497,14 @@ def draw_brand_label(canvas: Image.Image, brand_name: str, *, x: int, y: int, fo
     return rect_height
 
 
+def measure_brand_label_height(brand_name: str, *, font_size: int) -> int:
+    label = normalize_copy(brand_name).upper()
+    font = ui_font(font_size)
+    _, label_height = measure_text(font, label)
+    padding_y = 12
+    return label_height + padding_y * 2
+
+
 def draw_kicker(canvas: Image.Image, text: str, *, x: int, y: int, font_size: int, accent: tuple[int, int, int, int]) -> int:
     draw = ImageDraw.Draw(canvas)
     font = ui_font(font_size)
@@ -410,6 +512,13 @@ def draw_kicker(canvas: Image.Image, text: str, *, x: int, y: int, font_size: in
     draw.text((x, y), label, font=font, fill=accent)
     width, height = measure_text(font, label)
     draw.line((x, y + height + 8, x + width + 14, y + height + 8), fill=accent, width=3)
+    return height + 12
+
+
+def measure_kicker_height(text: str, *, font_size: int) -> int:
+    font = ui_font(font_size)
+    label = normalize_copy(text).upper()
+    _, height = measure_text(font, label)
     return height + 12
 
 
@@ -428,13 +537,32 @@ def draw_cta_chip(
     draw = ImageDraw.Draw(overlay)
     font = ui_font(font_size)
     label = normalize_copy(text)
-    width, height = measure_text(font, label)
+    left, top, right, bottom = measure_text_bbox(font, label)
+    width = right - left
+    height = bottom - top
     chip_width = width + padding_x * 2
     chip_height = height + padding_y * 2
     draw.rounded_rectangle((x, y, x + chip_width, y + chip_height), radius=18, fill=accent)
-    draw.text((x + padding_x, y + padding_y - 1), label, font=font, fill=(255, 255, 255, 255))
+    text_x = x + padding_x - left
+    text_y = y + ((chip_height - height) / 2) - top
+    draw.text((text_x, text_y), label, font=font, fill=(255, 255, 255, 255))
     canvas.alpha_composite(overlay)
     return chip_width, chip_height
+
+
+def measure_cta_chip(
+    text: str,
+    *,
+    font_size: int,
+    padding_x: int,
+    padding_y: int,
+) -> tuple[int, int]:
+    font = ui_font(font_size)
+    label = normalize_copy(text)
+    left, top, right, bottom = measure_text_bbox(font, label)
+    width = right - left
+    height = bottom - top
+    return width + padding_x * 2, height + padding_y * 2
 
 
 def validate_layout(
@@ -464,8 +592,15 @@ def validate_layout(
             score -= 14
             warnings.append("headline font fell below premium threshold")
         if headline_layout.truncated:
-            score -= 8
+            score -= 28
             warnings.append("headline truncated")
+        if headline_layout.balance_score < 0.62:
+            score -= 18
+            warnings.append("headline line breaks are unbalanced")
+        title_density = headline_layout.height / content_box["height"] if content_box["height"] else 1.0
+        if title_density > 0.52:
+            score -= 10
+            warnings.append("headline block is too dominant for the card")
 
     if subheadline_layout is None and diagnostics.get("subheadline_requested"):
         score -= 18
@@ -480,18 +615,33 @@ def validate_layout(
         if subheadline_layout.truncated:
             score -= 5
             warnings.append("subheadline truncated")
+        if headline_layout is not None:
+            ratio = subheadline_layout.font_size / max(1, headline_layout.font_size)
+            if ratio < 0.33:
+                score -= 12
+                warnings.append("subtitle hierarchy is too weak against the headline")
 
     if used_height > content_box["height"]:
         score -= 40
         warnings.append("content overflowed vertical safe area")
     unused_height = max(0, content_box["height"] - used_height)
     if unused_height > int(validation.get("max_unused_vertical_space", 250)):
-        score -= 6
+        score -= 14
         warnings.append("layout left excessive dead space")
+    fill_ratio = used_height / content_box["height"] if content_box["height"] else 1.0
+    if fill_ratio < 0.34:
+        score -= 14
+        warnings.append("content stack is too sparse for the card height")
+    elif fill_ratio < 0.42:
+        score -= 8
+        warnings.append("content stack feels underfilled")
 
     if show_cta and cta_height <= 0:
         score -= 12
         warnings.append("cta missing")
+    if diagnostics.get("composition_class") == "dense_title_safe" and diagnostics.get("show_brand_label"):
+        score -= 8
+        warnings.append("top label crowds a dense title layout")
     return max(0, score), warnings
 
 
@@ -518,20 +668,32 @@ def build_pin_image(
     canvas_rules = design_system.get("canvas", {})
     safe_margin = int(canvas_rules.get("safe_margin", 68))
 
+    variant_type = str(variant.get("variant_type", "")).strip()
+    generated_copy = build_pin_copy_variant(article_payload, variant_type=variant_type)
+    has_pin_specific_copy = bool(variant.get("display_headline")) and bool(variant.get("display_subheadline"))
+
     headline_raw, _ = truncate_text(
-        str(variant.get("display_headline") or variant.get("title") or ""),
+        str(variant.get("display_headline") or generated_copy.get("headline") or variant.get("title") or ""),
         HEADLINE_HARD_MAX_LENGTH,
     )
     subheadline_raw, _ = truncate_text(
-        str(variant.get("display_subheadline") or variant.get("description") or ""),
+        str(variant.get("display_subheadline") or generated_copy.get("subheadline") or variant.get("description") or ""),
         SUBHEADLINE_HARD_MAX_LENGTH,
     )
     headline = normalize_copy(headline_raw)
     subheadline = normalize_copy(subheadline_raw)
-    kicker = normalize_copy(str(variant.get("display_kicker") or topic_style.get("kicker_prefix") or ""))
-    cta_label = normalize_copy(str(variant.get("cta_label") or design_system.get("brand", {}).get("cta_text") or ""))
+    kicker_source = variant.get("display_kicker") if has_pin_specific_copy else generated_copy.get("kicker")
+    kicker = normalize_copy(str(kicker_source or ""))
+    cta_source = variant.get("cta_label") if has_pin_specific_copy else generated_copy.get("cta_label")
+    cta_label = normalize_copy(str(cta_source or design_system.get("brand", {}).get("cta_text") or ""))
 
     density = pick_density_bucket(headline, subheadline)
+    composition_class = choose_composition_class(
+        template_name=template_name,
+        density=density,
+        design_system=design_system,
+    )
+    composition = dict(design_system.get("composition_classes", {}).get(composition_class, {}))
     canvas = Image.new("RGBA", (PIN_WIDTH, PIN_HEIGHT), parse_rgba(design_system["brand"]["background"]))
     hero = crop_to_pin_size(base_image.copy(), mode=str(template.get("image_mode", "full_bleed")))
     hero.putalpha(rounded_mask(hero.size, PIN_BORDER_RADIUS))
@@ -544,16 +706,17 @@ def build_pin_image(
 
     panel = dict(template.get("panel", {}))
     panel["fill"] = str(topic_style.get("panel", design_system["brand"]["paper"]))
-    draw_rounded_panel(canvas, panel)
 
     if int(panel.get("width", 0)) > 0 and int(panel.get("height", 0)) > 0:
+        max_panel = {"x": int(panel["x"]), "y": int(panel["y"]), "width": int(panel["width"]), "height": int(panel["height"])}
         content_box = build_content_box(
-            {"x": int(panel["x"]), "y": int(panel["y"]), "width": int(panel["width"]), "height": int(panel["height"])},
+            max_panel,
             padding_x=int(spacing.get("panel_inner_padding_x", 28)),
             padding_y=int(spacing.get("panel_inner_padding_y", 26)),
             safe_margin=safe_margin,
         )
     else:
+        max_panel = None
         headline_box = template["headline_box"]
         subheadline_box = template["subheadline_box"]
         min_x = min(int(headline_box["x"]), int(subheadline_box["x"]))
@@ -565,33 +728,34 @@ def build_pin_image(
             "width": min(PIN_WIDTH - safe_margin - min_x, max_width),
             "height": PIN_HEIGHT - safe_margin - min_y,
         }
+    max_text_column_width = LONG_TEXT_COLUMN_MAX_WIDTH if density == "long" else TEXT_COLUMN_MAX_WIDTH
+    content_box["width"] = max(TEXT_COLUMN_MIN_WIDTH, min(max_text_column_width, content_box["width"]))
 
     accent_color = parse_rgba(str(topic_style.get("accent", design_system["brand"]["accent"])))
     ink = parse_rgba(design_system["brand"]["ink"])
     muted_ink = parse_rgba(design_system["brand"]["muted_ink"])
-    headline_fill = ink if template_name not in {"minimal_frame", "minimal_frame_long"} else (255, 255, 255, 255)
-    subheadline_fill = muted_ink if template_name not in {"minimal_frame", "minimal_frame_long"} else (255, 255, 255, 230)
+    template_has_panel = int(panel.get("width", 0)) > 0 and int(panel.get("height", 0)) > 0
+    headline_fill = ink if template_has_panel or template_name not in {"minimal_frame", "minimal_frame_long"} else (255, 255, 255, 255)
+    subheadline_fill = muted_ink if template_has_panel or template_name not in {"minimal_frame", "minimal_frame_long"} else (255, 255, 255, 230)
 
     current_y = content_box["y"]
-    brand_height = draw_brand_label(
-        canvas,
-        brand_name=brand_name,
-        x=content_box["x"],
-        y=current_y,
-        font_size=int(brand_rules.get("font_size", 22)),
-    )
-    current_y += brand_height + int(brand_rules.get("gap_after", 30))
-
-    if kicker:
-        kicker_height = draw_kicker(
-            canvas,
-            kicker,
-            x=content_box["x"],
-            y=current_y,
-            font_size=int(kicker_rules.get("font_size", 18)),
-            accent=accent_color,
+    current_y += int(content_box["height"] * float(composition.get("start_offset_ratio", 0.0)))
+    show_brand_label = bool(composition.get("show_brand_label", True))
+    show_kicker = bool(composition.get("show_kicker", True))
+    brand_height = 0
+    if show_brand_label:
+        brand_height = measure_brand_label_height(
+            brand_name,
+            font_size=int(brand_rules.get("font_size", 22)),
         )
-        current_y += kicker_height + int(kicker_rules.get("gap_after", 28))
+        current_y += brand_height + int(composition.get("brand_gap_after", brand_rules.get("gap_after", 30)))
+
+    if kicker and show_kicker:
+        kicker_height = measure_kicker_height(
+            kicker,
+            font_size=int(kicker_rules.get("font_size", 18)),
+        )
+        current_y += kicker_height + int(composition.get("kicker_gap_after", kicker_rules.get("gap_after", 28)))
 
     remaining_height = max(0, content_box["height"] - (current_y - content_box["y"]))
     headline_box = {"x": content_box["x"], "y": current_y, "width": content_box["width"], "height": remaining_height}
@@ -599,7 +763,7 @@ def build_pin_image(
         text=headline,
         font_loader=title_font,
         box=headline_box,
-        max_font_size=int(template.get("headline_font_size", 72)),
+        max_font_size=max(42, int(int(template.get("headline_font_size", 72)) * float(composition.get("headline_scale", 1.0)))),
         min_font_size=max(
             int(template.get("headline_min_font_size", 48)),
             int(layout_rules.get("headline", {}).get("min_font_size", 46)),
@@ -614,24 +778,18 @@ def build_pin_image(
     )
 
     if headline_layout is not None:
-        render_text_block(
-            canvas,
-            layout=headline_layout,
-            font_loader=title_font,
-            fill=headline_fill,
-            stroke_fill=(0, 0, 0, 48) if template_name in {"minimal_frame", "minimal_frame_long"} else None,
-            stroke_width=2 if template_name in {"minimal_frame", "minimal_frame_long"} else 0,
-        )
-        current_y = headline_layout.box["y"] + headline_layout.height + int(spacing.get("headline_to_subheadline", 22))
+        current_y = headline_layout.box["y"] + headline_layout.height + int(composition.get("headline_to_subheadline", spacing.get("headline_to_subheadline", 22)))
 
-    cta_enabled = bool(template.get("cta_enabled"))
+    cta_enabled = bool(cta_label)
     cta_reserved_height = 0
     if cta_enabled and cta_label:
-        cta_reserved_height = (
-            int(ui_font(int(cta_rules.get("font_size", 19))).size if hasattr(ui_font(int(cta_rules.get("font_size", 19))), "size") else cta_rules.get("font_size", 19))
-            + int(cta_rules.get("padding_y", 10)) * 2
-            + int(spacing.get("subheadline_to_cta", 26))
+        _, cta_measured_height = measure_cta_chip(
+            cta_label,
+            font_size=int(cta_rules.get("font_size", 19)),
+            padding_x=int(cta_rules.get("padding_x", 18)),
+            padding_y=int(cta_rules.get("padding_y", 10)),
         )
+        cta_reserved_height = cta_measured_height + int(spacing.get("subheadline_to_cta", 26))
 
     subheadline_layout: TextLayout | None = None
     if subheadline:
@@ -645,7 +803,7 @@ def build_pin_image(
             text=subheadline,
             font_loader=ui_font,
             box=subheadline_box,
-            max_font_size=int(template.get("subheadline_font_size", 24)),
+            max_font_size=max(18, int(int(template.get("subheadline_font_size", 24)) * float(composition.get("subtitle_scale", 1.0)))),
             min_font_size=max(
                 int(template.get("subheadline_min_font_size", 18)),
                 int(layout_rules.get("subheadline", {}).get("min_font_size", 18)),
@@ -659,31 +817,96 @@ def build_pin_image(
             hard_max_length=SUBHEADLINE_HARD_MAX_LENGTH,
         )
         if subheadline_layout is not None:
-            render_text_block(
-                canvas,
-                layout=subheadline_layout,
-                font_loader=ui_font,
-                fill=subheadline_fill,
-            )
-            current_y = subheadline_layout.box["y"] + subheadline_layout.height + int(spacing.get("subheadline_to_cta", 26))
+            current_y = subheadline_layout.box["y"] + subheadline_layout.height + int(composition.get("subheadline_to_cta", spacing.get("subheadline_to_cta", 26)))
 
     cta_height = 0
+    cta_width = 0
     if cta_enabled and cta_label:
-        _, cta_height = draw_cta_chip(
-            canvas,
+        cta_width, cta_height = measure_cta_chip(
             cta_label,
-            x=content_box["x"],
-            y=current_y,
             font_size=int(cta_rules.get("font_size", 19)),
-            accent=accent_color,
             padding_x=int(cta_rules.get("padding_x", 18)),
             padding_y=int(cta_rules.get("padding_y", 10)),
         )
         current_y += cta_height
 
     used_height = current_y - content_box["y"]
+
+    if max_panel is not None:
+        padding_x = int(spacing.get("panel_inner_padding_x", 28))
+        padding_y = int(spacing.get("panel_inner_padding_y", 26))
+        rendered_widths = [
+            layout.width for layout in (headline_layout, subheadline_layout) if layout is not None
+        ]
+        if cta_width:
+            rendered_widths.append(cta_width)
+        content_width = max(rendered_widths) if rendered_widths else content_box["width"]
+        desired_content_width = max(TEXT_COLUMN_MIN_WIDTH, min(max_text_column_width, content_width + 12))
+        min_panel_width = min(max_panel["width"], TEXT_COLUMN_MIN_WIDTH + padding_x * 2)
+        max_panel_width = min(max_panel["width"], max_text_column_width + padding_x * 2)
+        panel["width"] = max(min_panel_width, min(max_panel_width, desired_content_width + padding_x * 2))
+        panel["height"] = max(
+            min(max_panel["height"], 260),
+            min(max_panel["height"], used_height + padding_y * 2 + 12),
+        )
+        panel["x"] = max_panel["x"]
+        panel["y"] = max_panel["y"]
+        draw_rounded_panel(canvas, panel)
+
+    if show_brand_label:
+        brand_height = draw_brand_label(
+            canvas,
+            brand_name=brand_name,
+            x=content_box["x"],
+            y=content_box["y"] + int(content_box["height"] * float(composition.get("start_offset_ratio", 0.0))),
+            font_size=int(brand_rules.get("font_size", 22)),
+        )
+
+    if kicker and show_kicker:
+        kicker_y = content_box["y"] + int(content_box["height"] * float(composition.get("start_offset_ratio", 0.0))) + (
+            brand_height + int(composition.get("brand_gap_after", brand_rules.get("gap_after", 30))) if show_brand_label else 0
+        )
+        draw_kicker(
+            canvas,
+            kicker,
+            x=content_box["x"],
+            y=kicker_y,
+            font_size=int(kicker_rules.get("font_size", 18)),
+            accent=accent_color,
+        )
+
+    if headline_layout is not None:
+        render_text_block(
+            canvas,
+            layout=headline_layout,
+            font_loader=title_font,
+            fill=headline_fill,
+            stroke_fill=(0, 0, 0, 48) if template_name in {"minimal_frame", "minimal_frame_long"} and not template_has_panel else None,
+            stroke_width=2 if template_name in {"minimal_frame", "minimal_frame_long"} and not template_has_panel else 0,
+        )
+
+    if subheadline_layout is not None:
+        render_text_block(
+            canvas,
+            layout=subheadline_layout,
+            font_loader=ui_font,
+            fill=subheadline_fill,
+        )
+
+    if cta_enabled and cta_label:
+        draw_cta_chip(
+            canvas,
+            cta_label,
+            x=content_box["x"],
+            y=content_box["y"] + used_height - cta_height,
+            font_size=int(cta_rules.get("font_size", 19)),
+            accent=accent_color,
+            padding_x=int(cta_rules.get("padding_x", 18)),
+            padding_y=int(cta_rules.get("padding_y", 10)),
+        )
     diagnostics = {
         "template_family": template_name,
+        "composition_class": composition_class,
         "topic_style": topic_style_key,
         "content_density": density,
         "headline_font_size": headline_layout.font_size if headline_layout else None,
@@ -691,6 +914,7 @@ def build_pin_image(
         "headline_truncated": bool(headline_layout.truncated) if headline_layout else False,
         "subheadline_truncated": bool(subheadline_layout.truncated) if subheadline_layout else False,
         "subheadline_requested": bool(subheadline),
+        "show_brand_label": show_brand_label,
         "used_height": used_height,
         "content_box_height": content_box["height"],
     }
@@ -785,6 +1009,10 @@ def generate_pin_assets(pinterest_metadata_path: Path) -> list[Path]:
             raise ValueError(
                 f"Variant {index} failed layout validation ({diagnostics.get('quality_score', 0)}): "
                 f"{', '.join(diagnostics.get('quality_warnings', []))}"
+            )
+        if bool(diagnostics.get("headline_truncated")) and variant_type in {"trend_overview", "practical_tips"}:
+            raise ValueError(
+                f"Variant {index} rejected because the headline still truncates in a primary layout."
             )
 
         variant["render_diagnostics"] = diagnostics

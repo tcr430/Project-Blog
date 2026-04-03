@@ -49,7 +49,24 @@
         "name": "Bedroom Retreat Ideas"
       },
       "priority_score": 0.0,
-      "schedule_rank": 0
+      "schedule_rank": 0,
+      "template_family": "insight_band",
+      "render_diagnostics": {
+        "template_family": "insight_band",
+        "composition_class": "spacious_editorial",
+        "topic_style": "decision",
+        "content_density": "medium",
+        "headline_font_size": 66,
+        "subheadline_font_size": 25,
+        "headline_truncated": false,
+        "subheadline_truncated": false,
+        "subheadline_requested": true,
+        "show_brand_label": false,
+        "used_height": 424,
+        "content_box_height": 496,
+        "quality_score": 100,
+        "quality_warnings": []
+      }
     },
     {
       "variant_key": "pin-2",
@@ -63,7 +80,26 @@
         "name": "Bedroom Retreat Ideas"
       },
       "priority_score": 0.0,
-      "schedule_rank": 1
+      "schedule_rank": 1,
+      "template_family": "insight_band",
+      "render_diagnostics": {
+        "template_family": "insight_band",
+        "composition_class": "spacious_editorial",
+        "topic_style": "decision",
+        "content_density": "medium",
+        "headline_font_size": 66,
+        "subheadline_font_size": 25,
+        "headline_truncated": false,
+        "subheadline_truncated": true,
+        "subheadline_requested": true,
+        "show_brand_label": false,
+        "used_height": 424,
+        "content_box_height": 496,
+        "quality_score": 95,
+        "quality_warnings": [
+          "subheadline truncated"
+        ]
+      }
     },
     {
       "variant_key": "pin-3",
@@ -77,7 +113,24 @@
         "name": "Home Finds & Decor Picks"
       },
       "priority_score": 0.0,
-      "schedule_rank": 2
+      "schedule_rank": 2,
+      "template_family": "insight_band",
+      "render_diagnostics": {
+        "template_family": "insight_band",
+        "composition_class": "spacious_editorial",
+        "topic_style": "decision",
+        "content_density": "medium",
+        "headline_font_size": 66,
+        "subheadline_font_size": 25,
+        "headline_truncated": false,
+        "subheadline_truncated": false,
+        "subheadline_requested": true,
+        "show_brand_label": false,
+        "used_height": 428,
+        "content_box_height": 496,
+        "quality_score": 100,
+        "quality_warnings": []
+      }
     },
     {
       "variant_key": "pin-4",
@@ -91,7 +144,24 @@
         "name": "Bedroom Retreat Ideas"
       },
       "priority_score": 0.0,
-      "schedule_rank": 3
+      "schedule_rank": 3,
+      "template_family": "insight_band",
+      "render_diagnostics": {
+        "template_family": "insight_band",
+        "composition_class": "spacious_editorial",
+        "topic_style": "decision",
+        "content_density": "medium",
+        "headline_font_size": 66,
+        "subheadline_font_size": 25,
+        "headline_truncated": false,
+        "subheadline_truncated": false,
+        "subheadline_requested": true,
+        "show_brand_label": false,
+        "used_height": 428,
+        "content_box_height": 496,
+        "quality_score": 100,
+        "quality_warnings": []
+      }
     }
   ]
 }

@@ -1,58 +1,64 @@
 ﻿## Pinterest Pin Layout System Note
 
-### What was causing the formatting failures
+### Why the previous outputs still looked unformatted
 
-The previous renderer relied on rough character-count wrapping and fixed y-positions. That meant:
+The earlier renderer was already keeping text inside the card, but it still judged layouts too mechanically. A render could pass even when:
 
-- titles were wrapped without measuring real rendered width
-- text size was mostly fixed per template
-- title, subtitle, and CTA positions did not adapt to actual content height
-- layouts could still be accepted even when typography became cramped or unbalanced
+- the headline was too large relative to the card
+- line breaks were visually clumsy
+- the subtitle was too weak against the title
+- the top label crowded the headline
+- the card felt top-heavy or auto-packed instead of composed
 
-As a result, long or dense copy could overflow, compress the card rhythm, or misalign the subtitle/CTA stack.
+So the problem was no longer overflow alone. It was composition quality.
 
-### How typography fitting works now
+### How visual quality is evaluated now
 
-The renderer now measures text against the real box width and height before drawing.
+The renderer now scores layouts on more than simple fit. It evaluates:
 
-For both headline and subheadline it:
+- headline line-balance quality
+- whether the headline block is too dominant for the card
+- headline-to-subtitle hierarchy ratio
+- dropped or truncated supporting copy
+- vertical density and dead space
+- whether the selected composition mode is appropriate for the content density
 
-- truncates to a hard upper bound only when necessary
-- tries font sizes from the template maximum down to a configured minimum
-- wraps lines using measured pixel width, not character counts
-- respects max line counts and line-height rules from the design system
-- accepts a layout only if the full text block fits inside the available box
+A render is only accepted if it clears the quality threshold after those checks.
 
-### How long-title handling works
+### How title wrapping and sizing were improved
 
-The system now handles copy density before rendering:
+Headline fitting no longer just picks the largest font that technically fits.
 
-- short copy prefers short-density templates
-- medium copy prefers medium-density templates
-- long copy prefers long-density templates
+It now:
 
-There are dedicated long-title-safe template families in the design system:
+- measures text in real pixel space
+- tries a range of font sizes
+- rebalances wrapped lines to reduce awkward width jumps between lines
+- scores candidate layouts for line balance and comfort inside the card
+- chooses the best-fitting headline layout, not merely the biggest one
 
-- `editorial_split_long`
-- `utility_stack_long`
-- `minimal_frame_long`
+This means longer titles are allowed to render smaller when that creates a cleaner composition.
 
-The copy layer also tightens pin-facing copy before rendering:
+### Composition classes
 
-- headlines are shortened by removing weak trailing guide phrases when possible
-- subheadlines are reduced to a cleaner first sentence when needed
+The system now selects composition classes based on copy density and template context, including modes such as:
 
-### How validation prevents bad renders
+- `spacious_editorial`
+- `dense_title_safe`
+- `minimal_copy`
+- `long_title_premium`
+- `image_forward`
 
-Every render is scored before output.
+These classes control whether the top label appears, how strongly the headline is scaled, how much space is left between text blocks, and how aggressive the subtitle support should be.
 
-Validation checks include:
+### How this prevents technically-valid but visually-bad pins
 
-- headline fits within its box
-- subheadline fits within its box
-- typography does not fall below premium minimum sizes
-- vertical content stack stays inside the safe content area
-- layouts with excessive dead space or dropped supporting copy are penalized
-- outputs below the quality threshold are rejected
+The renderer now rejects layouts that merely fit but still look weak, such as:
 
-If a candidate template fails, the renderer tries safer template alternatives before saving the pin.
+- cramped title stacks
+- oversized headlines in shallow cards
+- weak subtitle hierarchy
+- crowded top-label areas
+- long-title cards that feel top-heavy
+
+If a candidate template produces that kind of result, the renderer tries safer alternatives before saving the output.

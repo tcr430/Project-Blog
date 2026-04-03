@@ -52,22 +52,22 @@
       },
       "priority_score": 0.0,
       "schedule_rank": 0,
-      "template_family": "editorial_split",
+      "template_family": "insight_band",
       "render_diagnostics": {
-        "template_family": "editorial_split",
+        "template_family": "insight_band",
+        "composition_class": "spacious_editorial",
         "topic_style": "decision",
-        "content_density": "long",
-        "headline_font_size": 76,
-        "subheadline_font_size": 21,
-        "headline_truncated": true,
+        "content_density": "medium",
+        "headline_font_size": 66,
+        "subheadline_font_size": 25,
+        "headline_truncated": false,
         "subheadline_truncated": false,
         "subheadline_requested": true,
-        "used_height": 505,
-        "content_box_height": 524,
-        "quality_score": 92,
-        "quality_warnings": [
-          "headline truncated"
-        ]
+        "show_brand_label": false,
+        "used_height": 424,
+        "content_box_height": 496,
+        "quality_score": 100,
+        "quality_warnings": []
       }
     },
     {
@@ -83,22 +83,22 @@
       },
       "priority_score": 0.0,
       "schedule_rank": 1,
-      "template_family": "utility_stack",
+      "template_family": "comparison_panel",
       "render_diagnostics": {
-        "template_family": "utility_stack",
+        "template_family": "comparison_panel",
+        "composition_class": "spacious_editorial",
         "topic_style": "decision",
-        "content_density": "long",
-        "headline_font_size": 70,
-        "subheadline_font_size": 23,
-        "headline_truncated": true,
+        "content_density": "medium",
+        "headline_font_size": 56,
+        "subheadline_font_size": 25,
+        "headline_truncated": false,
         "subheadline_truncated": false,
         "subheadline_requested": true,
-        "used_height": 563,
-        "content_box_height": 598,
-        "quality_score": 92,
-        "quality_warnings": [
-          "headline truncated"
-        ]
+        "show_brand_label": false,
+        "used_height": 350,
+        "content_box_height": 364,
+        "quality_score": 100,
+        "quality_warnings": []
       }
     },
     {
@@ -114,22 +114,22 @@
       },
       "priority_score": 0.0,
       "schedule_rank": 2,
-      "template_family": "editorial_split",
+      "template_family": "comparison_panel",
       "render_diagnostics": {
-        "template_family": "editorial_split",
+        "template_family": "comparison_panel",
+        "composition_class": "spacious_editorial",
         "topic_style": "decision",
-        "content_density": "long",
-        "headline_font_size": 76,
-        "subheadline_font_size": 23,
-        "headline_truncated": true,
+        "content_density": "medium",
+        "headline_font_size": 52,
+        "subheadline_font_size": 25,
+        "headline_truncated": false,
         "subheadline_truncated": false,
         "subheadline_requested": true,
-        "used_height": 509,
-        "content_box_height": 524,
-        "quality_score": 92,
-        "quality_warnings": [
-          "headline truncated"
-        ]
+        "show_brand_label": false,
+        "used_height": 314,
+        "content_box_height": 364,
+        "quality_score": 100,
+        "quality_warnings": []
       }
     },
     {
@@ -145,23 +145,22 @@
       },
       "priority_score": 0.0,
       "schedule_rank": 3,
-      "template_family": "minimal_frame",
+      "template_family": "insight_band",
       "render_diagnostics": {
-        "template_family": "minimal_frame",
+        "template_family": "insight_band",
+        "composition_class": "spacious_editorial",
         "topic_style": "decision",
-        "content_density": "long",
-        "headline_font_size": 82,
-        "subheadline_font_size": 24,
-        "headline_truncated": true,
-        "subheadline_truncated": true,
+        "content_density": "medium",
+        "headline_font_size": 66,
+        "subheadline_font_size": 25,
+        "headline_truncated": false,
+        "subheadline_truncated": false,
         "subheadline_requested": true,
-        "used_height": 497,
-        "content_box_height": 532,
-        "quality_score": 87,
-        "quality_warnings": [
-          "headline truncated",
-          "subheadline truncated"
-        ]
+        "show_brand_label": false,
+        "used_height": 428,
+        "content_box_height": 496,
+        "quality_score": 100,
+        "quality_warnings": []
       }
     }
   ]

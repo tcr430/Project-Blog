@@ -36,10 +36,52 @@ HEADLINE_FILLER_PATTERNS = [
 
 def simplify_topic_phrase(text: str) -> str:
     cleaned = normalize_text(text)
+    cleaned = cleaned.replace('_', ' ').replace('-', ' ')
     cleaned = re.sub(r'^[Tt]he\s+', '', cleaned)
     cleaned = re.sub(r'\s*:\s*.*$', '', cleaned)
+    cleaned = re.sub(r'\s+', ' ', cleaned)
     cleaned = cleaned.strip(' .')
     return cleaned
+
+
+def title_case_phrase(text: str) -> str:
+    cleaned = normalize_text(text)
+    return cleaned.title() if cleaned else cleaned
+
+
+def compact_room_label(room_phrase: str) -> str:
+    cleaned = simplify_topic_phrase(room_phrase)
+    return title_case_phrase(cleaned or "Your Space")
+
+
+def compact_topic_headline(topic_phrase: str) -> str:
+    cleaned = simplify_topic_phrase(topic_phrase)
+    patterns = [
+        (r'^best furniture for a[n]?\s+', ''),
+        (r'^best furniture for\s+', ''),
+        (r'^how to style\s+', ''),
+        (r'^furniture for a[n]?\s+', ''),
+        (r'^furniture for\s+', ''),
+    ]
+    for pattern, replacement in patterns:
+        cleaned = re.sub(pattern, replacement, cleaned, flags=re.IGNORECASE)
+    cleaned = re.sub(r'\s+', ' ', cleaned).strip(' .:')
+    return title_case_phrase(cleaned)
+
+
+def compact_style_subject(text: str) -> str:
+    cleaned = simplify_topic_phrase(text)
+    replacements = [
+        (r'^best furniture for a[n]?\s+', ''),
+        (r'^best furniture for\s+', ''),
+        (r'^furniture for a[n]?\s+', ''),
+        (r'^furniture for\s+', ''),
+        (r'^how to style\s+', ''),
+    ]
+    for pattern, replacement in replacements:
+        cleaned = re.sub(pattern, replacement, cleaned, flags=re.IGNORECASE)
+    cleaned = cleaned.strip(' .:')
+    return title_case_phrase(cleaned)
 
 
 def shorten_pin_headline(text: str) -> str:
@@ -89,10 +131,15 @@ def classify_topic_style(article_metadata: dict[str, Any]) -> str:
 
 
 def build_pin_copy_variant(article_metadata: dict[str, Any], *, variant_type: str) -> dict[str, str]:
-    title = normalize_text(article_metadata.get('title', ''))
-    primary_keyword = normalize_text(article_metadata.get('primary_keyword', '') or title)
+    title = normalize_text(article_metadata.get('title', '') or article_metadata.get('article_title', ''))
+    primary_keyword = normalize_text(article_metadata.get('primary_keyword', '') or article_metadata.get('article_primary_keyword', '') or title)
     meta_description = normalize_text(article_metadata.get('meta_description', ''))
-    cluster_name = normalize_text(article_metadata.get('cluster_name', '') or article_metadata.get('subtopic_name', ''))
+    cluster_name = normalize_text(
+        article_metadata.get('cluster_name', '')
+        or article_metadata.get('subtopic_name', '')
+        or article_metadata.get('cluster_id', '')
+        or article_metadata.get('subtopic_id', '')
+    )
     room_phrase = extract_room_phrase(title, primary_keyword, cluster_name)
     topic_phrase = simplify_topic_phrase(primary_keyword or title)
     room_label = simplify_topic_phrase(cluster_name or topic_phrase)
@@ -101,34 +148,40 @@ def build_pin_copy_variant(article_metadata: dict[str, Any], *, variant_type: st
     elif room_phrase != 'your space' and room_label and room_phrase in room_label.lower():
         room_phrase = room_label
     style = classify_topic_style(article_metadata)
+    room_title = compact_room_label(room_phrase)
+    compact_topic = compact_topic_headline(topic_phrase) or room_title
+    style_subject = compact_style_subject(title or primary_keyword or compact_topic) or compact_topic
+    buying_subject = style_subject
+    if room_phrase != 'your space':
+        buying_subject = f'{room_title} Furniture'
 
     if variant_type == 'practical_tips':
-        headline = f'What Actually Works in a {room_phrase.title()}' if room_phrase != 'your space' else f'What Actually Works for {topic_phrase}'
-        subheadline = f'Useful design moves to make {topic_phrase.lower()} feel calmer, clearer, and more pulled together.'
+        headline = f'Choosing {buying_subject}'
+        subheadline = f'The shapes, storage pieces, and finishes that make {compact_topic.lower()} feel calm, useful, and pulled together.'
         kicker = 'Practical guide'
         cta = 'Use these ideas'
     elif variant_type == 'product_led':
-        headline = f'Before You Buy for a {room_phrase.title()}' if room_phrase != 'your space' else f'What to Look for in {topic_phrase}'
-        subheadline = f'A decision-friendly breakdown of the materials, shapes, and details worth prioritizing.'
+        headline = f'{buying_subject} Worth Buying'
+        subheadline = f'Start with the pieces that add function, clean lines, and the right amount of warmth.'
         kicker = 'Worth comparing'
         cta = 'Compare the options'
     elif variant_type == 'styling_angle':
-        headline = f'The Detail That Changes {room_phrase.title()}' if room_phrase != 'your space' else f'The Styling Shift That Changes the Room'
-        subheadline = f'An editorial take on how {topic_phrase.lower()} can feel more elevated without getting overdone.'
+        headline = f'How to Style {style_subject}'
+        subheadline = f'Use finish, texture, and restraint to make {compact_topic.lower()} feel polished without clutter.'
         kicker = 'Editorial angle'
         cta = 'See the styling move'
     else:
-        headline = simplify_topic_phrase(title) or simplify_topic_phrase(primary_keyword)
-        subheadline = meta_description or f'A clearer, more useful take on {topic_phrase.lower()} with strong, realistic ideas.'
-        kicker = 'Save this guide'
+        headline = f'Best Furniture for {style_subject}'
+        subheadline = meta_description or f'A clearer, more useful take on {compact_topic.lower()} with grounded, realistic ideas.'
+        kicker = ''
         cta = 'Read the full article'
 
     if style == 'decision' and variant_type == 'trend_overview':
-        headline = f'Where to Start with a {room_phrase.title()}' if room_phrase != 'your space' else f'The Best Starting Point for {topic_phrase}'
-        subheadline = f'If you want stronger choices without guesswork, start with these grounded selection principles.'
+        headline = f'Best Furniture for {style_subject}'
+        subheadline = f'From wood vanities to slim storage, the pieces that keep the room functional, calm, and cohesive.'
     elif style == 'tutorial' and variant_type == 'trend_overview':
-        headline = f'How to Get a {room_phrase.title()} Right' if room_phrase != 'your space' else f'How to Get {topic_phrase} Right'
-        subheadline = f'Simple, high-impact guidance that makes {topic_phrase.lower()} easier to apply in real life.'
+        headline = f'How to Get {style_subject} Right'
+        subheadline = f'Simple, high-impact guidance that makes {compact_topic.lower()} easier to apply in real life.'
 
     return {
         'headline': shorten_pin_headline(headline),
