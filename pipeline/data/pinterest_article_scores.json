@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-03T06:55:13.601212+00:00",
+  "generated_at": "2026-04-03T12:35:56.831795+00:00",
   "articles": [
     {
       "article_slug": "best-furniture-for-a-scandinavian-bathroom",
@@ -25,6 +25,17 @@
     },
     {
       "article_slug": "spring-bedroom-refresh-mistakes-to-avoid",
+      "score": 0,
+      "classification": "underperforming",
+      "reasons": [],
+      "average_impressions": null,
+      "average_saves": null,
+      "average_outbound_clicks": null,
+      "average_engagement_rate": null,
+      "published_pins": 1
+    },
+    {
+      "article_slug": "parisian-bathroom-texture-mistakes-to-avoid",
       "score": 0,
       "classification": "underperforming",
       "reasons": [],
