@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-03T18:30:42.337256+00:00",
+  "generated_at": "2026-04-04T01:06:01.501483+00:00",
   "history_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_history.json",
-  "published_pin_count": 4,
+  "published_pin_count": 5,
   "global_metrics": {
-    "published_pins": 4,
+    "published_pins": 5,
     "analytics_ready_pins": 0,
     "average_impressions": null,
     "average_saves": null,
@@ -15,7 +15,7 @@
   "performance_by_variant_type": [
     {
       "variant_type": "practical_tips",
-      "published_pins": 1,
+      "published_pins": 2,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -63,7 +63,7 @@
     },
     {
       "board_key": "default",
-      "published_pins": 1,
+      "published_pins": 2,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -91,6 +91,20 @@
     },
     {
       "article_slug": "best-furniture-parisian-bedroom",
+      "published_pins": 1,
+      "analytics_ready_pins": 0,
+      "average_impressions": null,
+      "average_saves": null,
+      "average_outbound_clicks": null,
+      "average_pin_clicks": null,
+      "average_closeups": null,
+      "average_engagement_rate": null,
+      "score": 0,
+      "classification": "underperforming",
+      "reasons": []
+    },
+    {
+      "article_slug": "how-to-style-a-neutral-bedroom",
       "published_pins": 1,
       "analytics_ready_pins": 0,
       "average_impressions": null,
@@ -136,7 +150,7 @@
     "top_variant_types": [
       {
         "variant_type": "practical_tips",
-        "published_pins": 1,
+        "published_pins": 2,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -184,7 +198,7 @@
       },
       {
         "board_key": "default",
-        "published_pins": 1,
+        "published_pins": 2,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -212,6 +226,20 @@
       },
       {
         "article_slug": "best-furniture-parisian-bedroom",
+        "published_pins": 1,
+        "analytics_ready_pins": 0,
+        "average_impressions": null,
+        "average_saves": null,
+        "average_outbound_clicks": null,
+        "average_pin_clicks": null,
+        "average_closeups": null,
+        "average_engagement_rate": null,
+        "score": 0,
+        "classification": "underperforming",
+        "reasons": []
+      },
+      {
+        "article_slug": "how-to-style-a-neutral-bedroom",
         "published_pins": 1,
         "analytics_ready_pins": 0,
         "average_impressions": null,
@@ -270,6 +298,20 @@
       },
       {
         "article_slug": "best-furniture-parisian-bedroom",
+        "published_pins": 1,
+        "analytics_ready_pins": 0,
+        "average_impressions": null,
+        "average_saves": null,
+        "average_outbound_clicks": null,
+        "average_pin_clicks": null,
+        "average_closeups": null,
+        "average_engagement_rate": null,
+        "score": 0,
+        "classification": "underperforming",
+        "reasons": []
+      },
+      {
+        "article_slug": "how-to-style-a-neutral-bedroom",
         "published_pins": 1,
         "analytics_ready_pins": 0,
         "average_impressions": null,

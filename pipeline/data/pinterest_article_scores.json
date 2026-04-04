@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-03T18:30:42.337256+00:00",
+  "generated_at": "2026-04-04T01:06:01.501483+00:00",
   "articles": [
     {
       "article_slug": "best-furniture-for-a-scandinavian-bathroom",
@@ -14,6 +14,17 @@
     },
     {
       "article_slug": "best-furniture-parisian-bedroom",
+      "score": 0,
+      "classification": "underperforming",
+      "reasons": [],
+      "average_impressions": null,
+      "average_saves": null,
+      "average_outbound_clicks": null,
+      "average_engagement_rate": null,
+      "published_pins": 1
+    },
+    {
+      "article_slug": "how-to-style-a-neutral-bedroom",
       "score": 0,
       "classification": "underperforming",
       "reasons": [],
