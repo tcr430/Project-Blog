@@ -7,7 +7,7 @@ cluster_name: "spring bedroom refresh"
 cluster_slug: "spring-bedroom-refresh"
 cluster_article_count: 1
 cluster_primary_keywords: ["spring bedroom refresh mistakes to avoid"]
-cluster_generated_at: "2026-04-03T09:55:43.113806+00:00"
+cluster_generated_at: "2026-04-06T10:11:49.759378+00:00"
 cluster_intro: "Spring Bedroom Refresh is a useful decorating topic because it combines inspiration with practical decision-making. Readers usually arrive here looking for a clear style direction, help solving a room problem, or confidence about how to make the look feel intentional at home.
 
 This pillar page brings together the site's coverage around spring bedroom refresh, with article angles shaped by keyword themes such as spring bedroom refresh mistakes to avoid. That mix helps the page support both broader search intent and more specific decorating questions without feeling repetitive.
@@ -61,10 +61,10 @@ These adjacent hubs help readers keep moving through the topic without losing th
 <p><a class="cluster-hub-link" href="/clusters/earthy-bedroom/">Open this cluster</a></p>
 </div>
 <div class="cluster-hub-card">
-<h3><a href="/clusters/neutral-bedroom/">Neutral Bedroom</a></h3>
-<p>Broad editorial cluster for neutral bedroom topics.</p>
+<h3><a href="/clusters/moody-bedroom/">Moody Bedroom</a></h3>
+<p>Broad editorial cluster for moody bedroom topics.</p>
 <p class="cluster-hub-meta">1 article</p>
-<p><a class="cluster-hub-link" href="/clusters/neutral-bedroom/">Open this cluster</a></p>
+<p><a class="cluster-hub-link" href="/clusters/moody-bedroom/">Open this cluster</a></p>
 </div>
 </div>
 

@@ -1,6 +1,23 @@
 {
-  "generated_at": "2026-04-03T09:49:40.621117+00:00",
+  "generated_at": "2026-04-06T10:07:14.963123+00:00",
   "articles": [
+    {
+      "article_slug": "moody-bedroom-texture-mistakes-to-avoid",
+      "cluster": "moody bedroom",
+      "cluster_id": "moody bedroom",
+      "subtopic_id": "textures",
+      "subtopic_name": "textures and layers",
+      "angle_id": "mistakes",
+      "intent_id": "problem_solving",
+      "primary_keyword": "moody bedroom texture mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Primary keyword appears very lightly in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-04-06T10:07:14.962993+00:00"
+    },
     {
       "article_slug": "parisian-bathroom-texture-mistakes-to-avoid",
       "cluster": "parisian bathroom",

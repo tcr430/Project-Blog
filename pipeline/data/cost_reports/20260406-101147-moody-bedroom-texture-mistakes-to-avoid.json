@@ -1,0 +1,296 @@
+{
+  "generated_at": "2026-04-06T10:11:47.778214+00:00",
+  "trend": "moody bedroom texture mistakes to avoid",
+  "slug": "moody-bedroom-texture-mistakes-to-avoid",
+  "article_generation": {
+    "cache_hit": false,
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/article_packages/f07cb4b3bc481ea3c0ad93bb219749dbaf4d7d7f74c46d991144f44d8e09a0eb.json",
+    "model": "gpt-4.1-mini",
+    "generation_calls": 4,
+    "short_retries": 1,
+    "angle_retries": 1,
+    "product_retries": 0,
+    "selected_products": 0,
+    "affiliate_mode": false,
+    "monetization_profile_id": "fix_oriented",
+    "generated_link_count": 0,
+    "primary_keyword": "moody bedroom texture mistakes to avoid",
+    "topical_cluster": "moody bedroom"
+  },
+  "seo_validation": {
+    "article_slug": "moody-bedroom-texture-mistakes-to-avoid",
+    "cluster": "moody bedroom",
+    "cluster_id": "moody bedroom",
+    "subtopic_id": "textures",
+    "subtopic_name": "textures and layers",
+    "angle_id": "mistakes",
+    "intent_id": "problem_solving",
+    "primary_keyword": "moody bedroom texture mistakes to avoid",
+    "validation_status": "warning",
+    "warnings": [
+      "Primary keyword appears very lightly in the article body."
+    ],
+    "errors": [],
+    "duplicate_candidate_slugs": [],
+    "timestamp": "2026-04-06T10:07:14.962993+00:00"
+  },
+  "editorial_validation": {
+    "article_slug": "moody-bedroom-texture-mistakes-to-avoid",
+    "cluster_id": "moody_bedroom",
+    "subtopic_id": "textures",
+    "angle_id": "mistakes",
+    "primary_keyword": "moody bedroom texture mistakes to avoid",
+    "validation_status": "pass",
+    "warnings": [],
+    "errors": [],
+    "checks": {
+      "generic_intro": {
+        "intro_word_count": 147,
+        "concept_overlap": 9,
+        "first_sentence": "Moody bedrooms have become a go-to for creating intimate, cocooning spaces that feel both sophisticated and restful."
+      },
+      "heading_quality": {
+        "heading_count": 5,
+        "vague_heading_count": 0,
+        "low_specificity_heading_count": 1,
+        "repeated_signature_count": 0,
+        "repeated_stem_count": 0,
+        "headings": [
+          "When Shiny Meets Rough: Avoid Clashing Textures That Fight Each Other",
+          "Heavy-Handed Texture Layers Can Dull a Moody Bedroom’s Light",
+          "Overdoing One Texture Breaks the Cohesion of the Space",
+          "Disproportionate Textures Can Throw Off Bedroom Balance",
+          "Missing Soft Contrast Kills the Layered Look"
+        ]
+      },
+      "specificity": {
+        "concept_token_hits": 11,
+        "specificity_term_hits": 12,
+        "secondary_keyword_hits": 2
+      },
+      "distinctiveness": {
+        "nearest_article_slug": "",
+        "max_similarity": 0.0,
+        "strongest_heading_overlap": 0
+      }
+    },
+    "timestamp": "2026-04-06T10:07:14.966347+00:00"
+  },
+  "image_generation": {
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/image_generation_cache/moody-bedroom-texture-mistakes-to-avoid.json",
+    "provider": "flux",
+    "provider_model": "flux-2-max",
+    "model": "flux-2-max",
+    "fallback_provider": "openai",
+    "fallback_model": "gpt-image-1",
+    "size": "1536x1024",
+    "hero_quality": "high",
+    "section_quality": "medium",
+    "allow_fallback": true,
+    "fallback_events": 0,
+    "generated_images": 6,
+    "cache_hits": 0,
+    "generation_calls": 6,
+    "qa_calls": 1,
+    "details": [
+      {
+        "label": "hero",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 1,
+        "quality": "high",
+        "qa_enabled": true,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "4f1e9e41-b510-4d6d-8f41-786b00a7db2e",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=4f1e9e41-b510-4d6d-8f41-786b00a7db2e",
+            "poll_attempts": 18,
+            "provider_status": "Ready",
+            "elapsed_seconds": 29.31,
+            "quality": "high",
+            "elapsed_seconds_total": 29.31,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation",
+        "qa_reason": "The image depicts a quiet, editorial-style bedroom with a single bed as the main focal point, featuring tactile layering and a soft, natural daylight palette. The materials and layout are realistic, free of clutter, text, logos, or people, aligning well with the prompt for a moody bedroom article."
+      },
+      {
+        "label": "section-1",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "0ef4b018-afd3-4963-89d3-30bbb2ea1e1d",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=0ef4b018-afd3-4963-89d3-30bbb2ea1e1d",
+            "poll_attempts": 23,
+            "provider_status": "Ready",
+            "elapsed_seconds": 36.24,
+            "quality": "medium",
+            "elapsed_seconds_total": 36.24,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-2",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "737c6509-9196-4fde-baa4-a9e42fa9dc11",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=737c6509-9196-4fde-baa4-a9e42fa9dc11",
+            "poll_attempts": 26,
+            "provider_status": "Ready",
+            "elapsed_seconds": 40.67,
+            "quality": "medium",
+            "elapsed_seconds_total": 40.67,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-3",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "08d42f8a-aa1c-49c6-b93d-0dde921fd0f9",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=08d42f8a-aa1c-49c6-b93d-0dde921fd0f9",
+            "poll_attempts": 49,
+            "provider_status": "Ready",
+            "elapsed_seconds": 75.79,
+            "quality": "medium",
+            "elapsed_seconds_total": 75.79,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-4",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "8ce4ab2a-6a8a-45cf-b315-1ee760b40d0d",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=8ce4ab2a-6a8a-45cf-b315-1ee760b40d0d",
+            "poll_attempts": 26,
+            "provider_status": "Ready",
+            "elapsed_seconds": 36.94,
+            "quality": "medium",
+            "elapsed_seconds_total": 36.94,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-5",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "8070ca1a-ea67-428c-a5b6-c47ddfe1967f",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=8070ca1a-ea67-428c-a5b6-c47ddfe1967f",
+            "poll_attempts": 26,
+            "provider_status": "Ready",
+            "elapsed_seconds": 40.53,
+            "quality": "medium",
+            "elapsed_seconds_total": 40.53,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      }
+    ]
+  },
+  "pinterest": {
+    "variants_requested": 4,
+    "pin_assets_generated": false,
+    "mode": null
+  }
+}

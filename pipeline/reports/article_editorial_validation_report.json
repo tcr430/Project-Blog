@@ -1,6 +1,48 @@
 {
-  "generated_at": "2026-04-03T09:49:40.624540+00:00",
+  "generated_at": "2026-04-06T10:07:14.966541+00:00",
   "articles": [
+    {
+      "article_slug": "moody-bedroom-texture-mistakes-to-avoid",
+      "cluster_id": "moody_bedroom",
+      "subtopic_id": "textures",
+      "angle_id": "mistakes",
+      "primary_keyword": "moody bedroom texture mistakes to avoid",
+      "validation_status": "pass",
+      "warnings": [],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 147,
+          "concept_overlap": 9,
+          "first_sentence": "Moody bedrooms have become a go-to for creating intimate, cocooning spaces that feel both sophisticated and restful."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 1,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "When Shiny Meets Rough: Avoid Clashing Textures That Fight Each Other",
+            "Heavy-Handed Texture Layers Can Dull a Moody Bedroom’s Light",
+            "Overdoing One Texture Breaks the Cohesion of the Space",
+            "Disproportionate Textures Can Throw Off Bedroom Balance",
+            "Missing Soft Contrast Kills the Layered Look"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 11,
+          "specificity_term_hits": 12,
+          "secondary_keyword_hits": 2
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-04-06T10:07:14.966347+00:00"
+    },
     {
       "article_slug": "parisian-bathroom-texture-mistakes-to-avoid",
       "cluster_id": "parisian_bathroom",
