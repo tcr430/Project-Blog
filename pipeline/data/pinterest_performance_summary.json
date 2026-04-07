@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-07T01:13:04.462726+00:00",
+  "generated_at": "2026-04-07T07:02:42.049502+00:00",
   "history_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_history.json",
-  "published_pin_count": 6,
+  "published_pin_count": 7,
   "global_metrics": {
-    "published_pins": 6,
+    "published_pins": 7,
     "analytics_ready_pins": 0,
     "average_impressions": null,
     "average_saves": null,
@@ -15,7 +15,7 @@
   "performance_by_variant_type": [
     {
       "variant_type": "practical_tips",
-      "published_pins": 2,
+      "published_pins": 3,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -38,6 +38,18 @@
   ],
   "performance_by_board": [
     {
+      "board_key": "bedroom",
+      "published_pins": 4,
+      "analytics_ready_pins": 0,
+      "average_impressions": null,
+      "average_saves": null,
+      "average_outbound_clicks": null,
+      "average_pin_clicks": null,
+      "average_closeups": null,
+      "average_engagement_rate": null,
+      "board_name": "Bedroom Retreat Ideas"
+    },
+    {
       "board_key": "bathroom",
       "published_pins": 1,
       "analytics_ready_pins": 0,
@@ -48,18 +60,6 @@
       "average_closeups": null,
       "average_engagement_rate": null,
       "board_name": "Bathroom Styling Notes"
-    },
-    {
-      "board_key": "bedroom",
-      "published_pins": 3,
-      "analytics_ready_pins": 0,
-      "average_impressions": null,
-      "average_saves": null,
-      "average_outbound_clicks": null,
-      "average_pin_clicks": null,
-      "average_closeups": null,
-      "average_engagement_rate": null,
-      "board_name": "Bedroom Retreat Ideas"
     },
     {
       "board_key": "default",
@@ -75,6 +75,20 @@
     }
   ],
   "performance_by_article": [
+    {
+      "article_slug": "best-furniture-for-scandinavian-bedroom",
+      "published_pins": 1,
+      "analytics_ready_pins": 0,
+      "average_impressions": null,
+      "average_saves": null,
+      "average_outbound_clicks": null,
+      "average_pin_clicks": null,
+      "average_closeups": null,
+      "average_engagement_rate": null,
+      "score": 0,
+      "classification": "underperforming",
+      "reasons": []
+    },
     {
       "article_slug": "best-furniture-for-a-scandinavian-bathroom",
       "published_pins": 1,
@@ -164,7 +178,7 @@
     "top_variant_types": [
       {
         "variant_type": "practical_tips",
-        "published_pins": 2,
+        "published_pins": 3,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -187,6 +201,18 @@
     ],
     "top_boards": [
       {
+        "board_key": "bedroom",
+        "published_pins": 4,
+        "analytics_ready_pins": 0,
+        "average_impressions": null,
+        "average_saves": null,
+        "average_outbound_clicks": null,
+        "average_pin_clicks": null,
+        "average_closeups": null,
+        "average_engagement_rate": null,
+        "board_name": "Bedroom Retreat Ideas"
+      },
+      {
         "board_key": "bathroom",
         "published_pins": 1,
         "analytics_ready_pins": 0,
@@ -197,18 +223,6 @@
         "average_closeups": null,
         "average_engagement_rate": null,
         "board_name": "Bathroom Styling Notes"
-      },
-      {
-        "board_key": "bedroom",
-        "published_pins": 3,
-        "analytics_ready_pins": 0,
-        "average_impressions": null,
-        "average_saves": null,
-        "average_outbound_clicks": null,
-        "average_pin_clicks": null,
-        "average_closeups": null,
-        "average_engagement_rate": null,
-        "board_name": "Bedroom Retreat Ideas"
       },
       {
         "board_key": "default",
@@ -225,6 +239,20 @@
     ],
     "top_articles": [
       {
+        "article_slug": "best-furniture-for-scandinavian-bedroom",
+        "published_pins": 1,
+        "analytics_ready_pins": 0,
+        "average_impressions": null,
+        "average_saves": null,
+        "average_outbound_clicks": null,
+        "average_pin_clicks": null,
+        "average_closeups": null,
+        "average_engagement_rate": null,
+        "score": 0,
+        "classification": "underperforming",
+        "reasons": []
+      },
+      {
         "article_slug": "best-furniture-for-a-scandinavian-bathroom",
         "published_pins": 1,
         "analytics_ready_pins": 0,
@@ -268,20 +296,6 @@
       },
       {
         "article_slug": "spring-bedroom-refresh-mistakes-to-avoid",
-        "published_pins": 1,
-        "analytics_ready_pins": 0,
-        "average_impressions": null,
-        "average_saves": null,
-        "average_outbound_clicks": null,
-        "average_pin_clicks": null,
-        "average_closeups": null,
-        "average_engagement_rate": null,
-        "score": 0,
-        "classification": "underperforming",
-        "reasons": []
-      },
-      {
-        "article_slug": "parisian-bathroom-texture-mistakes-to-avoid",
         "published_pins": 1,
         "analytics_ready_pins": 0,
         "average_impressions": null,
@@ -297,6 +311,20 @@
     ],
     "weak_articles": [
       {
+        "article_slug": "best-furniture-for-scandinavian-bedroom",
+        "published_pins": 1,
+        "analytics_ready_pins": 0,
+        "average_impressions": null,
+        "average_saves": null,
+        "average_outbound_clicks": null,
+        "average_pin_clicks": null,
+        "average_closeups": null,
+        "average_engagement_rate": null,
+        "score": 0,
+        "classification": "underperforming",
+        "reasons": []
+      },
+      {
         "article_slug": "best-furniture-for-a-scandinavian-bathroom",
         "published_pins": 1,
         "analytics_ready_pins": 0,
@@ -340,20 +368,6 @@
       },
       {
         "article_slug": "spring-bedroom-refresh-mistakes-to-avoid",
-        "published_pins": 1,
-        "analytics_ready_pins": 0,
-        "average_impressions": null,
-        "average_saves": null,
-        "average_outbound_clicks": null,
-        "average_pin_clicks": null,
-        "average_closeups": null,
-        "average_engagement_rate": null,
-        "score": 0,
-        "classification": "underperforming",
-        "reasons": []
-      },
-      {
-        "article_slug": "parisian-bathroom-texture-mistakes-to-avoid",
         "published_pins": 1,
         "analytics_ready_pins": 0,
         "average_impressions": null,
