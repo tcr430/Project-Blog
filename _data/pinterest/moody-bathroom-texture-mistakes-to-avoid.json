@@ -1,0 +1,122 @@
+{
+  "article_title": "Moody Bathroom Texture Mistakes to Avoid for a Balanced Look",
+  "article_slug": "moody-bathroom-texture-mistakes-to-avoid",
+  "article_relative_url": "/mistakes%20%26%20fixes/2026/04/08/moody-bathroom-texture-mistakes-to-avoid/",
+  "article_url": "https://thelivinedit.com/mistakes%20%26%20fixes/2026/04/08/moody-bathroom-texture-mistakes-to-avoid/",
+  "meta_description": "Discover common texture mistakes in moody bathroom decor and how to fix them with practical tips to achieve a balanced, inviting space with natural materials.",
+  "cluster_id": "moody_bathroom",
+  "subtopic_id": "textures",
+  "angle_id": "mistakes",
+  "intent_id": "problem_solving",
+  "visual_direction": {
+    "family_id": "airy_editorial",
+    "mood": "airy, quiet, polished editorial styling",
+    "lighting": "soft natural daylight with gentle highlights",
+    "palette": "chalky whites, oat tones, pale woods, restrained contrast",
+    "intent_id": "problem_solving",
+    "profile_id": "problem_solving",
+    "shot_library_id": "textures_materials"
+  },
+  "hero_image_path": "/assets/img/moody-bathroom-texture-mistakes-to-avoid/hero.png",
+  "site_root_url": "https://thelivinedit.com",
+  "variant_count": 4,
+  "strategy": {
+    "minimum_variant_count": 4,
+    "generated_variant_count": 4,
+    "bonus_slots": 0,
+    "ranked_variant_types": [
+      "trend_overview",
+      "practical_tips",
+      "product_led",
+      "styling_angle"
+    ],
+    "article_score": null,
+    "notes": [
+      "applying performance weighting: no historical lift yet, using balanced defaults"
+    ],
+    "board_config_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_boards.json",
+    "design_system_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_pin_design_system.json"
+  },
+  "variants": [
+    {
+      "variant_key": "pin-1",
+      "variant_type": "trend_overview",
+      "style_name": "bottom-title",
+      "template_family": "editorial_split_long",
+      "title": "Avoid These Texture Mistakes in Your Moody Bathroom",
+      "description": "Learn the essential texture mistakes that often spoil moody bathrooms and how to correct them for a warm, inviting retreat that feels balanced and natural.",
+      "display_headline": "How to Get Moody Bathroom Texture Mistakes To Avoid For A Balanced Look Right",
+      "display_subheadline": "Simple, high-impact guidance that makes moody bathroom texture mistakes to avoid easier to apply in real life.",
+      "display_kicker": "",
+      "cta_label": "Read the full article",
+      "topic_style": "tutorial",
+      "image_path": "/assets/pins/moody-bathroom-texture-mistakes-to-avoid/pin-1.png",
+      "board": {
+        "key": "bathroom",
+        "name": "Bathroom Styling Notes"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 0
+    },
+    {
+      "variant_key": "pin-2",
+      "variant_type": "practical_tips",
+      "style_name": "centered-title",
+      "template_family": "editorial_split",
+      "title": "Moody Bathroom Texture Mistakes to Avoid for a Balanced Look: Practical Tips That Make...",
+      "description": "Use these practical design moves to make moody bathroom texture mistakes to avoid for a balanced look feel balanced, useful, and easy to live with.",
+      "display_headline": "Choosing Moody Bathroom Furniture",
+      "display_subheadline": "The shapes, storage pieces, and finishes that make moody bathroom texture mistakes to avoid feel calm, useful, and...",
+      "display_kicker": "Practical guide",
+      "cta_label": "Use these ideas",
+      "topic_style": "tutorial",
+      "image_path": "/assets/pins/moody-bathroom-texture-mistakes-to-avoid/pin-2.png",
+      "board": {
+        "key": "bathroom",
+        "name": "Bathroom Styling Notes"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 1
+    },
+    {
+      "variant_key": "pin-3",
+      "variant_type": "product_led",
+      "style_name": "minimalist-overlay",
+      "template_family": "comparison_panel",
+      "title": "4 Pieces That Elevate Moody Bathroom Texture Mistakes to Avoid for a Balanced Look",
+      "description": "Discover decor pieces and finishing details that help moody bathroom texture mistakes to avoid for a balanced look feel more intentional without looking overdone.",
+      "display_headline": "Moody Bathroom Furniture Worth Buying",
+      "display_subheadline": "Start with the pieces that add function, clean lines, and the right amount of warmth.",
+      "display_kicker": "Worth comparing",
+      "cta_label": "Compare the options",
+      "topic_style": "tutorial",
+      "image_path": "/assets/pins/moody-bathroom-texture-mistakes-to-avoid/pin-3.png",
+      "board": {
+        "key": "home_products",
+        "name": "Home Finds & Decor Picks"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 2
+    },
+    {
+      "variant_key": "pin-4",
+      "variant_type": "styling_angle",
+      "style_name": "top-title",
+      "template_family": "minimal_frame_long",
+      "title": "How to Style Moody Bathroom Texture Mistakes to Avoid for a Balanced Look for a More...",
+      "description": "See how color, texture, and room styling can shape moody bathroom texture mistakes to avoid for a balanced look into a softer, more editorial look.",
+      "display_headline": "How to Style Moody Bathroom Texture Mistakes To Avoid For A Balanced Look",
+      "display_subheadline": "Use finish, texture, and restraint to make moody bathroom texture mistakes to avoid feel polished without clutter.",
+      "display_kicker": "Editorial angle",
+      "cta_label": "See the styling move",
+      "topic_style": "tutorial",
+      "image_path": "/assets/pins/moody-bathroom-texture-mistakes-to-avoid/pin-4.png",
+      "board": {
+        "key": "bathroom",
+        "name": "Bathroom Styling Notes"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 3
+    }
+  ]
+}

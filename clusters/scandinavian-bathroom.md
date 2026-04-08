@@ -7,7 +7,7 @@ cluster_name: "scandinavian bathroom"
 cluster_slug: "scandinavian-bathroom"
 cluster_article_count: 1
 cluster_primary_keywords: ["best furniture for a scandinavian bathroom"]
-cluster_generated_at: "2026-04-06T10:11:49.759378+00:00"
+cluster_generated_at: "2026-04-08T10:09:00.234370+00:00"
 cluster_intro: "Scandinavian Bathroom is a useful decorating topic because it combines inspiration with practical decision-making. Readers usually arrive here looking for a clear style direction, help solving a room problem, or confidence about how to make the look feel intentional at home.
 
 This pillar page brings together the site's coverage around scandinavian bathroom, with article angles shaped by keyword themes such as best furniture for a scandinavian bathroom. That mix helps the page support both broader search intent and more specific decorating questions without feeling repetitive.
@@ -55,16 +55,16 @@ These adjacent hubs help readers keep moving through the topic without losing th
 <p><a class="cluster-hub-link" href="/clusters/earthy-bathroom/">Open this cluster</a></p>
 </div>
 <div class="cluster-hub-card">
+<h3><a href="/clusters/moody-bathroom/">Moody Bathroom</a></h3>
+<p>Broad editorial cluster for moody bathroom topics.</p>
+<p class="cluster-hub-meta">1 article</p>
+<p><a class="cluster-hub-link" href="/clusters/moody-bathroom/">Open this cluster</a></p>
+</div>
+<div class="cluster-hub-card">
 <h3><a href="/clusters/neutral-bathroom/">Neutral Bathroom</a></h3>
 <p>Broad editorial cluster for neutral bathroom topics.</p>
 <p class="cluster-hub-meta">1 article</p>
 <p><a class="cluster-hub-link" href="/clusters/neutral-bathroom/">Open this cluster</a></p>
-</div>
-<div class="cluster-hub-card">
-<h3><a href="/clusters/parisian-bathroom/">Parisian Bathroom</a></h3>
-<p>Broad editorial cluster for parisian bathroom topics.</p>
-<p class="cluster-hub-meta">1 article</p>
-<p><a class="cluster-hub-link" href="/clusters/parisian-bathroom/">Open this cluster</a></p>
 </div>
 </div>
 
@@ -74,4 +74,4 @@ A simple path through this topic so readers can build confidence one step at a t
 
 1. Start with [Best Furniture for a Scandinavian Bathroom: Practical Choices with Iconic Style](/ideas/2026/03/30/best-furniture-for-a-scandinavian-bathroom/) for the broadest orientation.
 2. After that, move into [Earthy Bathroom](/clusters/earthy-bathroom/) to keep the topic expanding naturally.
-3. After that, move into [Neutral Bathroom](/clusters/neutral-bathroom/) to keep the topic expanding naturally.
+3. After that, move into [Moody Bathroom](/clusters/moody-bathroom/) to keep the topic expanding naturally.

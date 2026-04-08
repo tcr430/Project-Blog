@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-06T10:05:08.295132+00:00",
+  "generated_at": "2026-04-08T10:04:28.292173+00:00",
   "overview": {
-    "pin_count": 44,
-    "published_pin_count": 5,
+    "pin_count": 48,
+    "published_pin_count": 8,
     "analytics_ready_pin_count": 0,
-    "tracked_article_count": 11
+    "tracked_article_count": 12
   },
   "best_performing_clusters": [
     {
@@ -29,7 +29,7 @@
       "cluster_id": "earthy_bedroom",
       "cluster_name": "earthy bedroom",
       "pin_count": 4,
-      "published_pin_count": 0,
+      "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -41,6 +41,24 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "best-furniture-for-earthy-bedroom"
+      ]
+    },
+    {
+      "cluster_id": "moody_bedroom",
+      "cluster_name": "moody bedroom",
+      "pin_count": 4,
+      "published_pin_count": 1,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "moody-bedroom-texture-mistakes-to-avoid"
       ]
     },
     {
@@ -137,7 +155,7 @@
       "cluster_id": "scandinavian_bedroom",
       "cluster_name": "scandinavian bedroom",
       "pin_count": 4,
-      "published_pin_count": 0,
+      "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -250,7 +268,7 @@
       "subtopic_id": "furniture",
       "subtopic_name": "furniture and anchors",
       "pin_count": 4,
-      "published_pin_count": 0,
+      "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -269,7 +287,7 @@
       "subtopic_id": "furniture",
       "subtopic_name": "furniture and anchors",
       "pin_count": 4,
-      "published_pin_count": 0,
+      "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -398,6 +416,25 @@
       ]
     },
     {
+      "cluster_id": "moody_bedroom",
+      "subtopic_id": "textures",
+      "subtopic_name": "textures and layers",
+      "pin_count": 4,
+      "published_pin_count": 1,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "moody-bedroom-texture-mistakes-to-avoid"
+      ]
+    },
+    {
       "cluster_id": "parisian_bathroom",
       "subtopic_id": "textures",
       "subtopic_name": "textures and layers",
@@ -421,7 +458,7 @@
     {
       "angle_id": "best_options",
       "pin_count": 28,
-      "published_pin_count": 2,
+      "published_pin_count": 4,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -459,8 +496,8 @@
     },
     {
       "angle_id": "mistakes",
-      "pin_count": 8,
-      "published_pin_count": 2,
+      "pin_count": 12,
+      "published_pin_count": 3,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -471,6 +508,7 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
+        "moody-bedroom-texture-mistakes-to-avoid",
         "parisian-bathroom-texture-mistakes-to-avoid",
         "spring-bedroom-refresh-mistakes-to-avoid"
       ]
@@ -546,8 +584,8 @@
       "visual_family_id": "airy_editorial",
       "shot_library_id": "textures_materials",
       "intent_id": "problem_solving",
-      "pin_count": 1,
-      "published_pin_count": 1,
+      "pin_count": 2,
+      "published_pin_count": 2,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -558,6 +596,7 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
+        "moody-bedroom-texture-mistakes-to-avoid",
         "parisian-bathroom-texture-mistakes-to-avoid"
       ]
     },
@@ -612,7 +651,7 @@
       "shot_library_id": "general_decor",
       "intent_id": "comparison",
       "pin_count": 3,
-      "published_pin_count": 0,
+      "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -697,7 +736,7 @@
       "visual_family_id": "airy_editorial",
       "shot_library_id": "textures_materials",
       "intent_id": "problem_solving",
-      "pin_count": 1,
+      "pin_count": 2,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -709,6 +748,7 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
+        "moody-bedroom-texture-mistakes-to-avoid",
         "parisian-bathroom-texture-mistakes-to-avoid"
       ]
     },
@@ -763,7 +803,7 @@
       "shot_library_id": "general_decor",
       "intent_id": "comparison",
       "pin_count": 3,
-      "published_pin_count": 0,
+      "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -848,7 +888,7 @@
       "visual_family_id": "airy_editorial",
       "shot_library_id": "textures_materials",
       "intent_id": "problem_solving",
-      "pin_count": 1,
+      "pin_count": 2,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -860,6 +900,7 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
+        "moody-bedroom-texture-mistakes-to-avoid",
         "parisian-bathroom-texture-mistakes-to-avoid"
       ]
     },
@@ -999,7 +1040,7 @@
       "visual_family_id": "airy_editorial",
       "shot_library_id": "textures_materials",
       "intent_id": "problem_solving",
-      "pin_count": 1,
+      "pin_count": 2,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1011,6 +1052,7 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
+        "moody-bedroom-texture-mistakes-to-avoid",
         "parisian-bathroom-texture-mistakes-to-avoid"
       ]
     },
@@ -1106,7 +1148,7 @@
         "cluster_id": "earthy_bedroom",
         "cluster_name": "earthy bedroom",
         "pin_count": 4,
-        "published_pin_count": 0,
+        "published_pin_count": 1,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,
@@ -1118,6 +1160,24 @@
         "signal_boost": 0,
         "top_article_slugs": [
           "best-furniture-for-earthy-bedroom"
+        ]
+      },
+      {
+        "cluster_id": "moody_bedroom",
+        "cluster_name": "moody bedroom",
+        "pin_count": 4,
+        "published_pin_count": 1,
+        "analytics_ready_count": 0,
+        "average_score": 0.0,
+        "average_impressions": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_pin_clicks": 0.0,
+        "average_closeups": 0.0,
+        "signal_label": "no_data",
+        "signal_boost": 0,
+        "top_article_slugs": [
+          "moody-bedroom-texture-mistakes-to-avoid"
         ]
       },
       {
@@ -1154,24 +1214,6 @@
         "signal_boost": 0,
         "top_article_slugs": [
           "how-to-style-a-neutral-bedroom"
-        ]
-      },
-      {
-        "cluster_id": "parisian_bathroom",
-        "cluster_name": "parisian bathroom",
-        "pin_count": 4,
-        "published_pin_count": 1,
-        "analytics_ready_count": 0,
-        "average_score": 0.0,
-        "average_impressions": 0.0,
-        "average_saves": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_pin_clicks": 0.0,
-        "average_closeups": 0.0,
-        "signal_label": "no_data",
-        "signal_boost": 0,
-        "top_article_slugs": [
-          "parisian-bathroom-texture-mistakes-to-avoid"
         ]
       }
     ],
@@ -1219,7 +1261,7 @@
         "subtopic_id": "furniture",
         "subtopic_name": "furniture and anchors",
         "pin_count": 4,
-        "published_pin_count": 0,
+        "published_pin_count": 1,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,
@@ -1238,7 +1280,7 @@
         "subtopic_id": "furniture",
         "subtopic_name": "furniture and anchors",
         "pin_count": 4,
-        "published_pin_count": 0,
+        "published_pin_count": 1,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,
@@ -1276,7 +1318,7 @@
       {
         "angle_id": "best_options",
         "pin_count": 28,
-        "published_pin_count": 2,
+        "published_pin_count": 4,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,
@@ -1314,8 +1356,8 @@
       },
       {
         "angle_id": "mistakes",
-        "pin_count": 8,
-        "published_pin_count": 2,
+        "pin_count": 12,
+        "published_pin_count": 3,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,
@@ -1326,6 +1368,7 @@
         "signal_label": "no_data",
         "signal_boost": 0,
         "top_article_slugs": [
+          "moody-bedroom-texture-mistakes-to-avoid",
           "parisian-bathroom-texture-mistakes-to-avoid",
           "spring-bedroom-refresh-mistakes-to-avoid"
         ]
@@ -1401,8 +1444,8 @@
         "visual_family_id": "airy_editorial",
         "shot_library_id": "textures_materials",
         "intent_id": "problem_solving",
-        "pin_count": 1,
-        "published_pin_count": 1,
+        "pin_count": 2,
+        "published_pin_count": 2,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,
@@ -1413,6 +1456,7 @@
         "signal_label": "no_data",
         "signal_boost": 0,
         "top_article_slugs": [
+          "moody-bedroom-texture-mistakes-to-avoid",
           "parisian-bathroom-texture-mistakes-to-avoid"
         ]
       },

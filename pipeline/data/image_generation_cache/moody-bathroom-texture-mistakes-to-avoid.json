@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "6f1efdc9dd9223e40609d15824ae6d0285a9c8cd9e1b34991b3e239ff966a0d2",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/moody-bathroom-texture-mistakes-to-avoid/hero.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-1": {
+    "cache_key": "4ea28d680af39445de41793c07f4b6b8d7e8a14b03f2bea811c5adabe14b2248",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/moody-bathroom-texture-mistakes-to-avoid/section-1.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-2": {
+    "cache_key": "1046a9dd34319d8ad0488d0a7292e4ce9d2cd83b2cd9021ab99fbcf0227002dd",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/moody-bathroom-texture-mistakes-to-avoid/section-2.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-3": {
+    "cache_key": "9902634e310fd5aecf19ee084b591709a5f38bf7a99d29baf8db371760d6fc10",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/moody-bathroom-texture-mistakes-to-avoid/section-3.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-4": {
+    "cache_key": "bcaeee840c3fe6fe7f6851be773a93cb65964a4ae815ecd85249733abb269a0b",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/moody-bathroom-texture-mistakes-to-avoid/section-4.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-5": {
+    "cache_key": "7872556c05e10a69b487ba4198804a3232f883b8a2aadf31ece6feca84918b34",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/moody-bathroom-texture-mistakes-to-avoid/section-5.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  }
+}

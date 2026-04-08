@@ -1,6 +1,50 @@
 {
-  "generated_at": "2026-04-06T10:07:14.966541+00:00",
+  "generated_at": "2026-04-08T10:05:10.054901+00:00",
   "articles": [
+    {
+      "article_slug": "moody-bathroom-texture-mistakes-to-avoid",
+      "cluster_id": "moody_bathroom",
+      "subtopic_id": "textures",
+      "angle_id": "mistakes",
+      "primary_keyword": "moody bathroom texture mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Several section headings do not signal the topic strongly enough."
+      ],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 93,
+          "concept_overlap": 7,
+          "first_sentence": "Moody bathrooms offer a rich, calming palette that can feel deeply personal and immersive when done well."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 3,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Flat or Overly Smooth Surfaces That Dampen Depth",
+            "Clashing Textural Materials That Fight Instead of Flow",
+            "Overloading Textural Variety Without a Unifying Theme",
+            "Ignoring Proportions and Scale in Texture Placement",
+            "Neglecting to Layer Textures Leading to a Flat or Stiff Finish"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 11,
+          "specificity_term_hits": 9,
+          "secondary_keyword_hits": 2
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-04-08T10:05:10.054696+00:00"
+    },
     {
       "article_slug": "moody-bedroom-texture-mistakes-to-avoid",
       "cluster_id": "moody_bedroom",

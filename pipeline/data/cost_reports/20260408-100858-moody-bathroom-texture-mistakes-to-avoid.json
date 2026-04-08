@@ -1,0 +1,300 @@
+{
+  "generated_at": "2026-04-08T10:08:58.340807+00:00",
+  "trend": "moody bathroom texture mistakes to avoid",
+  "slug": "moody-bathroom-texture-mistakes-to-avoid",
+  "article_generation": {
+    "cache_hit": false,
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/article_packages/dfb73423c79989bc8852ca9386dbb02b1f4a923d412d928214136334e7757c43.json",
+    "model": "gpt-4.1-mini",
+    "generation_calls": 1,
+    "short_retries": 0,
+    "angle_retries": 0,
+    "product_retries": 0,
+    "selected_products": 0,
+    "affiliate_mode": false,
+    "monetization_profile_id": "fix_oriented",
+    "generated_link_count": 0,
+    "primary_keyword": "moody bathroom texture mistakes to avoid",
+    "topical_cluster": "moody bathroom"
+  },
+  "seo_validation": {
+    "article_slug": "moody-bathroom-texture-mistakes-to-avoid",
+    "cluster": "moody bathroom",
+    "cluster_id": "moody bathroom",
+    "subtopic_id": "textures",
+    "subtopic_name": "textures and layers",
+    "angle_id": "mistakes",
+    "intent_id": "problem_solving",
+    "primary_keyword": "moody bathroom texture mistakes to avoid",
+    "validation_status": "warning",
+    "warnings": [
+      "Headings do not reflect the topic cluster strongly enough.",
+      "Main section headings may be too generic for the chosen keyword.",
+      "Primary keyword appears very lightly in the article body."
+    ],
+    "errors": [],
+    "duplicate_candidate_slugs": [],
+    "timestamp": "2026-04-08T10:05:10.051314+00:00"
+  },
+  "editorial_validation": {
+    "article_slug": "moody-bathroom-texture-mistakes-to-avoid",
+    "cluster_id": "moody_bathroom",
+    "subtopic_id": "textures",
+    "angle_id": "mistakes",
+    "primary_keyword": "moody bathroom texture mistakes to avoid",
+    "validation_status": "warning",
+    "warnings": [
+      "Several section headings do not signal the topic strongly enough."
+    ],
+    "errors": [],
+    "checks": {
+      "generic_intro": {
+        "intro_word_count": 93,
+        "concept_overlap": 7,
+        "first_sentence": "Moody bathrooms offer a rich, calming palette that can feel deeply personal and immersive when done well."
+      },
+      "heading_quality": {
+        "heading_count": 5,
+        "vague_heading_count": 0,
+        "low_specificity_heading_count": 3,
+        "repeated_signature_count": 0,
+        "repeated_stem_count": 0,
+        "headings": [
+          "Flat or Overly Smooth Surfaces That Dampen Depth",
+          "Clashing Textural Materials That Fight Instead of Flow",
+          "Overloading Textural Variety Without a Unifying Theme",
+          "Ignoring Proportions and Scale in Texture Placement",
+          "Neglecting to Layer Textures Leading to a Flat or Stiff Finish"
+        ]
+      },
+      "specificity": {
+        "concept_token_hits": 11,
+        "specificity_term_hits": 9,
+        "secondary_keyword_hits": 2
+      },
+      "distinctiveness": {
+        "nearest_article_slug": "",
+        "max_similarity": 0.0,
+        "strongest_heading_overlap": 0
+      }
+    },
+    "timestamp": "2026-04-08T10:05:10.054696+00:00"
+  },
+  "image_generation": {
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/image_generation_cache/moody-bathroom-texture-mistakes-to-avoid.json",
+    "provider": "flux",
+    "provider_model": "flux-2-max",
+    "model": "flux-2-max",
+    "fallback_provider": "openai",
+    "fallback_model": "gpt-image-1",
+    "size": "1536x1024",
+    "hero_quality": "high",
+    "section_quality": "medium",
+    "allow_fallback": true,
+    "fallback_events": 0,
+    "generated_images": 6,
+    "cache_hits": 0,
+    "generation_calls": 6,
+    "qa_calls": 1,
+    "details": [
+      {
+        "label": "hero",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 1,
+        "quality": "high",
+        "qa_enabled": true,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "204e490a-8de6-4335-865c-8da8902ae42e",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=204e490a-8de6-4335-865c-8da8902ae42e",
+            "poll_attempts": 28,
+            "provider_status": "Ready",
+            "elapsed_seconds": 44.25,
+            "quality": "high",
+            "elapsed_seconds_total": 44.25,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation",
+        "qa_reason": "The image shows a quiet, polished editorial bathroom vanity crop with tactile layering, restrained contrast, and natural materials. It features soft natural daylight and a chalky, oat-toned palette consistent with the prompt. The room looks realistic and believable with no duplicated elements, no text, logos, or people. The composition feels editorial and practical, supporting a balanced 'moody bathroom' aesthetic suitable for a decor blog."
+      },
+      {
+        "label": "section-1",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "314aca0a-3508-4091-8a1b-a24b46ed5d4a",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=314aca0a-3508-4091-8a1b-a24b46ed5d4a",
+            "poll_attempts": 25,
+            "provider_status": "Ready",
+            "elapsed_seconds": 39.56,
+            "quality": "medium",
+            "elapsed_seconds_total": 39.56,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-2",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "946305bc-29c5-4e5d-9a80-2a9f320c1959",
+            "polling_url": "https://api.us4.bfl.ai/v1/get_result?id=946305bc-29c5-4e5d-9a80-2a9f320c1959",
+            "poll_attempts": 23,
+            "provider_status": "Ready",
+            "elapsed_seconds": 31.23,
+            "quality": "medium",
+            "elapsed_seconds_total": 31.23,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-3",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "4b52a33f-3ef4-4798-b356-87d04ba11b60",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=4b52a33f-3ef4-4798-b356-87d04ba11b60",
+            "poll_attempts": 24,
+            "provider_status": "Ready",
+            "elapsed_seconds": 37.49,
+            "quality": "medium",
+            "elapsed_seconds_total": 37.49,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-4",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "c87dd9c7-ca0a-4e04-a6dc-15a413f2cd98",
+            "polling_url": "https://api.us4.bfl.ai/v1/get_result?id=c87dd9c7-ca0a-4e04-a6dc-15a413f2cd98",
+            "poll_attempts": 27,
+            "provider_status": "Ready",
+            "elapsed_seconds": 35.62,
+            "quality": "medium",
+            "elapsed_seconds_total": 35.62,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-5",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "f9789821-a81d-4694-8889-e60f18184691",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=f9789821-a81d-4694-8889-e60f18184691",
+            "poll_attempts": 20,
+            "provider_status": "Ready",
+            "elapsed_seconds": 32.01,
+            "quality": "medium",
+            "elapsed_seconds_total": 32.01,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      }
+    ]
+  },
+  "pinterest": {
+    "variants_requested": 4,
+    "pin_assets_generated": false,
+    "mode": null
+  }
+}

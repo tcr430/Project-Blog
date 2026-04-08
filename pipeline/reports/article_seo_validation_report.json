@@ -1,6 +1,25 @@
 {
-  "generated_at": "2026-04-06T10:07:14.963123+00:00",
+  "generated_at": "2026-04-08T10:05:10.051462+00:00",
   "articles": [
+    {
+      "article_slug": "moody-bathroom-texture-mistakes-to-avoid",
+      "cluster": "moody bathroom",
+      "cluster_id": "moody bathroom",
+      "subtopic_id": "textures",
+      "subtopic_name": "textures and layers",
+      "angle_id": "mistakes",
+      "intent_id": "problem_solving",
+      "primary_keyword": "moody bathroom texture mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Headings do not reflect the topic cluster strongly enough.",
+        "Main section headings may be too generic for the chosen keyword.",
+        "Primary keyword appears very lightly in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-04-08T10:05:10.051314+00:00"
+    },
     {
       "article_slug": "moody-bedroom-texture-mistakes-to-avoid",
       "cluster": "moody bedroom",
