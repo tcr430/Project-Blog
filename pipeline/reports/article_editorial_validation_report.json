@@ -1,6 +1,48 @@
 {
-  "generated_at": "2026-04-08T10:05:10.054901+00:00",
+  "generated_at": "2026-04-08T19:44:24.393868+00:00",
   "articles": [
+    {
+      "article_slug": "best-furniture-for-a-minimalist-bedroom",
+      "cluster_id": "minimalist_bedroom",
+      "subtopic_id": "furniture",
+      "angle_id": "best_options",
+      "primary_keyword": "best furniture for a minimalist bedroom",
+      "validation_status": "pass",
+      "warnings": [],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 128,
+          "concept_overlap": 7,
+          "first_sentence": "Creating a minimalist bedroom that feels calm and inviting might seem straightforward, but choosing the right furniture can actually be a nuanced challenge."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 1,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Defining Key Furniture Criteria for a Minimalist Bedroom",
+            "Warm Wood Furniture: Timeless Minimalism with Natural Texture",
+            "Sleek Metal Frames and Modern Minimalism for Contrast and Lightness",
+            "Matching Furniture Choices to Bedroom Size and Layout Constraints",
+            "Smart Buying Tips to Narrow Your Furniture Selection with Confidence"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 9,
+          "specificity_term_hits": 10,
+          "secondary_keyword_hits": 1
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-04-08T19:44:24.393658+00:00"
+    },
     {
       "article_slug": "moody-bathroom-texture-mistakes-to-avoid",
       "cluster_id": "moody_bathroom",

@@ -1,0 +1,297 @@
+{
+  "generated_at": "2026-04-08T19:52:14.155612+00:00",
+  "trend": "best furniture for a minimalist bedroom",
+  "slug": "best-furniture-for-a-minimalist-bedroom",
+  "article_generation": {
+    "cache_hit": false,
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/article_packages/4071a0c6b68152839b03b514cbbbee6fa165c8999ea45538dfeadcb51df7cd60.json",
+    "model": "gpt-4.1-mini",
+    "generation_calls": 1,
+    "short_retries": 0,
+    "angle_retries": 0,
+    "product_retries": 0,
+    "selected_products": 0,
+    "affiliate_mode": false,
+    "monetization_profile_id": "commercial_strong",
+    "generated_link_count": 0,
+    "primary_keyword": "best furniture for a minimalist bedroom",
+    "topical_cluster": "minimalist bedroom"
+  },
+  "seo_validation": {
+    "article_slug": "best-furniture-for-a-minimalist-bedroom",
+    "cluster": "minimalist bedroom",
+    "cluster_id": "minimalist bedroom",
+    "subtopic_id": "furniture",
+    "subtopic_name": "furniture and anchors",
+    "angle_id": "best options",
+    "intent_id": "comparison",
+    "primary_keyword": "best furniture for a minimalist bedroom",
+    "validation_status": "warning",
+    "warnings": [
+      "Primary keyword appears very lightly in the article body."
+    ],
+    "errors": [],
+    "duplicate_candidate_slugs": [],
+    "timestamp": "2026-04-08T19:44:24.390182+00:00"
+  },
+  "editorial_validation": {
+    "article_slug": "best-furniture-for-a-minimalist-bedroom",
+    "cluster_id": "minimalist_bedroom",
+    "subtopic_id": "furniture",
+    "angle_id": "best_options",
+    "primary_keyword": "best furniture for a minimalist bedroom",
+    "validation_status": "pass",
+    "warnings": [],
+    "errors": [],
+    "checks": {
+      "generic_intro": {
+        "intro_word_count": 128,
+        "concept_overlap": 7,
+        "first_sentence": "Creating a minimalist bedroom that feels calm and inviting might seem straightforward, but choosing the right furniture can actually be a nuanced challenge."
+      },
+      "heading_quality": {
+        "heading_count": 5,
+        "vague_heading_count": 0,
+        "low_specificity_heading_count": 1,
+        "repeated_signature_count": 0,
+        "repeated_stem_count": 0,
+        "headings": [
+          "Defining Key Furniture Criteria for a Minimalist Bedroom",
+          "Warm Wood Furniture: Timeless Minimalism with Natural Texture",
+          "Sleek Metal Frames and Modern Minimalism for Contrast and Lightness",
+          "Matching Furniture Choices to Bedroom Size and Layout Constraints",
+          "Smart Buying Tips to Narrow Your Furniture Selection with Confidence"
+        ]
+      },
+      "specificity": {
+        "concept_token_hits": 9,
+        "specificity_term_hits": 10,
+        "secondary_keyword_hits": 1
+      },
+      "distinctiveness": {
+        "nearest_article_slug": "",
+        "max_similarity": 0.0,
+        "strongest_heading_overlap": 0
+      }
+    },
+    "timestamp": "2026-04-08T19:44:24.393658+00:00"
+  },
+  "image_generation": {
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/image_generation_cache/best-furniture-for-a-minimalist-bedroom.json",
+    "provider": "flux",
+    "provider_model": "flux-2-max",
+    "model": "flux-2-max",
+    "fallback_provider": "openai",
+    "fallback_model": "gpt-image-1",
+    "size": "1536x1024",
+    "hero_quality": "high",
+    "section_quality": "medium",
+    "allow_fallback": true,
+    "fallback_events": 1,
+    "generated_images": 6,
+    "cache_hits": 0,
+    "generation_calls": 7,
+    "qa_calls": 1,
+    "details": [
+      {
+        "label": "hero",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 1,
+        "quality": "high",
+        "qa_enabled": true,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "8b2c04ed-d8ae-4865-a0b9-9f50649e2cc8",
+            "polling_url": "https://api.us4.bfl.ai/v1/get_result?id=8b2c04ed-d8ae-4865-a0b9-9f50649e2cc8",
+            "poll_attempts": 35,
+            "provider_status": "Ready",
+            "elapsed_seconds": 47.31,
+            "quality": "high",
+            "elapsed_seconds_total": 47.31,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation",
+        "qa_reason": "The image cleanly reflects a minimalist bedroom with an editorial, refined, and practical style. It features a single, primary bed as the focal point with supporting furniture arranged coherently in a believable setting. The color palette and lighting align well with the prompt, and there is no text, logo, people, or heavy clutter present."
+      },
+      {
+        "label": "section-1",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "425aafff-a099-4fb8-83e9-8cb83d23f022",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=425aafff-a099-4fb8-83e9-8cb83d23f022",
+            "poll_attempts": 18,
+            "provider_status": "Ready",
+            "elapsed_seconds": 32.47,
+            "quality": "medium",
+            "elapsed_seconds_total": 32.47,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-2",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 2,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "openai",
+        "provider_model": "gpt-image-1",
+        "fallback_used": true,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "error": "FLUX generation timed out after 180.0s (last status: Pending)."
+          },
+          {
+            "provider": "openai",
+            "model": "gpt-image-1",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "quality": "medium",
+            "elapsed_seconds_total": 28.0,
+            "width": 1536,
+            "height": 1024,
+            "format": "PNG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-3",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "12ff1b63-1920-4ff3-bf35-067d65ad8b3a",
+            "polling_url": "https://api.eu5.bfl.ai/v1/get_result?id=12ff1b63-1920-4ff3-bf35-067d65ad8b3a",
+            "poll_attempts": 45,
+            "provider_status": "Ready",
+            "elapsed_seconds": 77.62,
+            "quality": "medium",
+            "elapsed_seconds_total": 77.62,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-4",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "4e417d64-1c80-4dbc-a6b1-fa6cd830bc66",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=4e417d64-1c80-4dbc-a6b1-fa6cd830bc66",
+            "poll_attempts": 34,
+            "provider_status": "Ready",
+            "elapsed_seconds": 45.99,
+            "quality": "medium",
+            "elapsed_seconds_total": 45.99,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-5",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "ba0def1f-50e4-4578-8bbd-cfa4ebf92907",
+            "polling_url": "https://api.eu5.bfl.ai/v1/get_result?id=ba0def1f-50e4-4578-8bbd-cfa4ebf92907",
+            "poll_attempts": 23,
+            "provider_status": "Ready",
+            "elapsed_seconds": 40.85,
+            "quality": "medium",
+            "elapsed_seconds_total": 40.85,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      }
+    ]
+  },
+  "pinterest": {
+    "variants_requested": 4,
+    "pin_assets_generated": false,
+    "mode": null
+  }
+}

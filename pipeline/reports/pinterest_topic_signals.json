@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-04-08T10:08:58.522751+00:00",
-  "cluster_count": 19,
+  "generated_at": "2026-04-08T19:52:14.376462+00:00",
+  "cluster_count": 20,
   "summary": {
     "hot": 0,
     "warm": 0,
     "cold": 8,
-    "no_data": 11
+    "no_data": 12
   },
   "clusters": [
     {
@@ -115,6 +115,30 @@
         "living room curtain styling ideas",
         "how to style curtain styling in living room",
         "living room curtain styling mistakes to avoid"
+      ],
+      "pinterest_article_count": 0,
+      "strong_article_count": 0,
+      "weak_article_count": 0,
+      "average_score": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_saves": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0
+    },
+    {
+      "cluster_name": "minimalist bedroom",
+      "article_count": 1,
+      "article_slugs": [
+        "best-furniture-for-a-minimalist-bedroom"
+      ],
+      "primary_keywords": [
+        "best furniture for a minimalist bedroom"
+      ],
+      "secondary_keywords": [
+        "minimalist bedroom ideas",
+        "how to style a minimalist bedroom",
+        "minimalist bedroom decor",
+        "minimalist bedroom layout ideas"
       ],
       "pinterest_article_count": 0,
       "strong_article_count": 0,

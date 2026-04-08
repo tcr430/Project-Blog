@@ -1,6 +1,23 @@
 {
-  "generated_at": "2026-04-08T10:05:10.051462+00:00",
+  "generated_at": "2026-04-08T19:44:24.390314+00:00",
   "articles": [
+    {
+      "article_slug": "best-furniture-for-a-minimalist-bedroom",
+      "cluster": "minimalist bedroom",
+      "cluster_id": "minimalist bedroom",
+      "subtopic_id": "furniture",
+      "subtopic_name": "furniture and anchors",
+      "angle_id": "best options",
+      "intent_id": "comparison",
+      "primary_keyword": "best furniture for a minimalist bedroom",
+      "validation_status": "warning",
+      "warnings": [
+        "Primary keyword appears very lightly in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-04-08T19:44:24.390182+00:00"
+    },
     {
       "article_slug": "moody-bathroom-texture-mistakes-to-avoid",
       "cluster": "moody bathroom",

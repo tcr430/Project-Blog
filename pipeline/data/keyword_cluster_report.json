@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-04-08T10:08:58.520257+00:00",
-  "cluster_count": 19,
-  "article_count": 19,
+  "generated_at": "2026-04-08T19:52:14.373715+00:00",
+  "cluster_count": 20,
+  "article_count": 20,
   "subtopic_count": 6,
   "angle_count": 5,
   "angle_distribution": {
-    "best_options": 9,
+    "best_options": 10,
     "how_to": 2,
     "ideas": 3,
     "mistakes": 4,
@@ -230,6 +230,50 @@
           "latest_article_date": "",
           "representative_article_slugs": [
             "best-curtain-styling-for-living-room"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "best_options": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_id": "minimalist_bedroom",
+      "cluster_name": "minimalist bedroom",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "bedrooms"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "best furniture for a minimalist bedroom"
+      ],
+      "latest_article_date": "2026-04-08",
+      "latest_publication": {
+        "article_slug": "best-furniture-for-a-minimalist-bedroom",
+        "article_title": "Furniture for a Minimalist Bedroom: A Practical Buying Guide",
+        "publish_date": "2026-04-08",
+        "subtopic_id": "furniture",
+        "subtopic_name": "furniture and anchors",
+        "angle_id": "best_options"
+      },
+      "representative_article_slugs": [
+        "best-furniture-for-a-minimalist-bedroom"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "furniture",
+          "subtopic_name": "furniture and anchors",
+          "article_count": 1,
+          "latest_article_date": "2026-04-08",
+          "representative_article_slugs": [
+            "best-furniture-for-a-minimalist-bedroom"
           ]
         }
       ],

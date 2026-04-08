@@ -3,14 +3,13 @@
 Generated: 2026-04-08
 Window: last 7 days
 
-Articles Published: 5  
-Pins Generated: 20  
-Pins Scheduled: 39  
+Articles Published: 4  
+Pins Generated: 16  
+Pins Scheduled: 38  
 Pins Published: 7  
 Repins Scheduled: 0
 
 ## Articles Published
-- best-furniture-parisian-bedroom
 - how-to-style-a-neutral-bedroom
 - moody-bedroom-texture-mistakes-to-avoid
 - parisian-bathroom-texture-mistakes-to-avoid

@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "a1ff42ab319fd53f62b69a60c1b76885e8c41a5d99d6bc5e9dc31776e6c22cca",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-a-minimalist-bedroom/hero.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-1": {
+    "cache_key": "0b94565207b20ece8416227700fca4129e47983e019717d56ae6f8838ce538fe",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-a-minimalist-bedroom/section-1.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-2": {
+    "cache_key": "7c23bb5c21bb576046e480aa1dfbffdeb164e2329621f6db38a936da206e1038",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-a-minimalist-bedroom/section-2.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-3": {
+    "cache_key": "db5f6675a7a66e8c8633d73a2f30df27ff63ada03730ec73252ee3a0adf9576f",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-a-minimalist-bedroom/section-3.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-4": {
+    "cache_key": "c849738f8f137cafe19a8396ad5ee31ed2b0294e0f9016a94b8749a2d8bb5377",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-a-minimalist-bedroom/section-4.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-5": {
+    "cache_key": "cffc0f27e2046daac51006f7995a68a09c35bfc56ce2c27d057ba06ca95a2cc4",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-a-minimalist-bedroom/section-5.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  }
+}
