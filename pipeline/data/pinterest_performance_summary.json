@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-07T18:44:27.274161+00:00",
+  "generated_at": "2026-04-08T01:14:08.559763+00:00",
   "history_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_history.json",
-  "published_pin_count": 7,
+  "published_pin_count": 8,
   "global_metrics": {
-    "published_pins": 7,
+    "published_pins": 8,
     "analytics_ready_pins": 0,
     "average_impressions": null,
     "average_saves": null,
@@ -14,8 +14,8 @@
   },
   "performance_by_variant_type": [
     {
-      "variant_type": "practical_tips",
-      "published_pins": 3,
+      "variant_type": "trend_overview",
+      "published_pins": 5,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -25,8 +25,8 @@
       "average_engagement_rate": null
     },
     {
-      "variant_type": "trend_overview",
-      "published_pins": 4,
+      "variant_type": "practical_tips",
+      "published_pins": 3,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -39,7 +39,7 @@
   "performance_by_board": [
     {
       "board_key": "bedroom",
-      "published_pins": 4,
+      "published_pins": 5,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -75,6 +75,20 @@
     }
   ],
   "performance_by_article": [
+    {
+      "article_slug": "best-furniture-for-earthy-bedroom",
+      "published_pins": 1,
+      "analytics_ready_pins": 0,
+      "average_impressions": null,
+      "average_saves": null,
+      "average_outbound_clicks": null,
+      "average_pin_clicks": null,
+      "average_closeups": null,
+      "average_engagement_rate": null,
+      "score": 0,
+      "classification": "underperforming",
+      "reasons": []
+    },
     {
       "article_slug": "best-furniture-for-scandinavian-bedroom",
       "published_pins": 1,
@@ -177,8 +191,8 @@
   "rankings": {
     "top_variant_types": [
       {
-        "variant_type": "practical_tips",
-        "published_pins": 3,
+        "variant_type": "trend_overview",
+        "published_pins": 5,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -188,8 +202,8 @@
         "average_engagement_rate": null
       },
       {
-        "variant_type": "trend_overview",
-        "published_pins": 4,
+        "variant_type": "practical_tips",
+        "published_pins": 3,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -202,7 +216,7 @@
     "top_boards": [
       {
         "board_key": "bedroom",
-        "published_pins": 4,
+        "published_pins": 5,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -239,6 +253,20 @@
     ],
     "top_articles": [
       {
+        "article_slug": "best-furniture-for-earthy-bedroom",
+        "published_pins": 1,
+        "analytics_ready_pins": 0,
+        "average_impressions": null,
+        "average_saves": null,
+        "average_outbound_clicks": null,
+        "average_pin_clicks": null,
+        "average_closeups": null,
+        "average_engagement_rate": null,
+        "score": 0,
+        "classification": "underperforming",
+        "reasons": []
+      },
+      {
         "article_slug": "best-furniture-for-scandinavian-bedroom",
         "published_pins": 1,
         "analytics_ready_pins": 0,
@@ -282,20 +310,6 @@
       },
       {
         "article_slug": "how-to-style-a-neutral-bedroom",
-        "published_pins": 1,
-        "analytics_ready_pins": 0,
-        "average_impressions": null,
-        "average_saves": null,
-        "average_outbound_clicks": null,
-        "average_pin_clicks": null,
-        "average_closeups": null,
-        "average_engagement_rate": null,
-        "score": 0,
-        "classification": "underperforming",
-        "reasons": []
-      },
-      {
-        "article_slug": "spring-bedroom-refresh-mistakes-to-avoid",
         "published_pins": 1,
         "analytics_ready_pins": 0,
         "average_impressions": null,
@@ -311,6 +325,20 @@
     ],
     "weak_articles": [
       {
+        "article_slug": "best-furniture-for-earthy-bedroom",
+        "published_pins": 1,
+        "analytics_ready_pins": 0,
+        "average_impressions": null,
+        "average_saves": null,
+        "average_outbound_clicks": null,
+        "average_pin_clicks": null,
+        "average_closeups": null,
+        "average_engagement_rate": null,
+        "score": 0,
+        "classification": "underperforming",
+        "reasons": []
+      },
+      {
         "article_slug": "best-furniture-for-scandinavian-bedroom",
         "published_pins": 1,
         "analytics_ready_pins": 0,
@@ -354,20 +382,6 @@
       },
       {
         "article_slug": "how-to-style-a-neutral-bedroom",
-        "published_pins": 1,
-        "analytics_ready_pins": 0,
-        "average_impressions": null,
-        "average_saves": null,
-        "average_outbound_clicks": null,
-        "average_pin_clicks": null,
-        "average_closeups": null,
-        "average_engagement_rate": null,
-        "score": 0,
-        "classification": "underperforming",
-        "reasons": []
-      },
-      {
-        "article_slug": "spring-bedroom-refresh-mistakes-to-avoid",
         "published_pins": 1,
         "analytics_ready_pins": 0,
         "average_impressions": null,
