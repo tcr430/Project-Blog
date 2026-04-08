@@ -6,7 +6,10 @@ from pathlib import Path
 from typing import Any
 
 from pinterest_client import PinterestClient
-from publish_pins import publish_primary_article_pin
+from publish_pins import (
+    backfill_primary_entry_if_missing,
+    publish_primary_article_pin,
+)
 
 
 def parse_args() -> argparse.Namespace:
@@ -98,6 +101,7 @@ def main() -> int:
         for slug in article_slugs:
             print(f"[pinterest] attempting primary-pin publish for recent article: {slug}")
             try:
+                backfill_primary_entry_if_missing(project_root, slug)
                 result = publish_primary_article_pin(
                     client=client,
                     article_slug=slug,

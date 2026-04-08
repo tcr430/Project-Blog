@@ -717,6 +717,108 @@ def select_latest_primary_entry(
     return sorted(candidates, key=sort_key, reverse=True)[0]
 
 
+def primary_entry_exists(
+    *,
+    article_slug: str,
+    queue_data: list[dict[str, Any]],
+    history_data: list[dict[str, Any]],
+) -> bool:
+    for collection in (queue_data, history_data):
+        for entry in collection:
+            if str(entry.get("article_slug", "")).strip() != article_slug:
+                continue
+            schedule_rank = int(entry.get("schedule_rank", 9999))
+            variant_key = str(entry.get("variant_key", "")).strip().lower()
+            if schedule_rank == 0 or variant_key == "pin-1":
+                return True
+    return False
+
+
+def build_primary_queue_entry(payload: dict[str, Any]) -> dict[str, Any]:
+    variants = payload.get("variants") or []
+    if not isinstance(variants, list) or not variants:
+        raise ValueError("Pinterest metadata does not contain variants.")
+
+    primary_variant = variants[0]
+    if not isinstance(primary_variant, dict):
+        raise ValueError("Primary Pinterest variant must be an object.")
+
+    board = primary_variant.get("board") or {}
+    board_key = str(board.get("key", "default")).strip() or "default"
+    board_name = str(board.get("name", board_key)).strip() or board_key
+    now = datetime.now(timezone.utc).isoformat()
+
+    return {
+        "article_slug": str(payload.get("article_slug", "")).strip(),
+        "cluster_id": str(payload.get("cluster_id", "")).strip(),
+        "subtopic_id": str(payload.get("subtopic_id", "")).strip(),
+        "angle_id": str(payload.get("angle_id", "")).strip(),
+        "intent_id": str(payload.get("intent_id", "")).strip(),
+        "season": str(payload.get("season", "")).strip(),
+        "holiday": str(payload.get("holiday", "")).strip(),
+        "visual_direction": payload.get("visual_direction", {}),
+        "variant_type": str(primary_variant.get("variant_type", "")).strip() or "trend_overview",
+        "style_name": str(primary_variant.get("style_name", "")).strip(),
+        "board": {
+            "key": board_key,
+            "name": board_name,
+        },
+        "title": str(primary_variant.get("title", "")).strip(),
+        "description": str(primary_variant.get("description", "")).strip(),
+        "image_path": str(primary_variant.get("image_path", "")).strip(),
+        "target_url": str(payload.get("article_url", "")).strip(),
+        "status": "queued",
+        "created_at": now,
+        "scheduled_for": now,
+        "published_at": None,
+        "error_message": None,
+        "provider_mode": "queue",
+        "provider_pin_id": None,
+        "priority_score": primary_variant.get("priority_score"),
+        "schedule_rank": int(primary_variant.get("schedule_rank", 0) or 0),
+        "variant_key": str(primary_variant.get("variant_key", "pin-1")).strip() or "pin-1",
+        "site_root_url": str(payload.get("site_root_url", "")).strip(),
+        "last_analytics_sync_at": None,
+        "impressions": None,
+        "outbound_clicks": None,
+        "saves": None,
+        "pin_clicks": None,
+        "closeups": None,
+    }
+
+
+def backfill_primary_entry_if_missing(
+    *,
+    project_root: Path,
+    article_slug: str,
+    queue_path: Path = QUEUE_FILE_PATH,
+    history_path: Path = HISTORY_FILE_PATH,
+) -> bool:
+    queue_data = load_queue(queue_path)
+    history_data = load_history(history_path)
+    if primary_entry_exists(article_slug=article_slug, queue_data=queue_data, history_data=history_data):
+        return False
+
+    pinterest_metadata_path = project_root / "_data" / "pinterest" / f"{article_slug}.json"
+    if not pinterest_metadata_path.exists():
+        return False
+
+    payload = load_json(pinterest_metadata_path)
+    if str(payload.get("article_slug", "")).strip() != article_slug:
+        return False
+
+    entry = build_primary_queue_entry(payload)
+    if not entry["title"] or not entry["image_path"] or not entry["target_url"]:
+        raise ValueError(f"Primary Pinterest metadata is incomplete for '{article_slug}'.")
+
+    queue_data.append(entry)
+    upsert_history_entry(history_data, entry)
+    save_queue(queue_path, queue_data)
+    save_history(history_path, history_data)
+    print(f"[pinterest] backfilled missing primary queue entry for {article_slug}")
+    return True
+
+
 def publish_primary_article_pin(
     *,
     client: PinterestClient,
