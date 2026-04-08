@@ -687,6 +687,36 @@ def select_primary_article_entry(
     return sorted(candidates, key=sort_key)[0]
 
 
+def select_latest_primary_entry(
+    queue_data: list[dict[str, Any]],
+) -> tuple[int, dict[str, Any]] | None:
+    candidates: list[tuple[int, dict[str, Any]]] = []
+    for index, entry in enumerate(queue_data):
+        status = str(entry.get("status", "")).strip().lower()
+        if status == "published":
+            continue
+        schedule_rank = int(entry.get("schedule_rank", 9999))
+        variant_key = str(entry.get("variant_key", "")).strip().lower()
+        if schedule_rank != 0 and variant_key != "pin-1":
+            continue
+        candidates.append((index, entry))
+
+    if not candidates:
+        return None
+
+    def sort_key(item: tuple[int, dict[str, Any]]) -> tuple[datetime, datetime]:
+        _, entry = item
+        created_at = parse_timestamp(str(entry.get("created_at", "")), "created_at") or datetime.min.replace(
+            tzinfo=timezone.utc
+        )
+        scheduled_for = parse_timestamp(str(entry.get("scheduled_for", "")), "scheduled_for") or datetime.min.replace(
+            tzinfo=timezone.utc
+        )
+        return (created_at, scheduled_for)
+
+    return sorted(candidates, key=sort_key, reverse=True)[0]
+
+
 def publish_primary_article_pin(
     *,
     client: PinterestClient,
@@ -717,6 +747,42 @@ def publish_primary_article_pin(
     save_history(history_path=history_path, history_data=history_data)
     return {
         "article_slug": article_slug,
+        "variant_type": published_entry.get("variant_type", ""),
+        "provider_pin_id": published_entry.get("provider_pin_id"),
+        "queue_path": queue_path,
+        "history_path": history_path,
+    }
+
+
+def publish_latest_primary_pin(
+    *,
+    client: PinterestClient,
+    queue_path: Path = QUEUE_FILE_PATH,
+    history_path: Path = HISTORY_FILE_PATH,
+    wait_for_image: bool = True,
+    image_timeout_seconds: int = DEFAULT_PUBLIC_IMAGE_TIMEOUT_SECONDS,
+    image_poll_interval_seconds: int = DEFAULT_PUBLIC_IMAGE_POLL_INTERVAL_SECONDS,
+) -> dict[str, Any] | None:
+    queue_data = load_queue(queue_path)
+    history_data = load_history(history_path)
+    selected = select_latest_primary_entry(queue_data)
+    if selected is None:
+        return None
+
+    entry_index, entry = selected
+    published_entry = publish_single_entry(
+        client=client,
+        entry=entry,
+        wait_for_image=wait_for_image,
+        image_timeout_seconds=image_timeout_seconds,
+        image_poll_interval_seconds=image_poll_interval_seconds,
+    )
+    queue_data.pop(entry_index)
+    upsert_history_entry(history_data, published_entry)
+    save_queue(queue_path=queue_path, queue_data=queue_data)
+    save_history(history_path=history_path, history_data=history_data)
+    return {
+        "article_slug": str(published_entry.get("article_slug", "")).strip(),
         "variant_type": published_entry.get("variant_type", ""),
         "provider_pin_id": published_entry.get("provider_pin_id"),
         "queue_path": queue_path,
