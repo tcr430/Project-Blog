@@ -8,13 +8,44 @@ from typing import Any
 
 from dotenv import load_dotenv
 
+from generate_pin_strategy import derive_image_candidates, generate_pin_strategy
 from pinterest_strategy import build_pin_distribution_strategy
 from pinterest_pin_design import build_pin_copy_variant, load_design_system, select_template_family
+from validate_pin_strategy import validate_pin_strategy
 
 DEFAULT_VARIANT_COUNT = 4
 BOARD_CONFIG_PATH = Path(__file__).resolve().parents[1] / "data" / "pinterest_boards.json"
 MAX_TITLE_LENGTH = 90
 MAX_DESCRIPTION_LENGTH = 260
+MIN_AGENT_VARIANTS = 3
+
+PIN_TEMPLATE_RENDERER_MAP = {
+    "top_headline_card": {
+        "template_family": "insight_band",
+        "style_name": "top-title",
+    },
+    "center_overlay": {
+        "template_family": "comparison_panel",
+        "style_name": "centered-title",
+    },
+    "bottom_band": {
+        "template_family": "editorial_split",
+        "style_name": "bottom-title",
+    },
+    "minimal_split": {
+        "template_family": "minimal_frame",
+        "style_name": "minimalist-overlay",
+    },
+}
+
+HOOK_STYLE_VARIANT_TYPE_MAP = {
+    "benefit_list": "trend_overview",
+    "problem_solution": "practical_tips",
+    "designer_tip": "styling_angle",
+    "transformation": "styling_angle",
+    "small_space": "practical_tips",
+    "seasonal": "trend_overview",
+}
 
 BOARD_RULES = [
     {"category": "kitchen", "keywords": ["kitchen"]},
@@ -210,6 +241,17 @@ def validate_article_metadata(data: dict[str, Any], variant_count: int) -> dict[
             truncate_text(str(data["meta_description"]), MAX_DESCRIPTION_LENGTH)
         ),
         "hero_image_path": str(data["hero_image_path"]).strip(),
+        "hero_image_prompt": str(data.get("hero_image_prompt") or "").strip(),
+        "section_image_prompts": [
+            str(item).strip()
+            for item in data.get("section_image_prompts", [])
+            if str(item).strip()
+        ],
+        "section_image_paths": [
+            str(item).strip()
+            for item in data.get("section_image_paths", [])
+            if str(item).strip()
+        ],
         "article_relative_url": str(data["article_relative_url"]).strip(),
         "cluster_id": str(data.get("cluster_id") or "").strip(),
         "subtopic_id": str(data.get("subtopic_id") or "").strip(),
@@ -219,6 +261,9 @@ def validate_article_metadata(data: dict[str, Any], variant_count: int) -> dict[
         "cluster_name": str(data.get("cluster_name") or "").strip(),
         "subtopic_name": str(data.get("subtopic_name") or "").strip(),
         "visual_direction": data.get("visual_direction") if isinstance(data.get("visual_direction"), dict) else {},
+        "editorial_mix": data.get("editorial_mix") if isinstance(data.get("editorial_mix"), dict) else {},
+        "editorial_mix_primary": str(data.get("editorial_mix_primary") or "").strip(),
+        "editorial_mix_tags": list(data.get("editorial_mix_tags") or []),
         "pinterest_titles": title_candidates,
         "pinterest_descriptions": description_candidates,
         "minimum_variant_count": requested_variant_count,
@@ -272,8 +317,15 @@ def build_variant_description(
     return ensure_terminal_punctuation(truncate_text(base, MAX_DESCRIPTION_LENGTH))
 
 
-def build_variant_payloads(article_metadata: dict[str, Any], board_config: dict[str, str]) -> tuple[list[dict[str, Any]], dict[str, Any]]:
-    design_system = load_design_system()
+def load_renderer_template_map() -> dict[str, dict[str, str]]:
+    return {key: dict(value) for key, value in PIN_TEMPLATE_RENDERER_MAP.items()}
+
+
+def resolve_variant_type_from_hook_style(hook_style: str) -> str:
+    return HOOK_STYLE_VARIANT_TYPE_MAP.get(hook_style, "trend_overview")
+
+
+def build_distribution_strategy(article_metadata: dict[str, Any], board_config: dict[str, str]) -> dict[str, Any]:
     topic_text = f"{article_metadata['title']} {article_metadata['meta_description']} {article_metadata['slug']}"
     topic_board = infer_topic_board(topic_text, board_config=board_config)
     strategy = build_pin_distribution_strategy(
@@ -285,16 +337,18 @@ def build_variant_payloads(article_metadata: dict[str, Any], board_config: dict[
         product_board=board_from_category(board_config, "home_products"),
         default_board=board_from_category(board_config, "default"),
     )
-
     print("[pinterest] applying performance weighting")
     for note in strategy["notes"]:
         print(f"[pinterest] {note}")
+    return strategy
 
-    plans = strategy["plans"]
-    minimum_variant_count = article_metadata["minimum_variant_count"]
-    if len(plans) < minimum_variant_count:
-        raise ValueError("Pinterest strategy returned fewer variants than the minimum required.")
 
+def build_fallback_variants(
+    article_metadata: dict[str, Any],
+    *,
+    plans: list[dict[str, Any]],
+    design_system: dict[str, Any],
+) -> list[dict[str, Any]]:
     variants: list[dict[str, Any]] = []
     for index, plan in enumerate(plans, start=1):
         variant_type = str(plan["variant_type"])
@@ -305,6 +359,14 @@ def build_variant_payloads(article_metadata: dict[str, Any], board_config: dict[
             duplicate_index=int(plan.get("duplicate_index", 0)),
             design_system=design_system,
         )
+        image_reference = "hero"
+        if variant_type == "product_led" and article_metadata.get("section_image_paths"):
+            image_reference = "section_3"
+        elif variant_type == "styling_angle" and article_metadata.get("section_image_paths"):
+            image_reference = "section_4"
+        elif variant_type == "practical_tips" and article_metadata.get("section_image_paths"):
+            image_reference = "section_2"
+
         variants.append(
             {
                 "variant_key": f"pin-{index}",
@@ -329,12 +391,154 @@ def build_variant_payloads(article_metadata: dict[str, Any], board_config: dict[
                 "display_kicker": copy_variant["kicker"],
                 "cta_label": copy_variant["cta_label"],
                 "topic_style": copy_variant["topic_style"],
+                "image_focus": image_reference,
+                "image_reference": image_reference,
                 "image_path": build_pin_image_path(slug=article_metadata["slug"], index=index),
                 "board": dict(plan["board"]),
                 "priority_score": plan["priority_score"],
                 "schedule_rank": plan["schedule_rank"],
             }
         )
+    return variants
+
+
+def build_strategy_variants(
+    article_metadata: dict[str, Any],
+    *,
+    plans: list[dict[str, Any]],
+    design_system: dict[str, Any],
+) -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    image_candidates = derive_image_candidates(article_metadata)
+    pin_strategy = generate_pin_strategy(article_metadata, image_candidates=image_candidates)
+    validation_result = validate_pin_strategy(pin_strategy, article_metadata)
+
+    print(f"[pinterest] strategy validation: {validation_result['status']}")
+    for warning in validation_result["warnings"]:
+        print(f"[pinterest] strategy warning: {warning}")
+    for error in validation_result["errors"]:
+        print(f"[pinterest] strategy error: {error}")
+
+    if validation_result["status"] == "fail":
+        raise ValueError("; ".join(validation_result["errors"]) or "Pin strategy validation failed.")
+
+    template_map = load_renderer_template_map()
+    strategy_variants = list(pin_strategy.get("variants") or [])
+    variants: list[dict[str, Any]] = []
+    target_count = max(MIN_AGENT_VARIANTS, min(article_metadata["minimum_variant_count"], len(plans)))
+
+    for index in range(target_count):
+        if index >= len(strategy_variants):
+            break
+        strategy_variant = strategy_variants[index]
+        plan = plans[index]
+        hook_style = normalize_copy(strategy_variant.get("hook_style"))
+        template_id = normalize_copy(strategy_variant.get("template_id"))
+        template_config = template_map.get(template_id, template_map["bottom_band"])
+        variant_type = str(plan["variant_type"] or resolve_variant_type_from_hook_style(hook_style))
+        copy_variant = build_pin_copy_variant(article_metadata, variant_type=variant_type)
+
+        hook_text = truncate_text(str(strategy_variant.get("hook_text") or ""), MAX_TITLE_LENGTH)
+        support_text = ensure_terminal_punctuation(
+            truncate_text(str(strategy_variant.get("support_text") or ""), MAX_DESCRIPTION_LENGTH)
+        )
+        image_focus = normalize_copy(strategy_variant.get("image_focus"))
+        image_reference = ""
+        for candidate in image_candidates:
+            if normalize_copy(candidate.get("description")).lower() == image_focus.lower():
+                image_reference = normalize_copy(candidate.get("id"))
+                break
+            if normalize_copy(candidate.get("id")).lower() == image_focus.lower():
+                image_reference = normalize_copy(candidate.get("id"))
+                break
+
+        if not image_reference:
+            if variant_type == "product_led" and article_metadata.get("section_image_paths"):
+                image_reference = "section_3"
+            elif variant_type == "styling_angle" and article_metadata.get("section_image_paths"):
+                image_reference = "section_4"
+            elif variant_type == "practical_tips" and article_metadata.get("section_image_paths"):
+                image_reference = "section_2"
+            else:
+                image_reference = "hero"
+
+        print(
+            f"[pinterest] strategy variant {index + 1}: "
+            f"hook='{hook_text}' | template='{template_id}' | image_focus='{image_focus or image_reference}'"
+        )
+
+        variants.append(
+            {
+                "variant_key": f"pin-{index + 1}",
+                "variant_type": variant_type,
+                "style_name": str(template_config["style_name"]),
+                "template_id": template_id,
+                "template_family": str(template_config["template_family"]),
+                "title": hook_text,
+                "description": support_text,
+                "hook_text": hook_text,
+                "support_text": support_text,
+                "display_headline": hook_text,
+                "display_subheadline": support_text,
+                "display_kicker": copy_variant["kicker"],
+                "cta_label": copy_variant["cta_label"],
+                "topic_style": copy_variant["topic_style"],
+                "image_focus": image_focus,
+                "image_reference": image_reference,
+                "brand_text": normalize_copy(strategy_variant.get("brand_text") or "THE LIVIN' EDIT"),
+                "reason": normalize_copy(strategy_variant.get("reason")),
+                "image_path": build_pin_image_path(slug=article_metadata["slug"], index=index + 1),
+                "board": dict(plan["board"]),
+                "priority_score": plan["priority_score"],
+                "schedule_rank": plan["schedule_rank"],
+            }
+        )
+
+    return variants, validation_result
+
+
+def build_variant_payloads(article_metadata: dict[str, Any], board_config: dict[str, str]) -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    design_system = load_design_system()
+    strategy = build_distribution_strategy(article_metadata, board_config=board_config)
+    plans = strategy["plans"]
+    minimum_variant_count = article_metadata["minimum_variant_count"]
+    if len(plans) < minimum_variant_count:
+        raise ValueError("Pinterest strategy returned fewer variants than the minimum required.")
+
+    used_fallback = False
+    validation_result = {"status": "pass", "warnings": [], "errors": []}
+    try:
+        variants, validation_result = build_strategy_variants(
+            article_metadata,
+            plans=plans,
+            design_system=design_system,
+        )
+    except Exception as exc:
+        used_fallback = True
+        print(f"[pinterest] strategy fallback engaged: {exc}")
+        variants = []
+
+    if used_fallback:
+        variants = build_fallback_variants(
+            article_metadata,
+            plans=plans,
+            design_system=design_system,
+        )
+    elif len(variants) < minimum_variant_count:
+        used_fallback = True
+        fallback_variants = build_fallback_variants(
+            article_metadata,
+            plans=plans,
+            design_system=design_system,
+        )
+        existing_keys = {normalize_key(str(item["title"])) for item in variants}
+        for fallback_variant in fallback_variants:
+            if len(variants) >= minimum_variant_count:
+                break
+            if normalize_key(str(fallback_variant["title"])) in existing_keys:
+                continue
+            print(f"[pinterest] strategy supplement fallback: {fallback_variant['title']}")
+            variants.append(fallback_variant)
+            existing_keys.add(normalize_key(str(fallback_variant["title"])))
 
     return variants, {
         "minimum_variant_count": minimum_variant_count,
@@ -343,6 +547,9 @@ def build_variant_payloads(article_metadata: dict[str, Any], board_config: dict[
         "ranked_variant_types": strategy["ranked_variant_types"],
         "article_score": strategy["article_score"],
         "notes": strategy["notes"],
+        "strategy_validation": validation_result,
+        "strategy_fallback_used": used_fallback,
+        "image_candidate_count": len(derive_image_candidates(article_metadata)),
         "board_config_path": str(BOARD_CONFIG_PATH),
         "design_system_path": str((Path(__file__).resolve().parents[1] / "data" / "pinterest_pin_design_system.json")),
     }
@@ -375,6 +582,7 @@ def build_pinterest_payload(article_metadata: dict[str, Any], project_root: Path
         "intent_id": article_metadata.get("intent_id", ""),
         "visual_direction": article_metadata.get("visual_direction", {}),
         "hero_image_path": article_metadata["hero_image_path"],
+        "section_image_paths": article_metadata.get("section_image_paths", []),
         "site_root_url": site_root_url,
         "variant_count": len(variants),
         "strategy": strategy_summary,

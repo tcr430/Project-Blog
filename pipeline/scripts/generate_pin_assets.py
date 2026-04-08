@@ -68,6 +68,27 @@ def load_base_image(image_path: Path) -> Image.Image:
     return Image.open(image_path).convert("RGBA")
 
 
+def resolve_variant_base_image(payload: dict[str, Any], variant: dict[str, Any]) -> Path:
+    image_reference = normalize_copy(variant.get("image_reference") or variant.get("image_focus") or "hero").lower()
+    if image_reference == "hero":
+        return normalize_image_path(str(payload["hero_image_path"]).strip())
+
+    section_paths = payload.get("section_image_paths") or []
+    if isinstance(section_paths, list) and image_reference.startswith("section_"):
+        try:
+            section_index = int(image_reference.split("_", 1)[1]) - 1
+        except (IndexError, ValueError):
+            section_index = -1
+        if 0 <= section_index < len(section_paths):
+            section_path = normalize_copy(section_paths[section_index])
+            if section_path:
+                resolved = normalize_image_path(section_path)
+                if resolved.exists():
+                    return resolved
+
+    return normalize_image_path(str(payload["hero_image_path"]).strip())
+
+
 def normalize_copy(text: str) -> str:
     return re.sub(r"\s+", " ", str(text).strip())
 
@@ -673,11 +694,23 @@ def build_pin_image(
     has_pin_specific_copy = bool(variant.get("display_headline")) and bool(variant.get("display_subheadline"))
 
     headline_raw, _ = truncate_text(
-        str(variant.get("display_headline") or generated_copy.get("headline") or variant.get("title") or ""),
+        str(
+            variant.get("hook_text")
+            or variant.get("display_headline")
+            or generated_copy.get("headline")
+            or variant.get("title")
+            or ""
+        ),
         HEADLINE_HARD_MAX_LENGTH,
     )
     subheadline_raw, _ = truncate_text(
-        str(variant.get("display_subheadline") or generated_copy.get("subheadline") or variant.get("description") or ""),
+        str(
+            variant.get("support_text")
+            or variant.get("display_subheadline")
+            or generated_copy.get("subheadline")
+            or variant.get("description")
+            or ""
+        ),
         SUBHEADLINE_HARD_MAX_LENGTH,
     )
     headline = normalize_copy(headline_raw)
@@ -948,8 +981,6 @@ def generate_pin_assets(pinterest_metadata_path: Path) -> list[Path]:
     design_system = load_pinterest_design_system()
     quality_minimum = int(design_system.get("layout_rules", {}).get("validation", {}).get("min_quality_score", DEFAULT_QUALITY_SCORE_MINIMUM))
 
-    hero_image_path = normalize_image_path(str(payload["hero_image_path"]).strip())
-    base_image = load_base_image(hero_image_path)
     slug = str(payload["article_slug"]).strip()
     brand_name = load_brand_name(project_root)
 
@@ -966,10 +997,22 @@ def generate_pin_assets(pinterest_metadata_path: Path) -> list[Path]:
     for index, variant in enumerate(variants, start=1):
         style_name = str(variant.get("style_name", "bottom-title")).strip() or "bottom-title"
         variant_type = str(variant.get("variant_type", "")).strip() or f"variant_{index}"
-        headline = str(variant.get("display_headline") or variant.get("title") or "").strip()
-        subheadline = str(variant.get("display_subheadline") or variant.get("description") or "").strip()
+        headline = str(variant.get("hook_text") or variant.get("display_headline") or variant.get("title") or "").strip()
+        subheadline = str(
+            variant.get("support_text") or variant.get("display_subheadline") or variant.get("description") or ""
+        ).strip()
         if not headline:
             raise ValueError(f"Variant {index} is missing a usable headline.")
+
+        image_reference = variant.get("image_reference") or variant.get("image_focus") or "hero"
+        base_image_path = resolve_variant_base_image(payload, variant)
+        base_image = load_base_image(base_image_path)
+
+        print(
+            f"[pinterest] rendering variant {index}: "
+            f"hook='{headline}' | template='{variant.get('template_id') or variant.get('template_family')}' "
+            f"| image='{image_reference}' -> '{base_image_path.name}'"
+        )
 
         image: Image.Image | None = None
         diagnostics: dict[str, Any] = {}

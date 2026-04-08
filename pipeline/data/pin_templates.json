@@ -1,0 +1,32 @@
+{
+  "templates": [
+    {
+      "id": "top_headline_card",
+      "label": "Top Headline Card",
+      "description": "Top-weighted editorial card with strong headline and clean supporting copy.",
+      "best_for": ["benefit_list", "designer_tip", "transformation"],
+      "image_focus_options": ["hero focal point", "clean room overview", "single standout furniture zone"]
+    },
+    {
+      "id": "center_overlay",
+      "label": "Center Overlay",
+      "description": "Centered translucent overlay for practical, text-led pins that still feel Pinterest-native.",
+      "best_for": ["problem_solution", "small_space", "designer_tip"],
+      "image_focus_options": ["clear room depth", "balanced furniture grouping", "symmetrical room crop"]
+    },
+    {
+      "id": "bottom_band",
+      "label": "Bottom Band",
+      "description": "Lower-band layout that preserves image impact while holding a strong hook and CTA.",
+      "best_for": ["benefit_list", "transformation", "seasonal"],
+      "image_focus_options": ["hero furniture piece", "styled room corner", "lower-room composition with breathing room"]
+    },
+    {
+      "id": "minimal_split",
+      "label": "Minimal Split",
+      "description": "Refined split composition with quieter support text and a sharper editorial feel.",
+      "best_for": ["designer_tip", "problem_solution", "transformation"],
+      "image_focus_options": ["material detail plus room context", "quiet editorial vignette", "one strong zone with negative space"]
+    }
+  ]
+}

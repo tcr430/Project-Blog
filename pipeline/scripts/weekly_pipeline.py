@@ -405,13 +405,13 @@ def run_image_step(
 
 def run_pinterest_step(metadata_path: Path) -> dict[str, Any] | None:
     try:
-        log_phase("generating pinterest metadata")
+        log_phase("generating pin strategy and pinterest metadata")
         pinterest_metadata_path = generate_pinterest_metadata(
             metadata_path=metadata_path,
             variant_count=PINTEREST_VARIANT_COUNT,
         )
 
-        log_phase("generating pin images")
+        log_phase("rendering pin images")
         pin_image_paths = generate_pin_assets(pinterest_metadata_path=pinterest_metadata_path)
 
         log_phase("scheduling and queueing pins")

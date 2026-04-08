@@ -1,0 +1,46 @@
+{
+  "hook_styles": [
+    {
+      "id": "benefit_list",
+      "label": "Benefit List",
+      "guidance": "Lead with a concrete payoff or upgrade and imply a useful list or set of options.",
+      "best_for_angles": ["best_options", "ideas"],
+      "example": "7 Bathroom Ideas That Feel More Expensive"
+    },
+    {
+      "id": "problem_solution",
+      "label": "Problem Solution",
+      "guidance": "Name a decorating friction point and hint at the practical fix in one fast hook.",
+      "best_for_angles": ["how_to", "mistakes"],
+      "example": "Small Bathroom? Try This Scandinavian Trick"
+    },
+    {
+      "id": "designer_tip",
+      "label": "Designer Tip",
+      "guidance": "Use a confident editorial tip or insider move that feels helpful rather than salesy.",
+      "best_for_angles": ["how_to", "ideas", "best_options"],
+      "example": "The Designer Move That Makes Wood Furniture Feel Lighter"
+    },
+    {
+      "id": "transformation",
+      "label": "Transformation",
+      "guidance": "Focus on the before-to-after feeling or upgraded outcome without sounding exaggerated.",
+      "best_for_angles": ["ideas", "how_to", "mistakes"],
+      "example": "This One Swap Makes a Neutral Bedroom Feel Finished"
+    },
+    {
+      "id": "small_space",
+      "label": "Small Space",
+      "guidance": "Frame the hook around limited space, layout efficiency, or making a compact room work better.",
+      "best_for_angles": ["how_to", "best_options"],
+      "example": "Tiny Bathroom? Start With These Slim Storage Pieces"
+    },
+    {
+      "id": "seasonal",
+      "label": "Seasonal",
+      "guidance": "Use only when the article genuinely benefits from a timely seasonal angle or refresh signal.",
+      "best_for_angles": ["ideas", "mistakes"],
+      "example": "Spring Bedroom Refresh Ideas That Still Feel Calm"
+    }
+  ]
+}
