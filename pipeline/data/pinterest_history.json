@@ -2062,5 +2062,48 @@
     "saves": null,
     "pin_clicks": null,
     "closeups": null
+  },
+  {
+    "article_slug": "best-furniture-minimalist-bathroom",
+    "cluster_id": "minimalist_bathroom",
+    "subtopic_id": "furniture",
+    "angle_id": "best_options",
+    "intent_id": "comparison",
+    "season": "",
+    "holiday": "",
+    "visual_direction": {
+      "family_id": "warm_layered",
+      "mood": "warm, tactile, layered and inviting styling",
+      "lighting": "late-morning daylight with warm reflected light",
+      "palette": "creams, camel, honey wood, soft terracotta accents",
+      "intent_id": "comparison",
+      "profile_id": "comparison",
+      "shot_library_id": "general_decor"
+    },
+    "variant_type": "trend_overview",
+    "style_name": "bottom-title",
+    "board": {
+      "key": "bathroom",
+      "name": "Bathroom Styling Notes"
+    },
+    "title": "Smart Furniture Choices for a Minimalist Bathroom",
+    "description": "Explore practical furniture choices for minimalist bathrooms that combine clean lines with warm textures for a balanced look.",
+    "image_path": "/assets/pins/best-furniture-minimalist-bathroom/pin-1.png",
+    "target_url": "https://thelivinedit.com/ideas/2026/04/10/best-furniture-minimalist-bathroom/",
+    "created_at": "2026-04-10T11:09:06.052598+00:00",
+    "scheduled_for": "2026-04-10T11:09:06.052598+00:00",
+    "published_at": "2026-04-10T11:09:07.443703+00:00",
+    "status": "published",
+    "error_message": null,
+    "provider_mode": "queue",
+    "provider_pin_id": "389139224075977370",
+    "priority_score": 0.0,
+    "schedule_rank": 0,
+    "last_analytics_sync_at": null,
+    "impressions": null,
+    "outbound_clicks": null,
+    "saves": null,
+    "pin_clicks": null,
+    "closeups": null
   }
 ]
