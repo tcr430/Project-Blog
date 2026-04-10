@@ -411,6 +411,10 @@ def build_strategy_variants(
     image_candidates = derive_image_candidates(article_metadata)
     pin_strategy = generate_pin_strategy(article_metadata, image_candidates=image_candidates)
     validation_result = validate_pin_strategy(pin_strategy, article_metadata)
+    for warning in pin_strategy.get("repair_warnings") or []:
+        validation_result.setdefault("warnings", []).append(str(warning))
+    if validation_result.get("status") == "pass" and validation_result.get("warnings"):
+        validation_result["status"] = "warning"
 
     print(f"[pinterest] strategy validation: {validation_result['status']}")
     for warning in validation_result["warnings"]:
@@ -505,6 +509,7 @@ def build_variant_payloads(article_metadata: dict[str, Any], board_config: dict[
         raise ValueError("Pinterest strategy returned fewer variants than the minimum required.")
 
     used_fallback = False
+    fallback_reason = ""
     validation_result = {"status": "pass", "warnings": [], "errors": []}
     try:
         variants, validation_result = build_strategy_variants(
@@ -514,7 +519,8 @@ def build_variant_payloads(article_metadata: dict[str, Any], board_config: dict[
         )
     except Exception as exc:
         used_fallback = True
-        print(f"[pinterest] strategy fallback engaged: {exc}")
+        fallback_reason = str(exc) or exc.__class__.__name__
+        print(f"[pinterest] strategy fallback engaged: {fallback_reason}")
         variants = []
 
     if used_fallback:
@@ -525,6 +531,10 @@ def build_variant_payloads(article_metadata: dict[str, Any], board_config: dict[
         )
     elif len(variants) < minimum_variant_count:
         used_fallback = True
+        fallback_reason = (
+            f"strategy returned {len(variants)} usable variants; "
+            f"supplemented with fallback variants to reach {minimum_variant_count}"
+        )
         fallback_variants = build_fallback_variants(
             article_metadata,
             plans=plans,
@@ -549,6 +559,7 @@ def build_variant_payloads(article_metadata: dict[str, Any], board_config: dict[
         "notes": strategy["notes"],
         "strategy_validation": validation_result,
         "strategy_fallback_used": used_fallback,
+        "strategy_fallback_reason": fallback_reason,
         "image_candidate_count": len(derive_image_candidates(article_metadata)),
         "board_config_path": str(BOARD_CONFIG_PATH),
         "design_system_path": str((Path(__file__).resolve().parents[1] / "data" / "pinterest_pin_design_system.json")),

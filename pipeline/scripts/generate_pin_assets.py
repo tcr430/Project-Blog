@@ -40,6 +40,12 @@ def parse_args() -> argparse.Namespace:
         description="Generate branded Pinterest pin assets from Pinterest metadata."
     )
     parser.add_argument("pinterest_metadata_path", type=str, help="Path to Pinterest metadata JSON.")
+    parser.add_argument(
+        "--variant-key",
+        type=str,
+        default="",
+        help="Optional single variant key to render, such as pin-1.",
+    )
     return parser.parse_args()
 
 
@@ -90,7 +96,67 @@ def resolve_variant_base_image(payload: dict[str, Any], variant: dict[str, Any])
 
 
 def normalize_copy(text: str) -> str:
-    return re.sub(r"\s+", " ", str(text).strip())
+    if text is None:
+        return ""
+    cleaned = re.sub(r"\s+", " ", str(text).strip())
+    if cleaned.lower() in {"none", "null", "nan"}:
+        return ""
+    return cleaned
+
+
+def humanize_identifier(value: Any) -> str:
+    cleaned = normalize_copy(str(value or "").replace("_", " ").replace("-", " "))
+    return cleaned.title()
+
+
+def infer_pin_topic_phrase(article_payload: dict[str, Any]) -> str:
+    cluster = humanize_identifier(article_payload.get("cluster_id"))
+    subtopic = humanize_identifier(article_payload.get("subtopic_id"))
+    if cluster and subtopic and subtopic.lower() not in cluster.lower():
+        return f"{cluster} {subtopic}".strip()
+    if cluster:
+        return cluster
+    title = normalize_copy(article_payload.get("article_title") or "")
+    title = re.sub(r"^(how to choose|how to style|best|a guide to)\s+", "", title, flags=re.IGNORECASE)
+    title = re.sub(r"\s*:\s*.*$", "", title).strip()
+    return title or "Home Decor"
+
+
+def build_legacy_render_copy(article_payload: dict[str, Any], variant: dict[str, Any]) -> tuple[str, str]:
+    topic = infer_pin_topic_phrase(article_payload)
+    room = humanize_identifier(article_payload.get("cluster_id")).split()[-1] if article_payload.get("cluster_id") else "space"
+    variant_type = normalize_copy(variant.get("variant_type")).lower()
+
+    if variant_type == "practical_tips":
+        headline = f"How to Choose {topic}"
+        subheadline = f"Simple criteria for a calmer, more functional {room.lower()}."
+    elif variant_type == "product_led":
+        headline = f"{topic} Worth Comparing"
+        subheadline = "Start with pieces that balance function, scale, and warmth."
+    elif variant_type == "styling_angle":
+        headline = f"Style {topic} Without Clutter"
+        subheadline = "Use finish, texture, and restraint for a more polished room."
+    else:
+        headline = f"Smart {topic} Ideas"
+        subheadline = f"Clean choices for a calmer, more functional {room.lower()}."
+
+    return truncate_text(headline, 64)[0], truncate_text(subheadline, 110)[0]
+
+
+def resolve_render_copy(article_payload: dict[str, Any], variant: dict[str, Any]) -> tuple[str, str]:
+    if normalize_copy(variant.get("hook_text")):
+        headline = normalize_copy(variant.get("hook_text"))
+        subheadline = normalize_copy(variant.get("support_text") or variant.get("display_subheadline") or variant.get("description"))
+        return headline, subheadline
+
+    # Older Pinterest metadata may contain stale display_headline values generated before
+    # the hook strategy layer. Repair those locally instead of weakening layout validation.
+    if not normalize_copy(variant.get("template_id")):
+        return build_legacy_render_copy(article_payload, variant)
+
+    headline = normalize_copy(variant.get("title") or variant.get("display_headline"))
+    subheadline = normalize_copy(variant.get("support_text") or variant.get("display_subheadline") or variant.get("description"))
+    return headline, subheadline
 
 
 def truncate_text(text: str, max_length: int) -> tuple[str, bool]:
@@ -692,23 +758,20 @@ def build_pin_image(
     variant_type = str(variant.get("variant_type", "")).strip()
     generated_copy = build_pin_copy_variant(article_payload, variant_type=variant_type)
     has_pin_specific_copy = bool(variant.get("display_headline")) and bool(variant.get("display_subheadline"))
+    resolved_headline, resolved_subheadline = resolve_render_copy(article_payload, variant)
 
     headline_raw, _ = truncate_text(
         str(
-            variant.get("hook_text")
-            or variant.get("display_headline")
+            resolved_headline
             or generated_copy.get("headline")
-            or variant.get("title")
             or ""
         ),
         HEADLINE_HARD_MAX_LENGTH,
     )
     subheadline_raw, _ = truncate_text(
         str(
-            variant.get("support_text")
-            or variant.get("display_subheadline")
+            resolved_subheadline
             or generated_copy.get("subheadline")
-            or variant.get("description")
             or ""
         ),
         SUBHEADLINE_HARD_MAX_LENGTH,
@@ -975,7 +1038,7 @@ def load_brand_name(project_root: Path) -> str:
     return "The Livin' Edit"
 
 
-def generate_pin_assets(pinterest_metadata_path: Path) -> list[Path]:
+def generate_pin_assets(pinterest_metadata_path: Path, variant_key: str = "") -> list[Path]:
     project_root = Path(__file__).resolve().parents[2]
     payload = load_json(pinterest_metadata_path)
     design_system = load_pinterest_design_system()
@@ -991,18 +1054,23 @@ def generate_pin_assets(pinterest_metadata_path: Path) -> list[Path]:
     variants = payload.get("variants", [])
     if not isinstance(variants, list) or not variants:
         raise ValueError("Pinterest metadata must contain a non-empty variants list.")
-    if len(variants) < 4:
+    selected_variant_key = normalize_copy(variant_key).lower()
+    if len(variants) < 4 and not selected_variant_key:
         raise ValueError("Pinterest metadata must contain at least 4 variants.")
 
     for index, variant in enumerate(variants, start=1):
+        current_variant_key = normalize_copy(variant.get("variant_key") or f"pin-{index}").lower()
+        if selected_variant_key and current_variant_key != selected_variant_key:
+            continue
+
         style_name = str(variant.get("style_name", "bottom-title")).strip() or "bottom-title"
         variant_type = str(variant.get("variant_type", "")).strip() or f"variant_{index}"
-        headline = str(variant.get("hook_text") or variant.get("display_headline") or variant.get("title") or "").strip()
-        subheadline = str(
-            variant.get("support_text") or variant.get("display_subheadline") or variant.get("description") or ""
-        ).strip()
+        headline, subheadline = resolve_render_copy(payload, variant)
         if not headline:
             raise ValueError(f"Variant {index} is missing a usable headline.")
+
+        variant["hook_text"] = headline
+        variant["support_text"] = subheadline
 
         image_reference = variant.get("image_reference") or variant.get("image_focus") or "hero"
         base_image_path = resolve_variant_base_image(payload, variant)
@@ -1067,6 +1135,9 @@ def generate_pin_assets(pinterest_metadata_path: Path) -> list[Path]:
         )
         saved_paths.append(output_path)
 
+    if selected_variant_key and not saved_paths:
+        raise ValueError(f"No Pinterest variant found for variant key: {variant_key}")
+
     pinterest_metadata_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     return saved_paths
 
@@ -1074,7 +1145,7 @@ def generate_pin_assets(pinterest_metadata_path: Path) -> list[Path]:
 def main() -> int:
     args = parse_args()
     try:
-        saved_paths = generate_pin_assets(Path(args.pinterest_metadata_path))
+        saved_paths = generate_pin_assets(Path(args.pinterest_metadata_path), variant_key=args.variant_key)
         for path in saved_paths:
             print(path)
         return 0

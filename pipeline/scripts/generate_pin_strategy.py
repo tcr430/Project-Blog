@@ -15,6 +15,8 @@ INTERNAL_VARIANT_COUNT = 5
 OUTPUT_VARIANT_COUNT = 3
 HOOK_MIN_WORDS = 4
 HOOK_MAX_WORDS = 12
+DEFAULT_HOOK_STYLE = "benefit_list"
+DEFAULT_TEMPLATE_ID = "bottom_band"
 GENERIC_HOOK_PATTERNS = [
     r"^best furniture for\b",
     r"^a guide to\b",
@@ -397,16 +399,18 @@ def validate_strategy_payload(
     variants = payload.get("variants")
     if not isinstance(variants, list):
         raise RuntimeError("Pin strategy response must contain a variants list.")
-    if len(variants) != INTERNAL_VARIANT_COUNT:
-        raise RuntimeError(f"Pin strategy must return exactly {INTERNAL_VARIANT_COUNT} variants.")
+    if not variants:
+        raise RuntimeError("Pin strategy response did not include any variants.")
 
     validated: list[dict[str, str]] = []
     seen_hook_keys: set[str] = set()
     seen_structures: set[str] = set()
+    repair_warnings: list[str] = []
     article_title_key = normalize_key(article_title)
     for index, item in enumerate(variants, start=1):
         if not isinstance(item, dict):
-            raise RuntimeError(f"Variant {index} must be an object.")
+            repair_warnings.append(f"Variant {index} skipped because it was not an object.")
+            continue
         variant = {key: normalize_text(item.get(key)) for key in [
             "variant_id",
             "hook_text",
@@ -417,41 +421,78 @@ def validate_strategy_payload(
             "brand_text",
             "reason",
         ]}
-        missing = [key for key, value in variant.items() if not value]
+        if not variant["variant_id"]:
+            variant["variant_id"] = f"v{index}"
+        if not variant["brand_text"]:
+            variant["brand_text"] = "THE LIVIN' EDIT"
+        missing = [key for key in ["hook_text", "image_focus", "support_text"] if not variant[key]]
         if missing:
-            raise RuntimeError(f"Variant {index} is missing required fields: {', '.join(missing)}")
+            repair_warnings.append(
+                f"Variant {index} skipped because it was missing required fields: {', '.join(missing)}."
+            )
+            continue
         word_count = len(variant["hook_text"].split())
         if word_count < HOOK_MIN_WORDS or word_count > HOOK_MAX_WORDS:
-            raise RuntimeError(
-                f"Variant {index} hook_text must be {HOOK_MIN_WORDS} to {HOOK_MAX_WORDS} words."
+            repair_warnings.append(
+                f"Variant {index} skipped because hook_text was {word_count} words."
             )
+            continue
         if variant["hook_style"] not in hook_style_ids:
-            raise RuntimeError(f"Variant {index} uses unknown hook_style '{variant['hook_style']}'.")
+            repair_warnings.append(
+                f"Variant {index} used unknown hook_style '{variant['hook_style']}', defaulted to {DEFAULT_HOOK_STYLE}."
+            )
+            variant["hook_style"] = DEFAULT_HOOK_STYLE
         if variant["template_id"] not in template_ids:
-            raise RuntimeError(f"Variant {index} uses unknown template_id '{variant['template_id']}'.")
+            repair_warnings.append(
+                f"Variant {index} used unknown template_id '{variant['template_id']}', defaulted to {DEFAULT_TEMPLATE_ID}."
+            )
+            variant["template_id"] = DEFAULT_TEMPLATE_ID
         if variant["brand_text"] != "THE LIVIN' EDIT":
-            raise RuntimeError(f"Variant {index} brand_text must be exactly THE LIVIN' EDIT.")
+            repair_warnings.append(f"Variant {index} brand_text normalized to THE LIVIN' EDIT.")
+            variant["brand_text"] = "THE LIVIN' EDIT"
         hook_key = normalize_key(variant["hook_text"])
         if hook_key == article_title_key:
-            raise RuntimeError(f"Variant {index} hook_text reuses the article title.")
+            repair_warnings.append(f"Variant {index} skipped because hook_text reused the article title.")
+            continue
         if hook_key in seen_hook_keys:
-            raise RuntimeError(f"Variant {index} hook_text duplicates another hook.")
+            repair_warnings.append(f"Variant {index} skipped because hook_text duplicated another hook.")
+            continue
         if hook_matches_generic_pattern(variant["hook_text"]):
-            raise RuntimeError(f"Variant {index} hook_text uses a banned generic pattern.")
+            repair_warnings.append(f"Variant {index} skipped because hook_text used a banned generic pattern.")
+            continue
         if count_filler_words(variant["hook_text"]) >= 2:
-            raise RuntimeError(f"Variant {index} hook_text is too padded with filler words.")
+            repair_warnings.append(f"Variant {index} skipped because hook_text had too many filler words.")
+            continue
         if len(variant["hook_text"]) > 68:
-            raise RuntimeError(f"Variant {index} hook_text is too long to read instantly.")
+            repair_warnings.append(f"Variant {index} skipped because hook_text was too long to read instantly.")
+            continue
         structure = classify_hook_structure(variant["hook_text"])
         if structure in seen_structures and len(variants) >= 3:
-            raise RuntimeError(f"Variant {index} repeats the '{structure}' hook structure.")
+            repair_warnings.append(
+                f"Variant {index} repeated the '{structure}' hook structure; kept if otherwise distinct."
+            )
         for existing in validated:
             if similarity_ratio(existing["hook_text"], variant["hook_text"]) >= 0.7:
-                raise RuntimeError(f"Variant {index} hook_text is too similar to another variant.")
-        seen_hook_keys.add(hook_key)
-        seen_structures.add(structure)
-        validated.append(variant)
-    return {"variants": select_best_variants(validated)}
+                repair_warnings.append(f"Variant {index} skipped because hook_text was too similar to another variant.")
+                break
+        else:
+            seen_hook_keys.add(hook_key)
+            seen_structures.add(structure)
+            validated.append(variant)
+
+    if not validated:
+        detail = "; ".join(repair_warnings[-5:])
+        raise RuntimeError(f"Pin strategy did not contain any usable variants. {detail}".strip())
+
+    selected = select_best_variants(validated)
+    result: dict[str, Any] = {"variants": selected}
+    if repair_warnings:
+        result["repair_warnings"] = repair_warnings
+    if len(selected) < OUTPUT_VARIANT_COUNT:
+        result.setdefault("repair_warnings", []).append(
+            f"Pin strategy returned {len(selected)} usable variants; fallback will supplement if needed."
+        )
+    return result
 
 
 def generate_pin_strategy(

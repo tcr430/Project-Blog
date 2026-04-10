@@ -49,7 +49,8 @@ jobs:
             echo "Pinterest metadata not found: $PINTEREST_METADATA"
             exit 1
           fi
-          python pipeline/scripts/generate_pin_assets.py "$PINTEREST_METADATA"
+          python pipeline/scripts/generate_pin_assets.py "$PINTEREST_METADATA" \
+            --variant-key "${{ github.event.inputs.variant_key || 'pin-1' }}"
 
       - name: Commit generated selected pin assets
         run: |

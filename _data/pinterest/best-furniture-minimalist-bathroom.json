@@ -56,7 +56,7 @@
       "variant_key": "pin-1",
       "variant_type": "trend_overview",
       "style_name": "bottom-title",
-      "template_family": "editorial_split_long",
+      "template_family": "insight_band",
       "title": "Smart Furniture Choices for a Minimalist Bathroom",
       "description": "Explore practical furniture choices for minimalist bathrooms that combine clean lines with warm textures for a balanced look.",
       "display_headline": "Best Furniture for How To Choose Furniture For A Minimalist Bathroom",
@@ -72,7 +72,25 @@
         "name": "Bathroom Styling Notes"
       },
       "priority_score": 0.0,
-      "schedule_rank": 0
+      "schedule_rank": 0,
+      "hook_text": "Smart Minimalist Bathroom Furniture Ideas",
+      "support_text": "Clean choices for a calmer, more functional bathroom.",
+      "render_diagnostics": {
+        "template_family": "insight_band",
+        "composition_class": "spacious_editorial",
+        "topic_style": "decision",
+        "content_density": "medium",
+        "headline_font_size": 66,
+        "subheadline_font_size": 25,
+        "headline_truncated": false,
+        "subheadline_truncated": false,
+        "subheadline_requested": true,
+        "show_brand_label": false,
+        "used_height": 392,
+        "content_box_height": 496,
+        "quality_score": 100,
+        "quality_warnings": []
+      }
     },
     {
       "variant_key": "pin-2",
@@ -94,7 +112,25 @@
         "name": "Bathroom Styling Notes"
       },
       "priority_score": 0.0,
-      "schedule_rank": 1
+      "schedule_rank": 1,
+      "hook_text": "None",
+      "support_text": "The shapes, storage pieces, and finishes that make minimalist bathroom feel calm, useful, and pulled together.",
+      "render_diagnostics": {
+        "template_family": "editorial_split",
+        "composition_class": "spacious_editorial",
+        "topic_style": "decision",
+        "content_density": "medium",
+        "headline_font_size": 68,
+        "subheadline_font_size": 27,
+        "headline_truncated": false,
+        "subheadline_truncated": false,
+        "subheadline_requested": true,
+        "show_brand_label": false,
+        "used_height": 314,
+        "content_box_height": 382,
+        "quality_score": 100,
+        "quality_warnings": []
+      }
     },
     {
       "variant_key": "pin-3",
@@ -116,7 +152,25 @@
         "name": "Home Finds & Decor Picks"
       },
       "priority_score": 0.0,
-      "schedule_rank": 2
+      "schedule_rank": 2,
+      "hook_text": "None",
+      "support_text": "Start with the pieces that add function, clean lines, and the right amount of warmth.",
+      "render_diagnostics": {
+        "template_family": "comparison_panel",
+        "composition_class": "minimal_copy",
+        "topic_style": "decision",
+        "content_density": "short",
+        "headline_font_size": 66,
+        "subheadline_font_size": 23,
+        "headline_truncated": false,
+        "subheadline_truncated": false,
+        "subheadline_requested": true,
+        "show_brand_label": false,
+        "used_height": 328,
+        "content_box_height": 364,
+        "quality_score": 100,
+        "quality_warnings": []
+      }
     },
     {
       "variant_key": "pin-4",
@@ -138,7 +192,25 @@
         "name": "Bathroom Styling Notes"
       },
       "priority_score": 0.0,
-      "schedule_rank": 3
+      "schedule_rank": 3,
+      "hook_text": "None",
+      "support_text": "Use finish, texture, and restraint to make minimalist bathroom feel polished without clutter.",
+      "render_diagnostics": {
+        "template_family": "editorial_split",
+        "composition_class": "minimal_copy",
+        "topic_style": "decision",
+        "content_density": "short",
+        "headline_font_size": 69,
+        "subheadline_font_size": 24,
+        "headline_truncated": false,
+        "subheadline_truncated": false,
+        "subheadline_requested": true,
+        "show_brand_label": false,
+        "used_height": 338,
+        "content_box_height": 382,
+        "quality_score": 100,
+        "quality_warnings": []
+      }
     }
   ]
 }

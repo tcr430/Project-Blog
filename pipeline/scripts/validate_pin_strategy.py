@@ -119,7 +119,7 @@ def validate_pin_strategy(
             errors.append(f"Variant {index} uses unknown template_id '{template_id}'.")
 
         if not image_focus:
-            errors.append(f"Variant {index} is missing image_focus.")
+            warnings.append(f"Variant {index} is missing image_focus; renderer will use a safe image fallback.")
         else:
             image_focus_key = normalize_text(image_focus)
             image_focus_match = (
@@ -127,7 +127,9 @@ def validate_pin_strategy(
                 or image_focus_key.lower() in image_candidate_descriptions
             )
             if not image_focus_match:
-                errors.append(f"Variant {index} image_focus '{image_focus}' does not match provided image candidates.")
+                warnings.append(
+                    f"Variant {index} image_focus '{image_focus}' does not match provided image candidates; renderer will use a safe image fallback."
+                )
 
     for hook_key, count in hook_keys.items():
         if hook_key and count > 1:
