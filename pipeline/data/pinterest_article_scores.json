@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-10T07:13:23.813688+00:00",
+  "generated_at": "2026-04-10T12:41:12.653047+00:00",
   "articles": [
     {
       "article_slug": "best-furniture-for-earthy-bedroom",
@@ -65,7 +65,7 @@
       "average_saves": null,
       "average_outbound_clicks": null,
       "average_engagement_rate": null,
-      "published_pins": 1
+      "published_pins": 2
     },
     {
       "article_slug": "spring-bedroom-refresh-mistakes-to-avoid",
@@ -91,6 +91,17 @@
     },
     {
       "article_slug": "moody-bedroom-texture-mistakes-to-avoid",
+      "score": 0,
+      "classification": "underperforming",
+      "reasons": [],
+      "average_impressions": null,
+      "average_saves": null,
+      "average_outbound_clicks": null,
+      "average_engagement_rate": null,
+      "published_pins": 1
+    },
+    {
+      "article_slug": "best-furniture-minimalist-bathroom",
       "score": 0,
       "classification": "underperforming",
       "reasons": [],

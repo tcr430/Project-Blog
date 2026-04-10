@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-10T07:13:23.813688+00:00",
+  "generated_at": "2026-04-10T12:41:12.653047+00:00",
   "history_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_history.json",
-  "published_pin_count": 10,
+  "published_pin_count": 12,
   "global_metrics": {
-    "published_pins": 10,
+    "published_pins": 12,
     "analytics_ready_pins": 0,
     "average_impressions": null,
     "average_saves": null,
@@ -15,7 +15,7 @@
   "performance_by_variant_type": [
     {
       "variant_type": "trend_overview",
-      "published_pins": 7,
+      "published_pins": 9,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -39,7 +39,7 @@
   "performance_by_board": [
     {
       "board_key": "bedroom",
-      "published_pins": 5,
+      "published_pins": 6,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -63,7 +63,7 @@
     },
     {
       "board_key": "bathroom",
-      "published_pins": 1,
+      "published_pins": 2,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -147,7 +147,7 @@
     },
     {
       "article_slug": "how-to-style-a-neutral-bedroom",
-      "published_pins": 1,
+      "published_pins": 2,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -200,13 +200,27 @@
       "score": 0,
       "classification": "underperforming",
       "reasons": []
+    },
+    {
+      "article_slug": "best-furniture-minimalist-bathroom",
+      "published_pins": 1,
+      "analytics_ready_pins": 0,
+      "average_impressions": null,
+      "average_saves": null,
+      "average_outbound_clicks": null,
+      "average_pin_clicks": null,
+      "average_closeups": null,
+      "average_engagement_rate": null,
+      "score": 0,
+      "classification": "underperforming",
+      "reasons": []
     }
   ],
   "rankings": {
     "top_variant_types": [
       {
         "variant_type": "trend_overview",
-        "published_pins": 7,
+        "published_pins": 9,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -230,7 +244,7 @@
     "top_boards": [
       {
         "board_key": "bedroom",
-        "published_pins": 5,
+        "published_pins": 6,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -254,7 +268,7 @@
       },
       {
         "board_key": "bathroom",
-        "published_pins": 1,
+        "published_pins": 2,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
