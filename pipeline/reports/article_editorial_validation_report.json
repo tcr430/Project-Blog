@@ -1,6 +1,48 @@
 {
-  "generated_at": "2026-04-08T19:44:24.393868+00:00",
+  "generated_at": "2026-04-10T10:12:06.320444+00:00",
   "articles": [
+    {
+      "article_slug": "best-furniture-minimalist-bathroom",
+      "cluster_id": "minimalist_bathroom",
+      "subtopic_id": "furniture",
+      "angle_id": "best_options",
+      "primary_keyword": "best furniture for a minimalist bathroom",
+      "validation_status": "pass",
+      "warnings": [],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 134,
+          "concept_overlap": 6,
+          "first_sentence": "Minimalist bathrooms feel fresh and calming, but choosing furniture that supports this simplicity isn’t always straightforward."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 1,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Prioritizing Practicality and Proportion in Minimalist Bathroom Furniture",
+            "Warm Wood Furniture: A Minimalist Favorite with a Natural Touch",
+            "Sleek Metals and Glass: The Case for Cool Minimalism",
+            "Matching Furniture Choices to Your Bathroom’s Size and Layout",
+            "Confident Buying: How to Narrow Down Your Minimalist Bathroom Furniture Options"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 7,
+          "specificity_term_hits": 11,
+          "secondary_keyword_hits": 1
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-04-10T10:12:06.320223+00:00"
+    },
     {
       "article_slug": "best-furniture-for-a-minimalist-bedroom",
       "cluster_id": "minimalist_bedroom",

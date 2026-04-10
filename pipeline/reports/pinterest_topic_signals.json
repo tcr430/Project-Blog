@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-08T19:52:14.376462+00:00",
-  "cluster_count": 20,
+  "generated_at": "2026-04-10T10:16:49.138103+00:00",
+  "cluster_count": 21,
   "summary": {
     "hot": 0,
     "warm": 0,
-    "cold": 8,
+    "cold": 9,
     "no_data": 12
   },
   "clusters": [
@@ -46,14 +46,14 @@
         "earthy bathroom decor",
         "earthy bathroom layout ideas"
       ],
-      "pinterest_article_count": 0,
+      "pinterest_article_count": 1,
       "strong_article_count": 0,
-      "weak_article_count": 0,
+      "weak_article_count": 1,
       "average_score": 0.0,
       "average_outbound_clicks": 0.0,
       "average_saves": 0.0,
-      "signal_label": "no_data",
-      "signal_boost": 0
+      "signal_label": "cold",
+      "signal_boost": -6
     },
     {
       "cluster_name": "earthy bedroom",
@@ -115,6 +115,30 @@
         "living room curtain styling ideas",
         "how to style curtain styling in living room",
         "living room curtain styling mistakes to avoid"
+      ],
+      "pinterest_article_count": 0,
+      "strong_article_count": 0,
+      "weak_article_count": 0,
+      "average_score": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_saves": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0
+    },
+    {
+      "cluster_name": "minimalist bathroom",
+      "article_count": 1,
+      "article_slugs": [
+        "best-furniture-minimalist-bathroom"
+      ],
+      "primary_keywords": [
+        "best furniture for a minimalist bathroom"
+      ],
+      "secondary_keywords": [
+        "minimalist bathroom ideas",
+        "how to style a minimalist bathroom",
+        "minimalist bathroom decor",
+        "minimalist bathroom layout ideas"
       ],
       "pinterest_article_count": 0,
       "strong_article_count": 0,

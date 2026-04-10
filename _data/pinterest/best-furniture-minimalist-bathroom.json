@@ -1,0 +1,144 @@
+{
+  "article_title": "How to Choose Furniture for a Minimalist Bathroom",
+  "article_slug": "best-furniture-minimalist-bathroom",
+  "article_relative_url": "/ideas/2026/04/10/best-furniture-minimalist-bathroom/",
+  "article_url": "https://thelivinedit.com/ideas/2026/04/10/best-furniture-minimalist-bathroom/",
+  "meta_description": "Discover how to select the best furniture for a minimalist bathroom with practical criteria, material comparisons, size considerations, and expert buying advice to create a balanced, functional space.",
+  "cluster_id": "minimalist_bathroom",
+  "subtopic_id": "furniture",
+  "angle_id": "best_options",
+  "intent_id": "comparison",
+  "visual_direction": {
+    "family_id": "warm_layered",
+    "mood": "warm, tactile, layered and inviting styling",
+    "lighting": "late-morning daylight with warm reflected light",
+    "palette": "creams, camel, honey wood, soft terracotta accents",
+    "intent_id": "comparison",
+    "profile_id": "comparison",
+    "shot_library_id": "general_decor"
+  },
+  "hero_image_path": "/assets/img/best-furniture-minimalist-bathroom/hero.png",
+  "section_image_paths": [
+    "/assets/img/best-furniture-minimalist-bathroom/section-1.png",
+    "/assets/img/best-furniture-minimalist-bathroom/section-2.png",
+    "/assets/img/best-furniture-minimalist-bathroom/section-3.png",
+    "/assets/img/best-furniture-minimalist-bathroom/section-4.png",
+    "/assets/img/best-furniture-minimalist-bathroom/section-5.png"
+  ],
+  "site_root_url": "https://thelivinedit.com",
+  "variant_count": 4,
+  "strategy": {
+    "minimum_variant_count": 4,
+    "generated_variant_count": 4,
+    "bonus_slots": 0,
+    "ranked_variant_types": [
+      "trend_overview",
+      "practical_tips",
+      "product_led",
+      "styling_angle"
+    ],
+    "article_score": null,
+    "notes": [
+      "applying performance weighting: no historical lift yet, using balanced defaults"
+    ],
+    "strategy_validation": {
+      "status": "pass",
+      "warnings": [],
+      "errors": []
+    },
+    "strategy_fallback_used": true,
+    "image_candidate_count": 6,
+    "board_config_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_boards.json",
+    "design_system_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_pin_design_system.json"
+  },
+  "variants": [
+    {
+      "variant_key": "pin-1",
+      "variant_type": "trend_overview",
+      "style_name": "bottom-title",
+      "template_family": "editorial_split_long",
+      "title": "Smart Furniture Choices for a Minimalist Bathroom",
+      "description": "Explore practical furniture choices for minimalist bathrooms that combine clean lines with warm textures for a balanced look.",
+      "display_headline": "Best Furniture for How To Choose Furniture For A Minimalist Bathroom",
+      "display_subheadline": "From wood vanities to slim storage, the pieces that keep the room functional, calm, and cohesive.",
+      "display_kicker": "",
+      "cta_label": "Read the full article",
+      "topic_style": "decision",
+      "image_focus": "hero",
+      "image_reference": "hero",
+      "image_path": "/assets/pins/best-furniture-minimalist-bathroom/pin-1.png",
+      "board": {
+        "key": "bathroom",
+        "name": "Bathroom Styling Notes"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 0
+    },
+    {
+      "variant_key": "pin-2",
+      "variant_type": "practical_tips",
+      "style_name": "centered-title",
+      "template_family": "editorial_split",
+      "title": "How to Choose Furniture for a Minimalist Bathroom: Practical Tips That Make It Work",
+      "description": "Use these practical design moves to make how to choose furniture for a minimalist bathroom feel balanced, useful, and easy to live with.",
+      "display_headline": "Choosing Minimalist Bathroom Furniture",
+      "display_subheadline": "The shapes, storage pieces, and finishes that make minimalist bathroom feel calm, useful, and pulled together.",
+      "display_kicker": "Practical guide",
+      "cta_label": "Use these ideas",
+      "topic_style": "decision",
+      "image_focus": "section_2",
+      "image_reference": "section_2",
+      "image_path": "/assets/pins/best-furniture-minimalist-bathroom/pin-2.png",
+      "board": {
+        "key": "bathroom",
+        "name": "Bathroom Styling Notes"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 1
+    },
+    {
+      "variant_key": "pin-3",
+      "variant_type": "product_led",
+      "style_name": "minimalist-overlay",
+      "template_family": "comparison_panel",
+      "title": "4 Pieces That Elevate How to Choose Furniture for a Minimalist Bathroom",
+      "description": "Discover decor pieces and finishing details that help how to choose furniture for a minimalist bathroom feel more intentional without looking overdone.",
+      "display_headline": "Minimalist Bathroom Furniture Worth Buying",
+      "display_subheadline": "Start with the pieces that add function, clean lines, and the right amount of warmth.",
+      "display_kicker": "Worth comparing",
+      "cta_label": "Compare the options",
+      "topic_style": "decision",
+      "image_focus": "section_3",
+      "image_reference": "section_3",
+      "image_path": "/assets/pins/best-furniture-minimalist-bathroom/pin-3.png",
+      "board": {
+        "key": "home_products",
+        "name": "Home Finds & Decor Picks"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 2
+    },
+    {
+      "variant_key": "pin-4",
+      "variant_type": "styling_angle",
+      "style_name": "top-title",
+      "template_family": "editorial_split",
+      "title": "How to Style How to Choose Furniture for a Minimalist Bathroom for a More Collected Look",
+      "description": "See how color, texture, and room styling can shape how to choose furniture for a minimalist bathroom into a softer, more editorial look.",
+      "display_headline": "How to Style How To Choose Furniture For A Minimalist Bathroom",
+      "display_subheadline": "Use finish, texture, and restraint to make minimalist bathroom feel polished without clutter.",
+      "display_kicker": "Editorial angle",
+      "cta_label": "See the styling move",
+      "topic_style": "decision",
+      "image_focus": "section_4",
+      "image_reference": "section_4",
+      "image_path": "/assets/pins/best-furniture-minimalist-bathroom/pin-4.png",
+      "board": {
+        "key": "bathroom",
+        "name": "Bathroom Styling Notes"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 3
+    }
+  ]
+}

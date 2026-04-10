@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "f148a73fb0ace3e37fb615c183e0eda38be7e201df80b952bc9400a244d6e642",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-minimalist-bathroom/hero.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-1": {
+    "cache_key": "90e349b9c908bc9dab1427f71b6cb09d4ee26d68dae19e717d5c43233f42c074",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-minimalist-bathroom/section-1.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-2": {
+    "cache_key": "9ed3451af182eb9d0753af5ffe87b23dc49376b54d03c104326e23af9d4f9082",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-minimalist-bathroom/section-2.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-3": {
+    "cache_key": "5823e842a80819a7927b3fb4467453db66c1915b13f7845250ce185f8d93be32",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-minimalist-bathroom/section-3.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-4": {
+    "cache_key": "1cead6487f4f82f141b1d31f7718e3752cae2664e2b556c4ce99bf2765592591",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-minimalist-bathroom/section-4.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-5": {
+    "cache_key": "8fa9e144e5f1c922acbf9b0e5591879956da39829f6a99f323d1b680e4caeb40",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-minimalist-bathroom/section-5.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  }
+}

@@ -1,0 +1,296 @@
+{
+  "generated_at": "2026-04-10T10:16:48.942798+00:00",
+  "trend": "best furniture for a minimalist bathroom",
+  "slug": "best-furniture-minimalist-bathroom",
+  "article_generation": {
+    "cache_hit": false,
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/article_packages/0d5e61b8ea6fded9a977cc105edcaf41613c2343af35beeab0db11c406834935.json",
+    "model": "gpt-4.1-mini",
+    "generation_calls": 1,
+    "short_retries": 0,
+    "angle_retries": 0,
+    "product_retries": 0,
+    "selected_products": 0,
+    "affiliate_mode": false,
+    "monetization_profile_id": "commercial_strong",
+    "generated_link_count": 0,
+    "primary_keyword": "best furniture for a minimalist bathroom",
+    "topical_cluster": "minimalist bathroom"
+  },
+  "seo_validation": {
+    "article_slug": "best-furniture-minimalist-bathroom",
+    "cluster": "minimalist bathroom",
+    "cluster_id": "minimalist bathroom",
+    "subtopic_id": "furniture",
+    "subtopic_name": "furniture and anchors",
+    "angle_id": "best options",
+    "intent_id": "comparison",
+    "primary_keyword": "best furniture for a minimalist bathroom",
+    "validation_status": "warning",
+    "warnings": [
+      "Display title still uses an overused opening pattern."
+    ],
+    "errors": [],
+    "duplicate_candidate_slugs": [],
+    "timestamp": "2026-04-10T10:12:06.316702+00:00"
+  },
+  "editorial_validation": {
+    "article_slug": "best-furniture-minimalist-bathroom",
+    "cluster_id": "minimalist_bathroom",
+    "subtopic_id": "furniture",
+    "angle_id": "best_options",
+    "primary_keyword": "best furniture for a minimalist bathroom",
+    "validation_status": "pass",
+    "warnings": [],
+    "errors": [],
+    "checks": {
+      "generic_intro": {
+        "intro_word_count": 134,
+        "concept_overlap": 6,
+        "first_sentence": "Minimalist bathrooms feel fresh and calming, but choosing furniture that supports this simplicity isn’t always straightforward."
+      },
+      "heading_quality": {
+        "heading_count": 5,
+        "vague_heading_count": 0,
+        "low_specificity_heading_count": 1,
+        "repeated_signature_count": 0,
+        "repeated_stem_count": 0,
+        "headings": [
+          "Prioritizing Practicality and Proportion in Minimalist Bathroom Furniture",
+          "Warm Wood Furniture: A Minimalist Favorite with a Natural Touch",
+          "Sleek Metals and Glass: The Case for Cool Minimalism",
+          "Matching Furniture Choices to Your Bathroom’s Size and Layout",
+          "Confident Buying: How to Narrow Down Your Minimalist Bathroom Furniture Options"
+        ]
+      },
+      "specificity": {
+        "concept_token_hits": 7,
+        "specificity_term_hits": 11,
+        "secondary_keyword_hits": 1
+      },
+      "distinctiveness": {
+        "nearest_article_slug": "",
+        "max_similarity": 0.0,
+        "strongest_heading_overlap": 0
+      }
+    },
+    "timestamp": "2026-04-10T10:12:06.320223+00:00"
+  },
+  "image_generation": {
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/image_generation_cache/best-furniture-minimalist-bathroom.json",
+    "provider": "flux",
+    "provider_model": "flux-2-max",
+    "model": "flux-2-max",
+    "fallback_provider": "openai",
+    "fallback_model": "gpt-image-1",
+    "size": "1536x1024",
+    "hero_quality": "high",
+    "section_quality": "medium",
+    "allow_fallback": true,
+    "fallback_events": 0,
+    "generated_images": 6,
+    "cache_hits": 0,
+    "generation_calls": 6,
+    "qa_calls": 1,
+    "details": [
+      {
+        "label": "hero",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 1,
+        "quality": "high",
+        "qa_enabled": true,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "bf70af34-19d2-4438-b0f5-7374c70b2122",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=bf70af34-19d2-4438-b0f5-7374c70b2122",
+            "poll_attempts": 17,
+            "provider_status": "Ready",
+            "elapsed_seconds": 31.43,
+            "quality": "high",
+            "elapsed_seconds_total": 31.43,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation",
+        "qa_reason": "The image depicts a minimalist bathroom vanity vignette with warm, tactile materials and natural daylight. It features a clear focal point, believable spatial depth, and an editorial feel without any text, logos, people, or clutter. The styling and palette align well with the article's requirements."
+      },
+      {
+        "label": "section-1",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "53f8bf2b-de6a-4c31-ab7f-0f3f9f0f6ee4",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=53f8bf2b-de6a-4c31-ab7f-0f3f9f0f6ee4",
+            "poll_attempts": 47,
+            "provider_status": "Ready",
+            "elapsed_seconds": 63.19,
+            "quality": "medium",
+            "elapsed_seconds_total": 63.19,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-2",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "77c19368-328d-40dc-b5e7-cf903be51236",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=77c19368-328d-40dc-b5e7-cf903be51236",
+            "poll_attempts": 31,
+            "provider_status": "Ready",
+            "elapsed_seconds": 54.63,
+            "quality": "medium",
+            "elapsed_seconds_total": 54.63,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-3",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "f2162fe5-bbc4-4bd8-90da-ebbfc9bf3633",
+            "polling_url": "https://api.us3.bfl.ai/v1/get_result?id=f2162fe5-bbc4-4bd8-90da-ebbfc9bf3633",
+            "poll_attempts": 24,
+            "provider_status": "Ready",
+            "elapsed_seconds": 33.42,
+            "quality": "medium",
+            "elapsed_seconds_total": 33.42,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-4",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "5dd59d90-b572-4ed9-bcf3-3086377b8dd8",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=5dd59d90-b572-4ed9-bcf3-3086377b8dd8",
+            "poll_attempts": 34,
+            "provider_status": "Ready",
+            "elapsed_seconds": 45.69,
+            "quality": "medium",
+            "elapsed_seconds_total": 45.69,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-5",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "f71d4db5-1a3b-4bad-8b70-77456d4365b1",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=f71d4db5-1a3b-4bad-8b70-77456d4365b1",
+            "poll_attempts": 28,
+            "provider_status": "Ready",
+            "elapsed_seconds": 37.38,
+            "quality": "medium",
+            "elapsed_seconds_total": 37.38,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      }
+    ]
+  },
+  "pinterest": {
+    "variants_requested": 4,
+    "pin_assets_generated": false,
+    "mode": null
+  }
+}

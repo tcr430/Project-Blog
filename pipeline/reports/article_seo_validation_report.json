@@ -1,6 +1,23 @@
 {
-  "generated_at": "2026-04-08T19:44:24.390314+00:00",
+  "generated_at": "2026-04-10T10:12:06.316835+00:00",
   "articles": [
+    {
+      "article_slug": "best-furniture-minimalist-bathroom",
+      "cluster": "minimalist bathroom",
+      "cluster_id": "minimalist bathroom",
+      "subtopic_id": "furniture",
+      "subtopic_name": "furniture and anchors",
+      "angle_id": "best options",
+      "intent_id": "comparison",
+      "primary_keyword": "best furniture for a minimalist bathroom",
+      "validation_status": "warning",
+      "warnings": [
+        "Display title still uses an overused opening pattern."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-04-10T10:12:06.316702+00:00"
+    },
     {
       "article_slug": "best-furniture-for-a-minimalist-bedroom",
       "cluster": "minimalist bedroom",
