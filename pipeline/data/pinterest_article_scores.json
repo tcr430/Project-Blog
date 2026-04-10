@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-04-09T18:44:52.196357+00:00",
+  "generated_at": "2026-04-10T01:15:07.575328+00:00",
   "articles": [
     {
       "article_slug": "best-furniture-for-earthy-bedroom",
+      "score": 0,
+      "classification": "underperforming",
+      "reasons": [],
+      "average_impressions": null,
+      "average_saves": null,
+      "average_outbound_clicks": null,
+      "average_engagement_rate": null,
+      "published_pins": 1
+    },
+    {
+      "article_slug": "best-furniture-for-an-earthy-bathroom",
       "score": 0,
       "classification": "underperforming",
       "reasons": [],
