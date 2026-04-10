@@ -57,6 +57,7 @@ CONTENT_PLAN_REPORT_PATH = Path(__file__).resolve().parents[1] / "reports" / "co
 PINTEREST_TOPIC_SIGNALS_REPORT_PATH = Path(__file__).resolve().parents[1] / "reports" / "pinterest_topic_signals.json"
 PINTEREST_INTELLIGENCE_REPORT_PATH = Path(__file__).resolve().parents[1] / "reports" / "pinterest_intelligence_report.json"
 PINTEREST_TRENDS_DATA_PATH = DEFAULT_TRENDS_PATH
+CURRENT_PINTEREST_RUN_PATH = Path(__file__).resolve().parents[1] / "data" / "current_pinterest_run.json"
 
 
 def log_phase(message: str) -> None:
@@ -210,6 +211,28 @@ def build_temp_json_path(project_root: Path, slug: str) -> Path:
 def save_article_package(package: dict[str, Any], output_path: Path) -> Path:
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(json.dumps(package, ensure_ascii=False, indent=2), encoding="utf-8")
+    return output_path
+
+
+def save_current_pinterest_run(
+    *,
+    article_slug: str,
+    article_metadata_path: Path,
+    pinterest_result: dict[str, Any] | None,
+    output_path: Path = CURRENT_PINTEREST_RUN_PATH,
+) -> Path:
+    metadata_path = pinterest_result.get("metadata_path") if pinterest_result else None
+    payload = {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "article_slug": article_slug,
+        "article_metadata_path": str(article_metadata_path),
+        "pinterest_metadata_path": str(metadata_path) if metadata_path else "",
+        "mode": pinterest_result.get("mode") if pinterest_result else None,
+        "queue_path": str(pinterest_result.get("queue_path")) if pinterest_result and pinterest_result.get("queue_path") else "",
+        "history_path": str(pinterest_result.get("history_path")) if pinterest_result and pinterest_result.get("history_path") else "",
+    }
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     return output_path
 
 
@@ -553,6 +576,11 @@ def run_pipeline_for_trend(
         flux_poll_interval_seconds=flux_poll_interval_seconds,
     )
     pinterest_result = run_pinterest_step(metadata_path=metadata_path)
+    save_current_pinterest_run(
+        article_slug=slug,
+        article_metadata_path=metadata_path,
+        pinterest_result=pinterest_result,
+    )
 
     cost_report_path = write_cost_report(
         output_path=build_cost_report_path(slug=slug),

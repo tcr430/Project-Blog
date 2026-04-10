@@ -6,12 +6,24 @@ from pathlib import Path
 from typing import Any
 
 from pinterest_client import PinterestClient
-from publish_pins import backfill_primary_entry_if_missing, publish_latest_primary_pin
+from publish_pins import backfill_primary_entry_if_missing, publish_primary_article_pin
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Publish the newest pending primary Pinterest pin after site deploy."
+        description="Publish the current workflow article's primary Pinterest pin after site deploy."
+    )
+    parser.add_argument(
+        "--run-state-path",
+        type=str,
+        default=str(Path(__file__).resolve().parents[1] / "data" / "current_pinterest_run.json"),
+        help="Path to the current Pinterest run state JSON written by weekly_pipeline.py.",
+    )
+    parser.add_argument(
+        "--article-slug",
+        type=str,
+        default="",
+        help="Optional explicit article slug override.",
     )
     parser.add_argument(
         "--image-timeout-seconds",
@@ -36,27 +48,11 @@ def load_json(path: Path) -> dict[str, Any]:
     return data
 
 
-def find_latest_article_slug(metadata_dir: Path) -> str | None:
-    if not metadata_dir.exists():
+def load_current_article_slug(run_state_path: Path) -> str | None:
+    if not run_state_path.exists():
         return None
-
-    latest_path: Path | None = None
-    latest_published_at = ""
-    for path in sorted(metadata_dir.glob("*.json")):
-        data = load_json(path)
-        published_at = str(data.get("published_at", "")).strip()
-        slug = str(data.get("slug", "")).strip()
-        if not published_at or not slug:
-            continue
-        if published_at > latest_published_at:
-            latest_published_at = published_at
-            latest_path = path
-
-    if latest_path is None:
-        return None
-
-    latest_data = load_json(latest_path)
-    slug = str(latest_data.get("slug", "")).strip()
+    data = load_json(run_state_path)
+    slug = str(data.get("article_slug", "")).strip()
     return slug or None
 
 
@@ -73,25 +69,26 @@ def main() -> int:
         return 1
 
     try:
-        result = publish_latest_primary_pin(
-            client=client,
-            wait_for_image=True,
-            image_timeout_seconds=args.image_timeout_seconds,
-            image_poll_interval_seconds=args.image_poll_interval_seconds,
-        )
-        if result is None:
-            latest_slug = find_latest_article_slug(project_root / "_data" / "article_metadata")
-            if latest_slug:
-                backfill_primary_entry_if_missing(project_root=project_root, article_slug=latest_slug)
-                result = publish_latest_primary_pin(
-                    client=client,
-                    wait_for_image=True,
-                    image_timeout_seconds=args.image_timeout_seconds,
-                    image_poll_interval_seconds=args.image_poll_interval_seconds,
-                )
-        if result is None:
-            print("[pinterest] no pending primary Pinterest pin found. Skipping.")
+        article_slug = args.article_slug.strip() or load_current_article_slug(Path(args.run_state_path))
+        if not article_slug:
+            print("[pinterest] no current article slug found for primary-pin publish. Skipping.")
             return 0
+
+        print(f"[pinterest] current article selected for primary-pin publish: {article_slug}")
+        backfill_primary_entry_if_missing(project_root=project_root, article_slug=article_slug)
+        try:
+            result = publish_primary_article_pin(
+                client=client,
+                article_slug=article_slug,
+                wait_for_image=True,
+                image_timeout_seconds=args.image_timeout_seconds,
+                image_poll_interval_seconds=args.image_poll_interval_seconds,
+            )
+        except RuntimeError as exc:
+            if "No queued Pinterest entry found" in str(exc):
+                print(f"[pinterest] no pending primary pin found for current article '{article_slug}'. Skipping.")
+                return 0
+            raise
         print(
             f"[pinterest] primary article pin published: {result['article_slug']} "
             f"({result['variant_type']})"

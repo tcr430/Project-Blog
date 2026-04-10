@@ -187,7 +187,7 @@ jobs:
           PINTEREST_BOARD_ID_BATHROOM_DECOR: ${{ secrets.PINTEREST_BOARD_ID_BATHROOM_DECOR }}
           PINTEREST_BOARD_ID_KIDS_DECOR: ${{ secrets.PINTEREST_BOARD_ID_KIDS_DECOR }}
         run: |
-          python pipeline/scripts/publish_latest_article_pin.py
+          python pipeline/scripts/publish_latest_article_pin.py --run-state-path pipeline/data/current_pinterest_run.json
 
       - name: Commit and push Pinterest queue state
         run: |
