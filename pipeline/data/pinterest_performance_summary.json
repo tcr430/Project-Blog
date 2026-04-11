@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-11T01:09:45.497248+00:00",
+  "generated_at": "2026-04-11T06:46:24.493175+00:00",
   "history_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_history.json",
-  "published_pin_count": 13,
+  "published_pin_count": 14,
   "global_metrics": {
-    "published_pins": 13,
+    "published_pins": 14,
     "analytics_ready_pins": 0,
     "average_impressions": null,
     "average_saves": null,
@@ -27,6 +27,17 @@
     {
       "variant_type": "practical_tips",
       "published_pins": 4,
+      "analytics_ready_pins": 0,
+      "average_impressions": null,
+      "average_saves": null,
+      "average_outbound_clicks": null,
+      "average_pin_clicks": null,
+      "average_closeups": null,
+      "average_engagement_rate": null
+    },
+    {
+      "variant_type": "styling_angle",
+      "published_pins": 1,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -63,7 +74,7 @@
     },
     {
       "board_key": "bathroom",
-      "published_pins": 2,
+      "published_pins": 3,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -175,7 +186,7 @@
     },
     {
       "article_slug": "parisian-bathroom-texture-mistakes-to-avoid",
-      "published_pins": 1,
+      "published_pins": 2,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -239,6 +250,17 @@
         "average_pin_clicks": null,
         "average_closeups": null,
         "average_engagement_rate": null
+      },
+      {
+        "variant_type": "styling_angle",
+        "published_pins": 1,
+        "analytics_ready_pins": 0,
+        "average_impressions": null,
+        "average_saves": null,
+        "average_outbound_clicks": null,
+        "average_pin_clicks": null,
+        "average_closeups": null,
+        "average_engagement_rate": null
       }
     ],
     "top_boards": [
@@ -268,7 +290,7 @@
       },
       {
         "board_key": "bathroom",
-        "published_pins": 2,
+        "published_pins": 3,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
