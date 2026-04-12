@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-11T18:26:34.265343+00:00",
+  "generated_at": "2026-04-12T01:18:55.982614+00:00",
   "history_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_history.json",
-  "published_pin_count": 14,
+  "published_pin_count": 15,
   "global_metrics": {
-    "published_pins": 14,
+    "published_pins": 15,
     "analytics_ready_pins": 0,
     "average_impressions": null,
     "average_saves": null,
@@ -27,6 +27,17 @@
     {
       "variant_type": "practical_tips",
       "published_pins": 4,
+      "analytics_ready_pins": 0,
+      "average_impressions": null,
+      "average_saves": null,
+      "average_outbound_clicks": null,
+      "average_pin_clicks": null,
+      "average_closeups": null,
+      "average_engagement_rate": null
+    },
+    {
+      "variant_type": "product_led",
+      "published_pins": 1,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -83,6 +94,18 @@
       "average_closeups": null,
       "average_engagement_rate": null,
       "board_name": "Bathroom Styling Notes"
+    },
+    {
+      "board_key": "home_products",
+      "published_pins": 1,
+      "analytics_ready_pins": 0,
+      "average_impressions": null,
+      "average_saves": null,
+      "average_outbound_clicks": null,
+      "average_pin_clicks": null,
+      "average_closeups": null,
+      "average_engagement_rate": null,
+      "board_name": "Home Finds & Decor Picks"
     }
   ],
   "performance_by_article": [
@@ -172,7 +195,7 @@
     },
     {
       "article_slug": "spring-bedroom-refresh-mistakes-to-avoid",
-      "published_pins": 1,
+      "published_pins": 2,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -252,6 +275,17 @@
         "average_engagement_rate": null
       },
       {
+        "variant_type": "product_led",
+        "published_pins": 1,
+        "analytics_ready_pins": 0,
+        "average_impressions": null,
+        "average_saves": null,
+        "average_outbound_clicks": null,
+        "average_pin_clicks": null,
+        "average_closeups": null,
+        "average_engagement_rate": null
+      },
+      {
         "variant_type": "styling_angle",
         "published_pins": 1,
         "analytics_ready_pins": 0,
@@ -299,6 +333,18 @@
         "average_closeups": null,
         "average_engagement_rate": null,
         "board_name": "Bathroom Styling Notes"
+      },
+      {
+        "board_key": "home_products",
+        "published_pins": 1,
+        "analytics_ready_pins": 0,
+        "average_impressions": null,
+        "average_saves": null,
+        "average_outbound_clicks": null,
+        "average_pin_clicks": null,
+        "average_closeups": null,
+        "average_engagement_rate": null,
+        "board_name": "Home Finds & Decor Picks"
       }
     ],
     "top_articles": [
