@@ -2105,5 +2105,48 @@
     "saves": null,
     "pin_clicks": null,
     "closeups": null
+  },
+  {
+    "article_slug": "best-furniture-mediterranean-bedroom",
+    "cluster_id": "mediterranean_bedroom",
+    "subtopic_id": "furniture",
+    "angle_id": "best_options",
+    "intent_id": "comparison",
+    "season": "",
+    "holiday": "",
+    "visual_direction": {
+      "family_id": "crisp_modern",
+      "mood": "clean, sculptural, modern editorial restraint",
+      "lighting": "clear daylight with crisp shadow definition",
+      "palette": "soft white, black accents, stone, pale oak",
+      "intent_id": "comparison",
+      "profile_id": "comparison",
+      "shot_library_id": "general_decor"
+    },
+    "variant_type": "trend_overview",
+    "style_name": "top-title",
+    "board": {
+      "key": "bedroom",
+      "name": "Bedroom Retreat Ideas"
+    },
+    "title": "4 Furniture Tips for Warm Mediterranean Style",
+    "description": "Layer natural textures and warm tones with ease.",
+    "image_path": "/assets/pins/best-furniture-mediterranean-bedroom/pin-1.png",
+    "target_url": "https://thelivinedit.com/ideas/2026/04/13/best-furniture-mediterranean-bedroom/",
+    "created_at": "2026-04-13T20:07:05.275179+00:00",
+    "scheduled_for": "2026-04-13T20:07:05.275179+00:00",
+    "published_at": "2026-04-13T20:07:07.004271+00:00",
+    "status": "published",
+    "error_message": null,
+    "provider_mode": "queue",
+    "provider_pin_id": "389139224076000864",
+    "priority_score": 0.0,
+    "schedule_rank": 0,
+    "last_analytics_sync_at": null,
+    "impressions": null,
+    "outbound_clicks": null,
+    "saves": null,
+    "pin_clicks": null,
+    "closeups": null
   }
 ]
