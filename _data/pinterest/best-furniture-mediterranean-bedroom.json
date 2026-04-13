@@ -1,0 +1,164 @@
+{
+  "article_title": "Best Furniture for a Mediterranean Bedroom",
+  "article_slug": "best-furniture-mediterranean-bedroom",
+  "article_relative_url": "/ideas/2026/04/13/best-furniture-mediterranean-bedroom/",
+  "article_url": "https://thelivinedit.com/ideas/2026/04/13/best-furniture-mediterranean-bedroom/",
+  "meta_description": "Discover how to select the best furniture for a Mediterranean bedroom with practical advice on materials, layout, and style. Create a room with warm layers, natural textures, and timeless appeal.",
+  "cluster_id": "mediterranean_bedroom",
+  "subtopic_id": "furniture",
+  "angle_id": "best_options",
+  "intent_id": "comparison",
+  "visual_direction": {
+    "family_id": "crisp_modern",
+    "mood": "clean, sculptural, modern editorial restraint",
+    "lighting": "clear daylight with crisp shadow definition",
+    "palette": "soft white, black accents, stone, pale oak",
+    "intent_id": "comparison",
+    "profile_id": "comparison",
+    "shot_library_id": "general_decor"
+  },
+  "hero_image_path": "/assets/img/best-furniture-mediterranean-bedroom/hero.png",
+  "section_image_paths": [
+    "/assets/img/best-furniture-mediterranean-bedroom/section-1.png",
+    "/assets/img/best-furniture-mediterranean-bedroom/section-2.png",
+    "/assets/img/best-furniture-mediterranean-bedroom/section-3.png",
+    "/assets/img/best-furniture-mediterranean-bedroom/section-4.png",
+    "/assets/img/best-furniture-mediterranean-bedroom/section-5.png"
+  ],
+  "site_root_url": "https://thelivinedit.com",
+  "variant_count": 4,
+  "strategy": {
+    "minimum_variant_count": 4,
+    "generated_variant_count": 4,
+    "bonus_slots": 0,
+    "ranked_variant_types": [
+      "trend_overview",
+      "practical_tips",
+      "product_led",
+      "styling_angle"
+    ],
+    "article_score": null,
+    "notes": [
+      "applying performance weighting: no historical lift yet, using balanced defaults"
+    ],
+    "strategy_validation": {
+      "status": "warning",
+      "warnings": [
+        "Variant 1 image_focus 'clean room overview' does not match provided image candidates; renderer will use a safe image fallback.",
+        "Variant 2 image_focus 'styled room corner' does not match provided image candidates; renderer will use a safe image fallback.",
+        "Variant 3 image_focus 'balanced furniture grouping' does not match provided image candidates; renderer will use a safe image fallback."
+      ],
+      "errors": []
+    },
+    "strategy_fallback_used": true,
+    "strategy_fallback_reason": "strategy returned 3 usable variants; supplemented with fallback variants to reach 4",
+    "image_candidate_count": 6,
+    "board_config_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_boards.json",
+    "design_system_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_pin_design_system.json"
+  },
+  "variants": [
+    {
+      "variant_key": "pin-1",
+      "variant_type": "trend_overview",
+      "style_name": "top-title",
+      "template_id": "top_headline_card",
+      "template_family": "insight_band",
+      "title": "4 Furniture Tips for Warm Mediterranean Style",
+      "description": "Layer natural textures and warm tones with ease.",
+      "hook_text": "4 Furniture Tips for Warm Mediterranean Style",
+      "support_text": "Layer natural textures and warm tones with ease.",
+      "display_headline": "4 Furniture Tips for Warm Mediterranean Style",
+      "display_subheadline": "Layer natural textures and warm tones with ease.",
+      "display_kicker": "",
+      "cta_label": "Read the full article",
+      "topic_style": "decision",
+      "image_focus": "clean room overview",
+      "image_reference": "hero",
+      "brand_text": "THE LIVIN' EDIT",
+      "reason": "Uses a clear benefit list hook supported by a clean overview image to highlight practical style tips",
+      "image_path": "/assets/pins/best-furniture-mediterranean-bedroom/pin-1.png",
+      "board": {
+        "key": "bedroom",
+        "name": "Bedroom Retreat Ideas"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 0
+    },
+    {
+      "variant_key": "pin-2",
+      "variant_type": "practical_tips",
+      "style_name": "bottom-title",
+      "template_id": "bottom_band",
+      "template_family": "editorial_split",
+      "title": "From Basic to Cozy: Mediterranean Bedroom Made Easy",
+      "description": "Achieve natural layers and inviting texture effortlessly.",
+      "hook_text": "From Basic to Cozy: Mediterranean Bedroom Made Easy",
+      "support_text": "Achieve natural layers and inviting texture effortlessly.",
+      "display_headline": "From Basic to Cozy: Mediterranean Bedroom Made Easy",
+      "display_subheadline": "Achieve natural layers and inviting texture effortlessly.",
+      "display_kicker": "Practical guide",
+      "cta_label": "Use these ideas",
+      "topic_style": "decision",
+      "image_focus": "styled room corner",
+      "image_reference": "section_2",
+      "brand_text": "THE LIVIN' EDIT",
+      "reason": "Highlights a transformation hook next to a styled corner to show before and after ambiance",
+      "image_path": "/assets/pins/best-furniture-mediterranean-bedroom/pin-2.png",
+      "board": {
+        "key": "bedroom",
+        "name": "Bedroom Retreat Ideas"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 1
+    },
+    {
+      "variant_key": "pin-3",
+      "variant_type": "product_led",
+      "style_name": "centered-title",
+      "template_id": "center_overlay",
+      "template_family": "comparison_panel",
+      "title": "Struggling with Mediterranean Bedroom Layout? Try This",
+      "description": "Simple layout fixes that maximize charm and function.",
+      "hook_text": "Struggling with Mediterranean Bedroom Layout? Try This",
+      "support_text": "Simple layout fixes that maximize charm and function.",
+      "display_headline": "Struggling with Mediterranean Bedroom Layout? Try This",
+      "display_subheadline": "Simple layout fixes that maximize charm and function.",
+      "display_kicker": "Worth comparing",
+      "cta_label": "Compare the options",
+      "topic_style": "decision",
+      "image_focus": "balanced furniture grouping",
+      "image_reference": "section_3",
+      "brand_text": "THE LIVIN' EDIT",
+      "reason": "Addresses common layout challenges and offers a solution with a balanced furniture group image",
+      "image_path": "/assets/pins/best-furniture-mediterranean-bedroom/pin-3.png",
+      "board": {
+        "key": "home_products",
+        "name": "Home Finds & Decor Picks"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 2
+    },
+    {
+      "variant_key": "pin-1",
+      "variant_type": "trend_overview",
+      "style_name": "bottom-title",
+      "template_family": "editorial_split",
+      "title": "How to Pick Furniture for a Mediterranean Bedroom",
+      "description": "Explore practical tips on choosing the best furniture for a warm, textured Mediterranean bedroom look with natural materials and timeless design.",
+      "display_headline": "Best Furniture for Mediterranean Bedroom",
+      "display_subheadline": "From wood vanities to slim storage, the pieces that keep the room functional, calm, and cohesive.",
+      "display_kicker": "",
+      "cta_label": "Read the full article",
+      "topic_style": "decision",
+      "image_focus": "hero",
+      "image_reference": "hero",
+      "image_path": "/assets/pins/best-furniture-mediterranean-bedroom/pin-1.png",
+      "board": {
+        "key": "bedroom",
+        "name": "Bedroom Retreat Ideas"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 0
+    }
+  ]
+}

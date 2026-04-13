@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-04-10T10:16:49.135190+00:00",
-  "cluster_count": 21,
-  "article_count": 21,
+  "generated_at": "2026-04-13T10:33:44.762152+00:00",
+  "cluster_count": 22,
+  "article_count": 22,
   "subtopic_count": 6,
   "angle_count": 5,
   "angle_distribution": {
-    "best_options": 11,
+    "best_options": 12,
     "how_to": 2,
     "ideas": 3,
     "mistakes": 4,
@@ -230,6 +230,50 @@
           "latest_article_date": "",
           "representative_article_slugs": [
             "best-curtain-styling-for-living-room"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "best_options": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_id": "mediterranean_bedroom",
+      "cluster_name": "mediterranean bedroom",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "bedrooms"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "best furniture for a mediterranean bedroom"
+      ],
+      "latest_article_date": "2026-04-13",
+      "latest_publication": {
+        "article_slug": "best-furniture-mediterranean-bedroom",
+        "article_title": "Best Furniture for a Mediterranean Bedroom",
+        "publish_date": "2026-04-13",
+        "subtopic_id": "furniture",
+        "subtopic_name": "furniture and anchors",
+        "angle_id": "best_options"
+      },
+      "representative_article_slugs": [
+        "best-furniture-mediterranean-bedroom"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "furniture",
+          "subtopic_name": "furniture and anchors",
+          "article_count": 1,
+          "latest_article_date": "2026-04-13",
+          "representative_article_slugs": [
+            "best-furniture-mediterranean-bedroom"
           ]
         }
       ],

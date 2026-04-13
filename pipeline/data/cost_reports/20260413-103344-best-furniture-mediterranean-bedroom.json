@@ -1,0 +1,300 @@
+{
+  "generated_at": "2026-04-13T10:33:44.573837+00:00",
+  "trend": "best furniture for a mediterranean bedroom",
+  "slug": "best-furniture-mediterranean-bedroom",
+  "article_generation": {
+    "cache_hit": false,
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/article_packages/904c09b2b1361691c60c8889c13c24704fb8d0082214d96e3b02ff488da29c99.json",
+    "model": "gpt-4.1-mini",
+    "generation_calls": 1,
+    "short_retries": 0,
+    "angle_retries": 0,
+    "product_retries": 0,
+    "selected_products": 0,
+    "affiliate_mode": false,
+    "monetization_profile_id": "commercial_strong",
+    "generated_link_count": 0,
+    "primary_keyword": "best furniture for a mediterranean bedroom",
+    "topical_cluster": "mediterranean bedroom"
+  },
+  "seo_validation": {
+    "article_slug": "best-furniture-mediterranean-bedroom",
+    "cluster": "mediterranean bedroom",
+    "cluster_id": "mediterranean bedroom",
+    "subtopic_id": "furniture",
+    "subtopic_name": "furniture and anchors",
+    "angle_id": "best options",
+    "intent_id": "comparison",
+    "primary_keyword": "best furniture for a mediterranean bedroom",
+    "validation_status": "warning",
+    "warnings": [
+      "Display title still uses an overused opening pattern.",
+      "None of the secondary keywords appear in the article body.",
+      "Primary keyword appears very lightly in the article body."
+    ],
+    "errors": [],
+    "duplicate_candidate_slugs": [],
+    "timestamp": "2026-04-13T10:29:24.263737+00:00"
+  },
+  "editorial_validation": {
+    "article_slug": "best-furniture-mediterranean-bedroom",
+    "cluster_id": "mediterranean_bedroom",
+    "subtopic_id": "furniture",
+    "angle_id": "best_options",
+    "primary_keyword": "best furniture for a mediterranean bedroom",
+    "validation_status": "warning",
+    "warnings": [
+      "Supporting keyword ideas are barely reflected in the body."
+    ],
+    "errors": [],
+    "checks": {
+      "generic_intro": {
+        "intro_word_count": 142,
+        "concept_overlap": 5,
+        "first_sentence": "Creating a Mediterranean bedroom that feels both inviting and timeless hinges on choosing the right furniture—a task that can quickly feel overwhelming."
+      },
+      "heading_quality": {
+        "heading_count": 5,
+        "vague_heading_count": 0,
+        "low_specificity_heading_count": 1,
+        "repeated_signature_count": 0,
+        "repeated_stem_count": 0,
+        "headings": [
+          "Key Furniture Criteria for a Mediterranean Bedroom",
+          "Rustic Wooden Furniture: The Timeless Mediterranean Option",
+          "Wrought Iron and Metal Accents for Contrast and Charm",
+          "Matching Furniture Choices to Room Size and Layout",
+          "Narrowing Your Furniture Choices With Confidence"
+        ]
+      },
+      "specificity": {
+        "concept_token_hits": 5,
+        "specificity_term_hits": 8,
+        "secondary_keyword_hits": 0
+      },
+      "distinctiveness": {
+        "nearest_article_slug": "",
+        "max_similarity": 0.0,
+        "strongest_heading_overlap": 0
+      }
+    },
+    "timestamp": "2026-04-13T10:29:24.267338+00:00"
+  },
+  "image_generation": {
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/image_generation_cache/best-furniture-mediterranean-bedroom.json",
+    "provider": "flux",
+    "provider_model": "flux-2-max",
+    "model": "flux-2-max",
+    "fallback_provider": "openai",
+    "fallback_model": "gpt-image-1",
+    "size": "1536x1024",
+    "hero_quality": "high",
+    "section_quality": "medium",
+    "allow_fallback": true,
+    "fallback_events": 0,
+    "generated_images": 6,
+    "cache_hits": 0,
+    "generation_calls": 6,
+    "qa_calls": 1,
+    "details": [
+      {
+        "label": "hero",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 1,
+        "quality": "high",
+        "qa_enabled": true,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "740783ed-c5c2-41ed-b926-e58e272cc356",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=740783ed-c5c2-41ed-b926-e58e272cc356",
+            "poll_attempts": 22,
+            "provider_status": "Ready",
+            "elapsed_seconds": 39.41,
+            "quality": "high",
+            "elapsed_seconds_total": 39.41,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation",
+        "qa_reason": "The image strongly represents a Mediterranean bedroom with a polished, editorial style. It features a single, sculptural bed as the memorable focal point with clear spatial depth and natural daylight. The palette of soft whites, pale oak, black accents, and stone aligns well with the prompt criteria. The furniture layout is realistic and coherent without duplication or clutter, fitting the intended use for a decor blog."
+      },
+      {
+        "label": "section-1",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "f637a94a-7b1b-4c46-a99d-d67ce576a122",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=f637a94a-7b1b-4c46-a99d-d67ce576a122",
+            "poll_attempts": 18,
+            "provider_status": "Ready",
+            "elapsed_seconds": 28.43,
+            "quality": "medium",
+            "elapsed_seconds_total": 28.43,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-2",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "407b9be5-40d5-492c-9e76-4048eafb7c3d",
+            "polling_url": "https://api.us3.bfl.ai/v1/get_result?id=407b9be5-40d5-492c-9e76-4048eafb7c3d",
+            "poll_attempts": 33,
+            "provider_status": "Ready",
+            "elapsed_seconds": 44.09,
+            "quality": "medium",
+            "elapsed_seconds_total": 44.09,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-3",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "638dceed-ce71-434f-a87a-37f245587336",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=638dceed-ce71-434f-a87a-37f245587336",
+            "poll_attempts": 23,
+            "provider_status": "Ready",
+            "elapsed_seconds": 31.61,
+            "quality": "medium",
+            "elapsed_seconds_total": 31.61,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-4",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "636598ff-d523-43ac-b02b-5fb9a9923aac",
+            "polling_url": "https://api.eu5.bfl.ai/v1/get_result?id=636598ff-d523-43ac-b02b-5fb9a9923aac",
+            "poll_attempts": 24,
+            "provider_status": "Ready",
+            "elapsed_seconds": 37.56,
+            "quality": "medium",
+            "elapsed_seconds_total": 37.56,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-5",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "afbb9122-43a7-47d8-8263-ccbc746c1276",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=afbb9122-43a7-47d8-8263-ccbc746c1276",
+            "poll_attempts": 40,
+            "provider_status": "Ready",
+            "elapsed_seconds": 61.15,
+            "quality": "medium",
+            "elapsed_seconds_total": 61.15,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      }
+    ]
+  },
+  "pinterest": {
+    "variants_requested": 4,
+    "pin_assets_generated": false,
+    "mode": null
+  }
+}

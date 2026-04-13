@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "9b1cfbf29db288f446dba639df480c4ed63b71e8ef30bea84a6d47fe925cee6a",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-mediterranean-bedroom/hero.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-1": {
+    "cache_key": "f2b9e521d2afd44e954d9ed8ebe4fc1ff6278895fadb1f2b1341c32db3364f27",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-mediterranean-bedroom/section-1.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-2": {
+    "cache_key": "9020bfb9b29abe303dd3bfcb78bef76cdafe59cb15c76ffaca6be922d500683d",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-mediterranean-bedroom/section-2.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-3": {
+    "cache_key": "84dc363189ed744fa12ecb6d7e890ff6f4a7c9d159f3c4fc2dbb7db5391704c1",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-mediterranean-bedroom/section-3.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-4": {
+    "cache_key": "05663c502bf8666bd5f89c45c9227519b7c39827430d3d94426d6d5fc38acf9d",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-mediterranean-bedroom/section-4.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-5": {
+    "cache_key": "ef8a629ffcf2e2e5f54866ef2cdf65ad7f98b47135e73d9a3defaf742a19c72a",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-mediterranean-bedroom/section-5.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  }
+}

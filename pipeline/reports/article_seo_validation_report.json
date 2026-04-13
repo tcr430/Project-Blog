@@ -1,6 +1,25 @@
 {
-  "generated_at": "2026-04-10T10:12:06.316835+00:00",
+  "generated_at": "2026-04-13T10:29:24.263880+00:00",
   "articles": [
+    {
+      "article_slug": "best-furniture-mediterranean-bedroom",
+      "cluster": "mediterranean bedroom",
+      "cluster_id": "mediterranean bedroom",
+      "subtopic_id": "furniture",
+      "subtopic_name": "furniture and anchors",
+      "angle_id": "best options",
+      "intent_id": "comparison",
+      "primary_keyword": "best furniture for a mediterranean bedroom",
+      "validation_status": "warning",
+      "warnings": [
+        "Display title still uses an overused opening pattern.",
+        "None of the secondary keywords appear in the article body.",
+        "Primary keyword appears very lightly in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-04-13T10:29:24.263737+00:00"
+    },
     {
       "article_slug": "best-furniture-minimalist-bathroom",
       "cluster": "minimalist bathroom",

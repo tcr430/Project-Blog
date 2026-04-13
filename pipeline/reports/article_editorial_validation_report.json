@@ -1,6 +1,50 @@
 {
-  "generated_at": "2026-04-10T10:12:06.320444+00:00",
+  "generated_at": "2026-04-13T10:29:24.267571+00:00",
   "articles": [
+    {
+      "article_slug": "best-furniture-mediterranean-bedroom",
+      "cluster_id": "mediterranean_bedroom",
+      "subtopic_id": "furniture",
+      "angle_id": "best_options",
+      "primary_keyword": "best furniture for a mediterranean bedroom",
+      "validation_status": "warning",
+      "warnings": [
+        "Supporting keyword ideas are barely reflected in the body."
+      ],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 142,
+          "concept_overlap": 5,
+          "first_sentence": "Creating a Mediterranean bedroom that feels both inviting and timeless hinges on choosing the right furniture—a task that can quickly feel overwhelming."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 1,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Key Furniture Criteria for a Mediterranean Bedroom",
+            "Rustic Wooden Furniture: The Timeless Mediterranean Option",
+            "Wrought Iron and Metal Accents for Contrast and Charm",
+            "Matching Furniture Choices to Room Size and Layout",
+            "Narrowing Your Furniture Choices With Confidence"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 5,
+          "specificity_term_hits": 8,
+          "secondary_keyword_hits": 0
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-04-13T10:29:24.267338+00:00"
+    },
     {
       "article_slug": "best-furniture-minimalist-bathroom",
       "cluster_id": "minimalist_bathroom",
