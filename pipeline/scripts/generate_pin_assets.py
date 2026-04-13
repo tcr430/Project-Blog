@@ -159,6 +159,49 @@ def resolve_render_copy(article_payload: dict[str, Any], variant: dict[str, Any]
     return headline, subheadline
 
 
+def infer_room_phrase(article_payload: dict[str, Any]) -> str:
+    cluster = humanize_identifier(article_payload.get("cluster_id"))
+    if cluster:
+        return cluster
+    title = normalize_copy(article_payload.get("article_title") or article_payload.get("title") or "")
+    title = re.sub(r"^(how to choose|how to style|best furniture for|best)\s+", "", title, flags=re.IGNORECASE)
+    title = re.sub(r"\s*:\s*.*$", "", title).strip()
+    return title or "Home Decor"
+
+
+def build_render_safe_headline(article_payload: dict[str, Any], variant: dict[str, Any], headline: str) -> str:
+    original = normalize_copy(headline)
+    if not original:
+        return original
+
+    room_phrase = infer_room_phrase(article_payload)
+    subtopic = humanize_identifier(article_payload.get("subtopic_id"))
+    subtopic_lower = subtopic.lower()
+    room_lower = room_phrase.lower()
+    topic_phrase = room_phrase
+    if subtopic and subtopic_lower not in room_lower:
+        topic_phrase = f"{room_phrase} {subtopic}".strip()
+
+    variant_type = normalize_copy(variant.get("variant_type")).lower()
+    if variant_type == "product_led":
+        safe = f"{topic_phrase} Worth Comparing"
+    elif variant_type == "practical_tips":
+        safe = f"How to Choose {topic_phrase}"
+    elif variant_type == "styling_angle":
+        safe = f"Style {topic_phrase} Without Clutter"
+    else:
+        safe = f"{topic_phrase} Tips"
+
+    safe = re.sub(r"\s+", " ", safe).strip()
+    if len(safe) >= len(original):
+        trimmed = re.sub(r"\b(with|for|warm|timeless|cozy|beautiful|effortless|easy)\b", "", original, flags=re.IGNORECASE)
+        trimmed = re.sub(r"\s+", " ", trimmed).strip(" ,:-")
+        if trimmed and len(trimmed) < len(original):
+            safe = trimmed
+
+    return truncate_text(safe, 62)[0]
+
+
 def truncate_text(text: str, max_length: int) -> tuple[str, bool]:
     cleaned = normalize_copy(text)
     if len(cleaned) <= max_length:
@@ -519,6 +562,48 @@ def select_template_candidates(
     return ordered
 
 
+def build_render_template_candidates(
+    *,
+    variant: dict[str, Any],
+    design_system: dict[str, Any],
+    density: str,
+) -> list[str]:
+    initial = select_template_candidates(variant=variant, design_system=design_system, density=density)
+    base_template = normalize_copy(variant.get("template_id") or variant.get("template_family"))
+    explicit_fallbacks = {
+        "top_headline_card": ["insight_band", "editorial_split", "minimal_frame"],
+        "center_overlay": ["comparison_panel", "editorial_split", "minimal_frame"],
+        "bottom_band": ["editorial_split", "minimal_frame"],
+        "minimal_split": ["minimal_frame"],
+        "insight_band": ["insight_band", "editorial_split", "minimal_frame"],
+        "comparison_panel": ["comparison_panel", "editorial_split", "minimal_frame"],
+        "editorial_split": ["editorial_split", "minimal_frame"],
+        "minimal_frame": ["minimal_frame"],
+    }
+    ordered: list[str] = []
+    seen: set[str] = set()
+    for name in explicit_fallbacks.get(base_template, []):
+        if name in design_system.get("template_families", {}) and name not in seen:
+            ordered.append(name)
+            seen.add(name)
+    for name in initial:
+        if name not in seen:
+            ordered.append(name)
+            seen.add(name)
+    return ordered
+
+
+def diagnostics_require_retry(diagnostics: dict[str, Any], quality_minimum: int) -> bool:
+    warnings = {normalize_copy(item).lower() for item in diagnostics.get("quality_warnings", [])}
+    return (
+        bool(diagnostics.get("headline_truncated"))
+        or int(diagnostics.get("quality_score", 0)) < quality_minimum
+        or "headline line breaks are unbalanced" in warnings
+        or "title-to-subtitle hierarchy feels weak" in warnings
+        or "card feels cramped for the text load" in warnings
+    )
+
+
 def choose_composition_class(
     *,
     template_name: str,
@@ -740,6 +825,8 @@ def build_pin_image(
     article_payload: dict[str, Any],
     design_system: dict[str, Any],
     template_name: str,
+    headline_override: str = "",
+    subheadline_override: str = "",
 ) -> tuple[Image.Image, dict[str, Any]]:
     topic_style_key = str(variant.get("topic_style") or classify_topic_style(article_payload)).strip() or "editorial"
     topic_style = dict(design_system.get("topic_styles", {}).get(topic_style_key, {}))
@@ -759,6 +846,10 @@ def build_pin_image(
     generated_copy = build_pin_copy_variant(article_payload, variant_type=variant_type)
     has_pin_specific_copy = bool(variant.get("display_headline")) and bool(variant.get("display_subheadline"))
     resolved_headline, resolved_subheadline = resolve_render_copy(article_payload, variant)
+    if normalize_copy(headline_override):
+        resolved_headline = normalize_copy(headline_override)
+    if normalize_copy(subheadline_override):
+        resolved_subheadline = normalize_copy(subheadline_override)
 
     headline_raw, _ = truncate_text(
         str(
@@ -1002,6 +1093,8 @@ def build_pin_image(
         )
     diagnostics = {
         "template_family": template_name,
+        "render_headline": headline,
+        "render_subheadline": subheadline,
         "composition_class": composition_class,
         "topic_style": topic_style_key,
         "content_density": density,
@@ -1057,6 +1150,16 @@ def generate_pin_assets(pinterest_metadata_path: Path, variant_key: str = "") ->
     selected_variant_key = normalize_copy(variant_key).lower()
     if len(variants) < 4 and not selected_variant_key:
         raise ValueError("Pinterest metadata must contain at least 4 variants.")
+    if selected_variant_key:
+        matching_keys = [
+            normalize_copy(item.get("variant_key") or f"pin-{idx}").lower()
+            for idx, item in enumerate(variants, start=1)
+        ]
+        if matching_keys.count(selected_variant_key) > 1:
+            print(
+                f"[pinterest] duplicate variant key '{selected_variant_key}' detected; "
+                "rendering the first matching variant only"
+            )
 
     for index, variant in enumerate(variants, start=1):
         current_variant_key = normalize_copy(variant.get("variant_key") or f"pin-{index}").lower()
@@ -1086,13 +1189,27 @@ def generate_pin_assets(pinterest_metadata_path: Path, variant_key: str = "") ->
         diagnostics: dict[str, Any] = {}
         best_score = -1
         density = pick_density_bucket(headline, subheadline)
-        candidate_templates = select_template_candidates(
+        candidate_templates = build_render_template_candidates(
             variant=variant,
             design_system=design_system,
             density=density,
         )
-
+        render_safe_headline = build_render_safe_headline(payload, variant, headline)
+        render_attempts: list[tuple[str, str, str]] = []
+        seen_attempts: set[tuple[str, str, str]] = set()
         for template_name in candidate_templates:
+            attempt = (template_name, headline, subheadline)
+            if attempt not in seen_attempts:
+                render_attempts.append(attempt)
+                seen_attempts.add(attempt)
+        for template_name in candidate_templates:
+            if normalize_copy(render_safe_headline) and normalize_copy(render_safe_headline) != normalize_copy(headline):
+                attempt = (template_name, render_safe_headline, subheadline)
+                if attempt not in seen_attempts:
+                    render_attempts.append(attempt)
+                    seen_attempts.add(attempt)
+
+        for template_name, attempt_headline, attempt_subheadline in render_attempts:
             candidate_image, candidate_diagnostics = build_pin_image(
                 base_image=base_image,
                 brand_name=brand_name,
@@ -1100,6 +1217,8 @@ def generate_pin_assets(pinterest_metadata_path: Path, variant_key: str = "") ->
                 article_payload=payload,
                 design_system=design_system,
                 template_name=template_name,
+                headline_override=attempt_headline,
+                subheadline_override=attempt_subheadline,
             )
             candidate_score = int(candidate_diagnostics.get("quality_score", 0))
             if candidate_score > best_score:
@@ -1107,7 +1226,7 @@ def generate_pin_assets(pinterest_metadata_path: Path, variant_key: str = "") ->
                 image = candidate_image
                 diagnostics = candidate_diagnostics
                 variant["template_family"] = template_name
-            if candidate_score >= quality_minimum:
+            if not diagnostics_require_retry(candidate_diagnostics, quality_minimum):
                 image = candidate_image
                 diagnostics = candidate_diagnostics
                 variant["template_family"] = template_name
@@ -1126,6 +1245,12 @@ def generate_pin_assets(pinterest_metadata_path: Path, variant_key: str = "") ->
                 f"Variant {index} rejected because the headline still truncates in a primary layout."
             )
 
+        chosen_render_headline = normalize_copy(diagnostics.get("render_headline"))
+        chosen_render_subheadline = normalize_copy(diagnostics.get("render_subheadline"))
+        if chosen_render_headline and chosen_render_headline != normalize_copy(headline):
+            variant["render_headline"] = chosen_render_headline
+        if chosen_render_subheadline and chosen_render_subheadline != normalize_copy(subheadline):
+            variant["render_subheadline"] = chosen_render_subheadline
         variant["render_diagnostics"] = diagnostics
         output_path = output_dir / f"pin-{index}.png"
         image.save(output_path, format="PNG", optimize=True)
@@ -1134,6 +1259,8 @@ def generate_pin_assets(pinterest_metadata_path: Path, variant_key: str = "") ->
             f"(quality={diagnostics.get('quality_score', 0)})"
         )
         saved_paths.append(output_path)
+        if selected_variant_key:
+            break
 
     if selected_variant_key and not saved_paths:
         raise ValueError(f"No Pinterest variant found for variant key: {variant_key}")

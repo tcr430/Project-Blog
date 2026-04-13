@@ -54,7 +54,11 @@
     "strategy_fallback_reason": "strategy returned 3 usable variants; supplemented with fallback variants to reach 4",
     "image_candidate_count": 6,
     "board_config_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_boards.json",
-    "design_system_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_pin_design_system.json"
+    "design_system_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_pin_design_system.json",
+    "repair_notes": [
+      "Variant 4: variant_key 'pin-1' -> 'pin-4'.",
+      "Variant 4: image_path '/assets/pins/best-furniture-mediterranean-bedroom/pin-1.png' -> '/assets/pins/best-furniture-mediterranean-bedroom/pin-4.png'."
+    ]
   },
   "variants": [
     {
@@ -82,7 +86,26 @@
         "name": "Bedroom Retreat Ideas"
       },
       "priority_score": 0.0,
-      "schedule_rank": 0
+      "schedule_rank": 0,
+      "render_headline": "Mediterranean Bedroom Furniture Tips",
+      "render_diagnostics": {
+        "template_family": "insight_band",
+        "render_headline": "Mediterranean Bedroom Furniture Tips",
+        "render_subheadline": "Layer natural textures and warm tones with ease.",
+        "composition_class": "minimal_copy",
+        "topic_style": "decision",
+        "content_density": "short",
+        "headline_font_size": 68,
+        "subheadline_font_size": 23,
+        "headline_truncated": false,
+        "subheadline_truncated": false,
+        "subheadline_requested": true,
+        "show_brand_label": false,
+        "used_height": 409,
+        "content_box_height": 496,
+        "quality_score": 100,
+        "quality_warnings": []
+      }
     },
     {
       "variant_key": "pin-2",
@@ -139,10 +162,10 @@
       "schedule_rank": 2
     },
     {
-      "variant_key": "pin-1",
+      "variant_key": "pin-4",
       "variant_type": "trend_overview",
       "style_name": "bottom-title",
-      "template_family": "editorial_split",
+      "template_family": "insight_band",
       "title": "How to Pick Furniture for a Mediterranean Bedroom",
       "description": "Explore practical tips on choosing the best furniture for a warm, textured Mediterranean bedroom look with natural materials and timeless design.",
       "display_headline": "Best Furniture for Mediterranean Bedroom",
@@ -152,13 +175,34 @@
       "topic_style": "decision",
       "image_focus": "hero",
       "image_reference": "hero",
-      "image_path": "/assets/pins/best-furniture-mediterranean-bedroom/pin-1.png",
+      "image_path": "/assets/pins/best-furniture-mediterranean-bedroom/pin-4.png",
       "board": {
         "key": "bedroom",
         "name": "Bedroom Retreat Ideas"
       },
       "priority_score": 0.0,
-      "schedule_rank": 0
+      "schedule_rank": 0,
+      "hook_text": "Smart Mediterranean Bedroom Furniture Ideas",
+      "support_text": "Clean choices for a calmer, more functional bedroom.",
+      "render_headline": "Mediterranean Bedroom Furniture Tips",
+      "render_diagnostics": {
+        "template_family": "insight_band",
+        "render_headline": "Mediterranean Bedroom Furniture Tips",
+        "render_subheadline": "Clean choices for a calmer, more functional bedroom.",
+        "composition_class": "minimal_copy",
+        "topic_style": "decision",
+        "content_density": "short",
+        "headline_font_size": 68,
+        "subheadline_font_size": 23,
+        "headline_truncated": false,
+        "subheadline_truncated": false,
+        "subheadline_requested": true,
+        "show_brand_label": false,
+        "used_height": 409,
+        "content_box_height": 496,
+        "quality_score": 100,
+        "quality_warnings": []
+      }
     }
   ]
 }

@@ -1,0 +1,55 @@
+name: Repair Pinterest Metadata
+
+on:
+  workflow_dispatch:
+    inputs:
+      article_slug:
+        description: Article slug to repair in _data/pinterest
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  repair-metadata:
+    runs-on: ubuntu-latest
+    env:
+      PYTHONUNBUFFERED: "1"
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Repair selected Pinterest metadata
+        run: |
+          PINTEREST_METADATA="_data/pinterest/${{ github.event.inputs.article_slug }}.json"
+          if [ ! -f "$PINTEREST_METADATA" ]; then
+            echo "Pinterest metadata not found: $PINTEREST_METADATA"
+            exit 1
+          fi
+          python pipeline/scripts/repair_pinterest_metadata.py "$PINTEREST_METADATA"
+
+      - name: Commit repaired Pinterest metadata
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add "_data/pinterest/${{ github.event.inputs.article_slug }}.json"
+
+          if git diff --cached --quiet; then
+            echo "No metadata repairs to commit."
+            exit 0
+          fi
+
+          git commit -m "chore(pinterest): repair metadata numbering"
+          git push origin "${{ github.ref_name }}"

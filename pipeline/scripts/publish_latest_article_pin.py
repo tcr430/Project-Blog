@@ -56,6 +56,12 @@ def load_current_article_slug(run_state_path: Path) -> str | None:
     return slug or None
 
 
+def load_run_state(run_state_path: Path) -> dict[str, Any]:
+    if not run_state_path.exists():
+        return {}
+    return load_json(run_state_path)
+
+
 def main() -> int:
     args = parse_args()
     project_root = Path(__file__).resolve().parents[2]
@@ -69,10 +75,19 @@ def main() -> int:
         return 1
 
     try:
-        article_slug = args.article_slug.strip() or load_current_article_slug(Path(args.run_state_path))
+        run_state_path = Path(args.run_state_path)
+        run_state = load_run_state(run_state_path)
+        article_slug = args.article_slug.strip() or str(run_state.get("article_slug", "")).strip()
         if not article_slug:
             print("[pinterest] no current article slug found for primary-pin publish. Skipping.")
             return 0
+        if args.article_slug.strip() == "":
+            if not bool(run_state.get("pinterest_step_succeeded")):
+                print("[pinterest] pinterest step did not complete successfully for the current article. Skipping primary-pin publish.")
+                return 0
+            if not bool(run_state.get("primary_pin_rendered")):
+                print("[pinterest] current article does not have a rendered primary pin asset. Skipping primary-pin publish.")
+                return 0
 
         print(f"[pinterest] current article selected for primary-pin publish: {article_slug}")
         backfill_primary_entry_if_missing(project_root=project_root, article_slug=article_slug)

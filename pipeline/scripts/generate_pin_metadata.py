@@ -348,15 +348,17 @@ def build_fallback_variants(
     *,
     plans: list[dict[str, Any]],
     design_system: dict[str, Any],
+    start_index: int = 1,
 ) -> list[dict[str, Any]]:
     variants: list[dict[str, Any]] = []
-    for index, plan in enumerate(plans, start=1):
+    for offset, plan in enumerate(plans):
+        index = start_index + offset
         variant_type = str(plan["variant_type"])
         copy_variant = build_pin_copy_variant(article_metadata, variant_type=variant_type)
         template_family = select_template_family(
             article_metadata=article_metadata,
             variant_type=variant_type,
-            duplicate_index=int(plan.get("duplicate_index", 0)),
+            duplicate_index=int(plan.get("duplicate_index", 0)) + max(0, start_index - 1),
             design_system=design_system,
         )
         image_reference = "hero"
@@ -377,14 +379,14 @@ def build_fallback_variants(
                     variant_type=variant_type,
                     topic_phrase=article_metadata["topic_phrase"],
                     title_candidates=article_metadata["pinterest_titles"],
-                    index=index - 1,
+                    index=offset,
                 ),
                 "description": build_variant_description(
                     variant_type=variant_type,
                     topic_phrase=article_metadata["topic_phrase"],
                     description_candidates=article_metadata["pinterest_descriptions"],
                     meta_description=article_metadata["meta_description"],
-                    index=index - 1,
+                    index=offset,
                 ),
                 "display_headline": copy_variant["headline"],
                 "display_subheadline": copy_variant["subheadline"],
@@ -539,6 +541,7 @@ def build_variant_payloads(article_metadata: dict[str, Any], board_config: dict[
             article_metadata,
             plans=plans,
             design_system=design_system,
+            start_index=len(variants) + 1,
         )
         existing_keys = {normalize_key(str(item["title"])) for item in variants}
         for fallback_variant in fallback_variants:

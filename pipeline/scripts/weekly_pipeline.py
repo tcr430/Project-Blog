@@ -222,6 +222,9 @@ def save_current_pinterest_run(
     output_path: Path = CURRENT_PINTEREST_RUN_PATH,
 ) -> Path:
     metadata_path = pinterest_result.get("metadata_path") if pinterest_result else None
+    pin_image_paths = pinterest_result.get("pin_image_paths") if pinterest_result else []
+    normalized_pin_image_paths = [str(path) for path in pin_image_paths] if isinstance(pin_image_paths, list) else []
+    primary_pin_rendered = any(Path(path).name.lower() == "pin-1.png" for path in normalized_pin_image_paths)
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "article_slug": article_slug,
@@ -230,6 +233,9 @@ def save_current_pinterest_run(
         "mode": pinterest_result.get("mode") if pinterest_result else None,
         "queue_path": str(pinterest_result.get("queue_path")) if pinterest_result and pinterest_result.get("queue_path") else "",
         "history_path": str(pinterest_result.get("history_path")) if pinterest_result and pinterest_result.get("history_path") else "",
+        "pin_image_paths": normalized_pin_image_paths,
+        "primary_pin_rendered": primary_pin_rendered,
+        "pinterest_step_succeeded": bool(pinterest_result),
     }
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
