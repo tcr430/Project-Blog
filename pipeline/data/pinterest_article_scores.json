@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-13T18:57:45.108572+00:00",
+  "generated_at": "2026-04-14T01:18:55.662526+00:00",
   "articles": [
     {
       "article_slug": "best-furniture-for-earthy-bedroom",
@@ -102,6 +102,17 @@
     },
     {
       "article_slug": "best-furniture-minimalist-bathroom",
+      "score": 0,
+      "classification": "underperforming",
+      "reasons": [],
+      "average_impressions": null,
+      "average_saves": null,
+      "average_outbound_clicks": null,
+      "average_engagement_rate": null,
+      "published_pins": 1
+    },
+    {
+      "article_slug": "best-furniture-mediterranean-bedroom",
       "score": 0,
       "classification": "underperforming",
       "reasons": [],
