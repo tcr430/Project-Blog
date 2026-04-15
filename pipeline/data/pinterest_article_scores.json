@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-15T07:15:44.168825+00:00",
+  "generated_at": "2026-04-15T12:55:01.113648+00:00",
   "articles": [
     {
       "article_slug": "best-furniture-for-earthy-bedroom",
@@ -113,6 +113,17 @@
     },
     {
       "article_slug": "best-furniture-mediterranean-bedroom",
+      "score": 0,
+      "classification": "underperforming",
+      "reasons": [],
+      "average_impressions": null,
+      "average_saves": null,
+      "average_outbound_clicks": null,
+      "average_engagement_rate": null,
+      "published_pins": 1
+    },
+    {
+      "article_slug": "spring-living-room-styling-color-palette",
       "score": 0,
       "classification": "underperforming",
       "reasons": [],
