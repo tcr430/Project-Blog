@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-14T18:55:52.099160+00:00",
+  "generated_at": "2026-04-15T01:19:12.913975+00:00",
   "history_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_history.json",
-  "published_pin_count": 16,
+  "published_pin_count": 17,
   "global_metrics": {
-    "published_pins": 16,
+    "published_pins": 17,
     "analytics_ready_pins": 0,
     "average_impressions": null,
     "average_saves": null,
@@ -36,8 +36,8 @@
       "average_engagement_rate": null
     },
     {
-      "variant_type": "product_led",
-      "published_pins": 1,
+      "variant_type": "styling_angle",
+      "published_pins": 2,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -47,7 +47,7 @@
       "average_engagement_rate": null
     },
     {
-      "variant_type": "styling_angle",
+      "variant_type": "product_led",
       "published_pins": 1,
       "analytics_ready_pins": 0,
       "average_impressions": null,
@@ -61,7 +61,7 @@
   "performance_by_board": [
     {
       "board_key": "bedroom",
-      "published_pins": 8,
+      "published_pins": 9,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -139,7 +139,7 @@
     },
     {
       "article_slug": "best-furniture-for-scandinavian-bedroom",
-      "published_pins": 1,
+      "published_pins": 2,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -289,8 +289,8 @@
         "average_engagement_rate": null
       },
       {
-        "variant_type": "product_led",
-        "published_pins": 1,
+        "variant_type": "styling_angle",
+        "published_pins": 2,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -300,7 +300,7 @@
         "average_engagement_rate": null
       },
       {
-        "variant_type": "styling_angle",
+        "variant_type": "product_led",
         "published_pins": 1,
         "analytics_ready_pins": 0,
         "average_impressions": null,
@@ -314,7 +314,7 @@
     "top_boards": [
       {
         "board_key": "bedroom",
-        "published_pins": 8,
+        "published_pins": 9,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -392,7 +392,7 @@
       },
       {
         "article_slug": "best-furniture-for-scandinavian-bedroom",
-        "published_pins": 1,
+        "published_pins": 2,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -464,7 +464,7 @@
       },
       {
         "article_slug": "best-furniture-for-scandinavian-bedroom",
-        "published_pins": 1,
+        "published_pins": 2,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
