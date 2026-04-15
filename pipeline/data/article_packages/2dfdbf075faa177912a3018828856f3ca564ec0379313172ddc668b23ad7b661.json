@@ -1,0 +1,192 @@
+{
+  "saved_at": "2026-04-15T10:14:31.865803+00:00",
+  "package": {
+    "title": "Spring Living Room Styling Color Palette",
+    "seo_title": "Spring Living Room Styling Color Palette",
+    "title_family": "editorial_analysis",
+    "seo_title_family": "editorial_analysis",
+    "title_candidates": [
+      {
+        "title": "Spring Living Room Styling Color Palette",
+        "family": "editorial_analysis",
+        "source": "keyword",
+        "score": 135.0,
+        "seo_score": 136.0,
+        "opening": "spring living",
+        "max_similarity": 0.308,
+        "notes": []
+      },
+      {
+        "title": "Spring Living Room Styling: Ideas Worth Starting With",
+        "family": "insight_led",
+        "source": "rules",
+        "score": 124.2,
+        "seo_score": 120.4,
+        "opening": "spring living",
+        "max_similarity": 0.462,
+        "notes": []
+      },
+      {
+        "title": "Spring Living Room Styling: Where to Start",
+        "family": "beginner_friendly",
+        "source": "rules",
+        "score": 112.0,
+        "seo_score": 117.56,
+        "opening": "spring living",
+        "max_similarity": 0.286,
+        "notes": []
+      },
+      {
+        "title": "What Actually Looks Good in a Spring Living Room Styling Color Palette?",
+        "family": "question_led",
+        "source": "rules",
+        "score": 112.0,
+        "seo_score": 107.0,
+        "opening": "what",
+        "max_similarity": 0.211,
+        "notes": [
+          "slightly long"
+        ]
+      },
+      {
+        "title": "Spring Living Room Styling Color Palette: Fresh Ideas to Brighten Your Space",
+        "family": "insight_led",
+        "source": "model",
+        "score": 110.0,
+        "seo_score": 99.0,
+        "opening": "spring living",
+        "max_similarity": 0.353,
+        "notes": [
+          "truncation risk"
+        ]
+      },
+      {
+        "title": "Spring Living Room Styling: Fresh Ways to Make It Feel More Pulled Together",
+        "family": "editorial_analysis",
+        "source": "rules",
+        "score": 87.8,
+        "seo_score": 68.93,
+        "opening": "spring living",
+        "max_similarity": 0.263,
+        "notes": [
+          "truncation risk",
+          "weak keyword/topic coverage"
+        ]
+      }
+    ],
+    "slug": "spring-living-room-styling-color-palette",
+    "meta_description": "Discover practical spring living room styling color palette ideas to refresh your space with softness, contrast, and seasonal cheer. Learn approachable tips for effortless updates.",
+    "keywords": [
+      "spring living room styling color palette",
+      "spring living room styling ideas",
+      "how to style spring living room styling",
+      "spring living room styling mistakes to avoid",
+      "budget spring living room styling ideas"
+    ],
+    "affiliate_products": [],
+    "monetization_profile": {
+      "profile_id": "inspiration_blend",
+      "name": "Inspiration Blend",
+      "description": "Soft inspiration-plus-product mix for visually led articles.",
+      "min_products_to_enable": 2,
+      "max_products": 3,
+      "max_inline_links": 2,
+      "preferred_section_indexes": [
+        3,
+        5
+      ],
+      "shop_block_enabled": true,
+      "shop_block_kicker": "Shop the Look",
+      "shop_block_heading": "Bring the Look Home",
+      "shop_button_label": "View Product",
+      "prompt_guidance": "Let the article stay inspiration-led. Product mentions should feel like optional ways to recreate the mood rather than the point of the piece.",
+      "inline_sentence_templates": [
+        "For a piece that captures this mood, [{title}]({affiliate_url}) is an easy starting point.",
+        "If you want to bring this look home without overthinking it, [{title}]({affiliate_url}) fits naturally."
+      ]
+    },
+    "primary_keyword": "spring living room styling color palette",
+    "secondary_keywords": [
+      "spring living room styling ideas",
+      "how to style spring living room styling",
+      "spring living room styling mistakes to avoid",
+      "budget spring living room styling ideas"
+    ],
+    "topical_cluster": "spring living room styling",
+    "cluster_keywords": [
+      "spring living room styling ideas",
+      "how to style spring living room styling",
+      "spring living room styling mistakes to avoid",
+      "budget spring living room styling ideas",
+      "spring living room styling color palette",
+      "how to choose colors for spring living room styling",
+      "spring living room styling color mistakes to avoid",
+      "natural spring living room styling ideas",
+      "spring living room styling texture ideas",
+      "how to layer textiles for spring living room styling",
+      "spring living room styling texture mistakes to avoid",
+      "best textiles for spring living room styling"
+    ],
+    "search_intent": "ideas",
+    "intent_id": "inspiration",
+    "domain_id": "seasonal_styling",
+    "cluster_id": "spring_living_room_styling",
+    "subtopic_id": "palette",
+    "subtopic_name": "palette and mood",
+    "angle_id": "ideas",
+    "modifier": "",
+    "internal_link_suggestions": [
+      {
+        "relationship": "adjacent_subtopic",
+        "title": "Spring Living Room Styling Ideas: Embrace Fresh Minimalism with Natural Touches",
+        "slug": "spring-living-room-styling-ideas-fresh-minimalism",
+        "permalink": "/ideas/2026/03/15/spring-living-room-styling-ideas-fresh-minimalism/",
+        "cluster_id": "spring_living_room_styling",
+        "cluster_name": "spring living room styling",
+        "subtopic_id": "refresh",
+        "subtopic_name": "Seasonal Refresh",
+        "angle_id": "ideas",
+        "intent_id": "inspiration",
+        "anchor_text": "seasonal refresh guide",
+        "blurb": "Covers a nearby subtopic that expands the same topic naturally."
+      }
+    ],
+    "estimated_reading_time": "7 min read",
+    "hero_image_prompt": "Create a hero image for the article 'Spring Living Room Styling Color Palette'. Show a palette-led wide shot that expresses 'spring living room styling' in a magazine-worthy but believable way. Lead with atmosphere, a strong focal statement, and an emotionally legible room mood. Prioritize one memorable focal point, clear spatial depth, and an image that feels editorial rather than staged for ecommerce. Style direction: airy, quiet, polished editorial styling. Visual language: aspirational, mood-led, layered, and magazine-worthy without feeling staged for ecommerce. Room context: living room. Lighting: soft natural daylight with gentle highlights. Palette: chalky whites, oat tones, pale woods, restrained contrast. Subject emphasis: palette harmony, color relationships, and a room that clearly expresses the mood of the scheme. Primary composition: palette-led wide shot. Occasional variation: soft asymmetrical framing. Medium: editorial interior photography. Constraints: realistic materials, no text, no logos, no people, no artificial collage effects. Keep the architecture believable and the furniture layout realistic for a real home. Do not duplicate the main focal furnishing unless the prompt clearly calls for a shared or twin-room setup. Avoid mirrored, side-by-side, or repeated hero objects that make the room read as AI-generated. Use one main seating anchor rather than multiple unrelated sofas fighting for focus.",
+    "section_image_prompts": [
+      "Create section image 1 for the article 'Spring Living Room Styling Color Palette'. Focus on 'Soft Pastels: The Foundation of a Fresh Spring Mood'. Use a room-wide palette-led establishing shot. Let the main emphasis be palette harmony. Highlight palette harmony. Show visually distinct styling directions rather than repeating the same setup. The image should clearly support this specific section rather than repeat the hero image. Vary focal distance, crop, and visual weight so the image set feels intentionally diverse. Style direction: airy, quiet, polished editorial styling. Visual language: aspirational, mood-led, layered, and magazine-worthy without feeling staged for ecommerce. Room context: living room. Lighting: soft natural daylight with gentle highlights. Palette: chalky whites, oat tones, pale woods, restrained contrast. Subject emphasis: palette harmony, color relationships, and a room that clearly expresses the mood of the scheme. Primary composition: layered vignette crop. Occasional variation: accent-color vignette. Medium: editorial interior photography. Constraints: realistic materials, no text, no logos, no people, no artificial collage effects. Keep the architecture believable and the furniture layout realistic for a real home. Do not duplicate the main focal furnishing unless the prompt clearly calls for a shared or twin-room setup. Avoid mirrored, side-by-side, or repeated hero objects that make the room read as AI-generated. Use one main seating anchor rather than multiple unrelated sofas fighting for focus.",
+      "Create section image 2 for the article 'Spring Living Room Styling Color Palette'. Focus on 'Terracotta and Botanical Greens: Adding Warmth and Life'. Use a close-up showing color transitions and materials. Let the main emphasis be paint and textile interplay. Highlight textural layering. Show visually distinct styling directions rather than repeating the same setup. The image should clearly support this specific section rather than repeat the hero image. Vary focal distance, crop, and visual weight so the image set feels intentionally diverse. Style direction: airy, quiet, polished editorial styling. Visual language: aspirational, mood-led, layered, and magazine-worthy without feeling staged for ecommerce. Room context: living room. Lighting: soft natural daylight with gentle highlights. Palette: chalky whites, oat tones, pale woods, restrained contrast. Subject emphasis: palette harmony, color relationships, and a room that clearly expresses the mood of the scheme. Primary composition: layered vignette crop. Occasional variation: soft asymmetrical framing. Medium: editorial interior photography. Constraints: realistic materials, no text, no logos, no people, no artificial collage effects. Keep the architecture believable and the furniture layout realistic for a real home. Do not duplicate the main focal furnishing unless the prompt clearly calls for a shared or twin-room setup. Avoid mirrored, side-by-side, or repeated hero objects that make the room read as AI-generated. Use one main seating anchor rather than multiple unrelated sofas fighting for focus. For detail-driven images, prefer a tight crop of one believable setup instead of widening into multiple duplicated furniture groupings.",
+      "Create section image 3 for the article 'Spring Living Room Styling Color Palette'. Focus on 'Layering Blues and Creamy Neutrals in Comfy Corners'. Use a furniture or textile composition emphasizing color balance. Let the main emphasis be accent balance. Highlight decor variation. Show visually distinct styling directions rather than repeating the same setup. The image should clearly support this specific section rather than repeat the hero image. Vary focal distance, crop, and visual weight so the image set feels intentionally diverse. Style direction: airy, quiet, polished editorial styling. Visual language: aspirational, mood-led, layered, and magazine-worthy without feeling staged for ecommerce. Room context: living room. Lighting: soft natural daylight with gentle highlights. Palette: chalky whites, oat tones, pale woods, restrained contrast. Subject emphasis: palette harmony, color relationships, and a room that clearly expresses the mood of the scheme. Primary composition: soft asymmetrical framing. Occasional variation: wide editorial sweep. Medium: editorial interior photography. Constraints: realistic materials, no text, no logos, no people, no artificial collage effects. Keep the architecture believable and the furniture layout realistic for a real home. Do not duplicate the main focal furnishing unless the prompt clearly calls for a shared or twin-room setup. Avoid mirrored, side-by-side, or repeated hero objects that make the room read as AI-generated. Use one main seating anchor rather than multiple unrelated sofas fighting for focus.",
+      "Create section image 4 for the article 'Spring Living Room Styling Color Palette'. Focus on 'Bringing Cheer with Yellow and Crisp White Accents'. Use a styled vignette with accent-color use. Let the main emphasis be tone variation. Highlight palette harmony. Show visually distinct styling directions rather than repeating the same setup. The image should clearly support this specific section rather than repeat the hero image. Vary focal distance, crop, and visual weight so the image set feels intentionally diverse. Style direction: airy, quiet, polished editorial styling. Visual language: aspirational, mood-led, layered, and magazine-worthy without feeling staged for ecommerce. Room context: living room. Lighting: soft natural daylight with gentle highlights. Palette: chalky whites, oat tones, pale woods, restrained contrast. Subject emphasis: palette harmony, color relationships, and a room that clearly expresses the mood of the scheme. Primary composition: tonal layering view. Occasional variation: soft asymmetrical framing. Medium: editorial interior photography. Constraints: realistic materials, no text, no logos, no people, no artificial collage effects. Keep the architecture believable and the furniture layout realistic for a real home. Do not duplicate the main focal furnishing unless the prompt clearly calls for a shared or twin-room setup. Avoid mirrored, side-by-side, or repeated hero objects that make the room read as AI-generated. Use one main seating anchor rather than multiple unrelated sofas fighting for focus.",
+      "Create section image 5 for the article 'Spring Living Room Styling Color Palette'. Focus on 'Editing Your Palette for a Balanced, Lived-In Look'. Use a final composition showing the palette fully resolved. Let the main emphasis be overall mood. Highlight textural layering. Show visually distinct styling directions rather than repeating the same setup. The image should clearly support this specific section rather than repeat the hero image. Vary focal distance, crop, and visual weight so the image set feels intentionally diverse. Style direction: airy, quiet, polished editorial styling. Visual language: aspirational, mood-led, layered, and magazine-worthy without feeling staged for ecommerce. Room context: living room. Lighting: soft natural daylight with gentle highlights. Palette: chalky whites, oat tones, pale woods, restrained contrast. Subject emphasis: palette harmony, color relationships, and a room that clearly expresses the mood of the scheme. Primary composition: wide editorial sweep. Occasional variation: soft asymmetrical framing. Medium: editorial interior photography. Constraints: realistic materials, no text, no logos, no people, no artificial collage effects. Keep the architecture believable and the furniture layout realistic for a real home. Do not duplicate the main focal furnishing unless the prompt clearly calls for a shared or twin-room setup. Avoid mirrored, side-by-side, or repeated hero objects that make the room read as AI-generated. Use one main seating anchor rather than multiple unrelated sofas fighting for focus."
+    ],
+    "visual_direction": {
+      "family_id": "airy_editorial",
+      "mood": "airy, quiet, polished editorial styling",
+      "lighting": "soft natural daylight with gentle highlights",
+      "palette": "chalky whites, oat tones, pale woods, restrained contrast",
+      "intent_id": "inspiration",
+      "profile_id": "inspiration",
+      "shot_library_id": "color_palette"
+    },
+    "image_prompt_diagnostics": {
+      "sameness_warnings": [],
+      "recent_articles_checked": 12
+    },
+    "pinterest_titles": [
+      "Soft Pastel Palettes for a Refreshing Spring Living Room",
+      "How to Layer Warm Terracotta and Spring Greens in Your Living Room",
+      "Creating Cozy Blue and Beige Corners for Spring Styling",
+      "Cheerful Yellow and White Accents to Brighten Your Spring Living Room",
+      "Balanced Color Layering Ideas for a Fresh Spring Living Room Look"
+    ],
+    "pinterest_descriptions": [
+      "Explore delicate pastel tones like blush pinks and pale greens to give your living room a fresh yet soft spring update that feels effortless and calm.",
+      "Discover the charm of mixing natural terracotta with crisp botanical greens to create a lively yet grounded spring living room palette.",
+      "Learn how to build inviting spring nook spaces with soothing blues, creamy whites, and layered textures that add comfort and depth.",
+      "Brighten your living room this spring with cheerful yellow accents paired with soft grays and natural wood for a welcoming seasonal vibe.",
+      "Master layering muted blues, olive greens, and soft neutrals with warm woods for an editorial yet livable spring living room color story."
+    ],
+    "article_markdown": "Spring ushers in a natural impulse to lighten and refresh our living spaces, and the living room becomes the perfect canvas for this seasonal mood. The right color palette doesn’t just brighten the room; it sets a tone of calm optimism and invites soft natural light to play across your furnishings. The spring living room styling color palette is more than just picking pretty hues—it’s about thoughtful layering, contrast, and sourcing colors that feel both inviting and grounded. Whether your space is large and sun-drenched or cozy and compact, tuning your palette for spring brings a subtle but definite sense of renewal. This article dives into approachable, practical color palette ideas with clear styling advice so you can start your seasonal refresh with confidence.\n\n## Soft Pastels: The Foundation of a Fresh Spring Mood\n\nStart with soft, muted pastels as the backbone of your spring living room palette. Delicate shades like blush pink, pale mint green, and powdery blue create a soothing backdrop without overwhelming the senses. These colors work beautifully in upholstery pieces like a linen sofa or accent chairs, as well as in rug patterns or curtains. The softness feels fresh and calming but keeps the look elegant and grounded when paired with neutral walls—think warm whites, light beiges, or cream. \n\nThis approach works because pastels are easy on the eyes and reflect natural light, making rooms feel larger and airier. You can add texture through tactile layers—a boucle throw in a soft pink or a velvet mint cushion—to keep the softness interesting. Pastels also lend themselves well to mixing with natural materials like rattan or light wood, which balances femininity with an earthy vibe.\n\n## Terracotta and Botanical Greens: Adding Warmth and Life\n\nFor a livelier take, inject warm terracotta and leafy botanical greens into your spring palette. Terracotta introduces a grounded warmth that feels very current right now, while fresh green tones echo spring’s outdoor renewal. Use terracotta on accessory pieces like ceramic vases or a statement side table. Botanical greens are perfect for throw pillows, plants, or even a textured accent wall. \n\nThis combination works visually because it pairs the warmth of sun-hued clay with the cooling vitality of green, creating a balanced contrast that is sophisticated but earthy. It invites a tactile experience too—think woven jute rugs or linen curtains that speak to natural textures, reinforcing the organic, restful vibe.\n\n## Layering Blues and Creamy Neutrals in Comfy Corners\n\nAnother spring-inspired palette focuses on soothing blues combined with creamy neutrals. These tones create calm, welcoming corners perfect for reading or relaxing. Imagine a cozy nook with a soft blue armchair, a cream knitted throw, and a natural wood side table. The muted blue adds depth without feeling cold or stark, while creamy neutrals warm the atmosphere.\n\nThis palette benefits from layered textures—mix cotton, wool, and wood—to introduce visual interest and tactile comfort. On walls, subtle gray-beige shades act as a versatile backdrop amplifying the blues and whites, while natural daylight softens the look to encourage a tranquil mood. This is ideal for homes seeking a quiet yet fresh spring update that feels classic and lived-in.\n\n## Bringing Cheer with Yellow and Crisp White Accents\n\nYellow is the quintessential spring color to bring cheer and energy, but pairing it thoughtfully is key so it doesn’t overwhelm. Crisp white mixed with soft yellows creates a bright yet balanced look ideal for lively, sunlit living rooms. Consider yellow throw pillows, ceramic pieces, or light fixtures combined with white linen curtains and off-white sofas.\n\nThe sharpness of white sharpens yellow’s vibrancy, keeping it modern and fresh rather than cloying. Integrate soft gray cushions or wood tones to moderate the brightness and provide grounding contrast. This palette works well in homes with ample light, where the freshness can really shine, or smaller spaces where you want to create the illusion of openness and vitality.\n\n## Editing Your Palette for a Balanced, Lived-In Look\n\nThe final step in successful spring living room styling color palette work often comes down to editing. Layering colors and textures thoughtfully ensures a room feels composed yet relaxed—not forced. Choose a dominant color and one or two accent hues to carry through furnishings, textiles, and accessories. Aim for contrast in both color and material—pair matte with shiny, soft with structured—to maintain visual balance and tactility.\n\nSimple habits, like rotating cushions or switching up seasonal decor pieces, keep the look fresh without a full overhaul. Start small, perhaps with a new rug or a collection of spring-hued ceramics, and let the space evolve naturally. This deliberate restraint helps avoid common spring living room styling mistakes like over-cluttering or mismatched palettes, which can confuse the mood.\n\nFor more inspiration on refreshing your home for the season, see our seasonal refresh guide on [Spring Living Room Styling Ideas: Embrace Fresh Minimalism with Natural Touches](/ideas/2026/03/15/spring-living-room-styling-ideas-fresh-minimalism/).\n\n## FAQ\n\n### What colors are best for a small spring living room?  \nSoft pastels and creamy neutrals work best in compact spaces because they reflect light and create the illusion of openness, making your room feel airier and more inviting.\n\n### How do I avoid a palette that feels too cold or sterile for spring?  \nBalance cooler tones like blues or pastels with warm textures—think natural wood, terracotta, or soft woven fabrics. Adding plants also brings life and warmth.\n\n### Can I mix multiple accent colors in a spring palette?  \nYes, but keep one color dominant and use others in small doses to avoid visual chaos. Layer textures and keep finishes consistent to unify the look.\n\n### How often should I update my spring colors?  \nSeasonal accents like pillows, throws, and accessories can be swapped out each spring while larger pieces can be more timeless to save budget and effort.\n\n### What are common mistakes in spring living room color styling?  \nOverloading bright colors without balancing neutrals, ignoring natural light’s effect on colors, or neglecting texture and layering can all disrupt the fresh, balanced feel you want.\n\nRefreshing your living room’s color palette this spring is a chance to rethink how your space feels daily: brighter but cozy, lively yet restful. Whether you start with soft pastels or warm terracotta and green accents, focus on thoughtful layerings—colors, textures, and materials—that play off your room’s light and layout. Try updating accessories first to test how a new palette feels. This approach keeps your spring refresh manageable and rewarding, helping your home transition into the season with a quietly composed, naturally uplifting vibe."
+  }
+}

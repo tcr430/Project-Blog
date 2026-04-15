@@ -1,0 +1,299 @@
+{
+  "generated_at": "2026-04-15T10:19:49.211698+00:00",
+  "trend": "spring living room styling color palette",
+  "slug": "spring-living-room-styling-color-palette",
+  "article_generation": {
+    "cache_hit": false,
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/article_packages/2dfdbf075faa177912a3018828856f3ca564ec0379313172ddc668b23ad7b661.json",
+    "model": "gpt-4.1-mini",
+    "generation_calls": 1,
+    "short_retries": 0,
+    "angle_retries": 0,
+    "product_retries": 0,
+    "selected_products": 0,
+    "affiliate_mode": false,
+    "monetization_profile_id": "inspiration_blend",
+    "generated_link_count": 0,
+    "primary_keyword": "spring living room styling color palette",
+    "topical_cluster": "spring living room styling"
+  },
+  "seo_validation": {
+    "article_slug": "spring-living-room-styling-color-palette",
+    "cluster": "spring living room styling",
+    "cluster_id": "spring living room styling",
+    "subtopic_id": "palette",
+    "subtopic_name": "palette and mood",
+    "angle_id": "ideas",
+    "intent_id": "inspiration",
+    "primary_keyword": "spring living room styling color palette",
+    "validation_status": "warning",
+    "warnings": [
+      "Main section headings may be too generic for the chosen keyword.",
+      "The 'ideas' angle is already used frequently in the 'spring living room styling' cluster."
+    ],
+    "errors": [],
+    "duplicate_candidate_slugs": [],
+    "timestamp": "2026-04-15T10:14:31.870524+00:00"
+  },
+  "editorial_validation": {
+    "article_slug": "spring-living-room-styling-color-palette",
+    "cluster_id": "spring_living_room_styling",
+    "subtopic_id": "palette",
+    "angle_id": "ideas",
+    "primary_keyword": "spring living room styling color palette",
+    "validation_status": "warning",
+    "warnings": [
+      "Several section headings do not signal the topic strongly enough."
+    ],
+    "errors": [],
+    "checks": {
+      "generic_intro": {
+        "intro_word_count": 124,
+        "concept_overlap": 8,
+        "first_sentence": "Spring ushers in a natural impulse to lighten and refresh our living spaces, and the living room becomes the perfect canvas for this seasonal mood."
+      },
+      "heading_quality": {
+        "heading_count": 5,
+        "vague_heading_count": 0,
+        "low_specificity_heading_count": 3,
+        "repeated_signature_count": 0,
+        "repeated_stem_count": 0,
+        "headings": [
+          "Soft Pastels: The Foundation of a Fresh Spring Mood",
+          "Terracotta and Botanical Greens: Adding Warmth and Life",
+          "Layering Blues and Creamy Neutrals in Comfy Corners",
+          "Bringing Cheer with Yellow and Crisp White Accents",
+          "Editing Your Palette for a Balanced, Lived-In Look"
+        ]
+      },
+      "specificity": {
+        "concept_token_hits": 10,
+        "specificity_term_hits": 14,
+        "secondary_keyword_hits": 1
+      },
+      "distinctiveness": {
+        "nearest_article_slug": "spring-living-room-styling-ideas-fresh-minimalism",
+        "max_similarity": 0.571,
+        "strongest_heading_overlap": 0
+      }
+    },
+    "timestamp": "2026-04-15T10:14:31.874117+00:00"
+  },
+  "image_generation": {
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/image_generation_cache/spring-living-room-styling-color-palette.json",
+    "provider": "flux",
+    "provider_model": "flux-2-max",
+    "model": "flux-2-max",
+    "fallback_provider": "openai",
+    "fallback_model": "gpt-image-1",
+    "size": "1536x1024",
+    "hero_quality": "high",
+    "section_quality": "medium",
+    "allow_fallback": true,
+    "fallback_events": 0,
+    "generated_images": 6,
+    "cache_hits": 0,
+    "generation_calls": 6,
+    "qa_calls": 1,
+    "details": [
+      {
+        "label": "hero",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 1,
+        "quality": "high",
+        "qa_enabled": true,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "7a1ec690-429f-4071-8e62-f39fb4cfcc22",
+            "polling_url": "https://api.eu5.bfl.ai/v1/get_result?id=7a1ec690-429f-4071-8e62-f39fb4cfcc22",
+            "poll_attempts": 63,
+            "provider_status": "Ready",
+            "elapsed_seconds": 96.89,
+            "quality": "high",
+            "elapsed_seconds_total": 96.89,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation",
+        "qa_reason": "The image features a palette-led wide shot of a living room styled with chalky whites, oat tones, pale woods, and restrained contrast, matching the spring living room styling color palette concept. It has a single main seating anchor, clear spatial depth, and a polished editorial feel with soft natural daylight. The styling is aspirational and mood-led without feeling staged for ecommerce, making it suitable for a decor blog."
+      },
+      {
+        "label": "section-1",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "2184175b-0aa1-46ea-bdbf-b65ad9744ca8",
+            "polling_url": "https://api.us4.bfl.ai/v1/get_result?id=2184175b-0aa1-46ea-bdbf-b65ad9744ca8",
+            "poll_attempts": 25,
+            "provider_status": "Ready",
+            "elapsed_seconds": 34.96,
+            "quality": "medium",
+            "elapsed_seconds_total": 34.96,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-2",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "83ae3893-8610-4a4e-9057-fed4bf3c72f9",
+            "polling_url": "https://api.us3.bfl.ai/v1/get_result?id=83ae3893-8610-4a4e-9057-fed4bf3c72f9",
+            "poll_attempts": 27,
+            "provider_status": "Ready",
+            "elapsed_seconds": 36.45,
+            "quality": "medium",
+            "elapsed_seconds_total": 36.45,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-3",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "17e273c4-7342-4be6-85ef-2e3743b7af75",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=17e273c4-7342-4be6-85ef-2e3743b7af75",
+            "poll_attempts": 34,
+            "provider_status": "Ready",
+            "elapsed_seconds": 47.0,
+            "quality": "medium",
+            "elapsed_seconds_total": 47.0,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-4",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "f4267722-073d-4011-8db6-21cede2c106b",
+            "polling_url": "https://api.eu5.bfl.ai/v1/get_result?id=f4267722-073d-4011-8db6-21cede2c106b",
+            "poll_attempts": 25,
+            "provider_status": "Ready",
+            "elapsed_seconds": 38.88,
+            "quality": "medium",
+            "elapsed_seconds_total": 38.88,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-5",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "77cfefd1-d08e-4792-a133-e772f6d6247e",
+            "polling_url": "https://api.eu5.bfl.ai/v1/get_result?id=77cfefd1-d08e-4792-a133-e772f6d6247e",
+            "poll_attempts": 25,
+            "provider_status": "Ready",
+            "elapsed_seconds": 38.89,
+            "quality": "medium",
+            "elapsed_seconds_total": 38.89,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      }
+    ]
+  },
+  "pinterest": {
+    "variants_requested": 4,
+    "pin_assets_generated": false,
+    "mode": null
+  }
+}

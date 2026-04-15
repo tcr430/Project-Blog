@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-13T10:28:46.548523+00:00",
+  "generated_at": "2026-04-15T10:13:40.590486+00:00",
   "overview": {
-    "pin_count": 49,
-    "published_pin_count": 15,
+    "pin_count": 50,
+    "published_pin_count": 17,
     "analytics_ready_pin_count": 0,
-    "tracked_article_count": 13
+    "tracked_article_count": 14
   },
   "best_performing_clusters": [
     {
@@ -41,6 +41,24 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "best-furniture-for-earthy-bedroom"
+      ]
+    },
+    {
+      "cluster_id": "mediterranean_bedroom",
+      "cluster_name": "mediterranean bedroom",
+      "pin_count": 1,
+      "published_pin_count": 1,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-mediterranean-bedroom"
       ]
     },
     {
@@ -173,7 +191,7 @@
       "cluster_id": "scandinavian_bedroom",
       "cluster_name": "scandinavian bedroom",
       "pin_count": 4,
-      "published_pin_count": 1,
+      "published_pin_count": 2,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -305,7 +323,7 @@
       "subtopic_id": "furniture",
       "subtopic_name": "furniture and anchors",
       "pin_count": 4,
-      "published_pin_count": 1,
+      "published_pin_count": 2,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -336,6 +354,25 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "best-furniture-for-transitional-bathroom"
+      ]
+    },
+    {
+      "cluster_id": "mediterranean_bedroom",
+      "subtopic_id": "furniture",
+      "subtopic_name": "furniture and anchors",
+      "pin_count": 1,
+      "published_pin_count": 1,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-mediterranean-bedroom"
       ]
     },
     {
@@ -494,8 +531,8 @@
   "best_performing_angles": [
     {
       "angle_id": "best_options",
-      "pin_count": 29,
-      "published_pin_count": 8,
+      "pin_count": 30,
+      "published_pin_count": 10,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -1121,8 +1158,8 @@
       "visual_family_id": "crisp_modern",
       "shot_library_id": "general_decor",
       "intent_id": "comparison",
-      "pin_count": 3,
-      "published_pin_count": 0,
+      "pin_count": 4,
+      "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -1135,6 +1172,7 @@
       "top_article_slugs": [
         "best-furniture-for-an-earthy-bathroom",
         "best-furniture-for-transitional-bathroom",
+        "best-furniture-mediterranean-bedroom",
         "best-furniture-parisian-bedroom"
       ]
     },
@@ -1145,7 +1183,7 @@
       "shot_library_id": "general_decor",
       "intent_id": "comparison",
       "pin_count": 3,
-      "published_pin_count": 0,
+      "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -1201,6 +1239,24 @@
         ]
       },
       {
+        "cluster_id": "mediterranean_bedroom",
+        "cluster_name": "mediterranean bedroom",
+        "pin_count": 1,
+        "published_pin_count": 1,
+        "analytics_ready_count": 0,
+        "average_score": 0.0,
+        "average_impressions": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_pin_clicks": 0.0,
+        "average_closeups": 0.0,
+        "signal_label": "no_data",
+        "signal_boost": 0,
+        "top_article_slugs": [
+          "best-furniture-mediterranean-bedroom"
+        ]
+      },
+      {
         "cluster_id": "minimalist_bathroom",
         "cluster_name": "minimalist bathroom",
         "pin_count": 1,
@@ -1234,24 +1290,6 @@
         "signal_boost": 0,
         "top_article_slugs": [
           "moody-bedroom-texture-mistakes-to-avoid"
-        ]
-      },
-      {
-        "cluster_id": "neutral_bathroom",
-        "cluster_name": "neutral bathroom",
-        "pin_count": 4,
-        "published_pin_count": 0,
-        "analytics_ready_count": 0,
-        "average_score": 0.0,
-        "average_impressions": 0.0,
-        "average_saves": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_pin_clicks": 0.0,
-        "average_closeups": 0.0,
-        "signal_label": "no_data",
-        "signal_boost": 0,
-        "top_article_slugs": [
-          "how-to-style-a-neutral-bathroom"
         ]
       }
     ],
@@ -1318,7 +1356,7 @@
         "subtopic_id": "furniture",
         "subtopic_name": "furniture and anchors",
         "pin_count": 4,
-        "published_pin_count": 1,
+        "published_pin_count": 2,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,
@@ -1355,8 +1393,8 @@
     "angles": [
       {
         "angle_id": "best_options",
-        "pin_count": 29,
-        "published_pin_count": 8,
+        "pin_count": 30,
+        "published_pin_count": 10,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,

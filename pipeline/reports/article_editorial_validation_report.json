@@ -1,6 +1,50 @@
 {
-  "generated_at": "2026-04-13T10:29:24.267571+00:00",
+  "generated_at": "2026-04-15T10:14:31.874366+00:00",
   "articles": [
+    {
+      "article_slug": "spring-living-room-styling-color-palette",
+      "cluster_id": "spring_living_room_styling",
+      "subtopic_id": "palette",
+      "angle_id": "ideas",
+      "primary_keyword": "spring living room styling color palette",
+      "validation_status": "warning",
+      "warnings": [
+        "Several section headings do not signal the topic strongly enough."
+      ],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 124,
+          "concept_overlap": 8,
+          "first_sentence": "Spring ushers in a natural impulse to lighten and refresh our living spaces, and the living room becomes the perfect canvas for this seasonal mood."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 3,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Soft Pastels: The Foundation of a Fresh Spring Mood",
+            "Terracotta and Botanical Greens: Adding Warmth and Life",
+            "Layering Blues and Creamy Neutrals in Comfy Corners",
+            "Bringing Cheer with Yellow and Crisp White Accents",
+            "Editing Your Palette for a Balanced, Lived-In Look"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 10,
+          "specificity_term_hits": 14,
+          "secondary_keyword_hits": 1
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "spring-living-room-styling-ideas-fresh-minimalism",
+          "max_similarity": 0.571,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-04-15T10:14:31.874117+00:00"
+    },
     {
       "article_slug": "best-furniture-mediterranean-bedroom",
       "cluster_id": "mediterranean_bedroom",

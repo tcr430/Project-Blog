@@ -1,17 +1,72 @@
 {
-  "generated_at": "2026-04-13T10:33:44.762152+00:00",
+  "generated_at": "2026-04-15T10:19:49.380900+00:00",
   "cluster_count": 22,
-  "article_count": 22,
-  "subtopic_count": 6,
+  "article_count": 23,
+  "subtopic_count": 7,
   "angle_count": 5,
   "angle_distribution": {
     "best_options": 12,
     "how_to": 2,
-    "ideas": 3,
+    "ideas": 4,
     "mistakes": 4,
     "style_specific": 1
   },
   "clusters": [
+    {
+      "cluster_id": "spring_living_room_styling",
+      "cluster_name": "spring living room styling",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "seasonal_styling"
+      ],
+      "article_count": 2,
+      "primary_keywords_used": [
+        "spring living room styling color palette",
+        "spring living room styling ideas"
+      ],
+      "latest_article_date": "2026-04-15",
+      "latest_publication": {
+        "article_slug": "spring-living-room-styling-color-palette",
+        "article_title": "Spring Living Room Styling Color Palette",
+        "publish_date": "2026-04-15",
+        "subtopic_id": "palette",
+        "subtopic_name": "palette and mood",
+        "angle_id": "ideas"
+      },
+      "representative_article_slugs": [
+        "spring-living-room-styling-color-palette",
+        "spring-living-room-styling-ideas-fresh-minimalism"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 1,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 2,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "refresh",
+          "subtopic_name": "Seasonal Refresh",
+          "article_count": 1,
+          "latest_article_date": "",
+          "representative_article_slugs": [
+            "spring-living-room-styling-ideas-fresh-minimalism"
+          ]
+        },
+        {
+          "subtopic_id": "palette",
+          "subtopic_name": "palette and mood",
+          "article_count": 1,
+          "latest_article_date": "2026-04-15",
+          "representative_article_slugs": [
+            "spring-living-room-styling-color-palette"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "ideas": 2
+      },
+      "status": "growing"
+    },
     {
       "cluster_id": "bedroom_window_treatments",
       "cluster_name": "bedroom window treatments",
@@ -851,50 +906,6 @@
       ],
       "angle_distribution": {
         "mistakes": 1
-      },
-      "status": "underdeveloped"
-    },
-    {
-      "cluster_id": "spring_living_room_styling",
-      "cluster_name": "spring living room styling",
-      "legacy_cluster_names": [],
-      "domain_ids": [
-        "seasonal_styling"
-      ],
-      "article_count": 1,
-      "primary_keywords_used": [
-        "spring living room styling ideas"
-      ],
-      "latest_article_date": "",
-      "latest_publication": {
-        "article_slug": "spring-living-room-styling-ideas-fresh-minimalism",
-        "article_title": "Spring Living Room Styling Ideas: Embrace Fresh Minimalism with Natural Touches",
-        "publish_date": "",
-        "subtopic_id": "refresh",
-        "subtopic_name": "Seasonal Refresh",
-        "angle_id": "ideas"
-      },
-      "representative_article_slugs": [
-        "spring-living-room-styling-ideas-fresh-minimalism"
-      ],
-      "recent_article_count": 0,
-      "internal_link_targets_available": 0,
-      "promoted_article_count": 0,
-      "weak_article_count": 0,
-      "subtopic_count": 1,
-      "subtopic_coverage": [
-        {
-          "subtopic_id": "refresh",
-          "subtopic_name": "Seasonal Refresh",
-          "article_count": 1,
-          "latest_article_date": "",
-          "representative_article_slugs": [
-            "spring-living-room-styling-ideas-fresh-minimalism"
-          ]
-        }
-      ],
-      "angle_distribution": {
-        "ideas": 1
       },
       "status": "underdeveloped"
     },

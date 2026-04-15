@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "4f8c81213590ad4bc7f34065c5cecaebab4476b4b472dfecd42e76b8987cf9cf",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/spring-living-room-styling-color-palette/hero.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-1": {
+    "cache_key": "f203748a6cd4d9e0511f16751259ee959656a22926aafa90e96353ba18b0794a",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/spring-living-room-styling-color-palette/section-1.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-2": {
+    "cache_key": "02ce417f6831abcc4e8469a7f9739e6a879a5ee10cf9850669d7e286d2558973",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/spring-living-room-styling-color-palette/section-2.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-3": {
+    "cache_key": "03daa8edfc71784090eea56f5e23e5047042eb61fb7408b307831e80ce931ec8",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/spring-living-room-styling-color-palette/section-3.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-4": {
+    "cache_key": "07925100a2deda2945c1d7132dfa75b36819953c2aa28a2aa84fa374923e91ac",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/spring-living-room-styling-color-palette/section-4.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-5": {
+    "cache_key": "ac00650111cfe3ab36bbfdea1296fb85e96bda442443724b2263d7f624c2609c",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/spring-living-room-styling-color-palette/section-5.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  }
+}
