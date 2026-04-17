@@ -1,6 +1,50 @@
 {
-  "generated_at": "2026-04-15T10:14:31.874366+00:00",
+  "generated_at": "2026-04-17T10:11:42.220387+00:00",
   "articles": [
+    {
+      "article_slug": "best-furniture-mediterranean-bathroom",
+      "cluster_id": "mediterranean_bathroom",
+      "subtopic_id": "furniture",
+      "angle_id": "best_options",
+      "primary_keyword": "best furniture for a mediterranean bathroom",
+      "validation_status": "warning",
+      "warnings": [
+        "Supporting keyword ideas are barely reflected in the body."
+      ],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 149,
+          "concept_overlap": 6,
+          "first_sentence": "Creating a Mediterranean bathroom that feels both timeless and practical hinges largely on the furniture you choose."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 1,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Defining the Essential Criteria for Mediterranean Bathroom Furniture",
+            "Oak Vanities and Stone Basins: The Quintessential Mediterranean Duo",
+            "Incorporating Woven and Cane Storage for Texture and Airiness",
+            "Tailoring Furniture Choices to Space and Budget Constraints",
+            "Confident Selection: Narrowing Your Mediterranean Furniture Options"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 6,
+          "specificity_term_hits": 12,
+          "secondary_keyword_hits": 0
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-04-17T10:11:42.220138+00:00"
+    },
     {
       "article_slug": "spring-living-room-styling-color-palette",
       "cluster_id": "spring_living_room_styling",

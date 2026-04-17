@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-04-15T10:19:49.380900+00:00",
-  "cluster_count": 22,
-  "article_count": 23,
+  "generated_at": "2026-04-17T10:18:00.325724+00:00",
+  "cluster_count": 23,
+  "article_count": 24,
   "subtopic_count": 7,
   "angle_count": 5,
   "angle_distribution": {
-    "best_options": 12,
+    "best_options": 13,
     "how_to": 2,
     "ideas": 4,
     "mistakes": 4,
@@ -285,6 +285,50 @@
           "latest_article_date": "",
           "representative_article_slugs": [
             "best-curtain-styling-for-living-room"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "best_options": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_id": "mediterranean_bathroom",
+      "cluster_name": "mediterranean bathroom",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "utility_transition"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "best furniture for a mediterranean bathroom"
+      ],
+      "latest_article_date": "2026-04-17",
+      "latest_publication": {
+        "article_slug": "best-furniture-mediterranean-bathroom",
+        "article_title": "Where to Start with Furniture for a Mediterranean Bathroom",
+        "publish_date": "2026-04-17",
+        "subtopic_id": "furniture",
+        "subtopic_name": "furniture and anchors",
+        "angle_id": "best_options"
+      },
+      "representative_article_slugs": [
+        "best-furniture-mediterranean-bathroom"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "furniture",
+          "subtopic_name": "furniture and anchors",
+          "article_count": 1,
+          "latest_article_date": "2026-04-17",
+          "representative_article_slugs": [
+            "best-furniture-mediterranean-bathroom"
           ]
         }
       ],

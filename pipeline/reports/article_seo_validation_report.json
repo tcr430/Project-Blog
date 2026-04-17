@@ -1,6 +1,23 @@
 {
-  "generated_at": "2026-04-15T10:14:31.870668+00:00",
+  "generated_at": "2026-04-17T10:11:42.216851+00:00",
   "articles": [
+    {
+      "article_slug": "best-furniture-mediterranean-bathroom",
+      "cluster": "mediterranean bathroom",
+      "cluster_id": "mediterranean bathroom",
+      "subtopic_id": "furniture",
+      "subtopic_name": "furniture and anchors",
+      "angle_id": "best options",
+      "intent_id": "comparison",
+      "primary_keyword": "best furniture for a mediterranean bathroom",
+      "validation_status": "warning",
+      "warnings": [
+        "None of the secondary keywords appear in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-04-17T10:11:42.216710+00:00"
+    },
     {
       "article_slug": "spring-living-room-styling-color-palette",
       "cluster": "spring living room styling",

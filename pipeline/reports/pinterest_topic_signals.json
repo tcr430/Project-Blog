@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-15T10:19:49.383778+00:00",
-  "cluster_count": 22,
+  "generated_at": "2026-04-17T10:18:00.328640+00:00",
+  "cluster_count": 23,
   "summary": {
     "hot": 0,
     "warm": 0,
-    "cold": 11,
+    "cold": 12,
     "no_data": 11
   },
   "clusters": [
@@ -115,6 +115,30 @@
         "living room curtain styling ideas",
         "how to style curtain styling in living room",
         "living room curtain styling mistakes to avoid"
+      ],
+      "pinterest_article_count": 0,
+      "strong_article_count": 0,
+      "weak_article_count": 0,
+      "average_score": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_saves": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0
+    },
+    {
+      "cluster_name": "mediterranean bathroom",
+      "article_count": 1,
+      "article_slugs": [
+        "best-furniture-mediterranean-bathroom"
+      ],
+      "primary_keywords": [
+        "best furniture for a mediterranean bathroom"
+      ],
+      "secondary_keywords": [
+        "mediterranean bathroom ideas",
+        "how to style a mediterranean bathroom",
+        "mediterranean bathroom decor",
+        "mediterranean bathroom layout ideas"
       ],
       "pinterest_article_count": 0,
       "strong_article_count": 0,
@@ -477,14 +501,14 @@
         "budget spring living room styling ideas",
         "spring living room styling decor"
       ],
-      "pinterest_article_count": 0,
+      "pinterest_article_count": 1,
       "strong_article_count": 0,
-      "weak_article_count": 0,
+      "weak_article_count": 1,
       "average_score": 0.0,
       "average_outbound_clicks": 0.0,
       "average_saves": 0.0,
-      "signal_label": "no_data",
-      "signal_boost": 0
+      "signal_label": "cold",
+      "signal_boost": -6
     },
     {
       "cluster_name": "transitional bathroom",
