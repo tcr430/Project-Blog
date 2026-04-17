@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-16T18:55:33.017507+00:00",
+  "generated_at": "2026-04-17T01:19:01.896385+00:00",
   "history_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_history.json",
-  "published_pin_count": 19,
+  "published_pin_count": 20,
   "global_metrics": {
-    "published_pins": 19,
+    "published_pins": 20,
     "analytics_ready_pins": 0,
     "average_impressions": null,
     "average_saves": null,
@@ -26,7 +26,7 @@
     },
     {
       "variant_type": "practical_tips",
-      "published_pins": 5,
+      "published_pins": 6,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -61,7 +61,7 @@
   "performance_by_board": [
     {
       "board_key": "bedroom",
-      "published_pins": 10,
+      "published_pins": 11,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -123,7 +123,7 @@
   "performance_by_article": [
     {
       "article_slug": "best-furniture-for-earthy-bedroom",
-      "published_pins": 1,
+      "published_pins": 2,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -305,7 +305,7 @@
       },
       {
         "variant_type": "practical_tips",
-        "published_pins": 5,
+        "published_pins": 6,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -340,7 +340,7 @@
     "top_boards": [
       {
         "board_key": "bedroom",
-        "published_pins": 10,
+        "published_pins": 11,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -402,7 +402,7 @@
     "top_articles": [
       {
         "article_slug": "best-furniture-for-earthy-bedroom",
-        "published_pins": 1,
+        "published_pins": 2,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -474,7 +474,7 @@
     "weak_articles": [
       {
         "article_slug": "best-furniture-for-earthy-bedroom",
-        "published_pins": 1,
+        "published_pins": 2,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
