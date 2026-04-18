@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-18T01:12:40.784712+00:00",
+  "generated_at": "2026-04-18T06:54:37.428494+00:00",
   "history_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_history.json",
-  "published_pin_count": 21,
+  "published_pin_count": 22,
   "global_metrics": {
-    "published_pins": 21,
+    "published_pins": 22,
     "analytics_ready_pins": 0,
     "average_impressions": null,
     "average_saves": null,
@@ -26,7 +26,7 @@
     },
     {
       "variant_type": "practical_tips",
-      "published_pins": 6,
+      "published_pins": 7,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -85,7 +85,7 @@
     },
     {
       "board_key": "bathroom",
-      "published_pins": 4,
+      "published_pins": 5,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -137,7 +137,7 @@
     },
     {
       "article_slug": "best-furniture-for-an-earthy-bathroom",
-      "published_pins": 1,
+      "published_pins": 2,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -305,7 +305,7 @@
       },
       {
         "variant_type": "practical_tips",
-        "published_pins": 6,
+        "published_pins": 7,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -364,7 +364,7 @@
       },
       {
         "board_key": "bathroom",
-        "published_pins": 4,
+        "published_pins": 5,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -416,7 +416,7 @@
       },
       {
         "article_slug": "best-furniture-for-an-earthy-bathroom",
-        "published_pins": 1,
+        "published_pins": 2,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -488,7 +488,7 @@
       },
       {
         "article_slug": "best-furniture-for-an-earthy-bathroom",
-        "published_pins": 1,
+        "published_pins": 2,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
