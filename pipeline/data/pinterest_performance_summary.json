@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-19T01:22:25.281976+00:00",
+  "generated_at": "2026-04-19T07:04:31.535635+00:00",
   "history_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_history.json",
-  "published_pin_count": 23,
+  "published_pin_count": 24,
   "global_metrics": {
-    "published_pins": 23,
+    "published_pins": 24,
     "analytics_ready_pins": 0,
     "average_impressions": null,
     "average_saves": null,
@@ -48,7 +48,7 @@
     },
     {
       "variant_type": "product_led",
-      "published_pins": 2,
+      "published_pins": 3,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -97,7 +97,7 @@
     },
     {
       "board_key": "home_products",
-      "published_pins": 1,
+      "published_pins": 2,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -179,7 +179,7 @@
     },
     {
       "article_slug": "best-furniture-parisian-bedroom",
-      "published_pins": 2,
+      "published_pins": 3,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -327,7 +327,7 @@
       },
       {
         "variant_type": "product_led",
-        "published_pins": 2,
+        "published_pins": 3,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -376,7 +376,7 @@
       },
       {
         "board_key": "home_products",
-        "published_pins": 1,
+        "published_pins": 2,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -458,7 +458,7 @@
       },
       {
         "article_slug": "best-furniture-parisian-bedroom",
-        "published_pins": 2,
+        "published_pins": 3,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -530,7 +530,7 @@
       },
       {
         "article_slug": "best-furniture-parisian-bedroom",
-        "published_pins": 2,
+        "published_pins": 3,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
