@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-19T18:31:06.352958+00:00",
+  "generated_at": "2026-04-20T01:21:31.846134+00:00",
   "history_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_history.json",
-  "published_pin_count": 24,
+  "published_pin_count": 26,
   "global_metrics": {
-    "published_pins": 24,
+    "published_pins": 26,
     "analytics_ready_pins": 0,
     "average_impressions": null,
     "average_saves": null,
@@ -26,7 +26,7 @@
     },
     {
       "variant_type": "practical_tips",
-      "published_pins": 8,
+      "published_pins": 9,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -48,7 +48,7 @@
     },
     {
       "variant_type": "product_led",
-      "published_pins": 3,
+      "published_pins": 4,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -61,7 +61,7 @@
   "performance_by_board": [
     {
       "board_key": "bedroom",
-      "published_pins": 11,
+      "published_pins": 12,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -97,7 +97,7 @@
     },
     {
       "board_key": "home_products",
-      "published_pins": 2,
+      "published_pins": 3,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -193,7 +193,7 @@
     },
     {
       "article_slug": "how-to-style-a-neutral-bedroom",
-      "published_pins": 2,
+      "published_pins": 3,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -207,7 +207,7 @@
     },
     {
       "article_slug": "spring-bedroom-refresh-mistakes-to-avoid",
-      "published_pins": 2,
+      "published_pins": 3,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -305,7 +305,7 @@
       },
       {
         "variant_type": "practical_tips",
-        "published_pins": 8,
+        "published_pins": 9,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -327,7 +327,7 @@
       },
       {
         "variant_type": "product_led",
-        "published_pins": 3,
+        "published_pins": 4,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -340,7 +340,7 @@
     "top_boards": [
       {
         "board_key": "bedroom",
-        "published_pins": 11,
+        "published_pins": 12,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -376,7 +376,7 @@
       },
       {
         "board_key": "home_products",
-        "published_pins": 2,
+        "published_pins": 3,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
