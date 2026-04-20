@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-04-17T10:11:42.216851+00:00",
+  "generated_at": "2026-04-20T10:48:10.436948+00:00",
   "articles": [
+    {
+      "article_slug": "japandi-bedroom-texture-mistakes-to-avoid",
+      "cluster": "japandi bedroom",
+      "cluster_id": "japandi bedroom",
+      "subtopic_id": "textures",
+      "subtopic_name": "textures and layers",
+      "angle_id": "mistakes",
+      "intent_id": "problem_solving",
+      "primary_keyword": "japandi bedroom texture mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Chosen title is still close to an existing site title pattern.",
+        "Headings do not reflect the topic cluster strongly enough.",
+        "Main section headings may be too generic for the chosen keyword.",
+        "None of the secondary keywords appear in the article body.",
+        "Primary keyword appears very lightly in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-04-20T10:48:10.436801+00:00"
+    },
     {
       "article_slug": "best-furniture-mediterranean-bathroom",
       "cluster": "mediterranean bathroom",

@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-04-17T10:18:00.328640+00:00",
-  "cluster_count": 23,
+  "generated_at": "2026-04-20T10:56:05.038351+00:00",
+  "cluster_count": 24,
   "summary": {
     "hot": 0,
     "warm": 0,
     "cold": 12,
-    "no_data": 11
+    "no_data": 12
   },
   "clusters": [
     {
@@ -78,6 +78,30 @@
       "average_saves": 0.0,
       "signal_label": "cold",
       "signal_boost": -6
+    },
+    {
+      "cluster_name": "japandi bedroom",
+      "article_count": 1,
+      "article_slugs": [
+        "japandi-bedroom-texture-mistakes-to-avoid"
+      ],
+      "primary_keywords": [
+        "japandi bedroom texture mistakes to avoid"
+      ],
+      "secondary_keywords": [
+        "japandi bedroom ideas",
+        "how to style a japandi bedroom",
+        "japandi bedroom decor",
+        "japandi bedroom layout ideas"
+      ],
+      "pinterest_article_count": 0,
+      "strong_article_count": 0,
+      "weak_article_count": 0,
+      "average_score": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_saves": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0
     },
     {
       "cluster_name": "linen and boucle styling",

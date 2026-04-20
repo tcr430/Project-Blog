@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-04-17T10:18:00.325724+00:00",
-  "cluster_count": 23,
-  "article_count": 24,
+  "generated_at": "2026-04-20T10:56:05.035226+00:00",
+  "cluster_count": 24,
+  "article_count": 25,
   "subtopic_count": 7,
   "angle_count": 5,
   "angle_distribution": {
     "best_options": 13,
     "how_to": 2,
     "ideas": 4,
-    "mistakes": 4,
+    "mistakes": 5,
     "style_specific": 1
   },
   "clusters": [
@@ -198,6 +198,50 @@
       ],
       "angle_distribution": {
         "best_options": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_id": "japandi_bedroom",
+      "cluster_name": "japandi bedroom",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "bedrooms"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "japandi bedroom texture mistakes to avoid"
+      ],
+      "latest_article_date": "2026-04-20",
+      "latest_publication": {
+        "article_slug": "japandi-bedroom-texture-mistakes-to-avoid",
+        "article_title": "Japandi Bedroom Texture Mistakes to Avoid",
+        "publish_date": "2026-04-20",
+        "subtopic_id": "textures",
+        "subtopic_name": "textures and layers",
+        "angle_id": "mistakes"
+      },
+      "representative_article_slugs": [
+        "japandi-bedroom-texture-mistakes-to-avoid"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "textures",
+          "subtopic_name": "textures and layers",
+          "article_count": 1,
+          "latest_article_date": "2026-04-20",
+          "representative_article_slugs": [
+            "japandi-bedroom-texture-mistakes-to-avoid"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "mistakes": 1
       },
       "status": "underdeveloped"
     },

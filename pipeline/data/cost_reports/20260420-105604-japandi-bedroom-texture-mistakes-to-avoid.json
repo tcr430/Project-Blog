@@ -1,0 +1,319 @@
+{
+  "generated_at": "2026-04-20T10:56:04.791671+00:00",
+  "trend": "japandi bedroom texture mistakes to avoid",
+  "slug": "japandi-bedroom-texture-mistakes-to-avoid",
+  "article_generation": {
+    "cache_hit": false,
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/article_packages/4c8ceef6678e450adad03b597a5afb106349d16f1d73ee1afd614db6ac0a609a.json",
+    "model": "gpt-4.1-mini",
+    "generation_calls": 1,
+    "short_retries": 0,
+    "angle_retries": 0,
+    "product_retries": 0,
+    "selected_products": 0,
+    "affiliate_mode": false,
+    "monetization_profile_id": "fix_oriented",
+    "generated_link_count": 0,
+    "primary_keyword": "japandi bedroom texture mistakes to avoid",
+    "topical_cluster": "japandi bedroom"
+  },
+  "seo_validation": {
+    "article_slug": "japandi-bedroom-texture-mistakes-to-avoid",
+    "cluster": "japandi bedroom",
+    "cluster_id": "japandi bedroom",
+    "subtopic_id": "textures",
+    "subtopic_name": "textures and layers",
+    "angle_id": "mistakes",
+    "intent_id": "problem_solving",
+    "primary_keyword": "japandi bedroom texture mistakes to avoid",
+    "validation_status": "warning",
+    "warnings": [
+      "Chosen title is still close to an existing site title pattern.",
+      "Headings do not reflect the topic cluster strongly enough.",
+      "Main section headings may be too generic for the chosen keyword.",
+      "None of the secondary keywords appear in the article body.",
+      "Primary keyword appears very lightly in the article body."
+    ],
+    "errors": [],
+    "duplicate_candidate_slugs": [],
+    "timestamp": "2026-04-20T10:48:10.436801+00:00"
+  },
+  "editorial_validation": {
+    "article_slug": "japandi-bedroom-texture-mistakes-to-avoid",
+    "cluster_id": "japandi_bedroom",
+    "subtopic_id": "textures",
+    "angle_id": "mistakes",
+    "primary_keyword": "japandi bedroom texture mistakes to avoid",
+    "validation_status": "warning",
+    "warnings": [
+      "Supporting keyword ideas are barely reflected in the body."
+    ],
+    "errors": [],
+    "checks": {
+      "generic_intro": {
+        "intro_word_count": 165,
+        "concept_overlap": 7,
+        "first_sentence": "Japandi style melds the clean minimalism of Japanese design with the warm functionality of Scandinavian aesthetics, especially in the bedroom."
+      },
+      "heading_quality": {
+        "heading_count": 5,
+        "vague_heading_count": 0,
+        "low_specificity_heading_count": 1,
+        "repeated_signature_count": 0,
+        "repeated_stem_count": 0,
+        "headings": [
+          "Overly Smooth Surfaces That Flatten the Room",
+          "Mixing Textures without Considering Weight or Warmth",
+          "Ignoring Subtle Textural Harmony Between Layers",
+          "Overlooking Texture Proportion Relative to Room Size and Light",
+          "Layering Too Many Contradictory Textures That Overwhelm Calmness"
+        ]
+      },
+      "specificity": {
+        "concept_token_hits": 9,
+        "specificity_term_hits": 9,
+        "secondary_keyword_hits": 0
+      },
+      "distinctiveness": {
+        "nearest_article_slug": "",
+        "max_similarity": 0.0,
+        "strongest_heading_overlap": 0
+      }
+    },
+    "timestamp": "2026-04-20T10:48:10.440670+00:00"
+  },
+  "image_generation": {
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/image_generation_cache/japandi-bedroom-texture-mistakes-to-avoid.json",
+    "provider": "flux",
+    "provider_model": "flux-2-max",
+    "model": "flux-2-max",
+    "fallback_provider": "openai",
+    "fallback_model": "gpt-image-1",
+    "size": "1536x1024",
+    "hero_quality": "high",
+    "section_quality": "medium",
+    "allow_fallback": true,
+    "fallback_events": 0,
+    "generated_images": 6,
+    "cache_hits": 0,
+    "generation_calls": 7,
+    "qa_calls": 2,
+    "details": [
+      {
+        "label": "hero",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 2,
+        "qa_calls": 2,
+        "quality": "high",
+        "qa_enabled": true,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "6051127b-68f6-4791-9fb3-f515cd937bf0",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=6051127b-68f6-4791-9fb3-f515cd937bf0",
+            "poll_attempts": 40,
+            "provider_status": "Ready",
+            "elapsed_seconds": 54.38,
+            "quality": "high",
+            "elapsed_seconds_total": 54.38,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          },
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 2,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "3d577abc-e61e-43c4-b9d8-abfc3dfcf9f0",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=3d577abc-e61e-43c4-b9d8-abfc3dfcf9f0",
+            "poll_attempts": 26,
+            "provider_status": "Ready",
+            "elapsed_seconds": 42.75,
+            "quality": "high",
+            "elapsed_seconds_total": 42.75,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation",
+        "qa_reason": "The image depicts a Japandi-style bedroom with tactile layering, natural materials, and a clean, editorial look. It has a single bed with harmonious bedding textures, soft natural daylight, and a minimal, well-composed vignette featuring a bedside table with a ceramic vase and branches. The palette and materials fit the Japandi aesthetic, and the composition avoids clutter and duplication, fitting the prompt requirements perfectly."
+      },
+      {
+        "label": "section-1",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "8ec590fc-374b-48fd-9d1d-970724f54e49",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=8ec590fc-374b-48fd-9d1d-970724f54e49",
+            "poll_attempts": 32,
+            "provider_status": "Ready",
+            "elapsed_seconds": 43.18,
+            "quality": "medium",
+            "elapsed_seconds_total": 43.18,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-2",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "a80e27fe-7056-4eaa-bb38-37f50f338468",
+            "polling_url": "https://api.us4.bfl.ai/v1/get_result?id=a80e27fe-7056-4eaa-bb38-37f50f338468",
+            "poll_attempts": 32,
+            "provider_status": "Ready",
+            "elapsed_seconds": 43.74,
+            "quality": "medium",
+            "elapsed_seconds_total": 43.74,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-3",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "b3fa979b-00c8-409d-9d9e-c573a2984e63",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=b3fa979b-00c8-409d-9d9e-c573a2984e63",
+            "poll_attempts": 34,
+            "provider_status": "Ready",
+            "elapsed_seconds": 46.09,
+            "quality": "medium",
+            "elapsed_seconds_total": 46.09,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-4",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "e4d7d45a-9572-4d42-9281-aa53f16a1cf7",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=e4d7d45a-9572-4d42-9281-aa53f16a1cf7",
+            "poll_attempts": 21,
+            "provider_status": "Ready",
+            "elapsed_seconds": 35.77,
+            "quality": "medium",
+            "elapsed_seconds_total": 35.77,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-5",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "6da61835-a937-406c-8dc3-340a7d85ea8c",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=6da61835-a937-406c-8dc3-340a7d85ea8c",
+            "poll_attempts": 42,
+            "provider_status": "Ready",
+            "elapsed_seconds": 67.02,
+            "quality": "medium",
+            "elapsed_seconds_total": 67.02,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      }
+    ]
+  },
+  "pinterest": {
+    "variants_requested": 4,
+    "pin_assets_generated": false,
+    "mode": null
+  }
+}

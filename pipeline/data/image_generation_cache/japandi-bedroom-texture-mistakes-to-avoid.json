@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "fd2b63bf523ed3af5964d810230f98dc30db871f06d597d4296966bb6e69e1b6",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/japandi-bedroom-texture-mistakes-to-avoid/hero.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-1": {
+    "cache_key": "b670ae8e3ed7e8c43468998c8e79557a161194d666435c60f19fd68fff3bdfcb",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/japandi-bedroom-texture-mistakes-to-avoid/section-1.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-2": {
+    "cache_key": "dbd34ce3867019d53f43512fb294889b2a4282e5406a61a64064f69f303c7971",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/japandi-bedroom-texture-mistakes-to-avoid/section-2.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-3": {
+    "cache_key": "1b754a90fa3cf2c131168c086a526a13f79eb9f0c46e451328a068f06a788f35",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/japandi-bedroom-texture-mistakes-to-avoid/section-3.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-4": {
+    "cache_key": "40340e7a29aa87b80d39029d4b238a146ed804bb867cdaae3d99ee8bb4f5038f",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/japandi-bedroom-texture-mistakes-to-avoid/section-4.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-5": {
+    "cache_key": "9adc6a838cdc0579075b1f57066dc5449d1950a4700a38d92b8702ec6f91c8fa",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/japandi-bedroom-texture-mistakes-to-avoid/section-5.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  }
+}

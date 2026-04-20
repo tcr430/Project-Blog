@@ -1,6 +1,50 @@
 {
-  "generated_at": "2026-04-17T10:11:42.220387+00:00",
+  "generated_at": "2026-04-20T10:48:10.440931+00:00",
   "articles": [
+    {
+      "article_slug": "japandi-bedroom-texture-mistakes-to-avoid",
+      "cluster_id": "japandi_bedroom",
+      "subtopic_id": "textures",
+      "angle_id": "mistakes",
+      "primary_keyword": "japandi bedroom texture mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Supporting keyword ideas are barely reflected in the body."
+      ],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 165,
+          "concept_overlap": 7,
+          "first_sentence": "Japandi style melds the clean minimalism of Japanese design with the warm functionality of Scandinavian aesthetics, especially in the bedroom."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 1,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Overly Smooth Surfaces That Flatten the Room",
+            "Mixing Textures without Considering Weight or Warmth",
+            "Ignoring Subtle Textural Harmony Between Layers",
+            "Overlooking Texture Proportion Relative to Room Size and Light",
+            "Layering Too Many Contradictory Textures That Overwhelm Calmness"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 9,
+          "specificity_term_hits": 9,
+          "secondary_keyword_hits": 0
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-04-20T10:48:10.440670+00:00"
+    },
     {
       "article_slug": "best-furniture-mediterranean-bathroom",
       "cluster_id": "mediterranean_bathroom",
