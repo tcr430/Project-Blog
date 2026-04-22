@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T07:17:37.591735+00:00",
+  "generated_at": "2026-04-22T12:56:44.734498+00:00",
   "articles": [
     {
       "article_slug": "best-furniture-for-earthy-bedroom",
@@ -135,6 +135,17 @@
     },
     {
       "article_slug": "japandi-bedroom-texture-mistakes-to-avoid",
+      "score": 0,
+      "classification": "underperforming",
+      "reasons": [],
+      "average_impressions": null,
+      "average_saves": null,
+      "average_outbound_clicks": null,
+      "average_engagement_rate": null,
+      "published_pins": 1
+    },
+    {
+      "article_slug": "japandi-bathroom-texture-mistakes-to-avoid",
       "score": 0,
       "classification": "underperforming",
       "reasons": [],
