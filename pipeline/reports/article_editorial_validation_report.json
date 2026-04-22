@@ -1,6 +1,52 @@
 {
-  "generated_at": "2026-04-20T10:48:10.440931+00:00",
+  "generated_at": "2026-04-22T10:17:46.463164+00:00",
   "articles": [
+    {
+      "article_slug": "japandi-bathroom-texture-mistakes-to-avoid",
+      "cluster_id": "japandi_bathroom",
+      "subtopic_id": "textures",
+      "angle_id": "mistakes",
+      "primary_keyword": "japandi bathroom texture mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Section headings rely on repetitive formulas instead of distinct editorial moves.",
+        "Several section headings do not signal the topic strongly enough.",
+        "Supporting keyword ideas are barely reflected in the body."
+      ],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 145,
+          "concept_overlap": 5,
+          "first_sentence": "Japandi design finds its strength in quiet balance: blending the clean lines and simplicity of Japanese style with the cozy warmth and natural materials of Scandinavian interiors."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 2,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 1,
+          "headings": [
+            "Mistake 1: Overloading with Contrasting Textures",
+            "Mistake 2: Neglecting the Warmth of Wood Grain",
+            "Mistake 3: Using Glossy Tiles Without Matte Counterparts",
+            "Mistake 4: Ignoring Scale and Proportion in Texture Layers",
+            "Mistake 5: Overlooking How Light Interacts with Texture"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 9,
+          "specificity_term_hits": 10,
+          "secondary_keyword_hits": 0
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-04-22T10:17:46.462893+00:00"
+    },
     {
       "article_slug": "japandi-bedroom-texture-mistakes-to-avoid",
       "cluster_id": "japandi_bedroom",

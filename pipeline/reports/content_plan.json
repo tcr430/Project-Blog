@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-04-20T10:56:06.599331+00:00",
+  "generated_at": "2026-04-22T10:22:09.505837+00:00",
   "total_clusters": 396,
   "summary": {
-    "missing": 372,
-    "underdeveloped": 24,
+    "missing": 371,
+    "underdeveloped": 25,
     "growing": 0,
     "strong": 0,
     "saturated": 0
   },
   "saturation_summary": {
-    "empty": 372,
-    "needs_growth": 24
+    "empty": 371,
+    "needs_growth": 25
   },
   "editorial_mix_rules": {
     "recent_window_article_count": 8,
@@ -190,7 +190,6 @@
     "english cottage nursery",
     "english cottage patio",
     "japandi balcony",
-    "japandi bathroom",
     "japandi dining room",
     "japandi entryway",
     "japandi guest bedroom",
@@ -458,7 +457,7 @@
     "moody bathroom",
     "minimalist bedroom",
     "mediterranean bathroom",
-    "japandi bedroom",
+    "japandi bathroom",
     "living room textures and materials",
     "small dining nook",
     "earthy bedroom",
@@ -471,6 +470,7 @@
     "moody bedroom",
     "minimalist bathroom",
     "mediterranean bedroom",
+    "japandi bedroom",
     "spring bedroom refresh",
     "spring living room styling"
   ],
@@ -24315,217 +24315,6 @@
         "japandi balcony decor",
         "japandi balcony layout ideas",
         "japandi balcony color palette"
-      ],
-      "allowed_angle_ids": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "style_specific"
-      ]
-    },
-    {
-      "cluster_id": "japandi_bathroom",
-      "cluster_name": "japandi bathroom",
-      "domain_id": "utility_transition",
-      "health_label": "missing",
-      "article_count": 0,
-      "article_capacity_target": 14,
-      "capacity_ratio": 0.0,
-      "growth_openings": 10,
-      "saturation_state": "empty",
-      "selection_action": "boost",
-      "latest_publication_date": "",
-      "days_since_latest": null,
-      "subtopics_total": 5,
-      "subtopics_covered": [],
-      "subtopic_ids_covered": [],
-      "subtopics_missing": [
-        "Layout and Foundation",
-        "Color Palette",
-        "Furniture and Anchors",
-        "Lighting",
-        "Textures and Layers"
-      ],
-      "subtopic_ids_missing": [
-        "layout",
-        "colors",
-        "furniture",
-        "lighting",
-        "textures"
-      ],
-      "angle_distribution": {
-        "ideas": 0,
-        "how_to": 0,
-        "mistakes": 0,
-        "best_options": 0,
-        "style_specific": 0
-      },
-      "underused_angles": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "style_specific"
-      ],
-      "overused_angles": [],
-      "intent_distribution": {
-        "comparison": 0,
-        "decision_making": 0,
-        "implementation": 0,
-        "inspiration": 0,
-        "problem_solving": 0
-      },
-      "underused_intents": [
-        "comparison",
-        "decision_making",
-        "implementation",
-        "inspiration",
-        "problem_solving"
-      ],
-      "overused_intents": [],
-      "recommended_concepts": [
-        {
-          "cluster_id": "japandi_bathroom",
-          "cluster_name": "japandi bathroom",
-          "domain_id": "utility_transition",
-          "subtopic_id": "colors",
-          "subtopic_name": "Color Palette",
-          "angle_id": "how_to",
-          "intent_id": "implementation",
-          "modifier": "",
-          "primary_keyword": "how to choose colors for a japandi bathroom",
-          "secondary_keywords": [
-            "japandi bathroom ideas",
-            "how to style a japandi bathroom",
-            "japandi bathroom decor",
-            "japandi bathroom layout ideas"
-          ],
-          "search_intent": "how_to",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 96,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "japandi_bathroom",
-          "cluster_name": "japandi bathroom",
-          "domain_id": "utility_transition",
-          "subtopic_id": "colors",
-          "subtopic_name": "Color Palette",
-          "angle_id": "ideas",
-          "intent_id": "inspiration",
-          "modifier": "",
-          "primary_keyword": "japandi bathroom color palette ideas",
-          "secondary_keywords": [
-            "japandi bathroom ideas",
-            "how to style a japandi bathroom",
-            "japandi bathroom decor",
-            "japandi bathroom layout ideas"
-          ],
-          "search_intent": "ideas",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 96,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "japandi_bathroom",
-          "cluster_name": "japandi bathroom",
-          "domain_id": "utility_transition",
-          "subtopic_id": "colors",
-          "subtopic_name": "Color Palette",
-          "angle_id": "mistakes",
-          "intent_id": "problem_solving",
-          "modifier": "",
-          "primary_keyword": "japandi bathroom color mistakes to avoid",
-          "secondary_keywords": [
-            "japandi bathroom ideas",
-            "how to style a japandi bathroom",
-            "japandi bathroom decor",
-            "japandi bathroom layout ideas"
-          ],
-          "search_intent": "problem_solution",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 96,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        }
-      ],
-      "recommended_topics": [
-        "how to choose colors for a japandi bathroom",
-        "japandi bathroom color palette ideas",
-        "japandi bathroom color mistakes to avoid"
-      ],
-      "priority_score": 100,
-      "season": "",
-      "holiday": "",
-      "source": "content architecture",
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "pinterest_intelligence": {
-        "cluster_signal_label": "no_data",
-        "cluster_signal_boost": 0
-      },
-      "seed_keywords": [
-        "japandi bathroom ideas",
-        "how to style a japandi bathroom",
-        "japandi bathroom decor",
-        "japandi bathroom layout ideas",
-        "japandi bathroom color palette"
       ],
       "allowed_angle_ids": [
         "ideas",
@@ -79298,7 +79087,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-20",
-      "days_since_latest": 31,
+      "days_since_latest": 33,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation"
@@ -79511,7 +79300,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-25",
-      "days_since_latest": 26,
+      "days_since_latest": 28,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -79724,7 +79513,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-27",
-      "days_since_latest": 24,
+      "days_since_latest": 26,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -79937,7 +79726,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-08",
-      "days_since_latest": 12,
+      "days_since_latest": 14,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -80150,7 +79939,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-08",
-      "days_since_latest": 11,
+      "days_since_latest": 13,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -80363,7 +80152,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-17",
-      "days_since_latest": 3,
+      "days_since_latest": 5,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -80565,9 +80354,9 @@
       ]
     },
     {
-      "cluster_id": "japandi_bedroom",
-      "cluster_name": "japandi bedroom",
-      "domain_id": "bedrooms",
+      "cluster_id": "japandi_bathroom",
+      "cluster_name": "japandi bathroom",
+      "domain_id": "utility_transition",
       "health_label": "underdeveloped",
       "article_count": 1,
       "article_capacity_target": 14,
@@ -80575,7 +80364,7 @@
       "growth_openings": 9,
       "saturation_state": "needs_growth",
       "selection_action": "boost",
-      "latest_publication_date": "2026-04-20",
+      "latest_publication_date": "2026-04-22",
       "days_since_latest": 0,
       "subtopics_total": 5,
       "subtopics_covered": [
@@ -80628,20 +80417,20 @@
       "overused_intents": [],
       "recommended_concepts": [
         {
-          "cluster_id": "japandi_bedroom",
-          "cluster_name": "japandi bedroom",
-          "domain_id": "bedrooms",
+          "cluster_id": "japandi_bathroom",
+          "cluster_name": "japandi bathroom",
+          "domain_id": "utility_transition",
           "subtopic_id": "colors",
           "subtopic_name": "Color Palette",
           "angle_id": "how_to",
           "intent_id": "implementation",
           "modifier": "",
-          "primary_keyword": "how to choose colors for a japandi bedroom",
+          "primary_keyword": "how to choose colors for a japandi bathroom",
           "secondary_keywords": [
-            "japandi bedroom ideas",
-            "how to style a japandi bedroom",
-            "japandi bedroom decor",
-            "japandi bedroom layout ideas"
+            "japandi bathroom ideas",
+            "how to style a japandi bathroom",
+            "japandi bathroom decor",
+            "japandi bathroom layout ideas"
           ],
           "search_intent": "how_to",
           "season": "",
@@ -80665,20 +80454,20 @@
           }
         },
         {
-          "cluster_id": "japandi_bedroom",
-          "cluster_name": "japandi bedroom",
-          "domain_id": "bedrooms",
+          "cluster_id": "japandi_bathroom",
+          "cluster_name": "japandi bathroom",
+          "domain_id": "utility_transition",
           "subtopic_id": "colors",
           "subtopic_name": "Color Palette",
           "angle_id": "ideas",
           "intent_id": "inspiration",
           "modifier": "",
-          "primary_keyword": "japandi bedroom color palette ideas",
+          "primary_keyword": "japandi bathroom color palette ideas",
           "secondary_keywords": [
-            "japandi bedroom ideas",
-            "how to style a japandi bedroom",
-            "japandi bedroom decor",
-            "japandi bedroom layout ideas"
+            "japandi bathroom ideas",
+            "how to style a japandi bathroom",
+            "japandi bathroom decor",
+            "japandi bathroom layout ideas"
           ],
           "search_intent": "ideas",
           "season": "",
@@ -80702,20 +80491,20 @@
           }
         },
         {
-          "cluster_id": "japandi_bedroom",
-          "cluster_name": "japandi bedroom",
-          "domain_id": "bedrooms",
+          "cluster_id": "japandi_bathroom",
+          "cluster_name": "japandi bathroom",
+          "domain_id": "utility_transition",
           "subtopic_id": "colors",
           "subtopic_name": "Color Palette",
           "angle_id": "style_specific",
           "intent_id": "inspiration",
           "modifier": "",
-          "primary_keyword": "japandi bedroom paint and color ideas",
+          "primary_keyword": "japandi bathroom paint and color ideas",
           "secondary_keywords": [
-            "japandi bedroom ideas",
-            "how to style a japandi bedroom",
-            "japandi bedroom decor",
-            "japandi bedroom layout ideas"
+            "japandi bathroom ideas",
+            "how to style a japandi bathroom",
+            "japandi bathroom decor",
+            "japandi bathroom layout ideas"
           ],
           "search_intent": "styling_advice",
           "season": "",
@@ -80740,9 +80529,9 @@
         }
       ],
       "recommended_topics": [
-        "how to choose colors for a japandi bedroom",
-        "japandi bedroom color palette ideas",
-        "japandi bedroom paint and color ideas"
+        "how to choose colors for a japandi bathroom",
+        "japandi bathroom color palette ideas",
+        "japandi bathroom paint and color ideas"
       ],
       "priority_score": 70,
       "season": "",
@@ -80763,11 +80552,11 @@
         "cluster_signal_boost": 0
       },
       "seed_keywords": [
-        "japandi bedroom ideas",
-        "how to style a japandi bedroom",
-        "japandi bedroom decor",
-        "japandi bedroom layout ideas",
-        "japandi bedroom color palette"
+        "japandi bathroom ideas",
+        "how to style a japandi bathroom",
+        "japandi bathroom decor",
+        "japandi bathroom layout ideas",
+        "japandi bathroom color palette"
       ],
       "allowed_angle_ids": [
         "ideas",
@@ -81210,7 +80999,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-18",
-      "days_since_latest": 32,
+      "days_since_latest": 34,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -81423,7 +81212,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-23",
-      "days_since_latest": 28,
+      "days_since_latest": 30,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -81636,7 +81425,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-28",
-      "days_since_latest": 22,
+      "days_since_latest": 24,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -81849,7 +81638,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-30",
-      "days_since_latest": 21,
+      "days_since_latest": 23,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -82062,7 +81851,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-01",
-      "days_since_latest": 18,
+      "days_since_latest": 20,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation"
@@ -82275,7 +82064,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-01",
-      "days_since_latest": 18,
+      "days_since_latest": 20,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -82488,7 +82277,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-03",
-      "days_since_latest": 17,
+      "days_since_latest": 19,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -82701,7 +82490,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-06",
-      "days_since_latest": 14,
+      "days_since_latest": 16,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -82914,7 +82703,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-10",
-      "days_since_latest": 10,
+      "days_since_latest": 12,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -83127,7 +82916,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-13",
-      "days_since_latest": 7,
+      "days_since_latest": 8,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -83329,6 +83118,219 @@
       ]
     },
     {
+      "cluster_id": "japandi_bedroom",
+      "cluster_name": "japandi bedroom",
+      "domain_id": "bedrooms",
+      "health_label": "underdeveloped",
+      "article_count": 1,
+      "article_capacity_target": 14,
+      "capacity_ratio": 0.07,
+      "growth_openings": 9,
+      "saturation_state": "needs_growth",
+      "selection_action": "boost",
+      "latest_publication_date": "2026-04-20",
+      "days_since_latest": 1,
+      "subtopics_total": 5,
+      "subtopics_covered": [
+        "Textures and Layers"
+      ],
+      "subtopic_ids_covered": [
+        "textures"
+      ],
+      "subtopics_missing": [
+        "Layout and Foundation",
+        "Color Palette",
+        "Furniture and Anchors",
+        "Lighting"
+      ],
+      "subtopic_ids_missing": [
+        "layout",
+        "colors",
+        "furniture",
+        "lighting"
+      ],
+      "angle_distribution": {
+        "ideas": 0,
+        "how_to": 0,
+        "mistakes": 1,
+        "best_options": 0,
+        "style_specific": 0
+      },
+      "underused_angles": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "style_specific"
+      ],
+      "overused_angles": [],
+      "intent_distribution": {
+        "comparison": 0,
+        "decision_making": 0,
+        "implementation": 0,
+        "inspiration": 0,
+        "problem_solving": 1
+      },
+      "underused_intents": [
+        "comparison",
+        "decision_making",
+        "implementation",
+        "inspiration",
+        "problem_solving"
+      ],
+      "overused_intents": [],
+      "recommended_concepts": [
+        {
+          "cluster_id": "japandi_bedroom",
+          "cluster_name": "japandi bedroom",
+          "domain_id": "bedrooms",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "how_to",
+          "intent_id": "implementation",
+          "modifier": "",
+          "primary_keyword": "how to choose colors for a japandi bedroom",
+          "secondary_keywords": [
+            "japandi bedroom ideas",
+            "how to style a japandi bedroom",
+            "japandi bedroom decor",
+            "japandi bedroom layout ideas"
+          ],
+          "search_intent": "how_to",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 68,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        },
+        {
+          "cluster_id": "japandi_bedroom",
+          "cluster_name": "japandi bedroom",
+          "domain_id": "bedrooms",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "ideas",
+          "intent_id": "inspiration",
+          "modifier": "",
+          "primary_keyword": "japandi bedroom color palette ideas",
+          "secondary_keywords": [
+            "japandi bedroom ideas",
+            "how to style a japandi bedroom",
+            "japandi bedroom decor",
+            "japandi bedroom layout ideas"
+          ],
+          "search_intent": "ideas",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 68,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        },
+        {
+          "cluster_id": "japandi_bedroom",
+          "cluster_name": "japandi bedroom",
+          "domain_id": "bedrooms",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "style_specific",
+          "intent_id": "inspiration",
+          "modifier": "",
+          "primary_keyword": "japandi bedroom paint and color ideas",
+          "secondary_keywords": [
+            "japandi bedroom ideas",
+            "how to style a japandi bedroom",
+            "japandi bedroom decor",
+            "japandi bedroom layout ideas"
+          ],
+          "search_intent": "styling_advice",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 68,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        }
+      ],
+      "recommended_topics": [
+        "how to choose colors for a japandi bedroom",
+        "japandi bedroom color palette ideas",
+        "japandi bedroom paint and color ideas"
+      ],
+      "priority_score": 64,
+      "season": "",
+      "holiday": "",
+      "source": "content architecture",
+      "pinterest_signal": {
+        "label": "cold",
+        "boost": -6,
+        "pinterest_article_count": 1,
+        "strong_article_count": 0,
+        "weak_article_count": 1,
+        "average_score": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_saves": 0.0
+      },
+      "pinterest_intelligence": {
+        "cluster_signal_label": "no_data",
+        "cluster_signal_boost": 0
+      },
+      "seed_keywords": [
+        "japandi bedroom ideas",
+        "how to style a japandi bedroom",
+        "japandi bedroom decor",
+        "japandi bedroom layout ideas",
+        "japandi bedroom color palette"
+      ],
+      "allowed_angle_ids": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "style_specific"
+      ]
+    },
+    {
       "cluster_id": "spring_bedroom_refresh",
       "cluster_name": "spring bedroom refresh",
       "domain_id": "seasonal_styling",
@@ -83340,7 +83342,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-02",
-      "days_since_latest": 18,
+      "days_since_latest": 20,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Seasonal Refresh"
@@ -83552,7 +83554,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-15",
-      "days_since_latest": 5,
+      "days_since_latest": 7,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Seasonal Refresh",

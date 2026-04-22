@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-20T10:43:52.035157+00:00",
+  "generated_at": "2026-04-22T10:16:38.242883+00:00",
   "overview": {
-    "pin_count": 53,
-    "published_pin_count": 26,
+    "pin_count": 56,
+    "published_pin_count": 27,
     "analytics_ready_pin_count": 0,
-    "tracked_article_count": 15
+    "tracked_article_count": 16
   },
   "best_performing_clusters": [
     {
@@ -41,6 +41,24 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "best-furniture-for-earthy-bedroom"
+      ]
+    },
+    {
+      "cluster_id": "japandi_bedroom",
+      "cluster_name": "japandi bedroom",
+      "pin_count": 3,
+      "published_pin_count": 1,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "japandi-bedroom-texture-mistakes-to-avoid"
       ]
     },
     {
@@ -527,6 +545,25 @@
       ]
     },
     {
+      "cluster_id": "japandi_bedroom",
+      "subtopic_id": "textures",
+      "subtopic_name": "textures and layers",
+      "pin_count": 3,
+      "published_pin_count": 1,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "japandi-bedroom-texture-mistakes-to-avoid"
+      ]
+    },
+    {
       "cluster_id": "moody_bedroom",
       "subtopic_id": "textures",
       "subtopic_name": "textures and layers",
@@ -624,8 +661,8 @@
     },
     {
       "angle_id": "mistakes",
-      "pin_count": 12,
-      "published_pin_count": 8,
+      "pin_count": 15,
+      "published_pin_count": 9,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -636,6 +673,7 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
+        "japandi-bedroom-texture-mistakes-to-avoid",
         "moody-bedroom-texture-mistakes-to-avoid",
         "parisian-bathroom-texture-mistakes-to-avoid",
         "spring-bedroom-refresh-mistakes-to-avoid"
@@ -968,6 +1006,27 @@
       ]
     },
     {
+      "visual_style_key": "centered_title|crisp_modern|textures_materials|problem_solving",
+      "style_name": "centered-title",
+      "visual_family_id": "crisp_modern",
+      "shot_library_id": "textures_materials",
+      "intent_id": "problem_solving",
+      "pin_count": 1,
+      "published_pin_count": 1,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "japandi-bedroom-texture-mistakes-to-avoid"
+      ]
+    },
+    {
       "visual_style_key": "centered_title|warm_layered|general_decor|comparison",
       "style_name": "centered-title",
       "visual_family_id": "warm_layered",
@@ -1117,6 +1176,27 @@
         "best-furniture-for-an-earthy-bathroom",
         "best-furniture-for-transitional-bathroom",
         "best-furniture-parisian-bedroom"
+      ]
+    },
+    {
+      "visual_style_key": "minimalist_overlay|crisp_modern|textures_materials|problem_solving",
+      "style_name": "minimalist-overlay",
+      "visual_family_id": "crisp_modern",
+      "shot_library_id": "textures_materials",
+      "intent_id": "problem_solving",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "japandi-bedroom-texture-mistakes-to-avoid"
       ]
     },
     {
@@ -1294,6 +1374,27 @@
       ]
     },
     {
+      "visual_style_key": "top_title|crisp_modern|textures_materials|problem_solving",
+      "style_name": "top-title",
+      "visual_family_id": "crisp_modern",
+      "shot_library_id": "textures_materials",
+      "intent_id": "problem_solving",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "japandi-bedroom-texture-mistakes-to-avoid"
+      ]
+    },
+    {
       "visual_style_key": "top_title|warm_layered|general_decor|comparison",
       "style_name": "top-title",
       "visual_family_id": "warm_layered",
@@ -1356,6 +1457,24 @@
         ]
       },
       {
+        "cluster_id": "japandi_bedroom",
+        "cluster_name": "japandi bedroom",
+        "pin_count": 3,
+        "published_pin_count": 1,
+        "analytics_ready_count": 0,
+        "average_score": 0.0,
+        "average_impressions": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_pin_clicks": 0.0,
+        "average_closeups": 0.0,
+        "signal_label": "no_data",
+        "signal_boost": 0,
+        "top_article_slugs": [
+          "japandi-bedroom-texture-mistakes-to-avoid"
+        ]
+      },
+      {
         "cluster_id": "mediterranean_bedroom",
         "cluster_name": "mediterranean bedroom",
         "pin_count": 1,
@@ -1389,24 +1508,6 @@
         "signal_boost": 0,
         "top_article_slugs": [
           "best-furniture-minimalist-bathroom"
-        ]
-      },
-      {
-        "cluster_id": "moody_bedroom",
-        "cluster_name": "moody bedroom",
-        "pin_count": 4,
-        "published_pin_count": 2,
-        "analytics_ready_count": 0,
-        "average_score": 0.0,
-        "average_impressions": 0.0,
-        "average_saves": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_pin_clicks": 0.0,
-        "average_closeups": 0.0,
-        "signal_label": "no_data",
-        "signal_boost": 0,
-        "top_article_slugs": [
-          "moody-bedroom-texture-mistakes-to-avoid"
         ]
       }
     ],
@@ -1566,8 +1667,8 @@
       },
       {
         "angle_id": "mistakes",
-        "pin_count": 12,
-        "published_pin_count": 8,
+        "pin_count": 15,
+        "published_pin_count": 9,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,
@@ -1578,6 +1679,7 @@
         "signal_label": "no_data",
         "signal_boost": 0,
         "top_article_slugs": [
+          "japandi-bedroom-texture-mistakes-to-avoid",
           "moody-bedroom-texture-mistakes-to-avoid",
           "parisian-bathroom-texture-mistakes-to-avoid",
           "spring-bedroom-refresh-mistakes-to-avoid"
