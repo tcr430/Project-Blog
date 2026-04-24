@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-23T18:52:16.862939+00:00",
+  "generated_at": "2026-04-24T01:22:00.687613+00:00",
   "history_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_history.json",
-  "published_pin_count": 29,
+  "published_pin_count": 30,
   "global_metrics": {
-    "published_pins": 29,
+    "published_pins": 30,
     "analytics_ready_pins": 0,
     "average_impressions": null,
     "average_saves": null,
@@ -36,8 +36,8 @@
       "average_engagement_rate": null
     },
     {
-      "variant_type": "styling_angle",
-      "published_pins": 2,
+      "variant_type": "product_led",
+      "published_pins": 5,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -47,8 +47,8 @@
       "average_engagement_rate": null
     },
     {
-      "variant_type": "product_led",
-      "published_pins": 4,
+      "variant_type": "styling_angle",
+      "published_pins": 2,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -70,6 +70,18 @@
       "average_closeups": null,
       "average_engagement_rate": null,
       "board_name": "Bedroom Retreat Ideas"
+    },
+    {
+      "board_key": "home_products",
+      "published_pins": 4,
+      "analytics_ready_pins": 0,
+      "average_impressions": null,
+      "average_saves": null,
+      "average_outbound_clicks": null,
+      "average_pin_clicks": null,
+      "average_closeups": null,
+      "average_engagement_rate": null,
+      "board_name": "Home Finds & Decor Picks"
     },
     {
       "board_key": "default",
@@ -96,18 +108,6 @@
       "board_name": "Bathroom Styling Notes"
     },
     {
-      "board_key": "home_products",
-      "published_pins": 3,
-      "analytics_ready_pins": 0,
-      "average_impressions": null,
-      "average_saves": null,
-      "average_outbound_clicks": null,
-      "average_pin_clicks": null,
-      "average_closeups": null,
-      "average_engagement_rate": null,
-      "board_name": "Home Finds & Decor Picks"
-    },
-    {
       "board_key": "living_room",
       "published_pins": 2,
       "analytics_ready_pins": 0,
@@ -123,7 +123,7 @@
   "performance_by_article": [
     {
       "article_slug": "best-furniture-for-earthy-bedroom",
-      "published_pins": 2,
+      "published_pins": 3,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -343,8 +343,8 @@
         "average_engagement_rate": null
       },
       {
-        "variant_type": "styling_angle",
-        "published_pins": 2,
+        "variant_type": "product_led",
+        "published_pins": 5,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -354,8 +354,8 @@
         "average_engagement_rate": null
       },
       {
-        "variant_type": "product_led",
-        "published_pins": 4,
+        "variant_type": "styling_angle",
+        "published_pins": 2,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -377,6 +377,18 @@
         "average_closeups": null,
         "average_engagement_rate": null,
         "board_name": "Bedroom Retreat Ideas"
+      },
+      {
+        "board_key": "home_products",
+        "published_pins": 4,
+        "analytics_ready_pins": 0,
+        "average_impressions": null,
+        "average_saves": null,
+        "average_outbound_clicks": null,
+        "average_pin_clicks": null,
+        "average_closeups": null,
+        "average_engagement_rate": null,
+        "board_name": "Home Finds & Decor Picks"
       },
       {
         "board_key": "default",
@@ -403,18 +415,6 @@
         "board_name": "Bathroom Styling Notes"
       },
       {
-        "board_key": "home_products",
-        "published_pins": 3,
-        "analytics_ready_pins": 0,
-        "average_impressions": null,
-        "average_saves": null,
-        "average_outbound_clicks": null,
-        "average_pin_clicks": null,
-        "average_closeups": null,
-        "average_engagement_rate": null,
-        "board_name": "Home Finds & Decor Picks"
-      },
-      {
         "board_key": "living_room",
         "published_pins": 2,
         "analytics_ready_pins": 0,
@@ -430,7 +430,7 @@
     "top_articles": [
       {
         "article_slug": "best-furniture-for-earthy-bedroom",
-        "published_pins": 2,
+        "published_pins": 3,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -502,7 +502,7 @@
     "weak_articles": [
       {
         "article_slug": "best-furniture-for-earthy-bedroom",
-        "published_pins": 2,
+        "published_pins": 3,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
