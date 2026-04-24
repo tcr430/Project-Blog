@@ -1,6 +1,24 @@
 {
-  "generated_at": "2026-04-22T10:17:46.459366+00:00",
+  "generated_at": "2026-04-24T10:19:33.203736+00:00",
   "articles": [
+    {
+      "article_slug": "cottage-bedroom-texture-mistakes-to-avoid",
+      "cluster": "cottage bedroom",
+      "cluster_id": "cottage bedroom",
+      "subtopic_id": "textures",
+      "subtopic_name": "textures and layers",
+      "angle_id": "mistakes",
+      "intent_id": "problem_solving",
+      "primary_keyword": "cottage bedroom texture mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "None of the secondary keywords appear in the article body.",
+        "Primary keyword appears very lightly in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-04-24T10:19:33.203576+00:00"
+    },
     {
       "article_slug": "japandi-bathroom-texture-mistakes-to-avoid",
       "cluster": "japandi bathroom",

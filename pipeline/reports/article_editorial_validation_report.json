@@ -1,6 +1,50 @@
 {
-  "generated_at": "2026-04-22T10:17:46.463164+00:00",
+  "generated_at": "2026-04-24T10:19:33.207496+00:00",
   "articles": [
+    {
+      "article_slug": "cottage-bedroom-texture-mistakes-to-avoid",
+      "cluster_id": "cottage_bedroom",
+      "subtopic_id": "textures",
+      "angle_id": "mistakes",
+      "primary_keyword": "cottage bedroom texture mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Supporting keyword ideas are barely reflected in the body."
+      ],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 134,
+          "concept_overlap": 9,
+          "first_sentence": "A cottage bedroom is meant to feel like a gentle retreat — calm, layered, and inviting with a lived-in warmth that feels unforced."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 0,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "When Uniform Textures Flatten the Room",
+            "Avoid Overloaded Textures in Small Cottage Bedrooms",
+            "Mismatched Texture Styles That Clash",
+            "Scale Mistakes: When Textures Overpower the Space",
+            "Skipping Visual Rest Areas in Your Texture Layers"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 11,
+          "specificity_term_hits": 8,
+          "secondary_keyword_hits": 0
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-04-24T10:19:33.207190+00:00"
+    },
     {
       "article_slug": "japandi-bathroom-texture-mistakes-to-avoid",
       "cluster_id": "japandi_bathroom",

@@ -1,0 +1,299 @@
+{
+  "generated_at": "2026-04-24T10:23:04.052518+00:00",
+  "trend": "cottage bedroom texture mistakes to avoid",
+  "slug": "cottage-bedroom-texture-mistakes-to-avoid",
+  "article_generation": {
+    "cache_hit": false,
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/article_packages/2e801dbd1f56d1a794e2240931be342722c16f733cac6daffa5c9e80cdd9ee6b.json",
+    "model": "gpt-4.1-mini",
+    "generation_calls": 2,
+    "short_retries": 0,
+    "angle_retries": 1,
+    "product_retries": 0,
+    "selected_products": 0,
+    "affiliate_mode": false,
+    "monetization_profile_id": "fix_oriented",
+    "generated_link_count": 0,
+    "primary_keyword": "cottage bedroom texture mistakes to avoid",
+    "topical_cluster": "cottage bedroom"
+  },
+  "seo_validation": {
+    "article_slug": "cottage-bedroom-texture-mistakes-to-avoid",
+    "cluster": "cottage bedroom",
+    "cluster_id": "cottage bedroom",
+    "subtopic_id": "textures",
+    "subtopic_name": "textures and layers",
+    "angle_id": "mistakes",
+    "intent_id": "problem_solving",
+    "primary_keyword": "cottage bedroom texture mistakes to avoid",
+    "validation_status": "warning",
+    "warnings": [
+      "None of the secondary keywords appear in the article body.",
+      "Primary keyword appears very lightly in the article body."
+    ],
+    "errors": [],
+    "duplicate_candidate_slugs": [],
+    "timestamp": "2026-04-24T10:19:33.203576+00:00"
+  },
+  "editorial_validation": {
+    "article_slug": "cottage-bedroom-texture-mistakes-to-avoid",
+    "cluster_id": "cottage_bedroom",
+    "subtopic_id": "textures",
+    "angle_id": "mistakes",
+    "primary_keyword": "cottage bedroom texture mistakes to avoid",
+    "validation_status": "warning",
+    "warnings": [
+      "Supporting keyword ideas are barely reflected in the body."
+    ],
+    "errors": [],
+    "checks": {
+      "generic_intro": {
+        "intro_word_count": 134,
+        "concept_overlap": 9,
+        "first_sentence": "A cottage bedroom is meant to feel like a gentle retreat — calm, layered, and inviting with a lived-in warmth that feels unforced."
+      },
+      "heading_quality": {
+        "heading_count": 5,
+        "vague_heading_count": 0,
+        "low_specificity_heading_count": 0,
+        "repeated_signature_count": 0,
+        "repeated_stem_count": 0,
+        "headings": [
+          "When Uniform Textures Flatten the Room",
+          "Avoid Overloaded Textures in Small Cottage Bedrooms",
+          "Mismatched Texture Styles That Clash",
+          "Scale Mistakes: When Textures Overpower the Space",
+          "Skipping Visual Rest Areas in Your Texture Layers"
+        ]
+      },
+      "specificity": {
+        "concept_token_hits": 11,
+        "specificity_term_hits": 8,
+        "secondary_keyword_hits": 0
+      },
+      "distinctiveness": {
+        "nearest_article_slug": "",
+        "max_similarity": 0.0,
+        "strongest_heading_overlap": 0
+      }
+    },
+    "timestamp": "2026-04-24T10:19:33.207190+00:00"
+  },
+  "image_generation": {
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/image_generation_cache/cottage-bedroom-texture-mistakes-to-avoid.json",
+    "provider": "flux",
+    "provider_model": "flux-2-max",
+    "model": "flux-2-max",
+    "fallback_provider": "openai",
+    "fallback_model": "gpt-image-1",
+    "size": "1536x1024",
+    "hero_quality": "high",
+    "section_quality": "medium",
+    "allow_fallback": true,
+    "fallback_events": 0,
+    "generated_images": 6,
+    "cache_hits": 0,
+    "generation_calls": 6,
+    "qa_calls": 1,
+    "details": [
+      {
+        "label": "hero",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 1,
+        "quality": "high",
+        "qa_enabled": true,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "78571d7d-a6c7-4abb-8561-dc8b11984e3b",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=78571d7d-a6c7-4abb-8561-dc8b11984e3b",
+            "poll_attempts": 21,
+            "provider_status": "Ready",
+            "elapsed_seconds": 37.11,
+            "quality": "high",
+            "elapsed_seconds_total": 37.11,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation",
+        "qa_reason": "The image shows a well-composed, magazine-worthy cottage bedroom with a balanced material composition featuring tactile layering and material contrast. The room layout is realistic and the lighting is natural daylight with crisp shadows. It aligns well with the editorial style and aesthetic requirements specified in the prompt."
+      },
+      {
+        "label": "section-1",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "a2bdff06-e556-4a21-9b29-d0c1f7c61ac8",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=a2bdff06-e556-4a21-9b29-d0c1f7c61ac8",
+            "poll_attempts": 19,
+            "provider_status": "Ready",
+            "elapsed_seconds": 25.66,
+            "quality": "medium",
+            "elapsed_seconds_total": 25.66,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-2",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "1f2500ee-0c3e-493a-9859-c47c02a1fc2e",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=1f2500ee-0c3e-493a-9859-c47c02a1fc2e",
+            "poll_attempts": 13,
+            "provider_status": "Ready",
+            "elapsed_seconds": 22.85,
+            "quality": "medium",
+            "elapsed_seconds_total": 22.85,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-3",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "1febb6ea-89a0-476b-9795-22ff2d3a3965",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=1febb6ea-89a0-476b-9795-22ff2d3a3965",
+            "poll_attempts": 19,
+            "provider_status": "Ready",
+            "elapsed_seconds": 33.11,
+            "quality": "medium",
+            "elapsed_seconds_total": 33.11,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-4",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "4c5a5773-043e-4603-af35-de62e3db1de4",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=4c5a5773-043e-4603-af35-de62e3db1de4",
+            "poll_attempts": 25,
+            "provider_status": "Ready",
+            "elapsed_seconds": 42.95,
+            "quality": "medium",
+            "elapsed_seconds_total": 42.95,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-5",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "434896f5-f221-43db-9197-32a559508602",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=434896f5-f221-43db-9197-32a559508602",
+            "poll_attempts": 13,
+            "provider_status": "Ready",
+            "elapsed_seconds": 23.34,
+            "quality": "medium",
+            "elapsed_seconds_total": 23.34,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      }
+    ]
+  },
+  "pinterest": {
+    "variants_requested": 4,
+    "pin_assets_generated": false,
+    "mode": null
+  }
+}

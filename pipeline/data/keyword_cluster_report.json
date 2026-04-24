@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-04-22T10:22:07.954469+00:00",
-  "cluster_count": 25,
-  "article_count": 26,
+  "generated_at": "2026-04-24T10:23:04.237012+00:00",
+  "cluster_count": 26,
+  "article_count": 27,
   "subtopic_count": 7,
   "angle_count": 5,
   "angle_distribution": {
     "best_options": 13,
     "how_to": 2,
     "ideas": 4,
-    "mistakes": 6,
+    "mistakes": 7,
     "style_specific": 1
   },
   "clusters": [
@@ -110,6 +110,50 @@
       ],
       "angle_distribution": {
         "best_options": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_id": "cottage_bedroom",
+      "cluster_name": "cottage bedroom",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "bedrooms"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "cottage bedroom texture mistakes to avoid"
+      ],
+      "latest_article_date": "2026-04-24",
+      "latest_publication": {
+        "article_slug": "cottage-bedroom-texture-mistakes-to-avoid",
+        "article_title": "Cottage Bedroom Texture Mistakes to Avoid for a Fresh, Layered Look",
+        "publish_date": "2026-04-24",
+        "subtopic_id": "textures",
+        "subtopic_name": "textures and layers",
+        "angle_id": "mistakes"
+      },
+      "representative_article_slugs": [
+        "cottage-bedroom-texture-mistakes-to-avoid"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "textures",
+          "subtopic_name": "textures and layers",
+          "article_count": 1,
+          "latest_article_date": "2026-04-24",
+          "representative_article_slugs": [
+            "cottage-bedroom-texture-mistakes-to-avoid"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "mistakes": 1
       },
       "status": "underdeveloped"
     },
