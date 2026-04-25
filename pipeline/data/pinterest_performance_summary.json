@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-24T18:34:43.328476+00:00",
+  "generated_at": "2026-04-25T01:15:08.472104+00:00",
   "history_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_history.json",
-  "published_pin_count": 31,
+  "published_pin_count": 32,
   "global_metrics": {
-    "published_pins": 31,
+    "published_pins": 32,
     "analytics_ready_pins": 0,
     "average_impressions": null,
     "average_saves": null,
@@ -37,7 +37,7 @@
     },
     {
       "variant_type": "product_led",
-      "published_pins": 5,
+      "published_pins": 6,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -73,7 +73,7 @@
     },
     {
       "board_key": "home_products",
-      "published_pins": 4,
+      "published_pins": 5,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -235,7 +235,7 @@
     },
     {
       "article_slug": "moody-bedroom-texture-mistakes-to-avoid",
-      "published_pins": 2,
+      "published_pins": 3,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -358,7 +358,7 @@
       },
       {
         "variant_type": "product_led",
-        "published_pins": 5,
+        "published_pins": 6,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -394,7 +394,7 @@
       },
       {
         "board_key": "home_products",
-        "published_pins": 4,
+        "published_pins": 5,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
