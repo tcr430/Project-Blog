@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-25T18:33:34.480221+00:00",
+  "generated_at": "2026-04-26T01:24:29.445016+00:00",
   "history_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_history.json",
-  "published_pin_count": 32,
+  "published_pin_count": 34,
   "global_metrics": {
-    "published_pins": 32,
+    "published_pins": 34,
     "analytics_ready_pins": 0,
     "average_impressions": null,
     "average_saves": null,
@@ -15,7 +15,7 @@
   "performance_by_variant_type": [
     {
       "variant_type": "trend_overview",
-      "published_pins": 14,
+      "published_pins": 15,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -37,7 +37,7 @@
     },
     {
       "variant_type": "product_led",
-      "published_pins": 6,
+      "published_pins": 7,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -61,7 +61,7 @@
   "performance_by_board": [
     {
       "board_key": "bedroom",
-      "published_pins": 14,
+      "published_pins": 15,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -97,7 +97,7 @@
     },
     {
       "board_key": "bathroom",
-      "published_pins": 7,
+      "published_pins": 8,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -137,7 +137,7 @@
     },
     {
       "article_slug": "best-furniture-for-an-earthy-bathroom",
-      "published_pins": 2,
+      "published_pins": 3,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -151,7 +151,7 @@
     },
     {
       "article_slug": "best-furniture-for-scandinavian-bedroom",
-      "published_pins": 2,
+      "published_pins": 3,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -336,7 +336,7 @@
     "top_variant_types": [
       {
         "variant_type": "trend_overview",
-        "published_pins": 14,
+        "published_pins": 15,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -358,7 +358,7 @@
       },
       {
         "variant_type": "product_led",
-        "published_pins": 6,
+        "published_pins": 7,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -382,7 +382,7 @@
     "top_boards": [
       {
         "board_key": "bedroom",
-        "published_pins": 14,
+        "published_pins": 15,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -418,7 +418,7 @@
       },
       {
         "board_key": "bathroom",
-        "published_pins": 7,
+        "published_pins": 8,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -458,7 +458,7 @@
       },
       {
         "article_slug": "best-furniture-for-an-earthy-bathroom",
-        "published_pins": 2,
+        "published_pins": 3,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -472,7 +472,7 @@
       },
       {
         "article_slug": "best-furniture-for-scandinavian-bedroom",
-        "published_pins": 2,
+        "published_pins": 3,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -530,7 +530,7 @@
       },
       {
         "article_slug": "best-furniture-for-an-earthy-bathroom",
-        "published_pins": 2,
+        "published_pins": 3,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -544,7 +544,7 @@
       },
       {
         "article_slug": "best-furniture-for-scandinavian-bedroom",
-        "published_pins": 2,
+        "published_pins": 3,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
