@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-26T18:34:22.257795+00:00",
+  "generated_at": "2026-04-27T01:26:00.289977+00:00",
   "history_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_history.json",
-  "published_pin_count": 34,
+  "published_pin_count": 35,
   "global_metrics": {
-    "published_pins": 34,
+    "published_pins": 35,
     "analytics_ready_pins": 0,
     "average_impressions": null,
     "average_saves": null,
@@ -48,7 +48,7 @@
     },
     {
       "variant_type": "styling_angle",
-      "published_pins": 2,
+      "published_pins": 3,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -97,7 +97,7 @@
     },
     {
       "board_key": "bathroom",
-      "published_pins": 8,
+      "published_pins": 9,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -165,7 +165,7 @@
     },
     {
       "article_slug": "best-furniture-for-a-scandinavian-bathroom",
-      "published_pins": 3,
+      "published_pins": 4,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -369,7 +369,7 @@
       },
       {
         "variant_type": "styling_angle",
-        "published_pins": 2,
+        "published_pins": 3,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -418,7 +418,7 @@
       },
       {
         "board_key": "bathroom",
-        "published_pins": 8,
+        "published_pins": 9,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -486,7 +486,7 @@
       },
       {
         "article_slug": "best-furniture-for-a-scandinavian-bathroom",
-        "published_pins": 3,
+        "published_pins": 4,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -558,7 +558,7 @@
       },
       {
         "article_slug": "best-furniture-for-a-scandinavian-bathroom",
-        "published_pins": 3,
+        "published_pins": 4,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
