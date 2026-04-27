@@ -1,0 +1,316 @@
+{
+  "generated_at": "2026-04-27T11:05:22.194942+00:00",
+  "trend": "cottage bathroom texture mistakes to avoid",
+  "slug": "cottage-bathroom-texture-mistakes-to-avoid",
+  "article_generation": {
+    "cache_hit": false,
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/article_packages/b5a76d9e56057a96a5bb46604197c944f4871d08dcbd10905d71bdefb41ea4de.json",
+    "model": "gpt-4.1-mini",
+    "generation_calls": 4,
+    "short_retries": 0,
+    "angle_retries": 1,
+    "product_retries": 0,
+    "selected_products": 0,
+    "affiliate_mode": false,
+    "monetization_profile_id": "fix_oriented",
+    "generated_link_count": 0,
+    "primary_keyword": "cottage bathroom texture mistakes to avoid",
+    "topical_cluster": "cottage bathroom"
+  },
+  "seo_validation": {
+    "article_slug": "cottage-bathroom-texture-mistakes-to-avoid",
+    "cluster": "cottage bathroom",
+    "cluster_id": "cottage bathroom",
+    "subtopic_id": "textures",
+    "subtopic_name": "textures and layers",
+    "angle_id": "mistakes",
+    "intent_id": "problem_solving",
+    "primary_keyword": "cottage bathroom texture mistakes to avoid",
+    "validation_status": "warning",
+    "warnings": [
+      "Headings do not reflect the topic cluster strongly enough.",
+      "Primary keyword appears very lightly in the article body."
+    ],
+    "errors": [],
+    "duplicate_candidate_slugs": [],
+    "timestamp": "2026-04-27T11:01:10.791835+00:00"
+  },
+  "editorial_validation": {
+    "article_slug": "cottage-bathroom-texture-mistakes-to-avoid",
+    "cluster_id": "cottage_bathroom",
+    "subtopic_id": "textures",
+    "angle_id": "mistakes",
+    "primary_keyword": "cottage bathroom texture mistakes to avoid",
+    "validation_status": "warning",
+    "warnings": [
+      "Several section headings do not signal the topic strongly enough."
+    ],
+    "errors": [],
+    "checks": {
+      "generic_intro": {
+        "intro_word_count": 106,
+        "concept_overlap": 5,
+        "first_sentence": "Cottage bathrooms are meant to feel warm, inviting, and a bit collected, with a sense of layered texture that speaks to comfort and subtle charm."
+      },
+      "heading_quality": {
+        "heading_count": 6,
+        "vague_heading_count": 0,
+        "low_specificity_heading_count": 2,
+        "repeated_signature_count": 0,
+        "repeated_stem_count": 0,
+        "headings": [
+          "Overloading Walls with Clashing Surface Textures",
+          "Skimping on Soft Textiles That Soften Hard Surfaces",
+          "Ignoring Texture Cohesion Across Materials",
+          "Overlooking Proper Texture Scale for Small Bathroom Spaces",
+          "When Texture Choices Clash and Ruin the Room's Inviting Feel",
+          "Conclusion"
+        ]
+      },
+      "specificity": {
+        "concept_token_hits": 9,
+        "specificity_term_hits": 10,
+        "secondary_keyword_hits": 1
+      },
+      "distinctiveness": {
+        "nearest_article_slug": "",
+        "max_similarity": 0.0,
+        "strongest_heading_overlap": 0
+      }
+    },
+    "timestamp": "2026-04-27T11:01:10.795415+00:00"
+  },
+  "image_generation": {
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/image_generation_cache/cottage-bathroom-texture-mistakes-to-avoid.json",
+    "provider": "flux",
+    "provider_model": "flux-2-max",
+    "model": "flux-2-max",
+    "fallback_provider": "openai",
+    "fallback_model": "gpt-image-1",
+    "size": "1536x1024",
+    "hero_quality": "high",
+    "section_quality": "medium",
+    "allow_fallback": true,
+    "fallback_events": 0,
+    "generated_images": 6,
+    "cache_hits": 0,
+    "generation_calls": 7,
+    "qa_calls": 2,
+    "details": [
+      {
+        "label": "hero",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 2,
+        "qa_calls": 2,
+        "quality": "high",
+        "qa_enabled": true,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "85a5527a-090f-4b6d-bd7d-219599eb4045",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=85a5527a-090f-4b6d-bd7d-219599eb4045",
+            "poll_attempts": 15,
+            "provider_status": "Ready",
+            "elapsed_seconds": 24.36,
+            "quality": "high",
+            "elapsed_seconds_total": 24.36,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          },
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 2,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "7904176a-016a-4c20-8593-fc940d9b092e",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=7904176a-016a-4c20-8593-fc940d9b092e",
+            "poll_attempts": 19,
+            "provider_status": "Ready",
+            "elapsed_seconds": 26.87,
+            "quality": "high",
+            "elapsed_seconds_total": 26.87,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-1",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "9064808d-486e-4e21-a626-87d70cdc192d",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=9064808d-486e-4e21-a626-87d70cdc192d",
+            "poll_attempts": 19,
+            "provider_status": "Ready",
+            "elapsed_seconds": 30.28,
+            "quality": "medium",
+            "elapsed_seconds_total": 30.28,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-2",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "4741f027-eb35-4bce-b49e-f2dcf6e22311",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=4741f027-eb35-4bce-b49e-f2dcf6e22311",
+            "poll_attempts": 17,
+            "provider_status": "Ready",
+            "elapsed_seconds": 27.7,
+            "quality": "medium",
+            "elapsed_seconds_total": 27.7,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-3",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "74a59461-6156-4ed5-8975-8145586ae010",
+            "polling_url": "https://api.us3.bfl.ai/v1/get_result?id=74a59461-6156-4ed5-8975-8145586ae010",
+            "poll_attempts": 26,
+            "provider_status": "Ready",
+            "elapsed_seconds": 35.49,
+            "quality": "medium",
+            "elapsed_seconds_total": 35.49,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-4",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "1a43cef4-c2d6-41ad-8143-17d9fc251b35",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=1a43cef4-c2d6-41ad-8143-17d9fc251b35",
+            "poll_attempts": 32,
+            "provider_status": "Ready",
+            "elapsed_seconds": 43.09,
+            "quality": "medium",
+            "elapsed_seconds_total": 43.09,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-5",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "1b552686-905a-4500-9397-84eea9f0829a",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=1b552686-905a-4500-9397-84eea9f0829a",
+            "poll_attempts": 21,
+            "provider_status": "Ready",
+            "elapsed_seconds": 33.13,
+            "quality": "medium",
+            "elapsed_seconds_total": 33.13,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      }
+    ]
+  },
+  "pinterest": {
+    "variants_requested": 4,
+    "pin_assets_generated": false,
+    "mode": null
+  }
+}

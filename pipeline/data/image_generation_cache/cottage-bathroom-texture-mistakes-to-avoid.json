@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "c4327dd995162946b142037783a75339dd2583cda4f4d29afd58d678c107d724",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/cottage-bathroom-texture-mistakes-to-avoid/hero.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-1": {
+    "cache_key": "cde468b1099bd6aca0df9430e37ea7e254b14bf4b405735fb107ec6f3c0ab047",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/cottage-bathroom-texture-mistakes-to-avoid/section-1.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-2": {
+    "cache_key": "98c0005e9dbcacaa1b8a35b373116a15a34b244dd2a47adb8690ee3231aa187c",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/cottage-bathroom-texture-mistakes-to-avoid/section-2.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-3": {
+    "cache_key": "9568caeac4b84e2b3257c9c489dd2b6f712255b34e6feb494ea0ad7c75428081",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/cottage-bathroom-texture-mistakes-to-avoid/section-3.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-4": {
+    "cache_key": "992aead83ff721ceaf69efeee226d825c3c64a61026619cb9ee0de4a1cbde540",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/cottage-bathroom-texture-mistakes-to-avoid/section-4.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-5": {
+    "cache_key": "6ffbb0c28304f61f912c1b6432977e510577a400122d13c12fcf17435cf9e25d",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/cottage-bathroom-texture-mistakes-to-avoid/section-5.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  }
+}

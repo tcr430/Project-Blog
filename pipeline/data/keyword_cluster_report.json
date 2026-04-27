@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-04-24T10:23:04.237012+00:00",
-  "cluster_count": 26,
-  "article_count": 27,
+  "generated_at": "2026-04-27T11:05:22.444390+00:00",
+  "cluster_count": 27,
+  "article_count": 28,
   "subtopic_count": 7,
   "angle_count": 5,
   "angle_distribution": {
     "best_options": 13,
     "how_to": 2,
     "ideas": 4,
-    "mistakes": 7,
+    "mistakes": 8,
     "style_specific": 1
   },
   "clusters": [
@@ -110,6 +110,50 @@
       ],
       "angle_distribution": {
         "best_options": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_id": "cottage_bathroom",
+      "cluster_name": "cottage bathroom",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "utility_transition"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "cottage bathroom texture mistakes to avoid"
+      ],
+      "latest_article_date": "2026-04-27",
+      "latest_publication": {
+        "article_slug": "cottage-bathroom-texture-mistakes-to-avoid",
+        "article_title": "Common Texture Mistakes to Avoid in Cottage Bathroom Decor",
+        "publish_date": "2026-04-27",
+        "subtopic_id": "textures",
+        "subtopic_name": "textures and layers",
+        "angle_id": "mistakes"
+      },
+      "representative_article_slugs": [
+        "cottage-bathroom-texture-mistakes-to-avoid"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "textures",
+          "subtopic_name": "textures and layers",
+          "article_count": 1,
+          "latest_article_date": "2026-04-27",
+          "representative_article_slugs": [
+            "cottage-bathroom-texture-mistakes-to-avoid"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "mistakes": 1
       },
       "status": "underdeveloped"
     },

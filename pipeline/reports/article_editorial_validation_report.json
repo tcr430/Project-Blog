@@ -1,6 +1,51 @@
 {
-  "generated_at": "2026-04-24T10:19:33.207496+00:00",
+  "generated_at": "2026-04-27T11:01:10.795705+00:00",
   "articles": [
+    {
+      "article_slug": "cottage-bathroom-texture-mistakes-to-avoid",
+      "cluster_id": "cottage_bathroom",
+      "subtopic_id": "textures",
+      "angle_id": "mistakes",
+      "primary_keyword": "cottage bathroom texture mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Several section headings do not signal the topic strongly enough."
+      ],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 106,
+          "concept_overlap": 5,
+          "first_sentence": "Cottage bathrooms are meant to feel warm, inviting, and a bit collected, with a sense of layered texture that speaks to comfort and subtle charm."
+        },
+        "heading_quality": {
+          "heading_count": 6,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 2,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Overloading Walls with Clashing Surface Textures",
+            "Skimping on Soft Textiles That Soften Hard Surfaces",
+            "Ignoring Texture Cohesion Across Materials",
+            "Overlooking Proper Texture Scale for Small Bathroom Spaces",
+            "When Texture Choices Clash and Ruin the Room's Inviting Feel",
+            "Conclusion"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 9,
+          "specificity_term_hits": 10,
+          "secondary_keyword_hits": 1
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-04-27T11:01:10.795415+00:00"
+    },
     {
       "article_slug": "cottage-bedroom-texture-mistakes-to-avoid",
       "cluster_id": "cottage_bedroom",

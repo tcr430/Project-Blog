@@ -1,6 +1,24 @@
 {
-  "generated_at": "2026-04-24T10:19:33.203736+00:00",
+  "generated_at": "2026-04-27T11:01:10.792010+00:00",
   "articles": [
+    {
+      "article_slug": "cottage-bathroom-texture-mistakes-to-avoid",
+      "cluster": "cottage bathroom",
+      "cluster_id": "cottage bathroom",
+      "subtopic_id": "textures",
+      "subtopic_name": "textures and layers",
+      "angle_id": "mistakes",
+      "intent_id": "problem_solving",
+      "primary_keyword": "cottage bathroom texture mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Headings do not reflect the topic cluster strongly enough.",
+        "Primary keyword appears very lightly in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-04-27T11:01:10.791835+00:00"
+    },
     {
       "article_slug": "cottage-bedroom-texture-mistakes-to-avoid",
       "cluster": "cottage bedroom",
