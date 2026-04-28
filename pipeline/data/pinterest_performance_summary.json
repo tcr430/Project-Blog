@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-27T19:01:59.664214+00:00",
+  "generated_at": "2026-04-28T01:44:53.655138+00:00",
   "history_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_history.json",
-  "published_pin_count": 36,
+  "published_pin_count": 38,
   "global_metrics": {
-    "published_pins": 36,
+    "published_pins": 38,
     "analytics_ready_pins": 0,
     "average_impressions": null,
     "average_saves": null,
@@ -37,7 +37,7 @@
     },
     {
       "variant_type": "product_led",
-      "published_pins": 7,
+      "published_pins": 8,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -48,7 +48,7 @@
     },
     {
       "variant_type": "styling_angle",
-      "published_pins": 3,
+      "published_pins": 4,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -61,7 +61,7 @@
   "performance_by_board": [
     {
       "board_key": "bedroom",
-      "published_pins": 15,
+      "published_pins": 16,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -97,7 +97,7 @@
     },
     {
       "board_key": "bathroom",
-      "published_pins": 10,
+      "published_pins": 11,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -207,7 +207,7 @@
     },
     {
       "article_slug": "spring-bedroom-refresh-mistakes-to-avoid",
-      "published_pins": 3,
+      "published_pins": 4,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -221,7 +221,7 @@
     },
     {
       "article_slug": "parisian-bathroom-texture-mistakes-to-avoid",
-      "published_pins": 3,
+      "published_pins": 4,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -372,7 +372,7 @@
       },
       {
         "variant_type": "product_led",
-        "published_pins": 7,
+        "published_pins": 8,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -383,7 +383,7 @@
       },
       {
         "variant_type": "styling_angle",
-        "published_pins": 3,
+        "published_pins": 4,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -396,7 +396,7 @@
     "top_boards": [
       {
         "board_key": "bedroom",
-        "published_pins": 15,
+        "published_pins": 16,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -432,7 +432,7 @@
       },
       {
         "board_key": "bathroom",
-        "published_pins": 10,
+        "published_pins": 11,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
