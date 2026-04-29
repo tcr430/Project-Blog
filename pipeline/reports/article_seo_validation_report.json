@@ -1,6 +1,24 @@
 {
-  "generated_at": "2026-04-27T11:01:10.792010+00:00",
+  "generated_at": "2026-04-29T10:52:41.193969+00:00",
   "articles": [
+    {
+      "article_slug": "choosing-best-furniture-coastal-bedroom",
+      "cluster": "coastal bedroom",
+      "cluster_id": "coastal bedroom",
+      "subtopic_id": "furniture",
+      "subtopic_name": "furniture and anchors",
+      "angle_id": "best options",
+      "intent_id": "comparison",
+      "primary_keyword": "best furniture for a coastal bedroom",
+      "validation_status": "warning",
+      "warnings": [
+        "Display title still uses an overused opening pattern.",
+        "Primary keyword appears very lightly in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-04-29T10:52:41.193814+00:00"
+    },
     {
       "article_slug": "cottage-bathroom-texture-mistakes-to-avoid",
       "cluster": "cottage bathroom",

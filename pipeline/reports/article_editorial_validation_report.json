@@ -1,6 +1,48 @@
 {
-  "generated_at": "2026-04-27T11:01:10.795705+00:00",
+  "generated_at": "2026-04-29T10:52:41.197874+00:00",
   "articles": [
+    {
+      "article_slug": "choosing-best-furniture-coastal-bedroom",
+      "cluster_id": "coastal_bedroom",
+      "subtopic_id": "furniture",
+      "angle_id": "best_options",
+      "primary_keyword": "best furniture for a coastal bedroom",
+      "validation_status": "pass",
+      "warnings": [],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 117,
+          "concept_overlap": 4,
+          "first_sentence": "Choosing the right furniture for a coastal bedroom often feels like navigating a delicate balance: you want pieces that evoke the serene, breezy feeling of the coast without slipping into over-styled or cliché décor."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 1,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Establishing Key Furniture Criteria for a Coastal Bedroom",
+            "When Solid Oak and Natural Woods Set the Tone",
+            "Painted Furniture for a Softer Coastal Contrast",
+            "Matching Furniture Choices to Room Size and Layout Considerations",
+            "Confidently Narrowing Down Your Coastal Bedroom Furniture"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 9,
+          "specificity_term_hits": 12,
+          "secondary_keyword_hits": 1
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-04-29T10:52:41.197577+00:00"
+    },
     {
       "article_slug": "cottage-bathroom-texture-mistakes-to-avoid",
       "cluster_id": "cottage_bathroom",

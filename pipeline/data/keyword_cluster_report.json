@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-04-27T11:05:22.444390+00:00",
-  "cluster_count": 27,
-  "article_count": 28,
+  "generated_at": "2026-04-29T10:56:55.780168+00:00",
+  "cluster_count": 28,
+  "article_count": 29,
   "subtopic_count": 7,
   "angle_count": 5,
   "angle_distribution": {
-    "best_options": 13,
+    "best_options": 14,
     "how_to": 2,
     "ideas": 4,
     "mistakes": 8,
@@ -105,6 +105,50 @@
           "latest_article_date": "",
           "representative_article_slugs": [
             "best-curtain-styling-for-bedroom-mistakes-fixes"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "best_options": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_id": "coastal_bedroom",
+      "cluster_name": "coastal bedroom",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "bedrooms"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "best furniture for a coastal bedroom"
+      ],
+      "latest_article_date": "2026-04-29",
+      "latest_publication": {
+        "article_slug": "choosing-best-furniture-coastal-bedroom",
+        "article_title": "Best Furniture for a Coastal Bedroom: What to Look For",
+        "publish_date": "2026-04-29",
+        "subtopic_id": "furniture",
+        "subtopic_name": "furniture and anchors",
+        "angle_id": "best_options"
+      },
+      "representative_article_slugs": [
+        "choosing-best-furniture-coastal-bedroom"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "furniture",
+          "subtopic_name": "furniture and anchors",
+          "article_count": 1,
+          "latest_article_date": "2026-04-29",
+          "representative_article_slugs": [
+            "choosing-best-furniture-coastal-bedroom"
           ]
         }
       ],

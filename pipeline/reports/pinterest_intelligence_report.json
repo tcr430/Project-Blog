@@ -1,12 +1,30 @@
 {
-  "generated_at": "2026-04-27T10:58:40.554974+00:00",
+  "generated_at": "2026-04-29T10:51:52.514383+00:00",
   "overview": {
-    "pin_count": 62,
-    "published_pin_count": 35,
+    "pin_count": 65,
+    "published_pin_count": 39,
     "analytics_ready_pin_count": 0,
-    "tracked_article_count": 18
+    "tracked_article_count": 19
   },
   "best_performing_clusters": [
+    {
+      "cluster_id": "cottage_bathroom",
+      "cluster_name": "cottage bathroom",
+      "pin_count": 3,
+      "published_pin_count": 1,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "cottage-bathroom-texture-mistakes-to-avoid"
+      ]
+    },
     {
       "cluster_id": "cottage_bedroom",
       "cluster_name": "cottage bedroom",
@@ -191,7 +209,7 @@
       "cluster_id": "parisian_bathroom",
       "cluster_name": "parisian bathroom",
       "pin_count": 4,
-      "published_pin_count": 3,
+      "published_pin_count": 4,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -209,7 +227,7 @@
       "cluster_id": "parisian_bedroom",
       "cluster_name": "parisian bedroom",
       "pin_count": 4,
-      "published_pin_count": 3,
+      "published_pin_count": 4,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -263,7 +281,7 @@
       "cluster_id": "spring_bedroom_refresh",
       "cluster_name": "spring bedroom refresh",
       "pin_count": 4,
-      "published_pin_count": 3,
+      "published_pin_count": 4,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -471,7 +489,7 @@
       "subtopic_id": "furniture",
       "subtopic_name": "furniture and anchors",
       "pin_count": 4,
-      "published_pin_count": 3,
+      "published_pin_count": 4,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -566,7 +584,7 @@
       "subtopic_id": "refresh",
       "subtopic_name": "seasonal refresh",
       "pin_count": 4,
-      "published_pin_count": 3,
+      "published_pin_count": 4,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -578,6 +596,25 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "spring-bedroom-refresh-mistakes-to-avoid"
+      ]
+    },
+    {
+      "cluster_id": "cottage_bathroom",
+      "subtopic_id": "textures",
+      "subtopic_name": "textures and layers",
+      "pin_count": 3,
+      "published_pin_count": 1,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "cottage-bathroom-texture-mistakes-to-avoid"
       ]
     },
     {
@@ -661,7 +698,7 @@
       "subtopic_id": "textures",
       "subtopic_name": "textures and layers",
       "pin_count": 4,
-      "published_pin_count": 3,
+      "published_pin_count": 4,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -680,7 +717,7 @@
     {
       "angle_id": "best_options",
       "pin_count": 30,
-      "published_pin_count": 18,
+      "published_pin_count": 19,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -735,8 +772,8 @@
     },
     {
       "angle_id": "mistakes",
-      "pin_count": 21,
-      "published_pin_count": 12,
+      "pin_count": 24,
+      "published_pin_count": 15,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -747,11 +784,11 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
+        "cottage-bathroom-texture-mistakes-to-avoid",
         "cottage-bedroom-texture-mistakes-to-avoid",
         "japandi-bathroom-texture-mistakes-to-avoid",
         "japandi-bedroom-texture-mistakes-to-avoid",
-        "moody-bedroom-texture-mistakes-to-avoid",
-        "parisian-bathroom-texture-mistakes-to-avoid"
+        "moody-bedroom-texture-mistakes-to-avoid"
       ]
     }
   ],
@@ -912,7 +949,7 @@
       "visual_family_id": "crisp_modern",
       "shot_library_id": "textures_materials",
       "intent_id": "problem_solving",
-      "pin_count": 1,
+      "pin_count": 2,
       "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -924,6 +961,7 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
+        "cottage-bathroom-texture-mistakes-to-avoid",
         "cottage-bedroom-texture-mistakes-to-avoid"
       ]
     },
@@ -1128,8 +1166,8 @@
       "visual_family_id": "crisp_modern",
       "shot_library_id": "textures_materials",
       "intent_id": "problem_solving",
-      "pin_count": 2,
-      "published_pin_count": 1,
+      "pin_count": 3,
+      "published_pin_count": 2,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -1140,6 +1178,7 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
+        "cottage-bathroom-texture-mistakes-to-avoid",
         "cottage-bedroom-texture-mistakes-to-avoid",
         "japandi-bedroom-texture-mistakes-to-avoid"
       ]
@@ -1258,7 +1297,7 @@
       "shot_library_id": "textures_materials",
       "intent_id": "problem_solving",
       "pin_count": 2,
-      "published_pin_count": 1,
+      "published_pin_count": 2,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -1431,7 +1470,7 @@
       "shot_library_id": "seasonal_styling",
       "intent_id": "problem_solving",
       "pin_count": 1,
-      "published_pin_count": 0,
+      "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -1495,7 +1534,7 @@
       "shot_library_id": "general_decor",
       "intent_id": "comparison",
       "pin_count": 4,
-      "published_pin_count": 1,
+      "published_pin_count": 2,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -1518,7 +1557,7 @@
       "visual_family_id": "crisp_modern",
       "shot_library_id": "textures_materials",
       "intent_id": "problem_solving",
-      "pin_count": 2,
+      "pin_count": 3,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1530,6 +1569,7 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
+        "cottage-bathroom-texture-mistakes-to-avoid",
         "cottage-bedroom-texture-mistakes-to-avoid",
         "japandi-bedroom-texture-mistakes-to-avoid"
       ]
@@ -1581,6 +1621,24 @@
   ],
   "top_rankings": {
     "clusters": [
+      {
+        "cluster_id": "cottage_bathroom",
+        "cluster_name": "cottage bathroom",
+        "pin_count": 3,
+        "published_pin_count": 1,
+        "analytics_ready_count": 0,
+        "average_score": 0.0,
+        "average_impressions": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_pin_clicks": 0.0,
+        "average_closeups": 0.0,
+        "signal_label": "no_data",
+        "signal_boost": 0,
+        "top_article_slugs": [
+          "cottage-bathroom-texture-mistakes-to-avoid"
+        ]
+      },
       {
         "cluster_id": "cottage_bedroom",
         "cluster_name": "cottage bedroom",
@@ -1651,24 +1709,6 @@
         "signal_boost": 0,
         "top_article_slugs": [
           "japandi-bathroom-texture-mistakes-to-avoid"
-        ]
-      },
-      {
-        "cluster_id": "japandi_bedroom",
-        "cluster_name": "japandi bedroom",
-        "pin_count": 3,
-        "published_pin_count": 1,
-        "analytics_ready_count": 0,
-        "average_score": 0.0,
-        "average_impressions": 0.0,
-        "average_saves": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_pin_clicks": 0.0,
-        "average_closeups": 0.0,
-        "signal_label": "no_data",
-        "signal_boost": 0,
-        "top_article_slugs": [
-          "japandi-bedroom-texture-mistakes-to-avoid"
         ]
       }
     ],
@@ -1773,7 +1813,7 @@
       {
         "angle_id": "best_options",
         "pin_count": 30,
-        "published_pin_count": 18,
+        "published_pin_count": 19,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,
@@ -1828,8 +1868,8 @@
       },
       {
         "angle_id": "mistakes",
-        "pin_count": 21,
-        "published_pin_count": 12,
+        "pin_count": 24,
+        "published_pin_count": 15,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,
@@ -1840,11 +1880,11 @@
         "signal_label": "no_data",
         "signal_boost": 0,
         "top_article_slugs": [
+          "cottage-bathroom-texture-mistakes-to-avoid",
           "cottage-bedroom-texture-mistakes-to-avoid",
           "japandi-bathroom-texture-mistakes-to-avoid",
           "japandi-bedroom-texture-mistakes-to-avoid",
-          "moody-bedroom-texture-mistakes-to-avoid",
-          "parisian-bathroom-texture-mistakes-to-avoid"
+          "moody-bedroom-texture-mistakes-to-avoid"
         ]
       }
     ],

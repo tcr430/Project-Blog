@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-04-27T11:05:23.963496+00:00",
+  "generated_at": "2026-04-29T10:56:57.291051+00:00",
   "total_clusters": 396,
   "summary": {
-    "missing": 369,
-    "underdeveloped": 27,
+    "missing": 368,
+    "underdeveloped": 28,
     "growing": 0,
     "strong": 0,
     "saturated": 0
   },
   "saturation_summary": {
-    "empty": 369,
-    "needs_growth": 27
+    "empty": 368,
+    "needs_growth": 28
   },
   "editorial_mix_rules": {
     "recent_window_article_count": 8,
@@ -110,7 +110,6 @@
     "california casual patio",
     "coastal balcony",
     "coastal bathroom",
-    "coastal bedroom",
     "coastal dining room",
     "coastal entryway",
     "coastal guest bedroom",
@@ -456,7 +455,7 @@
     "moody bathroom",
     "minimalist bedroom",
     "mediterranean bathroom",
-    "cottage bathroom",
+    "coastal bedroom",
     "living room textures and materials",
     "small dining nook",
     "earthy bedroom",
@@ -472,6 +471,7 @@
     "japandi bedroom",
     "japandi bathroom",
     "cottage bedroom",
+    "cottage bathroom",
     "spring bedroom refresh",
     "spring living room styling"
   ],
@@ -7315,220 +7315,6 @@
         "coastal bathroom decor",
         "coastal bathroom layout ideas",
         "coastal bathroom color palette"
-      ],
-      "allowed_angle_ids": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "style_specific"
-      ]
-    },
-    {
-      "cluster_id": "coastal_bedroom",
-      "cluster_name": "coastal bedroom",
-      "domain_id": "bedrooms",
-      "health_label": "missing",
-      "article_count": 0,
-      "article_capacity_target": 14,
-      "capacity_ratio": 0.0,
-      "growth_openings": 10,
-      "saturation_state": "empty",
-      "selection_action": "boost",
-      "latest_publication_date": "",
-      "days_since_latest": null,
-      "subtopics_total": 5,
-      "subtopics_covered": [],
-      "subtopic_ids_covered": [],
-      "subtopics_missing": [
-        "Layout and Foundation",
-        "Color Palette",
-        "Furniture and Anchors",
-        "Lighting",
-        "Textures and Layers"
-      ],
-      "subtopic_ids_missing": [
-        "layout",
-        "colors",
-        "furniture",
-        "lighting",
-        "textures"
-      ],
-      "angle_distribution": {
-        "ideas": 0,
-        "how_to": 0,
-        "mistakes": 0,
-        "best_options": 0,
-        "style_specific": 0
-      },
-      "underused_angles": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "style_specific"
-      ],
-      "overused_angles": [],
-      "intent_distribution": {
-        "comparison": 0,
-        "decision_making": 0,
-        "implementation": 0,
-        "inspiration": 0,
-        "problem_solving": 0
-      },
-      "underused_intents": [
-        "comparison",
-        "decision_making",
-        "implementation",
-        "inspiration",
-        "problem_solving"
-      ],
-      "overused_intents": [],
-      "recommended_concepts": [
-        {
-          "cluster_id": "coastal_bedroom",
-          "cluster_name": "coastal bedroom",
-          "domain_id": "bedrooms",
-          "subtopic_id": "furniture",
-          "subtopic_name": "Furniture and Anchors",
-          "angle_id": "best_options",
-          "intent_id": "comparison",
-          "modifier": "",
-          "primary_keyword": "best furniture for a coastal bedroom",
-          "secondary_keywords": [
-            "coastal bedroom ideas",
-            "how to style a coastal bedroom",
-            "coastal bedroom decor",
-            "coastal bedroom layout ideas"
-          ],
-          "search_intent": "comparison",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "monetizable_decision",
-          "editorial_mix_tags": [
-            "monetizable_decision",
-            "evergreen_authority"
-          ],
-          "score": 96,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "coastal_bedroom",
-          "cluster_name": "coastal bedroom",
-          "domain_id": "bedrooms",
-          "subtopic_id": "layout",
-          "subtopic_name": "Layout and Foundation",
-          "angle_id": "best_options",
-          "intent_id": "comparison",
-          "modifier": "",
-          "primary_keyword": "best layout for a coastal bedroom",
-          "secondary_keywords": [
-            "coastal bedroom ideas",
-            "how to style a coastal bedroom",
-            "coastal bedroom decor",
-            "coastal bedroom layout ideas"
-          ],
-          "search_intent": "comparison",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "monetizable_decision",
-          "editorial_mix_tags": [
-            "monetizable_decision",
-            "evergreen_authority"
-          ],
-          "score": 96,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "coastal_bedroom",
-          "cluster_name": "coastal bedroom",
-          "domain_id": "bedrooms",
-          "subtopic_id": "lighting",
-          "subtopic_name": "Lighting",
-          "angle_id": "best_options",
-          "intent_id": "comparison",
-          "modifier": "",
-          "primary_keyword": "best lighting for a coastal bedroom",
-          "secondary_keywords": [
-            "coastal bedroom ideas",
-            "how to style a coastal bedroom",
-            "coastal bedroom decor",
-            "coastal bedroom layout ideas"
-          ],
-          "search_intent": "comparison",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "monetizable_decision",
-          "editorial_mix_tags": [
-            "monetizable_decision",
-            "evergreen_authority"
-          ],
-          "score": 96,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        }
-      ],
-      "recommended_topics": [
-        "best furniture for a coastal bedroom",
-        "best layout for a coastal bedroom",
-        "best lighting for a coastal bedroom"
-      ],
-      "priority_score": 100,
-      "season": "",
-      "holiday": "",
-      "source": "content architecture",
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "pinterest_intelligence": {
-        "cluster_signal_label": "no_data",
-        "cluster_signal_boost": 0
-      },
-      "seed_keywords": [
-        "coastal bedroom ideas",
-        "how to style a coastal bedroom",
-        "coastal bedroom decor",
-        "coastal bedroom layout ideas",
-        "coastal bedroom color palette"
       ],
       "allowed_angle_ids": [
         "ideas",
@@ -79654,7 +79440,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-20",
-      "days_since_latest": 38,
+      "days_since_latest": 40,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation"
@@ -79869,7 +79655,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-25",
-      "days_since_latest": 33,
+      "days_since_latest": 35,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -80082,7 +79868,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-27",
-      "days_since_latest": 31,
+      "days_since_latest": 33,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -80295,7 +80081,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-08",
-      "days_since_latest": 19,
+      "days_since_latest": 21,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -80371,7 +80157,7 @@
             "monetizable_decision",
             "evergreen_authority"
           ],
-          "score": 74,
+          "score": 78,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -80409,7 +80195,7 @@
             "monetizable_decision",
             "evergreen_authority"
           ],
-          "score": 74,
+          "score": 78,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -80447,7 +80233,7 @@
             "monetizable_decision",
             "evergreen_authority"
           ],
-          "score": 74,
+          "score": 78,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -80511,7 +80297,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-08",
-      "days_since_latest": 18,
+      "days_since_latest": 20,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -80724,7 +80510,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-17",
-      "days_since_latest": 10,
+      "days_since_latest": 12,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -80926,9 +80712,9 @@
       ]
     },
     {
-      "cluster_id": "cottage_bathroom",
-      "cluster_name": "cottage bathroom",
-      "domain_id": "utility_transition",
+      "cluster_id": "coastal_bedroom",
+      "cluster_name": "coastal bedroom",
+      "domain_id": "bedrooms",
       "health_label": "underdeveloped",
       "article_count": 1,
       "article_capacity_target": 14,
@@ -80936,32 +80722,32 @@
       "growth_openings": 9,
       "saturation_state": "needs_growth",
       "selection_action": "boost",
-      "latest_publication_date": "2026-04-27",
+      "latest_publication_date": "2026-04-29",
       "days_since_latest": 0,
       "subtopics_total": 5,
       "subtopics_covered": [
-        "Textures and Layers"
+        "Furniture and Anchors"
       ],
       "subtopic_ids_covered": [
-        "textures"
+        "furniture"
       ],
       "subtopics_missing": [
         "Layout and Foundation",
         "Color Palette",
-        "Furniture and Anchors",
-        "Lighting"
+        "Lighting",
+        "Textures and Layers"
       ],
       "subtopic_ids_missing": [
         "layout",
         "colors",
-        "furniture",
-        "lighting"
+        "lighting",
+        "textures"
       ],
       "angle_distribution": {
         "ideas": 0,
         "how_to": 0,
-        "mistakes": 1,
-        "best_options": 0,
+        "mistakes": 0,
+        "best_options": 1,
         "style_specific": 0
       },
       "underused_angles": [
@@ -80973,11 +80759,11 @@
       ],
       "overused_angles": [],
       "intent_distribution": {
-        "comparison": 0,
+        "comparison": 1,
         "decision_making": 0,
         "implementation": 0,
         "inspiration": 0,
-        "problem_solving": 1
+        "problem_solving": 0
       },
       "underused_intents": [
         "comparison",
@@ -80989,31 +80775,30 @@
       "overused_intents": [],
       "recommended_concepts": [
         {
-          "cluster_id": "cottage_bathroom",
-          "cluster_name": "cottage bathroom",
-          "domain_id": "utility_transition",
-          "subtopic_id": "furniture",
-          "subtopic_name": "Furniture and Anchors",
-          "angle_id": "best_options",
-          "intent_id": "comparison",
+          "cluster_id": "coastal_bedroom",
+          "cluster_name": "coastal bedroom",
+          "domain_id": "bedrooms",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "how_to",
+          "intent_id": "implementation",
           "modifier": "",
-          "primary_keyword": "best furniture for a cottage bathroom",
+          "primary_keyword": "how to choose colors for a coastal bedroom",
           "secondary_keywords": [
-            "cottage bathroom ideas",
-            "how to style a cottage bathroom",
-            "cottage bathroom decor",
-            "cottage bathroom layout ideas"
+            "coastal bedroom ideas",
+            "how to style a coastal bedroom",
+            "coastal bedroom decor",
+            "coastal bedroom layout ideas"
           ],
-          "search_intent": "comparison",
+          "search_intent": "how_to",
           "season": "",
           "holiday": "",
           "source": "content_plan",
-          "editorial_mix_primary": "monetizable_decision",
+          "editorial_mix_primary": "evergreen_authority",
           "editorial_mix_tags": [
-            "monetizable_decision",
             "evergreen_authority"
           ],
-          "score": 74,
+          "score": 68,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -81023,35 +80808,34 @@
             "cluster_health": "underdeveloped",
             "pinterest_subtopic_signal": "no_data",
             "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
+            "editorial_mix_reason": "editorial mix: evergreen_authority is overrepresented recently (-6)"
           }
         },
         {
-          "cluster_id": "cottage_bathroom",
-          "cluster_name": "cottage bathroom",
-          "domain_id": "utility_transition",
-          "subtopic_id": "layout",
-          "subtopic_name": "Layout and Foundation",
-          "angle_id": "best_options",
-          "intent_id": "comparison",
+          "cluster_id": "coastal_bedroom",
+          "cluster_name": "coastal bedroom",
+          "domain_id": "bedrooms",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "ideas",
+          "intent_id": "inspiration",
           "modifier": "",
-          "primary_keyword": "best layout for a cottage bathroom",
+          "primary_keyword": "coastal bedroom color palette ideas",
           "secondary_keywords": [
-            "cottage bathroom ideas",
-            "how to style a cottage bathroom",
-            "cottage bathroom decor",
-            "cottage bathroom layout ideas"
+            "coastal bedroom ideas",
+            "how to style a coastal bedroom",
+            "coastal bedroom decor",
+            "coastal bedroom layout ideas"
           ],
-          "search_intent": "comparison",
+          "search_intent": "ideas",
           "season": "",
           "holiday": "",
           "source": "content_plan",
-          "editorial_mix_primary": "monetizable_decision",
+          "editorial_mix_primary": "evergreen_authority",
           "editorial_mix_tags": [
-            "monetizable_decision",
             "evergreen_authority"
           ],
-          "score": 74,
+          "score": 68,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -81061,35 +80845,34 @@
             "cluster_health": "underdeveloped",
             "pinterest_subtopic_signal": "no_data",
             "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
+            "editorial_mix_reason": "editorial mix: evergreen_authority is overrepresented recently (-6)"
           }
         },
         {
-          "cluster_id": "cottage_bathroom",
-          "cluster_name": "cottage bathroom",
-          "domain_id": "utility_transition",
-          "subtopic_id": "lighting",
-          "subtopic_name": "Lighting",
-          "angle_id": "best_options",
-          "intent_id": "comparison",
+          "cluster_id": "coastal_bedroom",
+          "cluster_name": "coastal bedroom",
+          "domain_id": "bedrooms",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "mistakes",
+          "intent_id": "problem_solving",
           "modifier": "",
-          "primary_keyword": "best lighting for a cottage bathroom",
+          "primary_keyword": "coastal bedroom color mistakes to avoid",
           "secondary_keywords": [
-            "cottage bathroom ideas",
-            "how to style a cottage bathroom",
-            "cottage bathroom decor",
-            "cottage bathroom layout ideas"
+            "coastal bedroom ideas",
+            "how to style a coastal bedroom",
+            "coastal bedroom decor",
+            "coastal bedroom layout ideas"
           ],
-          "search_intent": "comparison",
+          "search_intent": "problem_solution",
           "season": "",
           "holiday": "",
           "source": "content_plan",
-          "editorial_mix_primary": "monetizable_decision",
+          "editorial_mix_primary": "evergreen_authority",
           "editorial_mix_tags": [
-            "monetizable_decision",
             "evergreen_authority"
           ],
-          "score": 74,
+          "score": 68,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -81099,14 +80882,14 @@
             "cluster_health": "underdeveloped",
             "pinterest_subtopic_signal": "no_data",
             "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
+            "editorial_mix_reason": "editorial mix: evergreen_authority is overrepresented recently (-6)"
           }
         }
       ],
       "recommended_topics": [
-        "best furniture for a cottage bathroom",
-        "best layout for a cottage bathroom",
-        "best lighting for a cottage bathroom"
+        "how to choose colors for a coastal bedroom",
+        "coastal bedroom color palette ideas",
+        "coastal bedroom color mistakes to avoid"
       ],
       "priority_score": 70,
       "season": "",
@@ -81127,11 +80910,11 @@
         "cluster_signal_boost": 0
       },
       "seed_keywords": [
-        "cottage bathroom ideas",
-        "how to style a cottage bathroom",
-        "cottage bathroom decor",
-        "cottage bathroom layout ideas",
-        "cottage bathroom color palette"
+        "coastal bedroom ideas",
+        "how to style a coastal bedroom",
+        "coastal bedroom decor",
+        "coastal bedroom layout ideas",
+        "coastal bedroom color palette"
       ],
       "allowed_angle_ids": [
         "ideas",
@@ -81575,7 +81358,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-18",
-      "days_since_latest": 39,
+      "days_since_latest": 41,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -81788,7 +81571,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-23",
-      "days_since_latest": 35,
+      "days_since_latest": 37,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -82001,7 +81784,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-28",
-      "days_since_latest": 29,
+      "days_since_latest": 31,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -82214,7 +81997,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-30",
-      "days_since_latest": 28,
+      "days_since_latest": 30,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -82427,7 +82210,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-01",
-      "days_since_latest": 25,
+      "days_since_latest": 27,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation"
@@ -82642,7 +82425,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-01",
-      "days_since_latest": 25,
+      "days_since_latest": 27,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -82855,7 +82638,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-03",
-      "days_since_latest": 24,
+      "days_since_latest": 26,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -83071,7 +82854,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-06",
-      "days_since_latest": 21,
+      "days_since_latest": 23,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -83287,7 +83070,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-10",
-      "days_since_latest": 17,
+      "days_since_latest": 19,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -83500,7 +83283,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-13",
-      "days_since_latest": 14,
+      "days_since_latest": 16,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -83713,7 +83496,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-20",
-      "days_since_latest": 7,
+      "days_since_latest": 9,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -83929,7 +83712,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-22",
-      "days_since_latest": 5,
+      "days_since_latest": 7,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -84145,7 +83928,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-24",
-      "days_since_latest": 3,
+      "days_since_latest": 5,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -84350,6 +84133,222 @@
       ]
     },
     {
+      "cluster_id": "cottage_bathroom",
+      "cluster_name": "cottage bathroom",
+      "domain_id": "utility_transition",
+      "health_label": "underdeveloped",
+      "article_count": 1,
+      "article_capacity_target": 14,
+      "capacity_ratio": 0.07,
+      "growth_openings": 9,
+      "saturation_state": "needs_growth",
+      "selection_action": "boost",
+      "latest_publication_date": "2026-04-27",
+      "days_since_latest": 1,
+      "subtopics_total": 5,
+      "subtopics_covered": [
+        "Textures and Layers"
+      ],
+      "subtopic_ids_covered": [
+        "textures"
+      ],
+      "subtopics_missing": [
+        "Layout and Foundation",
+        "Color Palette",
+        "Furniture and Anchors",
+        "Lighting"
+      ],
+      "subtopic_ids_missing": [
+        "layout",
+        "colors",
+        "furniture",
+        "lighting"
+      ],
+      "angle_distribution": {
+        "ideas": 0,
+        "how_to": 0,
+        "mistakes": 1,
+        "best_options": 0,
+        "style_specific": 0
+      },
+      "underused_angles": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "style_specific"
+      ],
+      "overused_angles": [],
+      "intent_distribution": {
+        "comparison": 0,
+        "decision_making": 0,
+        "implementation": 0,
+        "inspiration": 0,
+        "problem_solving": 1
+      },
+      "underused_intents": [
+        "comparison",
+        "decision_making",
+        "implementation",
+        "inspiration",
+        "problem_solving"
+      ],
+      "overused_intents": [],
+      "recommended_concepts": [
+        {
+          "cluster_id": "cottage_bathroom",
+          "cluster_name": "cottage bathroom",
+          "domain_id": "utility_transition",
+          "subtopic_id": "furniture",
+          "subtopic_name": "Furniture and Anchors",
+          "angle_id": "best_options",
+          "intent_id": "comparison",
+          "modifier": "",
+          "primary_keyword": "best furniture for a cottage bathroom",
+          "secondary_keywords": [
+            "cottage bathroom ideas",
+            "how to style a cottage bathroom",
+            "cottage bathroom decor",
+            "cottage bathroom layout ideas"
+          ],
+          "search_intent": "comparison",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "monetizable_decision",
+          "editorial_mix_tags": [
+            "monetizable_decision",
+            "evergreen_authority"
+          ],
+          "score": 68,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        },
+        {
+          "cluster_id": "cottage_bathroom",
+          "cluster_name": "cottage bathroom",
+          "domain_id": "utility_transition",
+          "subtopic_id": "layout",
+          "subtopic_name": "Layout and Foundation",
+          "angle_id": "best_options",
+          "intent_id": "comparison",
+          "modifier": "",
+          "primary_keyword": "best layout for a cottage bathroom",
+          "secondary_keywords": [
+            "cottage bathroom ideas",
+            "how to style a cottage bathroom",
+            "cottage bathroom decor",
+            "cottage bathroom layout ideas"
+          ],
+          "search_intent": "comparison",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "monetizable_decision",
+          "editorial_mix_tags": [
+            "monetizable_decision",
+            "evergreen_authority"
+          ],
+          "score": 68,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        },
+        {
+          "cluster_id": "cottage_bathroom",
+          "cluster_name": "cottage bathroom",
+          "domain_id": "utility_transition",
+          "subtopic_id": "lighting",
+          "subtopic_name": "Lighting",
+          "angle_id": "best_options",
+          "intent_id": "comparison",
+          "modifier": "",
+          "primary_keyword": "best lighting for a cottage bathroom",
+          "secondary_keywords": [
+            "cottage bathroom ideas",
+            "how to style a cottage bathroom",
+            "cottage bathroom decor",
+            "cottage bathroom layout ideas"
+          ],
+          "search_intent": "comparison",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "monetizable_decision",
+          "editorial_mix_tags": [
+            "monetizable_decision",
+            "evergreen_authority"
+          ],
+          "score": 68,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        }
+      ],
+      "recommended_topics": [
+        "best furniture for a cottage bathroom",
+        "best layout for a cottage bathroom",
+        "best lighting for a cottage bathroom"
+      ],
+      "priority_score": 64,
+      "season": "",
+      "holiday": "",
+      "source": "content architecture",
+      "pinterest_signal": {
+        "label": "cold",
+        "boost": -6,
+        "pinterest_article_count": 1,
+        "strong_article_count": 0,
+        "weak_article_count": 1,
+        "average_score": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_saves": 0.0
+      },
+      "pinterest_intelligence": {
+        "cluster_signal_label": "no_data",
+        "cluster_signal_boost": 0
+      },
+      "seed_keywords": [
+        "cottage bathroom ideas",
+        "how to style a cottage bathroom",
+        "cottage bathroom decor",
+        "cottage bathroom layout ideas",
+        "cottage bathroom color palette"
+      ],
+      "allowed_angle_ids": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "style_specific"
+      ]
+    },
+    {
       "cluster_id": "spring_bedroom_refresh",
       "cluster_name": "spring bedroom refresh",
       "domain_id": "seasonal_styling",
@@ -84361,7 +84360,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-02",
-      "days_since_latest": 25,
+      "days_since_latest": 27,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Seasonal Refresh"
@@ -84573,7 +84572,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-15",
-      "days_since_latest": 12,
+      "days_since_latest": 14,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Seasonal Refresh",

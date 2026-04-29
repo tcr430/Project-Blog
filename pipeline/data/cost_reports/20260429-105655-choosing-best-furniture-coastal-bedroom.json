@@ -1,0 +1,297 @@
+{
+  "generated_at": "2026-04-29T10:56:55.592273+00:00",
+  "trend": "best furniture for a coastal bedroom",
+  "slug": "choosing-best-furniture-coastal-bedroom",
+  "article_generation": {
+    "cache_hit": false,
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/article_packages/daaa58619294498c337cc006750ffb8b18e4f13173d2e3d2c50418b70486603d.json",
+    "model": "gpt-4.1-mini",
+    "generation_calls": 1,
+    "short_retries": 0,
+    "angle_retries": 0,
+    "product_retries": 0,
+    "selected_products": 0,
+    "affiliate_mode": false,
+    "monetization_profile_id": "commercial_strong",
+    "generated_link_count": 0,
+    "primary_keyword": "best furniture for a coastal bedroom",
+    "topical_cluster": "coastal bedroom"
+  },
+  "seo_validation": {
+    "article_slug": "choosing-best-furniture-coastal-bedroom",
+    "cluster": "coastal bedroom",
+    "cluster_id": "coastal bedroom",
+    "subtopic_id": "furniture",
+    "subtopic_name": "furniture and anchors",
+    "angle_id": "best options",
+    "intent_id": "comparison",
+    "primary_keyword": "best furniture for a coastal bedroom",
+    "validation_status": "warning",
+    "warnings": [
+      "Display title still uses an overused opening pattern.",
+      "Primary keyword appears very lightly in the article body."
+    ],
+    "errors": [],
+    "duplicate_candidate_slugs": [],
+    "timestamp": "2026-04-29T10:52:41.193814+00:00"
+  },
+  "editorial_validation": {
+    "article_slug": "choosing-best-furniture-coastal-bedroom",
+    "cluster_id": "coastal_bedroom",
+    "subtopic_id": "furniture",
+    "angle_id": "best_options",
+    "primary_keyword": "best furniture for a coastal bedroom",
+    "validation_status": "pass",
+    "warnings": [],
+    "errors": [],
+    "checks": {
+      "generic_intro": {
+        "intro_word_count": 117,
+        "concept_overlap": 4,
+        "first_sentence": "Choosing the right furniture for a coastal bedroom often feels like navigating a delicate balance: you want pieces that evoke the serene, breezy feeling of the coast without slipping into over-styled or cliché décor."
+      },
+      "heading_quality": {
+        "heading_count": 5,
+        "vague_heading_count": 0,
+        "low_specificity_heading_count": 1,
+        "repeated_signature_count": 0,
+        "repeated_stem_count": 0,
+        "headings": [
+          "Establishing Key Furniture Criteria for a Coastal Bedroom",
+          "When Solid Oak and Natural Woods Set the Tone",
+          "Painted Furniture for a Softer Coastal Contrast",
+          "Matching Furniture Choices to Room Size and Layout Considerations",
+          "Confidently Narrowing Down Your Coastal Bedroom Furniture"
+        ]
+      },
+      "specificity": {
+        "concept_token_hits": 9,
+        "specificity_term_hits": 12,
+        "secondary_keyword_hits": 1
+      },
+      "distinctiveness": {
+        "nearest_article_slug": "",
+        "max_similarity": 0.0,
+        "strongest_heading_overlap": 0
+      }
+    },
+    "timestamp": "2026-04-29T10:52:41.197577+00:00"
+  },
+  "image_generation": {
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/image_generation_cache/choosing-best-furniture-coastal-bedroom.json",
+    "provider": "flux",
+    "provider_model": "flux-2-max",
+    "model": "flux-2-max",
+    "fallback_provider": "openai",
+    "fallback_model": "gpt-image-1",
+    "size": "1536x1024",
+    "hero_quality": "high",
+    "section_quality": "medium",
+    "allow_fallback": true,
+    "fallback_events": 0,
+    "generated_images": 6,
+    "cache_hits": 0,
+    "generation_calls": 6,
+    "qa_calls": 1,
+    "details": [
+      {
+        "label": "hero",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 1,
+        "quality": "high",
+        "qa_enabled": true,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "e44b62ad-27e9-4aec-89c8-813ff824bb5b",
+            "polling_url": "https://api.us3.bfl.ai/v1/get_result?id=e44b62ad-27e9-4aec-89c8-813ff824bb5b",
+            "poll_attempts": 32,
+            "provider_status": "Ready",
+            "elapsed_seconds": 43.61,
+            "quality": "high",
+            "elapsed_seconds_total": 43.61,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation",
+        "qa_reason": "The image shows a realistic, editorial-style bedroom vignette with warm daylight and a restrained coastal-inspired palette of creams, camel, honey wood, and terracotta accents. It features one main bed with coordinated bedside tables and lighting, good spatial depth, and a single focal point. The styling is layered, tactile, and inviting, suitable for a decor blog article on coastal bedroom furniture."
+      },
+      {
+        "label": "section-1",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "6c71a686-8408-45ee-90e6-8c3a306dd567",
+            "polling_url": "https://api.us4.bfl.ai/v1/get_result?id=6c71a686-8408-45ee-90e6-8c3a306dd567",
+            "poll_attempts": 42,
+            "provider_status": "Ready",
+            "elapsed_seconds": 56.96,
+            "quality": "medium",
+            "elapsed_seconds_total": 56.96,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-2",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "0fc07de4-50c7-4829-8b50-ce04d2e12ec0",
+            "polling_url": "https://api.eu5.bfl.ai/v1/get_result?id=0fc07de4-50c7-4829-8b50-ce04d2e12ec0",
+            "poll_attempts": 23,
+            "provider_status": "Ready",
+            "elapsed_seconds": 36.1,
+            "quality": "medium",
+            "elapsed_seconds_total": 36.1,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-3",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "afbc86e0-6971-4fce-9540-2b4c2213f192",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=afbc86e0-6971-4fce-9540-2b4c2213f192",
+            "poll_attempts": 22,
+            "provider_status": "Ready",
+            "elapsed_seconds": 30.34,
+            "quality": "medium",
+            "elapsed_seconds_total": 30.34,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-4",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "ce0f7d3c-f6f6-46ec-aa69-63035d8e5f5a",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=ce0f7d3c-f6f6-46ec-aa69-63035d8e5f5a",
+            "poll_attempts": 20,
+            "provider_status": "Ready",
+            "elapsed_seconds": 31.62,
+            "quality": "medium",
+            "elapsed_seconds_total": 31.62,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-5",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "b781937a-b0d6-4da3-a55f-1c27cbaa8ef7",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=b781937a-b0d6-4da3-a55f-1c27cbaa8ef7",
+            "poll_attempts": 23,
+            "provider_status": "Ready",
+            "elapsed_seconds": 31.02,
+            "quality": "medium",
+            "elapsed_seconds_total": 31.02,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      }
+    ]
+  },
+  "pinterest": {
+    "variants_requested": 4,
+    "pin_assets_generated": false,
+    "mode": null
+  }
+}

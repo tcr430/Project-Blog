@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "8ec6fe83eb43cc5f38d2e6709462d485f5185e64d1f517dfcf89aa1b05e6f273",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/choosing-best-furniture-coastal-bedroom/hero.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-1": {
+    "cache_key": "17f4a2e807d3ef531175e6d8123cb26a18717b92f7352cce6212683b915a3468",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/choosing-best-furniture-coastal-bedroom/section-1.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-2": {
+    "cache_key": "c837efdd37a63ea7af79e29d9b9140a4a4f75668760d8fc2fe1efb6861bc8e77",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/choosing-best-furniture-coastal-bedroom/section-2.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-3": {
+    "cache_key": "b32199f90fb8f732fee927117290f9d837cf6700da3d2af5ee9477ed7e8c6b3e",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/choosing-best-furniture-coastal-bedroom/section-3.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-4": {
+    "cache_key": "21f285a045a8795dda4cd365ac5429a01b17e661a4de3484c775ac7096f7ebd4",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/choosing-best-furniture-coastal-bedroom/section-4.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-5": {
+    "cache_key": "e0a5e222dc72cd30e484beca23f7b1cc9c927fe1564ddc9c72267794e2df54f1",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/choosing-best-furniture-coastal-bedroom/section-5.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  }
+}
