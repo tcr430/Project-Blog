@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-29T07:57:01.226482+00:00",
+  "generated_at": "2026-04-29T13:17:21.495476+00:00",
   "history_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_history.json",
-  "published_pin_count": 39,
+  "published_pin_count": 40,
   "global_metrics": {
-    "published_pins": 39,
+    "published_pins": 40,
     "analytics_ready_pins": 0,
     "average_impressions": null,
     "average_saves": null,
@@ -15,7 +15,7 @@
   "performance_by_variant_type": [
     {
       "variant_type": "trend_overview",
-      "published_pins": 16,
+      "published_pins": 17,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -61,7 +61,7 @@
   "performance_by_board": [
     {
       "board_key": "bedroom",
-      "published_pins": 17,
+      "published_pins": 18,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -344,13 +344,27 @@
       "score": 0,
       "classification": "underperforming",
       "reasons": []
+    },
+    {
+      "article_slug": "choosing-best-furniture-coastal-bedroom",
+      "published_pins": 1,
+      "analytics_ready_pins": 0,
+      "average_impressions": null,
+      "average_saves": null,
+      "average_outbound_clicks": null,
+      "average_pin_clicks": null,
+      "average_closeups": null,
+      "average_engagement_rate": null,
+      "score": 0,
+      "classification": "underperforming",
+      "reasons": []
     }
   ],
   "rankings": {
     "top_variant_types": [
       {
         "variant_type": "trend_overview",
-        "published_pins": 16,
+        "published_pins": 17,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -396,7 +410,7 @@
     "top_boards": [
       {
         "board_key": "bedroom",
-        "published_pins": 17,
+        "published_pins": 18,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
