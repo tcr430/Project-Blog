@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-30T19:03:54.406019+00:00",
+  "generated_at": "2026-05-01T01:50:09.146043+00:00",
   "history_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_history.json",
-  "published_pin_count": 42,
+  "published_pin_count": 44,
   "global_metrics": {
-    "published_pins": 42,
+    "published_pins": 44,
     "analytics_ready_pins": 0,
     "average_impressions": null,
     "average_saves": null,
@@ -26,7 +26,7 @@
     },
     {
       "variant_type": "practical_tips",
-      "published_pins": 10,
+      "published_pins": 11,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -48,7 +48,7 @@
     },
     {
       "variant_type": "styling_angle",
-      "published_pins": 6,
+      "published_pins": 7,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -61,7 +61,7 @@
   "performance_by_board": [
     {
       "board_key": "bedroom",
-      "published_pins": 19,
+      "published_pins": 20,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -97,7 +97,7 @@
     },
     {
       "board_key": "bathroom",
-      "published_pins": 11,
+      "published_pins": 12,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -123,7 +123,7 @@
   "performance_by_article": [
     {
       "article_slug": "best-furniture-for-earthy-bedroom",
-      "published_pins": 3,
+      "published_pins": 4,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -305,7 +305,7 @@
     },
     {
       "article_slug": "japandi-bathroom-texture-mistakes-to-avoid",
-      "published_pins": 1,
+      "published_pins": 2,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -375,7 +375,7 @@
       },
       {
         "variant_type": "practical_tips",
-        "published_pins": 10,
+        "published_pins": 11,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -397,7 +397,7 @@
       },
       {
         "variant_type": "styling_angle",
-        "published_pins": 6,
+        "published_pins": 7,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -410,7 +410,7 @@
     "top_boards": [
       {
         "board_key": "bedroom",
-        "published_pins": 19,
+        "published_pins": 20,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -446,7 +446,7 @@
       },
       {
         "board_key": "bathroom",
-        "published_pins": 11,
+        "published_pins": 12,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -472,7 +472,7 @@
     "top_articles": [
       {
         "article_slug": "best-furniture-for-earthy-bedroom",
-        "published_pins": 3,
+        "published_pins": 4,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -544,7 +544,7 @@
     "weak_articles": [
       {
         "article_slug": "best-furniture-for-earthy-bedroom",
-        "published_pins": 3,
+        "published_pins": 4,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
