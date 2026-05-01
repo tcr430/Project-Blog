@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-04-29T10:56:55.780168+00:00",
-  "cluster_count": 28,
-  "article_count": 29,
+  "generated_at": "2026-05-01T10:24:57.461390+00:00",
+  "cluster_count": 29,
+  "article_count": 30,
   "subtopic_count": 7,
   "angle_count": 5,
   "angle_distribution": {
-    "best_options": 14,
+    "best_options": 15,
     "how_to": 2,
     "ideas": 4,
     "mistakes": 8,
@@ -105,6 +105,50 @@
           "latest_article_date": "",
           "representative_article_slugs": [
             "best-curtain-styling-for-bedroom-mistakes-fixes"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "best_options": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_id": "coastal_bathroom",
+      "cluster_name": "coastal bathroom",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "utility_transition"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "best furniture for a coastal bathroom"
+      ],
+      "latest_article_date": "2026-05-01",
+      "latest_publication": {
+        "article_slug": "best-furniture-for-coastal-bathroom",
+        "article_title": "Best Furniture for a Coastal Bathroom",
+        "publish_date": "2026-05-01",
+        "subtopic_id": "furniture",
+        "subtopic_name": "furniture and anchors",
+        "angle_id": "best_options"
+      },
+      "representative_article_slugs": [
+        "best-furniture-for-coastal-bathroom"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "furniture",
+          "subtopic_name": "furniture and anchors",
+          "article_count": 1,
+          "latest_article_date": "2026-05-01",
+          "representative_article_slugs": [
+            "best-furniture-for-coastal-bathroom"
           ]
         }
       ],

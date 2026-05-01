@@ -7,7 +7,7 @@ cluster_name: "parisian bathroom"
 cluster_slug: "parisian-bathroom"
 cluster_article_count: 1
 cluster_primary_keywords: ["parisian bathroom texture mistakes to avoid"]
-cluster_generated_at: "2026-04-29T10:56:57.507506+00:00"
+cluster_generated_at: "2026-05-01T10:24:59.183805+00:00"
 cluster_intro: "Parisian Bathroom is a useful decorating topic because it combines inspiration with practical decision-making. Readers usually arrive here looking for a clear style direction, help solving a room problem, or confidence about how to make the look feel intentional at home.
 
 This pillar page brings together the site's coverage around parisian bathroom, with article angles shaped by keyword themes such as parisian bathroom texture mistakes to avoid. That mix helps the page support both broader search intent and more specific decorating questions without feeling repetitive.
@@ -49,6 +49,12 @@ These adjacent hubs help readers keep moving through the topic without losing th
 
 <div class="cluster-hub-grid">
 <div class="cluster-hub-card">
+<h3><a href="/clusters/coastal-bathroom/">Coastal Bathroom</a></h3>
+<p>Broad editorial cluster for coastal bathroom topics.</p>
+<p class="cluster-hub-meta">1 article</p>
+<p><a class="cluster-hub-link" href="/clusters/coastal-bathroom/">Open this cluster</a></p>
+</div>
+<div class="cluster-hub-card">
 <h3><a href="/clusters/cottage-bathroom/">Cottage Bathroom</a></h3>
 <p>Broad editorial cluster for cottage bathroom topics.</p>
 <p class="cluster-hub-meta">1 article</p>
@@ -60,12 +66,6 @@ These adjacent hubs help readers keep moving through the topic without losing th
 <p class="cluster-hub-meta">1 article</p>
 <p><a class="cluster-hub-link" href="/clusters/earthy-bathroom/">Open this cluster</a></p>
 </div>
-<div class="cluster-hub-card">
-<h3><a href="/clusters/japandi-bathroom/">Japandi Bathroom</a></h3>
-<p>Broad editorial cluster for japandi bathroom topics.</p>
-<p class="cluster-hub-meta">1 article</p>
-<p><a class="cluster-hub-link" href="/clusters/japandi-bathroom/">Open this cluster</a></p>
-</div>
 </div>
 
 ## Read Next
@@ -73,5 +73,5 @@ These adjacent hubs help readers keep moving through the topic without losing th
 A simple path through this topic so readers can build confidence one step at a time:
 
 1. Start with [Parisian Bathroom Texture Mistakes to Avoid](/mistakes%20%26%20fixes/2026/04/03/parisian-bathroom-texture-mistakes-to-avoid/) for the broadest orientation.
-2. After that, move into [Cottage Bathroom](/clusters/cottage-bathroom/) to keep the topic expanding naturally.
-3. After that, move into [Earthy Bathroom](/clusters/earthy-bathroom/) to keep the topic expanding naturally.
+2. After that, move into [Coastal Bathroom](/clusters/coastal-bathroom/) to keep the topic expanding naturally.
+3. After that, move into [Cottage Bathroom](/clusters/cottage-bathroom/) to keep the topic expanding naturally.

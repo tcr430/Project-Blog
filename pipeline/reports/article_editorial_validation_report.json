@@ -1,6 +1,50 @@
 {
-  "generated_at": "2026-04-29T10:52:41.197874+00:00",
+  "generated_at": "2026-05-01T10:21:24.850332+00:00",
   "articles": [
+    {
+      "article_slug": "best-furniture-for-coastal-bathroom",
+      "cluster_id": "coastal_bathroom",
+      "subtopic_id": "furniture",
+      "angle_id": "best_options",
+      "primary_keyword": "best furniture for a coastal bathroom",
+      "validation_status": "warning",
+      "warnings": [
+        "Several section headings do not signal the topic strongly enough."
+      ],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 130,
+          "concept_overlap": 6,
+          "first_sentence": "Choosing the best furniture for a coastal bathroom is a task that demands more than just picking pretty pieces."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 2,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Defining Furniture Standards for Coastal Bathrooms: Durability Meets Design",
+            "Timber Vanities: The Quintessential Coastal Anchor",
+            "Metal Accents and Framework: Sharp Lines Against Soft Coastals",
+            "Matching Furniture to Your Bathroom Size and Layout",
+            "Narrowing Choices with Confident Buying Criteria"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 7,
+          "specificity_term_hits": 12,
+          "secondary_keyword_hits": 1
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-05-01T10:21:24.850029+00:00"
+    },
     {
       "article_slug": "choosing-best-furniture-coastal-bedroom",
       "cluster_id": "coastal_bedroom",

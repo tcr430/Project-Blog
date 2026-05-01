@@ -1,12 +1,30 @@
 {
-  "generated_at": "2026-04-29T10:51:52.514383+00:00",
+  "generated_at": "2026-05-01T10:20:07.000916+00:00",
   "overview": {
-    "pin_count": 65,
-    "published_pin_count": 39,
+    "pin_count": 68,
+    "published_pin_count": 44,
     "analytics_ready_pin_count": 0,
-    "tracked_article_count": 19
+    "tracked_article_count": 20
   },
   "best_performing_clusters": [
+    {
+      "cluster_id": "coastal_bedroom",
+      "cluster_name": "coastal bedroom",
+      "pin_count": 3,
+      "published_pin_count": 1,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "choosing-best-furniture-coastal-bedroom"
+      ]
+    },
     {
       "cluster_id": "cottage_bathroom",
       "cluster_name": "cottage bathroom",
@@ -65,7 +83,7 @@
       "cluster_id": "earthy_bedroom",
       "cluster_name": "earthy bedroom",
       "pin_count": 4,
-      "published_pin_count": 3,
+      "published_pin_count": 4,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -83,7 +101,7 @@
       "cluster_id": "japandi_bathroom",
       "cluster_name": "japandi bathroom",
       "pin_count": 3,
-      "published_pin_count": 1,
+      "published_pin_count": 2,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -101,7 +119,7 @@
       "cluster_id": "japandi_bedroom",
       "cluster_name": "japandi bedroom",
       "pin_count": 3,
-      "published_pin_count": 1,
+      "published_pin_count": 2,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -191,7 +209,7 @@
       "cluster_id": "neutral_bedroom",
       "cluster_name": "neutral bedroom",
       "pin_count": 4,
-      "published_pin_count": 3,
+      "published_pin_count": 4,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -394,7 +412,7 @@
       "subtopic_id": "furniture",
       "subtopic_name": "furniture and anchors",
       "pin_count": 4,
-      "published_pin_count": 3,
+      "published_pin_count": 4,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -523,6 +541,25 @@
       ]
     },
     {
+      "cluster_id": "coastal_bedroom",
+      "subtopic_id": "furniture",
+      "subtopic_name": "furniture and anchors",
+      "pin_count": 3,
+      "published_pin_count": 1,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "choosing-best-furniture-coastal-bedroom"
+      ]
+    },
+    {
       "cluster_id": "neutral_bathroom",
       "subtopic_id": "layout",
       "subtopic_name": "layout and foundation",
@@ -546,7 +583,7 @@
       "subtopic_id": "layout",
       "subtopic_name": "layout and foundation",
       "pin_count": 4,
-      "published_pin_count": 3,
+      "published_pin_count": 4,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -641,7 +678,7 @@
       "subtopic_id": "textures",
       "subtopic_name": "textures and layers",
       "pin_count": 3,
-      "published_pin_count": 1,
+      "published_pin_count": 2,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -660,7 +697,7 @@
       "subtopic_id": "textures",
       "subtopic_name": "textures and layers",
       "pin_count": 3,
-      "published_pin_count": 1,
+      "published_pin_count": 2,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -716,8 +753,8 @@
   "best_performing_angles": [
     {
       "angle_id": "best_options",
-      "pin_count": 30,
-      "published_pin_count": 19,
+      "pin_count": 33,
+      "published_pin_count": 21,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -738,7 +775,7 @@
     {
       "angle_id": "how_to",
       "pin_count": 8,
-      "published_pin_count": 3,
+      "published_pin_count": 4,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -773,7 +810,7 @@
     {
       "angle_id": "mistakes",
       "pin_count": 24,
-      "published_pin_count": 15,
+      "published_pin_count": 17,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -971,7 +1008,7 @@
       "visual_family_id": "warm_layered",
       "shot_library_id": "general_decor",
       "intent_id": "comparison",
-      "pin_count": 4,
+      "pin_count": 5,
       "published_pin_count": 3,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -986,7 +1023,8 @@
         "best-furniture-for-earthy-bedroom",
         "best-furniture-for-scandinavian-bedroom",
         "best-furniture-minimalist-bathroom",
-        "best-furniture-transitional-bedroom"
+        "best-furniture-transitional-bedroom",
+        "choosing-best-furniture-coastal-bedroom"
       ]
     },
     {
@@ -1189,7 +1227,7 @@
       "visual_family_id": "warm_layered",
       "shot_library_id": "general_decor",
       "intent_id": "comparison",
-      "pin_count": 3,
+      "pin_count": 4,
       "published_pin_count": 2,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1203,7 +1241,8 @@
       "top_article_slugs": [
         "best-furniture-for-earthy-bedroom",
         "best-furniture-for-scandinavian-bedroom",
-        "best-furniture-transitional-bedroom"
+        "best-furniture-transitional-bedroom",
+        "choosing-best-furniture-coastal-bedroom"
       ]
     },
     {
@@ -1363,7 +1402,7 @@
       "shot_library_id": "textures_materials",
       "intent_id": "problem_solving",
       "pin_count": 1,
-      "published_pin_count": 0,
+      "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -1513,7 +1552,7 @@
       "shot_library_id": "color_palette",
       "intent_id": "implementation",
       "pin_count": 1,
-      "published_pin_count": 0,
+      "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -1580,8 +1619,8 @@
       "visual_family_id": "warm_layered",
       "shot_library_id": "general_decor",
       "intent_id": "comparison",
-      "pin_count": 3,
-      "published_pin_count": 1,
+      "pin_count": 4,
+      "published_pin_count": 3,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -1594,7 +1633,8 @@
       "top_article_slugs": [
         "best-furniture-for-earthy-bedroom",
         "best-furniture-for-scandinavian-bedroom",
-        "best-furniture-transitional-bedroom"
+        "best-furniture-transitional-bedroom",
+        "choosing-best-furniture-coastal-bedroom"
       ]
     },
     {
@@ -1604,7 +1644,7 @@
       "shot_library_id": "textures_materials",
       "intent_id": "problem_solving",
       "pin_count": 1,
-      "published_pin_count": 0,
+      "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -1621,6 +1661,24 @@
   ],
   "top_rankings": {
     "clusters": [
+      {
+        "cluster_id": "coastal_bedroom",
+        "cluster_name": "coastal bedroom",
+        "pin_count": 3,
+        "published_pin_count": 1,
+        "analytics_ready_count": 0,
+        "average_score": 0.0,
+        "average_impressions": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_pin_clicks": 0.0,
+        "average_closeups": 0.0,
+        "signal_label": "no_data",
+        "signal_boost": 0,
+        "top_article_slugs": [
+          "choosing-best-furniture-coastal-bedroom"
+        ]
+      },
       {
         "cluster_id": "cottage_bathroom",
         "cluster_name": "cottage bathroom",
@@ -1679,7 +1737,7 @@
         "cluster_id": "earthy_bedroom",
         "cluster_name": "earthy bedroom",
         "pin_count": 4,
-        "published_pin_count": 3,
+        "published_pin_count": 4,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,
@@ -1691,24 +1749,6 @@
         "signal_boost": 0,
         "top_article_slugs": [
           "best-furniture-for-earthy-bedroom"
-        ]
-      },
-      {
-        "cluster_id": "japandi_bathroom",
-        "cluster_name": "japandi bathroom",
-        "pin_count": 3,
-        "published_pin_count": 1,
-        "analytics_ready_count": 0,
-        "average_score": 0.0,
-        "average_impressions": 0.0,
-        "average_saves": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_pin_clicks": 0.0,
-        "average_closeups": 0.0,
-        "signal_label": "no_data",
-        "signal_boost": 0,
-        "top_article_slugs": [
-          "japandi-bathroom-texture-mistakes-to-avoid"
         ]
       }
     ],
@@ -1756,7 +1796,7 @@
         "subtopic_id": "furniture",
         "subtopic_name": "furniture and anchors",
         "pin_count": 4,
-        "published_pin_count": 3,
+        "published_pin_count": 4,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,
@@ -1812,8 +1852,8 @@
     "angles": [
       {
         "angle_id": "best_options",
-        "pin_count": 30,
-        "published_pin_count": 19,
+        "pin_count": 33,
+        "published_pin_count": 21,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,
@@ -1834,7 +1874,7 @@
       {
         "angle_id": "how_to",
         "pin_count": 8,
-        "published_pin_count": 3,
+        "published_pin_count": 4,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,
@@ -1869,7 +1909,7 @@
       {
         "angle_id": "mistakes",
         "pin_count": 24,
-        "published_pin_count": 15,
+        "published_pin_count": 17,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,

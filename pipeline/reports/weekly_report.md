@@ -1,21 +1,21 @@
 # Weekly Pipeline Report
 
-Generated: 2026-04-29
+Generated: 2026-05-01
 Window: last 7 days
 
 Articles Published: 3  
 Pins Generated: 9  
 Pins Scheduled: 21  
-Pins Published: 12  
+Pins Published: 14  
 Repins Scheduled: 0
 
 ## Articles Published
+- best-furniture-for-coastal-bathroom
 - choosing-best-furniture-coastal-bedroom
 - cottage-bathroom-texture-mistakes-to-avoid
-- cottage-bedroom-texture-mistakes-to-avoid
 
 ## Top Performing Pins
-- 4 Pieces That Elevate The Best Furniture for an Earthy Bedroom: a Practical Guide to... (product_led, Home Finds & Decor Picks) - 0 clicks, 0 saves, 0 impressions
+- How to Style The Best Furniture for an Earthy Bedroom: a Practical Guide to Warm... (styling_angle, Bedroom Retreat Ideas) - 0 clicks, 0 saves, 0 impressions
 - 4 Pieces That Elevate Best Furniture for an Earthy Bathroom: Finding the Perfect... (product_led, Bathroom Styling Notes) - 0 clicks, 0 saves, 0 impressions
 - How to Choose the Best Furniture for a Scandinavian Bedroom (trend_overview, Bedroom Retreat Ideas) - 0 clicks, 0 saves, 0 impressions
 - How to Style Best Furniture for a Scandinavian Bathroom: Practical Choices with Iconic... (styling_angle, Bathroom Styling Notes) - 0 clicks, 0 saves, 0 impressions

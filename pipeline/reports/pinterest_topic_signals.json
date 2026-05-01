@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-29T10:56:55.783758+00:00",
-  "cluster_count": 28,
+  "generated_at": "2026-05-01T10:24:57.465022+00:00",
+  "cluster_count": 29,
   "summary": {
     "hot": 0,
     "warm": 0,
-    "cold": 16,
+    "cold": 17,
     "no_data": 12
   },
   "clusters": [
@@ -32,6 +32,30 @@
       "signal_boost": 0
     },
     {
+      "cluster_name": "coastal bathroom",
+      "article_count": 1,
+      "article_slugs": [
+        "best-furniture-for-coastal-bathroom"
+      ],
+      "primary_keywords": [
+        "best furniture for a coastal bathroom"
+      ],
+      "secondary_keywords": [
+        "coastal bathroom ideas",
+        "how to style a coastal bathroom",
+        "coastal bathroom decor",
+        "coastal bathroom layout ideas"
+      ],
+      "pinterest_article_count": 0,
+      "strong_article_count": 0,
+      "weak_article_count": 0,
+      "average_score": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_saves": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0
+    },
+    {
       "cluster_name": "coastal bedroom",
       "article_count": 1,
       "article_slugs": [
@@ -46,14 +70,14 @@
         "coastal bedroom decor",
         "coastal bedroom layout ideas"
       ],
-      "pinterest_article_count": 0,
+      "pinterest_article_count": 1,
       "strong_article_count": 0,
-      "weak_article_count": 0,
+      "weak_article_count": 1,
       "average_score": 0.0,
       "average_outbound_clicks": 0.0,
       "average_saves": 0.0,
-      "signal_label": "no_data",
-      "signal_boost": 0
+      "signal_label": "cold",
+      "signal_boost": -6
     },
     {
       "cluster_name": "cottage bathroom",

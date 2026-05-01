@@ -1,0 +1,298 @@
+{
+  "generated_at": "2026-05-01T10:24:57.271893+00:00",
+  "trend": "best furniture for a coastal bathroom",
+  "slug": "best-furniture-for-coastal-bathroom",
+  "article_generation": {
+    "cache_hit": false,
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/article_packages/2617d411baa2f9da1e097351e4424d1e492e470bf04848a1d6b42c38f885c399.json",
+    "model": "gpt-4.1-mini",
+    "generation_calls": 2,
+    "short_retries": 1,
+    "angle_retries": 0,
+    "product_retries": 0,
+    "selected_products": 0,
+    "affiliate_mode": false,
+    "monetization_profile_id": "commercial_strong",
+    "generated_link_count": 0,
+    "primary_keyword": "best furniture for a coastal bathroom",
+    "topical_cluster": "coastal bathroom"
+  },
+  "seo_validation": {
+    "article_slug": "best-furniture-for-coastal-bathroom",
+    "cluster": "coastal bathroom",
+    "cluster_id": "coastal bathroom",
+    "subtopic_id": "furniture",
+    "subtopic_name": "furniture and anchors",
+    "angle_id": "best options",
+    "intent_id": "comparison",
+    "primary_keyword": "best furniture for a coastal bathroom",
+    "validation_status": "warning",
+    "warnings": [
+      "Display title still uses an overused opening pattern."
+    ],
+    "errors": [],
+    "duplicate_candidate_slugs": [],
+    "timestamp": "2026-05-01T10:21:24.846209+00:00"
+  },
+  "editorial_validation": {
+    "article_slug": "best-furniture-for-coastal-bathroom",
+    "cluster_id": "coastal_bathroom",
+    "subtopic_id": "furniture",
+    "angle_id": "best_options",
+    "primary_keyword": "best furniture for a coastal bathroom",
+    "validation_status": "warning",
+    "warnings": [
+      "Several section headings do not signal the topic strongly enough."
+    ],
+    "errors": [],
+    "checks": {
+      "generic_intro": {
+        "intro_word_count": 130,
+        "concept_overlap": 6,
+        "first_sentence": "Choosing the best furniture for a coastal bathroom is a task that demands more than just picking pretty pieces."
+      },
+      "heading_quality": {
+        "heading_count": 5,
+        "vague_heading_count": 0,
+        "low_specificity_heading_count": 2,
+        "repeated_signature_count": 0,
+        "repeated_stem_count": 0,
+        "headings": [
+          "Defining Furniture Standards for Coastal Bathrooms: Durability Meets Design",
+          "Timber Vanities: The Quintessential Coastal Anchor",
+          "Metal Accents and Framework: Sharp Lines Against Soft Coastals",
+          "Matching Furniture to Your Bathroom Size and Layout",
+          "Narrowing Choices with Confident Buying Criteria"
+        ]
+      },
+      "specificity": {
+        "concept_token_hits": 7,
+        "specificity_term_hits": 12,
+        "secondary_keyword_hits": 1
+      },
+      "distinctiveness": {
+        "nearest_article_slug": "",
+        "max_similarity": 0.0,
+        "strongest_heading_overlap": 0
+      }
+    },
+    "timestamp": "2026-05-01T10:21:24.850029+00:00"
+  },
+  "image_generation": {
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/image_generation_cache/best-furniture-for-coastal-bathroom.json",
+    "provider": "flux",
+    "provider_model": "flux-2-max",
+    "model": "flux-2-max",
+    "fallback_provider": "openai",
+    "fallback_model": "gpt-image-1",
+    "size": "1536x1024",
+    "hero_quality": "high",
+    "section_quality": "medium",
+    "allow_fallback": true,
+    "fallback_events": 0,
+    "generated_images": 6,
+    "cache_hits": 0,
+    "generation_calls": 6,
+    "qa_calls": 1,
+    "details": [
+      {
+        "label": "hero",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 1,
+        "quality": "high",
+        "qa_enabled": true,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "85bfa68a-0af9-48d2-adaa-b280fc5c380d",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=85bfa68a-0af9-48d2-adaa-b280fc5c380d",
+            "poll_attempts": 20,
+            "provider_status": "Ready",
+            "elapsed_seconds": 32.07,
+            "quality": "high",
+            "elapsed_seconds_total": 32.07,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation",
+        "qa_reason": "The image shows a coastal bathroom with a warm, tactile, and inviting styling, using creams, camel, honey wood, and soft terracotta accents. It is an editorial-style photo with natural daylight, believable materials, and a single coherent vanity and sink zone. The composition presents an eye-level corner view with spatial depth and one memorable focal point, fitting the prompt for a decor blog hero image."
+      },
+      {
+        "label": "section-1",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "2b60c1b4-66de-44a5-818d-5dc41dca7960",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=2b60c1b4-66de-44a5-818d-5dc41dca7960",
+            "poll_attempts": 21,
+            "provider_status": "Ready",
+            "elapsed_seconds": 28.73,
+            "quality": "medium",
+            "elapsed_seconds_total": 28.73,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-2",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "4ec60804-94c2-44c8-a484-ea25e1041c79",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=4ec60804-94c2-44c8-a484-ea25e1041c79",
+            "poll_attempts": 16,
+            "provider_status": "Ready",
+            "elapsed_seconds": 25.52,
+            "quality": "medium",
+            "elapsed_seconds_total": 25.52,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-3",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "8f6ee4c2-ff30-477a-9aaa-a3825a8a1a22",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=8f6ee4c2-ff30-477a-9aaa-a3825a8a1a22",
+            "poll_attempts": 23,
+            "provider_status": "Ready",
+            "elapsed_seconds": 36.15,
+            "quality": "medium",
+            "elapsed_seconds_total": 36.15,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-4",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "adc532b0-3e1b-4cf7-be67-b9f2a1baa4f9",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=adc532b0-3e1b-4cf7-be67-b9f2a1baa4f9",
+            "poll_attempts": 17,
+            "provider_status": "Ready",
+            "elapsed_seconds": 24.06,
+            "quality": "medium",
+            "elapsed_seconds_total": 24.06,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-5",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "0e5831d7-d45f-4810-a4d9-e6e91d492f63",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=0e5831d7-d45f-4810-a4d9-e6e91d492f63",
+            "poll_attempts": 29,
+            "provider_status": "Ready",
+            "elapsed_seconds": 38.4,
+            "quality": "medium",
+            "elapsed_seconds_total": 38.4,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      }
+    ]
+  },
+  "pinterest": {
+    "variants_requested": 4,
+    "pin_assets_generated": false,
+    "mode": null
+  }
+}

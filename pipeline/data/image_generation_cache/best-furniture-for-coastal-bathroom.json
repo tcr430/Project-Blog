@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "109cce7738831f6eb1598c72ad3a0de7a9055d66c5b8e61cb69aa323f6462b97",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-coastal-bathroom/hero.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-1": {
+    "cache_key": "b5c08a81d3add38076d53071be51192011a01d38d0bbba5bca50d2dc1ea3ce01",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-coastal-bathroom/section-1.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-2": {
+    "cache_key": "afb1f902a006aed6bc3800ae3b10cd58e0207290dc52961e9605bcda769ee736",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-coastal-bathroom/section-2.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-3": {
+    "cache_key": "db450b1a0f1e35a6aad4f606c0311c9809a90e792267f87e769a8d33fb2d5e35",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-coastal-bathroom/section-3.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-4": {
+    "cache_key": "44bdecf325453ce444c02138a87583ed5ac9a1a7ee42e8f5117aa051ab620f25",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-coastal-bathroom/section-4.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-5": {
+    "cache_key": "f475180587cdfa98c84b3414374bc4bd937262e543b938560f4e2cae7d65d424",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-coastal-bathroom/section-5.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  }
+}
