@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-01T18:53:58.775952+00:00",
+  "generated_at": "2026-05-02T01:26:28.739816+00:00",
   "history_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_history.json",
-  "published_pin_count": 44,
+  "published_pin_count": 46,
   "global_metrics": {
-    "published_pins": 44,
+    "published_pins": 46,
     "analytics_ready_pins": 0,
     "average_impressions": null,
     "average_saves": null,
@@ -15,7 +15,7 @@
   "performance_by_variant_type": [
     {
       "variant_type": "trend_overview",
-      "published_pins": 17,
+      "published_pins": 18,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -48,7 +48,7 @@
     },
     {
       "variant_type": "styling_angle",
-      "published_pins": 7,
+      "published_pins": 8,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -85,7 +85,7 @@
     },
     {
       "board_key": "default",
-      "published_pins": 4,
+      "published_pins": 5,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -97,7 +97,7 @@
     },
     {
       "board_key": "bathroom",
-      "published_pins": 12,
+      "published_pins": 13,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -235,7 +235,7 @@
     },
     {
       "article_slug": "moody-bedroom-texture-mistakes-to-avoid",
-      "published_pins": 3,
+      "published_pins": 4,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -358,13 +358,27 @@
       "score": 0,
       "classification": "underperforming",
       "reasons": []
+    },
+    {
+      "article_slug": "best-furniture-for-coastal-bathroom",
+      "published_pins": 1,
+      "analytics_ready_pins": 0,
+      "average_impressions": null,
+      "average_saves": null,
+      "average_outbound_clicks": null,
+      "average_pin_clicks": null,
+      "average_closeups": null,
+      "average_engagement_rate": null,
+      "score": 0,
+      "classification": "underperforming",
+      "reasons": []
     }
   ],
   "rankings": {
     "top_variant_types": [
       {
         "variant_type": "trend_overview",
-        "published_pins": 17,
+        "published_pins": 18,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -397,7 +411,7 @@
       },
       {
         "variant_type": "styling_angle",
-        "published_pins": 7,
+        "published_pins": 8,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -434,7 +448,7 @@
       },
       {
         "board_key": "default",
-        "published_pins": 4,
+        "published_pins": 5,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -446,7 +460,7 @@
       },
       {
         "board_key": "bathroom",
-        "published_pins": 12,
+        "published_pins": 13,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
