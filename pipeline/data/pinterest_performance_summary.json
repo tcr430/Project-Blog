@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-04T01:29:26.159920+00:00",
+  "generated_at": "2026-05-04T08:13:23.769307+00:00",
   "history_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_history.json",
-  "published_pin_count": 49,
+  "published_pin_count": 50,
   "global_metrics": {
-    "published_pins": 49,
+    "published_pins": 50,
     "analytics_ready_pins": 0,
     "average_impressions": null,
     "average_saves": null,
@@ -37,7 +37,7 @@
     },
     {
       "variant_type": "product_led",
-      "published_pins": 10,
+      "published_pins": 11,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -73,7 +73,7 @@
     },
     {
       "board_key": "home_products",
-      "published_pins": 7,
+      "published_pins": 8,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -151,7 +151,7 @@
     },
     {
       "article_slug": "best-furniture-for-scandinavian-bedroom",
-      "published_pins": 3,
+      "published_pins": 4,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -400,7 +400,7 @@
       },
       {
         "variant_type": "product_led",
-        "published_pins": 10,
+        "published_pins": 11,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -436,7 +436,7 @@
       },
       {
         "board_key": "home_products",
-        "published_pins": 7,
+        "published_pins": 8,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -514,7 +514,7 @@
       },
       {
         "article_slug": "best-furniture-for-scandinavian-bedroom",
-        "published_pins": 3,
+        "published_pins": 4,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -586,7 +586,7 @@
       },
       {
         "article_slug": "best-furniture-for-scandinavian-bedroom",
-        "published_pins": 3,
+        "published_pins": 4,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
