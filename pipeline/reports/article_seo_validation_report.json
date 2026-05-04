@@ -1,6 +1,24 @@
 {
-  "generated_at": "2026-05-01T10:21:24.846366+00:00",
+  "generated_at": "2026-05-04T11:04:09.520846+00:00",
   "articles": [
+    {
+      "article_slug": "best-furniture-for-biophilic-bedroom",
+      "cluster": "biophilic bedroom",
+      "cluster_id": "biophilic bedroom",
+      "subtopic_id": "furniture",
+      "subtopic_name": "furniture and anchors",
+      "angle_id": "best options",
+      "intent_id": "comparison",
+      "primary_keyword": "best furniture for a biophilic bedroom",
+      "validation_status": "warning",
+      "warnings": [
+        "None of the secondary keywords appear in the article body.",
+        "Primary keyword appears very lightly in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-05-04T11:04:09.520686+00:00"
+    },
     {
       "article_slug": "best-furniture-for-coastal-bathroom",
       "cluster": "coastal bathroom",

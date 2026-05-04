@@ -1,25 +1,24 @@
 # Weekly Pipeline Report
 
-Generated: 2026-05-01
+Generated: 2026-05-04
 Window: last 7 days
 
-Articles Published: 3  
-Pins Generated: 9  
-Pins Scheduled: 21  
-Pins Published: 14  
+Articles Published: 2  
+Pins Generated: 6  
+Pins Scheduled: 18  
+Pins Published: 15  
 Repins Scheduled: 0
 
 ## Articles Published
 - best-furniture-for-coastal-bathroom
 - choosing-best-furniture-coastal-bedroom
-- cottage-bathroom-texture-mistakes-to-avoid
 
 ## Top Performing Pins
 - How to Style The Best Furniture for an Earthy Bedroom: a Practical Guide to Warm... (styling_angle, Bedroom Retreat Ideas) - 0 clicks, 0 saves, 0 impressions
-- 4 Pieces That Elevate Best Furniture for an Earthy Bathroom: Finding the Perfect... (product_led, Bathroom Styling Notes) - 0 clicks, 0 saves, 0 impressions
-- How to Choose the Best Furniture for a Scandinavian Bedroom (trend_overview, Bedroom Retreat Ideas) - 0 clicks, 0 saves, 0 impressions
-- How to Style Best Furniture for a Scandinavian Bathroom: Practical Choices with Iconic... (styling_angle, Bathroom Styling Notes) - 0 clicks, 0 saves, 0 impressions
+- How to Style Best Furniture for an Earthy Bathroom: Finding the Perfect Natural... (styling_angle, Bathroom Styling Notes) - 0 clicks, 0 saves, 0 impressions
+- 4 Pieces That Elevate Best Furniture for a Scandinavian Bedroom: Choosing Calm, Cozy... (product_led, Home Finds & Decor Picks) - 0 clicks, 0 saves, 0 impressions
 - How to Style The Best Furniture for a Parisian Bedroom: Timeless Options for Everyday... (styling_angle, Bedroom Retreat Ideas) - 0 clicks, 0 saves, 0 impressions
+- How to Style Neutral Bedroom: How to Get It Right for a More Collected Look (styling_angle, Bedroom Retreat Ideas) - 0 clicks, 0 saves, 0 impressions
 
 ## Top Performing Boards
 - Bedroom Retreat Ideas - avg clicks: n/a, avg saves: n/a, avg impressions: n/a

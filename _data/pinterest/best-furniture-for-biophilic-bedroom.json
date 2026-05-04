@@ -1,0 +1,166 @@
+{
+  "article_title": "Where to Start with Furniture for a Biophilic Bedroom",
+  "article_slug": "best-furniture-for-biophilic-bedroom",
+  "article_relative_url": "/ideas/2026/05/04/best-furniture-for-biophilic-bedroom/",
+  "article_url": "https://thelivinedit.com/ideas/2026/05/04/best-furniture-for-biophilic-bedroom/",
+  "meta_description": "Explore practical furniture choices that bring biophilic bedroom ideas to life. Learn how to select pieces that balance natural materials, comfort, and style for a serene space.",
+  "cluster_id": "biophilic_bedroom",
+  "subtopic_id": "furniture",
+  "angle_id": "best_options",
+  "intent_id": "comparison",
+  "visual_direction": {
+    "family_id": "crisp_modern",
+    "mood": "clean, sculptural, modern editorial restraint",
+    "lighting": "clear daylight with crisp shadow definition",
+    "palette": "soft white, black accents, stone, pale oak",
+    "intent_id": "comparison",
+    "profile_id": "comparison",
+    "shot_library_id": "general_decor"
+  },
+  "hero_image_path": "/assets/img/best-furniture-for-biophilic-bedroom/hero.png",
+  "section_image_paths": [
+    "/assets/img/best-furniture-for-biophilic-bedroom/section-1.png",
+    "/assets/img/best-furniture-for-biophilic-bedroom/section-2.png",
+    "/assets/img/best-furniture-for-biophilic-bedroom/section-3.png",
+    "/assets/img/best-furniture-for-biophilic-bedroom/section-4.png",
+    "/assets/img/best-furniture-for-biophilic-bedroom/section-5.png"
+  ],
+  "site_root_url": "https://thelivinedit.com",
+  "variant_count": 4,
+  "strategy": {
+    "minimum_variant_count": 4,
+    "generated_variant_count": 4,
+    "bonus_slots": 0,
+    "ranked_variant_types": [
+      "trend_overview",
+      "practical_tips",
+      "product_led",
+      "styling_angle"
+    ],
+    "article_score": null,
+    "notes": [
+      "applying performance weighting: no historical lift yet, using balanced defaults",
+      "exploring board default"
+    ],
+    "strategy_validation": {
+      "status": "warning",
+      "warnings": [
+        "Variant 1 image_focus 'hero focal point' does not match provided image candidates; renderer will use a safe image fallback.",
+        "Variant 2 image_focus 'balanced furniture grouping' does not match provided image candidates; renderer will use a safe image fallback.",
+        "Variant 3 image_focus 'hero furniture piece' does not match provided image candidates; renderer will use a safe image fallback.",
+        "Variant 5 repeated the 'problem' hook structure; kept if otherwise distinct."
+      ],
+      "errors": []
+    },
+    "strategy_fallback_used": true,
+    "strategy_fallback_reason": "strategy returned 3 usable variants; supplemented with fallback variants to reach 4",
+    "image_candidate_count": 6,
+    "board_config_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_boards.json",
+    "design_system_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_pin_design_system.json"
+  },
+  "variants": [
+    {
+      "variant_key": "pin-1",
+      "variant_type": "trend_overview",
+      "style_name": "top-title",
+      "template_id": "top_headline_card",
+      "template_family": "insight_band",
+      "title": "5 Furniture Picks to Boost Your Biophilic Bedroom",
+      "description": "Discover practical furniture choices that balance nature and comfort effortlessly.",
+      "hook_text": "5 Furniture Picks to Boost Your Biophilic Bedroom",
+      "support_text": "Discover practical furniture choices that balance nature and comfort effortlessly.",
+      "display_headline": "5 Furniture Picks to Boost Your Biophilic Bedroom",
+      "display_subheadline": "Discover practical furniture choices that balance nature and comfort effortlessly.",
+      "display_kicker": "",
+      "cta_label": "Read the full article",
+      "topic_style": "decision",
+      "image_focus": "hero focal point",
+      "image_reference": "hero",
+      "brand_text": "THE LIVIN' EDIT",
+      "reason": "Uses a numbered benefit list to promise practical, impactful furniture picks that enhance biophilic design",
+      "image_path": "/assets/pins/best-furniture-for-biophilic-bedroom/pin-1.png",
+      "board": {
+        "key": "bedroom",
+        "name": "Bedroom Retreat Ideas"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 0
+    },
+    {
+      "variant_key": "pin-2",
+      "variant_type": "practical_tips",
+      "style_name": "centered-title",
+      "template_id": "center_overlay",
+      "template_family": "comparison_panel",
+      "title": "Struggling with Bedroom Style? Try Natural Materials",
+      "description": "Learn how material choices can create a calming, natural bedroom vibe.",
+      "hook_text": "Struggling with Bedroom Style? Try Natural Materials",
+      "support_text": "Learn how material choices can create a calming, natural bedroom vibe.",
+      "display_headline": "Struggling with Bedroom Style? Try Natural Materials",
+      "display_subheadline": "Learn how material choices can create a calming, natural bedroom vibe.",
+      "display_kicker": "Practical guide",
+      "cta_label": "Use these ideas",
+      "topic_style": "decision",
+      "image_focus": "balanced furniture grouping",
+      "image_reference": "section_2",
+      "brand_text": "THE LIVIN' EDIT",
+      "reason": "Addresses a common decorating challenge and offers natural material choices as an actionable solution",
+      "image_path": "/assets/pins/best-furniture-for-biophilic-bedroom/pin-2.png",
+      "board": {
+        "key": "bedroom",
+        "name": "Bedroom Retreat Ideas"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 1
+    },
+    {
+      "variant_key": "pin-3",
+      "variant_type": "product_led",
+      "style_name": "bottom-title",
+      "template_id": "bottom_band",
+      "template_family": "editorial_split",
+      "title": "From Heavy to Airy: Rattan and Wicker Transformations",
+      "description": "See how adding natural textures refreshes your bedroom’s atmosphere instantly.",
+      "hook_text": "From Heavy to Airy: Rattan and Wicker Transformations",
+      "support_text": "See how adding natural textures refreshes your bedroom’s atmosphere instantly.",
+      "display_headline": "From Heavy to Airy: Rattan and Wicker Transformations",
+      "display_subheadline": "See how adding natural textures refreshes your bedroom’s atmosphere instantly.",
+      "display_kicker": "Worth comparing",
+      "cta_label": "Compare the options",
+      "topic_style": "decision",
+      "image_focus": "hero furniture piece",
+      "image_reference": "section_3",
+      "brand_text": "THE LIVIN' EDIT",
+      "reason": "Highlights a clear furniture transformation that shows the impact of texture for a biophilic feel",
+      "image_path": "/assets/pins/best-furniture-for-biophilic-bedroom/pin-3.png",
+      "board": {
+        "key": "home_products",
+        "name": "Home Finds & Decor Picks"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 2
+    },
+    {
+      "variant_key": "pin-4",
+      "variant_type": "trend_overview",
+      "style_name": "bottom-title",
+      "template_family": "minimal_frame_long",
+      "title": "Natural Wood Furniture Ideas for Your Biophilic Bedroom",
+      "description": "Discover why natural wood furniture anchors a biophilic bedroom with warmth and timeless style. Practical tips for creating a restful, nature-inspired retreat.",
+      "display_headline": "Best Furniture for Where To Start With Furniture For A Biophilic Bedroom",
+      "display_subheadline": "From wood vanities to slim storage, the pieces that keep the room functional, calm, and cohesive.",
+      "display_kicker": "",
+      "cta_label": "Read the full article",
+      "topic_style": "decision",
+      "image_focus": "hero",
+      "image_reference": "hero",
+      "image_path": "/assets/pins/best-furniture-for-biophilic-bedroom/pin-4.png",
+      "board": {
+        "key": "bedroom",
+        "name": "Bedroom Retreat Ideas"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 0
+    }
+  ]
+}

@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-01T10:24:57.461390+00:00",
-  "cluster_count": 29,
-  "article_count": 30,
+  "generated_at": "2026-05-04T11:08:17.641242+00:00",
+  "cluster_count": 30,
+  "article_count": 31,
   "subtopic_count": 7,
   "angle_count": 5,
   "angle_distribution": {
-    "best_options": 15,
+    "best_options": 16,
     "how_to": 2,
     "ideas": 4,
     "mistakes": 8,
@@ -105,6 +105,50 @@
           "latest_article_date": "",
           "representative_article_slugs": [
             "best-curtain-styling-for-bedroom-mistakes-fixes"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "best_options": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_id": "biophilic_bedroom",
+      "cluster_name": "biophilic bedroom",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "bedrooms"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "best furniture for a biophilic bedroom"
+      ],
+      "latest_article_date": "2026-05-04",
+      "latest_publication": {
+        "article_slug": "best-furniture-for-biophilic-bedroom",
+        "article_title": "Where to Start with Furniture for a Biophilic Bedroom",
+        "publish_date": "2026-05-04",
+        "subtopic_id": "furniture",
+        "subtopic_name": "furniture and anchors",
+        "angle_id": "best_options"
+      },
+      "representative_article_slugs": [
+        "best-furniture-for-biophilic-bedroom"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "furniture",
+          "subtopic_name": "furniture and anchors",
+          "article_count": 1,
+          "latest_article_date": "2026-05-04",
+          "representative_article_slugs": [
+            "best-furniture-for-biophilic-bedroom"
           ]
         }
       ],
@@ -356,7 +400,7 @@
       "representative_article_slugs": [
         "best-furniture-for-earthy-bedroom"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 1,
       "weak_article_count": 1,
@@ -844,7 +888,7 @@
       "representative_article_slugs": [
         "how-to-style-a-neutral-bathroom"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,

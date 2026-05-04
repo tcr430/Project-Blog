@@ -1,0 +1,299 @@
+{
+  "generated_at": "2026-05-04T11:08:17.446976+00:00",
+  "trend": "best furniture for a biophilic bedroom",
+  "slug": "best-furniture-for-biophilic-bedroom",
+  "article_generation": {
+    "cache_hit": false,
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/article_packages/0d921f5d85791d0e51c14981c1ec075b54719fef551bd6973b7664e1a7b72602.json",
+    "model": "gpt-4.1-mini",
+    "generation_calls": 2,
+    "short_retries": 0,
+    "angle_retries": 0,
+    "product_retries": 0,
+    "selected_products": 0,
+    "affiliate_mode": false,
+    "monetization_profile_id": "commercial_strong",
+    "generated_link_count": 0,
+    "primary_keyword": "best furniture for a biophilic bedroom",
+    "topical_cluster": "biophilic bedroom"
+  },
+  "seo_validation": {
+    "article_slug": "best-furniture-for-biophilic-bedroom",
+    "cluster": "biophilic bedroom",
+    "cluster_id": "biophilic bedroom",
+    "subtopic_id": "furniture",
+    "subtopic_name": "furniture and anchors",
+    "angle_id": "best options",
+    "intent_id": "comparison",
+    "primary_keyword": "best furniture for a biophilic bedroom",
+    "validation_status": "warning",
+    "warnings": [
+      "None of the secondary keywords appear in the article body.",
+      "Primary keyword appears very lightly in the article body."
+    ],
+    "errors": [],
+    "duplicate_candidate_slugs": [],
+    "timestamp": "2026-05-04T11:04:09.520686+00:00"
+  },
+  "editorial_validation": {
+    "article_slug": "best-furniture-for-biophilic-bedroom",
+    "cluster_id": "biophilic_bedroom",
+    "subtopic_id": "furniture",
+    "angle_id": "best_options",
+    "primary_keyword": "best furniture for a biophilic bedroom",
+    "validation_status": "warning",
+    "warnings": [
+      "Supporting keyword ideas are barely reflected in the body."
+    ],
+    "errors": [],
+    "checks": {
+      "generic_intro": {
+        "intro_word_count": 91,
+        "concept_overlap": 5,
+        "first_sentence": "Arranging a biophilic bedroom is about more than just adding plants—it's equally about choosing furniture that supports the connection to nature and comfort."
+      },
+      "heading_quality": {
+        "heading_count": 5,
+        "vague_heading_count": 0,
+        "low_specificity_heading_count": 1,
+        "repeated_signature_count": 0,
+        "repeated_stem_count": 0,
+        "headings": [
+          "Prioritizing Material Choices That Nourish a Biophilic Mood",
+          "Bringing Texture and Softness with Rattan and Wicker Furnishings",
+          "Comparing Metal Frame Beds to Wooden Options for Visual Weight and Style",
+          "Matching Furniture Choices to Your Bedroom Size and Layout",
+          "Practical Buying Guidance for Confident Furniture Selection"
+        ]
+      },
+      "specificity": {
+        "concept_token_hits": 7,
+        "specificity_term_hits": 10,
+        "secondary_keyword_hits": 0
+      },
+      "distinctiveness": {
+        "nearest_article_slug": "",
+        "max_similarity": 0.0,
+        "strongest_heading_overlap": 0
+      }
+    },
+    "timestamp": "2026-05-04T11:04:09.524345+00:00"
+  },
+  "image_generation": {
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/image_generation_cache/best-furniture-for-biophilic-bedroom.json",
+    "provider": "flux",
+    "provider_model": "flux-2-max",
+    "model": "flux-2-max",
+    "fallback_provider": "openai",
+    "fallback_model": "gpt-image-1",
+    "size": "1536x1024",
+    "hero_quality": "high",
+    "section_quality": "medium",
+    "allow_fallback": true,
+    "fallback_events": 0,
+    "generated_images": 6,
+    "cache_hits": 0,
+    "generation_calls": 6,
+    "qa_calls": 1,
+    "details": [
+      {
+        "label": "hero",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 1,
+        "quality": "high",
+        "qa_enabled": true,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "c46b5800-19bc-45d2-ad52-6d92b7e1e9bc",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=c46b5800-19bc-45d2-ad52-6d92b7e1e9bc",
+            "poll_attempts": 25,
+            "provider_status": "Ready",
+            "elapsed_seconds": 34.34,
+            "quality": "high",
+            "elapsed_seconds_total": 34.34,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation",
+        "qa_reason": "The image is a clean, editorial-style bedroom scene that fits the biophilic bedroom concept with natural materials and plants. It has a single focal bed, a balanced composition, believable depth, realistic materials, and natural daylight with crisp shadows. There is no text, logo, people, or heavy clutter, making it highly relevant and usable for the decor blog article."
+      },
+      {
+        "label": "section-1",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "a1f82b37-02f4-4db4-8dba-0335069752ca",
+            "polling_url": "https://api.us3.bfl.ai/v1/get_result?id=a1f82b37-02f4-4db4-8dba-0335069752ca",
+            "poll_attempts": 25,
+            "provider_status": "Ready",
+            "elapsed_seconds": 34.1,
+            "quality": "medium",
+            "elapsed_seconds_total": 34.1,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-2",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "d3432118-5b83-407d-8926-32d3ed805ea6",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=d3432118-5b83-407d-8926-32d3ed805ea6",
+            "poll_attempts": 28,
+            "provider_status": "Ready",
+            "elapsed_seconds": 37.37,
+            "quality": "medium",
+            "elapsed_seconds_total": 37.37,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-3",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "eb87902b-3fac-4940-ad5a-d2ecd25654b8",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=eb87902b-3fac-4940-ad5a-d2ecd25654b8",
+            "poll_attempts": 36,
+            "provider_status": "Ready",
+            "elapsed_seconds": 47.98,
+            "quality": "medium",
+            "elapsed_seconds_total": 47.98,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-4",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "47f35a17-cc48-473a-a654-04a36bab75f7",
+            "polling_url": "https://api.us3.bfl.ai/v1/get_result?id=47f35a17-cc48-473a-a654-04a36bab75f7",
+            "poll_attempts": 25,
+            "provider_status": "Ready",
+            "elapsed_seconds": 33.38,
+            "quality": "medium",
+            "elapsed_seconds_total": 33.38,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-5",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "c9a9c0a1-48b2-48ce-bebb-1fabca5f40d7",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=c9a9c0a1-48b2-48ce-bebb-1fabca5f40d7",
+            "poll_attempts": 23,
+            "provider_status": "Ready",
+            "elapsed_seconds": 40.63,
+            "quality": "medium",
+            "elapsed_seconds_total": 40.63,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      }
+    ]
+  },
+  "pinterest": {
+    "variants_requested": 4,
+    "pin_assets_generated": false,
+    "mode": null
+  }
+}

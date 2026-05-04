@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "8ffaf6bd63f80f579e3f6ef884a3c7864944532d84a747cb8fcb3727e0797497",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-biophilic-bedroom/hero.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-1": {
+    "cache_key": "647feb2cc6ce8e05dfd244612d4a63b25479de909dbf928d2c1666ecd2d11395",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-biophilic-bedroom/section-1.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-2": {
+    "cache_key": "c62841870a303622822fa71683a614a32159f4afdc318b98ed59f04749106e43",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-biophilic-bedroom/section-2.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-3": {
+    "cache_key": "f05c5b780e71a6f9bc2c1e79d224640d9438c1b77cebce219938861617d980eb",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-biophilic-bedroom/section-3.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-4": {
+    "cache_key": "555cfa89dcb215dab4306994712e69f61353a16495250411ccd4eca7f9bc302a",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-biophilic-bedroom/section-4.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-5": {
+    "cache_key": "29b27013eba8a786697b9e8aa0ebc54622a34cf89f6ff1f77109d23dd6bb1e05",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-biophilic-bedroom/section-5.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  }
+}
