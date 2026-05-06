@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-05-04T11:04:09.520846+00:00",
+  "generated_at": "2026-05-06T11:02:50.410522+00:00",
   "articles": [
+    {
+      "article_slug": "biophilic-bathroom-texture-mistakes-to-avoid",
+      "cluster": "biophilic bathroom",
+      "cluster_id": "biophilic bathroom",
+      "subtopic_id": "textures",
+      "subtopic_name": "textures and layers",
+      "angle_id": "mistakes",
+      "intent_id": "problem_solving",
+      "primary_keyword": "biophilic bathroom texture mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Headings do not reflect the topic cluster strongly enough.",
+        "Main section headings may be too generic for the chosen keyword.",
+        "None of the secondary keywords appear in the article body.",
+        "Primary keyword appears very lightly in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-05-06T11:02:50.410358+00:00"
+    },
     {
       "article_slug": "best-furniture-for-biophilic-bedroom",
       "cluster": "biophilic bedroom",

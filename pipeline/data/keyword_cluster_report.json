@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-04T11:08:17.641242+00:00",
-  "cluster_count": 30,
-  "article_count": 31,
+  "generated_at": "2026-05-06T11:10:24.625325+00:00",
+  "cluster_count": 31,
+  "article_count": 32,
   "subtopic_count": 7,
   "angle_count": 5,
   "angle_distribution": {
     "best_options": 16,
     "how_to": 2,
     "ideas": 4,
-    "mistakes": 8,
+    "mistakes": 9,
     "style_specific": 1
   },
   "clusters": [
@@ -110,6 +110,50 @@
       ],
       "angle_distribution": {
         "best_options": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_id": "biophilic_bathroom",
+      "cluster_name": "biophilic bathroom",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "utility_transition"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "biophilic bathroom texture mistakes to avoid"
+      ],
+      "latest_article_date": "2026-05-06",
+      "latest_publication": {
+        "article_slug": "biophilic-bathroom-texture-mistakes-to-avoid",
+        "article_title": "Biophilic Bathroom Texture Mistakes to Avoid for a Balanced, Cozy Spa Vibe",
+        "publish_date": "2026-05-06",
+        "subtopic_id": "textures",
+        "subtopic_name": "textures and layers",
+        "angle_id": "mistakes"
+      },
+      "representative_article_slugs": [
+        "biophilic-bathroom-texture-mistakes-to-avoid"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "textures",
+          "subtopic_name": "textures and layers",
+          "article_count": 1,
+          "latest_article_date": "2026-05-06",
+          "representative_article_slugs": [
+            "biophilic-bathroom-texture-mistakes-to-avoid"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "mistakes": 1
       },
       "status": "underdeveloped"
     },

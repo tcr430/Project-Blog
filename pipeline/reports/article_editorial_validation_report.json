@@ -1,6 +1,50 @@
 {
-  "generated_at": "2026-05-04T11:04:09.524675+00:00",
+  "generated_at": "2026-05-06T11:02:50.414668+00:00",
   "articles": [
+    {
+      "article_slug": "biophilic-bathroom-texture-mistakes-to-avoid",
+      "cluster_id": "biophilic_bathroom",
+      "subtopic_id": "textures",
+      "angle_id": "mistakes",
+      "primary_keyword": "biophilic bathroom texture mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Supporting keyword ideas are barely reflected in the body."
+      ],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 144,
+          "concept_overlap": 6,
+          "first_sentence": "Biophilic bathrooms promise a refreshing connection with nature, a peaceful retreat where natural textures and materials bring calm and warmth."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 1,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Overly Smooth Surfaces That Clash With Natural Elements",
+            "Mismatched Rough Textures That Overwhelm",
+            "Poor Texture Layering That Breaks Visual Flow",
+            "Ignoring Texture Proportion and Placement in Small Spaces",
+            "Harsh Texture Contrasts That Disrupt the Calm Mood"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 10,
+          "specificity_term_hits": 10,
+          "secondary_keyword_hits": 0
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-05-06T11:02:50.414323+00:00"
+    },
     {
       "article_slug": "best-furniture-for-biophilic-bedroom",
       "cluster_id": "biophilic_bedroom",

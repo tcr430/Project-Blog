@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "9628943ee87d0c39d236eb2bbd7e7085b5be5f6fe14dbd2508668a860bfdb06a",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/biophilic-bathroom-texture-mistakes-to-avoid/hero.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-1": {
+    "cache_key": "8f9663180c6209707faaf6a5219cda3e333997c38f421994fc384ea7fa4fbf71",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/biophilic-bathroom-texture-mistakes-to-avoid/section-1.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-2": {
+    "cache_key": "d66709754cbde2f5571fc5fd52e862f6db434161481d96c31236ff99a814090b",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/biophilic-bathroom-texture-mistakes-to-avoid/section-2.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-3": {
+    "cache_key": "d1c21fd3fe2208440075e21b180c9456d1b8b93229b85386c649ffcfe0ae372a",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/biophilic-bathroom-texture-mistakes-to-avoid/section-3.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-4": {
+    "cache_key": "f157ff549e356f0cc0d13beadd00d169ed0d7bf65b0b7a583c84db7eaf70503f",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/biophilic-bathroom-texture-mistakes-to-avoid/section-4.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-5": {
+    "cache_key": "e6edd7820d8ac3dd0c3e3e7323413b0ef5f962ca848e1b7d9818093c14cadb94",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/biophilic-bathroom-texture-mistakes-to-avoid/section-5.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  }
+}

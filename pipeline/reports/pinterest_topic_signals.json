@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-04T11:08:17.645123+00:00",
-  "cluster_count": 30,
+  "generated_at": "2026-05-06T11:10:24.629198+00:00",
+  "cluster_count": 31,
   "summary": {
     "hot": 0,
     "warm": 0,
     "cold": 18,
-    "no_data": 12
+    "no_data": 13
   },
   "clusters": [
     {
@@ -21,6 +21,30 @@
         "bedroom curtain styling ideas",
         "how to style curtain styling in bedroom",
         "bedroom curtain styling mistakes to avoid"
+      ],
+      "pinterest_article_count": 0,
+      "strong_article_count": 0,
+      "weak_article_count": 0,
+      "average_score": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_saves": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0
+    },
+    {
+      "cluster_name": "biophilic bathroom",
+      "article_count": 1,
+      "article_slugs": [
+        "biophilic-bathroom-texture-mistakes-to-avoid"
+      ],
+      "primary_keywords": [
+        "biophilic bathroom texture mistakes to avoid"
+      ],
+      "secondary_keywords": [
+        "biophilic bathroom ideas",
+        "how to style a biophilic bathroom",
+        "biophilic bathroom decor",
+        "biophilic bathroom layout ideas"
       ],
       "pinterest_article_count": 0,
       "strong_article_count": 0,
