@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-08T07:13:04.573261+00:00",
+  "generated_at": "2026-05-08T13:04:07.193978+00:00",
   "articles": [
     {
       "article_slug": "best-furniture-for-earthy-bedroom",
@@ -190,6 +190,17 @@
     },
     {
       "article_slug": "best-furniture-for-coastal-bathroom",
+      "score": 0,
+      "classification": "underperforming",
+      "reasons": [],
+      "average_impressions": null,
+      "average_saves": null,
+      "average_outbound_clicks": null,
+      "average_engagement_rate": null,
+      "published_pins": 1
+    },
+    {
+      "article_slug": "best-decor-accents-for-living-room",
       "score": 0,
       "classification": "underperforming",
       "reasons": [],

@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-08T07:13:04.573261+00:00",
+  "generated_at": "2026-05-08T13:04:07.193978+00:00",
   "history_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_history.json",
-  "published_pin_count": 53,
+  "published_pin_count": 54,
   "global_metrics": {
-    "published_pins": 53,
+    "published_pins": 54,
     "analytics_ready_pins": 0,
     "average_impressions": null,
     "average_saves": null,
@@ -15,7 +15,7 @@
   "performance_by_variant_type": [
     {
       "variant_type": "trend_overview",
-      "published_pins": 18,
+      "published_pins": 19,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -85,7 +85,7 @@
     },
     {
       "board_key": "default",
-      "published_pins": 7,
+      "published_pins": 8,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -372,13 +372,27 @@
       "score": 0,
       "classification": "underperforming",
       "reasons": []
+    },
+    {
+      "article_slug": "best-decor-accents-for-living-room",
+      "published_pins": 1,
+      "analytics_ready_pins": 0,
+      "average_impressions": null,
+      "average_saves": null,
+      "average_outbound_clicks": null,
+      "average_pin_clicks": null,
+      "average_closeups": null,
+      "average_engagement_rate": null,
+      "score": 0,
+      "classification": "underperforming",
+      "reasons": []
     }
   ],
   "rankings": {
     "top_variant_types": [
       {
         "variant_type": "trend_overview",
-        "published_pins": 18,
+        "published_pins": 19,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -448,7 +462,7 @@
       },
       {
         "board_key": "default",
-        "published_pins": 7,
+        "published_pins": 8,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
