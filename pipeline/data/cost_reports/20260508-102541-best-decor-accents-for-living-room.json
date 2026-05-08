@@ -1,0 +1,296 @@
+{
+  "generated_at": "2026-05-08T10:25:41.719114+00:00",
+  "trend": "best decor accents for living room",
+  "slug": "best-decor-accents-for-living-room",
+  "article_generation": {
+    "cache_hit": false,
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/article_packages/f88cbe637025a119f929b8c5633b59c54512e86995f03d671849eebf43547d11.json",
+    "model": "gpt-4.1-mini",
+    "generation_calls": 2,
+    "short_retries": 1,
+    "angle_retries": 0,
+    "product_retries": 0,
+    "selected_products": 0,
+    "affiliate_mode": false,
+    "monetization_profile_id": "commercial_strong",
+    "generated_link_count": 0,
+    "primary_keyword": "best decor accents for living room",
+    "topical_cluster": "living room styling details"
+  },
+  "seo_validation": {
+    "article_slug": "best-decor-accents-for-living-room",
+    "cluster": "living room styling details",
+    "cluster_id": "living room styling details",
+    "subtopic_id": "surfaces",
+    "subtopic_name": "surface styling",
+    "angle_id": "best options",
+    "intent_id": "comparison",
+    "primary_keyword": "best decor accents for living room",
+    "validation_status": "warning",
+    "warnings": [
+      "Primary keyword appears very lightly in the article body."
+    ],
+    "errors": [],
+    "duplicate_candidate_slugs": [],
+    "timestamp": "2026-05-08T10:22:04.510894+00:00"
+  },
+  "editorial_validation": {
+    "article_slug": "best-decor-accents-for-living-room",
+    "cluster_id": "living_room_styling_details",
+    "subtopic_id": "surfaces",
+    "angle_id": "best_options",
+    "primary_keyword": "best decor accents for living room",
+    "validation_status": "pass",
+    "warnings": [],
+    "errors": [],
+    "checks": {
+      "generic_intro": {
+        "intro_word_count": 144,
+        "concept_overlap": 10,
+        "first_sentence": "Choosing the right decor accents for your living room surfaces can feel surprisingly complex."
+      },
+      "heading_quality": {
+        "heading_count": 5,
+        "vague_heading_count": 0,
+        "low_specificity_heading_count": 1,
+        "repeated_signature_count": 0,
+        "repeated_stem_count": 0,
+        "headings": [
+          "Prioritizing Scale and Material to Avoid Surface Styling Pitfalls",
+          "Why Natural Stone and Wood Accessories Offer Lasting Warmth",
+          "Incorporating Soft Textiles as Stylish, Practical Finishing Touches",
+          "Matching Accents to Room Proportions, Layout, and Budget Constraints",
+          "Confident Selections: How to Narrow Decor Accents with Practical Buying Choices"
+        ]
+      },
+      "specificity": {
+        "concept_token_hits": 13,
+        "specificity_term_hits": 13,
+        "secondary_keyword_hits": 1
+      },
+      "distinctiveness": {
+        "nearest_article_slug": "",
+        "max_similarity": 0.0,
+        "strongest_heading_overlap": 0
+      }
+    },
+    "timestamp": "2026-05-08T10:22:04.514972+00:00"
+  },
+  "image_generation": {
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/image_generation_cache/best-decor-accents-for-living-room.json",
+    "provider": "flux",
+    "provider_model": "flux-2-max",
+    "model": "flux-2-max",
+    "fallback_provider": "openai",
+    "fallback_model": "gpt-image-1",
+    "size": "1536x1024",
+    "hero_quality": "high",
+    "section_quality": "medium",
+    "allow_fallback": true,
+    "fallback_events": 0,
+    "generated_images": 6,
+    "cache_hits": 0,
+    "generation_calls": 6,
+    "qa_calls": 1,
+    "details": [
+      {
+        "label": "hero",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 1,
+        "quality": "high",
+        "qa_enabled": true,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "7d25ceaf-b8b4-41d7-972d-8435a076dca1",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=7d25ceaf-b8b4-41d7-972d-8435a076dca1",
+            "poll_attempts": 22,
+            "provider_status": "Ready",
+            "elapsed_seconds": 30.11,
+            "quality": "high",
+            "elapsed_seconds_total": 30.11,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation",
+        "qa_reason": "The image shows a balanced living room vignette styled in an airy, quiet, and polished editorial manner with natural daylight. The colors and materials align well with the requested palette and style. It features one main seating anchor (sofa) complemented by a chair and a coffee table with decor accents, creating believable depth and a clear focal point with the vase and greenery on the table. The setting is clean, realistic, and suitable for use in a decor blog article on choosing decor accents."
+      },
+      {
+        "label": "section-1",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "f4af62d1-164c-4847-9d80-ef6b249eaab9",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=f4af62d1-164c-4847-9d80-ef6b249eaab9",
+            "poll_attempts": 22,
+            "provider_status": "Ready",
+            "elapsed_seconds": 34.83,
+            "quality": "medium",
+            "elapsed_seconds_total": 34.83,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-2",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "e43cbeba-539e-4719-959f-f4a2723e390a",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=e43cbeba-539e-4719-959f-f4a2723e390a",
+            "poll_attempts": 19,
+            "provider_status": "Ready",
+            "elapsed_seconds": 30.07,
+            "quality": "medium",
+            "elapsed_seconds_total": 30.07,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-3",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "c6894fa4-217e-42b5-b9ea-d782b3565216",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=c6894fa4-217e-42b5-b9ea-d782b3565216",
+            "poll_attempts": 23,
+            "provider_status": "Ready",
+            "elapsed_seconds": 36.21,
+            "quality": "medium",
+            "elapsed_seconds_total": 36.21,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-4",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "fd098562-b1f2-44df-bb76-a5865245a9fe",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=fd098562-b1f2-44df-bb76-a5865245a9fe",
+            "poll_attempts": 20,
+            "provider_status": "Ready",
+            "elapsed_seconds": 31.74,
+            "quality": "medium",
+            "elapsed_seconds_total": 31.74,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-5",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "284359d8-5fed-4b5d-bb5a-829fa2ac3733",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=284359d8-5fed-4b5d-bb5a-829fa2ac3733",
+            "poll_attempts": 22,
+            "provider_status": "Ready",
+            "elapsed_seconds": 30.49,
+            "quality": "medium",
+            "elapsed_seconds_total": 30.49,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      }
+    ]
+  },
+  "pinterest": {
+    "variants_requested": 4,
+    "pin_assets_generated": false,
+    "mode": null
+  }
+}

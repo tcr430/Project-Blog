@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "26708fcb65b202024d05dea7744f12c9d4a2581c896f6c32aa416efa9412bc48",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-decor-accents-for-living-room/hero.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-1": {
+    "cache_key": "7399f7d95a17f672d08ead296b38b9bb652b1bb28565178da3df6e3cc3df01ad",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-decor-accents-for-living-room/section-1.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-2": {
+    "cache_key": "3eecaf5f4a27b7f8fcb8d12618d6edabf2b1d412b04c9d4585eccf555ef230a5",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-decor-accents-for-living-room/section-2.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-3": {
+    "cache_key": "c82ac10f5149cec33b8a1dfdea3185f000a39209c53620d380cee39b67f7ddf8",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-decor-accents-for-living-room/section-3.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-4": {
+    "cache_key": "d7320aa266d6a13922b44469d9ca752448ab186c4daa3094176fef2a10fd7aa9",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-decor-accents-for-living-room/section-4.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-5": {
+    "cache_key": "4446f3ebc5cea11a02f81e387e3c12bd1e0352ab6e3a55330a692271f94f8cef",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-decor-accents-for-living-room/section-5.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  }
+}

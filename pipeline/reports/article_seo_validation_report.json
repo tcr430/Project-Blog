@@ -1,6 +1,23 @@
 {
-  "generated_at": "2026-05-06T11:02:50.410522+00:00",
+  "generated_at": "2026-05-08T10:22:04.511074+00:00",
   "articles": [
+    {
+      "article_slug": "best-decor-accents-for-living-room",
+      "cluster": "living room styling details",
+      "cluster_id": "living room styling details",
+      "subtopic_id": "surfaces",
+      "subtopic_name": "surface styling",
+      "angle_id": "best options",
+      "intent_id": "comparison",
+      "primary_keyword": "best decor accents for living room",
+      "validation_status": "warning",
+      "warnings": [
+        "Primary keyword appears very lightly in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-05-08T10:22:04.510894+00:00"
+    },
     {
       "article_slug": "biophilic-bathroom-texture-mistakes-to-avoid",
       "cluster": "biophilic bathroom",

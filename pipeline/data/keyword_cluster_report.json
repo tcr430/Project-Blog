@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-06T11:10:24.625325+00:00",
-  "cluster_count": 31,
-  "article_count": 32,
-  "subtopic_count": 7,
+  "generated_at": "2026-05-08T10:25:41.919757+00:00",
+  "cluster_count": 32,
+  "article_count": 33,
+  "subtopic_count": 8,
   "angle_count": 5,
   "angle_distribution": {
-    "best_options": 16,
+    "best_options": 17,
     "how_to": 2,
     "ideas": 4,
     "mistakes": 9,
@@ -400,7 +400,7 @@
       "representative_article_slugs": [
         "best-furniture-for-an-earthy-bathroom"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 1,
       "weak_article_count": 1,
@@ -550,6 +550,50 @@
       ],
       "angle_distribution": {
         "mistakes": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_id": "living_room_styling_details",
+      "cluster_name": "living room styling details",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "living_spaces"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "best decor accents for living room"
+      ],
+      "latest_article_date": "2026-05-08",
+      "latest_publication": {
+        "article_slug": "best-decor-accents-for-living-room",
+        "article_title": "Choosing the Best Decor Accents for a Balanced Living Room",
+        "publish_date": "2026-05-08",
+        "subtopic_id": "surfaces",
+        "subtopic_name": "surface styling",
+        "angle_id": "best_options"
+      },
+      "representative_article_slugs": [
+        "best-decor-accents-for-living-room"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "surfaces",
+          "subtopic_name": "surface styling",
+          "article_count": 1,
+          "latest_article_date": "2026-05-08",
+          "representative_article_slugs": [
+            "best-decor-accents-for-living-room"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "best_options": 1
       },
       "status": "underdeveloped"
     },

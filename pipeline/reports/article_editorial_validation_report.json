@@ -1,6 +1,48 @@
 {
-  "generated_at": "2026-05-06T11:02:50.414668+00:00",
+  "generated_at": "2026-05-08T10:22:04.515301+00:00",
   "articles": [
+    {
+      "article_slug": "best-decor-accents-for-living-room",
+      "cluster_id": "living_room_styling_details",
+      "subtopic_id": "surfaces",
+      "angle_id": "best_options",
+      "primary_keyword": "best decor accents for living room",
+      "validation_status": "pass",
+      "warnings": [],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 144,
+          "concept_overlap": 10,
+          "first_sentence": "Choosing the right decor accents for your living room surfaces can feel surprisingly complex."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 1,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Prioritizing Scale and Material to Avoid Surface Styling Pitfalls",
+            "Why Natural Stone and Wood Accessories Offer Lasting Warmth",
+            "Incorporating Soft Textiles as Stylish, Practical Finishing Touches",
+            "Matching Accents to Room Proportions, Layout, and Budget Constraints",
+            "Confident Selections: How to Narrow Decor Accents with Practical Buying Choices"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 13,
+          "specificity_term_hits": 13,
+          "secondary_keyword_hits": 1
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-05-08T10:22:04.514972+00:00"
+    },
     {
       "article_slug": "biophilic-bathroom-texture-mistakes-to-avoid",
       "cluster_id": "biophilic_bathroom",
