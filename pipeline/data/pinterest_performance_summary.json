@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-09T18:41:20.999215+00:00",
+  "generated_at": "2026-05-10T01:45:40.663225+00:00",
   "history_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_history.json",
-  "published_pin_count": 54,
+  "published_pin_count": 56,
   "global_metrics": {
-    "published_pins": 54,
+    "published_pins": 56,
     "analytics_ready_pins": 0,
     "average_impressions": null,
     "average_saves": null,
@@ -26,7 +26,7 @@
     },
     {
       "variant_type": "practical_tips",
-      "published_pins": 15,
+      "published_pins": 16,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -37,7 +37,7 @@
     },
     {
       "variant_type": "product_led",
-      "published_pins": 11,
+      "published_pins": 12,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -73,7 +73,7 @@
     },
     {
       "board_key": "home_products",
-      "published_pins": 8,
+      "published_pins": 9,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -85,7 +85,7 @@
     },
     {
       "board_key": "default",
-      "published_pins": 8,
+      "published_pins": 9,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -305,7 +305,7 @@
     },
     {
       "article_slug": "japandi-bathroom-texture-mistakes-to-avoid",
-      "published_pins": 2,
+      "published_pins": 3,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -361,7 +361,7 @@
     },
     {
       "article_slug": "best-furniture-for-coastal-bathroom",
-      "published_pins": 1,
+      "published_pins": 2,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -403,7 +403,7 @@
       },
       {
         "variant_type": "practical_tips",
-        "published_pins": 15,
+        "published_pins": 16,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -414,7 +414,7 @@
       },
       {
         "variant_type": "product_led",
-        "published_pins": 11,
+        "published_pins": 12,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -450,7 +450,7 @@
       },
       {
         "board_key": "home_products",
-        "published_pins": 8,
+        "published_pins": 9,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -462,7 +462,7 @@
       },
       {
         "board_key": "default",
-        "published_pins": 8,
+        "published_pins": 9,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
