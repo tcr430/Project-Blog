@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-10T18:42:40.172591+00:00",
+  "generated_at": "2026-05-11T01:52:47.514112+00:00",
   "history_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_history.json",
-  "published_pin_count": 56,
+  "published_pin_count": 57,
   "global_metrics": {
-    "published_pins": 56,
+    "published_pins": 57,
     "analytics_ready_pins": 0,
     "average_impressions": null,
     "average_saves": null,
@@ -37,7 +37,7 @@
     },
     {
       "variant_type": "product_led",
-      "published_pins": 12,
+      "published_pins": 13,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -73,7 +73,7 @@
     },
     {
       "board_key": "home_products",
-      "published_pins": 9,
+      "published_pins": 10,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -319,7 +319,7 @@
     },
     {
       "article_slug": "cottage-bedroom-texture-mistakes-to-avoid",
-      "published_pins": 2,
+      "published_pins": 3,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -414,7 +414,7 @@
       },
       {
         "variant_type": "product_led",
-        "published_pins": 12,
+        "published_pins": 13,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -450,7 +450,7 @@
       },
       {
         "board_key": "home_products",
-        "published_pins": 9,
+        "published_pins": 10,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
