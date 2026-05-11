@@ -1,0 +1,302 @@
+{
+  "generated_at": "2026-05-11T12:13:35.965716+00:00",
+  "trend": "bedroom surface styling mistakes to avoid",
+  "slug": "bedroom-surface-styling-mistakes-to-avoid",
+  "article_generation": {
+    "cache_hit": false,
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/article_packages/e3ac8abf915c065bc9f4715292f3f62612acfe92ff2c2ba2cb0ed17030fa7624.json",
+    "model": "gpt-4.1-mini",
+    "generation_calls": 3,
+    "short_retries": 0,
+    "angle_retries": 1,
+    "product_retries": 0,
+    "selected_products": 0,
+    "affiliate_mode": false,
+    "monetization_profile_id": "fix_oriented",
+    "generated_link_count": 0,
+    "primary_keyword": "bedroom surface styling mistakes to avoid",
+    "topical_cluster": "bedroom styling details"
+  },
+  "seo_validation": {
+    "article_slug": "bedroom-surface-styling-mistakes-to-avoid",
+    "cluster": "bedroom styling details",
+    "cluster_id": "bedroom styling details",
+    "subtopic_id": "surfaces",
+    "subtopic_name": "surface styling",
+    "angle_id": "mistakes",
+    "intent_id": "problem_solving",
+    "primary_keyword": "bedroom surface styling mistakes to avoid",
+    "validation_status": "warning",
+    "warnings": [
+      "Chosen title is still close to an existing site title pattern.",
+      "Main section headings may be too generic for the chosen keyword.",
+      "None of the secondary keywords appear in the article body.",
+      "Primary keyword appears very lightly in the article body."
+    ],
+    "errors": [],
+    "duplicate_candidate_slugs": [],
+    "timestamp": "2026-05-11T12:08:51.452023+00:00"
+  },
+  "editorial_validation": {
+    "article_slug": "bedroom-surface-styling-mistakes-to-avoid",
+    "cluster_id": "bedroom_styling_details",
+    "subtopic_id": "surfaces",
+    "angle_id": "mistakes",
+    "primary_keyword": "bedroom surface styling mistakes to avoid",
+    "validation_status": "warning",
+    "warnings": [
+      "Several section headings do not signal the topic strongly enough.",
+      "Supporting keyword ideas are barely reflected in the body."
+    ],
+    "errors": [],
+    "checks": {
+      "generic_intro": {
+        "intro_word_count": 165,
+        "concept_overlap": 8,
+        "first_sentence": "Surfaces in your bedroom—the bedside table, dresser top, and shelves—might seem like small details, but how you style them can make or break the whole room’s mood."
+      },
+      "heading_quality": {
+        "heading_count": 5,
+        "vague_heading_count": 0,
+        "low_specificity_heading_count": 2,
+        "repeated_signature_count": 0,
+        "repeated_stem_count": 0,
+        "headings": [
+          "Overcrowding Small Surfaces With Too Many Items",
+          "Mixing Too Many Styles and Materials Without Balance",
+          "Choosing Decor Colors That Clash With the Room’s Palette",
+          "Ignoring Scale and Proportion on Surfaces",
+          "Forgetting to Consider Natural Light and Surface Texture Together"
+        ]
+      },
+      "specificity": {
+        "concept_token_hits": 8,
+        "specificity_term_hits": 8,
+        "secondary_keyword_hits": 0
+      },
+      "distinctiveness": {
+        "nearest_article_slug": "",
+        "max_similarity": 0.0,
+        "strongest_heading_overlap": 0
+      }
+    },
+    "timestamp": "2026-05-11T12:08:51.456026+00:00"
+  },
+  "image_generation": {
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/image_generation_cache/bedroom-surface-styling-mistakes-to-avoid.json",
+    "provider": "flux",
+    "provider_model": "flux-2-max",
+    "model": "flux-2-max",
+    "fallback_provider": "openai",
+    "fallback_model": "gpt-image-1",
+    "size": "1536x1024",
+    "hero_quality": "high",
+    "section_quality": "medium",
+    "allow_fallback": true,
+    "fallback_events": 0,
+    "generated_images": 6,
+    "cache_hits": 0,
+    "generation_calls": 6,
+    "qa_calls": 1,
+    "details": [
+      {
+        "label": "hero",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 1,
+        "quality": "high",
+        "qa_enabled": true,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "6bc2d1ca-2950-41e9-ac6a-74ea04fb8353",
+            "polling_url": "https://api.us4.bfl.ai/v1/get_result?id=6bc2d1ca-2950-41e9-ac6a-74ea04fb8353",
+            "poll_attempts": 28,
+            "provider_status": "Ready",
+            "elapsed_seconds": 38.38,
+            "quality": "high",
+            "elapsed_seconds_total": 38.38,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation",
+        "qa_reason": "The image shows a restrained styled vignette of a bedroom with a clear focal point on the bed and side tables, featuring a realistic, believable layout and natural daylight. The style is clean, modern editorial with a soft white and pale oak palette, fitting the prompt for an editorial interior photography suitable for a decor blog."
+      },
+      {
+        "label": "section-1",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "fceb00ea-e4c0-4332-95bd-39d981bbf32c",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=fceb00ea-e4c0-4332-95bd-39d981bbf32c",
+            "poll_attempts": 30,
+            "provider_status": "Ready",
+            "elapsed_seconds": 41.12,
+            "quality": "medium",
+            "elapsed_seconds_total": 41.12,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-2",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "a259c2c6-55f3-490e-be4d-70cbebb51e49",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=a259c2c6-55f3-490e-be4d-70cbebb51e49",
+            "poll_attempts": 36,
+            "provider_status": "Ready",
+            "elapsed_seconds": 55.17,
+            "quality": "medium",
+            "elapsed_seconds_total": 55.17,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-3",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "ecd65d29-1fe4-4dfb-b62b-7c36b6d04d69",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=ecd65d29-1fe4-4dfb-b62b-7c36b6d04d69",
+            "poll_attempts": 26,
+            "provider_status": "Ready",
+            "elapsed_seconds": 40.98,
+            "quality": "medium",
+            "elapsed_seconds_total": 40.98,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-4",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "98c3f0ee-fb69-48fb-99ec-de35b84ded87",
+            "polling_url": "https://api.us3.bfl.ai/v1/get_result?id=98c3f0ee-fb69-48fb-99ec-de35b84ded87",
+            "poll_attempts": 24,
+            "provider_status": "Ready",
+            "elapsed_seconds": 33.38,
+            "quality": "medium",
+            "elapsed_seconds_total": 33.38,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-5",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "ce0bac68-f4f2-4acd-943c-cf73d9f774ed",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=ce0bac68-f4f2-4acd-943c-cf73d9f774ed",
+            "poll_attempts": 34,
+            "provider_status": "Ready",
+            "elapsed_seconds": 46.47,
+            "quality": "medium",
+            "elapsed_seconds_total": 46.47,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      }
+    ]
+  },
+  "pinterest": {
+    "variants_requested": 4,
+    "pin_assets_generated": false,
+    "mode": null
+  }
+}

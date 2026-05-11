@@ -1,6 +1,51 @@
 {
-  "generated_at": "2026-05-08T10:22:04.515301+00:00",
+  "generated_at": "2026-05-11T12:08:51.456366+00:00",
   "articles": [
+    {
+      "article_slug": "bedroom-surface-styling-mistakes-to-avoid",
+      "cluster_id": "bedroom_styling_details",
+      "subtopic_id": "surfaces",
+      "angle_id": "mistakes",
+      "primary_keyword": "bedroom surface styling mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Several section headings do not signal the topic strongly enough.",
+        "Supporting keyword ideas are barely reflected in the body."
+      ],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 165,
+          "concept_overlap": 8,
+          "first_sentence": "Surfaces in your bedroom—the bedside table, dresser top, and shelves—might seem like small details, but how you style them can make or break the whole room’s mood."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 2,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Overcrowding Small Surfaces With Too Many Items",
+            "Mixing Too Many Styles and Materials Without Balance",
+            "Choosing Decor Colors That Clash With the Room’s Palette",
+            "Ignoring Scale and Proportion on Surfaces",
+            "Forgetting to Consider Natural Light and Surface Texture Together"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 8,
+          "specificity_term_hits": 8,
+          "secondary_keyword_hits": 0
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-05-11T12:08:51.456026+00:00"
+    },
     {
       "article_slug": "best-decor-accents-for-living-room",
       "cluster_id": "living_room_styling_details",

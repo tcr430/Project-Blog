@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "be34673172d3173b785e6198d3fdc3e918d0f8457b5a7a5b033611b87fd67455",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/bedroom-surface-styling-mistakes-to-avoid/hero.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-1": {
+    "cache_key": "5b99e6d11396f9762556f6e1788feb780ef5448f8b214256b4eab20138fb2a28",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/bedroom-surface-styling-mistakes-to-avoid/section-1.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-2": {
+    "cache_key": "778d87fa587d367242549d52ce9548babc9e7dcf74d3016cba0110da0abfb465",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/bedroom-surface-styling-mistakes-to-avoid/section-2.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-3": {
+    "cache_key": "c1b4ffc35e8a220fffc14b5d20440b75237eb5e3c5cfa8808e1acfb04c212e81",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/bedroom-surface-styling-mistakes-to-avoid/section-3.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-4": {
+    "cache_key": "d25f97d9a4900f5bcc688dfd21997ca79540202bbf7c9edde6f28f4f013ced70",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/bedroom-surface-styling-mistakes-to-avoid/section-4.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-5": {
+    "cache_key": "d9544a267999ed33331b50cda0766953034e731188e4351acec33be9d5d16c3d",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/bedroom-surface-styling-mistakes-to-avoid/section-5.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  }
+}

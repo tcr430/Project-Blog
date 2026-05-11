@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-08T10:25:41.919757+00:00",
-  "cluster_count": 32,
-  "article_count": 33,
+  "generated_at": "2026-05-11T12:13:36.214685+00:00",
+  "cluster_count": 33,
+  "article_count": 34,
   "subtopic_count": 8,
   "angle_count": 5,
   "angle_distribution": {
     "best_options": 17,
     "how_to": 2,
     "ideas": 4,
-    "mistakes": 9,
+    "mistakes": 10,
     "style_specific": 1
   },
   "clusters": [
@@ -66,6 +66,50 @@
         "ideas": 2
       },
       "status": "growing"
+    },
+    {
+      "cluster_id": "bedroom_styling_details",
+      "cluster_name": "bedroom styling details",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "bedrooms"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "bedroom surface styling mistakes to avoid"
+      ],
+      "latest_article_date": "2026-05-11",
+      "latest_publication": {
+        "article_slug": "bedroom-surface-styling-mistakes-to-avoid",
+        "article_title": "Bedroom Surface Styling Mistakes to Avoid",
+        "publish_date": "2026-05-11",
+        "subtopic_id": "surfaces",
+        "subtopic_name": "surface styling",
+        "angle_id": "mistakes"
+      },
+      "representative_article_slugs": [
+        "bedroom-surface-styling-mistakes-to-avoid"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "surfaces",
+          "subtopic_name": "surface styling",
+          "article_count": 1,
+          "latest_article_date": "2026-05-11",
+          "representative_article_slugs": [
+            "bedroom-surface-styling-mistakes-to-avoid"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "mistakes": 1
+      },
+      "status": "underdeveloped"
     },
     {
       "cluster_id": "bedroom_window_treatments",
@@ -1372,7 +1416,7 @@
       "representative_article_slugs": [
         "best-furniture-for-transitional-bathroom"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
@@ -1416,7 +1460,7 @@
       "representative_article_slugs": [
         "best-furniture-transitional-bedroom"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,

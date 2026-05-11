@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-05-08T10:20:46.852346+00:00",
+  "generated_at": "2026-05-11T12:06:40.145640+00:00",
   "overview": {
-    "pin_count": 71,
-    "published_pin_count": 53,
+    "pin_count": 74,
+    "published_pin_count": 57,
     "analytics_ready_pin_count": 0,
-    "tracked_article_count": 21
+    "tracked_article_count": 22
   },
   "best_performing_clusters": [
     {
       "cluster_id": "coastal_bathroom",
       "cluster_name": "coastal bathroom",
       "pin_count": 3,
-      "published_pin_count": 1,
+      "published_pin_count": 2,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -65,7 +65,7 @@
       "cluster_id": "cottage_bedroom",
       "cluster_name": "cottage bedroom",
       "pin_count": 3,
-      "published_pin_count": 2,
+      "published_pin_count": 3,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -119,7 +119,7 @@
       "cluster_id": "japandi_bathroom",
       "cluster_name": "japandi bathroom",
       "pin_count": 3,
-      "published_pin_count": 2,
+      "published_pin_count": 3,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -149,6 +149,24 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "japandi-bedroom-texture-mistakes-to-avoid"
+      ]
+    },
+    {
+      "cluster_id": "living_room_styling_details",
+      "cluster_name": "living room styling details",
+      "pin_count": 3,
+      "published_pin_count": 1,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-decor-accents-for-living-room"
       ]
     },
     {
@@ -430,7 +448,7 @@
       "subtopic_id": "furniture",
       "subtopic_name": "furniture and anchors",
       "pin_count": 3,
-      "published_pin_count": 1,
+      "published_pin_count": 2,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -673,6 +691,25 @@
       ]
     },
     {
+      "cluster_id": "living_room_styling_details",
+      "subtopic_id": "surfaces",
+      "subtopic_name": "surface styling",
+      "pin_count": 3,
+      "published_pin_count": 1,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-decor-accents-for-living-room"
+      ]
+    },
+    {
       "cluster_id": "cottage_bathroom",
       "subtopic_id": "textures",
       "subtopic_name": "textures and layers",
@@ -696,7 +733,7 @@
       "subtopic_id": "textures",
       "subtopic_name": "textures and layers",
       "pin_count": 3,
-      "published_pin_count": 2,
+      "published_pin_count": 3,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -715,7 +752,7 @@
       "subtopic_id": "textures",
       "subtopic_name": "textures and layers",
       "pin_count": 3,
-      "published_pin_count": 2,
+      "published_pin_count": 3,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -790,8 +827,8 @@
   "best_performing_angles": [
     {
       "angle_id": "best_options",
-      "pin_count": 36,
-      "published_pin_count": 25,
+      "pin_count": 39,
+      "published_pin_count": 27,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -802,11 +839,11 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
+        "best-decor-accents-for-living-room",
         "best-furniture-for-a-scandinavian-bathroom",
         "best-furniture-for-an-earthy-bathroom",
         "best-furniture-for-coastal-bathroom",
-        "best-furniture-for-earthy-bedroom",
-        "best-furniture-for-scandinavian-bedroom"
+        "best-furniture-for-earthy-bedroom"
       ]
     },
     {
@@ -847,7 +884,7 @@
     {
       "angle_id": "mistakes",
       "pin_count": 24,
-      "published_pin_count": 21,
+      "published_pin_count": 23,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -915,7 +952,7 @@
       "visual_family_id": "airy_editorial",
       "shot_library_id": "general_decor",
       "intent_id": "comparison",
-      "pin_count": 1,
+      "pin_count": 2,
       "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -927,6 +964,7 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
+        "best-decor-accents-for-living-room",
         "best-furniture-for-a-scandinavian-bathroom"
       ]
     },
@@ -1046,7 +1084,7 @@
       "shot_library_id": "general_decor",
       "intent_id": "comparison",
       "pin_count": 6,
-      "published_pin_count": 4,
+      "published_pin_count": 5,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -1133,8 +1171,8 @@
       "visual_family_id": "airy_editorial",
       "shot_library_id": "general_decor",
       "intent_id": "comparison",
-      "pin_count": 1,
-      "published_pin_count": 1,
+      "pin_count": 2,
+      "published_pin_count": 2,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -1145,6 +1183,7 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
+        "best-decor-accents-for-living-room",
         "best-furniture-for-a-scandinavian-bathroom"
       ]
     },
@@ -1290,7 +1329,7 @@
       "shot_library_id": "textures_materials",
       "intent_id": "problem_solving",
       "pin_count": 1,
-      "published_pin_count": 0,
+      "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -1525,7 +1564,7 @@
       "visual_family_id": "airy_editorial",
       "shot_library_id": "general_decor",
       "intent_id": "comparison",
-      "pin_count": 1,
+      "pin_count": 2,
       "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1537,6 +1576,7 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
+        "best-decor-accents-for-living-room",
         "best-furniture-for-a-scandinavian-bathroom"
       ]
     },
@@ -1635,7 +1675,7 @@
       "shot_library_id": "textures_materials",
       "intent_id": "problem_solving",
       "pin_count": 3,
-      "published_pin_count": 2,
+      "published_pin_count": 3,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -1704,7 +1744,7 @@
         "cluster_id": "coastal_bathroom",
         "cluster_name": "coastal bathroom",
         "pin_count": 3,
-        "published_pin_count": 1,
+        "published_pin_count": 2,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,
@@ -1758,7 +1798,7 @@
         "cluster_id": "cottage_bedroom",
         "cluster_name": "cottage bedroom",
         "pin_count": 3,
-        "published_pin_count": 2,
+        "published_pin_count": 3,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,
@@ -1835,7 +1875,7 @@
         "subtopic_id": "furniture",
         "subtopic_name": "furniture and anchors",
         "pin_count": 3,
-        "published_pin_count": 1,
+        "published_pin_count": 2,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,
@@ -1891,8 +1931,8 @@
     "angles": [
       {
         "angle_id": "best_options",
-        "pin_count": 36,
-        "published_pin_count": 25,
+        "pin_count": 39,
+        "published_pin_count": 27,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,
@@ -1903,11 +1943,11 @@
         "signal_label": "no_data",
         "signal_boost": 0,
         "top_article_slugs": [
+          "best-decor-accents-for-living-room",
           "best-furniture-for-a-scandinavian-bathroom",
           "best-furniture-for-an-earthy-bathroom",
           "best-furniture-for-coastal-bathroom",
-          "best-furniture-for-earthy-bedroom",
-          "best-furniture-for-scandinavian-bedroom"
+          "best-furniture-for-earthy-bedroom"
         ]
       },
       {
@@ -1948,7 +1988,7 @@
       {
         "angle_id": "mistakes",
         "pin_count": 24,
-        "published_pin_count": 21,
+        "published_pin_count": 23,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,
@@ -2016,7 +2056,7 @@
         "visual_family_id": "airy_editorial",
         "shot_library_id": "general_decor",
         "intent_id": "comparison",
-        "pin_count": 1,
+        "pin_count": 2,
         "published_pin_count": 1,
         "analytics_ready_count": 0,
         "average_score": 0.0,
@@ -2028,6 +2068,7 @@
         "signal_label": "no_data",
         "signal_boost": 0,
         "top_article_slugs": [
+          "best-decor-accents-for-living-room",
           "best-furniture-for-a-scandinavian-bathroom"
         ]
       },

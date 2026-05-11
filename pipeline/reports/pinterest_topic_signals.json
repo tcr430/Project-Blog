@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-08T10:25:41.923716+00:00",
-  "cluster_count": 32,
+  "generated_at": "2026-05-11T12:13:36.218577+00:00",
+  "cluster_count": 33,
   "summary": {
     "hot": 0,
     "warm": 0,
-    "cold": 18,
+    "cold": 19,
     "no_data": 14
   },
   "clusters": [
@@ -21,6 +21,30 @@
         "bedroom curtain styling ideas",
         "how to style curtain styling in bedroom",
         "bedroom curtain styling mistakes to avoid"
+      ],
+      "pinterest_article_count": 0,
+      "strong_article_count": 0,
+      "weak_article_count": 0,
+      "average_score": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_saves": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0
+    },
+    {
+      "cluster_name": "bedroom styling details",
+      "article_count": 1,
+      "article_slugs": [
+        "bedroom-surface-styling-mistakes-to-avoid"
+      ],
+      "primary_keywords": [
+        "bedroom surface styling mistakes to avoid"
+      ],
+      "secondary_keywords": [
+        "bedroom surface styling ideas",
+        "bedroom finishing touch ideas",
+        "how to style surfaces in bedroom",
+        "best decor accents for bedroom"
       ],
       "pinterest_article_count": 0,
       "strong_article_count": 0,
@@ -332,14 +356,14 @@
         "how to style surfaces in living room",
         "living room surface styling mistakes to avoid"
       ],
-      "pinterest_article_count": 0,
+      "pinterest_article_count": 1,
       "strong_article_count": 0,
-      "weak_article_count": 0,
+      "weak_article_count": 1,
       "average_score": 0.0,
       "average_outbound_clicks": 0.0,
       "average_saves": 0.0,
-      "signal_label": "no_data",
-      "signal_boost": 0
+      "signal_label": "cold",
+      "signal_boost": -6
     },
     {
       "cluster_name": "mediterranean bathroom",
