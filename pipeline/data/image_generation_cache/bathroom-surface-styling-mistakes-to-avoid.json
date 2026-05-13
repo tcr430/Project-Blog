@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "a3aca45b22bcc156407ca8140dadfe2f33b7cdecdf942b563b9179ce6cf79eaf",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/bathroom-surface-styling-mistakes-to-avoid/hero.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-1": {
+    "cache_key": "7d83569219c8080c8b4a71f519b4e82608c01e92d54ee84ec99e1923265738e7",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/bathroom-surface-styling-mistakes-to-avoid/section-1.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-2": {
+    "cache_key": "f02fd752de0090bd8fb65366d600351f38c622f3ca3f73979800c59eaf5833a3",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/bathroom-surface-styling-mistakes-to-avoid/section-2.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-3": {
+    "cache_key": "540b146950ad6f6c3b1865bb7ab4b6822feac20697081f55140a3c01d9fc311b",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/bathroom-surface-styling-mistakes-to-avoid/section-3.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-4": {
+    "cache_key": "e041b7be1e4a073921fd44dc9c1d59deb26115b9f96c123f08840ee06d1119b0",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/bathroom-surface-styling-mistakes-to-avoid/section-4.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-5": {
+    "cache_key": "04c549d80eb85590618ae18c3a63f4157e17abc1549ca4d25ee6d4d0ba7c515f",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/bathroom-surface-styling-mistakes-to-avoid/section-5.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  }
+}

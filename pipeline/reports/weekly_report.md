@@ -1,12 +1,12 @@
 # Weekly Pipeline Report
 
-Generated: 2026-05-11
+Generated: 2026-05-13
 Window: last 7 days
 
 Articles Published: 2  
 Pins Generated: 6  
-Pins Scheduled: 17  
-Pins Published: 7  
+Pins Scheduled: 16  
+Pins Published: 8  
 Repins Scheduled: 0
 
 ## Articles Published
@@ -14,10 +14,10 @@ Repins Scheduled: 0
 - best-decor-accents-for-living-room
 
 ## Top Performing Pins
+- Soft Pastel Palettes for a Refreshing Spring Living Room (trend_overview, Living Room Styling) - 0 clicks, 0 saves, 0 impressions
 - 5 Texture Mistakes Flattening Japandi Bedrooms (practical_tips, Bedroom Retreat Ideas) - 0 clicks, 0 saves, 0 impressions
 - Overwhelmed by Textures? Simplify This Way (product_led, Home Finds & Decor Picks) - 0 clicks, 0 saves, 0 impressions
 - 5 Texture Fixes for Cozy Cottage Bedrooms (product_led, Home Finds & Decor Picks) - 0 clicks, 0 saves, 0 impressions
-- 5 Texture Fixes for Cozy Cottage Bathrooms (practical_tips, Home Decor Inspiration) - 0 clicks, 0 saves, 0 impressions
 - From Cluttered to Calm: Coastal Bedroom Edits (practical_tips, Home Decor Inspiration) - 0 clicks, 0 saves, 0 impressions
 
 ## Top Performing Boards

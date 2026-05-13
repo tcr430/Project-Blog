@@ -1,6 +1,48 @@
 {
-  "generated_at": "2026-05-11T12:08:51.456366+00:00",
+  "generated_at": "2026-05-13T11:29:49.082357+00:00",
   "articles": [
+    {
+      "article_slug": "bathroom-surface-styling-mistakes-to-avoid",
+      "cluster_id": "bathroom_styling_details",
+      "subtopic_id": "surfaces",
+      "angle_id": "mistakes",
+      "primary_keyword": "bathroom surface styling mistakes to avoid",
+      "validation_status": "pass",
+      "warnings": [],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 138,
+          "concept_overlap": 8,
+          "first_sentence": "Bathrooms often promise a spa-like sanctuary, but too often, surface styling falls short, muddling the room’s calm potential."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 1,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Overloading Surfaces With Mismatched Decor",
+            "Ignoring Material Consistency With Surfaces and Backdrops",
+            "Breaking Visual Flow with Inconsistent Tile and Countertop Choices",
+            "Disregarding Scale and Proportion in Surface Accessories",
+            "Overlooking Finishing Details That Anchor a Styled Bathroom Counter"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 11,
+          "specificity_term_hits": 11,
+          "secondary_keyword_hits": 1
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-05-13T11:29:49.082007+00:00"
+    },
     {
       "article_slug": "bedroom-surface-styling-mistakes-to-avoid",
       "cluster_id": "bedroom_styling_details",

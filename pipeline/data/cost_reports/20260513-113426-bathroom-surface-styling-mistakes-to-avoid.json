@@ -1,0 +1,297 @@
+{
+  "generated_at": "2026-05-13T11:34:26.386348+00:00",
+  "trend": "bathroom surface styling mistakes to avoid",
+  "slug": "bathroom-surface-styling-mistakes-to-avoid",
+  "article_generation": {
+    "cache_hit": false,
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/article_packages/393d6500ebd85f3a8a93b4fc869556208b134377999cf7651e13bad7845d5e27.json",
+    "model": "gpt-4.1-mini",
+    "generation_calls": 2,
+    "short_retries": 1,
+    "angle_retries": 0,
+    "product_retries": 0,
+    "selected_products": 0,
+    "affiliate_mode": false,
+    "monetization_profile_id": "fix_oriented",
+    "generated_link_count": 0,
+    "primary_keyword": "bathroom surface styling mistakes to avoid",
+    "topical_cluster": "bathroom styling details"
+  },
+  "seo_validation": {
+    "article_slug": "bathroom-surface-styling-mistakes-to-avoid",
+    "cluster": "bathroom styling details",
+    "cluster_id": "bathroom styling details",
+    "subtopic_id": "surfaces",
+    "subtopic_name": "surface styling",
+    "angle_id": "mistakes",
+    "intent_id": "problem_solving",
+    "primary_keyword": "bathroom surface styling mistakes to avoid",
+    "validation_status": "warning",
+    "warnings": [
+      "Main section headings may be too generic for the chosen keyword.",
+      "Primary keyword appears very lightly in the article body."
+    ],
+    "errors": [],
+    "duplicate_candidate_slugs": [],
+    "timestamp": "2026-05-13T11:29:49.078145+00:00"
+  },
+  "editorial_validation": {
+    "article_slug": "bathroom-surface-styling-mistakes-to-avoid",
+    "cluster_id": "bathroom_styling_details",
+    "subtopic_id": "surfaces",
+    "angle_id": "mistakes",
+    "primary_keyword": "bathroom surface styling mistakes to avoid",
+    "validation_status": "pass",
+    "warnings": [],
+    "errors": [],
+    "checks": {
+      "generic_intro": {
+        "intro_word_count": 138,
+        "concept_overlap": 8,
+        "first_sentence": "Bathrooms often promise a spa-like sanctuary, but too often, surface styling falls short, muddling the room’s calm potential."
+      },
+      "heading_quality": {
+        "heading_count": 5,
+        "vague_heading_count": 0,
+        "low_specificity_heading_count": 1,
+        "repeated_signature_count": 0,
+        "repeated_stem_count": 0,
+        "headings": [
+          "Overloading Surfaces With Mismatched Decor",
+          "Ignoring Material Consistency With Surfaces and Backdrops",
+          "Breaking Visual Flow with Inconsistent Tile and Countertop Choices",
+          "Disregarding Scale and Proportion in Surface Accessories",
+          "Overlooking Finishing Details That Anchor a Styled Bathroom Counter"
+        ]
+      },
+      "specificity": {
+        "concept_token_hits": 11,
+        "specificity_term_hits": 11,
+        "secondary_keyword_hits": 1
+      },
+      "distinctiveness": {
+        "nearest_article_slug": "",
+        "max_similarity": 0.0,
+        "strongest_heading_overlap": 0
+      }
+    },
+    "timestamp": "2026-05-13T11:29:49.082007+00:00"
+  },
+  "image_generation": {
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/image_generation_cache/bathroom-surface-styling-mistakes-to-avoid.json",
+    "provider": "flux",
+    "provider_model": "flux-2-max",
+    "model": "flux-2-max",
+    "fallback_provider": "openai",
+    "fallback_model": "gpt-image-1",
+    "size": "1536x1024",
+    "hero_quality": "high",
+    "section_quality": "medium",
+    "allow_fallback": true,
+    "fallback_events": 0,
+    "generated_images": 6,
+    "cache_hits": 0,
+    "generation_calls": 6,
+    "qa_calls": 1,
+    "details": [
+      {
+        "label": "hero",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 1,
+        "quality": "high",
+        "qa_enabled": true,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "d3abc90a-8546-4a39-81d2-da3b1a9dd7f7",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=d3abc90a-8546-4a39-81d2-da3b1a9dd7f7",
+            "poll_attempts": 22,
+            "provider_status": "Ready",
+            "elapsed_seconds": 39.39,
+            "quality": "high",
+            "elapsed_seconds_total": 39.39,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation",
+        "qa_reason": "The image shows a realistic, warm-toned bathroom vanity vignette with clear spatial depth and tactile materials. It focuses on one memorable focal point with editorial styling. The natural daylight and color palette align with the prompt. There is no text, logos, people, or heavy clutter, making it suitable for a decor blog."
+      },
+      {
+        "label": "section-1",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "b8790c05-f65b-4042-b73d-e6af9fbf0190",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=b8790c05-f65b-4042-b73d-e6af9fbf0190",
+            "poll_attempts": 26,
+            "provider_status": "Ready",
+            "elapsed_seconds": 35.47,
+            "quality": "medium",
+            "elapsed_seconds_total": 35.47,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-2",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "7011f16b-bf39-4158-bd48-e71cc2bac17a",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=7011f16b-bf39-4158-bd48-e71cc2bac17a",
+            "poll_attempts": 26,
+            "provider_status": "Ready",
+            "elapsed_seconds": 34.7,
+            "quality": "medium",
+            "elapsed_seconds_total": 34.7,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-3",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "593c2e22-a946-4a93-a5be-9bb29c33a72c",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=593c2e22-a946-4a93-a5be-9bb29c33a72c",
+            "poll_attempts": 45,
+            "provider_status": "Ready",
+            "elapsed_seconds": 77.93,
+            "quality": "medium",
+            "elapsed_seconds_total": 77.93,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-4",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "f7dc9940-d07e-4fd1-8f84-d700fdb34571",
+            "polling_url": "https://api.us3.bfl.ai/v1/get_result?id=f7dc9940-d07e-4fd1-8f84-d700fdb34571",
+            "poll_attempts": 26,
+            "provider_status": "Ready",
+            "elapsed_seconds": 35.54,
+            "quality": "medium",
+            "elapsed_seconds_total": 35.54,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-5",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "158ce87e-dc20-4605-a05e-90d34a7f8155",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=158ce87e-dc20-4605-a05e-90d34a7f8155",
+            "poll_attempts": 26,
+            "provider_status": "Ready",
+            "elapsed_seconds": 35.09,
+            "quality": "medium",
+            "elapsed_seconds_total": 35.09,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      }
+    ]
+  },
+  "pinterest": {
+    "variants_requested": 4,
+    "pin_assets_generated": false,
+    "mode": null
+  }
+}

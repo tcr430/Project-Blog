@@ -7,7 +7,7 @@ cluster_name: "earthy bedroom"
 cluster_slug: "earthy-bedroom"
 cluster_article_count: 1
 cluster_primary_keywords: ["best furniture for an earthy bedroom"]
-cluster_generated_at: "2026-05-11T12:13:37.977228+00:00"
+cluster_generated_at: "2026-05-13T11:34:28.397697+00:00"
 cluster_intro: "Earthy Bedroom is a useful decorating topic because it combines inspiration with practical decision-making. Readers usually arrive here looking for a clear style direction, help solving a room problem, or confidence about how to make the look feel intentional at home.
 
 This pillar page brings together the site's coverage around earthy bedroom, with article angles shaped by keyword themes such as best furniture for an earthy bedroom. That mix helps the page support both broader search intent and more specific decorating questions without feeling repetitive.

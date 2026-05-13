@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-05-11T12:13:37.744285+00:00",
+  "generated_at": "2026-05-13T11:34:28.105897+00:00",
   "total_clusters": 396,
   "summary": {
-    "missing": 363,
-    "underdeveloped": 33,
+    "missing": 362,
+    "underdeveloped": 34,
     "growing": 0,
     "strong": 0,
     "saturated": 0
   },
   "saturation_summary": {
-    "empty": 363,
-    "needs_growth": 33
+    "empty": 362,
+    "needs_growth": 34
   },
   "editorial_mix_rules": {
     "recent_window_article_count": 8,
@@ -360,7 +360,6 @@
     "warm contemporary patio",
     "balcony styling details",
     "bathroom color palettes",
-    "bathroom styling details",
     "bedroom color palettes",
     "dining room color palettes",
     "dining room styling details",
@@ -469,9 +468,10 @@
     "cottage bathroom",
     "coastal bedroom",
     "coastal bathroom",
-    "bedroom styling details",
+    "bathroom styling details",
     "spring bedroom refresh",
     "living room styling details",
+    "bedroom styling details",
     "spring living room styling"
   ],
   "clusters": [
@@ -60194,213 +60194,6 @@
       ]
     },
     {
-      "cluster_id": "bathroom_styling_details",
-      "cluster_name": "bathroom styling details",
-      "domain_id": "utility_transition",
-      "health_label": "missing",
-      "article_count": 0,
-      "article_capacity_target": 10,
-      "capacity_ratio": 0.0,
-      "growth_openings": 9,
-      "saturation_state": "empty",
-      "selection_action": "boost",
-      "latest_publication_date": "",
-      "days_since_latest": null,
-      "subtopics_total": 3,
-      "subtopics_covered": [],
-      "subtopic_ids_covered": [],
-      "subtopics_missing": [
-        "Surface Styling",
-        "Shelf Styling",
-        "Accessories and Finishing Touches"
-      ],
-      "subtopic_ids_missing": [
-        "surfaces",
-        "shelves",
-        "accessories"
-      ],
-      "angle_distribution": {
-        "ideas": 0,
-        "how_to": 0,
-        "mistakes": 0,
-        "best_options": 0,
-        "budget": 0,
-        "style_specific": 0
-      },
-      "underused_angles": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "budget",
-        "style_specific"
-      ],
-      "overused_angles": [],
-      "intent_distribution": {
-        "comparison": 0,
-        "decision_making": 0,
-        "implementation": 0,
-        "inspiration": 0,
-        "problem_solving": 0
-      },
-      "underused_intents": [
-        "comparison",
-        "decision_making",
-        "implementation",
-        "inspiration",
-        "problem_solving"
-      ],
-      "overused_intents": [],
-      "recommended_concepts": [
-        {
-          "cluster_id": "bathroom_styling_details",
-          "cluster_name": "bathroom styling details",
-          "domain_id": "utility_transition",
-          "subtopic_id": "accessories",
-          "subtopic_name": "Accessories and Finishing Touches",
-          "angle_id": "how_to",
-          "intent_id": "implementation",
-          "modifier": "",
-          "primary_keyword": "how to accessorize bathroom",
-          "secondary_keywords": [
-            "bathroom surface styling ideas",
-            "bathroom finishing touch ideas",
-            "how to style surfaces in bathroom",
-            "bathroom surface styling mistakes to avoid"
-          ],
-          "search_intent": "how_to",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 96,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "bathroom_styling_details",
-          "cluster_name": "bathroom styling details",
-          "domain_id": "utility_transition",
-          "subtopic_id": "accessories",
-          "subtopic_name": "Accessories and Finishing Touches",
-          "angle_id": "ideas",
-          "intent_id": "inspiration",
-          "modifier": "",
-          "primary_keyword": "bathroom finishing touch ideas",
-          "secondary_keywords": [
-            "bathroom surface styling ideas",
-            "how to style surfaces in bathroom",
-            "bathroom surface styling mistakes to avoid",
-            "best decor accents for bathroom"
-          ],
-          "search_intent": "ideas",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 96,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "bathroom_styling_details",
-          "cluster_name": "bathroom styling details",
-          "domain_id": "utility_transition",
-          "subtopic_id": "accessories",
-          "subtopic_name": "Accessories and Finishing Touches",
-          "angle_id": "mistakes",
-          "intent_id": "problem_solving",
-          "modifier": "",
-          "primary_keyword": "bathroom accessory mistakes to avoid",
-          "secondary_keywords": [
-            "bathroom surface styling ideas",
-            "bathroom finishing touch ideas",
-            "how to style surfaces in bathroom",
-            "bathroom surface styling mistakes to avoid"
-          ],
-          "search_intent": "problem_solution",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 96,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        }
-      ],
-      "recommended_topics": [
-        "how to accessorize bathroom",
-        "bathroom finishing touch ideas",
-        "bathroom accessory mistakes to avoid"
-      ],
-      "priority_score": 92,
-      "season": "",
-      "holiday": "",
-      "source": "content architecture",
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "pinterest_intelligence": {
-        "cluster_signal_label": "no_data",
-        "cluster_signal_boost": 0
-      },
-      "seed_keywords": [
-        "bathroom surface styling ideas",
-        "bathroom finishing touch ideas"
-      ],
-      "allowed_angle_ids": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "budget",
-        "style_specific"
-      ]
-    },
-    {
       "cluster_id": "bedroom_color_palettes",
       "cluster_name": "bedroom color palettes",
       "domain_id": "bedrooms",
@@ -77407,7 +77200,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-20",
-      "days_since_latest": 52,
+      "days_since_latest": 54,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation"
@@ -77620,7 +77413,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-25",
-      "days_since_latest": 47,
+      "days_since_latest": 49,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -77833,7 +77626,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-27",
-      "days_since_latest": 45,
+      "days_since_latest": 47,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -78046,7 +77839,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-08",
-      "days_since_latest": 33,
+      "days_since_latest": 35,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -78259,7 +78052,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-08",
-      "days_since_latest": 32,
+      "days_since_latest": 34,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -78472,7 +78265,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-17",
-      "days_since_latest": 24,
+      "days_since_latest": 26,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -78685,7 +78478,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-04",
-      "days_since_latest": 7,
+      "days_since_latest": 9,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -78898,7 +78691,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-06",
-      "days_since_latest": 5,
+      "days_since_latest": 7,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -79532,7 +79325,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-18",
-      "days_since_latest": 53,
+      "days_since_latest": 55,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -79745,7 +79538,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-23",
-      "days_since_latest": 49,
+      "days_since_latest": 51,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -79958,7 +79751,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-28",
-      "days_since_latest": 43,
+      "days_since_latest": 45,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -80033,13 +79826,13 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 72,
+          "score": 76,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
             "underused_angle": true,
             "underused_intent": true,
-            "stale_cluster": false,
+            "stale_cluster": true,
             "cluster_health": "underdeveloped",
             "pinterest_subtopic_signal": "no_data",
             "pinterest_angle_signal": "no_data",
@@ -80070,13 +79863,13 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 72,
+          "score": 76,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
             "underused_angle": true,
             "underused_intent": true,
-            "stale_cluster": false,
+            "stale_cluster": true,
             "cluster_health": "underdeveloped",
             "pinterest_subtopic_signal": "no_data",
             "pinterest_angle_signal": "no_data",
@@ -80107,13 +79900,13 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 72,
+          "score": 76,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
             "underused_angle": true,
             "underused_intent": true,
-            "stale_cluster": false,
+            "stale_cluster": true,
             "cluster_health": "underdeveloped",
             "pinterest_subtopic_signal": "no_data",
             "pinterest_angle_signal": "no_data",
@@ -80126,7 +79919,7 @@
         "scandinavian bedroom color palette ideas",
         "scandinavian bedroom color mistakes to avoid"
       ],
-      "priority_score": 64,
+      "priority_score": 69,
       "season": "",
       "holiday": "",
       "source": "content architecture",
@@ -80171,7 +79964,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-30",
-      "days_since_latest": 42,
+      "days_since_latest": 44,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -80384,7 +80177,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-01",
-      "days_since_latest": 39,
+      "days_since_latest": 41,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation"
@@ -80597,7 +80390,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-01",
-      "days_since_latest": 39,
+      "days_since_latest": 41,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -80810,7 +80603,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-03",
-      "days_since_latest": 38,
+      "days_since_latest": 40,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -81023,7 +80816,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-06",
-      "days_since_latest": 35,
+      "days_since_latest": 37,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -81236,7 +81029,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-10",
-      "days_since_latest": 31,
+      "days_since_latest": 33,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -81449,7 +81242,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-13",
-      "days_since_latest": 28,
+      "days_since_latest": 30,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -81662,7 +81455,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-20",
-      "days_since_latest": 21,
+      "days_since_latest": 23,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -81875,7 +81668,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-22",
-      "days_since_latest": 19,
+      "days_since_latest": 21,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -81950,7 +81743,7 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 68,
+          "score": 72,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -81987,7 +81780,7 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 68,
+          "score": 72,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -82024,7 +81817,7 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 68,
+          "score": 72,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -82088,7 +81881,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-24",
-      "days_since_latest": 17,
+      "days_since_latest": 19,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -82301,7 +82094,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-27",
-      "days_since_latest": 14,
+      "days_since_latest": 16,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -82514,7 +82307,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-29",
-      "days_since_latest": 12,
+      "days_since_latest": 14,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -82727,7 +82520,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-01",
-      "days_since_latest": 10,
+      "days_since_latest": 12,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -82929,9 +82722,9 @@
       ]
     },
     {
-      "cluster_id": "bedroom_styling_details",
-      "cluster_name": "bedroom styling details",
-      "domain_id": "bedrooms",
+      "cluster_id": "bathroom_styling_details",
+      "cluster_name": "bathroom styling details",
+      "domain_id": "utility_transition",
       "health_label": "underdeveloped",
       "article_count": 1,
       "article_capacity_target": 10,
@@ -82939,7 +82732,7 @@
       "growth_openings": 8,
       "saturation_state": "needs_growth",
       "selection_action": "boost",
-      "latest_publication_date": "2026-05-11",
+      "latest_publication_date": "2026-05-13",
       "days_since_latest": 0,
       "subtopics_total": 3,
       "subtopics_covered": [
@@ -82990,20 +82783,20 @@
       "overused_intents": [],
       "recommended_concepts": [
         {
-          "cluster_id": "bedroom_styling_details",
-          "cluster_name": "bedroom styling details",
-          "domain_id": "bedrooms",
+          "cluster_id": "bathroom_styling_details",
+          "cluster_name": "bathroom styling details",
+          "domain_id": "utility_transition",
           "subtopic_id": "accessories",
           "subtopic_name": "Accessories and Finishing Touches",
           "angle_id": "how_to",
           "intent_id": "implementation",
           "modifier": "",
-          "primary_keyword": "how to accessorize bedroom",
+          "primary_keyword": "how to accessorize bathroom",
           "secondary_keywords": [
-            "bedroom surface styling ideas",
-            "bedroom finishing touch ideas",
-            "how to style surfaces in bedroom",
-            "bedroom surface styling mistakes to avoid"
+            "bathroom surface styling ideas",
+            "bathroom finishing touch ideas",
+            "how to style surfaces in bathroom",
+            "bathroom surface styling mistakes to avoid"
           ],
           "search_intent": "how_to",
           "season": "",
@@ -83027,20 +82820,20 @@
           }
         },
         {
-          "cluster_id": "bedroom_styling_details",
-          "cluster_name": "bedroom styling details",
-          "domain_id": "bedrooms",
+          "cluster_id": "bathroom_styling_details",
+          "cluster_name": "bathroom styling details",
+          "domain_id": "utility_transition",
           "subtopic_id": "accessories",
           "subtopic_name": "Accessories and Finishing Touches",
           "angle_id": "ideas",
           "intent_id": "inspiration",
           "modifier": "",
-          "primary_keyword": "bedroom finishing touch ideas",
+          "primary_keyword": "bathroom finishing touch ideas",
           "secondary_keywords": [
-            "bedroom surface styling ideas",
-            "how to style surfaces in bedroom",
-            "bedroom surface styling mistakes to avoid",
-            "best decor accents for bedroom"
+            "bathroom surface styling ideas",
+            "how to style surfaces in bathroom",
+            "bathroom surface styling mistakes to avoid",
+            "best decor accents for bathroom"
           ],
           "search_intent": "ideas",
           "season": "",
@@ -83064,20 +82857,20 @@
           }
         },
         {
-          "cluster_id": "bedroom_styling_details",
-          "cluster_name": "bedroom styling details",
-          "domain_id": "bedrooms",
+          "cluster_id": "bathroom_styling_details",
+          "cluster_name": "bathroom styling details",
+          "domain_id": "utility_transition",
           "subtopic_id": "accessories",
           "subtopic_name": "Accessories and Finishing Touches",
           "angle_id": "style_specific",
           "intent_id": "inspiration",
           "modifier": "",
-          "primary_keyword": "minimalist decor accents for bedroom",
+          "primary_keyword": "minimalist decor accents for bathroom",
           "secondary_keywords": [
-            "bedroom surface styling ideas",
-            "bedroom finishing touch ideas",
-            "how to style surfaces in bedroom",
-            "bedroom surface styling mistakes to avoid"
+            "bathroom surface styling ideas",
+            "bathroom finishing touch ideas",
+            "how to style surfaces in bathroom",
+            "bathroom surface styling mistakes to avoid"
           ],
           "search_intent": "styling_advice",
           "season": "",
@@ -83102,9 +82895,9 @@
         }
       ],
       "recommended_topics": [
-        "how to accessorize bedroom",
-        "bedroom finishing touch ideas",
-        "minimalist decor accents for bedroom"
+        "how to accessorize bathroom",
+        "bathroom finishing touch ideas",
+        "minimalist decor accents for bathroom"
       ],
       "priority_score": 62,
       "season": "",
@@ -83125,8 +82918,8 @@
         "cluster_signal_boost": 0
       },
       "seed_keywords": [
-        "bedroom surface styling ideas",
-        "bedroom finishing touch ideas"
+        "bathroom surface styling ideas",
+        "bathroom finishing touch ideas"
       ],
       "allowed_angle_ids": [
         "ideas",
@@ -83149,7 +82942,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-02",
-      "days_since_latest": 39,
+      "days_since_latest": 41,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Seasonal Refresh"
@@ -83361,7 +83154,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-08",
-      "days_since_latest": 3,
+      "days_since_latest": 5,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Surface Styling"
@@ -83559,6 +83352,215 @@
       ]
     },
     {
+      "cluster_id": "bedroom_styling_details",
+      "cluster_name": "bedroom styling details",
+      "domain_id": "bedrooms",
+      "health_label": "underdeveloped",
+      "article_count": 1,
+      "article_capacity_target": 10,
+      "capacity_ratio": 0.1,
+      "growth_openings": 8,
+      "saturation_state": "needs_growth",
+      "selection_action": "boost",
+      "latest_publication_date": "2026-05-11",
+      "days_since_latest": 1,
+      "subtopics_total": 3,
+      "subtopics_covered": [
+        "Surface Styling"
+      ],
+      "subtopic_ids_covered": [
+        "surfaces"
+      ],
+      "subtopics_missing": [
+        "Shelf Styling",
+        "Accessories and Finishing Touches"
+      ],
+      "subtopic_ids_missing": [
+        "shelves",
+        "accessories"
+      ],
+      "angle_distribution": {
+        "ideas": 0,
+        "how_to": 0,
+        "mistakes": 1,
+        "best_options": 0,
+        "budget": 0,
+        "style_specific": 0
+      },
+      "underused_angles": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "budget",
+        "style_specific"
+      ],
+      "overused_angles": [],
+      "intent_distribution": {
+        "comparison": 0,
+        "decision_making": 0,
+        "implementation": 0,
+        "inspiration": 0,
+        "problem_solving": 1
+      },
+      "underused_intents": [
+        "comparison",
+        "decision_making",
+        "implementation",
+        "inspiration",
+        "problem_solving"
+      ],
+      "overused_intents": [],
+      "recommended_concepts": [
+        {
+          "cluster_id": "bedroom_styling_details",
+          "cluster_name": "bedroom styling details",
+          "domain_id": "bedrooms",
+          "subtopic_id": "accessories",
+          "subtopic_name": "Accessories and Finishing Touches",
+          "angle_id": "how_to",
+          "intent_id": "implementation",
+          "modifier": "",
+          "primary_keyword": "how to accessorize bedroom",
+          "secondary_keywords": [
+            "bedroom surface styling ideas",
+            "bedroom finishing touch ideas",
+            "how to style surfaces in bedroom",
+            "bedroom surface styling mistakes to avoid"
+          ],
+          "search_intent": "how_to",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 68,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        },
+        {
+          "cluster_id": "bedroom_styling_details",
+          "cluster_name": "bedroom styling details",
+          "domain_id": "bedrooms",
+          "subtopic_id": "accessories",
+          "subtopic_name": "Accessories and Finishing Touches",
+          "angle_id": "ideas",
+          "intent_id": "inspiration",
+          "modifier": "",
+          "primary_keyword": "bedroom finishing touch ideas",
+          "secondary_keywords": [
+            "bedroom surface styling ideas",
+            "how to style surfaces in bedroom",
+            "bedroom surface styling mistakes to avoid",
+            "best decor accents for bedroom"
+          ],
+          "search_intent": "ideas",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 68,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        },
+        {
+          "cluster_id": "bedroom_styling_details",
+          "cluster_name": "bedroom styling details",
+          "domain_id": "bedrooms",
+          "subtopic_id": "accessories",
+          "subtopic_name": "Accessories and Finishing Touches",
+          "angle_id": "style_specific",
+          "intent_id": "inspiration",
+          "modifier": "",
+          "primary_keyword": "minimalist decor accents for bedroom",
+          "secondary_keywords": [
+            "bedroom surface styling ideas",
+            "bedroom finishing touch ideas",
+            "how to style surfaces in bedroom",
+            "bedroom surface styling mistakes to avoid"
+          ],
+          "search_intent": "styling_advice",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 68,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        }
+      ],
+      "recommended_topics": [
+        "how to accessorize bedroom",
+        "bedroom finishing touch ideas",
+        "minimalist decor accents for bedroom"
+      ],
+      "priority_score": 56,
+      "season": "",
+      "holiday": "",
+      "source": "content architecture",
+      "pinterest_signal": {
+        "label": "cold",
+        "boost": -6,
+        "pinterest_article_count": 1,
+        "strong_article_count": 0,
+        "weak_article_count": 1,
+        "average_score": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_saves": 0.0
+      },
+      "pinterest_intelligence": {
+        "cluster_signal_label": "no_data",
+        "cluster_signal_boost": 0
+      },
+      "seed_keywords": [
+        "bedroom surface styling ideas",
+        "bedroom finishing touch ideas"
+      ],
+      "allowed_angle_ids": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "budget",
+        "style_specific"
+      ]
+    },
+    {
       "cluster_id": "spring_living_room_styling",
       "cluster_name": "spring living room styling",
       "domain_id": "seasonal_styling",
@@ -83570,7 +83572,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-15",
-      "days_since_latest": 26,
+      "days_since_latest": 28,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Seasonal Refresh",

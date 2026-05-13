@@ -1,6 +1,24 @@
 {
-  "generated_at": "2026-05-11T12:08:51.452187+00:00",
+  "generated_at": "2026-05-13T11:29:49.078324+00:00",
   "articles": [
+    {
+      "article_slug": "bathroom-surface-styling-mistakes-to-avoid",
+      "cluster": "bathroom styling details",
+      "cluster_id": "bathroom styling details",
+      "subtopic_id": "surfaces",
+      "subtopic_name": "surface styling",
+      "angle_id": "mistakes",
+      "intent_id": "problem_solving",
+      "primary_keyword": "bathroom surface styling mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Main section headings may be too generic for the chosen keyword.",
+        "Primary keyword appears very lightly in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-05-13T11:29:49.078145+00:00"
+    },
     {
       "article_slug": "bedroom-surface-styling-mistakes-to-avoid",
       "cluster": "bedroom styling details",

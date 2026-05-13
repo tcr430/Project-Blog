@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-11T12:13:36.214685+00:00",
-  "cluster_count": 33,
-  "article_count": 34,
+  "generated_at": "2026-05-13T11:34:26.575253+00:00",
+  "cluster_count": 34,
+  "article_count": 35,
   "subtopic_count": 8,
   "angle_count": 5,
   "angle_distribution": {
     "best_options": 17,
     "how_to": 2,
     "ideas": 4,
-    "mistakes": 10,
+    "mistakes": 11,
     "style_specific": 1
   },
   "clusters": [
@@ -66,6 +66,50 @@
         "ideas": 2
       },
       "status": "growing"
+    },
+    {
+      "cluster_id": "bathroom_styling_details",
+      "cluster_name": "bathroom styling details",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "utility_transition"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "bathroom surface styling mistakes to avoid"
+      ],
+      "latest_article_date": "2026-05-13",
+      "latest_publication": {
+        "article_slug": "bathroom-surface-styling-mistakes-to-avoid",
+        "article_title": "Bathroom Styling Details: Common Mistakes to Avoid",
+        "publish_date": "2026-05-13",
+        "subtopic_id": "surfaces",
+        "subtopic_name": "surface styling",
+        "angle_id": "mistakes"
+      },
+      "representative_article_slugs": [
+        "bathroom-surface-styling-mistakes-to-avoid"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "surfaces",
+          "subtopic_name": "surface styling",
+          "article_count": 1,
+          "latest_article_date": "2026-05-13",
+          "representative_article_slugs": [
+            "bathroom-surface-styling-mistakes-to-avoid"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "mistakes": 1
+      },
+      "status": "underdeveloped"
     },
     {
       "cluster_id": "bedroom_styling_details",
@@ -1284,7 +1328,7 @@
       "representative_article_slugs": [
         "best-furniture-for-scandinavian-bedroom"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 1,
       "weak_article_count": 1,

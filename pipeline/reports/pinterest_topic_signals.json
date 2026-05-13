@@ -1,13 +1,37 @@
 {
-  "generated_at": "2026-05-11T12:13:36.218577+00:00",
-  "cluster_count": 33,
+  "generated_at": "2026-05-13T11:34:26.579237+00:00",
+  "cluster_count": 34,
   "summary": {
     "hot": 0,
     "warm": 0,
-    "cold": 19,
+    "cold": 20,
     "no_data": 14
   },
   "clusters": [
+    {
+      "cluster_name": "bathroom styling details",
+      "article_count": 1,
+      "article_slugs": [
+        "bathroom-surface-styling-mistakes-to-avoid"
+      ],
+      "primary_keywords": [
+        "bathroom surface styling mistakes to avoid"
+      ],
+      "secondary_keywords": [
+        "bathroom surface styling ideas",
+        "bathroom finishing touch ideas",
+        "how to style surfaces in bathroom",
+        "best decor accents for bathroom"
+      ],
+      "pinterest_article_count": 0,
+      "strong_article_count": 0,
+      "weak_article_count": 0,
+      "average_score": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_saves": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0
+    },
     {
       "cluster_name": "bedroom curtain styling",
       "article_count": 1,
@@ -46,14 +70,14 @@
         "how to style surfaces in bedroom",
         "best decor accents for bedroom"
       ],
-      "pinterest_article_count": 0,
+      "pinterest_article_count": 1,
       "strong_article_count": 0,
-      "weak_article_count": 0,
+      "weak_article_count": 1,
       "average_score": 0.0,
       "average_outbound_clicks": 0.0,
       "average_saves": 0.0,
-      "signal_label": "no_data",
-      "signal_boost": 0
+      "signal_label": "cold",
+      "signal_boost": -6
     },
     {
       "cluster_name": "biophilic bathroom",

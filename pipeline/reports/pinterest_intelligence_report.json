@@ -1,12 +1,30 @@
 {
-  "generated_at": "2026-05-11T12:06:40.145640+00:00",
+  "generated_at": "2026-05-13T11:28:36.478249+00:00",
   "overview": {
-    "pin_count": 74,
-    "published_pin_count": 57,
+    "pin_count": 77,
+    "published_pin_count": 58,
     "analytics_ready_pin_count": 0,
-    "tracked_article_count": 22
+    "tracked_article_count": 23
   },
   "best_performing_clusters": [
+    {
+      "cluster_id": "bedroom_styling_details",
+      "cluster_name": "bedroom styling details",
+      "pin_count": 3,
+      "published_pin_count": 1,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "bedroom-surface-styling-mistakes-to-avoid"
+      ]
+    },
     {
       "cluster_id": "coastal_bathroom",
       "cluster_name": "coastal bathroom",
@@ -691,6 +709,25 @@
       ]
     },
     {
+      "cluster_id": "bedroom_styling_details",
+      "subtopic_id": "surfaces",
+      "subtopic_name": "surface styling",
+      "pin_count": 3,
+      "published_pin_count": 1,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "bedroom-surface-styling-mistakes-to-avoid"
+      ]
+    },
+    {
       "cluster_id": "living_room_styling_details",
       "subtopic_id": "surfaces",
       "subtopic_name": "surface styling",
@@ -883,8 +920,8 @@
     },
     {
       "angle_id": "mistakes",
-      "pin_count": 24,
-      "published_pin_count": 23,
+      "pin_count": 27,
+      "published_pin_count": 24,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -895,11 +932,11 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
+        "bedroom-surface-styling-mistakes-to-avoid",
         "cottage-bathroom-texture-mistakes-to-avoid",
         "cottage-bedroom-texture-mistakes-to-avoid",
         "japandi-bathroom-texture-mistakes-to-avoid",
-        "japandi-bedroom-texture-mistakes-to-avoid",
-        "moody-bedroom-texture-mistakes-to-avoid"
+        "japandi-bedroom-texture-mistakes-to-avoid"
       ]
     }
   ],
@@ -931,8 +968,8 @@
       "visual_family_id": "airy_editorial",
       "shot_library_id": "color_palette",
       "intent_id": "inspiration",
-      "pin_count": 1,
-      "published_pin_count": 1,
+      "pin_count": 2,
+      "published_pin_count": 2,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -1053,6 +1090,27 @@
         "best-furniture-for-an-earthy-bathroom",
         "best-furniture-for-transitional-bathroom",
         "best-furniture-parisian-bedroom"
+      ]
+    },
+    {
+      "visual_style_key": "bottom_title|crisp_modern|general_decor|problem_solving",
+      "style_name": "bottom-title",
+      "visual_family_id": "crisp_modern",
+      "shot_library_id": "general_decor",
+      "intent_id": "problem_solving",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "bedroom-surface-styling-mistakes-to-avoid"
       ]
     },
     {
@@ -1272,6 +1330,27 @@
         "best-furniture-for-an-earthy-bathroom",
         "best-furniture-for-transitional-bathroom",
         "best-furniture-parisian-bedroom"
+      ]
+    },
+    {
+      "visual_style_key": "centered_title|crisp_modern|general_decor|problem_solving",
+      "style_name": "centered-title",
+      "visual_family_id": "crisp_modern",
+      "shot_library_id": "general_decor",
+      "intent_id": "problem_solving",
+      "pin_count": 1,
+      "published_pin_count": 1,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "bedroom-surface-styling-mistakes-to-avoid"
       ]
     },
     {
@@ -1538,27 +1617,6 @@
       ]
     },
     {
-      "visual_style_key": "top_title|airy_editorial|color_palette|inspiration",
-      "style_name": "top-title",
-      "visual_family_id": "airy_editorial",
-      "shot_library_id": "color_palette",
-      "intent_id": "inspiration",
-      "pin_count": 1,
-      "published_pin_count": 1,
-      "analytics_ready_count": 0,
-      "average_score": 0.0,
-      "average_impressions": 0.0,
-      "average_saves": 0.0,
-      "average_outbound_clicks": 0.0,
-      "average_pin_clicks": 0.0,
-      "average_closeups": 0.0,
-      "signal_label": "no_data",
-      "signal_boost": 0,
-      "top_article_slugs": [
-        "spring-living-room-styling-color-palette"
-      ]
-    },
-    {
       "visual_style_key": "top_title|airy_editorial|general_decor|comparison",
       "style_name": "top-title",
       "visual_family_id": "airy_editorial",
@@ -1669,6 +1727,27 @@
       ]
     },
     {
+      "visual_style_key": "top_title|crisp_modern|general_decor|problem_solving",
+      "style_name": "top-title",
+      "visual_family_id": "crisp_modern",
+      "shot_library_id": "general_decor",
+      "intent_id": "problem_solving",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "bedroom-surface-styling-mistakes-to-avoid"
+      ]
+    },
+    {
       "visual_style_key": "top_title|crisp_modern|textures_materials|problem_solving",
       "style_name": "top-title",
       "visual_family_id": "crisp_modern",
@@ -1741,6 +1820,24 @@
   "top_rankings": {
     "clusters": [
       {
+        "cluster_id": "bedroom_styling_details",
+        "cluster_name": "bedroom styling details",
+        "pin_count": 3,
+        "published_pin_count": 1,
+        "analytics_ready_count": 0,
+        "average_score": 0.0,
+        "average_impressions": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_pin_clicks": 0.0,
+        "average_closeups": 0.0,
+        "signal_label": "no_data",
+        "signal_boost": 0,
+        "top_article_slugs": [
+          "bedroom-surface-styling-mistakes-to-avoid"
+        ]
+      },
+      {
         "cluster_id": "coastal_bathroom",
         "cluster_name": "coastal bathroom",
         "pin_count": 3,
@@ -1810,24 +1907,6 @@
         "signal_boost": 0,
         "top_article_slugs": [
           "cottage-bedroom-texture-mistakes-to-avoid"
-        ]
-      },
-      {
-        "cluster_id": "earthy_bathroom",
-        "cluster_name": "earthy bathroom",
-        "pin_count": 4,
-        "published_pin_count": 4,
-        "analytics_ready_count": 0,
-        "average_score": 0.0,
-        "average_impressions": 0.0,
-        "average_saves": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_pin_clicks": 0.0,
-        "average_closeups": 0.0,
-        "signal_label": "no_data",
-        "signal_boost": 0,
-        "top_article_slugs": [
-          "best-furniture-for-an-earthy-bathroom"
         ]
       }
     ],
@@ -1987,8 +2066,8 @@
       },
       {
         "angle_id": "mistakes",
-        "pin_count": 24,
-        "published_pin_count": 23,
+        "pin_count": 27,
+        "published_pin_count": 24,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,
@@ -1999,11 +2078,11 @@
         "signal_label": "no_data",
         "signal_boost": 0,
         "top_article_slugs": [
+          "bedroom-surface-styling-mistakes-to-avoid",
           "cottage-bathroom-texture-mistakes-to-avoid",
           "cottage-bedroom-texture-mistakes-to-avoid",
           "japandi-bathroom-texture-mistakes-to-avoid",
-          "japandi-bedroom-texture-mistakes-to-avoid",
-          "moody-bedroom-texture-mistakes-to-avoid"
+          "japandi-bedroom-texture-mistakes-to-avoid"
         ]
       }
     ],
@@ -2035,8 +2114,8 @@
         "visual_family_id": "airy_editorial",
         "shot_library_id": "color_palette",
         "intent_id": "inspiration",
-        "pin_count": 1,
-        "published_pin_count": 1,
+        "pin_count": 2,
+        "published_pin_count": 2,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,

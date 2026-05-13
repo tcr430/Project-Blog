@@ -7,7 +7,7 @@ cluster_name: "linen and boucle styling"
 cluster_slug: "linen-and-boucle-styling"
 cluster_article_count: 1
 cluster_primary_keywords: ["linen and boucle decor ideas"]
-cluster_generated_at: "2026-05-11T12:13:37.977228+00:00"
+cluster_generated_at: "2026-05-13T11:34:28.397697+00:00"
 cluster_intro: "Linen And Boucle Styling is a useful decorating topic because it combines inspiration with practical decision-making. Readers usually arrive here looking for a clear style direction, help solving a room problem, or confidence about how to make the look feel intentional at home.
 
 This pillar page brings together the site's coverage around linen and boucle styling, with article angles shaped by keyword themes such as linen and boucle decor ideas. That mix helps the page support both broader search intent and more specific decorating questions without feeling repetitive.
@@ -61,10 +61,10 @@ These adjacent hubs help readers keep moving through the topic without losing th
 <p><a class="cluster-hub-link" href="/clusters/spring-living-room-styling/">Open this cluster</a></p>
 </div>
 <div class="cluster-hub-card">
-<h3><a href="/clusters/bedroom-styling-details/">Bedroom Styling Details</a></h3>
-<p>Broad editorial cluster for bedroom styling details topics.</p>
+<h3><a href="/clusters/bathroom-styling-details/">Bathroom Styling Details</a></h3>
+<p>Broad editorial cluster for bathroom styling details topics.</p>
 <p class="cluster-hub-meta">1 article</p>
-<p><a class="cluster-hub-link" href="/clusters/bedroom-styling-details/">Open this cluster</a></p>
+<p><a class="cluster-hub-link" href="/clusters/bathroom-styling-details/">Open this cluster</a></p>
 </div>
 </div>
 
