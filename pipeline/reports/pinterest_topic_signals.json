@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-13T11:34:26.579237+00:00",
-  "cluster_count": 34,
+  "generated_at": "2026-05-15T11:22:37.706085+00:00",
+  "cluster_count": 35,
   "summary": {
     "hot": 0,
     "warm": 0,
     "cold": 20,
-    "no_data": 14
+    "no_data": 15
   },
   "clusters": [
     {
@@ -773,6 +773,30 @@
       "average_saves": 0.0,
       "signal_label": "cold",
       "signal_boost": -6
+    },
+    {
+      "cluster_name": "summer patio decor",
+      "article_count": 1,
+      "article_slugs": [
+        "summer-patio-decor-mistakes-to-avoid"
+      ],
+      "primary_keywords": [
+        "summer patio decor mistakes to avoid"
+      ],
+      "secondary_keywords": [
+        "summer patio decor ideas",
+        "how to style summer patio decor",
+        "budget summer patio decor ideas",
+        "summer patio decor color palette"
+      ],
+      "pinterest_article_count": 0,
+      "strong_article_count": 0,
+      "weak_article_count": 0,
+      "average_score": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_saves": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0
     },
     {
       "cluster_name": "transitional bathroom",

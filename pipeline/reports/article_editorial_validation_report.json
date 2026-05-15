@@ -1,6 +1,50 @@
 {
-  "generated_at": "2026-05-13T11:29:49.082357+00:00",
+  "generated_at": "2026-05-15T11:18:03.075867+00:00",
   "articles": [
+    {
+      "article_slug": "summer-patio-decor-mistakes-to-avoid",
+      "cluster_id": "summer_patio_decor",
+      "subtopic_id": "refresh",
+      "angle_id": "mistakes",
+      "primary_keyword": "summer patio decor mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Several section headings do not signal the topic strongly enough."
+      ],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 146,
+          "concept_overlap": 7,
+          "first_sentence": "Summer patios are where we unwind, entertain, and soak up the season’s best moments."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 3,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "When Mismatched Furniture Styles and Clutter Rule the Space",
+            "Avoid Overly Monochrome Color Palettes That Suck the Life Out",
+            "How Ignoring Furniture Scale Steals Patio Cohesion",
+            "Beware Harsh Materials and Inconsiderate Lighting That Kill Comfort",
+            "The Biggest Mistake: Skipping a Thoughtful Final Layered Look"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 10,
+          "specificity_term_hits": 8,
+          "secondary_keyword_hits": 1
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-05-15T11:18:03.075470+00:00"
+    },
     {
       "article_slug": "bathroom-surface-styling-mistakes-to-avoid",
       "cluster_id": "bathroom_styling_details",

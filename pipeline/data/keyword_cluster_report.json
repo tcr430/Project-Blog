@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-13T11:34:26.575253+00:00",
-  "cluster_count": 34,
-  "article_count": 35,
+  "generated_at": "2026-05-15T11:22:37.702037+00:00",
+  "cluster_count": 35,
+  "article_count": 36,
   "subtopic_count": 8,
   "angle_count": 5,
   "angle_distribution": {
     "best_options": 17,
     "how_to": 2,
     "ideas": 4,
-    "mistakes": 11,
+    "mistakes": 12,
     "style_specific": 1
   },
   "clusters": [
@@ -1284,7 +1284,7 @@
       "representative_article_slugs": [
         "best-furniture-for-a-scandinavian-bathroom"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 1,
       "weak_article_count": 1,
@@ -1429,6 +1429,50 @@
           "latest_article_date": "2026-04-02",
           "representative_article_slugs": [
             "spring-bedroom-refresh-mistakes-to-avoid"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "mistakes": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_id": "summer_patio_decor",
+      "cluster_name": "summer patio decor",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "seasonal_styling"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "summer patio decor mistakes to avoid"
+      ],
+      "latest_article_date": "2026-05-15",
+      "latest_publication": {
+        "article_slug": "summer-patio-decor-mistakes-to-avoid",
+        "article_title": "Summer Patio Decor: Common Mistakes to Avoid",
+        "publish_date": "2026-05-15",
+        "subtopic_id": "refresh",
+        "subtopic_name": "seasonal refresh",
+        "angle_id": "mistakes"
+      },
+      "representative_article_slugs": [
+        "summer-patio-decor-mistakes-to-avoid"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "refresh",
+          "subtopic_name": "seasonal refresh",
+          "article_count": 1,
+          "latest_article_date": "2026-05-15",
+          "representative_article_slugs": [
+            "summer-patio-decor-mistakes-to-avoid"
           ]
         }
       ],

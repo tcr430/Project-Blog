@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "7312d130c6d88fbcfb4eb4133b96a9713329dc6a46c5f7fe3706d2fec3ca79d3",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/summer-patio-decor-mistakes-to-avoid/hero.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-1": {
+    "cache_key": "2fb9dfda34ba5c17138ecde21686fc98998929d264b5c907f1c0c751b4246e34",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/summer-patio-decor-mistakes-to-avoid/section-1.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-2": {
+    "cache_key": "39ee2726588ddb259d4bebacb86c308451971c92859a1f5890a2428892ef9b94",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/summer-patio-decor-mistakes-to-avoid/section-2.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-3": {
+    "cache_key": "1a43abc7e021fefa6b3de23a0829df8ddc7e39a3903a810bdbdfeb56d29796c6",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/summer-patio-decor-mistakes-to-avoid/section-3.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-4": {
+    "cache_key": "361431f3d1f6eaa51b7f0b7181d60cd51291efad2f9096cb679e63474229c831",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/summer-patio-decor-mistakes-to-avoid/section-4.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-5": {
+    "cache_key": "72cfa548075a2200a9bff86cc563f2bbf76b92254fa28e131c318c4edfdd1193",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/summer-patio-decor-mistakes-to-avoid/section-5.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  }
+}

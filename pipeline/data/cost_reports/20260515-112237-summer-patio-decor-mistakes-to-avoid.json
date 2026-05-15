@@ -1,0 +1,299 @@
+{
+  "generated_at": "2026-05-15T11:22:37.510922+00:00",
+  "trend": "summer patio decor mistakes to avoid",
+  "slug": "summer-patio-decor-mistakes-to-avoid",
+  "article_generation": {
+    "cache_hit": false,
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/article_packages/e3594419d16f3e06a212e3f65fd03377de1b3886bfe8a0ff6cd658b4f76e12a8.json",
+    "model": "gpt-4.1-mini",
+    "generation_calls": 1,
+    "short_retries": 0,
+    "angle_retries": 0,
+    "product_retries": 0,
+    "selected_products": 0,
+    "affiliate_mode": false,
+    "monetization_profile_id": "fix_oriented",
+    "generated_link_count": 0,
+    "primary_keyword": "summer patio decor mistakes to avoid",
+    "topical_cluster": "summer patio decor"
+  },
+  "seo_validation": {
+    "article_slug": "summer-patio-decor-mistakes-to-avoid",
+    "cluster": "summer patio decor",
+    "cluster_id": "summer patio decor",
+    "subtopic_id": "refresh",
+    "subtopic_name": "seasonal refresh",
+    "angle_id": "mistakes",
+    "intent_id": "problem_solving",
+    "primary_keyword": "summer patio decor mistakes to avoid",
+    "validation_status": "warning",
+    "warnings": [
+      "Main section headings may be too generic for the chosen keyword.",
+      "Primary keyword appears very lightly in the article body."
+    ],
+    "errors": [],
+    "duplicate_candidate_slugs": [],
+    "timestamp": "2026-05-15T11:18:03.071695+00:00"
+  },
+  "editorial_validation": {
+    "article_slug": "summer-patio-decor-mistakes-to-avoid",
+    "cluster_id": "summer_patio_decor",
+    "subtopic_id": "refresh",
+    "angle_id": "mistakes",
+    "primary_keyword": "summer patio decor mistakes to avoid",
+    "validation_status": "warning",
+    "warnings": [
+      "Several section headings do not signal the topic strongly enough."
+    ],
+    "errors": [],
+    "checks": {
+      "generic_intro": {
+        "intro_word_count": 146,
+        "concept_overlap": 7,
+        "first_sentence": "Summer patios are where we unwind, entertain, and soak up the season’s best moments."
+      },
+      "heading_quality": {
+        "heading_count": 5,
+        "vague_heading_count": 0,
+        "low_specificity_heading_count": 3,
+        "repeated_signature_count": 0,
+        "repeated_stem_count": 0,
+        "headings": [
+          "When Mismatched Furniture Styles and Clutter Rule the Space",
+          "Avoid Overly Monochrome Color Palettes That Suck the Life Out",
+          "How Ignoring Furniture Scale Steals Patio Cohesion",
+          "Beware Harsh Materials and Inconsiderate Lighting That Kill Comfort",
+          "The Biggest Mistake: Skipping a Thoughtful Final Layered Look"
+        ]
+      },
+      "specificity": {
+        "concept_token_hits": 10,
+        "specificity_term_hits": 8,
+        "secondary_keyword_hits": 1
+      },
+      "distinctiveness": {
+        "nearest_article_slug": "",
+        "max_similarity": 0.0,
+        "strongest_heading_overlap": 0
+      }
+    },
+    "timestamp": "2026-05-15T11:18:03.075470+00:00"
+  },
+  "image_generation": {
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/image_generation_cache/summer-patio-decor-mistakes-to-avoid.json",
+    "provider": "flux",
+    "provider_model": "flux-2-max",
+    "model": "flux-2-max",
+    "fallback_provider": "openai",
+    "fallback_model": "gpt-image-1",
+    "size": "1536x1024",
+    "hero_quality": "high",
+    "section_quality": "medium",
+    "allow_fallback": true,
+    "fallback_events": 0,
+    "generated_images": 6,
+    "cache_hits": 0,
+    "generation_calls": 6,
+    "qa_calls": 1,
+    "details": [
+      {
+        "label": "hero",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 1,
+        "quality": "high",
+        "qa_enabled": true,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "cc5b88b7-053b-43c2-87d3-14d0269e56bb",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=cc5b88b7-053b-43c2-87d3-14d0269e56bb",
+            "poll_attempts": 41,
+            "provider_status": "Ready",
+            "elapsed_seconds": 67.29,
+            "quality": "high",
+            "elapsed_seconds_total": 67.29,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation",
+        "qa_reason": "The image shows a realistic and airy summer patio setting with a single armchair as the memorable focal point. It features soft natural daylight and a restrained, light color palette matching the editorial style requested. The space feels believable and polished without clutter or distracting elements. There is no text, logo, or people, and the composition evokes seasonal freshness without appearing staged for ecommerce."
+      },
+      {
+        "label": "section-1",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "637f310d-96c9-473f-b2ab-a631586b17e3",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=637f310d-96c9-473f-b2ab-a631586b17e3",
+            "poll_attempts": 23,
+            "provider_status": "Ready",
+            "elapsed_seconds": 38.49,
+            "quality": "medium",
+            "elapsed_seconds_total": 38.49,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-2",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "3cf18ee2-b70a-474d-a905-1ed4d105ef20",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=3cf18ee2-b70a-474d-a905-1ed4d105ef20",
+            "poll_attempts": 18,
+            "provider_status": "Ready",
+            "elapsed_seconds": 30.32,
+            "quality": "medium",
+            "elapsed_seconds_total": 30.32,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-3",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "c47f5f56-b1c7-4213-8e4d-474eb1d04f74",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=c47f5f56-b1c7-4213-8e4d-474eb1d04f74",
+            "poll_attempts": 24,
+            "provider_status": "Ready",
+            "elapsed_seconds": 32.45,
+            "quality": "medium",
+            "elapsed_seconds_total": 32.45,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-4",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "cc5ba758-0018-4915-89a2-a78ffe7b457f",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=cc5ba758-0018-4915-89a2-a78ffe7b457f",
+            "poll_attempts": 21,
+            "provider_status": "Ready",
+            "elapsed_seconds": 36.16,
+            "quality": "medium",
+            "elapsed_seconds_total": 36.16,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-5",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "87a2b116-ec95-445d-8134-ac67ec9fff55",
+            "polling_url": "https://api.us4.bfl.ai/v1/get_result?id=87a2b116-ec95-445d-8134-ac67ec9fff55",
+            "poll_attempts": 34,
+            "provider_status": "Ready",
+            "elapsed_seconds": 45.15,
+            "quality": "medium",
+            "elapsed_seconds_total": 45.15,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      }
+    ]
+  },
+  "pinterest": {
+    "variants_requested": 4,
+    "pin_assets_generated": false,
+    "mode": null
+  }
+}
