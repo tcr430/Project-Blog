@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-17T18:49:57.968281+00:00",
+  "generated_at": "2026-05-18T02:00:53.429312+00:00",
   "history_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_history.json",
-  "published_pin_count": 59,
+  "published_pin_count": 56,
   "global_metrics": {
-    "published_pins": 59,
+    "published_pins": 56,
     "analytics_ready_pins": 0,
     "average_impressions": null,
     "average_saves": null,
@@ -15,7 +15,7 @@
   "performance_by_variant_type": [
     {
       "variant_type": "trend_overview",
-      "published_pins": 20,
+      "published_pins": 17,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -61,7 +61,7 @@
   "performance_by_board": [
     {
       "board_key": "bedroom",
-      "published_pins": 23,
+      "published_pins": 21,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -97,7 +97,7 @@
     },
     {
       "board_key": "bathroom",
-      "published_pins": 14,
+      "published_pins": 13,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -291,7 +291,7 @@
     },
     {
       "article_slug": "japandi-bedroom-texture-mistakes-to-avoid",
-      "published_pins": 3,
+      "published_pins": 2,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -305,7 +305,7 @@
     },
     {
       "article_slug": "japandi-bathroom-texture-mistakes-to-avoid",
-      "published_pins": 3,
+      "published_pins": 2,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -347,7 +347,7 @@
     },
     {
       "article_slug": "choosing-best-furniture-coastal-bedroom",
-      "published_pins": 2,
+      "published_pins": 1,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -406,7 +406,7 @@
     "top_variant_types": [
       {
         "variant_type": "trend_overview",
-        "published_pins": 20,
+        "published_pins": 17,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -452,7 +452,7 @@
     "top_boards": [
       {
         "board_key": "bedroom",
-        "published_pins": 23,
+        "published_pins": 21,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -488,7 +488,7 @@
       },
       {
         "board_key": "bathroom",
-        "published_pins": 14,
+        "published_pins": 13,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
