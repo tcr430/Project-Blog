@@ -1,0 +1,302 @@
+{
+  "generated_at": "2026-05-18T12:35:09.287032+00:00",
+  "trend": "how to style a neutral kitchen",
+  "slug": "how-to-style-a-neutral-kitchen",
+  "article_generation": {
+    "cache_hit": false,
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/article_packages/0b09a781206e514f925e2f98dc9dae9cd6bdff8be1f7d90ac1c1ce899d832f79.json",
+    "model": "gpt-4.1-mini",
+    "generation_calls": 1,
+    "short_retries": 0,
+    "angle_retries": 0,
+    "product_retries": 0,
+    "selected_products": 0,
+    "affiliate_mode": false,
+    "monetization_profile_id": "utility_light",
+    "generated_link_count": 0,
+    "primary_keyword": "how to style a neutral kitchen",
+    "topical_cluster": "neutral kitchen"
+  },
+  "seo_validation": {
+    "article_slug": "how-to-style-a-neutral-kitchen",
+    "cluster": "neutral kitchen",
+    "cluster_id": "neutral kitchen",
+    "subtopic_id": "layout",
+    "subtopic_name": "layout and foundation",
+    "angle_id": "how to",
+    "intent_id": "implementation",
+    "primary_keyword": "how to style a neutral kitchen",
+    "validation_status": "warning",
+    "warnings": [
+      "Display title still uses an overused opening pattern.",
+      "Main section headings may be too generic for the chosen keyword.",
+      "None of the secondary keywords appear in the article body.",
+      "Primary keyword appears very lightly in the article body."
+    ],
+    "errors": [],
+    "duplicate_candidate_slugs": [],
+    "timestamp": "2026-05-18T12:31:01.148745+00:00"
+  },
+  "editorial_validation": {
+    "article_slug": "how-to-style-a-neutral-kitchen",
+    "cluster_id": "neutral_kitchen",
+    "subtopic_id": "layout",
+    "angle_id": "how_to",
+    "primary_keyword": "how to style a neutral kitchen",
+    "validation_status": "warning",
+    "warnings": [
+      "Several section headings do not signal the topic strongly enough.",
+      "Supporting keyword ideas are barely reflected in the body."
+    ],
+    "errors": [],
+    "checks": {
+      "generic_intro": {
+        "intro_word_count": 115,
+        "concept_overlap": 4,
+        "first_sentence": "Styling a neutral kitchen can sometimes feel like walking a fine line between understated and bland."
+      },
+      "heading_quality": {
+        "heading_count": 5,
+        "vague_heading_count": 0,
+        "low_specificity_heading_count": 3,
+        "repeated_signature_count": 0,
+        "repeated_stem_count": 0,
+        "headings": [
+          "Choose a Thoughtful Neutral Palette with a Clear Foundation",
+          "Layer Natural Materials and Tactile Textures to Add Visual Interest",
+          "Use Hardware and Fixtures to Introduce Subtle But Impactful Contrast",
+          "Balance Open Shelves with a Curated Mix of Neutrals and Greenery",
+          "Style Finishing Touches That Offer Practicality and Personality"
+        ]
+      },
+      "specificity": {
+        "concept_token_hits": 7,
+        "specificity_term_hits": 13,
+        "secondary_keyword_hits": 0
+      },
+      "distinctiveness": {
+        "nearest_article_slug": "",
+        "max_similarity": 0.0,
+        "strongest_heading_overlap": 0
+      }
+    },
+    "timestamp": "2026-05-18T12:31:01.151690+00:00"
+  },
+  "image_generation": {
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/image_generation_cache/how-to-style-a-neutral-kitchen.json",
+    "provider": "flux",
+    "provider_model": "flux-2-max",
+    "model": "flux-2-max",
+    "fallback_provider": "openai",
+    "fallback_model": "gpt-image-1",
+    "size": "1536x1024",
+    "hero_quality": "high",
+    "section_quality": "medium",
+    "allow_fallback": true,
+    "fallback_events": 0,
+    "generated_images": 6,
+    "cache_hits": 0,
+    "generation_calls": 6,
+    "qa_calls": 1,
+    "details": [
+      {
+        "label": "hero",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 1,
+        "quality": "high",
+        "qa_enabled": true,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "cce6204a-3d8e-4af7-9f9a-83d851cafcab",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=cce6204a-3d8e-4af7-9f9a-83d851cafcab",
+            "poll_attempts": 28,
+            "provider_status": "Ready",
+            "elapsed_seconds": 44.15,
+            "quality": "high",
+            "elapsed_seconds_total": 44.15,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation",
+        "qa_reason": "The image depicts a clear front-facing neutral kitchen setup with an editorial style, featuring an airy, quiet, and polished look. The color palette aligns well with chalky whites, oat tones, and pale wood, and the lighting is soft natural daylight. The arrangement is believable, practical, and free from text, logos, people, or heavy clutter, making it highly relevant and usable for the decor blog article."
+      },
+      {
+        "label": "section-1",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "29f79a4e-ad71-4004-9a1d-8ec22d60f964",
+            "polling_url": "https://api.us4.bfl.ai/v1/get_result?id=29f79a4e-ad71-4004-9a1d-8ec22d60f964",
+            "poll_attempts": 26,
+            "provider_status": "Ready",
+            "elapsed_seconds": 35.36,
+            "quality": "medium",
+            "elapsed_seconds_total": 35.36,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-2",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "3d73be2e-4cc4-4a1d-856d-ee757913c06e",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=3d73be2e-4cc4-4a1d-856d-ee757913c06e",
+            "poll_attempts": 22,
+            "provider_status": "Ready",
+            "elapsed_seconds": 33.82,
+            "quality": "medium",
+            "elapsed_seconds_total": 33.82,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-3",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "8fa379fd-8350-4abe-a23c-aa3c9836372e",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=8fa379fd-8350-4abe-a23c-aa3c9836372e",
+            "poll_attempts": 24,
+            "provider_status": "Ready",
+            "elapsed_seconds": 37.61,
+            "quality": "medium",
+            "elapsed_seconds_total": 37.61,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-4",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "9653be5d-811c-4b1a-afc2-101278aa14e9",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=9653be5d-811c-4b1a-afc2-101278aa14e9",
+            "poll_attempts": 26,
+            "provider_status": "Ready",
+            "elapsed_seconds": 35.03,
+            "quality": "medium",
+            "elapsed_seconds_total": 35.03,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-5",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "1f7dd48c-3cb2-4a86-ba76-1b603416a66c",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=1f7dd48c-3cb2-4a86-ba76-1b603416a66c",
+            "poll_attempts": 23,
+            "provider_status": "Ready",
+            "elapsed_seconds": 36.23,
+            "quality": "medium",
+            "elapsed_seconds_total": 36.23,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      }
+    ]
+  },
+  "pinterest": {
+    "variants_requested": 4,
+    "pin_assets_generated": false,
+    "mode": null
+  }
+}

@@ -1,6 +1,45 @@
 {
-  "generated_at": "2026-05-15T11:18:03.071874+00:00",
+  "generated_at": "2026-05-18T12:31:01.148926+00:00",
   "articles": [
+    {
+      "article_slug": "how-to-style-a-neutral-kitchen",
+      "cluster": "neutral kitchen",
+      "cluster_id": "neutral kitchen",
+      "subtopic_id": "layout",
+      "subtopic_name": "layout and foundation",
+      "angle_id": "how to",
+      "intent_id": "implementation",
+      "primary_keyword": "how to style a neutral kitchen",
+      "validation_status": "warning",
+      "warnings": [
+        "Display title still uses an overused opening pattern.",
+        "Main section headings may be too generic for the chosen keyword.",
+        "None of the secondary keywords appear in the article body.",
+        "Primary keyword appears very lightly in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-05-18T12:31:01.148745+00:00"
+    },
+    {
+      "article_slug": "summer-balcony-styling-mistakes-to-avoid",
+      "cluster": "summer balcony styling",
+      "cluster_id": "summer balcony styling",
+      "subtopic_id": "refresh",
+      "subtopic_name": "seasonal refresh",
+      "angle_id": "mistakes",
+      "intent_id": "problem_solving",
+      "primary_keyword": "summer balcony styling mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Main section headings may be too generic for the chosen keyword.",
+        "None of the secondary keywords appear in the article body.",
+        "Primary keyword appears very lightly in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-05-18T12:30:13.813480+00:00"
+    },
     {
       "article_slug": "summer-patio-decor-mistakes-to-avoid",
       "cluster": "summer patio decor",

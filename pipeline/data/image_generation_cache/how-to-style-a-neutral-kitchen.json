@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "510a1d6372e94bcf72951ca54e2d4dd6867ad40be74e1057dea348a285081ac1",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/how-to-style-a-neutral-kitchen/hero.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-1": {
+    "cache_key": "37e621b6ef1b580954aeadc9666c9d801d632e483319ae026ea8a9c42c9a7138",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/how-to-style-a-neutral-kitchen/section-1.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-2": {
+    "cache_key": "8fa26e011319edde8d675ec09ba878afb87b0891053da451052ff06d3ade036b",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/how-to-style-a-neutral-kitchen/section-2.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-3": {
+    "cache_key": "6c129c9cdbf0dfb471af2d9a37288ebd9d9e09d957cc09cb205f6d6f289a07b0",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/how-to-style-a-neutral-kitchen/section-3.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-4": {
+    "cache_key": "2f5645ef82b693a047c2c23533249d42ee69a1fa9854a6a16a9bfcc94cb4dafa",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/how-to-style-a-neutral-kitchen/section-4.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-5": {
+    "cache_key": "59309ecb3e432e8442cf4ca7a2d93e85b704e6a0764a7a96ce3666f7ae309d14",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/how-to-style-a-neutral-kitchen/section-5.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  }
+}

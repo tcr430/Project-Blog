@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-15T11:17:15.858363+00:00",
+  "generated_at": "2026-05-18T12:25:28.090894+00:00",
   "overview": {
-    "pin_count": 77,
-    "published_pin_count": 59,
+    "pin_count": 80,
+    "published_pin_count": 56,
     "analytics_ready_pin_count": 0,
-    "tracked_article_count": 23
+    "tracked_article_count": 24
   },
   "best_performing_clusters": [
     {
@@ -47,7 +47,7 @@
       "cluster_id": "coastal_bedroom",
       "cluster_name": "coastal bedroom",
       "pin_count": 3,
-      "published_pin_count": 2,
+      "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -137,7 +137,7 @@
       "cluster_id": "japandi_bathroom",
       "cluster_name": "japandi bathroom",
       "pin_count": 3,
-      "published_pin_count": 3,
+      "published_pin_count": 2,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -155,7 +155,7 @@
       "cluster_id": "japandi_bedroom",
       "cluster_name": "japandi bedroom",
       "pin_count": 3,
-      "published_pin_count": 3,
+      "published_pin_count": 2,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -383,6 +383,24 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "spring-living-room-styling-color-palette"
+      ]
+    },
+    {
+      "cluster_id": "summer_patio_decor",
+      "cluster_name": "summer patio decor",
+      "pin_count": 3,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "summer-patio-decor-mistakes-to-avoid"
       ]
     },
     {
@@ -618,7 +636,7 @@
       "subtopic_id": "furniture",
       "subtopic_name": "furniture and anchors",
       "pin_count": 3,
-      "published_pin_count": 2,
+      "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -709,6 +727,25 @@
       ]
     },
     {
+      "cluster_id": "summer_patio_decor",
+      "subtopic_id": "refresh",
+      "subtopic_name": "seasonal refresh",
+      "pin_count": 3,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "summer-patio-decor-mistakes-to-avoid"
+      ]
+    },
+    {
       "cluster_id": "bedroom_styling_details",
       "subtopic_id": "surfaces",
       "subtopic_name": "surface styling",
@@ -789,7 +826,7 @@
       "subtopic_id": "textures",
       "subtopic_name": "textures and layers",
       "pin_count": 3,
-      "published_pin_count": 3,
+      "published_pin_count": 2,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -808,7 +845,7 @@
       "subtopic_id": "textures",
       "subtopic_name": "textures and layers",
       "pin_count": 3,
-      "published_pin_count": 3,
+      "published_pin_count": 2,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -865,7 +902,7 @@
     {
       "angle_id": "best_options",
       "pin_count": 39,
-      "published_pin_count": 27,
+      "published_pin_count": 26,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -920,8 +957,8 @@
     },
     {
       "angle_id": "mistakes",
-      "pin_count": 27,
-      "published_pin_count": 25,
+      "pin_count": 30,
+      "published_pin_count": 23,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -1011,7 +1048,7 @@
       "visual_family_id": "airy_editorial",
       "shot_library_id": "seasonal_styling",
       "intent_id": "problem_solving",
-      "pin_count": 1,
+      "pin_count": 2,
       "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1023,7 +1060,8 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
-        "spring-bedroom-refresh-mistakes-to-avoid"
+        "spring-bedroom-refresh-mistakes-to-avoid",
+        "summer-patio-decor-mistakes-to-avoid"
       ]
     },
     {
@@ -1119,7 +1157,7 @@
       "visual_family_id": "crisp_modern",
       "shot_library_id": "textures_materials",
       "intent_id": "problem_solving",
-      "pin_count": 2,
+      "pin_count": 3,
       "published_pin_count": 2,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1132,7 +1170,8 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "cottage-bathroom-texture-mistakes-to-avoid",
-        "cottage-bedroom-texture-mistakes-to-avoid"
+        "cottage-bedroom-texture-mistakes-to-avoid",
+        "japandi-bedroom-texture-mistakes-to-avoid"
       ]
     },
     {
@@ -1141,7 +1180,7 @@
       "visual_family_id": "warm_layered",
       "shot_library_id": "general_decor",
       "intent_id": "comparison",
-      "pin_count": 6,
+      "pin_count": 7,
       "published_pin_count": 5,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1167,7 +1206,7 @@
       "shot_library_id": "textures_materials",
       "intent_id": "problem_solving",
       "pin_count": 1,
-      "published_pin_count": 1,
+      "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -1251,7 +1290,7 @@
       "visual_family_id": "airy_editorial",
       "shot_library_id": "seasonal_styling",
       "intent_id": "problem_solving",
-      "pin_count": 1,
+      "pin_count": 2,
       "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1263,7 +1302,8 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
-        "spring-bedroom-refresh-mistakes-to-avoid"
+        "spring-bedroom-refresh-mistakes-to-avoid",
+        "summer-patio-decor-mistakes-to-avoid"
       ]
     },
     {
@@ -1359,8 +1399,8 @@
       "visual_family_id": "crisp_modern",
       "shot_library_id": "textures_materials",
       "intent_id": "problem_solving",
-      "pin_count": 3,
-      "published_pin_count": 3,
+      "pin_count": 2,
+      "published_pin_count": 2,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -1372,8 +1412,7 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "cottage-bathroom-texture-mistakes-to-avoid",
-        "cottage-bedroom-texture-mistakes-to-avoid",
-        "japandi-bedroom-texture-mistakes-to-avoid"
+        "cottage-bedroom-texture-mistakes-to-avoid"
       ]
     },
     {
@@ -1470,7 +1509,7 @@
       "visual_family_id": "airy_editorial",
       "shot_library_id": "seasonal_styling",
       "intent_id": "problem_solving",
-      "pin_count": 1,
+      "pin_count": 2,
       "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1482,7 +1521,8 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
-        "spring-bedroom-refresh-mistakes-to-avoid"
+        "spring-bedroom-refresh-mistakes-to-avoid",
+        "summer-patio-decor-mistakes-to-avoid"
       ]
     },
     {
@@ -1776,8 +1816,8 @@
       "visual_family_id": "warm_layered",
       "shot_library_id": "general_decor",
       "intent_id": "comparison",
-      "pin_count": 5,
-      "published_pin_count": 4,
+      "pin_count": 4,
+      "published_pin_count": 3,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -1791,8 +1831,7 @@
         "best-furniture-for-coastal-bathroom",
         "best-furniture-for-earthy-bedroom",
         "best-furniture-for-scandinavian-bedroom",
-        "best-furniture-transitional-bedroom",
-        "choosing-best-furniture-coastal-bedroom"
+        "best-furniture-transitional-bedroom"
       ]
     },
     {
@@ -1859,7 +1898,7 @@
         "cluster_id": "coastal_bedroom",
         "cluster_name": "coastal bedroom",
         "pin_count": 3,
-        "published_pin_count": 2,
+        "published_pin_count": 1,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,
@@ -2011,7 +2050,7 @@
       {
         "angle_id": "best_options",
         "pin_count": 39,
-        "published_pin_count": 27,
+        "published_pin_count": 26,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,
@@ -2066,8 +2105,8 @@
       },
       {
         "angle_id": "mistakes",
-        "pin_count": 27,
-        "published_pin_count": 25,
+        "pin_count": 30,
+        "published_pin_count": 23,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,
@@ -2157,7 +2196,7 @@
         "visual_family_id": "airy_editorial",
         "shot_library_id": "seasonal_styling",
         "intent_id": "problem_solving",
-        "pin_count": 1,
+        "pin_count": 2,
         "published_pin_count": 1,
         "analytics_ready_count": 0,
         "average_score": 0.0,
@@ -2169,7 +2208,8 @@
         "signal_label": "no_data",
         "signal_boost": 0,
         "top_article_slugs": [
-          "spring-bedroom-refresh-mistakes-to-avoid"
+          "spring-bedroom-refresh-mistakes-to-avoid",
+          "summer-patio-decor-mistakes-to-avoid"
         ]
       },
       {

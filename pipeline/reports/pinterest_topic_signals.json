@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-15T11:22:37.706085+00:00",
-  "cluster_count": 35,
+  "generated_at": "2026-05-18T12:35:09.482392+00:00",
+  "cluster_count": 36,
   "summary": {
     "hot": 0,
     "warm": 0,
     "cold": 20,
-    "no_data": 15
+    "no_data": 16
   },
   "clusters": [
     {
@@ -580,6 +580,30 @@
       "average_saves": 0.0,
       "signal_label": "cold",
       "signal_boost": -6
+    },
+    {
+      "cluster_name": "neutral kitchen",
+      "article_count": 1,
+      "article_slugs": [
+        "how-to-style-a-neutral-kitchen"
+      ],
+      "primary_keywords": [
+        "how to style a neutral kitchen"
+      ],
+      "secondary_keywords": [
+        "neutral kitchen ideas",
+        "neutral kitchen decor",
+        "neutral kitchen layout ideas",
+        "neutral kitchen color palette"
+      ],
+      "pinterest_article_count": 0,
+      "strong_article_count": 0,
+      "weak_article_count": 0,
+      "average_score": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_saves": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0
     },
     {
       "cluster_name": "organic modern living room",

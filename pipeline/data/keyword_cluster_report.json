@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-15T11:22:37.702037+00:00",
-  "cluster_count": 35,
-  "article_count": 36,
+  "generated_at": "2026-05-18T12:35:09.478154+00:00",
+  "cluster_count": 36,
+  "article_count": 37,
   "subtopic_count": 8,
   "angle_count": 5,
   "angle_distribution": {
     "best_options": 17,
-    "how_to": 2,
+    "how_to": 3,
     "ideas": 4,
     "mistakes": 12,
     "style_specific": 1
@@ -1108,7 +1108,7 @@
       "representative_article_slugs": [
         "how-to-style-a-neutral-bedroom"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
@@ -1121,6 +1121,50 @@
           "latest_article_date": "2026-04-01",
           "representative_article_slugs": [
             "how-to-style-a-neutral-bedroom"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "how_to": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_id": "neutral_kitchen",
+      "cluster_name": "neutral kitchen",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "kitchens_dining"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "how to style a neutral kitchen"
+      ],
+      "latest_article_date": "2026-05-18",
+      "latest_publication": {
+        "article_slug": "how-to-style-a-neutral-kitchen",
+        "article_title": "How to Style a Neutral Kitchen: A Clear Starting Point",
+        "publish_date": "2026-05-18",
+        "subtopic_id": "layout",
+        "subtopic_name": "layout and foundation",
+        "angle_id": "how_to"
+      },
+      "representative_article_slugs": [
+        "how-to-style-a-neutral-kitchen"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "layout",
+          "subtopic_name": "layout and foundation",
+          "article_count": 1,
+          "latest_article_date": "2026-05-18",
+          "representative_article_slugs": [
+            "how-to-style-a-neutral-kitchen"
           ]
         }
       ],
@@ -1196,7 +1240,7 @@
       "representative_article_slugs": [
         "parisian-bathroom-texture-mistakes-to-avoid"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
@@ -1240,7 +1284,7 @@
       "representative_article_slugs": [
         "best-furniture-parisian-bedroom"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 1,
       "weak_article_count": 1,
@@ -1416,7 +1460,7 @@
       "representative_article_slugs": [
         "spring-bedroom-refresh-mistakes-to-avoid"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
