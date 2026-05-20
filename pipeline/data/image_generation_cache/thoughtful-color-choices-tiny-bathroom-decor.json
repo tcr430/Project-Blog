@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "115e33df89dbca3208e76950c0b107c5f537de4a2376a891a8ddfe0d9dc3bf39",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/thoughtful-color-choices-tiny-bathroom-decor/hero.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-1": {
+    "cache_key": "7b40a394e43c856165c691932dd553706570fc58893db9257e5d3a28d73cb624",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/thoughtful-color-choices-tiny-bathroom-decor/section-1.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-2": {
+    "cache_key": "585f2e153745878d5d22955ceedbb66f48c075ce1b94154f11ed0a554bfd3d7a",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/thoughtful-color-choices-tiny-bathroom-decor/section-2.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-3": {
+    "cache_key": "d8f3eba9b83528934f4b63f6563d910a308c4a898fc369156ad228599db8da7d",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/thoughtful-color-choices-tiny-bathroom-decor/section-3.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-4": {
+    "cache_key": "0e84f1fd89d55b636da22497301180238f7147e3d8b47dc5a092595a9cd94281",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/thoughtful-color-choices-tiny-bathroom-decor/section-4.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-5": {
+    "cache_key": "1682f4f666ee2fd73582bdf0a866739ddce9e319afef3cc7fc41c7707581194f",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/thoughtful-color-choices-tiny-bathroom-decor/section-5.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  }
+}

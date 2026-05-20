@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-18T12:35:09.482392+00:00",
-  "cluster_count": 36,
+  "generated_at": "2026-05-20T11:52:28.639168+00:00",
+  "cluster_count": 37,
   "summary": {
     "hot": 0,
     "warm": 0,
-    "cold": 20,
-    "no_data": 16
+    "cold": 19,
+    "no_data": 18
   },
   "clusters": [
     {
@@ -380,14 +380,14 @@
         "how to style surfaces in living room",
         "living room surface styling mistakes to avoid"
       ],
-      "pinterest_article_count": 1,
+      "pinterest_article_count": 0,
       "strong_article_count": 0,
-      "weak_article_count": 1,
+      "weak_article_count": 0,
       "average_score": 0.0,
       "average_outbound_clicks": 0.0,
       "average_saves": 0.0,
-      "signal_label": "cold",
-      "signal_boost": -6
+      "signal_label": "no_data",
+      "signal_boost": 0
     },
     {
       "cluster_name": "mediterranean bathroom",
@@ -812,6 +812,30 @@
         "how to style summer patio decor",
         "budget summer patio decor ideas",
         "summer patio decor color palette"
+      ],
+      "pinterest_article_count": 0,
+      "strong_article_count": 0,
+      "weak_article_count": 0,
+      "average_score": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_saves": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0
+    },
+    {
+      "cluster_name": "tiny bathroom decor",
+      "article_count": 1,
+      "article_slugs": [
+        "thoughtful-color-choices-tiny-bathroom-decor"
+      ],
+      "primary_keywords": [
+        "best colors for tiny bathroom decor"
+      ],
+      "secondary_keywords": [
+        "tiny bathroom decor ideas",
+        "how to style tiny bathroom decor",
+        "tiny bathroom decor layout ideas",
+        "tiny bathroom decor layout mistakes to avoid"
       ],
       "pinterest_article_count": 0,
       "strong_article_count": 0,

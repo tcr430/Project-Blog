@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-18T12:35:09.478154+00:00",
-  "cluster_count": 36,
-  "article_count": 37,
-  "subtopic_count": 8,
+  "generated_at": "2026-05-20T11:52:28.635157+00:00",
+  "cluster_count": 37,
+  "article_count": 38,
+  "subtopic_count": 9,
   "angle_count": 5,
   "angle_distribution": {
-    "best_options": 17,
+    "best_options": 18,
     "how_to": 3,
     "ideas": 4,
     "mistakes": 12,
@@ -1522,6 +1522,50 @@
       ],
       "angle_distribution": {
         "mistakes": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_id": "tiny_bathroom_decor",
+      "cluster_name": "tiny bathroom decor",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "utility_transition"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "best colors for tiny bathroom decor"
+      ],
+      "latest_article_date": "2026-05-20",
+      "latest_publication": {
+        "article_slug": "thoughtful-color-choices-tiny-bathroom-decor",
+        "article_title": "Colors for Tiny Bathroom Decor: A Practical Buying Guide",
+        "publish_date": "2026-05-20",
+        "subtopic_id": "light",
+        "subtopic_name": "light and openness",
+        "angle_id": "best_options"
+      },
+      "representative_article_slugs": [
+        "thoughtful-color-choices-tiny-bathroom-decor"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "light",
+          "subtopic_name": "light and openness",
+          "article_count": 1,
+          "latest_article_date": "2026-05-20",
+          "representative_article_slugs": [
+            "thoughtful-color-choices-tiny-bathroom-decor"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "best_options": 1
       },
       "status": "underdeveloped"
     },

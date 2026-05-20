@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-18T12:25:28.090894+00:00",
+  "generated_at": "2026-05-20T11:46:30.678718+00:00",
   "overview": {
-    "pin_count": 80,
-    "published_pin_count": 56,
+    "pin_count": 83,
+    "published_pin_count": 53,
     "analytics_ready_pin_count": 0,
-    "tracked_article_count": 24
+    "tracked_article_count": 25
   },
   "best_performing_clusters": [
     {
@@ -29,7 +29,7 @@
       "cluster_id": "coastal_bathroom",
       "cluster_name": "coastal bathroom",
       "pin_count": 3,
-      "published_pin_count": 2,
+      "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -83,7 +83,7 @@
       "cluster_id": "cottage_bedroom",
       "cluster_name": "cottage bedroom",
       "pin_count": 3,
-      "published_pin_count": 3,
+      "published_pin_count": 2,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -173,7 +173,7 @@
       "cluster_id": "living_room_styling_details",
       "cluster_name": "living room styling details",
       "pin_count": 3,
-      "published_pin_count": 1,
+      "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -275,6 +275,24 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "how-to-style-a-neutral-bedroom"
+      ]
+    },
+    {
+      "cluster_id": "neutral_kitchen",
+      "cluster_name": "neutral kitchen",
+      "pin_count": 3,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "how-to-style-a-neutral-kitchen"
       ]
     },
     {
@@ -484,7 +502,7 @@
       "subtopic_id": "furniture",
       "subtopic_name": "furniture and anchors",
       "pin_count": 3,
-      "published_pin_count": 2,
+      "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -689,6 +707,25 @@
       ]
     },
     {
+      "cluster_id": "neutral_kitchen",
+      "subtopic_id": "layout",
+      "subtopic_name": "layout and foundation",
+      "pin_count": 3,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "how-to-style-a-neutral-kitchen"
+      ]
+    },
+    {
       "cluster_id": "spring_living_room_styling",
       "subtopic_id": "palette",
       "subtopic_name": "palette and mood",
@@ -769,7 +806,7 @@
       "subtopic_id": "surfaces",
       "subtopic_name": "surface styling",
       "pin_count": 3,
-      "published_pin_count": 1,
+      "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -807,7 +844,7 @@
       "subtopic_id": "textures",
       "subtopic_name": "textures and layers",
       "pin_count": 3,
-      "published_pin_count": 3,
+      "published_pin_count": 2,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -902,7 +939,7 @@
     {
       "angle_id": "best_options",
       "pin_count": 39,
-      "published_pin_count": 26,
+      "published_pin_count": 24,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -922,7 +959,7 @@
     },
     {
       "angle_id": "how_to",
-      "pin_count": 8,
+      "pin_count": 11,
       "published_pin_count": 4,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -935,7 +972,8 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "how-to-style-a-neutral-bathroom",
-        "how-to-style-a-neutral-bedroom"
+        "how-to-style-a-neutral-bedroom",
+        "how-to-style-a-neutral-kitchen"
       ]
     },
     {
@@ -958,7 +996,7 @@
     {
       "angle_id": "mistakes",
       "pin_count": 30,
-      "published_pin_count": 23,
+      "published_pin_count": 22,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -1026,7 +1064,7 @@
       "visual_family_id": "airy_editorial",
       "shot_library_id": "general_decor",
       "intent_id": "comparison",
-      "pin_count": 2,
+      "pin_count": 3,
       "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1158,7 +1196,7 @@
       "shot_library_id": "textures_materials",
       "intent_id": "problem_solving",
       "pin_count": 3,
-      "published_pin_count": 2,
+      "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -1180,7 +1218,7 @@
       "visual_family_id": "warm_layered",
       "shot_library_id": "general_decor",
       "intent_id": "comparison",
-      "pin_count": 7,
+      "pin_count": 8,
       "published_pin_count": 5,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1226,7 +1264,7 @@
       "visual_family_id": "airy_editorial",
       "shot_library_id": "color_palette",
       "intent_id": "implementation",
-      "pin_count": 1,
+      "pin_count": 2,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1238,7 +1276,8 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
-        "how-to-style-a-neutral-bathroom"
+        "how-to-style-a-neutral-bathroom",
+        "how-to-style-a-neutral-kitchen"
       ]
     },
     {
@@ -1268,8 +1307,8 @@
       "visual_family_id": "airy_editorial",
       "shot_library_id": "general_decor",
       "intent_id": "comparison",
-      "pin_count": 2,
-      "published_pin_count": 2,
+      "pin_count": 1,
+      "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -1280,7 +1319,6 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
-        "best-decor-accents-for-living-room",
         "best-furniture-for-a-scandinavian-bathroom"
       ]
     },
@@ -1467,7 +1505,7 @@
       "visual_family_id": "airy_editorial",
       "shot_library_id": "color_palette",
       "intent_id": "implementation",
-      "pin_count": 1,
+      "pin_count": 2,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1479,7 +1517,8 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
-        "how-to-style-a-neutral-bathroom"
+        "how-to-style-a-neutral-bathroom",
+        "how-to-style-a-neutral-kitchen"
       ]
     },
     {
@@ -1641,7 +1680,7 @@
       "visual_family_id": "airy_editorial",
       "shot_library_id": "color_palette",
       "intent_id": "implementation",
-      "pin_count": 1,
+      "pin_count": 2,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1653,7 +1692,8 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
-        "how-to-style-a-neutral-bathroom"
+        "how-to-style-a-neutral-bathroom",
+        "how-to-style-a-neutral-kitchen"
       ]
     },
     {
@@ -1816,8 +1856,8 @@
       "visual_family_id": "warm_layered",
       "shot_library_id": "general_decor",
       "intent_id": "comparison",
-      "pin_count": 4,
-      "published_pin_count": 3,
+      "pin_count": 3,
+      "published_pin_count": 2,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -1828,7 +1868,6 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
-        "best-furniture-for-coastal-bathroom",
         "best-furniture-for-earthy-bedroom",
         "best-furniture-for-scandinavian-bedroom",
         "best-furniture-transitional-bedroom"
@@ -1880,7 +1919,7 @@
         "cluster_id": "coastal_bathroom",
         "cluster_name": "coastal bathroom",
         "pin_count": 3,
-        "published_pin_count": 2,
+        "published_pin_count": 1,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,
@@ -1934,7 +1973,7 @@
         "cluster_id": "cottage_bedroom",
         "cluster_name": "cottage bedroom",
         "pin_count": 3,
-        "published_pin_count": 3,
+        "published_pin_count": 2,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,
@@ -1993,7 +2032,7 @@
         "subtopic_id": "furniture",
         "subtopic_name": "furniture and anchors",
         "pin_count": 3,
-        "published_pin_count": 2,
+        "published_pin_count": 1,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,
@@ -2050,7 +2089,7 @@
       {
         "angle_id": "best_options",
         "pin_count": 39,
-        "published_pin_count": 26,
+        "published_pin_count": 24,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,
@@ -2070,7 +2109,7 @@
       },
       {
         "angle_id": "how_to",
-        "pin_count": 8,
+        "pin_count": 11,
         "published_pin_count": 4,
         "analytics_ready_count": 0,
         "average_score": 0.0,
@@ -2083,7 +2122,8 @@
         "signal_boost": 0,
         "top_article_slugs": [
           "how-to-style-a-neutral-bathroom",
-          "how-to-style-a-neutral-bedroom"
+          "how-to-style-a-neutral-bedroom",
+          "how-to-style-a-neutral-kitchen"
         ]
       },
       {
@@ -2106,7 +2146,7 @@
       {
         "angle_id": "mistakes",
         "pin_count": 30,
-        "published_pin_count": 23,
+        "published_pin_count": 22,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,
@@ -2174,7 +2214,7 @@
         "visual_family_id": "airy_editorial",
         "shot_library_id": "general_decor",
         "intent_id": "comparison",
-        "pin_count": 2,
+        "pin_count": 3,
         "published_pin_count": 1,
         "analytics_ready_count": 0,
         "average_score": 0.0,

@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-05-18T12:35:11.028135+00:00",
+  "generated_at": "2026-05-20T11:52:30.030856+00:00",
   "total_clusters": 396,
   "summary": {
-    "missing": 360,
-    "underdeveloped": 36,
+    "missing": 359,
+    "underdeveloped": 37,
     "growing": 0,
     "strong": 0,
     "saturated": 0
   },
   "saturation_summary": {
-    "empty": 360,
-    "needs_growth": 36
+    "empty": 359,
+    "needs_growth": 37
   },
   "editorial_mix_rules": {
     "recent_window_article_count": 8,
@@ -430,7 +430,6 @@
     "small laundry room styling",
     "small living room layout",
     "studio apartment decor",
-    "tiny bathroom decor",
     "bedroom rugs",
     "dining room rugs",
     "entryway rugs",
@@ -468,10 +467,11 @@
     "cottage bathroom",
     "coastal bedroom",
     "coastal bathroom",
+    "living room styling details",
     "bathroom styling details",
     "summer patio decor",
     "spring bedroom refresh",
-    "living room styling details",
+    "tiny bathroom decor",
     "bedroom styling details",
     "spring living room styling"
   ],
@@ -75436,213 +75436,6 @@
       ]
     },
     {
-      "cluster_id": "tiny_bathroom_decor",
-      "cluster_name": "tiny bathroom decor",
-      "domain_id": "utility_transition",
-      "health_label": "missing",
-      "article_count": 0,
-      "article_capacity_target": 14,
-      "capacity_ratio": 0.0,
-      "growth_openings": 8,
-      "saturation_state": "empty",
-      "selection_action": "boost",
-      "latest_publication_date": "",
-      "days_since_latest": null,
-      "subtopics_total": 3,
-      "subtopics_covered": [],
-      "subtopic_ids_covered": [],
-      "subtopics_missing": [
-        "Layout",
-        "Storage",
-        "Light and Openness"
-      ],
-      "subtopic_ids_missing": [
-        "layout",
-        "storage",
-        "light"
-      ],
-      "angle_distribution": {
-        "ideas": 0,
-        "how_to": 0,
-        "mistakes": 0,
-        "best_options": 0,
-        "budget": 0
-      },
-      "underused_angles": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "budget"
-      ],
-      "overused_angles": [],
-      "intent_distribution": {
-        "comparison": 0,
-        "decision_making": 0,
-        "implementation": 0,
-        "inspiration": 0,
-        "problem_solving": 0
-      },
-      "underused_intents": [
-        "comparison",
-        "decision_making",
-        "implementation",
-        "inspiration",
-        "problem_solving"
-      ],
-      "overused_intents": [],
-      "recommended_concepts": [
-        {
-          "cluster_id": "tiny_bathroom_decor",
-          "cluster_name": "tiny bathroom decor",
-          "domain_id": "utility_transition",
-          "subtopic_id": "layout",
-          "subtopic_name": "Layout",
-          "angle_id": "best_options",
-          "intent_id": "comparison",
-          "modifier": "",
-          "primary_keyword": "best layout for tiny bathroom decor",
-          "secondary_keywords": [
-            "tiny bathroom decor ideas",
-            "how to style tiny bathroom decor",
-            "tiny bathroom decor layout ideas",
-            "tiny bathroom decor layout mistakes to avoid"
-          ],
-          "search_intent": "comparison",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "monetizable_decision",
-          "editorial_mix_tags": [
-            "monetizable_decision",
-            "evergreen_authority"
-          ],
-          "score": 96,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "tiny_bathroom_decor",
-          "cluster_name": "tiny bathroom decor",
-          "domain_id": "utility_transition",
-          "subtopic_id": "light",
-          "subtopic_name": "Light and Openness",
-          "angle_id": "best_options",
-          "intent_id": "comparison",
-          "modifier": "",
-          "primary_keyword": "best colors for tiny bathroom decor",
-          "secondary_keywords": [
-            "tiny bathroom decor ideas",
-            "how to style tiny bathroom decor",
-            "tiny bathroom decor layout ideas",
-            "tiny bathroom decor layout mistakes to avoid"
-          ],
-          "search_intent": "comparison",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "monetizable_decision",
-          "editorial_mix_tags": [
-            "monetizable_decision",
-            "evergreen_authority"
-          ],
-          "score": 96,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "tiny_bathroom_decor",
-          "cluster_name": "tiny bathroom decor",
-          "domain_id": "utility_transition",
-          "subtopic_id": "storage",
-          "subtopic_name": "Storage",
-          "angle_id": "budget",
-          "intent_id": "decision_making",
-          "modifier": "",
-          "primary_keyword": "budget storage ideas for tiny bathroom decor",
-          "secondary_keywords": [
-            "tiny bathroom decor ideas",
-            "how to style tiny bathroom decor",
-            "tiny bathroom decor layout ideas",
-            "tiny bathroom decor layout mistakes to avoid"
-          ],
-          "search_intent": "styling_advice",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "monetizable_decision",
-          "editorial_mix_tags": [
-            "monetizable_decision",
-            "evergreen_authority"
-          ],
-          "score": 96,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        }
-      ],
-      "recommended_topics": [
-        "best layout for tiny bathroom decor",
-        "best colors for tiny bathroom decor",
-        "budget storage ideas for tiny bathroom decor"
-      ],
-      "priority_score": 90,
-      "season": "",
-      "holiday": "",
-      "source": "content architecture",
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "pinterest_intelligence": {
-        "cluster_signal_label": "no_data",
-        "cluster_signal_boost": 0
-      },
-      "seed_keywords": [
-        "tiny bathroom decor ideas",
-        "how to style tiny bathroom decor"
-      ],
-      "allowed_angle_ids": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "budget"
-      ]
-    },
-    {
       "cluster_id": "bedroom_rugs",
       "cluster_name": "bedroom rugs",
       "domain_id": "bedrooms",
@@ -77747,7 +77540,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-20",
-      "days_since_latest": 59,
+      "days_since_latest": 61,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation"
@@ -77962,7 +77755,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-25",
-      "days_since_latest": 54,
+      "days_since_latest": 56,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -78175,7 +77968,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-27",
-      "days_since_latest": 52,
+      "days_since_latest": 54,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -78388,7 +78181,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-08",
-      "days_since_latest": 40,
+      "days_since_latest": 42,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -78604,7 +78397,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-08",
-      "days_since_latest": 39,
+      "days_since_latest": 41,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -78817,7 +78610,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-17",
-      "days_since_latest": 31,
+      "days_since_latest": 33,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -79030,7 +78823,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-04",
-      "days_since_latest": 14,
+      "days_since_latest": 16,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -79243,7 +79036,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-06",
-      "days_since_latest": 12,
+      "days_since_latest": 14,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -79459,7 +79252,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-18",
-      "days_since_latest": 0,
+      "days_since_latest": 1,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation"
@@ -80096,7 +79889,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-18",
-      "days_since_latest": 60,
+      "days_since_latest": 62,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -80309,7 +80102,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-23",
-      "days_since_latest": 56,
+      "days_since_latest": 58,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -80522,7 +80315,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-28",
-      "days_since_latest": 50,
+      "days_since_latest": 52,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -80735,7 +80528,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-30",
-      "days_since_latest": 49,
+      "days_since_latest": 51,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -80948,7 +80741,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-01",
-      "days_since_latest": 46,
+      "days_since_latest": 48,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation"
@@ -81163,7 +80956,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-01",
-      "days_since_latest": 46,
+      "days_since_latest": 48,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -81376,7 +81169,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-03",
-      "days_since_latest": 45,
+      "days_since_latest": 47,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -81592,7 +81385,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-06",
-      "days_since_latest": 42,
+      "days_since_latest": 44,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -81808,7 +81601,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-10",
-      "days_since_latest": 38,
+      "days_since_latest": 40,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -82021,7 +81814,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-13",
-      "days_since_latest": 35,
+      "days_since_latest": 37,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -82234,7 +82027,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-20",
-      "days_since_latest": 28,
+      "days_since_latest": 30,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -82450,7 +82243,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-22",
-      "days_since_latest": 26,
+      "days_since_latest": 28,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -82666,7 +82459,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-24",
-      "days_since_latest": 24,
+      "days_since_latest": 26,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -82882,7 +82675,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-27",
-      "days_since_latest": 21,
+      "days_since_latest": 23,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -83098,7 +82891,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-29",
-      "days_since_latest": 19,
+      "days_since_latest": 21,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -83173,7 +82966,7 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 62,
+          "score": 66,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -83210,7 +83003,7 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 62,
+          "score": 66,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -83247,7 +83040,7 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 62,
+          "score": 66,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -83311,7 +83104,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-01",
-      "days_since_latest": 17,
+      "days_since_latest": 19,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -83513,6 +83306,216 @@
       ]
     },
     {
+      "cluster_id": "living_room_styling_details",
+      "cluster_name": "living room styling details",
+      "domain_id": "living_spaces",
+      "health_label": "underdeveloped",
+      "article_count": 1,
+      "article_capacity_target": 10,
+      "capacity_ratio": 0.1,
+      "growth_openings": 8,
+      "saturation_state": "needs_growth",
+      "selection_action": "boost",
+      "latest_publication_date": "2026-05-08",
+      "days_since_latest": 12,
+      "subtopics_total": 3,
+      "subtopics_covered": [
+        "Surface Styling"
+      ],
+      "subtopic_ids_covered": [
+        "surfaces"
+      ],
+      "subtopics_missing": [
+        "Shelf Styling",
+        "Accessories and Finishing Touches"
+      ],
+      "subtopic_ids_missing": [
+        "shelves",
+        "accessories"
+      ],
+      "angle_distribution": {
+        "ideas": 0,
+        "how_to": 0,
+        "mistakes": 0,
+        "best_options": 1,
+        "budget": 0,
+        "style_specific": 0
+      },
+      "underused_angles": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "budget",
+        "style_specific"
+      ],
+      "overused_angles": [],
+      "intent_distribution": {
+        "comparison": 1,
+        "decision_making": 0,
+        "implementation": 0,
+        "inspiration": 0,
+        "problem_solving": 0
+      },
+      "underused_intents": [
+        "comparison",
+        "decision_making",
+        "implementation",
+        "inspiration",
+        "problem_solving"
+      ],
+      "overused_intents": [],
+      "recommended_concepts": [
+        {
+          "cluster_id": "living_room_styling_details",
+          "cluster_name": "living room styling details",
+          "domain_id": "living_spaces",
+          "subtopic_id": "shelves",
+          "subtopic_name": "Shelf Styling",
+          "angle_id": "budget",
+          "intent_id": "decision_making",
+          "modifier": "",
+          "primary_keyword": "budget shelf styling ideas for living room",
+          "secondary_keywords": [
+            "living room surface styling ideas",
+            "living room finishing touch ideas",
+            "how to style surfaces in living room",
+            "living room surface styling mistakes to avoid"
+          ],
+          "search_intent": "styling_advice",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "monetizable_decision",
+          "editorial_mix_tags": [
+            "monetizable_decision",
+            "evergreen_authority"
+          ],
+          "score": 74,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        },
+        {
+          "cluster_id": "living_room_styling_details",
+          "cluster_name": "living room styling details",
+          "domain_id": "living_spaces",
+          "subtopic_id": "accessories",
+          "subtopic_name": "Accessories and Finishing Touches",
+          "angle_id": "how_to",
+          "intent_id": "implementation",
+          "modifier": "",
+          "primary_keyword": "how to accessorize living room",
+          "secondary_keywords": [
+            "living room surface styling ideas",
+            "living room finishing touch ideas",
+            "how to style surfaces in living room",
+            "living room surface styling mistakes to avoid"
+          ],
+          "search_intent": "how_to",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 68,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": "editorial mix: evergreen_authority is overrepresented recently (-6)"
+          }
+        },
+        {
+          "cluster_id": "living_room_styling_details",
+          "cluster_name": "living room styling details",
+          "domain_id": "living_spaces",
+          "subtopic_id": "accessories",
+          "subtopic_name": "Accessories and Finishing Touches",
+          "angle_id": "ideas",
+          "intent_id": "inspiration",
+          "modifier": "",
+          "primary_keyword": "living room finishing touch ideas",
+          "secondary_keywords": [
+            "living room surface styling ideas",
+            "how to style surfaces in living room",
+            "living room surface styling mistakes to avoid",
+            "best decor accents for living room"
+          ],
+          "search_intent": "ideas",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 68,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": "editorial mix: evergreen_authority is overrepresented recently (-6)"
+          }
+        }
+      ],
+      "recommended_topics": [
+        "budget shelf styling ideas for living room",
+        "how to accessorize living room",
+        "living room finishing touch ideas"
+      ],
+      "priority_score": 62,
+      "season": "",
+      "holiday": "",
+      "source": "content architecture",
+      "pinterest_signal": {
+        "label": "no_data",
+        "boost": 0,
+        "pinterest_article_count": 0,
+        "strong_article_count": 0,
+        "weak_article_count": 0,
+        "average_score": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_saves": 0.0
+      },
+      "pinterest_intelligence": {
+        "cluster_signal_label": "no_data",
+        "cluster_signal_boost": 0
+      },
+      "seed_keywords": [
+        "living room surface styling ideas",
+        "living room finishing touch ideas"
+      ],
+      "allowed_angle_ids": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "budget",
+        "style_specific"
+      ]
+    },
+    {
       "cluster_id": "bathroom_styling_details",
       "cluster_name": "bathroom styling details",
       "domain_id": "utility_transition",
@@ -83524,7 +83527,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-13",
-      "days_since_latest": 5,
+      "days_since_latest": 7,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Surface Styling"
@@ -83734,7 +83737,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-15",
-      "days_since_latest": 3,
+      "days_since_latest": 5,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Seasonal Refresh"
@@ -83946,7 +83949,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-02",
-      "days_since_latest": 46,
+      "days_since_latest": 48,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Seasonal Refresh"
@@ -84147,48 +84150,46 @@
       ]
     },
     {
-      "cluster_id": "living_room_styling_details",
-      "cluster_name": "living room styling details",
-      "domain_id": "living_spaces",
+      "cluster_id": "tiny_bathroom_decor",
+      "cluster_name": "tiny bathroom decor",
+      "domain_id": "utility_transition",
       "health_label": "underdeveloped",
       "article_count": 1,
-      "article_capacity_target": 10,
-      "capacity_ratio": 0.1,
-      "growth_openings": 8,
+      "article_capacity_target": 14,
+      "capacity_ratio": 0.07,
+      "growth_openings": 7,
       "saturation_state": "needs_growth",
       "selection_action": "boost",
-      "latest_publication_date": "2026-05-08",
-      "days_since_latest": 10,
+      "latest_publication_date": "2026-05-20",
+      "days_since_latest": 0,
       "subtopics_total": 3,
       "subtopics_covered": [
-        "Surface Styling"
+        "Light and Openness"
       ],
       "subtopic_ids_covered": [
-        "surfaces"
+        "light"
       ],
       "subtopics_missing": [
-        "Shelf Styling",
-        "Accessories and Finishing Touches"
+        "Layout",
+        "Storage"
       ],
       "subtopic_ids_missing": [
-        "shelves",
-        "accessories"
+        "layout",
+        "storage"
       ],
       "angle_distribution": {
         "ideas": 0,
         "how_to": 0,
         "mistakes": 0,
         "best_options": 1,
-        "budget": 0,
-        "style_specific": 0
+        "budget": 0
       },
       "underused_angles": [
         "ideas",
         "how_to",
         "mistakes",
         "best_options",
-        "budget",
-        "style_specific"
+        "budget"
       ],
       "overused_angles": [],
       "intent_distribution": {
@@ -84208,20 +84209,20 @@
       "overused_intents": [],
       "recommended_concepts": [
         {
-          "cluster_id": "living_room_styling_details",
-          "cluster_name": "living room styling details",
-          "domain_id": "living_spaces",
-          "subtopic_id": "shelves",
-          "subtopic_name": "Shelf Styling",
+          "cluster_id": "tiny_bathroom_decor",
+          "cluster_name": "tiny bathroom decor",
+          "domain_id": "utility_transition",
+          "subtopic_id": "storage",
+          "subtopic_name": "Storage",
           "angle_id": "budget",
           "intent_id": "decision_making",
           "modifier": "",
-          "primary_keyword": "budget shelf styling ideas for living room",
+          "primary_keyword": "budget storage ideas for tiny bathroom decor",
           "secondary_keywords": [
-            "living room surface styling ideas",
-            "living room finishing touch ideas",
-            "how to style surfaces in living room",
-            "living room surface styling mistakes to avoid"
+            "tiny bathroom decor ideas",
+            "how to style tiny bathroom decor",
+            "tiny bathroom decor layout ideas",
+            "tiny bathroom decor layout mistakes to avoid"
           ],
           "search_intent": "styling_advice",
           "season": "",
@@ -84232,7 +84233,7 @@
             "monetizable_decision",
             "evergreen_authority"
           ],
-          "score": 68,
+          "score": 74,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -84246,20 +84247,20 @@
           }
         },
         {
-          "cluster_id": "living_room_styling_details",
-          "cluster_name": "living room styling details",
-          "domain_id": "living_spaces",
-          "subtopic_id": "accessories",
-          "subtopic_name": "Accessories and Finishing Touches",
+          "cluster_id": "tiny_bathroom_decor",
+          "cluster_name": "tiny bathroom decor",
+          "domain_id": "utility_transition",
+          "subtopic_id": "layout",
+          "subtopic_name": "Layout",
           "angle_id": "how_to",
           "intent_id": "implementation",
           "modifier": "",
-          "primary_keyword": "how to accessorize living room",
+          "primary_keyword": "how to style a tiny bathroom decor",
           "secondary_keywords": [
-            "living room surface styling ideas",
-            "living room finishing touch ideas",
-            "how to style surfaces in living room",
-            "living room surface styling mistakes to avoid"
+            "tiny bathroom decor ideas",
+            "how to style tiny bathroom decor",
+            "tiny bathroom decor layout ideas",
+            "tiny bathroom decor layout mistakes to avoid"
           ],
           "search_intent": "how_to",
           "season": "",
@@ -84269,7 +84270,7 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 62,
+          "score": 68,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -84283,20 +84284,20 @@
           }
         },
         {
-          "cluster_id": "living_room_styling_details",
-          "cluster_name": "living room styling details",
-          "domain_id": "living_spaces",
-          "subtopic_id": "accessories",
-          "subtopic_name": "Accessories and Finishing Touches",
+          "cluster_id": "tiny_bathroom_decor",
+          "cluster_name": "tiny bathroom decor",
+          "domain_id": "utility_transition",
+          "subtopic_id": "layout",
+          "subtopic_name": "Layout",
           "angle_id": "ideas",
           "intent_id": "inspiration",
           "modifier": "",
-          "primary_keyword": "living room finishing touch ideas",
+          "primary_keyword": "tiny bathroom decor layout ideas",
           "secondary_keywords": [
-            "living room surface styling ideas",
-            "how to style surfaces in living room",
-            "living room surface styling mistakes to avoid",
-            "best decor accents for living room"
+            "tiny bathroom decor ideas",
+            "how to style tiny bathroom decor",
+            "tiny bathroom decor layout mistakes to avoid",
+            "best layout for tiny bathroom decor"
           ],
           "search_intent": "ideas",
           "season": "",
@@ -84306,7 +84307,7 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 62,
+          "score": 68,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -84321,20 +84322,20 @@
         }
       ],
       "recommended_topics": [
-        "budget shelf styling ideas for living room",
-        "how to accessorize living room",
-        "living room finishing touch ideas"
+        "budget storage ideas for tiny bathroom decor",
+        "how to style a tiny bathroom decor",
+        "tiny bathroom decor layout ideas"
       ],
-      "priority_score": 56,
+      "priority_score": 60,
       "season": "",
       "holiday": "",
       "source": "content architecture",
       "pinterest_signal": {
-        "label": "cold",
-        "boost": -6,
-        "pinterest_article_count": 1,
+        "label": "no_data",
+        "boost": 0,
+        "pinterest_article_count": 0,
         "strong_article_count": 0,
-        "weak_article_count": 1,
+        "weak_article_count": 0,
         "average_score": 0.0,
         "average_outbound_clicks": 0.0,
         "average_saves": 0.0
@@ -84344,16 +84345,15 @@
         "cluster_signal_boost": 0
       },
       "seed_keywords": [
-        "living room surface styling ideas",
-        "living room finishing touch ideas"
+        "tiny bathroom decor ideas",
+        "how to style tiny bathroom decor"
       ],
       "allowed_angle_ids": [
         "ideas",
         "how_to",
         "mistakes",
         "best_options",
-        "budget",
-        "style_specific"
+        "budget"
       ]
     },
     {
@@ -84368,7 +84368,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-11",
-      "days_since_latest": 7,
+      "days_since_latest": 8,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Surface Styling"
@@ -84578,7 +84578,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-15",
-      "days_since_latest": 33,
+      "days_since_latest": 35,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Seasonal Refresh",

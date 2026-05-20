@@ -1,6 +1,43 @@
 {
-  "generated_at": "2026-05-18T12:31:01.148926+00:00",
+  "generated_at": "2026-05-20T11:48:17.438037+00:00",
   "articles": [
+    {
+      "article_slug": "thoughtful-color-choices-tiny-bathroom-decor",
+      "cluster": "tiny bathroom decor",
+      "cluster_id": "tiny bathroom decor",
+      "subtopic_id": "light",
+      "subtopic_name": "light and openness",
+      "angle_id": "best options",
+      "intent_id": "comparison",
+      "primary_keyword": "best colors for tiny bathroom decor",
+      "validation_status": "warning",
+      "warnings": [
+        "None of the secondary keywords appear in the article body.",
+        "Primary keyword appears very lightly in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-05-20T11:48:17.437875+00:00"
+    },
+    {
+      "article_slug": "summer-balcony-styling-mistakes-to-avoid",
+      "cluster": "summer balcony styling",
+      "cluster_id": "summer balcony styling",
+      "subtopic_id": "refresh",
+      "subtopic_name": "seasonal refresh",
+      "angle_id": "mistakes",
+      "intent_id": "problem_solving",
+      "primary_keyword": "summer balcony styling mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Main section headings may be too generic for the chosen keyword.",
+        "None of the secondary keywords appear in the article body.",
+        "Primary keyword appears very lightly in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-05-20T11:46:47.945734+00:00"
+    },
     {
       "article_slug": "how-to-style-a-neutral-kitchen",
       "cluster": "neutral kitchen",
@@ -20,25 +57,6 @@
       "errors": [],
       "duplicate_candidate_slugs": [],
       "timestamp": "2026-05-18T12:31:01.148745+00:00"
-    },
-    {
-      "article_slug": "summer-balcony-styling-mistakes-to-avoid",
-      "cluster": "summer balcony styling",
-      "cluster_id": "summer balcony styling",
-      "subtopic_id": "refresh",
-      "subtopic_name": "seasonal refresh",
-      "angle_id": "mistakes",
-      "intent_id": "problem_solving",
-      "primary_keyword": "summer balcony styling mistakes to avoid",
-      "validation_status": "warning",
-      "warnings": [
-        "Main section headings may be too generic for the chosen keyword.",
-        "None of the secondary keywords appear in the article body.",
-        "Primary keyword appears very lightly in the article body."
-      ],
-      "errors": [],
-      "duplicate_candidate_slugs": [],
-      "timestamp": "2026-05-18T12:30:13.813480+00:00"
     },
     {
       "article_slug": "summer-patio-decor-mistakes-to-avoid",

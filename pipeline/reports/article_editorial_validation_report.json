@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-18T12:31:01.152056+00:00",
+  "generated_at": "2026-05-20T11:48:17.441078+00:00",
   "articles": [
     {
-      "article_slug": "how-to-style-a-neutral-kitchen",
-      "cluster_id": "neutral_kitchen",
-      "subtopic_id": "layout",
-      "angle_id": "how_to",
-      "primary_keyword": "how to style a neutral kitchen",
+      "article_slug": "thoughtful-color-choices-tiny-bathroom-decor",
+      "cluster_id": "tiny_bathroom_decor",
+      "subtopic_id": "light",
+      "angle_id": "best_options",
+      "primary_keyword": "best colors for tiny bathroom decor",
       "validation_status": "warning",
       "warnings": [
         "Several section headings do not signal the topic strongly enough.",
@@ -15,27 +15,27 @@
       "errors": [],
       "checks": {
         "generic_intro": {
-          "intro_word_count": 115,
-          "concept_overlap": 4,
-          "first_sentence": "Styling a neutral kitchen can sometimes feel like walking a fine line between understated and bland."
+          "intro_word_count": 134,
+          "concept_overlap": 9,
+          "first_sentence": "Choosing the right colors for a tiny bathroom can feel like walking a fine line."
         },
         "heading_quality": {
           "heading_count": 5,
           "vague_heading_count": 0,
-          "low_specificity_heading_count": 3,
+          "low_specificity_heading_count": 2,
           "repeated_signature_count": 0,
           "repeated_stem_count": 0,
           "headings": [
-            "Choose a Thoughtful Neutral Palette with a Clear Foundation",
-            "Layer Natural Materials and Tactile Textures to Add Visual Interest",
-            "Use Hardware and Fixtures to Introduce Subtle But Impactful Contrast",
-            "Balance Open Shelves with a Curated Mix of Neutrals and Greenery",
-            "Style Finishing Touches That Offer Practicality and Personality"
+            "Prioritizing Light Reflectance and Visual Flow",
+            "Cool Blues and Greens: Freshness Without Shrinkage",
+            "Warm Earthy Tones Add Depth and Comfort",
+            "Matching Colors to Your Bathroom’s Size, Layout, and Budget",
+            "Confident Steps for Choosing Your Bathroom Palette"
           ]
         },
         "specificity": {
-          "concept_token_hits": 7,
-          "specificity_term_hits": 13,
+          "concept_token_hits": 11,
+          "specificity_term_hits": 9,
           "secondary_keyword_hits": 0
         },
         "distinctiveness": {
@@ -44,7 +44,7 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-05-18T12:31:01.151690+00:00"
+      "timestamp": "2026-05-20T11:48:17.440725+00:00"
     },
     {
       "article_slug": "summer-balcony-styling-mistakes-to-avoid",
@@ -91,7 +91,52 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-05-18T12:30:13.817595+00:00"
+      "timestamp": "2026-05-20T11:46:47.949228+00:00"
+    },
+    {
+      "article_slug": "how-to-style-a-neutral-kitchen",
+      "cluster_id": "neutral_kitchen",
+      "subtopic_id": "layout",
+      "angle_id": "how_to",
+      "primary_keyword": "how to style a neutral kitchen",
+      "validation_status": "warning",
+      "warnings": [
+        "Several section headings do not signal the topic strongly enough.",
+        "Supporting keyword ideas are barely reflected in the body."
+      ],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 115,
+          "concept_overlap": 4,
+          "first_sentence": "Styling a neutral kitchen can sometimes feel like walking a fine line between understated and bland."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 3,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Choose a Thoughtful Neutral Palette with a Clear Foundation",
+            "Layer Natural Materials and Tactile Textures to Add Visual Interest",
+            "Use Hardware and Fixtures to Introduce Subtle But Impactful Contrast",
+            "Balance Open Shelves with a Curated Mix of Neutrals and Greenery",
+            "Style Finishing Touches That Offer Practicality and Personality"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 7,
+          "specificity_term_hits": 13,
+          "secondary_keyword_hits": 0
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-05-18T12:31:01.151690+00:00"
     },
     {
       "article_slug": "summer-patio-decor-mistakes-to-avoid",
