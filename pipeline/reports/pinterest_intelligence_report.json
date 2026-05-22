@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-20T11:46:30.678718+00:00",
+  "generated_at": "2026-05-22T11:42:07.330649+00:00",
   "overview": {
-    "pin_count": 83,
+    "pin_count": 86,
     "published_pin_count": 53,
     "analytics_ready_pin_count": 0,
-    "tracked_article_count": 25
+    "tracked_article_count": 26
   },
   "best_performing_clusters": [
     {
@@ -422,6 +422,24 @@
       ]
     },
     {
+      "cluster_id": "tiny_bathroom_decor",
+      "cluster_name": "tiny bathroom decor",
+      "pin_count": 3,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "thoughtful-color-choices-tiny-bathroom-decor"
+      ]
+    },
+    {
       "cluster_id": "transitional_bathroom",
       "cluster_name": "transitional bathroom",
       "pin_count": 4,
@@ -726,6 +744,25 @@
       ]
     },
     {
+      "cluster_id": "tiny_bathroom_decor",
+      "subtopic_id": "light",
+      "subtopic_name": "light and openness",
+      "pin_count": 3,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "thoughtful-color-choices-tiny-bathroom-decor"
+      ]
+    },
+    {
       "cluster_id": "spring_living_room_styling",
       "subtopic_id": "palette",
       "subtopic_name": "palette and mood",
@@ -938,7 +975,7 @@
   "best_performing_angles": [
     {
       "angle_id": "best_options",
-      "pin_count": 39,
+      "pin_count": 42,
       "published_pin_count": 24,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1213,6 +1250,27 @@
       ]
     },
     {
+      "visual_style_key": "bottom_title|warm_layered|color_palette|comparison",
+      "style_name": "bottom-title",
+      "visual_family_id": "warm_layered",
+      "shot_library_id": "color_palette",
+      "intent_id": "comparison",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "thoughtful-color-choices-tiny-bathroom-decor"
+      ]
+    },
+    {
       "visual_style_key": "bottom_title|warm_layered|general_decor|comparison",
       "style_name": "bottom-title",
       "visual_family_id": "warm_layered",
@@ -1451,6 +1509,27 @@
       "top_article_slugs": [
         "cottage-bathroom-texture-mistakes-to-avoid",
         "cottage-bedroom-texture-mistakes-to-avoid"
+      ]
+    },
+    {
+      "visual_style_key": "centered_title|warm_layered|color_palette|comparison",
+      "style_name": "centered-title",
+      "visual_family_id": "warm_layered",
+      "shot_library_id": "color_palette",
+      "intent_id": "comparison",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "thoughtful-color-choices-tiny-bathroom-decor"
       ]
     },
     {
@@ -1851,6 +1930,27 @@
       ]
     },
     {
+      "visual_style_key": "top_title|warm_layered|color_palette|comparison",
+      "style_name": "top-title",
+      "visual_family_id": "warm_layered",
+      "shot_library_id": "color_palette",
+      "intent_id": "comparison",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "thoughtful-color-choices-tiny-bathroom-decor"
+      ]
+    },
+    {
       "visual_style_key": "top_title|warm_layered|general_decor|comparison",
       "style_name": "top-title",
       "visual_family_id": "warm_layered",
@@ -2088,7 +2188,7 @@
     "angles": [
       {
         "angle_id": "best_options",
-        "pin_count": 39,
+        "pin_count": 42,
         "published_pin_count": 24,
         "analytics_ready_count": 0,
         "average_score": 0.0,

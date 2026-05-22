@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "478edc0c8e97aaa8a27096f2d263d827535a38c5dda3fd7b95918c03963d0aeb",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/balancing-light-layers-best-lighting-for-living-room/hero.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-1": {
+    "cache_key": "c66ce7f2625ebf8c25821aedc19be274457441f5358a8b862aadcde932a6d315",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/balancing-light-layers-best-lighting-for-living-room/section-1.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-2": {
+    "cache_key": "3bcd051b4c2f64fb15450e8a1ce4b10cff57aff059de62f21e8a3e16ed7d4b19",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/balancing-light-layers-best-lighting-for-living-room/section-2.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-3": {
+    "cache_key": "d36386eef28e2daf822af0e857dad22a9cd3bb96c6b70929e26549103ffcbeba",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/balancing-light-layers-best-lighting-for-living-room/section-3.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-4": {
+    "cache_key": "daf03ae8783682826629202249c75848aedbeee64eaeb6d82de9fb1b4d440fef",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/balancing-light-layers-best-lighting-for-living-room/section-4.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-5": {
+    "cache_key": "a053ac4202707367deb09d833a50dd5ad5c075a46c5d7562bffa243a8bad9abe",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/balancing-light-layers-best-lighting-for-living-room/section-5.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  }
+}

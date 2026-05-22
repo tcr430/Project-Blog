@@ -1,0 +1,300 @@
+{
+  "generated_at": "2026-05-22T11:46:40.338932+00:00",
+  "trend": "best lighting for living room",
+  "slug": "balancing-light-layers-best-lighting-for-living-room",
+  "article_generation": {
+    "cache_hit": false,
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/article_packages/ab0d65d5658fecff8672cb89a616e1fcc5c9b9ef19caca6edfb84625348dd4fa.json",
+    "model": "gpt-4.1-mini",
+    "generation_calls": 1,
+    "short_retries": 0,
+    "angle_retries": 0,
+    "product_retries": 0,
+    "selected_products": 0,
+    "affiliate_mode": false,
+    "monetization_profile_id": "commercial_strong",
+    "generated_link_count": 0,
+    "primary_keyword": "best lighting for living room",
+    "topical_cluster": "living room lighting"
+  },
+  "seo_validation": {
+    "article_slug": "balancing-light-layers-best-lighting-for-living-room",
+    "cluster": "living room lighting",
+    "cluster_id": "living room lighting",
+    "subtopic_id": "layering",
+    "subtopic_name": "layered lighting",
+    "angle_id": "best options",
+    "intent_id": "comparison",
+    "primary_keyword": "best lighting for living room",
+    "validation_status": "warning",
+    "warnings": [
+      "None of the secondary keywords appear in the article body.",
+      "Primary keyword appears very lightly in the article body."
+    ],
+    "errors": [],
+    "duplicate_candidate_slugs": [],
+    "timestamp": "2026-05-22T11:43:16.024774+00:00"
+  },
+  "editorial_validation": {
+    "article_slug": "balancing-light-layers-best-lighting-for-living-room",
+    "cluster_id": "living_room_lighting",
+    "subtopic_id": "layering",
+    "angle_id": "best_options",
+    "primary_keyword": "best lighting for living room",
+    "validation_status": "warning",
+    "warnings": [
+      "Several section headings do not signal the topic strongly enough.",
+      "Supporting keyword ideas are barely reflected in the body."
+    ],
+    "errors": [],
+    "checks": {
+      "generic_intro": {
+        "intro_word_count": 141,
+        "concept_overlap": 6,
+        "first_sentence": "Choosing the best lighting for your living room is rarely straightforward."
+      },
+      "heading_quality": {
+        "heading_count": 5,
+        "vague_heading_count": 0,
+        "low_specificity_heading_count": 2,
+        "repeated_signature_count": 0,
+        "repeated_stem_count": 0,
+        "headings": [
+          "Defining the Core Criteria: Light Quality, Control, and Materiality",
+          "Sculptural Fixtures and Metal Accents: A Strong Option for Statement and Function",
+          "Warm Wood and Soft Ambient Layers: For Cozy, Inviting Living Rooms",
+          "Matching Lighting Solutions to Room Scale, Layout, and Budget",
+          "How to Narrow Your Choices: Practical Buying Guidance"
+        ]
+      },
+      "specificity": {
+        "concept_token_hits": 10,
+        "specificity_term_hits": 9,
+        "secondary_keyword_hits": 0
+      },
+      "distinctiveness": {
+        "nearest_article_slug": "",
+        "max_similarity": 0.0,
+        "strongest_heading_overlap": 0
+      }
+    },
+    "timestamp": "2026-05-22T11:43:16.027773+00:00"
+  },
+  "image_generation": {
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/image_generation_cache/balancing-light-layers-best-lighting-for-living-room.json",
+    "provider": "flux",
+    "provider_model": "flux-2-max",
+    "model": "flux-2-max",
+    "fallback_provider": "openai",
+    "fallback_model": "gpt-image-1",
+    "size": "1536x1024",
+    "hero_quality": "high",
+    "section_quality": "medium",
+    "allow_fallback": true,
+    "fallback_events": 0,
+    "generated_images": 6,
+    "cache_hits": 0,
+    "generation_calls": 6,
+    "qa_calls": 1,
+    "details": [
+      {
+        "label": "hero",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 1,
+        "quality": "high",
+        "qa_enabled": true,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "96a1f4f5-a496-4628-be85-938f62871d6a",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=96a1f4f5-a496-4628-be85-938f62871d6a",
+            "poll_attempts": 25,
+            "provider_status": "Ready",
+            "elapsed_seconds": 34.86,
+            "quality": "high",
+            "elapsed_seconds_total": 34.86,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation",
+        "qa_reason": "The image presents a refined, editorial living room with clear emphasis on various lighting options, including a pendant light, floor lamp, and table lamp. The styling is clean and modern with believable materials and spatial depth. Lighting quality and fixture design support the theme of lighting for living room in a polished, magazine-worthy manner. There is no text, logo, people, or clutter, making it suitable for a decor blog focusing on lighting recommendations."
+      },
+      {
+        "label": "section-1",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "c3daadcd-9ca7-4706-bd30-80445c170688",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=c3daadcd-9ca7-4706-bd30-80445c170688",
+            "poll_attempts": 20,
+            "provider_status": "Ready",
+            "elapsed_seconds": 27.27,
+            "quality": "medium",
+            "elapsed_seconds_total": 27.27,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-2",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "dc4a10d9-4838-4503-b838-fd74c03b6433",
+            "polling_url": "https://api.us4.bfl.ai/v1/get_result?id=dc4a10d9-4838-4503-b838-fd74c03b6433",
+            "poll_attempts": 23,
+            "provider_status": "Ready",
+            "elapsed_seconds": 31.63,
+            "quality": "medium",
+            "elapsed_seconds_total": 31.63,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-3",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "d1720423-4f01-458b-9d19-f85ad15cdcc0",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=d1720423-4f01-458b-9d19-f85ad15cdcc0",
+            "poll_attempts": 23,
+            "provider_status": "Ready",
+            "elapsed_seconds": 31.21,
+            "quality": "medium",
+            "elapsed_seconds_total": 31.21,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-4",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "ac10815a-a08e-44b9-bef0-92ae7b1d5a06",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=ac10815a-a08e-44b9-bef0-92ae7b1d5a06",
+            "poll_attempts": 23,
+            "provider_status": "Ready",
+            "elapsed_seconds": 31.29,
+            "quality": "medium",
+            "elapsed_seconds_total": 31.29,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-5",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "59d1ceff-258c-4853-b542-b4972bd9091a",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=59d1ceff-258c-4853-b542-b4972bd9091a",
+            "poll_attempts": 18,
+            "provider_status": "Ready",
+            "elapsed_seconds": 24.5,
+            "quality": "medium",
+            "elapsed_seconds_total": 24.5,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      }
+    ]
+  },
+  "pinterest": {
+    "variants_requested": 4,
+    "pin_assets_generated": false,
+    "mode": null
+  }
+}

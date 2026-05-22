@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-20T11:52:28.635157+00:00",
-  "cluster_count": 37,
-  "article_count": 38,
-  "subtopic_count": 9,
+  "generated_at": "2026-05-22T11:46:40.515741+00:00",
+  "cluster_count": 38,
+  "article_count": 39,
+  "subtopic_count": 10,
   "angle_count": 5,
   "angle_distribution": {
-    "best_options": 18,
+    "best_options": 19,
     "how_to": 3,
     "ideas": 4,
     "mistakes": 12,
@@ -642,6 +642,50 @@
       "status": "underdeveloped"
     },
     {
+      "cluster_id": "living_room_lighting",
+      "cluster_name": "living room lighting",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "living_spaces"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "best lighting for living room"
+      ],
+      "latest_article_date": "2026-05-22",
+      "latest_publication": {
+        "article_slug": "balancing-light-layers-best-lighting-for-living-room",
+        "article_title": "Lighting for Living Room: A Practical Buying Guide",
+        "publish_date": "2026-05-22",
+        "subtopic_id": "layering",
+        "subtopic_name": "layered lighting",
+        "angle_id": "best_options"
+      },
+      "representative_article_slugs": [
+        "balancing-light-layers-best-lighting-for-living-room"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "layering",
+          "subtopic_name": "layered lighting",
+          "article_count": 1,
+          "latest_article_date": "2026-05-22",
+          "representative_article_slugs": [
+            "balancing-light-layers-best-lighting-for-living-room"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "best_options": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
       "cluster_id": "living_room_styling_details",
       "cluster_name": "living room styling details",
       "legacy_cluster_names": [],
@@ -1020,7 +1064,7 @@
       "representative_article_slugs": [
         "moody-bedroom-texture-mistakes-to-avoid"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,

@@ -1,21 +1,21 @@
 # Weekly Pipeline Report
 
-Generated: 2026-05-20
+Generated: 2026-05-22
 Window: last 7 days
 
 Articles Published: 3  
 Pins Generated: 9  
-Pins Scheduled: 33  
-Pins Published: 1  
+Pins Scheduled: 36  
+Pins Published: 0  
 Repins Scheduled: 0
 
 ## Articles Published
+- balancing-light-layers-best-lighting-for-living-room
 - how-to-style-a-neutral-kitchen
-- summer-patio-decor-mistakes-to-avoid
 - thoughtful-color-choices-tiny-bathroom-decor
 
 ## Top Performing Pins
-- From Clashing to Cohesive: Texture Transformed (product_led, Home Finds & Decor Picks) - 0 clicks, 0 saves, 0 impressions
+- No published pin analytics were available for this window.
 
 ## Top Performing Boards
 - Bedroom Retreat Ideas - avg clicks: n/a, avg saves: n/a, avg impressions: n/a

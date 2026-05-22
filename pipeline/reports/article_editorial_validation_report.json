@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-20T11:48:17.441078+00:00",
+  "generated_at": "2026-05-22T11:43:16.028184+00:00",
   "articles": [
     {
-      "article_slug": "thoughtful-color-choices-tiny-bathroom-decor",
-      "cluster_id": "tiny_bathroom_decor",
-      "subtopic_id": "light",
+      "article_slug": "balancing-light-layers-best-lighting-for-living-room",
+      "cluster_id": "living_room_lighting",
+      "subtopic_id": "layering",
       "angle_id": "best_options",
-      "primary_keyword": "best colors for tiny bathroom decor",
+      "primary_keyword": "best lighting for living room",
       "validation_status": "warning",
       "warnings": [
         "Several section headings do not signal the topic strongly enough.",
@@ -15,9 +15,9 @@
       "errors": [],
       "checks": {
         "generic_intro": {
-          "intro_word_count": 134,
-          "concept_overlap": 9,
-          "first_sentence": "Choosing the right colors for a tiny bathroom can feel like walking a fine line."
+          "intro_word_count": 141,
+          "concept_overlap": 6,
+          "first_sentence": "Choosing the best lighting for your living room is rarely straightforward."
         },
         "heading_quality": {
           "heading_count": 5,
@@ -26,15 +26,15 @@
           "repeated_signature_count": 0,
           "repeated_stem_count": 0,
           "headings": [
-            "Prioritizing Light Reflectance and Visual Flow",
-            "Cool Blues and Greens: Freshness Without Shrinkage",
-            "Warm Earthy Tones Add Depth and Comfort",
-            "Matching Colors to Your Bathroom’s Size, Layout, and Budget",
-            "Confident Steps for Choosing Your Bathroom Palette"
+            "Defining the Core Criteria: Light Quality, Control, and Materiality",
+            "Sculptural Fixtures and Metal Accents: A Strong Option for Statement and Function",
+            "Warm Wood and Soft Ambient Layers: For Cozy, Inviting Living Rooms",
+            "Matching Lighting Solutions to Room Scale, Layout, and Budget",
+            "How to Narrow Your Choices: Practical Buying Guidance"
           ]
         },
         "specificity": {
-          "concept_token_hits": 11,
+          "concept_token_hits": 10,
           "specificity_term_hits": 9,
           "secondary_keyword_hits": 0
         },
@@ -44,7 +44,55 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-05-20T11:48:17.440725+00:00"
+      "timestamp": "2026-05-22T11:43:16.027773+00:00"
+    },
+    {
+      "article_slug": "thoughtful-small-bathroom-ideas-layered-light-spaces",
+      "cluster_id": "small bathroom ideas",
+      "subtopic_id": "legacy_unspecified",
+      "angle_id": "legacy_unspecified",
+      "primary_keyword": "small bathroom ideas",
+      "validation_status": "fail",
+      "warnings": [
+        "Several section headings do not signal the topic strongly enough.",
+        "Supporting keyword ideas are barely reflected in the body."
+      ],
+      "errors": [
+        "Section headings are too unspecific to support a strong editorial frame."
+      ],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 125,
+          "concept_overlap": 3,
+          "first_sentence": "A small bathroom often feels like a puzzle: how to balance function with style while making the most of limited space?"
+        },
+        "heading_quality": {
+          "heading_count": 6,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 5,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Establishing the Foundation: Neutral Layers and Natural Surfaces",
+            "Introducing Depth with Color and Complementary Tones",
+            "Layering Function and Style in the Shower or Bath Zone",
+            "Styling Open Storage: A Subtle Balance of Practicality and Calm",
+            "Final Decisions: Mirrors, Lighting, and Finishing Details for Cohesion",
+            "Conclusion"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 10,
+          "specificity_term_hits": 12,
+          "secondary_keyword_hits": 0
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-05-22T11:42:54.335340+00:00"
     },
     {
       "article_slug": "summer-balcony-styling-mistakes-to-avoid",
@@ -91,7 +139,52 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-05-20T11:46:47.949228+00:00"
+      "timestamp": "2026-05-22T11:42:26.739313+00:00"
+    },
+    {
+      "article_slug": "thoughtful-color-choices-tiny-bathroom-decor",
+      "cluster_id": "tiny_bathroom_decor",
+      "subtopic_id": "light",
+      "angle_id": "best_options",
+      "primary_keyword": "best colors for tiny bathroom decor",
+      "validation_status": "warning",
+      "warnings": [
+        "Several section headings do not signal the topic strongly enough.",
+        "Supporting keyword ideas are barely reflected in the body."
+      ],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 134,
+          "concept_overlap": 9,
+          "first_sentence": "Choosing the right colors for a tiny bathroom can feel like walking a fine line."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 2,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Prioritizing Light Reflectance and Visual Flow",
+            "Cool Blues and Greens: Freshness Without Shrinkage",
+            "Warm Earthy Tones Add Depth and Comfort",
+            "Matching Colors to Your Bathroom’s Size, Layout, and Budget",
+            "Confident Steps for Choosing Your Bathroom Palette"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 11,
+          "specificity_term_hits": 9,
+          "secondary_keyword_hits": 0
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-05-20T11:48:17.440725+00:00"
     },
     {
       "article_slug": "how-to-style-a-neutral-kitchen",

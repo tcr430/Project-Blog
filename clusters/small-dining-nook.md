@@ -7,7 +7,7 @@ cluster_name: "small dining nook"
 cluster_slug: "small-dining-nook"
 cluster_article_count: 1
 cluster_primary_keywords: ["small apartment dining nook ideas"]
-cluster_generated_at: "2026-05-20T11:52:30.237373+00:00"
+cluster_generated_at: "2026-05-22T11:46:42.227309+00:00"
 cluster_intro: "Small Dining Nook is a useful decorating topic because it combines inspiration with practical decision-making. Readers usually arrive here looking for a clear style direction, help solving a room problem, or confidence about how to make the look feel intentional at home.
 
 This pillar page brings together the site's coverage around small dining nook, with article angles shaped by keyword themes such as small apartment dining nook ideas. That mix helps the page support both broader search intent and more specific decorating questions without feeling repetitive.
