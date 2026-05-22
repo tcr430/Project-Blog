@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-22T08:45:41.804564+00:00",
+  "generated_at": "2026-05-22T14:11:21.748304+00:00",
   "history_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_history.json",
-  "published_pin_count": 53,
+  "published_pin_count": 52,
   "global_metrics": {
-    "published_pins": 53,
+    "published_pins": 52,
     "analytics_ready_pins": 0,
     "average_impressions": null,
     "average_saves": null,
@@ -15,7 +15,7 @@
   "performance_by_variant_type": [
     {
       "variant_type": "trend_overview",
-      "published_pins": 14,
+      "published_pins": 13,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -61,7 +61,7 @@
   "performance_by_board": [
     {
       "board_key": "bedroom",
-      "published_pins": 20,
+      "published_pins": 19,
       "analytics_ready_pins": 0,
       "average_impressions": null,
       "average_saves": null,
@@ -372,27 +372,13 @@
       "score": 0,
       "classification": "underperforming",
       "reasons": []
-    },
-    {
-      "article_slug": "bedroom-surface-styling-mistakes-to-avoid",
-      "published_pins": 1,
-      "analytics_ready_pins": 0,
-      "average_impressions": null,
-      "average_saves": null,
-      "average_outbound_clicks": null,
-      "average_pin_clicks": null,
-      "average_closeups": null,
-      "average_engagement_rate": null,
-      "score": 0,
-      "classification": "underperforming",
-      "reasons": []
     }
   ],
   "rankings": {
     "top_variant_types": [
       {
         "variant_type": "trend_overview",
-        "published_pins": 14,
+        "published_pins": 13,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
@@ -438,7 +424,7 @@
     "top_boards": [
       {
         "board_key": "bedroom",
-        "published_pins": 20,
+        "published_pins": 19,
         "analytics_ready_pins": 0,
         "average_impressions": null,
         "average_saves": null,
