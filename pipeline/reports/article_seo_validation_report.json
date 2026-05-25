@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-05-22T11:43:16.024947+00:00",
+  "generated_at": "2026-05-25T12:25:38.557010+00:00",
   "articles": [
     {
-      "article_slug": "balancing-light-layers-best-lighting-for-living-room",
-      "cluster": "living room lighting",
-      "cluster_id": "living room lighting",
+      "article_slug": "best-lighting-for-bedroom-layered-approach",
+      "cluster": "bedroom lighting",
+      "cluster_id": "bedroom lighting",
       "subtopic_id": "layering",
       "subtopic_name": "layered lighting",
       "angle_id": "best options",
       "intent_id": "comparison",
-      "primary_keyword": "best lighting for living room",
+      "primary_keyword": "best lighting for bedroom",
       "validation_status": "warning",
       "warnings": [
         "None of the secondary keywords appear in the article body.",
@@ -17,7 +17,7 @@
       ],
       "errors": [],
       "duplicate_candidate_slugs": [],
-      "timestamp": "2026-05-22T11:43:16.024774+00:00"
+      "timestamp": "2026-05-25T12:25:38.556843+00:00"
     },
     {
       "article_slug": "thoughtful-small-bathroom-ideas-layered-light-spaces",
@@ -37,7 +37,7 @@
       ],
       "errors": [],
       "duplicate_candidate_slugs": [],
-      "timestamp": "2026-05-22T11:42:54.332090+00:00"
+      "timestamp": "2026-05-25T12:24:38.383956+00:00"
     },
     {
       "article_slug": "summer-balcony-styling-mistakes-to-avoid",
@@ -56,7 +56,25 @@
       ],
       "errors": [],
       "duplicate_candidate_slugs": [],
-      "timestamp": "2026-05-22T11:42:26.735281+00:00"
+      "timestamp": "2026-05-25T12:24:38.165076+00:00"
+    },
+    {
+      "article_slug": "balancing-light-layers-best-lighting-for-living-room",
+      "cluster": "living room lighting",
+      "cluster_id": "living room lighting",
+      "subtopic_id": "layering",
+      "subtopic_name": "layered lighting",
+      "angle_id": "best options",
+      "intent_id": "comparison",
+      "primary_keyword": "best lighting for living room",
+      "validation_status": "warning",
+      "warnings": [
+        "None of the secondary keywords appear in the article body.",
+        "Primary keyword appears very lightly in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-05-22T11:43:16.024774+00:00"
     },
     {
       "article_slug": "thoughtful-color-choices-tiny-bathroom-decor",

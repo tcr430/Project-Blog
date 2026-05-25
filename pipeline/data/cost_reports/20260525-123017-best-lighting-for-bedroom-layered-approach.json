@@ -1,0 +1,316 @@
+{
+  "generated_at": "2026-05-25T12:30:17.842156+00:00",
+  "trend": "best lighting for bedroom",
+  "slug": "best-lighting-for-bedroom-layered-approach",
+  "article_generation": {
+    "cache_hit": false,
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/article_packages/60711f2ecbf3f2232b146588e5bc7948ac463a9e7593d3f587e498e8625a3cd4.json",
+    "model": "gpt-4.1-mini",
+    "generation_calls": 2,
+    "short_retries": 0,
+    "angle_retries": 0,
+    "product_retries": 0,
+    "selected_products": 0,
+    "affiliate_mode": false,
+    "monetization_profile_id": "commercial_strong",
+    "generated_link_count": 0,
+    "primary_keyword": "best lighting for bedroom",
+    "topical_cluster": "bedroom lighting"
+  },
+  "seo_validation": {
+    "article_slug": "best-lighting-for-bedroom-layered-approach",
+    "cluster": "bedroom lighting",
+    "cluster_id": "bedroom lighting",
+    "subtopic_id": "layering",
+    "subtopic_name": "layered lighting",
+    "angle_id": "best options",
+    "intent_id": "comparison",
+    "primary_keyword": "best lighting for bedroom",
+    "validation_status": "warning",
+    "warnings": [
+      "None of the secondary keywords appear in the article body.",
+      "Primary keyword appears very lightly in the article body."
+    ],
+    "errors": [],
+    "duplicate_candidate_slugs": [],
+    "timestamp": "2026-05-25T12:25:38.556843+00:00"
+  },
+  "editorial_validation": {
+    "article_slug": "best-lighting-for-bedroom-layered-approach",
+    "cluster_id": "bedroom_lighting",
+    "subtopic_id": "layering",
+    "angle_id": "best_options",
+    "primary_keyword": "best lighting for bedroom",
+    "validation_status": "warning",
+    "warnings": [
+      "Supporting keyword ideas are barely reflected in the body."
+    ],
+    "errors": [],
+    "checks": {
+      "generic_intro": {
+        "intro_word_count": 129,
+        "concept_overlap": 6,
+        "first_sentence": "Choosing the best lighting for your bedroom often feels like walking a tightrope between cozy and practical."
+      },
+      "heading_quality": {
+        "heading_count": 5,
+        "vague_heading_count": 0,
+        "low_specificity_heading_count": 1,
+        "repeated_signature_count": 0,
+        "repeated_stem_count": 0,
+        "headings": [
+          "Defining the Essential Criteria for Bedroom Lighting",
+          "Bedside Lamps That Combine Style and Functionality",
+          "Comparing Pendant Lights and Wall Sconces for Ambient Layering",
+          "Matching Lighting Choices to Bedroom Size and Layout",
+          "Confident Buying Tips to Narrow Your Bedroom Lighting Options"
+        ]
+      },
+      "specificity": {
+        "concept_token_hits": 11,
+        "specificity_term_hits": 10,
+        "secondary_keyword_hits": 0
+      },
+      "distinctiveness": {
+        "nearest_article_slug": "",
+        "max_similarity": 0.0,
+        "strongest_heading_overlap": 0
+      }
+    },
+    "timestamp": "2026-05-25T12:25:38.559986+00:00"
+  },
+  "image_generation": {
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/image_generation_cache/best-lighting-for-bedroom-layered-approach.json",
+    "provider": "flux",
+    "provider_model": "flux-2-max",
+    "model": "flux-2-max",
+    "fallback_provider": "openai",
+    "fallback_model": "gpt-image-1",
+    "size": "1536x1024",
+    "hero_quality": "high",
+    "section_quality": "medium",
+    "allow_fallback": true,
+    "fallback_events": 0,
+    "generated_images": 6,
+    "cache_hits": 0,
+    "generation_calls": 7,
+    "qa_calls": 2,
+    "details": [
+      {
+        "label": "hero",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 2,
+        "qa_calls": 2,
+        "quality": "high",
+        "qa_enabled": true,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "cde488d2-c8da-4129-9b36-b125eb0c7786",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=cde488d2-c8da-4129-9b36-b125eb0c7786",
+            "poll_attempts": 21,
+            "provider_status": "Ready",
+            "elapsed_seconds": 32.14,
+            "quality": "high",
+            "elapsed_seconds_total": 32.14,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          },
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 2,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "6a08894f-9f8f-41d1-8301-50350455408f",
+            "polling_url": "https://api.us4.bfl.ai/v1/get_result?id=6a08894f-9f8f-41d1-8301-50350455408f",
+            "poll_attempts": 26,
+            "provider_status": "Ready",
+            "elapsed_seconds": 35.43,
+            "quality": "high",
+            "elapsed_seconds_total": 35.43,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation",
+        "qa_reason": "The image shows a clean, modern bedroom with natural daylight and clear lighting sources including a wall sconce and a bedside lamp, providing a focused comparison of lighting types. The composition is editorial, with believable architecture and furniture layout in soft white, black, stone, and pale oak tones. There is no text, logos, people, or clutter, making it suitable for a decor blog hero image about bedroom lighting."
+      },
+      {
+        "label": "section-1",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "956e7bd3-1f1b-4591-a758-aa936c067b43",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=956e7bd3-1f1b-4591-a758-aa936c067b43",
+            "poll_attempts": 18,
+            "provider_status": "Ready",
+            "elapsed_seconds": 28.01,
+            "quality": "medium",
+            "elapsed_seconds_total": 28.01,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-2",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "f16d4d98-2fd9-41bb-a0b2-7cfb658fb64f",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=f16d4d98-2fd9-41bb-a0b2-7cfb658fb64f",
+            "poll_attempts": 24,
+            "provider_status": "Ready",
+            "elapsed_seconds": 32.74,
+            "quality": "medium",
+            "elapsed_seconds_total": 32.74,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-3",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "9c20d6b8-b28d-4d34-b449-bc531ed06661",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=9c20d6b8-b28d-4d34-b449-bc531ed06661",
+            "poll_attempts": 22,
+            "provider_status": "Ready",
+            "elapsed_seconds": 33.3,
+            "quality": "medium",
+            "elapsed_seconds_total": 33.3,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-4",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "d70ff28f-6704-4eab-8018-99446a45f414",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=d70ff28f-6704-4eab-8018-99446a45f414",
+            "poll_attempts": 17,
+            "provider_status": "Ready",
+            "elapsed_seconds": 25.97,
+            "quality": "medium",
+            "elapsed_seconds_total": 25.97,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-5",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "f7df44d8-7d17-46b3-909d-22208d041b14",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=f7df44d8-7d17-46b3-909d-22208d041b14",
+            "poll_attempts": 46,
+            "provider_status": "Ready",
+            "elapsed_seconds": 60.97,
+            "quality": "medium",
+            "elapsed_seconds_total": 60.97,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      }
+    ]
+  },
+  "pinterest": {
+    "variants_requested": 4,
+    "pin_assets_generated": false,
+    "mode": null
+  }
+}

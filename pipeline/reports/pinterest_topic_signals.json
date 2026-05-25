@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-22T11:46:40.520180+00:00",
-  "cluster_count": 38,
+  "generated_at": "2026-05-25T12:30:18.018447+00:00",
+  "cluster_count": 39,
   "summary": {
     "hot": 0,
     "warm": 0,
-    "cold": 19,
-    "no_data": 19
+    "cold": 18,
+    "no_data": 21
   },
   "clusters": [
     {
@@ -56,6 +56,30 @@
       "signal_boost": 0
     },
     {
+      "cluster_name": "bedroom lighting",
+      "article_count": 1,
+      "article_slugs": [
+        "best-lighting-for-bedroom-layered-approach"
+      ],
+      "primary_keywords": [
+        "best lighting for bedroom"
+      ],
+      "secondary_keywords": [
+        "bedroom lighting ideas",
+        "bedroom lamp styling ideas",
+        "how to layer lighting in bedroom",
+        "bedroom lighting mistakes to avoid"
+      ],
+      "pinterest_article_count": 0,
+      "strong_article_count": 0,
+      "weak_article_count": 0,
+      "average_score": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_saves": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0
+    },
+    {
       "cluster_name": "bedroom styling details",
       "article_count": 1,
       "article_slugs": [
@@ -70,14 +94,14 @@
         "how to style surfaces in bedroom",
         "best decor accents for bedroom"
       ],
-      "pinterest_article_count": 1,
+      "pinterest_article_count": 0,
       "strong_article_count": 0,
-      "weak_article_count": 1,
+      "weak_article_count": 0,
       "average_score": 0.0,
       "average_outbound_clicks": 0.0,
       "average_saves": 0.0,
-      "signal_label": "cold",
-      "signal_boost": -6
+      "signal_label": "no_data",
+      "signal_boost": 0
     },
     {
       "cluster_name": "biophilic bathroom",

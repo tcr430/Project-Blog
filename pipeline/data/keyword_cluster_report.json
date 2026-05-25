@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-22T11:46:40.515741+00:00",
-  "cluster_count": 38,
-  "article_count": 39,
+  "generated_at": "2026-05-25T12:30:18.014064+00:00",
+  "cluster_count": 39,
+  "article_count": 40,
   "subtopic_count": 10,
   "angle_count": 5,
   "angle_distribution": {
-    "best_options": 19,
+    "best_options": 20,
     "how_to": 3,
     "ideas": 4,
     "mistakes": 12,
@@ -108,6 +108,50 @@
       ],
       "angle_distribution": {
         "mistakes": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_id": "bedroom_lighting",
+      "cluster_name": "bedroom lighting",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "bedrooms"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "best lighting for bedroom"
+      ],
+      "latest_article_date": "2026-05-25",
+      "latest_publication": {
+        "article_slug": "best-lighting-for-bedroom-layered-approach",
+        "article_title": "Finding the Best Lighting for Your Bedroom: A Practical Layered Approach",
+        "publish_date": "2026-05-25",
+        "subtopic_id": "layering",
+        "subtopic_name": "layered lighting",
+        "angle_id": "best_options"
+      },
+      "representative_article_slugs": [
+        "best-lighting-for-bedroom-layered-approach"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "layering",
+          "subtopic_name": "layered lighting",
+          "article_count": 1,
+          "latest_article_date": "2026-05-25",
+          "representative_article_slugs": [
+            "best-lighting-for-bedroom-layered-approach"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "best_options": 1
       },
       "status": "underdeveloped"
     },
@@ -932,7 +976,7 @@
       "representative_article_slugs": [
         "best-furniture-minimalist-bathroom"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
@@ -976,7 +1020,7 @@
       "representative_article_slugs": [
         "best-furniture-for-a-minimalist-bedroom"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
@@ -1020,7 +1064,7 @@
       "representative_article_slugs": [
         "moody-bathroom-texture-mistakes-to-avoid"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,

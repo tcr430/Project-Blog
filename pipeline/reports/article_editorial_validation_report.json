@@ -1,41 +1,40 @@
 {
-  "generated_at": "2026-05-22T11:43:16.028184+00:00",
+  "generated_at": "2026-05-25T12:25:38.560378+00:00",
   "articles": [
     {
-      "article_slug": "balancing-light-layers-best-lighting-for-living-room",
-      "cluster_id": "living_room_lighting",
+      "article_slug": "best-lighting-for-bedroom-layered-approach",
+      "cluster_id": "bedroom_lighting",
       "subtopic_id": "layering",
       "angle_id": "best_options",
-      "primary_keyword": "best lighting for living room",
+      "primary_keyword": "best lighting for bedroom",
       "validation_status": "warning",
       "warnings": [
-        "Several section headings do not signal the topic strongly enough.",
         "Supporting keyword ideas are barely reflected in the body."
       ],
       "errors": [],
       "checks": {
         "generic_intro": {
-          "intro_word_count": 141,
+          "intro_word_count": 129,
           "concept_overlap": 6,
-          "first_sentence": "Choosing the best lighting for your living room is rarely straightforward."
+          "first_sentence": "Choosing the best lighting for your bedroom often feels like walking a tightrope between cozy and practical."
         },
         "heading_quality": {
           "heading_count": 5,
           "vague_heading_count": 0,
-          "low_specificity_heading_count": 2,
+          "low_specificity_heading_count": 1,
           "repeated_signature_count": 0,
           "repeated_stem_count": 0,
           "headings": [
-            "Defining the Core Criteria: Light Quality, Control, and Materiality",
-            "Sculptural Fixtures and Metal Accents: A Strong Option for Statement and Function",
-            "Warm Wood and Soft Ambient Layers: For Cozy, Inviting Living Rooms",
-            "Matching Lighting Solutions to Room Scale, Layout, and Budget",
-            "How to Narrow Your Choices: Practical Buying Guidance"
+            "Defining the Essential Criteria for Bedroom Lighting",
+            "Bedside Lamps That Combine Style and Functionality",
+            "Comparing Pendant Lights and Wall Sconces for Ambient Layering",
+            "Matching Lighting Choices to Bedroom Size and Layout",
+            "Confident Buying Tips to Narrow Your Bedroom Lighting Options"
           ]
         },
         "specificity": {
-          "concept_token_hits": 10,
-          "specificity_term_hits": 9,
+          "concept_token_hits": 11,
+          "specificity_term_hits": 10,
           "secondary_keyword_hits": 0
         },
         "distinctiveness": {
@@ -44,7 +43,7 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-05-22T11:43:16.027773+00:00"
+      "timestamp": "2026-05-25T12:25:38.559986+00:00"
     },
     {
       "article_slug": "thoughtful-small-bathroom-ideas-layered-light-spaces",
@@ -92,7 +91,7 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-05-22T11:42:54.335340+00:00"
+      "timestamp": "2026-05-25T12:24:38.387256+00:00"
     },
     {
       "article_slug": "summer-balcony-styling-mistakes-to-avoid",
@@ -139,7 +138,52 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-05-22T11:42:26.739313+00:00"
+      "timestamp": "2026-05-25T12:24:38.169052+00:00"
+    },
+    {
+      "article_slug": "balancing-light-layers-best-lighting-for-living-room",
+      "cluster_id": "living_room_lighting",
+      "subtopic_id": "layering",
+      "angle_id": "best_options",
+      "primary_keyword": "best lighting for living room",
+      "validation_status": "warning",
+      "warnings": [
+        "Several section headings do not signal the topic strongly enough.",
+        "Supporting keyword ideas are barely reflected in the body."
+      ],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 141,
+          "concept_overlap": 6,
+          "first_sentence": "Choosing the best lighting for your living room is rarely straightforward."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 2,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Defining the Core Criteria: Light Quality, Control, and Materiality",
+            "Sculptural Fixtures and Metal Accents: A Strong Option for Statement and Function",
+            "Warm Wood and Soft Ambient Layers: For Cozy, Inviting Living Rooms",
+            "Matching Lighting Solutions to Room Scale, Layout, and Budget",
+            "How to Narrow Your Choices: Practical Buying Guidance"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 10,
+          "specificity_term_hits": 9,
+          "secondary_keyword_hits": 0
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-05-22T11:43:16.027773+00:00"
     },
     {
       "article_slug": "thoughtful-color-choices-tiny-bathroom-decor",

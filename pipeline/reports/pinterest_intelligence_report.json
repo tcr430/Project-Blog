@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-05-22T11:42:07.330649+00:00",
+  "generated_at": "2026-05-25T12:24:18.839649+00:00",
   "overview": {
-    "pin_count": 86,
-    "published_pin_count": 53,
+    "pin_count": 89,
+    "published_pin_count": 51,
     "analytics_ready_pin_count": 0,
-    "tracked_article_count": 26
+    "tracked_article_count": 27
   },
   "best_performing_clusters": [
     {
       "cluster_id": "bedroom_styling_details",
       "cluster_name": "bedroom styling details",
       "pin_count": 3,
-      "published_pin_count": 1,
+      "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -65,7 +65,7 @@
       "cluster_id": "cottage_bathroom",
       "cluster_name": "cottage bathroom",
       "pin_count": 3,
-      "published_pin_count": 3,
+      "published_pin_count": 2,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -167,6 +167,24 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "japandi-bedroom-texture-mistakes-to-avoid"
+      ]
+    },
+    {
+      "cluster_id": "living_room_lighting",
+      "cluster_name": "living room lighting",
+      "pin_count": 3,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "balancing-light-layers-best-lighting-for-living-room"
       ]
     },
     {
@@ -687,6 +705,25 @@
       ]
     },
     {
+      "cluster_id": "living_room_lighting",
+      "subtopic_id": "layering",
+      "subtopic_name": "layered lighting",
+      "pin_count": 3,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "balancing-light-layers-best-lighting-for-living-room"
+      ]
+    },
+    {
       "cluster_id": "neutral_bathroom",
       "subtopic_id": "layout",
       "subtopic_name": "layout and foundation",
@@ -824,7 +861,7 @@
       "subtopic_id": "surfaces",
       "subtopic_name": "surface styling",
       "pin_count": 3,
-      "published_pin_count": 1,
+      "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -862,7 +899,7 @@
       "subtopic_id": "textures",
       "subtopic_name": "textures and layers",
       "pin_count": 3,
-      "published_pin_count": 3,
+      "published_pin_count": 2,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -975,7 +1012,7 @@
   "best_performing_angles": [
     {
       "angle_id": "best_options",
-      "pin_count": 42,
+      "pin_count": 45,
       "published_pin_count": 24,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -987,11 +1024,11 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
+        "balancing-light-layers-best-lighting-for-living-room",
         "best-decor-accents-for-living-room",
         "best-furniture-for-a-scandinavian-bathroom",
         "best-furniture-for-an-earthy-bathroom",
-        "best-furniture-for-coastal-bathroom",
-        "best-furniture-for-earthy-bedroom"
+        "best-furniture-for-coastal-bathroom"
       ]
     },
     {
@@ -1033,7 +1070,7 @@
     {
       "angle_id": "mistakes",
       "pin_count": 30,
-      "published_pin_count": 22,
+      "published_pin_count": 20,
       "analytics_ready_count": 0,
       "average_score": 0.0,
       "average_impressions": 0.0,
@@ -1211,7 +1248,7 @@
       "visual_family_id": "crisp_modern",
       "shot_library_id": "general_decor",
       "intent_id": "problem_solving",
-      "pin_count": 1,
+      "pin_count": 2,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1227,12 +1264,33 @@
       ]
     },
     {
+      "visual_style_key": "bottom_title|crisp_modern|lighting|comparison",
+      "style_name": "bottom-title",
+      "visual_family_id": "crisp_modern",
+      "shot_library_id": "lighting",
+      "intent_id": "comparison",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "balancing-light-layers-best-lighting-for-living-room"
+      ]
+    },
+    {
       "visual_style_key": "bottom_title|crisp_modern|textures_materials|problem_solving",
       "style_name": "bottom-title",
       "visual_family_id": "crisp_modern",
       "shot_library_id": "textures_materials",
       "intent_id": "problem_solving",
-      "pin_count": 3,
+      "pin_count": 4,
       "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1469,10 +1527,31 @@
       ]
     },
     {
-      "visual_style_key": "centered_title|crisp_modern|general_decor|problem_solving",
+      "visual_style_key": "centered_title|crisp_modern|lighting|comparison",
       "style_name": "centered-title",
       "visual_family_id": "crisp_modern",
-      "shot_library_id": "general_decor",
+      "shot_library_id": "lighting",
+      "intent_id": "comparison",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "balancing-light-layers-best-lighting-for-living-room"
+      ]
+    },
+    {
+      "visual_style_key": "centered_title|crisp_modern|textures_materials|problem_solving",
+      "style_name": "centered-title",
+      "visual_family_id": "crisp_modern",
+      "shot_library_id": "textures_materials",
       "intent_id": "problem_solving",
       "pin_count": 1,
       "published_pin_count": 1,
@@ -1486,28 +1565,6 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
-        "bedroom-surface-styling-mistakes-to-avoid"
-      ]
-    },
-    {
-      "visual_style_key": "centered_title|crisp_modern|textures_materials|problem_solving",
-      "style_name": "centered-title",
-      "visual_family_id": "crisp_modern",
-      "shot_library_id": "textures_materials",
-      "intent_id": "problem_solving",
-      "pin_count": 2,
-      "published_pin_count": 2,
-      "analytics_ready_count": 0,
-      "average_score": 0.0,
-      "average_impressions": 0.0,
-      "average_saves": 0.0,
-      "average_outbound_clicks": 0.0,
-      "average_pin_clicks": 0.0,
-      "average_closeups": 0.0,
-      "signal_label": "no_data",
-      "signal_boost": 0,
-      "top_article_slugs": [
-        "cottage-bathroom-texture-mistakes-to-avoid",
         "cottage-bedroom-texture-mistakes-to-avoid"
       ]
     },
@@ -1907,6 +1964,27 @@
       ]
     },
     {
+      "visual_style_key": "top_title|crisp_modern|lighting|comparison",
+      "style_name": "top-title",
+      "visual_family_id": "crisp_modern",
+      "shot_library_id": "lighting",
+      "intent_id": "comparison",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "balancing-light-layers-best-lighting-for-living-room"
+      ]
+    },
+    {
       "visual_style_key": "top_title|crisp_modern|textures_materials|problem_solving",
       "style_name": "top-title",
       "visual_family_id": "crisp_modern",
@@ -2001,7 +2079,7 @@
         "cluster_id": "bedroom_styling_details",
         "cluster_name": "bedroom styling details",
         "pin_count": 3,
-        "published_pin_count": 1,
+        "published_pin_count": 0,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,
@@ -2055,7 +2133,7 @@
         "cluster_id": "cottage_bathroom",
         "cluster_name": "cottage bathroom",
         "pin_count": 3,
-        "published_pin_count": 3,
+        "published_pin_count": 2,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,
@@ -2188,7 +2266,7 @@
     "angles": [
       {
         "angle_id": "best_options",
-        "pin_count": 42,
+        "pin_count": 45,
         "published_pin_count": 24,
         "analytics_ready_count": 0,
         "average_score": 0.0,
@@ -2200,11 +2278,11 @@
         "signal_label": "no_data",
         "signal_boost": 0,
         "top_article_slugs": [
+          "balancing-light-layers-best-lighting-for-living-room",
           "best-decor-accents-for-living-room",
           "best-furniture-for-a-scandinavian-bathroom",
           "best-furniture-for-an-earthy-bathroom",
-          "best-furniture-for-coastal-bathroom",
-          "best-furniture-for-earthy-bedroom"
+          "best-furniture-for-coastal-bathroom"
         ]
       },
       {
@@ -2246,7 +2324,7 @@
       {
         "angle_id": "mistakes",
         "pin_count": 30,
-        "published_pin_count": 22,
+        "published_pin_count": 20,
         "analytics_ready_count": 0,
         "average_score": 0.0,
         "average_impressions": 0.0,

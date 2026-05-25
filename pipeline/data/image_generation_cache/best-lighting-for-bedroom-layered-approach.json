@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "a22e3aa2cb01839aa3a7ae897416283eb353dd1383285d27c3d2a9000eb21ac3",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-lighting-for-bedroom-layered-approach/hero.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-1": {
+    "cache_key": "fc4f50b00b6b610e5170757f7109b96299b3fc7b0995ae5b29e72ddd5fa0193b",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-lighting-for-bedroom-layered-approach/section-1.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-2": {
+    "cache_key": "f92b72f15f58e8605fc17ac34470ae69b1b10317b375c46c888fa5c8ceebb2ed",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-lighting-for-bedroom-layered-approach/section-2.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-3": {
+    "cache_key": "afdbf7016b72e7362b1aeeebe77b2f7c66e7a959128513588b98aecd885ed7ee",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-lighting-for-bedroom-layered-approach/section-3.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-4": {
+    "cache_key": "4c7f91be0a4fdd6fe6e494c6ccf9d7eaa6d8410da88dfcd4176a53ad581898bc",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-lighting-for-bedroom-layered-approach/section-4.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-5": {
+    "cache_key": "e3f684d1045f25488e189fc90e35a4bea2c1e6fea8b4a7f8b41d2c5d2f491a2c",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-lighting-for-bedroom-layered-approach/section-5.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  }
+}
