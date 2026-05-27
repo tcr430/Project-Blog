@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "056d22714f7a79ff876d356fc10901ca2cf9acf7b8dafe94cdc1a38786fd9301",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/how-to-style-a-neutral-entryway/hero.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-1": {
+    "cache_key": "bf62c8b36218f3383b5f590b2f501da87b39f1993ce72d5b373424193d360515",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/how-to-style-a-neutral-entryway/section-1.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-2": {
+    "cache_key": "599c63421738697021ba1dd8d0780babc5b640d08162d0b2923549d9d483e7ac",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/how-to-style-a-neutral-entryway/section-2.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-3": {
+    "cache_key": "9c1792ee34ab354a3902ae62921500d3e769163ea1fd8ffa610bdd95094e75c4",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/how-to-style-a-neutral-entryway/section-3.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-4": {
+    "cache_key": "40f0a79a9bb1261fcdfe34d7c6056bae307edbf60f775fe4a19dfc637c909baa",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/how-to-style-a-neutral-entryway/section-4.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-5": {
+    "cache_key": "da99b9ef88c4a45bf80286fe38214d80676d290969478cf2d491bc9c07e8f00a",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/how-to-style-a-neutral-entryway/section-5.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  }
+}

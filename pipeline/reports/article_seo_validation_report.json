@@ -1,6 +1,45 @@
 {
-  "generated_at": "2026-05-25T12:25:38.557010+00:00",
+  "generated_at": "2026-05-27T12:17:43.474037+00:00",
   "articles": [
+    {
+      "article_slug": "how-to-style-a-neutral-entryway",
+      "cluster": "neutral entryway",
+      "cluster_id": "neutral entryway",
+      "subtopic_id": "layout",
+      "subtopic_name": "layout and foundation",
+      "angle_id": "how to",
+      "intent_id": "implementation",
+      "primary_keyword": "how to style a neutral entryway",
+      "validation_status": "warning",
+      "warnings": [
+        "Display title still uses an overused opening pattern.",
+        "Main section headings may be too generic for the chosen keyword.",
+        "None of the secondary keywords appear in the article body.",
+        "Primary keyword appears very lightly in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-05-27T12:17:43.473846+00:00"
+    },
+    {
+      "article_slug": "summer-balcony-styling-mistakes-to-avoid",
+      "cluster": "summer balcony styling",
+      "cluster_id": "summer balcony styling",
+      "subtopic_id": "refresh",
+      "subtopic_name": "seasonal refresh",
+      "angle_id": "mistakes",
+      "intent_id": "problem_solving",
+      "primary_keyword": "summer balcony styling mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Main section headings may be too generic for the chosen keyword.",
+        "None of the secondary keywords appear in the article body.",
+        "Primary keyword appears very lightly in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-05-27T12:17:18.036891+00:00"
+    },
     {
       "article_slug": "best-lighting-for-bedroom-layered-approach",
       "cluster": "bedroom lighting",
@@ -38,25 +77,6 @@
       "errors": [],
       "duplicate_candidate_slugs": [],
       "timestamp": "2026-05-25T12:24:38.383956+00:00"
-    },
-    {
-      "article_slug": "summer-balcony-styling-mistakes-to-avoid",
-      "cluster": "summer balcony styling",
-      "cluster_id": "summer balcony styling",
-      "subtopic_id": "refresh",
-      "subtopic_name": "seasonal refresh",
-      "angle_id": "mistakes",
-      "intent_id": "problem_solving",
-      "primary_keyword": "summer balcony styling mistakes to avoid",
-      "validation_status": "warning",
-      "warnings": [
-        "Main section headings may be too generic for the chosen keyword.",
-        "None of the secondary keywords appear in the article body.",
-        "Primary keyword appears very lightly in the article body."
-      ],
-      "errors": [],
-      "duplicate_candidate_slugs": [],
-      "timestamp": "2026-05-25T12:24:38.165076+00:00"
     },
     {
       "article_slug": "balancing-light-layers-best-lighting-for-living-room",

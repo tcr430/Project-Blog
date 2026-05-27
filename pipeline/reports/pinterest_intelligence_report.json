@@ -1,12 +1,30 @@
 {
-  "generated_at": "2026-05-25T12:24:18.839649+00:00",
+  "generated_at": "2026-05-27T12:16:59.411927+00:00",
   "overview": {
-    "pin_count": 89,
+    "pin_count": 92,
     "published_pin_count": 51,
     "analytics_ready_pin_count": 0,
-    "tracked_article_count": 27
+    "tracked_article_count": 28
   },
   "best_performing_clusters": [
+    {
+      "cluster_id": "bedroom_lighting",
+      "cluster_name": "bedroom lighting",
+      "pin_count": 3,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-lighting-for-bedroom-layered-approach"
+      ]
+    },
     {
       "cluster_id": "bedroom_styling_details",
       "cluster_name": "bedroom styling details",
@@ -724,6 +742,25 @@
       ]
     },
     {
+      "cluster_id": "bedroom_lighting",
+      "subtopic_id": "layering",
+      "subtopic_name": "layered lighting",
+      "pin_count": 3,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-lighting-for-bedroom-layered-approach"
+      ]
+    },
+    {
       "cluster_id": "neutral_bathroom",
       "subtopic_id": "layout",
       "subtopic_name": "layout and foundation",
@@ -1012,7 +1049,7 @@
   "best_performing_angles": [
     {
       "angle_id": "best_options",
-      "pin_count": 45,
+      "pin_count": 48,
       "published_pin_count": 24,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1096,7 +1133,7 @@
       "visual_family_id": "airy_editorial",
       "shot_library_id": "color_palette",
       "intent_id": "implementation",
-      "pin_count": 1,
+      "pin_count": 2,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1108,7 +1145,8 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
-        "how-to-style-a-neutral-bathroom"
+        "how-to-style-a-neutral-bathroom",
+        "how-to-style-a-neutral-kitchen"
       ]
     },
     {
@@ -1269,7 +1307,7 @@
       "visual_family_id": "crisp_modern",
       "shot_library_id": "lighting",
       "intent_id": "comparison",
-      "pin_count": 1,
+      "pin_count": 2,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1281,7 +1319,8 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
-        "balancing-light-layers-best-lighting-for-living-room"
+        "balancing-light-layers-best-lighting-for-living-room",
+        "best-lighting-for-bedroom-layered-approach"
       ]
     },
     {
@@ -1532,7 +1571,7 @@
       "visual_family_id": "crisp_modern",
       "shot_library_id": "lighting",
       "intent_id": "comparison",
-      "pin_count": 1,
+      "pin_count": 2,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1544,7 +1583,8 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
-        "balancing-light-layers-best-lighting-for-living-room"
+        "balancing-light-layers-best-lighting-for-living-room",
+        "best-lighting-for-bedroom-layered-approach"
       ]
     },
     {
@@ -1816,7 +1856,7 @@
       "visual_family_id": "airy_editorial",
       "shot_library_id": "color_palette",
       "intent_id": "implementation",
-      "pin_count": 2,
+      "pin_count": 1,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1828,8 +1868,7 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
-        "how-to-style-a-neutral-bathroom",
-        "how-to-style-a-neutral-kitchen"
+        "how-to-style-a-neutral-bathroom"
       ]
     },
     {
@@ -1969,7 +2008,7 @@
       "visual_family_id": "crisp_modern",
       "shot_library_id": "lighting",
       "intent_id": "comparison",
-      "pin_count": 1,
+      "pin_count": 2,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1981,7 +2020,8 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
-        "balancing-light-layers-best-lighting-for-living-room"
+        "balancing-light-layers-best-lighting-for-living-room",
+        "best-lighting-for-bedroom-layered-approach"
       ]
     },
     {
@@ -2076,6 +2116,24 @@
   "top_rankings": {
     "clusters": [
       {
+        "cluster_id": "bedroom_lighting",
+        "cluster_name": "bedroom lighting",
+        "pin_count": 3,
+        "published_pin_count": 0,
+        "analytics_ready_count": 0,
+        "average_score": 0.0,
+        "average_impressions": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_pin_clicks": 0.0,
+        "average_closeups": 0.0,
+        "signal_label": "no_data",
+        "signal_boost": 0,
+        "top_article_slugs": [
+          "best-lighting-for-bedroom-layered-approach"
+        ]
+      },
+      {
         "cluster_id": "bedroom_styling_details",
         "cluster_name": "bedroom styling details",
         "pin_count": 3,
@@ -2145,24 +2203,6 @@
         "signal_boost": 0,
         "top_article_slugs": [
           "cottage-bathroom-texture-mistakes-to-avoid"
-        ]
-      },
-      {
-        "cluster_id": "cottage_bedroom",
-        "cluster_name": "cottage bedroom",
-        "pin_count": 3,
-        "published_pin_count": 2,
-        "analytics_ready_count": 0,
-        "average_score": 0.0,
-        "average_impressions": 0.0,
-        "average_saves": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_pin_clicks": 0.0,
-        "average_closeups": 0.0,
-        "signal_label": "no_data",
-        "signal_boost": 0,
-        "top_article_slugs": [
-          "cottage-bedroom-texture-mistakes-to-avoid"
         ]
       }
     ],
@@ -2266,7 +2306,7 @@
     "angles": [
       {
         "angle_id": "best_options",
-        "pin_count": 45,
+        "pin_count": 48,
         "published_pin_count": 24,
         "analytics_ready_count": 0,
         "average_score": 0.0,
@@ -2350,7 +2390,7 @@
         "visual_family_id": "airy_editorial",
         "shot_library_id": "color_palette",
         "intent_id": "implementation",
-        "pin_count": 1,
+        "pin_count": 2,
         "published_pin_count": 0,
         "analytics_ready_count": 0,
         "average_score": 0.0,
@@ -2362,7 +2402,8 @@
         "signal_label": "no_data",
         "signal_boost": 0,
         "top_article_slugs": [
-          "how-to-style-a-neutral-bathroom"
+          "how-to-style-a-neutral-bathroom",
+          "how-to-style-a-neutral-kitchen"
         ]
       },
       {

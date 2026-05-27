@@ -1,6 +1,99 @@
 {
-  "generated_at": "2026-05-25T12:25:38.560378+00:00",
+  "generated_at": "2026-05-27T12:17:43.477544+00:00",
   "articles": [
+    {
+      "article_slug": "how-to-style-a-neutral-entryway",
+      "cluster_id": "neutral_entryway",
+      "subtopic_id": "layout",
+      "angle_id": "how_to",
+      "primary_keyword": "how to style a neutral entryway",
+      "validation_status": "warning",
+      "warnings": [
+        "Introduction opens with a broad interchangeable framing pattern.",
+        "Several section headings do not signal the topic strongly enough.",
+        "Supporting keyword ideas are barely reflected in the body."
+      ],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 149,
+          "concept_overlap": 6,
+          "first_sentence": "Creating a serene and welcoming neutral entryway is more than choosing pale colors—it's about shaping a space that feels layered, balanced, and genuinely lived-in."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 2,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Choose a Grounding Foundation with Natural Materials and Proportion",
+            "Layer Texture Thoughtfully Through Linen and Soft Accents",
+            "Place Key Elements to Enhance Flow and Everyday Use",
+            "Balance Visual Weight with Greenery and Soft Symmetry",
+            "Finish with Simple, Curated Decor and Practical Edits"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 9,
+          "specificity_term_hits": 12,
+          "secondary_keyword_hits": 0
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-05-27T12:17:43.477138+00:00"
+    },
+    {
+      "article_slug": "summer-balcony-styling-mistakes-to-avoid",
+      "cluster_id": "summer_balcony_styling",
+      "subtopic_id": "refresh",
+      "angle_id": "mistakes",
+      "primary_keyword": "summer balcony styling mistakes to avoid",
+      "validation_status": "fail",
+      "warnings": [
+        "Several section headings do not signal the topic strongly enough.",
+        "Supporting keyword ideas are barely reflected in the body."
+      ],
+      "errors": [
+        "Section headings are too unspecific to support a strong editorial frame."
+      ],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 163,
+          "concept_overlap": 9,
+          "first_sentence": "Summer balconies offer the perfect opportunity for a seasonal refresh, but it’s surprisingly easy to get styling off on the wrong foot."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 5,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Overcrowding Without a Clear Plan Crushes Outdoor Flow",
+            "Bright Color Overload Breaks Harmony and Feels Overwhelming",
+            "Ignoring Texture Coordination Creates Visual Confusion",
+            "Oversized Furniture and Poor Placement Kill Airiness and Light",
+            "Forgetting to Layer Lighting and Accessories Ends in a Flat, Uninviting Space"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 12,
+          "specificity_term_hits": 9,
+          "secondary_keyword_hits": 0
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-05-27T12:17:18.041075+00:00"
+    },
     {
       "article_slug": "best-lighting-for-bedroom-layered-approach",
       "cluster_id": "bedroom_lighting",
@@ -92,53 +185,6 @@
         }
       },
       "timestamp": "2026-05-25T12:24:38.387256+00:00"
-    },
-    {
-      "article_slug": "summer-balcony-styling-mistakes-to-avoid",
-      "cluster_id": "summer_balcony_styling",
-      "subtopic_id": "refresh",
-      "angle_id": "mistakes",
-      "primary_keyword": "summer balcony styling mistakes to avoid",
-      "validation_status": "fail",
-      "warnings": [
-        "Several section headings do not signal the topic strongly enough.",
-        "Supporting keyword ideas are barely reflected in the body."
-      ],
-      "errors": [
-        "Section headings are too unspecific to support a strong editorial frame."
-      ],
-      "checks": {
-        "generic_intro": {
-          "intro_word_count": 163,
-          "concept_overlap": 9,
-          "first_sentence": "Summer balconies offer the perfect opportunity for a seasonal refresh, but it’s surprisingly easy to get styling off on the wrong foot."
-        },
-        "heading_quality": {
-          "heading_count": 5,
-          "vague_heading_count": 0,
-          "low_specificity_heading_count": 5,
-          "repeated_signature_count": 0,
-          "repeated_stem_count": 0,
-          "headings": [
-            "Overcrowding Without a Clear Plan Crushes Outdoor Flow",
-            "Bright Color Overload Breaks Harmony and Feels Overwhelming",
-            "Ignoring Texture Coordination Creates Visual Confusion",
-            "Oversized Furniture and Poor Placement Kill Airiness and Light",
-            "Forgetting to Layer Lighting and Accessories Ends in a Flat, Uninviting Space"
-          ]
-        },
-        "specificity": {
-          "concept_token_hits": 12,
-          "specificity_term_hits": 9,
-          "secondary_keyword_hits": 0
-        },
-        "distinctiveness": {
-          "nearest_article_slug": "",
-          "max_similarity": 0.0,
-          "strongest_heading_overlap": 0
-        }
-      },
-      "timestamp": "2026-05-25T12:24:38.169052+00:00"
     },
     {
       "article_slug": "balancing-light-layers-best-lighting-for-living-room",

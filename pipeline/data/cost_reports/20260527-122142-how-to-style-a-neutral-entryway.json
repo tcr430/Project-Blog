@@ -1,0 +1,303 @@
+{
+  "generated_at": "2026-05-27T12:21:42.989326+00:00",
+  "trend": "how to style a neutral entryway",
+  "slug": "how-to-style-a-neutral-entryway",
+  "article_generation": {
+    "cache_hit": false,
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/article_packages/89ff00b5c35131c1aa891f567ee99bd8a2003a54a54515b38a935bfe2e94fd2b.json",
+    "model": "gpt-4.1-mini",
+    "generation_calls": 1,
+    "short_retries": 0,
+    "angle_retries": 0,
+    "product_retries": 0,
+    "selected_products": 0,
+    "affiliate_mode": false,
+    "monetization_profile_id": "utility_light",
+    "generated_link_count": 0,
+    "primary_keyword": "how to style a neutral entryway",
+    "topical_cluster": "neutral entryway"
+  },
+  "seo_validation": {
+    "article_slug": "how-to-style-a-neutral-entryway",
+    "cluster": "neutral entryway",
+    "cluster_id": "neutral entryway",
+    "subtopic_id": "layout",
+    "subtopic_name": "layout and foundation",
+    "angle_id": "how to",
+    "intent_id": "implementation",
+    "primary_keyword": "how to style a neutral entryway",
+    "validation_status": "warning",
+    "warnings": [
+      "Display title still uses an overused opening pattern.",
+      "Main section headings may be too generic for the chosen keyword.",
+      "None of the secondary keywords appear in the article body.",
+      "Primary keyword appears very lightly in the article body."
+    ],
+    "errors": [],
+    "duplicate_candidate_slugs": [],
+    "timestamp": "2026-05-27T12:17:43.473846+00:00"
+  },
+  "editorial_validation": {
+    "article_slug": "how-to-style-a-neutral-entryway",
+    "cluster_id": "neutral_entryway",
+    "subtopic_id": "layout",
+    "angle_id": "how_to",
+    "primary_keyword": "how to style a neutral entryway",
+    "validation_status": "warning",
+    "warnings": [
+      "Introduction opens with a broad interchangeable framing pattern.",
+      "Several section headings do not signal the topic strongly enough.",
+      "Supporting keyword ideas are barely reflected in the body."
+    ],
+    "errors": [],
+    "checks": {
+      "generic_intro": {
+        "intro_word_count": 149,
+        "concept_overlap": 6,
+        "first_sentence": "Creating a serene and welcoming neutral entryway is more than choosing pale colors—it's about shaping a space that feels layered, balanced, and genuinely lived-in."
+      },
+      "heading_quality": {
+        "heading_count": 5,
+        "vague_heading_count": 0,
+        "low_specificity_heading_count": 2,
+        "repeated_signature_count": 0,
+        "repeated_stem_count": 0,
+        "headings": [
+          "Choose a Grounding Foundation with Natural Materials and Proportion",
+          "Layer Texture Thoughtfully Through Linen and Soft Accents",
+          "Place Key Elements to Enhance Flow and Everyday Use",
+          "Balance Visual Weight with Greenery and Soft Symmetry",
+          "Finish with Simple, Curated Decor and Practical Edits"
+        ]
+      },
+      "specificity": {
+        "concept_token_hits": 9,
+        "specificity_term_hits": 12,
+        "secondary_keyword_hits": 0
+      },
+      "distinctiveness": {
+        "nearest_article_slug": "",
+        "max_similarity": 0.0,
+        "strongest_heading_overlap": 0
+      }
+    },
+    "timestamp": "2026-05-27T12:17:43.477138+00:00"
+  },
+  "image_generation": {
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/image_generation_cache/how-to-style-a-neutral-entryway.json",
+    "provider": "flux",
+    "provider_model": "flux-2-max",
+    "model": "flux-2-max",
+    "fallback_provider": "openai",
+    "fallback_model": "gpt-image-1",
+    "size": "1536x1024",
+    "hero_quality": "high",
+    "section_quality": "medium",
+    "allow_fallback": true,
+    "fallback_events": 0,
+    "generated_images": 6,
+    "cache_hits": 0,
+    "generation_calls": 6,
+    "qa_calls": 1,
+    "details": [
+      {
+        "label": "hero",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 1,
+        "quality": "high",
+        "qa_enabled": true,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "9a952287-af95-4dad-997b-604aa5a0d931",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=9a952287-af95-4dad-997b-604aa5a0d931",
+            "poll_attempts": 27,
+            "provider_status": "Ready",
+            "elapsed_seconds": 42.09,
+            "quality": "high",
+            "elapsed_seconds_total": 42.09,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation",
+        "qa_reason": "The image presents a neutral entryway with natural and relaxed styling that fits the article's theme. It has a clear, practical eye-level view with tactile layering, material contrast, and a believable room setup with realistic materials and lighting. The space feels lived-in without clutter, and it uses the intended palette and style direction well."
+      },
+      {
+        "label": "section-1",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "329e6dc5-f534-46b3-afab-75840a896bc4",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=329e6dc5-f534-46b3-afab-75840a896bc4",
+            "poll_attempts": 22,
+            "provider_status": "Ready",
+            "elapsed_seconds": 34.25,
+            "quality": "medium",
+            "elapsed_seconds_total": 34.25,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-2",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "120ffaf0-dfc0-445f-9802-a15111724bf4",
+            "polling_url": "https://api.us4.bfl.ai/v1/get_result?id=120ffaf0-dfc0-445f-9802-a15111724bf4",
+            "poll_attempts": 23,
+            "provider_status": "Ready",
+            "elapsed_seconds": 31.55,
+            "quality": "medium",
+            "elapsed_seconds_total": 31.55,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-3",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "a348ac6c-2905-4fd5-a228-5af82298d77b",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=a348ac6c-2905-4fd5-a228-5af82298d77b",
+            "poll_attempts": 22,
+            "provider_status": "Ready",
+            "elapsed_seconds": 33.83,
+            "quality": "medium",
+            "elapsed_seconds_total": 33.83,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-4",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "26c1c037-1793-498e-bce9-21e0f5d89591",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=26c1c037-1793-498e-bce9-21e0f5d89591",
+            "poll_attempts": 17,
+            "provider_status": "Ready",
+            "elapsed_seconds": 23.65,
+            "quality": "medium",
+            "elapsed_seconds_total": 23.65,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-5",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "5c554a83-7230-42e4-89de-c9586eba0820",
+            "polling_url": "https://api.us4.bfl.ai/v1/get_result?id=5c554a83-7230-42e4-89de-c9586eba0820",
+            "poll_attempts": 39,
+            "provider_status": "Ready",
+            "elapsed_seconds": 51.48,
+            "quality": "medium",
+            "elapsed_seconds_total": 51.48,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      }
+    ]
+  },
+  "pinterest": {
+    "variants_requested": 4,
+    "pin_assets_generated": false,
+    "mode": null
+  }
+}

@@ -7,7 +7,7 @@ cluster_name: "minimalist bathroom"
 cluster_slug: "minimalist-bathroom"
 cluster_article_count: 1
 cluster_primary_keywords: ["best furniture for a minimalist bathroom"]
-cluster_generated_at: "2026-05-25T12:30:19.712157+00:00"
+cluster_generated_at: "2026-05-27T12:21:44.965790+00:00"
 cluster_intro: "Minimalist Bathroom is a useful decorating topic because it combines inspiration with practical decision-making. Readers usually arrive here looking for a clear style direction, help solving a room problem, or confidence about how to make the look feel intentional at home.
 
 This pillar page brings together the site's coverage around minimalist bathroom, with article angles shaped by keyword themes such as best furniture for a minimalist bathroom. That mix helps the page support both broader search intent and more specific decorating questions without feeling repetitive.

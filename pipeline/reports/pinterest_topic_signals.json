@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-25T12:30:18.018447+00:00",
-  "cluster_count": 39,
+  "generated_at": "2026-05-27T12:21:43.272061+00:00",
+  "cluster_count": 40,
   "summary": {
     "hot": 0,
     "warm": 0,
     "cold": 18,
-    "no_data": 21
+    "no_data": 22
   },
   "clusters": [
     {
@@ -628,6 +628,30 @@
       "average_saves": 0.0,
       "signal_label": "cold",
       "signal_boost": -6
+    },
+    {
+      "cluster_name": "neutral entryway",
+      "article_count": 1,
+      "article_slugs": [
+        "how-to-style-a-neutral-entryway"
+      ],
+      "primary_keywords": [
+        "how to style a neutral entryway"
+      ],
+      "secondary_keywords": [
+        "neutral entryway ideas",
+        "neutral entryway decor",
+        "neutral entryway layout ideas",
+        "neutral entryway color palette"
+      ],
+      "pinterest_article_count": 0,
+      "strong_article_count": 0,
+      "weak_article_count": 0,
+      "average_score": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_saves": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0
     },
     {
       "cluster_name": "neutral kitchen",

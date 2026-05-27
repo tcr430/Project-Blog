@@ -1,19 +1,18 @@
 # Weekly Pipeline Report
 
-Generated: 2026-05-25
+Generated: 2026-05-27
 Window: last 7 days
 
-Articles Published: 4  
-Pins Generated: 12  
-Pins Scheduled: 41  
+Articles Published: 3  
+Pins Generated: 9  
+Pins Scheduled: 44  
 Pins Published: 0  
 Repins Scheduled: 0
 
 ## Articles Published
 - balancing-light-layers-best-lighting-for-living-room
 - best-lighting-for-bedroom-layered-approach
-- how-to-style-a-neutral-kitchen
-- thoughtful-color-choices-tiny-bathroom-decor
+- how-to-style-a-neutral-entryway
 
 ## Top Performing Pins
 - No published pin analytics were available for this window.

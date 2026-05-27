@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-25T12:30:18.014064+00:00",
-  "cluster_count": 39,
-  "article_count": 40,
+  "generated_at": "2026-05-27T12:21:43.267411+00:00",
+  "cluster_count": 40,
+  "article_count": 41,
   "subtopic_count": 10,
   "angle_count": 5,
   "angle_distribution": {
     "best_options": 20,
-    "how_to": 3,
+    "how_to": 4,
     "ideas": 4,
     "mistakes": 12,
     "style_specific": 1
@@ -1209,6 +1209,50 @@
           "latest_article_date": "2026-04-01",
           "representative_article_slugs": [
             "how-to-style-a-neutral-bedroom"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "how_to": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_id": "neutral_entryway",
+      "cluster_name": "neutral entryway",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "utility_transition"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "how to style a neutral entryway"
+      ],
+      "latest_article_date": "2026-05-27",
+      "latest_publication": {
+        "article_slug": "how-to-style-a-neutral-entryway",
+        "article_title": "How to Style a Neutral Entryway with Timeless Calm and Texture",
+        "publish_date": "2026-05-27",
+        "subtopic_id": "layout",
+        "subtopic_name": "layout and foundation",
+        "angle_id": "how_to"
+      },
+      "representative_article_slugs": [
+        "how-to-style-a-neutral-entryway"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "layout",
+          "subtopic_name": "layout and foundation",
+          "article_count": 1,
+          "latest_article_date": "2026-05-27",
+          "representative_article_slugs": [
+            "how-to-style-a-neutral-entryway"
           ]
         }
       ],
