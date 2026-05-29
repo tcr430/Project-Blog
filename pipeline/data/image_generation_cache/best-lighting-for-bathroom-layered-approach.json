@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "ccd658123e7f45736e08f756199dab2748fb7c3d590f6d076339fd6da3988f6e",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-lighting-for-bathroom-layered-approach/hero.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-1": {
+    "cache_key": "4add7dc17b44033347e8e08a8d2d6c0ec8b6e738c4033663038c30bf64c76eca",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-lighting-for-bathroom-layered-approach/section-1.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-2": {
+    "cache_key": "82b7a1998d9c2ef3806e0176d2cb628e2e385e528b4701261c7f442a071026e2",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-lighting-for-bathroom-layered-approach/section-2.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-3": {
+    "cache_key": "647ccaa47db0933f276b20be58998663926109909109b9218075f1688972dd1e",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-lighting-for-bathroom-layered-approach/section-3.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-4": {
+    "cache_key": "69d92779e9fb3f4f2033f50e26b0fde6df404dbf1d562dff4f64ca11c5a7d1ee",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-lighting-for-bathroom-layered-approach/section-4.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-5": {
+    "cache_key": "4d66a38d85eab8a7d661cfa49054aed37be1ffd82852d7677995400a43cc3282",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-lighting-for-bathroom-layered-approach/section-5.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  }
+}

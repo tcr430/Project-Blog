@@ -1,0 +1,300 @@
+{
+  "generated_at": "2026-05-29T12:16:21.008188+00:00",
+  "trend": "best lighting for bathroom",
+  "slug": "best-lighting-for-bathroom-layered-approach",
+  "article_generation": {
+    "cache_hit": false,
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/article_packages/1fca55d81eb1abbdd49a819d852a641be8491d1c6c7cc4a5394598f5c1d4b44d.json",
+    "model": "gpt-4.1-mini",
+    "generation_calls": 1,
+    "short_retries": 0,
+    "angle_retries": 0,
+    "product_retries": 0,
+    "selected_products": 0,
+    "affiliate_mode": false,
+    "monetization_profile_id": "commercial_strong",
+    "generated_link_count": 0,
+    "primary_keyword": "best lighting for bathroom",
+    "topical_cluster": "bathroom lighting"
+  },
+  "seo_validation": {
+    "article_slug": "best-lighting-for-bathroom-layered-approach",
+    "cluster": "bathroom lighting",
+    "cluster_id": "bathroom lighting",
+    "subtopic_id": "layering",
+    "subtopic_name": "layered lighting",
+    "angle_id": "best options",
+    "intent_id": "comparison",
+    "primary_keyword": "best lighting for bathroom",
+    "validation_status": "warning",
+    "warnings": [
+      "None of the secondary keywords appear in the article body.",
+      "Primary keyword appears very lightly in the article body.",
+      "Title does not reflect the primary keyword strongly enough."
+    ],
+    "errors": [],
+    "duplicate_candidate_slugs": [],
+    "timestamp": "2026-05-29T12:12:41.398001+00:00"
+  },
+  "editorial_validation": {
+    "article_slug": "best-lighting-for-bathroom-layered-approach",
+    "cluster_id": "bathroom_lighting",
+    "subtopic_id": "layering",
+    "angle_id": "best_options",
+    "primary_keyword": "best lighting for bathroom",
+    "validation_status": "warning",
+    "warnings": [
+      "Supporting keyword ideas are barely reflected in the body."
+    ],
+    "errors": [],
+    "checks": {
+      "generic_intro": {
+        "intro_word_count": 151,
+        "concept_overlap": 7,
+        "first_sentence": "Choosing the best lighting for a bathroom is often more challenging than it first appears."
+      },
+      "heading_quality": {
+        "heading_count": 5,
+        "vague_heading_count": 0,
+        "low_specificity_heading_count": 0,
+        "repeated_signature_count": 0,
+        "repeated_stem_count": 0,
+        "headings": [
+          "The Key Criteria for Choosing Effective Bathroom Lighting",
+          "Warm Metals and Natural Shades: A Classic Layered Lighting Combination",
+          "Integrated LED Fixtures: Modern Control Meets Subtle Layering",
+          "Matching Lighting Choices to Bathroom Size and Layout",
+          "Practical Steps to Narrow Your Bathroom Lighting Selections"
+        ]
+      },
+      "specificity": {
+        "concept_token_hits": 9,
+        "specificity_term_hits": 11,
+        "secondary_keyword_hits": 0
+      },
+      "distinctiveness": {
+        "nearest_article_slug": "",
+        "max_similarity": 0.0,
+        "strongest_heading_overlap": 0
+      }
+    },
+    "timestamp": "2026-05-29T12:12:41.401401+00:00"
+  },
+  "image_generation": {
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/image_generation_cache/best-lighting-for-bathroom-layered-approach.json",
+    "provider": "flux",
+    "provider_model": "flux-2-max",
+    "model": "flux-2-max",
+    "fallback_provider": "openai",
+    "fallback_model": "gpt-image-1",
+    "size": "1536x1024",
+    "hero_quality": "high",
+    "section_quality": "medium",
+    "allow_fallback": true,
+    "fallback_events": 0,
+    "generated_images": 6,
+    "cache_hits": 0,
+    "generation_calls": 6,
+    "qa_calls": 1,
+    "details": [
+      {
+        "label": "hero",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 1,
+        "quality": "high",
+        "qa_enabled": true,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "45d9d645-1848-48e8-bed9-0b8b06b798ee",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=45d9d645-1848-48e8-bed9-0b8b06b798ee",
+            "poll_attempts": 18,
+            "provider_status": "Ready",
+            "elapsed_seconds": 31.26,
+            "quality": "high",
+            "elapsed_seconds_total": 31.26,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation",
+        "qa_reason": "The image shows a clean and modern bathroom vanity detail with an elegant light fixture, clear daylight, and crisp shadows. It has a strong focal point on the lighting, displaying the glow quality and how the fixture shapes the mood of the room, which fits the intended prompt perfectly. The materials and layout are realistic, with no text, logos, people, or clutter."
+      },
+      {
+        "label": "section-1",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "da9d6383-c979-4ef6-9f2d-eccb8a0c19d5",
+            "polling_url": "https://api.us4.bfl.ai/v1/get_result?id=da9d6383-c979-4ef6-9f2d-eccb8a0c19d5",
+            "poll_attempts": 24,
+            "provider_status": "Ready",
+            "elapsed_seconds": 31.96,
+            "quality": "medium",
+            "elapsed_seconds_total": 31.96,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-2",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "85bb7bc7-7dc2-4758-b83b-aef982cbf270",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=85bb7bc7-7dc2-4758-b83b-aef982cbf270",
+            "poll_attempts": 20,
+            "provider_status": "Ready",
+            "elapsed_seconds": 33.98,
+            "quality": "medium",
+            "elapsed_seconds_total": 33.98,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-3",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "b53cbf02-373c-4791-8613-46000bf2661a",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=b53cbf02-373c-4791-8613-46000bf2661a",
+            "poll_attempts": 21,
+            "provider_status": "Ready",
+            "elapsed_seconds": 28.31,
+            "quality": "medium",
+            "elapsed_seconds_total": 28.31,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-4",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "c7109d48-d313-4c2d-88a2-45015ddfb435",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=c7109d48-d313-4c2d-88a2-45015ddfb435",
+            "poll_attempts": 19,
+            "provider_status": "Ready",
+            "elapsed_seconds": 32.32,
+            "quality": "medium",
+            "elapsed_seconds_total": 32.32,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-5",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "51156b9f-7742-4b81-a706-f0fa5abfb306",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=51156b9f-7742-4b81-a706-f0fa5abfb306",
+            "poll_attempts": 21,
+            "provider_status": "Ready",
+            "elapsed_seconds": 29.45,
+            "quality": "medium",
+            "elapsed_seconds_total": 29.45,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      }
+    ]
+  },
+  "pinterest": {
+    "variants_requested": 4,
+    "pin_assets_generated": false,
+    "mode": null
+  }
+}

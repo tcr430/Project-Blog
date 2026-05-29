@@ -1,13 +1,37 @@
 {
-  "generated_at": "2026-05-27T12:21:43.272061+00:00",
-  "cluster_count": 40,
+  "generated_at": "2026-05-29T12:16:21.250211+00:00",
+  "cluster_count": 41,
   "summary": {
     "hot": 0,
     "warm": 0,
     "cold": 18,
-    "no_data": 22
+    "no_data": 23
   },
   "clusters": [
+    {
+      "cluster_name": "bathroom lighting",
+      "article_count": 1,
+      "article_slugs": [
+        "best-lighting-for-bathroom-layered-approach"
+      ],
+      "primary_keywords": [
+        "best lighting for bathroom"
+      ],
+      "secondary_keywords": [
+        "bathroom lighting ideas",
+        "bathroom lamp styling ideas",
+        "how to layer lighting in bathroom",
+        "bathroom lighting mistakes to avoid"
+      ],
+      "pinterest_article_count": 0,
+      "strong_article_count": 0,
+      "weak_article_count": 0,
+      "average_score": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_saves": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0
+    },
     {
       "cluster_name": "bathroom styling details",
       "article_count": 1,

@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-27T12:16:59.411927+00:00",
+  "generated_at": "2026-05-29T12:11:42.537621+00:00",
   "overview": {
-    "pin_count": 92,
+    "pin_count": 95,
     "published_pin_count": 51,
     "analytics_ready_pin_count": 0,
-    "tracked_article_count": 28
+    "tracked_article_count": 29
   },
   "best_performing_clusters": [
     {
@@ -311,6 +311,24 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "how-to-style-a-neutral-bedroom"
+      ]
+    },
+    {
+      "cluster_id": "neutral_entryway",
+      "cluster_name": "neutral entryway",
+      "pin_count": 3,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "how-to-style-a-neutral-entryway"
       ]
     },
     {
@@ -799,6 +817,25 @@
       ]
     },
     {
+      "cluster_id": "neutral_entryway",
+      "subtopic_id": "layout",
+      "subtopic_name": "layout and foundation",
+      "pin_count": 3,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "how-to-style-a-neutral-entryway"
+      ]
+    },
+    {
       "cluster_id": "neutral_kitchen",
       "subtopic_id": "layout",
       "subtopic_name": "layout and foundation",
@@ -1070,7 +1107,7 @@
     },
     {
       "angle_id": "how_to",
-      "pin_count": 11,
+      "pin_count": 14,
       "published_pin_count": 4,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1084,6 +1121,7 @@
       "top_article_slugs": [
         "how-to-style-a-neutral-bathroom",
         "how-to-style-a-neutral-bedroom",
+        "how-to-style-a-neutral-entryway",
         "how-to-style-a-neutral-kitchen"
       ]
     },
@@ -1522,6 +1560,27 @@
       ]
     },
     {
+      "visual_style_key": "centered_title|collected_natural|textures_materials|implementation",
+      "style_name": "centered-title",
+      "visual_family_id": "collected_natural",
+      "shot_library_id": "textures_materials",
+      "intent_id": "implementation",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "how-to-style-a-neutral-entryway"
+      ]
+    },
+    {
       "visual_style_key": "centered_title|crisp_modern|color_palette|implementation",
       "style_name": "centered-title",
       "visual_family_id": "crisp_modern",
@@ -1763,6 +1822,27 @@
       ]
     },
     {
+      "visual_style_key": "minimalist_overlay|collected_natural|textures_materials|implementation",
+      "style_name": "minimalist-overlay",
+      "visual_family_id": "collected_natural",
+      "shot_library_id": "textures_materials",
+      "intent_id": "implementation",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "how-to-style-a-neutral-entryway"
+      ]
+    },
+    {
       "visual_style_key": "minimalist_overlay|crisp_modern|color_palette|implementation",
       "style_name": "minimalist-overlay",
       "visual_family_id": "crisp_modern",
@@ -1934,6 +2014,27 @@
       "top_article_slugs": [
         "moody-bedroom-texture-mistakes-to-avoid",
         "parisian-bathroom-texture-mistakes-to-avoid"
+      ]
+    },
+    {
+      "visual_style_key": "top_title|collected_natural|textures_materials|implementation",
+      "style_name": "top-title",
+      "visual_family_id": "collected_natural",
+      "shot_library_id": "textures_materials",
+      "intent_id": "implementation",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "how-to-style-a-neutral-entryway"
       ]
     },
     {
@@ -2327,7 +2428,7 @@
       },
       {
         "angle_id": "how_to",
-        "pin_count": 11,
+        "pin_count": 14,
         "published_pin_count": 4,
         "analytics_ready_count": 0,
         "average_score": 0.0,
@@ -2341,6 +2442,7 @@
         "top_article_slugs": [
           "how-to-style-a-neutral-bathroom",
           "how-to-style-a-neutral-bedroom",
+          "how-to-style-a-neutral-entryway",
           "how-to-style-a-neutral-kitchen"
         ]
       },

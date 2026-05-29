@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-27T12:21:43.267411+00:00",
-  "cluster_count": 40,
-  "article_count": 41,
+  "generated_at": "2026-05-29T12:16:21.245226+00:00",
+  "cluster_count": 41,
+  "article_count": 42,
   "subtopic_count": 10,
   "angle_count": 5,
   "angle_distribution": {
-    "best_options": 20,
+    "best_options": 21,
     "how_to": 4,
     "ideas": 4,
     "mistakes": 12,
@@ -66,6 +66,50 @@
         "ideas": 2
       },
       "status": "growing"
+    },
+    {
+      "cluster_id": "bathroom_lighting",
+      "cluster_name": "bathroom lighting",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "utility_transition"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "best lighting for bathroom"
+      ],
+      "latest_article_date": "2026-05-29",
+      "latest_publication": {
+        "article_slug": "best-lighting-for-bathroom-layered-approach",
+        "article_title": "Lighting for Bathroom: A Practical Buying Guide",
+        "publish_date": "2026-05-29",
+        "subtopic_id": "layering",
+        "subtopic_name": "layered lighting",
+        "angle_id": "best_options"
+      },
+      "representative_article_slugs": [
+        "best-lighting-for-bathroom-layered-approach"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "layering",
+          "subtopic_name": "layered lighting",
+          "article_count": 1,
+          "latest_article_date": "2026-05-29",
+          "representative_article_slugs": [
+            "best-lighting-for-bathroom-layered-approach"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "best_options": 1
+      },
+      "status": "underdeveloped"
     },
     {
       "cluster_id": "bathroom_styling_details",
@@ -932,7 +976,7 @@
       "representative_article_slugs": [
         "best-furniture-mediterranean-bedroom"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
