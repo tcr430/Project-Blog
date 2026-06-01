@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "49de72b4b096a0e2a0cebafc59514c3bc9ef7c369e12b884575fffda093b8780",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/transitional-kitchen-texture-mistakes-to-avoid/hero.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-1": {
+    "cache_key": "346ee5497ba409769bd78f160a6edbebb58f928cfa9ff87c97be683897105806",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/transitional-kitchen-texture-mistakes-to-avoid/section-1.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-2": {
+    "cache_key": "fd9cc4a2e8ca9e5e0b1756f0eeceb3a1e3c653580c383ac0fa0e0d24ea8d37eb",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/transitional-kitchen-texture-mistakes-to-avoid/section-2.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-3": {
+    "cache_key": "1a7967ab019528cc605b96ecbf042776db70fd83b4d90e5a9661a31dfcc8eb98",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/transitional-kitchen-texture-mistakes-to-avoid/section-3.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-4": {
+    "cache_key": "a96454f7e2e9d59af5baefc374719aba14e3c1ff7ddb5d77cd774f403c584e95",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/transitional-kitchen-texture-mistakes-to-avoid/section-4.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-5": {
+    "cache_key": "db1734e57433949bd976b6d2c4ed04ce6254f879148c2978da9a563d73c6edee",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/transitional-kitchen-texture-mistakes-to-avoid/section-5.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  }
+}

@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-05-29T12:16:22.823658+00:00",
+  "generated_at": "2026-06-01T15:02:42.819518+00:00",
   "total_clusters": 396,
   "summary": {
-    "missing": 355,
-    "underdeveloped": 41,
+    "missing": 354,
+    "underdeveloped": 42,
     "growing": 0,
     "strong": 0,
     "saturated": 0
   },
   "saturation_summary": {
-    "empty": 355,
-    "needs_growth": 41
+    "empty": 354,
+    "needs_growth": 42
   },
   "editorial_mix_rules": {
     "recent_window_article_count": 8,
@@ -327,7 +327,6 @@
     "transitional entryway",
     "transitional guest bedroom",
     "transitional home office",
-    "transitional kitchen",
     "transitional laundry room",
     "transitional living room",
     "transitional nursery",
@@ -445,6 +444,7 @@
     "biophilic bathroom",
     "neutral kitchen",
     "neutral entryway",
+    "transitional kitchen",
     "living room textures and materials",
     "small dining nook",
     "earthy bedroom",
@@ -53232,217 +53232,6 @@
       ]
     },
     {
-      "cluster_id": "transitional_kitchen",
-      "cluster_name": "transitional kitchen",
-      "domain_id": "kitchens_dining",
-      "health_label": "missing",
-      "article_count": 0,
-      "article_capacity_target": 14,
-      "capacity_ratio": 0.0,
-      "growth_openings": 10,
-      "saturation_state": "empty",
-      "selection_action": "boost",
-      "latest_publication_date": "",
-      "days_since_latest": null,
-      "subtopics_total": 5,
-      "subtopics_covered": [],
-      "subtopic_ids_covered": [],
-      "subtopics_missing": [
-        "Layout and Foundation",
-        "Color Palette",
-        "Furniture and Anchors",
-        "Lighting",
-        "Textures and Layers"
-      ],
-      "subtopic_ids_missing": [
-        "layout",
-        "colors",
-        "furniture",
-        "lighting",
-        "textures"
-      ],
-      "angle_distribution": {
-        "ideas": 0,
-        "how_to": 0,
-        "mistakes": 0,
-        "best_options": 0,
-        "style_specific": 0
-      },
-      "underused_angles": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "style_specific"
-      ],
-      "overused_angles": [],
-      "intent_distribution": {
-        "comparison": 0,
-        "decision_making": 0,
-        "implementation": 0,
-        "inspiration": 0,
-        "problem_solving": 0
-      },
-      "underused_intents": [
-        "comparison",
-        "decision_making",
-        "implementation",
-        "inspiration",
-        "problem_solving"
-      ],
-      "overused_intents": [],
-      "recommended_concepts": [
-        {
-          "cluster_id": "transitional_kitchen",
-          "cluster_name": "transitional kitchen",
-          "domain_id": "kitchens_dining",
-          "subtopic_id": "colors",
-          "subtopic_name": "Color Palette",
-          "angle_id": "how_to",
-          "intent_id": "implementation",
-          "modifier": "",
-          "primary_keyword": "how to choose colors for a transitional kitchen",
-          "secondary_keywords": [
-            "transitional kitchen ideas",
-            "how to style a transitional kitchen",
-            "transitional kitchen decor",
-            "transitional kitchen layout ideas"
-          ],
-          "search_intent": "how_to",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 96,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "transitional_kitchen",
-          "cluster_name": "transitional kitchen",
-          "domain_id": "kitchens_dining",
-          "subtopic_id": "colors",
-          "subtopic_name": "Color Palette",
-          "angle_id": "ideas",
-          "intent_id": "inspiration",
-          "modifier": "",
-          "primary_keyword": "transitional kitchen color palette ideas",
-          "secondary_keywords": [
-            "transitional kitchen ideas",
-            "how to style a transitional kitchen",
-            "transitional kitchen decor",
-            "transitional kitchen layout ideas"
-          ],
-          "search_intent": "ideas",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 96,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "transitional_kitchen",
-          "cluster_name": "transitional kitchen",
-          "domain_id": "kitchens_dining",
-          "subtopic_id": "colors",
-          "subtopic_name": "Color Palette",
-          "angle_id": "mistakes",
-          "intent_id": "problem_solving",
-          "modifier": "",
-          "primary_keyword": "transitional kitchen color mistakes to avoid",
-          "secondary_keywords": [
-            "transitional kitchen ideas",
-            "how to style a transitional kitchen",
-            "transitional kitchen decor",
-            "transitional kitchen layout ideas"
-          ],
-          "search_intent": "problem_solution",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 96,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        }
-      ],
-      "recommended_topics": [
-        "how to choose colors for a transitional kitchen",
-        "transitional kitchen color palette ideas",
-        "transitional kitchen color mistakes to avoid"
-      ],
-      "priority_score": 100,
-      "season": "",
-      "holiday": "",
-      "source": "content architecture",
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "pinterest_intelligence": {
-        "cluster_signal_label": "no_data",
-        "cluster_signal_boost": 0
-      },
-      "seed_keywords": [
-        "transitional kitchen ideas",
-        "how to style a transitional kitchen",
-        "transitional kitchen decor",
-        "transitional kitchen layout ideas",
-        "transitional kitchen color palette"
-      ],
-      "allowed_angle_ids": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "style_specific"
-      ]
-    },
-    {
       "cluster_id": "transitional_laundry_room",
       "cluster_name": "transitional laundry room",
       "domain_id": "utility_transition",
@@ -75748,7 +75537,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-20",
-      "days_since_latest": 70,
+      "days_since_latest": 73,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation"
@@ -75961,7 +75750,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-25",
-      "days_since_latest": 65,
+      "days_since_latest": 68,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -76174,7 +75963,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-27",
-      "days_since_latest": 63,
+      "days_since_latest": 66,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -76387,7 +76176,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-08",
-      "days_since_latest": 51,
+      "days_since_latest": 54,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -76600,7 +76389,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-08",
-      "days_since_latest": 50,
+      "days_since_latest": 53,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -76813,7 +76602,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-17",
-      "days_since_latest": 42,
+      "days_since_latest": 45,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -76888,13 +76677,13 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 78,
+          "score": 82,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
             "underused_angle": true,
             "underused_intent": true,
-            "stale_cluster": false,
+            "stale_cluster": true,
             "cluster_health": "underdeveloped",
             "pinterest_subtopic_signal": "no_data",
             "pinterest_angle_signal": "no_data",
@@ -76925,13 +76714,13 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 78,
+          "score": 82,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
             "underused_angle": true,
             "underused_intent": true,
-            "stale_cluster": false,
+            "stale_cluster": true,
             "cluster_health": "underdeveloped",
             "pinterest_subtopic_signal": "no_data",
             "pinterest_angle_signal": "no_data",
@@ -76962,13 +76751,13 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 78,
+          "score": 82,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
             "underused_angle": true,
             "underused_intent": true,
-            "stale_cluster": false,
+            "stale_cluster": true,
             "cluster_health": "underdeveloped",
             "pinterest_subtopic_signal": "no_data",
             "pinterest_angle_signal": "no_data",
@@ -76981,7 +76770,7 @@
         "mediterranean bathroom color palette ideas",
         "mediterranean bathroom color mistakes to avoid"
       ],
-      "priority_score": 70,
+      "priority_score": 75,
       "season": "",
       "holiday": "",
       "source": "content architecture",
@@ -77026,7 +76815,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-04",
-      "days_since_latest": 25,
+      "days_since_latest": 28,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -77239,7 +77028,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-06",
-      "days_since_latest": 23,
+      "days_since_latest": 26,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -77452,7 +77241,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-18",
-      "days_since_latest": 10,
+      "days_since_latest": 14,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation"
@@ -77665,7 +77454,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-27",
-      "days_since_latest": 1,
+      "days_since_latest": 5,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation"
@@ -77857,6 +77646,219 @@
         "neutral entryway decor",
         "neutral entryway layout ideas",
         "neutral entryway color palette"
+      ],
+      "allowed_angle_ids": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "style_specific"
+      ]
+    },
+    {
+      "cluster_id": "transitional_kitchen",
+      "cluster_name": "transitional kitchen",
+      "domain_id": "kitchens_dining",
+      "health_label": "underdeveloped",
+      "article_count": 1,
+      "article_capacity_target": 14,
+      "capacity_ratio": 0.07,
+      "growth_openings": 9,
+      "saturation_state": "needs_growth",
+      "selection_action": "boost",
+      "latest_publication_date": "2026-06-01",
+      "days_since_latest": 0,
+      "subtopics_total": 5,
+      "subtopics_covered": [
+        "Textures and Layers"
+      ],
+      "subtopic_ids_covered": [
+        "textures"
+      ],
+      "subtopics_missing": [
+        "Layout and Foundation",
+        "Color Palette",
+        "Furniture and Anchors",
+        "Lighting"
+      ],
+      "subtopic_ids_missing": [
+        "layout",
+        "colors",
+        "furniture",
+        "lighting"
+      ],
+      "angle_distribution": {
+        "ideas": 0,
+        "how_to": 0,
+        "mistakes": 1,
+        "best_options": 0,
+        "style_specific": 0
+      },
+      "underused_angles": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "style_specific"
+      ],
+      "overused_angles": [],
+      "intent_distribution": {
+        "comparison": 0,
+        "decision_making": 0,
+        "implementation": 0,
+        "inspiration": 0,
+        "problem_solving": 1
+      },
+      "underused_intents": [
+        "comparison",
+        "decision_making",
+        "implementation",
+        "inspiration",
+        "problem_solving"
+      ],
+      "overused_intents": [],
+      "recommended_concepts": [
+        {
+          "cluster_id": "transitional_kitchen",
+          "cluster_name": "transitional kitchen",
+          "domain_id": "kitchens_dining",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "how_to",
+          "intent_id": "implementation",
+          "modifier": "",
+          "primary_keyword": "how to choose colors for a transitional kitchen",
+          "secondary_keywords": [
+            "transitional kitchen ideas",
+            "how to style a transitional kitchen",
+            "transitional kitchen decor",
+            "transitional kitchen layout ideas"
+          ],
+          "search_intent": "how_to",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 74,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        },
+        {
+          "cluster_id": "transitional_kitchen",
+          "cluster_name": "transitional kitchen",
+          "domain_id": "kitchens_dining",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "ideas",
+          "intent_id": "inspiration",
+          "modifier": "",
+          "primary_keyword": "transitional kitchen color palette ideas",
+          "secondary_keywords": [
+            "transitional kitchen ideas",
+            "how to style a transitional kitchen",
+            "transitional kitchen decor",
+            "transitional kitchen layout ideas"
+          ],
+          "search_intent": "ideas",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 74,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        },
+        {
+          "cluster_id": "transitional_kitchen",
+          "cluster_name": "transitional kitchen",
+          "domain_id": "kitchens_dining",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "style_specific",
+          "intent_id": "inspiration",
+          "modifier": "",
+          "primary_keyword": "transitional kitchen paint and color ideas",
+          "secondary_keywords": [
+            "transitional kitchen ideas",
+            "how to style a transitional kitchen",
+            "transitional kitchen decor",
+            "transitional kitchen layout ideas"
+          ],
+          "search_intent": "styling_advice",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 74,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        }
+      ],
+      "recommended_topics": [
+        "how to choose colors for a transitional kitchen",
+        "transitional kitchen color palette ideas",
+        "transitional kitchen paint and color ideas"
+      ],
+      "priority_score": 70,
+      "season": "",
+      "holiday": "",
+      "source": "content architecture",
+      "pinterest_signal": {
+        "label": "no_data",
+        "boost": 0,
+        "pinterest_article_count": 0,
+        "strong_article_count": 0,
+        "weak_article_count": 0,
+        "average_score": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_saves": 0.0
+      },
+      "pinterest_intelligence": {
+        "cluster_signal_label": "no_data",
+        "cluster_signal_boost": 0
+      },
+      "seed_keywords": [
+        "transitional kitchen ideas",
+        "how to style a transitional kitchen",
+        "transitional kitchen decor",
+        "transitional kitchen layout ideas",
+        "transitional kitchen color palette"
       ],
       "allowed_angle_ids": [
         "ideas",
@@ -78299,7 +78301,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-18",
-      "days_since_latest": 71,
+      "days_since_latest": 74,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -78512,7 +78514,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-23",
-      "days_since_latest": 67,
+      "days_since_latest": 70,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -78725,7 +78727,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-28",
-      "days_since_latest": 61,
+      "days_since_latest": 64,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -78938,7 +78940,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-30",
-      "days_since_latest": 60,
+      "days_since_latest": 63,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -79151,7 +79153,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-01",
-      "days_since_latest": 57,
+      "days_since_latest": 60,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation"
@@ -79364,7 +79366,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-01",
-      "days_since_latest": 57,
+      "days_since_latest": 60,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -79577,7 +79579,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-03",
-      "days_since_latest": 56,
+      "days_since_latest": 59,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -79790,7 +79792,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-06",
-      "days_since_latest": 53,
+      "days_since_latest": 56,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -80003,7 +80005,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-10",
-      "days_since_latest": 49,
+      "days_since_latest": 52,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -80216,7 +80218,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-13",
-      "days_since_latest": 46,
+      "days_since_latest": 49,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -80429,7 +80431,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-20",
-      "days_since_latest": 39,
+      "days_since_latest": 42,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -80642,7 +80644,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-22",
-      "days_since_latest": 37,
+      "days_since_latest": 40,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -80855,7 +80857,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-24",
-      "days_since_latest": 35,
+      "days_since_latest": 38,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -81068,7 +81070,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-27",
-      "days_since_latest": 32,
+      "days_since_latest": 35,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -81281,7 +81283,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-29",
-      "days_since_latest": 30,
+      "days_since_latest": 33,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -81494,7 +81496,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-01",
-      "days_since_latest": 28,
+      "days_since_latest": 31,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -81707,7 +81709,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-08",
-      "days_since_latest": 21,
+      "days_since_latest": 24,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Surface Styling"
@@ -81916,7 +81918,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-11",
-      "days_since_latest": 18,
+      "days_since_latest": 21,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Surface Styling"
@@ -81989,7 +81991,7 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 74,
+          "score": 78,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -82026,7 +82028,7 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 74,
+          "score": 78,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -82063,7 +82065,7 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 74,
+          "score": 78,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -82125,7 +82127,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-13",
-      "days_since_latest": 16,
+      "days_since_latest": 19,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Surface Styling"
@@ -82334,7 +82336,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-15",
-      "days_since_latest": 14,
+      "days_since_latest": 17,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Seasonal Refresh"
@@ -82546,7 +82548,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-02",
-      "days_since_latest": 57,
+      "days_since_latest": 60,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Seasonal Refresh"
@@ -82758,7 +82760,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-20",
-      "days_since_latest": 9,
+      "days_since_latest": 12,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Light and Openness"
@@ -82964,7 +82966,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-22",
-      "days_since_latest": 7,
+      "days_since_latest": 10,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Layered Lighting"
@@ -83170,7 +83172,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-25",
-      "days_since_latest": 3,
+      "days_since_latest": 7,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Layered Lighting"
@@ -83376,7 +83378,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-29",
-      "days_since_latest": 0,
+      "days_since_latest": 3,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Layered Lighting"
@@ -83582,7 +83584,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-15",
-      "days_since_latest": 44,
+      "days_since_latest": 47,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Seasonal Refresh",
@@ -83659,13 +83661,13 @@
             "monetizable_decision",
             "evergreen_authority"
           ],
-          "score": 79,
+          "score": 83,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
             "underused_angle": true,
             "underused_intent": true,
-            "stale_cluster": false,
+            "stale_cluster": true,
             "cluster_health": "underdeveloped",
             "pinterest_subtopic_signal": "no_data",
             "pinterest_angle_signal": "no_data",
@@ -83697,13 +83699,13 @@
             "seasonal_opportunity",
             "evergreen_authority"
           ],
-          "score": 79,
+          "score": 83,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
             "underused_angle": true,
             "underused_intent": true,
-            "stale_cluster": false,
+            "stale_cluster": true,
             "cluster_health": "underdeveloped",
             "pinterest_subtopic_signal": "no_data",
             "pinterest_angle_signal": "no_data",
@@ -83735,13 +83737,13 @@
             "seasonal_opportunity",
             "evergreen_authority"
           ],
-          "score": 79,
+          "score": 83,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
             "underused_angle": true,
             "underused_intent": true,
-            "stale_cluster": false,
+            "stale_cluster": true,
             "cluster_health": "underdeveloped",
             "pinterest_subtopic_signal": "no_data",
             "pinterest_angle_signal": "no_data",
@@ -83754,7 +83756,7 @@
         "how to layer textiles for spring living room styling",
         "spring living room styling texture mistakes to avoid"
       ],
-      "priority_score": 49,
+      "priority_score": 54,
       "season": "spring",
       "holiday": "",
       "source": "content architecture",

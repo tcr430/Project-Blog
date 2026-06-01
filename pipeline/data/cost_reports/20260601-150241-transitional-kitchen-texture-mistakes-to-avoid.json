@@ -1,0 +1,300 @@
+{
+  "generated_at": "2026-06-01T15:02:41.293651+00:00",
+  "trend": "transitional kitchen texture mistakes to avoid",
+  "slug": "transitional-kitchen-texture-mistakes-to-avoid",
+  "article_generation": {
+    "cache_hit": false,
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/article_packages/77f9819f5cd1014d6161caa2398cc2b35d68f3dc0a0b38ed9e13934487ddc08d.json",
+    "model": "gpt-4.1-mini",
+    "generation_calls": 3,
+    "short_retries": 0,
+    "angle_retries": 1,
+    "product_retries": 0,
+    "selected_products": 0,
+    "affiliate_mode": false,
+    "monetization_profile_id": "fix_oriented",
+    "generated_link_count": 0,
+    "primary_keyword": "transitional kitchen texture mistakes to avoid",
+    "topical_cluster": "transitional kitchen"
+  },
+  "seo_validation": {
+    "article_slug": "transitional-kitchen-texture-mistakes-to-avoid",
+    "cluster": "transitional kitchen",
+    "cluster_id": "transitional kitchen",
+    "subtopic_id": "textures",
+    "subtopic_name": "textures and layers",
+    "angle_id": "mistakes",
+    "intent_id": "problem_solving",
+    "primary_keyword": "transitional kitchen texture mistakes to avoid",
+    "validation_status": "warning",
+    "warnings": [
+      "Chosen title is still close to an existing site title pattern.",
+      "Main section headings may be too generic for the chosen keyword.",
+      "Primary keyword appears very lightly in the article body."
+    ],
+    "errors": [],
+    "duplicate_candidate_slugs": [],
+    "timestamp": "2026-06-01T14:58:22.537536+00:00"
+  },
+  "editorial_validation": {
+    "article_slug": "transitional-kitchen-texture-mistakes-to-avoid",
+    "cluster_id": "transitional_kitchen",
+    "subtopic_id": "textures",
+    "angle_id": "mistakes",
+    "primary_keyword": "transitional kitchen texture mistakes to avoid",
+    "validation_status": "warning",
+    "warnings": [
+      "Several section headings do not signal the topic strongly enough."
+    ],
+    "errors": [],
+    "checks": {
+      "generic_intro": {
+        "intro_word_count": 112,
+        "concept_overlap": 6,
+        "first_sentence": "The transitional kitchen embodies a timeless crossover between traditional warmth and modern simplicity."
+      },
+      "heading_quality": {
+        "heading_count": 5,
+        "vague_heading_count": 0,
+        "low_specificity_heading_count": 3,
+        "repeated_signature_count": 0,
+        "repeated_stem_count": 0,
+        "headings": [
+          "Glossy Surfaces Overpower Matte Foundations",
+          "Missing Textural Contrast Creates a Flat Palette",
+          "Over-Scaled Material Choices Distort Proportion",
+          "Insufficient Natural Light Dulls Texture Layers",
+          "Excessive Material Mixing Overwhelms the Transitional Balance"
+        ]
+      },
+      "specificity": {
+        "concept_token_hits": 9,
+        "specificity_term_hits": 10,
+        "secondary_keyword_hits": 1
+      },
+      "distinctiveness": {
+        "nearest_article_slug": "",
+        "max_similarity": 0.0,
+        "strongest_heading_overlap": 0
+      }
+    },
+    "timestamp": "2026-06-01T14:58:22.540636+00:00"
+  },
+  "image_generation": {
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/image_generation_cache/transitional-kitchen-texture-mistakes-to-avoid.json",
+    "provider": "flux",
+    "provider_model": "flux-2-max",
+    "model": "flux-2-max",
+    "fallback_provider": "openai",
+    "fallback_model": "gpt-image-1",
+    "size": "1536x1024",
+    "hero_quality": "high",
+    "section_quality": "medium",
+    "allow_fallback": true,
+    "fallback_events": 0,
+    "generated_images": 6,
+    "cache_hits": 0,
+    "generation_calls": 6,
+    "qa_calls": 1,
+    "details": [
+      {
+        "label": "hero",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 1,
+        "quality": "high",
+        "qa_enabled": true,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "30d22acc-cee9-404f-b3fc-93a4a8964af8",
+            "polling_url": "https://api.us2.bfl.ai/v1/get_result?id=30d22acc-cee9-404f-b3fc-93a4a8964af8",
+            "poll_attempts": 25,
+            "provider_status": "Ready",
+            "elapsed_seconds": 33.71,
+            "quality": "high",
+            "elapsed_seconds_total": 33.71,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation",
+        "qa_reason": "The image shows a warm, tactile, and layered transitional kitchen with believable materials and realistic furniture layout. It has a memorable focal point with the kitchen island and chair, clear spatial depth, and natural late-morning daylight. The palette of creams, camel, honey wood, and soft terracotta accents aligns with the style direction. The room feels inviting and editorial rather than staged for ecommerce. No text, logos, people, or heavy clutter are present."
+      },
+      {
+        "label": "section-1",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "b69b4ad6-e62f-48f2-b423-94e54cee28d9",
+            "polling_url": "https://api.us3.bfl.ai/v1/get_result?id=b69b4ad6-e62f-48f2-b423-94e54cee28d9",
+            "poll_attempts": 27,
+            "provider_status": "Ready",
+            "elapsed_seconds": 34.31,
+            "quality": "medium",
+            "elapsed_seconds_total": 34.31,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-2",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "3ac8c474-8c10-41f8-9814-f0434b9c9359",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=3ac8c474-8c10-41f8-9814-f0434b9c9359",
+            "poll_attempts": 18,
+            "provider_status": "Ready",
+            "elapsed_seconds": 30.07,
+            "quality": "medium",
+            "elapsed_seconds_total": 30.07,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-3",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "6bbeeff8-959d-43b9-be15-74c8472cfd81",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=6bbeeff8-959d-43b9-be15-74c8472cfd81",
+            "poll_attempts": 18,
+            "provider_status": "Ready",
+            "elapsed_seconds": 29.99,
+            "quality": "medium",
+            "elapsed_seconds_total": 29.99,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-4",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "aa6d2908-c0ed-45fb-b06e-8701c1526f09",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=aa6d2908-c0ed-45fb-b06e-8701c1526f09",
+            "poll_attempts": 25,
+            "provider_status": "Ready",
+            "elapsed_seconds": 41.4,
+            "quality": "medium",
+            "elapsed_seconds_total": 41.4,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-5",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 1,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "flux",
+        "provider_model": "flux-2-max",
+        "fallback_used": false,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "request_id": "f14d254d-ceae-41d8-9103-dc0a21965240",
+            "polling_url": "https://api.eu2.bfl.ai/v1/get_result?id=f14d254d-ceae-41d8-9103-dc0a21965240",
+            "poll_attempts": 30,
+            "provider_status": "Ready",
+            "elapsed_seconds": 48.12,
+            "quality": "medium",
+            "elapsed_seconds_total": 48.12,
+            "width": 1536,
+            "height": 1024,
+            "format": "JPEG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      }
+    ]
+  },
+  "pinterest": {
+    "variants_requested": 4,
+    "pin_assets_generated": false,
+    "mode": null
+  }
+}

@@ -1,12 +1,30 @@
 {
-  "generated_at": "2026-05-29T12:11:42.537621+00:00",
+  "generated_at": "2026-06-01T14:56:33.300458+00:00",
   "overview": {
-    "pin_count": 95,
+    "pin_count": 98,
     "published_pin_count": 51,
     "analytics_ready_pin_count": 0,
-    "tracked_article_count": 29
+    "tracked_article_count": 30
   },
   "best_performing_clusters": [
+    {
+      "cluster_id": "bathroom_lighting",
+      "cluster_name": "bathroom lighting",
+      "pin_count": 3,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-lighting-for-bathroom-layered-approach"
+      ]
+    },
     {
       "cluster_id": "bedroom_lighting",
       "cluster_name": "bedroom lighting",
@@ -760,6 +778,25 @@
       ]
     },
     {
+      "cluster_id": "bathroom_lighting",
+      "subtopic_id": "layering",
+      "subtopic_name": "layered lighting",
+      "pin_count": 3,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-lighting-for-bathroom-layered-approach"
+      ]
+    },
+    {
       "cluster_id": "bedroom_lighting",
       "subtopic_id": "layering",
       "subtopic_name": "layered lighting",
@@ -1086,7 +1123,7 @@
   "best_performing_angles": [
     {
       "angle_id": "best_options",
-      "pin_count": 48,
+      "pin_count": 51,
       "published_pin_count": 24,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1345,7 +1382,7 @@
       "visual_family_id": "crisp_modern",
       "shot_library_id": "lighting",
       "intent_id": "comparison",
-      "pin_count": 2,
+      "pin_count": 3,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1358,6 +1395,7 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "balancing-light-layers-best-lighting-for-living-room",
+        "best-lighting-for-bathroom-layered-approach",
         "best-lighting-for-bedroom-layered-approach"
       ]
     },
@@ -1630,7 +1668,7 @@
       "visual_family_id": "crisp_modern",
       "shot_library_id": "lighting",
       "intent_id": "comparison",
-      "pin_count": 2,
+      "pin_count": 3,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1643,6 +1681,7 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "balancing-light-layers-best-lighting-for-living-room",
+        "best-lighting-for-bathroom-layered-approach",
         "best-lighting-for-bedroom-layered-approach"
       ]
     },
@@ -2109,7 +2148,7 @@
       "visual_family_id": "crisp_modern",
       "shot_library_id": "lighting",
       "intent_id": "comparison",
-      "pin_count": 2,
+      "pin_count": 3,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -2122,6 +2161,7 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "balancing-light-layers-best-lighting-for-living-room",
+        "best-lighting-for-bathroom-layered-approach",
         "best-lighting-for-bedroom-layered-approach"
       ]
     },
@@ -2217,6 +2257,24 @@
   "top_rankings": {
     "clusters": [
       {
+        "cluster_id": "bathroom_lighting",
+        "cluster_name": "bathroom lighting",
+        "pin_count": 3,
+        "published_pin_count": 0,
+        "analytics_ready_count": 0,
+        "average_score": 0.0,
+        "average_impressions": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_pin_clicks": 0.0,
+        "average_closeups": 0.0,
+        "signal_label": "no_data",
+        "signal_boost": 0,
+        "top_article_slugs": [
+          "best-lighting-for-bathroom-layered-approach"
+        ]
+      },
+      {
         "cluster_id": "bedroom_lighting",
         "cluster_name": "bedroom lighting",
         "pin_count": 3,
@@ -2286,24 +2344,6 @@
         "signal_boost": 0,
         "top_article_slugs": [
           "choosing-best-furniture-coastal-bedroom"
-        ]
-      },
-      {
-        "cluster_id": "cottage_bathroom",
-        "cluster_name": "cottage bathroom",
-        "pin_count": 3,
-        "published_pin_count": 2,
-        "analytics_ready_count": 0,
-        "average_score": 0.0,
-        "average_impressions": 0.0,
-        "average_saves": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_pin_clicks": 0.0,
-        "average_closeups": 0.0,
-        "signal_label": "no_data",
-        "signal_boost": 0,
-        "top_article_slugs": [
-          "cottage-bathroom-texture-mistakes-to-avoid"
         ]
       }
     ],
@@ -2407,7 +2447,7 @@
     "angles": [
       {
         "angle_id": "best_options",
-        "pin_count": 48,
+        "pin_count": 51,
         "published_pin_count": 24,
         "analytics_ready_count": 0,
         "average_score": 0.0,

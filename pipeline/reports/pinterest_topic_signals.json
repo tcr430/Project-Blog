@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-29T12:16:21.250211+00:00",
-  "cluster_count": 41,
+  "generated_at": "2026-06-01T15:02:41.464835+00:00",
+  "cluster_count": 42,
   "summary": {
     "hot": 0,
     "warm": 0,
     "cold": 18,
-    "no_data": 23
+    "no_data": 24
   },
   "clusters": [
     {
@@ -980,6 +980,30 @@
         "how to style a transitional bedroom",
         "transitional bedroom decor",
         "transitional bedroom layout ideas"
+      ],
+      "pinterest_article_count": 0,
+      "strong_article_count": 0,
+      "weak_article_count": 0,
+      "average_score": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_saves": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0
+    },
+    {
+      "cluster_name": "transitional kitchen",
+      "article_count": 1,
+      "article_slugs": [
+        "transitional-kitchen-texture-mistakes-to-avoid"
+      ],
+      "primary_keywords": [
+        "transitional kitchen texture mistakes to avoid"
+      ],
+      "secondary_keywords": [
+        "transitional kitchen ideas",
+        "how to style a transitional kitchen",
+        "transitional kitchen decor",
+        "transitional kitchen layout ideas"
       ],
       "pinterest_article_count": 0,
       "strong_article_count": 0,

@@ -1,18 +1,18 @@
 # Weekly Pipeline Report
 
-Generated: 2026-05-29
+Generated: 2026-06-01
 Window: last 7 days
 
 Articles Published: 3  
 Pins Generated: 9  
-Pins Scheduled: 47  
+Pins Scheduled: 50  
 Pins Published: 0  
 Repins Scheduled: 0
 
 ## Articles Published
 - best-lighting-for-bathroom-layered-approach
-- best-lighting-for-bedroom-layered-approach
 - how-to-style-a-neutral-entryway
+- transitional-kitchen-texture-mistakes-to-avoid
 
 ## Top Performing Pins
 - No published pin analytics were available for this window.

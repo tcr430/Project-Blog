@@ -1,6 +1,97 @@
 {
-  "generated_at": "2026-05-29T12:12:41.401833+00:00",
+  "generated_at": "2026-06-01T14:58:22.541062+00:00",
   "articles": [
+    {
+      "article_slug": "transitional-kitchen-texture-mistakes-to-avoid",
+      "cluster_id": "transitional_kitchen",
+      "subtopic_id": "textures",
+      "angle_id": "mistakes",
+      "primary_keyword": "transitional kitchen texture mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Several section headings do not signal the topic strongly enough."
+      ],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 112,
+          "concept_overlap": 6,
+          "first_sentence": "The transitional kitchen embodies a timeless crossover between traditional warmth and modern simplicity."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 3,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Glossy Surfaces Overpower Matte Foundations",
+            "Missing Textural Contrast Creates a Flat Palette",
+            "Over-Scaled Material Choices Distort Proportion",
+            "Insufficient Natural Light Dulls Texture Layers",
+            "Excessive Material Mixing Overwhelms the Transitional Balance"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 9,
+          "specificity_term_hits": 10,
+          "secondary_keyword_hits": 1
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-06-01T14:58:22.540636+00:00"
+    },
+    {
+      "article_slug": "summer-balcony-styling-mistakes-to-avoid",
+      "cluster_id": "summer_balcony_styling",
+      "subtopic_id": "refresh",
+      "angle_id": "mistakes",
+      "primary_keyword": "summer balcony styling mistakes to avoid",
+      "validation_status": "fail",
+      "warnings": [
+        "Several section headings do not signal the topic strongly enough.",
+        "Supporting keyword ideas are barely reflected in the body."
+      ],
+      "errors": [
+        "Section headings are too unspecific to support a strong editorial frame."
+      ],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 163,
+          "concept_overlap": 9,
+          "first_sentence": "Summer balconies offer the perfect opportunity for a seasonal refresh, but it’s surprisingly easy to get styling off on the wrong foot."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 5,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Overcrowding Without a Clear Plan Crushes Outdoor Flow",
+            "Bright Color Overload Breaks Harmony and Feels Overwhelming",
+            "Ignoring Texture Coordination Creates Visual Confusion",
+            "Oversized Furniture and Poor Placement Kill Airiness and Light",
+            "Forgetting to Layer Lighting and Accessories Ends in a Flat, Uninviting Space"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 12,
+          "specificity_term_hits": 9,
+          "secondary_keyword_hits": 0
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-06-01T14:56:51.365232+00:00"
+    },
     {
       "article_slug": "best-lighting-for-bathroom-layered-approach",
       "cluster_id": "bathroom_lighting",
@@ -92,53 +183,6 @@
         }
       },
       "timestamp": "2026-05-29T12:12:03.195267+00:00"
-    },
-    {
-      "article_slug": "summer-balcony-styling-mistakes-to-avoid",
-      "cluster_id": "summer_balcony_styling",
-      "subtopic_id": "refresh",
-      "angle_id": "mistakes",
-      "primary_keyword": "summer balcony styling mistakes to avoid",
-      "validation_status": "fail",
-      "warnings": [
-        "Several section headings do not signal the topic strongly enough.",
-        "Supporting keyword ideas are barely reflected in the body."
-      ],
-      "errors": [
-        "Section headings are too unspecific to support a strong editorial frame."
-      ],
-      "checks": {
-        "generic_intro": {
-          "intro_word_count": 163,
-          "concept_overlap": 9,
-          "first_sentence": "Summer balconies offer the perfect opportunity for a seasonal refresh, but it’s surprisingly easy to get styling off on the wrong foot."
-        },
-        "heading_quality": {
-          "heading_count": 5,
-          "vague_heading_count": 0,
-          "low_specificity_heading_count": 5,
-          "repeated_signature_count": 0,
-          "repeated_stem_count": 0,
-          "headings": [
-            "Overcrowding Without a Clear Plan Crushes Outdoor Flow",
-            "Bright Color Overload Breaks Harmony and Feels Overwhelming",
-            "Ignoring Texture Coordination Creates Visual Confusion",
-            "Oversized Furniture and Poor Placement Kill Airiness and Light",
-            "Forgetting to Layer Lighting and Accessories Ends in a Flat, Uninviting Space"
-          ]
-        },
-        "specificity": {
-          "concept_token_hits": 12,
-          "specificity_term_hits": 9,
-          "secondary_keyword_hits": 0
-        },
-        "distinctiveness": {
-          "nearest_article_slug": "",
-          "max_similarity": 0.0,
-          "strongest_heading_overlap": 0
-        }
-      },
-      "timestamp": "2026-05-29T12:12:02.979911+00:00"
     },
     {
       "article_slug": "how-to-style-a-neutral-entryway",
