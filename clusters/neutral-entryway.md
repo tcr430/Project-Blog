@@ -7,7 +7,7 @@ cluster_name: "neutral entryway"
 cluster_slug: "neutral-entryway"
 cluster_article_count: 1
 cluster_primary_keywords: ["how to style a neutral entryway"]
-cluster_generated_at: "2026-06-01T15:02:43.019029+00:00"
+cluster_generated_at: "2026-06-03T13:19:30.222679+00:00"
 cluster_intro: "Neutral Entryway is a useful decorating topic because it combines inspiration with practical decision-making. Readers usually arrive here looking for a clear style direction, help solving a room problem, or confidence about how to make the look feel intentional at home.
 
 This pillar page brings together the site's coverage around neutral entryway, with article angles shaped by keyword themes such as how to style a neutral entryway. That mix helps the page support both broader search intent and more specific decorating questions without feeling repetitive.
@@ -55,16 +55,16 @@ These adjacent hubs help readers keep moving through the topic without losing th
 <p><a class="cluster-hub-link" href="/clusters/neutral-bathroom/">Open this cluster</a></p>
 </div>
 <div class="cluster-hub-card">
+<h3><a href="/clusters/transitional-entryway/">Transitional Entryway</a></h3>
+<p>Broad editorial cluster for transitional entryway topics.</p>
+<p class="cluster-hub-meta">1 article</p>
+<p><a class="cluster-hub-link" href="/clusters/transitional-entryway/">Open this cluster</a></p>
+</div>
+<div class="cluster-hub-card">
 <h3><a href="/clusters/biophilic-entryway/">Biophilic Entryway</a></h3>
 <p>Broad editorial cluster for biophilic entryway topics.</p>
 <p class="cluster-hub-meta">0 articles</p>
 <p><a class="cluster-hub-link" href="/clusters/biophilic-entryway/">Open this cluster</a></p>
-</div>
-<div class="cluster-hub-card">
-<h3><a href="/clusters/california-casual-entryway/">California Casual Entryway</a></h3>
-<p>Broad editorial cluster for california casual entryway topics.</p>
-<p class="cluster-hub-meta">0 articles</p>
-<p><a class="cluster-hub-link" href="/clusters/california-casual-entryway/">Open this cluster</a></p>
 </div>
 </div>
 
@@ -74,4 +74,4 @@ A simple path through this topic so readers can build confidence one step at a t
 
 1. Start with [How to Style a Neutral Entryway with Timeless Calm and Texture](/styling%20advice/2026/05/27/how-to-style-a-neutral-entryway/) for the broadest orientation.
 2. After that, move into [Neutral Bathroom](/clusters/neutral-bathroom/) to keep the topic expanding naturally.
-3. After that, move into [Biophilic Entryway](/clusters/biophilic-entryway/) to keep the topic expanding naturally.
+3. After that, move into [Transitional Entryway](/clusters/transitional-entryway/) to keep the topic expanding naturally.

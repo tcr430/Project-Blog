@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-01T14:56:33.300458+00:00",
+  "generated_at": "2026-06-03T13:12:13.344338+00:00",
   "overview": {
-    "pin_count": 98,
+    "pin_count": 101,
     "published_pin_count": 51,
     "analytics_ready_pin_count": 0,
-    "tracked_article_count": 30
+    "tracked_article_count": 31
   },
   "best_performing_clusters": [
     {
@@ -545,6 +545,24 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "best-furniture-transitional-bedroom"
+      ]
+    },
+    {
+      "cluster_id": "transitional_kitchen",
+      "cluster_name": "transitional kitchen",
+      "pin_count": 3,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "transitional-kitchen-texture-mistakes-to-avoid"
       ]
     }
   ],
@@ -1118,6 +1136,25 @@
       "top_article_slugs": [
         "parisian-bathroom-texture-mistakes-to-avoid"
       ]
+    },
+    {
+      "cluster_id": "transitional_kitchen",
+      "subtopic_id": "textures",
+      "subtopic_name": "textures and layers",
+      "pin_count": 3,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "transitional-kitchen-texture-mistakes-to-avoid"
+      ]
     }
   ],
   "best_performing_angles": [
@@ -1181,7 +1218,7 @@
     },
     {
       "angle_id": "mistakes",
-      "pin_count": 30,
+      "pin_count": 33,
       "published_pin_count": 20,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1474,7 +1511,7 @@
       "visual_family_id": "warm_layered",
       "shot_library_id": "textures_materials",
       "intent_id": "problem_solving",
-      "pin_count": 1,
+      "pin_count": 3,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1486,7 +1523,8 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
-        "japandi-bathroom-texture-mistakes-to-avoid"
+        "japandi-bathroom-texture-mistakes-to-avoid",
+        "transitional-kitchen-texture-mistakes-to-avoid"
       ]
     },
     {
@@ -1758,7 +1796,7 @@
       "visual_family_id": "warm_layered",
       "shot_library_id": "textures_materials",
       "intent_id": "problem_solving",
-      "pin_count": 1,
+      "pin_count": 2,
       "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1770,7 +1808,8 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
-        "japandi-bathroom-texture-mistakes-to-avoid"
+        "japandi-bathroom-texture-mistakes-to-avoid",
+        "transitional-kitchen-texture-mistakes-to-avoid"
       ]
     },
     {
@@ -2505,7 +2544,7 @@
       },
       {
         "angle_id": "mistakes",
-        "pin_count": 30,
+        "pin_count": 33,
         "published_pin_count": 20,
         "analytics_ready_count": 0,
         "average_score": 0.0,

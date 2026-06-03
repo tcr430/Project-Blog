@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-01T15:02:41.464835+00:00",
-  "cluster_count": 42,
+  "generated_at": "2026-06-03T13:19:28.642292+00:00",
+  "cluster_count": 43,
   "summary": {
     "hot": 0,
     "warm": 0,
     "cold": 18,
-    "no_data": 24
+    "no_data": 25
   },
   "clusters": [
     {
@@ -980,6 +980,30 @@
         "how to style a transitional bedroom",
         "transitional bedroom decor",
         "transitional bedroom layout ideas"
+      ],
+      "pinterest_article_count": 0,
+      "strong_article_count": 0,
+      "weak_article_count": 0,
+      "average_score": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_saves": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0
+    },
+    {
+      "cluster_name": "transitional entryway",
+      "article_count": 1,
+      "article_slugs": [
+        "transitional-entryway-texture-mistakes-to-avoid"
+      ],
+      "primary_keywords": [
+        "transitional entryway texture mistakes to avoid"
+      ],
+      "secondary_keywords": [
+        "transitional entryway ideas",
+        "how to style a transitional entryway",
+        "transitional entryway decor",
+        "transitional entryway layout ideas"
       ],
       "pinterest_article_count": 0,
       "strong_article_count": 0,

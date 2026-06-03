@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-01T15:02:41.460665+00:00",
-  "cluster_count": 42,
-  "article_count": 43,
+  "generated_at": "2026-06-03T13:19:28.637832+00:00",
+  "cluster_count": 43,
+  "article_count": 44,
   "subtopic_count": 10,
   "angle_count": 5,
   "angle_distribution": {
     "best_options": 21,
     "how_to": 4,
     "ideas": 4,
-    "mistakes": 13,
+    "mistakes": 14,
     "style_specific": 1
   },
   "clusters": [
@@ -1830,6 +1830,50 @@
       ],
       "angle_distribution": {
         "best_options": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_id": "transitional_entryway",
+      "cluster_name": "transitional entryway",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "utility_transition"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "transitional entryway texture mistakes to avoid"
+      ],
+      "latest_article_date": "2026-06-03",
+      "latest_publication": {
+        "article_slug": "transitional-entryway-texture-mistakes-to-avoid",
+        "article_title": "What Goes Wrong with Transitional Entryway?",
+        "publish_date": "2026-06-03",
+        "subtopic_id": "textures",
+        "subtopic_name": "textures and layers",
+        "angle_id": "mistakes"
+      },
+      "representative_article_slugs": [
+        "transitional-entryway-texture-mistakes-to-avoid"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "textures",
+          "subtopic_name": "textures and layers",
+          "article_count": 1,
+          "latest_article_date": "2026-06-03",
+          "representative_article_slugs": [
+            "transitional-entryway-texture-mistakes-to-avoid"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "mistakes": 1
       },
       "status": "underdeveloped"
     },
