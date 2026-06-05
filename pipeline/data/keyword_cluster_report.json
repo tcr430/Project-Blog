@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-03T13:19:28.637832+00:00",
+  "generated_at": "2026-06-05T12:04:50.619190+00:00",
   "cluster_count": 43,
-  "article_count": 44,
+  "article_count": 45,
   "subtopic_count": 10,
   "angle_count": 5,
   "angle_distribution": {
     "best_options": 21,
     "how_to": 4,
     "ideas": 4,
-    "mistakes": 14,
+    "mistakes": 15,
     "style_specific": 1
   },
   "clusters": [
@@ -64,6 +64,62 @@
       ],
       "angle_distribution": {
         "ideas": 2
+      },
+      "status": "growing"
+    },
+    {
+      "cluster_id": "transitional_bedroom",
+      "cluster_name": "transitional bedroom",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "bedrooms"
+      ],
+      "article_count": 2,
+      "primary_keywords_used": [
+        "transitional bedroom texture mistakes to avoid",
+        "best furniture for a transitional bedroom"
+      ],
+      "latest_article_date": "2026-06-05",
+      "latest_publication": {
+        "article_slug": "transitional-bedroom-texture-mistakes-to-avoid",
+        "article_title": "Transitional Bedroom Texture Mistakes to Avoid for a Balanced, Inviting Space",
+        "publish_date": "2026-06-05",
+        "subtopic_id": "textures",
+        "subtopic_name": "textures and layers",
+        "angle_id": "mistakes"
+      },
+      "representative_article_slugs": [
+        "transitional-bedroom-texture-mistakes-to-avoid",
+        "best-furniture-transitional-bedroom"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 1,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 2,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "furniture",
+          "subtopic_name": "furniture and anchors",
+          "article_count": 1,
+          "latest_article_date": "2026-03-25",
+          "representative_article_slugs": [
+            "best-furniture-transitional-bedroom"
+          ]
+        },
+        {
+          "subtopic_id": "textures",
+          "subtopic_name": "textures and layers",
+          "article_count": 1,
+          "latest_article_date": "2026-06-05",
+          "representative_article_slugs": [
+            "transitional-bedroom-texture-mistakes-to-avoid"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "best_options": 1,
+        "mistakes": 1
       },
       "status": "growing"
     },
@@ -708,7 +764,7 @@
       "representative_article_slugs": [
         "japandi-bedroom-texture-mistakes-to-avoid"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
@@ -1781,50 +1837,6 @@
           "latest_article_date": "2026-03-27",
           "representative_article_slugs": [
             "best-furniture-for-transitional-bathroom"
-          ]
-        }
-      ],
-      "angle_distribution": {
-        "best_options": 1
-      },
-      "status": "underdeveloped"
-    },
-    {
-      "cluster_id": "transitional_bedroom",
-      "cluster_name": "transitional bedroom",
-      "legacy_cluster_names": [],
-      "domain_ids": [
-        "bedrooms"
-      ],
-      "article_count": 1,
-      "primary_keywords_used": [
-        "best furniture for a transitional bedroom"
-      ],
-      "latest_article_date": "2026-03-25",
-      "latest_publication": {
-        "article_slug": "best-furniture-transitional-bedroom",
-        "article_title": "The Best Furniture for a Transitional Bedroom: a Practical Selection Guide",
-        "publish_date": "2026-03-25",
-        "subtopic_id": "furniture",
-        "subtopic_name": "furniture and anchors",
-        "angle_id": "best_options"
-      },
-      "representative_article_slugs": [
-        "best-furniture-transitional-bedroom"
-      ],
-      "recent_article_count": 0,
-      "internal_link_targets_available": 0,
-      "promoted_article_count": 0,
-      "weak_article_count": 0,
-      "subtopic_count": 1,
-      "subtopic_coverage": [
-        {
-          "subtopic_id": "furniture",
-          "subtopic_name": "furniture and anchors",
-          "article_count": 1,
-          "latest_article_date": "2026-03-25",
-          "representative_article_slugs": [
-            "best-furniture-transitional-bedroom"
           ]
         }
       ],

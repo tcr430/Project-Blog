@@ -1,49 +1,49 @@
 {
-  "generated_at": "2026-06-03T13:15:07.076047+00:00",
+  "generated_at": "2026-06-05T12:00:15.422482+00:00",
   "articles": [
     {
-      "article_slug": "transitional-entryway-texture-mistakes-to-avoid",
-      "cluster_id": "transitional_entryway",
+      "article_slug": "transitional-bedroom-texture-mistakes-to-avoid",
+      "cluster_id": "transitional_bedroom",
       "subtopic_id": "textures",
       "angle_id": "mistakes",
-      "primary_keyword": "transitional entryway texture mistakes to avoid",
+      "primary_keyword": "transitional bedroom texture mistakes to avoid",
       "validation_status": "warning",
       "warnings": [
-        "Introduction opens with a broad interchangeable framing pattern."
+        "Section headings rely on repetitive formulas instead of distinct editorial moves."
       ],
       "errors": [],
       "checks": {
         "generic_intro": {
-          "intro_word_count": 142,
-          "concept_overlap": 8,
-          "first_sentence": "When it comes to transitional entryways, the play of textures is what really defines the look—and it’s often where things go sideways."
+          "intro_word_count": 116,
+          "concept_overlap": 6,
+          "first_sentence": "Transitional bedrooms are a beautiful middle ground between traditional charm and modern minimalism, but the texture strategy often trips people up here."
         },
         "heading_quality": {
           "heading_count": 5,
           "vague_heading_count": 0,
           "low_specificity_heading_count": 0,
           "repeated_signature_count": 0,
-          "repeated_stem_count": 0,
+          "repeated_stem_count": 1,
           "headings": [
-            "When Smooth Meets Chunky: Avoiding Texture Clashes That Feel Off",
-            "Too Many Textures Can Crowd the Space and Kill Visual Flow",
-            "Cool vs Warm Textures: When Mismatches Disrupt the Mood",
-            "Overscaled Textures That Throw Off Proportion and Comfort",
-            "Missing the Final Texture Layer: What Throws Off the Room’s Cohesion"
+            "Mistake 1: Using Smooth, Slick Bedding That Lacks Texture",
+            "Mistake 2: Mismatch of Texture Scales Creates Discord",
+            "Mistake 3: Overlooking Texture Contrast That Supports Cohesion",
+            "Mistake 4: Ignoring Texture Placement in Relation to Natural Light",
+            "Mistake 5: Forgetting the Final Texture Layer That Nails Room Vibe"
           ]
         },
         "specificity": {
-          "concept_token_hits": 11,
-          "specificity_term_hits": 11,
+          "concept_token_hits": 12,
+          "specificity_term_hits": 13,
           "secondary_keyword_hits": 2
         },
         "distinctiveness": {
-          "nearest_article_slug": "",
-          "max_similarity": 0.0,
+          "nearest_article_slug": "best-furniture-transitional-bedroom",
+          "max_similarity": 0.286,
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-06-03T13:15:07.075607+00:00"
+      "timestamp": "2026-06-05T12:00:15.422034+00:00"
     },
     {
       "article_slug": "summer-balcony-styling-mistakes-to-avoid",
@@ -90,7 +90,51 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-06-03T13:12:31.902794+00:00"
+      "timestamp": "2026-06-05T11:58:59.105690+00:00"
+    },
+    {
+      "article_slug": "transitional-entryway-texture-mistakes-to-avoid",
+      "cluster_id": "transitional_entryway",
+      "subtopic_id": "textures",
+      "angle_id": "mistakes",
+      "primary_keyword": "transitional entryway texture mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Introduction opens with a broad interchangeable framing pattern."
+      ],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 142,
+          "concept_overlap": 8,
+          "first_sentence": "When it comes to transitional entryways, the play of textures is what really defines the look—and it’s often where things go sideways."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 0,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "When Smooth Meets Chunky: Avoiding Texture Clashes That Feel Off",
+            "Too Many Textures Can Crowd the Space and Kill Visual Flow",
+            "Cool vs Warm Textures: When Mismatches Disrupt the Mood",
+            "Overscaled Textures That Throw Off Proportion and Comfort",
+            "Missing the Final Texture Layer: What Throws Off the Room’s Cohesion"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 11,
+          "specificity_term_hits": 11,
+          "secondary_keyword_hits": 2
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-06-03T13:15:07.075607+00:00"
     },
     {
       "article_slug": "transitional-kitchen-texture-mistakes-to-avoid",

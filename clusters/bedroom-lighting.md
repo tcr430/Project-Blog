@@ -7,7 +7,7 @@ cluster_name: "bedroom lighting"
 cluster_slug: "bedroom-lighting"
 cluster_article_count: 1
 cluster_primary_keywords: ["best lighting for bedroom"]
-cluster_generated_at: "2026-06-03T13:19:30.222679+00:00"
+cluster_generated_at: "2026-06-05T12:04:52.302736+00:00"
 cluster_intro: "Bedroom Lighting is a useful decorating topic because it combines inspiration with practical decision-making. Readers usually arrive here looking for a clear style direction, help solving a room problem, or confidence about how to make the look feel intentional at home.
 
 This pillar page brings together the site's coverage around bedroom lighting, with article angles shaped by keyword themes such as best lighting for bedroom. That mix helps the page support both broader search intent and more specific decorating questions without feeling repetitive.
@@ -49,6 +49,12 @@ These adjacent hubs help readers keep moving through the topic without losing th
 
 <div class="cluster-hub-grid">
 <div class="cluster-hub-card">
+<h3><a href="/clusters/transitional-bedroom/">Transitional Bedroom</a></h3>
+<p>Broad editorial cluster for transitional bedroom topics.</p>
+<p class="cluster-hub-meta">2 articles</p>
+<p><a class="cluster-hub-link" href="/clusters/transitional-bedroom/">Open this cluster</a></p>
+</div>
+<div class="cluster-hub-card">
 <h3><a href="/clusters/bedroom-styling-details/">Bedroom Styling Details</a></h3>
 <p>Broad editorial cluster for bedroom styling details topics.</p>
 <p class="cluster-hub-meta">1 article</p>
@@ -60,12 +66,6 @@ These adjacent hubs help readers keep moving through the topic without losing th
 <p class="cluster-hub-meta">1 article</p>
 <p><a class="cluster-hub-link" href="/clusters/biophilic-bedroom/">Open this cluster</a></p>
 </div>
-<div class="cluster-hub-card">
-<h3><a href="/clusters/coastal-bedroom/">Coastal Bedroom</a></h3>
-<p>Broad editorial cluster for coastal bedroom topics.</p>
-<p class="cluster-hub-meta">1 article</p>
-<p><a class="cluster-hub-link" href="/clusters/coastal-bedroom/">Open this cluster</a></p>
-</div>
 </div>
 
 ## Read Next
@@ -73,5 +73,5 @@ These adjacent hubs help readers keep moving through the topic without losing th
 A simple path through this topic so readers can build confidence one step at a time:
 
 1. Start with [Finding the Best Lighting for Your Bedroom: A Practical Layered Approach](/mistakes%20%26%20fixes/2026/05/25/best-lighting-for-bedroom-layered-approach/) for the broadest orientation.
-2. After that, move into [Bedroom Styling Details](/clusters/bedroom-styling-details/) to keep the topic expanding naturally.
-3. After that, move into [Biophilic Bedroom](/clusters/biophilic-bedroom/) to keep the topic expanding naturally.
+2. After that, move into [Transitional Bedroom](/clusters/transitional-bedroom/) to keep the topic expanding naturally.
+3. After that, move into [Bedroom Styling Details](/clusters/bedroom-styling-details/) to keep the topic expanding naturally.

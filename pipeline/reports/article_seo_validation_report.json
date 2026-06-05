@@ -1,6 +1,44 @@
 {
-  "generated_at": "2026-06-03T13:15:07.072391+00:00",
+  "generated_at": "2026-06-05T12:00:15.419042+00:00",
   "articles": [
+    {
+      "article_slug": "transitional-bedroom-texture-mistakes-to-avoid",
+      "cluster": "transitional bedroom",
+      "cluster_id": "transitional bedroom",
+      "subtopic_id": "textures",
+      "subtopic_name": "textures and layers",
+      "angle_id": "mistakes",
+      "intent_id": "problem_solving",
+      "primary_keyword": "transitional bedroom texture mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Headings do not reflect the topic cluster strongly enough.",
+        "Main section headings may be too generic for the chosen keyword.",
+        "Primary keyword appears very lightly in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-06-05T12:00:15.418803+00:00"
+    },
+    {
+      "article_slug": "summer-balcony-styling-mistakes-to-avoid",
+      "cluster": "summer balcony styling",
+      "cluster_id": "summer balcony styling",
+      "subtopic_id": "refresh",
+      "subtopic_name": "seasonal refresh",
+      "angle_id": "mistakes",
+      "intent_id": "problem_solving",
+      "primary_keyword": "summer balcony styling mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Main section headings may be too generic for the chosen keyword.",
+        "None of the secondary keywords appear in the article body.",
+        "Primary keyword appears very lightly in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-06-05T11:58:59.101142+00:00"
+    },
     {
       "article_slug": "transitional-entryway-texture-mistakes-to-avoid",
       "cluster": "transitional entryway",
@@ -20,25 +58,6 @@
       "errors": [],
       "duplicate_candidate_slugs": [],
       "timestamp": "2026-06-03T13:15:07.072173+00:00"
-    },
-    {
-      "article_slug": "summer-balcony-styling-mistakes-to-avoid",
-      "cluster": "summer balcony styling",
-      "cluster_id": "summer balcony styling",
-      "subtopic_id": "refresh",
-      "subtopic_name": "seasonal refresh",
-      "angle_id": "mistakes",
-      "intent_id": "problem_solving",
-      "primary_keyword": "summer balcony styling mistakes to avoid",
-      "validation_status": "warning",
-      "warnings": [
-        "Main section headings may be too generic for the chosen keyword.",
-        "None of the secondary keywords appear in the article body.",
-        "Primary keyword appears very lightly in the article body."
-      ],
-      "errors": [],
-      "duplicate_candidate_slugs": [],
-      "timestamp": "2026-06-03T13:12:31.898577+00:00"
     },
     {
       "article_slug": "transitional-kitchen-texture-mistakes-to-avoid",

@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "6902d97241d3a2af6ebdc9a6eadef1e9d445be3578f97689c79f38141a0efd7d",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/transitional-bedroom-texture-mistakes-to-avoid/hero.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-1": {
+    "cache_key": "e57c75a155d293a651ae9dd15d7a1dbb985b5d7ab0fef045be0f11d44632d35e",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/transitional-bedroom-texture-mistakes-to-avoid/section-1.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-2": {
+    "cache_key": "fdbf85fa4e04531960885ed0891edef28666545e43298685e62d3968f8472a95",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/transitional-bedroom-texture-mistakes-to-avoid/section-2.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-3": {
+    "cache_key": "fe3d3e158ef7f8da4b6809b4164622a0dc64042026037aa0bd39f29d8dbee547",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/transitional-bedroom-texture-mistakes-to-avoid/section-3.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-4": {
+    "cache_key": "0102000187a92823ccd9658d66e9e6e3570cc9f73439cb563930a86246324c52",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/transitional-bedroom-texture-mistakes-to-avoid/section-4.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  },
+  "section-5": {
+    "cache_key": "06169512d07e9c31542fce013a23effabafbb10f22cebb4b2b0be5d4a70d7f06",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/transitional-bedroom-texture-mistakes-to-avoid/section-5.png",
+    "provider": "flux",
+    "provider_model": "flux-2-max"
+  }
+}

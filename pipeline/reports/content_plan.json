@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-03T13:19:30.016363+00:00",
+  "generated_at": "2026-06-05T12:04:52.095016+00:00",
   "total_clusters": 396,
   "summary": {
     "missing": 353,
@@ -434,7 +434,6 @@
     "living room window treatments",
     "organic modern living room",
     "neutral bathroom",
-    "transitional bedroom",
     "transitional bathroom",
     "moody bathroom",
     "minimalist bedroom",
@@ -458,6 +457,7 @@
     "minimalist bathroom",
     "mediterranean bedroom",
     "japandi bedroom",
+    "transitional bedroom",
     "japandi bathroom",
     "cottage bedroom",
     "cottage bathroom",
@@ -75326,7 +75326,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-20",
-      "days_since_latest": 75,
+      "days_since_latest": 77,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation"
@@ -75528,219 +75528,6 @@
       ]
     },
     {
-      "cluster_id": "transitional_bedroom",
-      "cluster_name": "transitional bedroom",
-      "domain_id": "bedrooms",
-      "health_label": "underdeveloped",
-      "article_count": 1,
-      "article_capacity_target": 14,
-      "capacity_ratio": 0.07,
-      "growth_openings": 9,
-      "saturation_state": "needs_growth",
-      "selection_action": "boost",
-      "latest_publication_date": "2026-03-25",
-      "days_since_latest": 70,
-      "subtopics_total": 5,
-      "subtopics_covered": [
-        "Furniture and Anchors"
-      ],
-      "subtopic_ids_covered": [
-        "furniture"
-      ],
-      "subtopics_missing": [
-        "Layout and Foundation",
-        "Color Palette",
-        "Lighting",
-        "Textures and Layers"
-      ],
-      "subtopic_ids_missing": [
-        "layout",
-        "colors",
-        "lighting",
-        "textures"
-      ],
-      "angle_distribution": {
-        "ideas": 0,
-        "how_to": 0,
-        "mistakes": 0,
-        "best_options": 1,
-        "style_specific": 0
-      },
-      "underused_angles": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "style_specific"
-      ],
-      "overused_angles": [],
-      "intent_distribution": {
-        "comparison": 1,
-        "decision_making": 0,
-        "implementation": 0,
-        "inspiration": 0,
-        "problem_solving": 0
-      },
-      "underused_intents": [
-        "comparison",
-        "decision_making",
-        "implementation",
-        "inspiration",
-        "problem_solving"
-      ],
-      "overused_intents": [],
-      "recommended_concepts": [
-        {
-          "cluster_id": "transitional_bedroom",
-          "cluster_name": "transitional bedroom",
-          "domain_id": "bedrooms",
-          "subtopic_id": "colors",
-          "subtopic_name": "Color Palette",
-          "angle_id": "how_to",
-          "intent_id": "implementation",
-          "modifier": "",
-          "primary_keyword": "how to choose colors for a transitional bedroom",
-          "secondary_keywords": [
-            "transitional bedroom ideas",
-            "how to style a transitional bedroom",
-            "transitional bedroom decor",
-            "transitional bedroom layout ideas"
-          ],
-          "search_intent": "how_to",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 82,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "underdeveloped",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "transitional_bedroom",
-          "cluster_name": "transitional bedroom",
-          "domain_id": "bedrooms",
-          "subtopic_id": "colors",
-          "subtopic_name": "Color Palette",
-          "angle_id": "ideas",
-          "intent_id": "inspiration",
-          "modifier": "",
-          "primary_keyword": "transitional bedroom color palette ideas",
-          "secondary_keywords": [
-            "transitional bedroom ideas",
-            "how to style a transitional bedroom",
-            "transitional bedroom decor",
-            "transitional bedroom layout ideas"
-          ],
-          "search_intent": "ideas",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 82,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "underdeveloped",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "transitional_bedroom",
-          "cluster_name": "transitional bedroom",
-          "domain_id": "bedrooms",
-          "subtopic_id": "colors",
-          "subtopic_name": "Color Palette",
-          "angle_id": "mistakes",
-          "intent_id": "problem_solving",
-          "modifier": "",
-          "primary_keyword": "transitional bedroom color mistakes to avoid",
-          "secondary_keywords": [
-            "transitional bedroom ideas",
-            "how to style a transitional bedroom",
-            "transitional bedroom decor",
-            "transitional bedroom layout ideas"
-          ],
-          "search_intent": "problem_solution",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 82,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "underdeveloped",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        }
-      ],
-      "recommended_topics": [
-        "how to choose colors for a transitional bedroom",
-        "transitional bedroom color palette ideas",
-        "transitional bedroom color mistakes to avoid"
-      ],
-      "priority_score": 75,
-      "season": "",
-      "holiday": "",
-      "source": "content architecture",
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "pinterest_intelligence": {
-        "cluster_signal_label": "no_data",
-        "cluster_signal_boost": 0
-      },
-      "seed_keywords": [
-        "transitional bedroom ideas",
-        "how to style a transitional bedroom",
-        "transitional bedroom decor",
-        "transitional bedroom layout ideas",
-        "transitional bedroom color palette"
-      ],
-      "allowed_angle_ids": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "style_specific"
-      ]
-    },
-    {
       "cluster_id": "transitional_bathroom",
       "cluster_name": "transitional bathroom",
       "domain_id": "utility_transition",
@@ -75752,7 +75539,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-27",
-      "days_since_latest": 68,
+      "days_since_latest": 70,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -75965,7 +75752,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-08",
-      "days_since_latest": 56,
+      "days_since_latest": 58,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -76178,7 +75965,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-08",
-      "days_since_latest": 55,
+      "days_since_latest": 57,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -76391,7 +76178,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-17",
-      "days_since_latest": 47,
+      "days_since_latest": 49,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -76604,7 +76391,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-04",
-      "days_since_latest": 30,
+      "days_since_latest": 32,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -76817,7 +76604,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-06",
-      "days_since_latest": 28,
+      "days_since_latest": 30,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -77030,7 +76817,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-18",
-      "days_since_latest": 16,
+      "days_since_latest": 17,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation"
@@ -77243,7 +77030,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-27",
-      "days_since_latest": 7,
+      "days_since_latest": 8,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation"
@@ -77456,7 +77243,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-01",
-      "days_since_latest": 1,
+      "days_since_latest": 3,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -77669,7 +77456,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-03",
-      "days_since_latest": 0,
+      "days_since_latest": 1,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -78303,7 +78090,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-18",
-      "days_since_latest": 76,
+      "days_since_latest": 78,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -78516,7 +78303,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-23",
-      "days_since_latest": 72,
+      "days_since_latest": 74,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -78729,7 +78516,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-28",
-      "days_since_latest": 66,
+      "days_since_latest": 68,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -78942,7 +78729,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-30",
-      "days_since_latest": 65,
+      "days_since_latest": 67,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -79155,7 +78942,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-01",
-      "days_since_latest": 62,
+      "days_since_latest": 64,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation"
@@ -79368,7 +79155,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-01",
-      "days_since_latest": 62,
+      "days_since_latest": 64,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -79581,7 +79368,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-03",
-      "days_since_latest": 61,
+      "days_since_latest": 63,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -79794,7 +79581,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-06",
-      "days_since_latest": 58,
+      "days_since_latest": 60,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -80007,7 +79794,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-10",
-      "days_since_latest": 54,
+      "days_since_latest": 56,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -80220,7 +80007,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-13",
-      "days_since_latest": 51,
+      "days_since_latest": 53,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -80433,7 +80220,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-20",
-      "days_since_latest": 44,
+      "days_since_latest": 46,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -80508,13 +80295,13 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 72,
+          "score": 76,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
             "underused_angle": true,
             "underused_intent": true,
-            "stale_cluster": false,
+            "stale_cluster": true,
             "cluster_health": "underdeveloped",
             "pinterest_subtopic_signal": "no_data",
             "pinterest_angle_signal": "no_data",
@@ -80545,13 +80332,13 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 72,
+          "score": 76,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
             "underused_angle": true,
             "underused_intent": true,
-            "stale_cluster": false,
+            "stale_cluster": true,
             "cluster_health": "underdeveloped",
             "pinterest_subtopic_signal": "no_data",
             "pinterest_angle_signal": "no_data",
@@ -80582,13 +80369,13 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 72,
+          "score": 76,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
             "underused_angle": true,
             "underused_intent": true,
-            "stale_cluster": false,
+            "stale_cluster": true,
             "cluster_health": "underdeveloped",
             "pinterest_subtopic_signal": "no_data",
             "pinterest_angle_signal": "no_data",
@@ -80601,7 +80388,7 @@
         "japandi bedroom color palette ideas",
         "japandi bedroom paint and color ideas"
       ],
-      "priority_score": 64,
+      "priority_score": 69,
       "season": "",
       "holiday": "",
       "source": "content architecture",
@@ -80635,6 +80422,219 @@
       ]
     },
     {
+      "cluster_id": "transitional_bedroom",
+      "cluster_name": "transitional bedroom",
+      "domain_id": "bedrooms",
+      "health_label": "underdeveloped",
+      "article_count": 2,
+      "article_capacity_target": 14,
+      "capacity_ratio": 0.14,
+      "growth_openings": 8,
+      "saturation_state": "needs_growth",
+      "selection_action": "boost",
+      "latest_publication_date": "2026-06-05",
+      "days_since_latest": 0,
+      "subtopics_total": 5,
+      "subtopics_covered": [
+        "Furniture and Anchors",
+        "Textures and Layers"
+      ],
+      "subtopic_ids_covered": [
+        "furniture",
+        "textures"
+      ],
+      "subtopics_missing": [
+        "Layout and Foundation",
+        "Color Palette",
+        "Lighting"
+      ],
+      "subtopic_ids_missing": [
+        "layout",
+        "colors",
+        "lighting"
+      ],
+      "angle_distribution": {
+        "ideas": 0,
+        "how_to": 0,
+        "mistakes": 1,
+        "best_options": 1,
+        "style_specific": 0
+      },
+      "underused_angles": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "style_specific"
+      ],
+      "overused_angles": [],
+      "intent_distribution": {
+        "comparison": 1,
+        "decision_making": 0,
+        "implementation": 0,
+        "inspiration": 0,
+        "problem_solving": 1
+      },
+      "underused_intents": [
+        "comparison",
+        "decision_making",
+        "implementation",
+        "inspiration",
+        "problem_solving"
+      ],
+      "overused_intents": [],
+      "recommended_concepts": [
+        {
+          "cluster_id": "transitional_bedroom",
+          "cluster_name": "transitional bedroom",
+          "domain_id": "bedrooms",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "how_to",
+          "intent_id": "implementation",
+          "modifier": "",
+          "primary_keyword": "how to choose colors for a transitional bedroom",
+          "secondary_keywords": [
+            "transitional bedroom ideas",
+            "how to style a transitional bedroom",
+            "transitional bedroom decor",
+            "transitional bedroom layout ideas"
+          ],
+          "search_intent": "how_to",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 74,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        },
+        {
+          "cluster_id": "transitional_bedroom",
+          "cluster_name": "transitional bedroom",
+          "domain_id": "bedrooms",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "ideas",
+          "intent_id": "inspiration",
+          "modifier": "",
+          "primary_keyword": "transitional bedroom color palette ideas",
+          "secondary_keywords": [
+            "transitional bedroom ideas",
+            "how to style a transitional bedroom",
+            "transitional bedroom decor",
+            "transitional bedroom layout ideas"
+          ],
+          "search_intent": "ideas",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 74,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        },
+        {
+          "cluster_id": "transitional_bedroom",
+          "cluster_name": "transitional bedroom",
+          "domain_id": "bedrooms",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "style_specific",
+          "intent_id": "inspiration",
+          "modifier": "",
+          "primary_keyword": "transitional bedroom paint and color ideas",
+          "secondary_keywords": [
+            "transitional bedroom ideas",
+            "how to style a transitional bedroom",
+            "transitional bedroom decor",
+            "transitional bedroom layout ideas"
+          ],
+          "search_intent": "styling_advice",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 74,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        }
+      ],
+      "recommended_topics": [
+        "how to choose colors for a transitional bedroom",
+        "transitional bedroom color palette ideas",
+        "transitional bedroom paint and color ideas"
+      ],
+      "priority_score": 65,
+      "season": "",
+      "holiday": "",
+      "source": "content architecture",
+      "pinterest_signal": {
+        "label": "no_data",
+        "boost": 0,
+        "pinterest_article_count": 0,
+        "strong_article_count": 0,
+        "weak_article_count": 0,
+        "average_score": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_saves": 0.0
+      },
+      "pinterest_intelligence": {
+        "cluster_signal_label": "no_data",
+        "cluster_signal_boost": 0
+      },
+      "seed_keywords": [
+        "transitional bedroom ideas",
+        "how to style a transitional bedroom",
+        "transitional bedroom decor",
+        "transitional bedroom layout ideas",
+        "transitional bedroom color palette"
+      ],
+      "allowed_angle_ids": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "style_specific"
+      ]
+    },
+    {
       "cluster_id": "japandi_bathroom",
       "cluster_name": "japandi bathroom",
       "domain_id": "utility_transition",
@@ -80646,7 +80646,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-22",
-      "days_since_latest": 42,
+      "days_since_latest": 44,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -80859,7 +80859,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-24",
-      "days_since_latest": 40,
+      "days_since_latest": 42,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -81072,7 +81072,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-27",
-      "days_since_latest": 37,
+      "days_since_latest": 39,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -81285,7 +81285,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-29",
-      "days_since_latest": 35,
+      "days_since_latest": 37,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -81498,7 +81498,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-01",
-      "days_since_latest": 33,
+      "days_since_latest": 35,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -81711,7 +81711,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-08",
-      "days_since_latest": 26,
+      "days_since_latest": 28,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Surface Styling"
@@ -81920,7 +81920,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-11",
-      "days_since_latest": 23,
+      "days_since_latest": 24,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Surface Styling"
@@ -82129,7 +82129,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-13",
-      "days_since_latest": 21,
+      "days_since_latest": 23,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Surface Styling"
@@ -82338,7 +82338,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-15",
-      "days_since_latest": 19,
+      "days_since_latest": 21,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Seasonal Refresh"
@@ -82412,7 +82412,7 @@
             "seasonal_opportunity",
             "evergreen_authority"
           ],
-          "score": 81,
+          "score": 85,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -82450,7 +82450,7 @@
             "seasonal_opportunity",
             "evergreen_authority"
           ],
-          "score": 81,
+          "score": 85,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -82488,7 +82488,7 @@
             "seasonal_opportunity",
             "evergreen_authority"
           ],
-          "score": 81,
+          "score": 85,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -82550,7 +82550,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-02",
-      "days_since_latest": 62,
+      "days_since_latest": 64,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Seasonal Refresh"
@@ -82762,7 +82762,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-20",
-      "days_since_latest": 14,
+      "days_since_latest": 16,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Light and Openness"
@@ -82968,7 +82968,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-22",
-      "days_since_latest": 12,
+      "days_since_latest": 14,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Layered Lighting"
@@ -83174,7 +83174,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-25",
-      "days_since_latest": 9,
+      "days_since_latest": 10,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Layered Lighting"
@@ -83380,7 +83380,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-29",
-      "days_since_latest": 5,
+      "days_since_latest": 6,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Layered Lighting"
@@ -83586,7 +83586,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-15",
-      "days_since_latest": 49,
+      "days_since_latest": 51,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Seasonal Refresh",

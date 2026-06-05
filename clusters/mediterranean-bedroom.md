@@ -7,7 +7,7 @@ cluster_name: "mediterranean bedroom"
 cluster_slug: "mediterranean-bedroom"
 cluster_article_count: 1
 cluster_primary_keywords: ["best furniture for a mediterranean bedroom"]
-cluster_generated_at: "2026-06-03T13:19:30.222679+00:00"
+cluster_generated_at: "2026-06-05T12:04:52.302736+00:00"
 cluster_intro: "Mediterranean Bedroom is a useful decorating topic because it combines inspiration with practical decision-making. Readers usually arrive here looking for a clear style direction, help solving a room problem, or confidence about how to make the look feel intentional at home.
 
 This pillar page brings together the site's coverage around mediterranean bedroom, with article angles shaped by keyword themes such as best furniture for a mediterranean bedroom. That mix helps the page support both broader search intent and more specific decorating questions without feeling repetitive.
@@ -55,16 +55,16 @@ These adjacent hubs help readers keep moving through the topic without losing th
 <p><a class="cluster-hub-link" href="/clusters/mediterranean-guest-bedroom/">Open this cluster</a></p>
 </div>
 <div class="cluster-hub-card">
+<h3><a href="/clusters/transitional-bedroom/">Transitional Bedroom</a></h3>
+<p>Broad editorial cluster for transitional bedroom topics.</p>
+<p class="cluster-hub-meta">2 articles</p>
+<p><a class="cluster-hub-link" href="/clusters/transitional-bedroom/">Open this cluster</a></p>
+</div>
+<div class="cluster-hub-card">
 <h3><a href="/clusters/bedroom-lighting/">Bedroom Lighting</a></h3>
 <p>Broad editorial cluster for bedroom lighting topics.</p>
 <p class="cluster-hub-meta">1 article</p>
 <p><a class="cluster-hub-link" href="/clusters/bedroom-lighting/">Open this cluster</a></p>
-</div>
-<div class="cluster-hub-card">
-<h3><a href="/clusters/bedroom-styling-details/">Bedroom Styling Details</a></h3>
-<p>Broad editorial cluster for bedroom styling details topics.</p>
-<p class="cluster-hub-meta">1 article</p>
-<p><a class="cluster-hub-link" href="/clusters/bedroom-styling-details/">Open this cluster</a></p>
 </div>
 </div>
 
@@ -74,4 +74,4 @@ A simple path through this topic so readers can build confidence one step at a t
 
 1. Start with [Best Furniture for a Mediterranean Bedroom](/ideas/2026/04/13/best-furniture-mediterranean-bedroom/) for the broadest orientation.
 2. After that, move into [Mediterranean Guest Bedroom](/clusters/mediterranean-guest-bedroom/) to keep the topic expanding naturally.
-3. After that, move into [Bedroom Lighting](/clusters/bedroom-lighting/) to keep the topic expanding naturally.
+3. After that, move into [Transitional Bedroom](/clusters/transitional-bedroom/) to keep the topic expanding naturally.
