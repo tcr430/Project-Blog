@@ -1,0 +1,164 @@
+{
+  "article_title": "Transitional Bathroom Texture Mistakes to Avoid",
+  "article_slug": "transitional-bathroom-texture-mistakes-to-avoid",
+  "article_relative_url": "/mistakes%20%26%20fixes/2026/06/08/transitional-bathroom-texture-mistakes-to-avoid/",
+  "article_url": "https://thelivinedit.com/mistakes%20%26%20fixes/2026/06/08/transitional-bathroom-texture-mistakes-to-avoid/",
+  "meta_description": "Discover key texture mistakes to avoid in your transitional bathroom and learn practical fixes that create a warm, balanced space with layered materials and visual flow.",
+  "cluster_id": "transitional_bathroom",
+  "subtopic_id": "textures",
+  "angle_id": "mistakes",
+  "intent_id": "problem_solving",
+  "visual_direction": {
+    "family_id": "warm_layered",
+    "mood": "warm, tactile, layered and inviting styling",
+    "lighting": "late-morning daylight with warm reflected light",
+    "palette": "creams, camel, honey wood, soft terracotta accents",
+    "intent_id": "problem_solving",
+    "profile_id": "problem_solving",
+    "shot_library_id": "textures_materials"
+  },
+  "hero_image_path": "/assets/img/transitional-bathroom-texture-mistakes-to-avoid/hero.png",
+  "section_image_paths": [
+    "/assets/img/transitional-bathroom-texture-mistakes-to-avoid/section-1.png",
+    "/assets/img/transitional-bathroom-texture-mistakes-to-avoid/section-2.png",
+    "/assets/img/transitional-bathroom-texture-mistakes-to-avoid/section-3.png",
+    "/assets/img/transitional-bathroom-texture-mistakes-to-avoid/section-4.png",
+    "/assets/img/transitional-bathroom-texture-mistakes-to-avoid/section-5.png"
+  ],
+  "site_root_url": "https://thelivinedit.com",
+  "variant_count": 4,
+  "strategy": {
+    "minimum_variant_count": 4,
+    "generated_variant_count": 4,
+    "bonus_slots": 0,
+    "ranked_variant_types": [
+      "trend_overview",
+      "practical_tips",
+      "product_led",
+      "styling_angle"
+    ],
+    "article_score": null,
+    "notes": [
+      "applying performance weighting: no historical lift yet, using balanced defaults"
+    ],
+    "strategy_validation": {
+      "status": "warning",
+      "warnings": [
+        "Variant 1 image_focus 'clean room overview' does not match provided image candidates; renderer will use a safe image fallback.",
+        "Variant 2 image_focus 'clear room depth' does not match provided image candidates; renderer will use a safe image fallback.",
+        "Variant 3 image_focus 'styled room corner' does not match provided image candidates; renderer will use a safe image fallback."
+      ],
+      "errors": []
+    },
+    "strategy_fallback_used": true,
+    "strategy_fallback_reason": "strategy returned 3 usable variants; supplemented with fallback variants to reach 4",
+    "image_candidate_count": 6,
+    "board_config_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_boards.json",
+    "design_system_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/pinterest_pin_design_system.json"
+  },
+  "variants": [
+    {
+      "variant_key": "pin-1",
+      "variant_type": "trend_overview",
+      "style_name": "top-title",
+      "template_id": "top_headline_card",
+      "template_family": "insight_band",
+      "title": "5 Texture Mistakes That Kill Bathroom Flow",
+      "description": "Avoid common texture errors to create a warm, balanced bathroom.",
+      "hook_text": "5 Texture Mistakes That Kill Bathroom Flow",
+      "support_text": "Avoid common texture errors to create a warm, balanced bathroom.",
+      "display_headline": "5 Texture Mistakes That Kill Bathroom Flow",
+      "display_subheadline": "Avoid common texture errors to create a warm, balanced bathroom.",
+      "display_kicker": "",
+      "cta_label": "Read the full article",
+      "topic_style": "tutorial",
+      "image_focus": "clean room overview",
+      "image_reference": "hero",
+      "brand_text": "THE LIVIN' EDIT",
+      "reason": "Lists promise concrete, actionable insights, fitting the benefit_list style with a clean overview image",
+      "image_path": "/assets/pins/transitional-bathroom-texture-mistakes-to-avoid/pin-1.png",
+      "board": {
+        "key": "bathroom",
+        "name": "Bathroom Styling Notes"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 0
+    },
+    {
+      "variant_key": "pin-2",
+      "variant_type": "practical_tips",
+      "style_name": "centered-title",
+      "template_id": "center_overlay",
+      "template_family": "comparison_panel",
+      "title": "Textured Bathroom Overwhelm? Here’s Your Fix",
+      "description": "Tame excessive texture for better visual flow and comfort.",
+      "hook_text": "Textured Bathroom Overwhelm? Here’s Your Fix",
+      "support_text": "Tame excessive texture for better visual flow and comfort.",
+      "display_headline": "Textured Bathroom Overwhelm? Here’s Your Fix",
+      "display_subheadline": "Tame excessive texture for better visual flow and comfort.",
+      "display_kicker": "Practical guide",
+      "cta_label": "Use these ideas",
+      "topic_style": "tutorial",
+      "image_focus": "clear room depth",
+      "image_reference": "section_2",
+      "brand_text": "THE LIVIN' EDIT",
+      "reason": "Naming the problem and hinting at a solution entices users to learn a practical fix",
+      "image_path": "/assets/pins/transitional-bathroom-texture-mistakes-to-avoid/pin-2.png",
+      "board": {
+        "key": "bathroom",
+        "name": "Bathroom Styling Notes"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 1
+    },
+    {
+      "variant_key": "pin-3",
+      "variant_type": "product_led",
+      "style_name": "bottom-title",
+      "template_id": "bottom_band",
+      "template_family": "editorial_split",
+      "title": "From Cluttered To Calm: Texture Swaps That Work",
+      "description": "Simple changes that create layered, inviting bathrooms with flow.",
+      "hook_text": "From Cluttered To Calm: Texture Swaps That Work",
+      "support_text": "Simple changes that create layered, inviting bathrooms with flow.",
+      "display_headline": "From Cluttered To Calm: Texture Swaps That Work",
+      "display_subheadline": "Simple changes that create layered, inviting bathrooms with flow.",
+      "display_kicker": "Worth comparing",
+      "cta_label": "Compare the options",
+      "topic_style": "tutorial",
+      "image_focus": "styled room corner",
+      "image_reference": "section_3",
+      "brand_text": "THE LIVIN' EDIT",
+      "reason": "Highlighting an easy transformation appeals to users wanting visible before/after results",
+      "image_path": "/assets/pins/transitional-bathroom-texture-mistakes-to-avoid/pin-3.png",
+      "board": {
+        "key": "home_products",
+        "name": "Home Finds & Decor Picks"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 2
+    },
+    {
+      "variant_key": "pin-4",
+      "variant_type": "trend_overview",
+      "style_name": "bottom-title",
+      "template_family": "minimal_frame_long",
+      "title": "Avoid These Texture Mistakes in Transitional Bathrooms",
+      "description": "Learn the common texture mistakes that throw off the look of a transitional bathroom and how to fix them with smart layering and color balance.",
+      "display_headline": "How to Get Transitional Bathroom Texture Mistakes To Avoid Right",
+      "display_subheadline": "Simple, high-impact guidance that makes transitional bathroom texture mistakes to avoid easier to apply in real life.",
+      "display_kicker": "",
+      "cta_label": "Read the full article",
+      "topic_style": "tutorial",
+      "image_focus": "hero",
+      "image_reference": "hero",
+      "image_path": "/assets/pins/transitional-bathroom-texture-mistakes-to-avoid/pin-4.png",
+      "board": {
+        "key": "bathroom",
+        "name": "Bathroom Styling Notes"
+      },
+      "priority_score": 0.0,
+      "schedule_rank": 0
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-05T12:04:50.623960+00:00",
+  "generated_at": "2026-06-08T13:07:49.103530+00:00",
   "cluster_count": 43,
   "summary": {
     "hot": 0,
@@ -944,11 +944,13 @@
     },
     {
       "cluster_name": "transitional bathroom",
-      "article_count": 1,
+      "article_count": 2,
       "article_slugs": [
+        "transitional-bathroom-texture-mistakes-to-avoid",
         "best-furniture-for-transitional-bathroom"
       ],
       "primary_keywords": [
+        "transitional bathroom texture mistakes to avoid",
         "best furniture for a transitional bathroom"
       ],
       "secondary_keywords": [

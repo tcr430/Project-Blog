@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-05T12:04:50.619190+00:00",
+  "generated_at": "2026-06-08T13:07:49.098478+00:00",
   "cluster_count": 43,
-  "article_count": 45,
+  "article_count": 46,
   "subtopic_count": 10,
   "angle_count": 5,
   "angle_distribution": {
     "best_options": 21,
     "how_to": 4,
     "ideas": 4,
-    "mistakes": 15,
+    "mistakes": 16,
     "style_specific": 1
   },
   "clusters": [
@@ -64,6 +64,62 @@
       ],
       "angle_distribution": {
         "ideas": 2
+      },
+      "status": "growing"
+    },
+    {
+      "cluster_id": "transitional_bathroom",
+      "cluster_name": "transitional bathroom",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "utility_transition"
+      ],
+      "article_count": 2,
+      "primary_keywords_used": [
+        "transitional bathroom texture mistakes to avoid",
+        "best furniture for a transitional bathroom"
+      ],
+      "latest_article_date": "2026-06-08",
+      "latest_publication": {
+        "article_slug": "transitional-bathroom-texture-mistakes-to-avoid",
+        "article_title": "Transitional Bathroom Texture Mistakes to Avoid",
+        "publish_date": "2026-06-08",
+        "subtopic_id": "textures",
+        "subtopic_name": "textures and layers",
+        "angle_id": "mistakes"
+      },
+      "representative_article_slugs": [
+        "transitional-bathroom-texture-mistakes-to-avoid",
+        "best-furniture-for-transitional-bathroom"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 1,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 2,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "furniture",
+          "subtopic_name": "furniture and anchors",
+          "article_count": 1,
+          "latest_article_date": "2026-03-27",
+          "representative_article_slugs": [
+            "best-furniture-for-transitional-bathroom"
+          ]
+        },
+        {
+          "subtopic_id": "textures",
+          "subtopic_name": "textures and layers",
+          "article_count": 1,
+          "latest_article_date": "2026-06-08",
+          "representative_article_slugs": [
+            "transitional-bathroom-texture-mistakes-to-avoid"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "best_options": 1,
+        "mistakes": 1
       },
       "status": "growing"
     },
@@ -588,7 +644,7 @@
       "representative_article_slugs": [
         "cottage-bedroom-texture-mistakes-to-avoid"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
@@ -720,7 +776,7 @@
       "representative_article_slugs": [
         "japandi-bathroom-texture-mistakes-to-avoid"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
@@ -1793,50 +1849,6 @@
           "latest_article_date": "2026-05-20",
           "representative_article_slugs": [
             "thoughtful-color-choices-tiny-bathroom-decor"
-          ]
-        }
-      ],
-      "angle_distribution": {
-        "best_options": 1
-      },
-      "status": "underdeveloped"
-    },
-    {
-      "cluster_id": "transitional_bathroom",
-      "cluster_name": "transitional bathroom",
-      "legacy_cluster_names": [],
-      "domain_ids": [
-        "utility_transition"
-      ],
-      "article_count": 1,
-      "primary_keywords_used": [
-        "best furniture for a transitional bathroom"
-      ],
-      "latest_article_date": "2026-03-27",
-      "latest_publication": {
-        "article_slug": "best-furniture-for-transitional-bathroom",
-        "article_title": "Best Furniture for a Transitional Bathroom: a Clear Design Guide",
-        "publish_date": "2026-03-27",
-        "subtopic_id": "furniture",
-        "subtopic_name": "furniture and anchors",
-        "angle_id": "best_options"
-      },
-      "representative_article_slugs": [
-        "best-furniture-for-transitional-bathroom"
-      ],
-      "recent_article_count": 0,
-      "internal_link_targets_available": 0,
-      "promoted_article_count": 0,
-      "weak_article_count": 0,
-      "subtopic_count": 1,
-      "subtopic_coverage": [
-        {
-          "subtopic_id": "furniture",
-          "subtopic_name": "furniture and anchors",
-          "article_count": 1,
-          "latest_article_date": "2026-03-27",
-          "representative_article_slugs": [
-            "best-furniture-for-transitional-bathroom"
           ]
         }
       ],

@@ -1,16 +1,15 @@
 # Weekly Pipeline Report
 
-Generated: 2026-06-05
+Generated: 2026-06-08
 Window: last 7 days
 
-Articles Published: 4  
-Pins Generated: 12  
+Articles Published: 3  
+Pins Generated: 9  
 Pins Scheduled: 56  
 Pins Published: 0  
 Repins Scheduled: 0
 
 ## Articles Published
-- best-lighting-for-bathroom-layered-approach
 - transitional-bedroom-texture-mistakes-to-avoid
 - transitional-entryway-texture-mistakes-to-avoid
 - transitional-kitchen-texture-mistakes-to-avoid

@@ -1,49 +1,47 @@
 {
-  "generated_at": "2026-06-05T12:00:15.422482+00:00",
+  "generated_at": "2026-06-08T13:03:52.477506+00:00",
   "articles": [
     {
-      "article_slug": "transitional-bedroom-texture-mistakes-to-avoid",
-      "cluster_id": "transitional_bedroom",
+      "article_slug": "transitional-bathroom-texture-mistakes-to-avoid",
+      "cluster_id": "transitional_bathroom",
       "subtopic_id": "textures",
       "angle_id": "mistakes",
-      "primary_keyword": "transitional bedroom texture mistakes to avoid",
-      "validation_status": "warning",
-      "warnings": [
-        "Section headings rely on repetitive formulas instead of distinct editorial moves."
-      ],
+      "primary_keyword": "transitional bathroom texture mistakes to avoid",
+      "validation_status": "pass",
+      "warnings": [],
       "errors": [],
       "checks": {
         "generic_intro": {
-          "intro_word_count": 116,
-          "concept_overlap": 6,
-          "first_sentence": "Transitional bedrooms are a beautiful middle ground between traditional charm and modern minimalism, but the texture strategy often trips people up here."
+          "intro_word_count": 105,
+          "concept_overlap": 4,
+          "first_sentence": "Transitional bathrooms aim to blend classic charm with modern simplicity, but texture mistakes can quickly disrupt this balance."
         },
         "heading_quality": {
           "heading_count": 5,
           "vague_heading_count": 0,
           "low_specificity_heading_count": 0,
           "repeated_signature_count": 0,
-          "repeated_stem_count": 1,
+          "repeated_stem_count": 0,
           "headings": [
-            "Mistake 1: Using Smooth, Slick Bedding That Lacks Texture",
-            "Mistake 2: Mismatch of Texture Scales Creates Discord",
-            "Mistake 3: Overlooking Texture Contrast That Supports Cohesion",
-            "Mistake 4: Ignoring Texture Placement in Relation to Natural Light",
-            "Mistake 5: Forgetting the Final Texture Layer That Nails Room Vibe"
+            "Overwhelming Tile and Countertop Textures",
+            "Too Much Texture Without Enough Contrast",
+            "Mixing Bathroom Textiles That Don’t Harmonize",
+            "Ignoring Texture Scale Relative to Bathroom Size",
+            "Not Layering Textures for Visual Flow and Comfort"
           ]
         },
         "specificity": {
-          "concept_token_hits": 12,
-          "specificity_term_hits": 13,
-          "secondary_keyword_hits": 2
+          "concept_token_hits": 8,
+          "specificity_term_hits": 15,
+          "secondary_keyword_hits": 3
         },
         "distinctiveness": {
-          "nearest_article_slug": "best-furniture-transitional-bedroom",
+          "nearest_article_slug": "best-furniture-for-transitional-bathroom",
           "max_similarity": 0.286,
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-06-05T12:00:15.422034+00:00"
+      "timestamp": "2026-06-08T13:03:52.477014+00:00"
     },
     {
       "article_slug": "summer-balcony-styling-mistakes-to-avoid",
@@ -90,7 +88,51 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-06-05T11:58:59.105690+00:00"
+      "timestamp": "2026-06-08T13:02:39.133658+00:00"
+    },
+    {
+      "article_slug": "transitional-bedroom-texture-mistakes-to-avoid",
+      "cluster_id": "transitional_bedroom",
+      "subtopic_id": "textures",
+      "angle_id": "mistakes",
+      "primary_keyword": "transitional bedroom texture mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Section headings rely on repetitive formulas instead of distinct editorial moves."
+      ],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 116,
+          "concept_overlap": 6,
+          "first_sentence": "Transitional bedrooms are a beautiful middle ground between traditional charm and modern minimalism, but the texture strategy often trips people up here."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 0,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 1,
+          "headings": [
+            "Mistake 1: Using Smooth, Slick Bedding That Lacks Texture",
+            "Mistake 2: Mismatch of Texture Scales Creates Discord",
+            "Mistake 3: Overlooking Texture Contrast That Supports Cohesion",
+            "Mistake 4: Ignoring Texture Placement in Relation to Natural Light",
+            "Mistake 5: Forgetting the Final Texture Layer That Nails Room Vibe"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 12,
+          "specificity_term_hits": 13,
+          "secondary_keyword_hits": 2
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "best-furniture-transitional-bedroom",
+          "max_similarity": 0.286,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-06-05T12:00:15.422034+00:00"
     },
     {
       "article_slug": "transitional-entryway-texture-mistakes-to-avoid",

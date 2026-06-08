@@ -1,24 +1,24 @@
 {
-  "generated_at": "2026-06-05T12:00:15.419042+00:00",
+  "generated_at": "2026-06-08T13:03:52.474146+00:00",
   "articles": [
     {
-      "article_slug": "transitional-bedroom-texture-mistakes-to-avoid",
-      "cluster": "transitional bedroom",
-      "cluster_id": "transitional bedroom",
+      "article_slug": "transitional-bathroom-texture-mistakes-to-avoid",
+      "cluster": "transitional bathroom",
+      "cluster_id": "transitional bathroom",
       "subtopic_id": "textures",
       "subtopic_name": "textures and layers",
       "angle_id": "mistakes",
       "intent_id": "problem_solving",
-      "primary_keyword": "transitional bedroom texture mistakes to avoid",
+      "primary_keyword": "transitional bathroom texture mistakes to avoid",
       "validation_status": "warning",
       "warnings": [
+        "Chosen title is still close to an existing site title pattern.",
         "Headings do not reflect the topic cluster strongly enough.",
-        "Main section headings may be too generic for the chosen keyword.",
         "Primary keyword appears very lightly in the article body."
       ],
       "errors": [],
       "duplicate_candidate_slugs": [],
-      "timestamp": "2026-06-05T12:00:15.418803+00:00"
+      "timestamp": "2026-06-08T13:03:52.473887+00:00"
     },
     {
       "article_slug": "summer-balcony-styling-mistakes-to-avoid",
@@ -37,7 +37,26 @@
       ],
       "errors": [],
       "duplicate_candidate_slugs": [],
-      "timestamp": "2026-06-05T11:58:59.101142+00:00"
+      "timestamp": "2026-06-08T13:02:39.129027+00:00"
+    },
+    {
+      "article_slug": "transitional-bedroom-texture-mistakes-to-avoid",
+      "cluster": "transitional bedroom",
+      "cluster_id": "transitional bedroom",
+      "subtopic_id": "textures",
+      "subtopic_name": "textures and layers",
+      "angle_id": "mistakes",
+      "intent_id": "problem_solving",
+      "primary_keyword": "transitional bedroom texture mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Headings do not reflect the topic cluster strongly enough.",
+        "Main section headings may be too generic for the chosen keyword.",
+        "Primary keyword appears very lightly in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-06-05T12:00:15.418803+00:00"
     },
     {
       "article_slug": "transitional-entryway-texture-mistakes-to-avoid",

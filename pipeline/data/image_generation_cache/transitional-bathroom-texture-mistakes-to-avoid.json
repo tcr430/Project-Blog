@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "ef4ae7fc83fe8d3a8e6ae2caff6a910f69e56fe041905b54088ee2747885fe24",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/transitional-bathroom-texture-mistakes-to-avoid/hero.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-1": {
+    "cache_key": "680f138400d7e42fb25d520eea2cb6ed5affd69a282d4e005ba7a11be04f47b5",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/transitional-bathroom-texture-mistakes-to-avoid/section-1.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-2": {
+    "cache_key": "34ed121db9eca9e1c4960e8ff5c637fc5c2424dcfb29302a9f022dda1884a4c2",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/transitional-bathroom-texture-mistakes-to-avoid/section-2.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-3": {
+    "cache_key": "d99bb0d2686a9d8b07dfa3af949b3855a75d9ee65de95dbcbf0debfef24ef17e",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/transitional-bathroom-texture-mistakes-to-avoid/section-3.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-4": {
+    "cache_key": "9d35044839f66d63f93e8286cb162923a0a38cbcc4ca06765138eb8c2e4b7adb",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/transitional-bathroom-texture-mistakes-to-avoid/section-4.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-5": {
+    "cache_key": "7d20f5723852a1b48af70aef53ef1d92a202bc39fbfdbd721635b84303808395",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/transitional-bathroom-texture-mistakes-to-avoid/section-5.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  }
+}
