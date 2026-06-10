@@ -1,18 +1,18 @@
 # Weekly Pipeline Report
 
-Generated: 2026-06-08
+Generated: 2026-06-10
 Window: last 7 days
 
 Articles Published: 3  
 Pins Generated: 9  
-Pins Scheduled: 56  
+Pins Scheduled: 59  
 Pins Published: 0  
 Repins Scheduled: 0
 
 ## Articles Published
+- best-furniture-for-earthy-kitchen
 - transitional-bedroom-texture-mistakes-to-avoid
 - transitional-entryway-texture-mistakes-to-avoid
-- transitional-kitchen-texture-mistakes-to-avoid
 
 ## Top Performing Pins
 - No published pin analytics were available for this window.

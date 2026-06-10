@@ -1,24 +1,42 @@
 {
-  "generated_at": "2026-06-08T13:03:52.474146+00:00",
+  "generated_at": "2026-06-10T12:17:57.889123+00:00",
   "articles": [
     {
-      "article_slug": "transitional-bathroom-texture-mistakes-to-avoid",
-      "cluster": "transitional bathroom",
-      "cluster_id": "transitional bathroom",
-      "subtopic_id": "textures",
-      "subtopic_name": "textures and layers",
-      "angle_id": "mistakes",
-      "intent_id": "problem_solving",
-      "primary_keyword": "transitional bathroom texture mistakes to avoid",
+      "article_slug": "best-furniture-for-earthy-kitchen",
+      "cluster": "earthy kitchen",
+      "cluster_id": "earthy kitchen",
+      "subtopic_id": "furniture",
+      "subtopic_name": "furniture and anchors",
+      "angle_id": "best options",
+      "intent_id": "comparison",
+      "primary_keyword": "best furniture for an earthy kitchen",
       "validation_status": "warning",
       "warnings": [
-        "Chosen title is still close to an existing site title pattern.",
+        "None of the secondary keywords appear in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-06-10T12:17:57.888925+00:00"
+    },
+    {
+      "article_slug": "thoughtful-small-bathroom-ideas-layered-light-spaces",
+      "cluster": "small bathroom ideas",
+      "cluster_id": "",
+      "subtopic_id": "legacy_unspecified",
+      "subtopic_name": "Legacy / Unspecified",
+      "angle_id": "how_to",
+      "intent_id": "inspiration",
+      "primary_keyword": "small bathroom ideas",
+      "validation_status": "warning",
+      "warnings": [
         "Headings do not reflect the topic cluster strongly enough.",
+        "Main section headings may be too generic for the chosen keyword.",
+        "None of the secondary keywords appear in the article body.",
         "Primary keyword appears very lightly in the article body."
       ],
       "errors": [],
       "duplicate_candidate_slugs": [],
-      "timestamp": "2026-06-08T13:03:52.473887+00:00"
+      "timestamp": "2026-06-10T12:17:34.701021+00:00"
     },
     {
       "article_slug": "summer-balcony-styling-mistakes-to-avoid",
@@ -37,7 +55,26 @@
       ],
       "errors": [],
       "duplicate_candidate_slugs": [],
-      "timestamp": "2026-06-08T13:02:39.129027+00:00"
+      "timestamp": "2026-06-10T12:17:34.474224+00:00"
+    },
+    {
+      "article_slug": "transitional-bathroom-texture-mistakes-to-avoid",
+      "cluster": "transitional bathroom",
+      "cluster_id": "transitional bathroom",
+      "subtopic_id": "textures",
+      "subtopic_name": "textures and layers",
+      "angle_id": "mistakes",
+      "intent_id": "problem_solving",
+      "primary_keyword": "transitional bathroom texture mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Chosen title is still close to an existing site title pattern.",
+        "Headings do not reflect the topic cluster strongly enough.",
+        "Primary keyword appears very lightly in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-06-08T13:03:52.473887+00:00"
     },
     {
       "article_slug": "transitional-bedroom-texture-mistakes-to-avoid",
@@ -115,26 +152,6 @@
       "errors": [],
       "duplicate_candidate_slugs": [],
       "timestamp": "2026-05-29T12:12:41.398001+00:00"
-    },
-    {
-      "article_slug": "thoughtful-small-bathroom-ideas-layered-light-spaces",
-      "cluster": "small bathroom ideas",
-      "cluster_id": "",
-      "subtopic_id": "legacy_unspecified",
-      "subtopic_name": "Legacy / Unspecified",
-      "angle_id": "how_to",
-      "intent_id": "inspiration",
-      "primary_keyword": "small bathroom ideas",
-      "validation_status": "warning",
-      "warnings": [
-        "Headings do not reflect the topic cluster strongly enough.",
-        "Main section headings may be too generic for the chosen keyword.",
-        "None of the secondary keywords appear in the article body.",
-        "Primary keyword appears very lightly in the article body."
-      ],
-      "errors": [],
-      "duplicate_candidate_slugs": [],
-      "timestamp": "2026-05-29T12:12:03.191930+00:00"
     },
     {
       "article_slug": "how-to-style-a-neutral-entryway",

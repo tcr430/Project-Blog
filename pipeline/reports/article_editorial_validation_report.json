@@ -1,20 +1,22 @@
 {
-  "generated_at": "2026-06-08T13:03:52.477506+00:00",
+  "generated_at": "2026-06-10T12:17:57.892813+00:00",
   "articles": [
     {
-      "article_slug": "transitional-bathroom-texture-mistakes-to-avoid",
-      "cluster_id": "transitional_bathroom",
-      "subtopic_id": "textures",
-      "angle_id": "mistakes",
-      "primary_keyword": "transitional bathroom texture mistakes to avoid",
-      "validation_status": "pass",
-      "warnings": [],
+      "article_slug": "best-furniture-for-earthy-kitchen",
+      "cluster_id": "earthy_kitchen",
+      "subtopic_id": "furniture",
+      "angle_id": "best_options",
+      "primary_keyword": "best furniture for an earthy kitchen",
+      "validation_status": "warning",
+      "warnings": [
+        "Supporting keyword ideas are barely reflected in the body."
+      ],
       "errors": [],
       "checks": {
         "generic_intro": {
-          "intro_word_count": 105,
-          "concept_overlap": 4,
-          "first_sentence": "Transitional bathrooms aim to blend classic charm with modern simplicity, but texture mistakes can quickly disrupt this balance."
+          "intro_word_count": 147,
+          "concept_overlap": 6,
+          "first_sentence": "Creating an earthy kitchen is about more than just picking a color palette—it’s about selecting furniture pieces that bring warmth, natural texture, and function into a space that feels as cozy as it does practical."
         },
         "heading_quality": {
           "heading_count": 5,
@@ -23,25 +25,73 @@
           "repeated_signature_count": 0,
           "repeated_stem_count": 0,
           "headings": [
-            "Overwhelming Tile and Countertop Textures",
-            "Too Much Texture Without Enough Contrast",
-            "Mixing Bathroom Textiles That Don’t Harmonize",
-            "Ignoring Texture Scale Relative to Bathroom Size",
-            "Not Layering Textures for Visual Flow and Comfort"
+            "Defining the Essential Criteria for Earthy Kitchen Furniture",
+            "Rich Wood Furniture: The Timeless Core of Earthy Kitchens",
+            "Metal and Wood Hybrids: When Durability Meets Earthy Style",
+            "Matching Furniture Choices to Kitchen Size and Layout",
+            "Narrowing Your Furniture Selection: Practical Buying Tips"
           ]
         },
         "specificity": {
-          "concept_token_hits": 8,
-          "specificity_term_hits": 15,
-          "secondary_keyword_hits": 3
+          "concept_token_hits": 9,
+          "specificity_term_hits": 11,
+          "secondary_keyword_hits": 0
         },
         "distinctiveness": {
-          "nearest_article_slug": "best-furniture-for-transitional-bathroom",
-          "max_similarity": 0.286,
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-06-08T13:03:52.477014+00:00"
+      "timestamp": "2026-06-10T12:17:57.892338+00:00"
+    },
+    {
+      "article_slug": "thoughtful-small-bathroom-ideas-layered-light-spaces",
+      "cluster_id": "small bathroom ideas",
+      "subtopic_id": "legacy_unspecified",
+      "angle_id": "legacy_unspecified",
+      "primary_keyword": "small bathroom ideas",
+      "validation_status": "fail",
+      "warnings": [
+        "Several section headings do not signal the topic strongly enough.",
+        "Supporting keyword ideas are barely reflected in the body."
+      ],
+      "errors": [
+        "Section headings are too unspecific to support a strong editorial frame."
+      ],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 125,
+          "concept_overlap": 3,
+          "first_sentence": "A small bathroom often feels like a puzzle: how to balance function with style while making the most of limited space?"
+        },
+        "heading_quality": {
+          "heading_count": 6,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 5,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Establishing the Foundation: Neutral Layers and Natural Surfaces",
+            "Introducing Depth with Color and Complementary Tones",
+            "Layering Function and Style in the Shower or Bath Zone",
+            "Styling Open Storage: A Subtle Balance of Practicality and Calm",
+            "Final Decisions: Mirrors, Lighting, and Finishing Details for Cohesion",
+            "Conclusion"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 10,
+          "specificity_term_hits": 12,
+          "secondary_keyword_hits": 0
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-06-10T12:17:34.704523+00:00"
     },
     {
       "article_slug": "summer-balcony-styling-mistakes-to-avoid",
@@ -88,7 +138,49 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-06-08T13:02:39.133658+00:00"
+      "timestamp": "2026-06-10T12:17:34.478494+00:00"
+    },
+    {
+      "article_slug": "transitional-bathroom-texture-mistakes-to-avoid",
+      "cluster_id": "transitional_bathroom",
+      "subtopic_id": "textures",
+      "angle_id": "mistakes",
+      "primary_keyword": "transitional bathroom texture mistakes to avoid",
+      "validation_status": "pass",
+      "warnings": [],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 105,
+          "concept_overlap": 4,
+          "first_sentence": "Transitional bathrooms aim to blend classic charm with modern simplicity, but texture mistakes can quickly disrupt this balance."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 0,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Overwhelming Tile and Countertop Textures",
+            "Too Much Texture Without Enough Contrast",
+            "Mixing Bathroom Textiles That Don’t Harmonize",
+            "Ignoring Texture Scale Relative to Bathroom Size",
+            "Not Layering Textures for Visual Flow and Comfort"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 8,
+          "specificity_term_hits": 15,
+          "secondary_keyword_hits": 3
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "best-furniture-for-transitional-bathroom",
+          "max_similarity": 0.286,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-06-08T13:03:52.477014+00:00"
     },
     {
       "article_slug": "transitional-bedroom-texture-mistakes-to-avoid",
@@ -265,54 +357,6 @@
         }
       },
       "timestamp": "2026-05-29T12:12:41.401401+00:00"
-    },
-    {
-      "article_slug": "thoughtful-small-bathroom-ideas-layered-light-spaces",
-      "cluster_id": "small bathroom ideas",
-      "subtopic_id": "legacy_unspecified",
-      "angle_id": "legacy_unspecified",
-      "primary_keyword": "small bathroom ideas",
-      "validation_status": "fail",
-      "warnings": [
-        "Several section headings do not signal the topic strongly enough.",
-        "Supporting keyword ideas are barely reflected in the body."
-      ],
-      "errors": [
-        "Section headings are too unspecific to support a strong editorial frame."
-      ],
-      "checks": {
-        "generic_intro": {
-          "intro_word_count": 125,
-          "concept_overlap": 3,
-          "first_sentence": "A small bathroom often feels like a puzzle: how to balance function with style while making the most of limited space?"
-        },
-        "heading_quality": {
-          "heading_count": 6,
-          "vague_heading_count": 0,
-          "low_specificity_heading_count": 5,
-          "repeated_signature_count": 0,
-          "repeated_stem_count": 0,
-          "headings": [
-            "Establishing the Foundation: Neutral Layers and Natural Surfaces",
-            "Introducing Depth with Color and Complementary Tones",
-            "Layering Function and Style in the Shower or Bath Zone",
-            "Styling Open Storage: A Subtle Balance of Practicality and Calm",
-            "Final Decisions: Mirrors, Lighting, and Finishing Details for Cohesion",
-            "Conclusion"
-          ]
-        },
-        "specificity": {
-          "concept_token_hits": 10,
-          "specificity_term_hits": 12,
-          "secondary_keyword_hits": 0
-        },
-        "distinctiveness": {
-          "nearest_article_slug": "",
-          "max_similarity": 0.0,
-          "strongest_heading_overlap": 0
-        }
-      },
-      "timestamp": "2026-05-29T12:12:03.195267+00:00"
     },
     {
       "article_slug": "how-to-style-a-neutral-entryway",

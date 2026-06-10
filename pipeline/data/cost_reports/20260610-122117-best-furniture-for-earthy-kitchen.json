@@ -1,0 +1,304 @@
+{
+  "generated_at": "2026-06-10T12:21:17.044523+00:00",
+  "trend": "best furniture for an earthy kitchen",
+  "slug": "best-furniture-for-earthy-kitchen",
+  "article_generation": {
+    "cache_hit": false,
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/article_packages/108aad4c99d72dbf14c15cc7aa2e3c915ae9d153de6a870c594a90427bb9651d.json",
+    "model": "gpt-4.1-mini",
+    "generation_calls": 1,
+    "short_retries": 0,
+    "angle_retries": 0,
+    "product_retries": 0,
+    "selected_products": 0,
+    "affiliate_mode": false,
+    "monetization_profile_id": "commercial_strong",
+    "generated_link_count": 0,
+    "primary_keyword": "best furniture for an earthy kitchen",
+    "topical_cluster": "earthy kitchen"
+  },
+  "seo_validation": {
+    "article_slug": "best-furniture-for-earthy-kitchen",
+    "cluster": "earthy kitchen",
+    "cluster_id": "earthy kitchen",
+    "subtopic_id": "furniture",
+    "subtopic_name": "furniture and anchors",
+    "angle_id": "best options",
+    "intent_id": "comparison",
+    "primary_keyword": "best furniture for an earthy kitchen",
+    "validation_status": "warning",
+    "warnings": [
+      "None of the secondary keywords appear in the article body."
+    ],
+    "errors": [],
+    "duplicate_candidate_slugs": [],
+    "timestamp": "2026-06-10T12:17:57.888925+00:00"
+  },
+  "editorial_validation": {
+    "article_slug": "best-furniture-for-earthy-kitchen",
+    "cluster_id": "earthy_kitchen",
+    "subtopic_id": "furniture",
+    "angle_id": "best_options",
+    "primary_keyword": "best furniture for an earthy kitchen",
+    "validation_status": "warning",
+    "warnings": [
+      "Supporting keyword ideas are barely reflected in the body."
+    ],
+    "errors": [],
+    "checks": {
+      "generic_intro": {
+        "intro_word_count": 147,
+        "concept_overlap": 6,
+        "first_sentence": "Creating an earthy kitchen is about more than just picking a color palette—it’s about selecting furniture pieces that bring warmth, natural texture, and function into a space that feels as cozy as it does practical."
+      },
+      "heading_quality": {
+        "heading_count": 5,
+        "vague_heading_count": 0,
+        "low_specificity_heading_count": 0,
+        "repeated_signature_count": 0,
+        "repeated_stem_count": 0,
+        "headings": [
+          "Defining the Essential Criteria for Earthy Kitchen Furniture",
+          "Rich Wood Furniture: The Timeless Core of Earthy Kitchens",
+          "Metal and Wood Hybrids: When Durability Meets Earthy Style",
+          "Matching Furniture Choices to Kitchen Size and Layout",
+          "Narrowing Your Furniture Selection: Practical Buying Tips"
+        ]
+      },
+      "specificity": {
+        "concept_token_hits": 9,
+        "specificity_term_hits": 11,
+        "secondary_keyword_hits": 0
+      },
+      "distinctiveness": {
+        "nearest_article_slug": "",
+        "max_similarity": 0.0,
+        "strongest_heading_overlap": 0
+      }
+    },
+    "timestamp": "2026-06-10T12:17:57.892338+00:00"
+  },
+  "image_generation": {
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/image_generation_cache/best-furniture-for-earthy-kitchen.json",
+    "provider": "flux",
+    "provider_model": "flux-2-max",
+    "model": "flux-2-max",
+    "fallback_provider": "openai",
+    "fallback_model": "gpt-image-1",
+    "size": "1536x1024",
+    "hero_quality": "high",
+    "section_quality": "medium",
+    "allow_fallback": true,
+    "fallback_events": 6,
+    "generated_images": 6,
+    "cache_hits": 0,
+    "generation_calls": 12,
+    "qa_calls": 1,
+    "details": [
+      {
+        "label": "hero",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 2,
+        "qa_calls": 1,
+        "quality": "high",
+        "qa_enabled": true,
+        "provider": "openai",
+        "provider_model": "gpt-image-1",
+        "fallback_used": true,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "error": "HTTP Error 402: Payment Required"
+          },
+          {
+            "provider": "openai",
+            "model": "gpt-image-1",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "quality": "high",
+            "elapsed_seconds_total": 51.3,
+            "width": 1536,
+            "height": 1024,
+            "format": "PNG"
+          }
+        ],
+        "validation_reason": "image passed basic validation",
+        "qa_reason": "The image shows a restrained styled kitchen vignette with earthy tones and natural materials. It has a clear focal point on the wooden stool and vase on the island, with believable spatial depth and natural daylight. The style is modern editorial restraint with a clean palette of pale oak, soft white, stone, and black accents. The composition and materials are realistic and suitable for a decor blog article about earthy kitchen furniture."
+      },
+      {
+        "label": "section-1",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 2,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "openai",
+        "provider_model": "gpt-image-1",
+        "fallback_used": true,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "error": "HTTP Error 402: Payment Required"
+          },
+          {
+            "provider": "openai",
+            "model": "gpt-image-1",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "quality": "medium",
+            "elapsed_seconds_total": 25.1,
+            "width": 1536,
+            "height": 1024,
+            "format": "PNG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-2",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 2,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "openai",
+        "provider_model": "gpt-image-1",
+        "fallback_used": true,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "error": "HTTP Error 402: Payment Required"
+          },
+          {
+            "provider": "openai",
+            "model": "gpt-image-1",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "quality": "medium",
+            "elapsed_seconds_total": 21.33,
+            "width": 1536,
+            "height": 1024,
+            "format": "PNG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-3",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 2,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "openai",
+        "provider_model": "gpt-image-1",
+        "fallback_used": true,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "error": "HTTP Error 402: Payment Required"
+          },
+          {
+            "provider": "openai",
+            "model": "gpt-image-1",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "quality": "medium",
+            "elapsed_seconds_total": 23.0,
+            "width": 1536,
+            "height": 1024,
+            "format": "PNG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-4",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 2,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "openai",
+        "provider_model": "gpt-image-1",
+        "fallback_used": true,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "error": "HTTP Error 402: Payment Required"
+          },
+          {
+            "provider": "openai",
+            "model": "gpt-image-1",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "quality": "medium",
+            "elapsed_seconds_total": 21.01,
+            "width": 1536,
+            "height": 1024,
+            "format": "PNG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-5",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 2,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "openai",
+        "provider_model": "gpt-image-1",
+        "fallback_used": true,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "error": "HTTP Error 402: Payment Required"
+          },
+          {
+            "provider": "openai",
+            "model": "gpt-image-1",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "quality": "medium",
+            "elapsed_seconds_total": 21.52,
+            "width": 1536,
+            "height": 1024,
+            "format": "PNG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      }
+    ]
+  },
+  "pinterest": {
+    "variants_requested": 4,
+    "pin_assets_generated": false,
+    "mode": null
+  }
+}

@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-08T13:07:49.103530+00:00",
-  "cluster_count": 43,
+  "generated_at": "2026-06-10T12:21:18.292074+00:00",
+  "cluster_count": 44,
   "summary": {
     "hot": 0,
     "warm": 0,
     "cold": 18,
-    "no_data": 25
+    "no_data": 26
   },
   "clusters": [
     {
@@ -318,6 +318,30 @@
       "average_saves": 0.0,
       "signal_label": "cold",
       "signal_boost": -6
+    },
+    {
+      "cluster_name": "earthy kitchen",
+      "article_count": 1,
+      "article_slugs": [
+        "best-furniture-for-earthy-kitchen"
+      ],
+      "primary_keywords": [
+        "best furniture for an earthy kitchen"
+      ],
+      "secondary_keywords": [
+        "earthy kitchen ideas",
+        "how to style a earthy kitchen",
+        "earthy kitchen decor",
+        "earthy kitchen layout ideas"
+      ],
+      "pinterest_article_count": 0,
+      "strong_article_count": 0,
+      "weak_article_count": 0,
+      "average_score": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_saves": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0
     },
     {
       "cluster_name": "japandi bathroom",

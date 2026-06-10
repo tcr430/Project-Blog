@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-08T13:07:49.098478+00:00",
-  "cluster_count": 43,
-  "article_count": 46,
+  "generated_at": "2026-06-10T12:21:18.287114+00:00",
+  "cluster_count": 44,
+  "article_count": 47,
   "subtopic_count": 10,
   "angle_count": 5,
   "angle_distribution": {
-    "best_options": 21,
+    "best_options": 22,
     "how_to": 4,
     "ideas": 4,
     "mistakes": 16,
@@ -745,6 +745,50 @@
           "latest_article_date": "2026-03-18",
           "representative_article_slugs": [
             "best-furniture-for-earthy-bedroom"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "best_options": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_id": "earthy_kitchen",
+      "cluster_name": "earthy kitchen",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "kitchens_dining"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "best furniture for an earthy kitchen"
+      ],
+      "latest_article_date": "2026-06-10",
+      "latest_publication": {
+        "article_slug": "best-furniture-for-earthy-kitchen",
+        "article_title": "Furniture for an Earthy Kitchen: A Practical Buying Guide",
+        "publish_date": "2026-06-10",
+        "subtopic_id": "furniture",
+        "subtopic_name": "furniture and anchors",
+        "angle_id": "best_options"
+      },
+      "representative_article_slugs": [
+        "best-furniture-for-earthy-kitchen"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "furniture",
+          "subtopic_name": "furniture and anchors",
+          "article_count": 1,
+          "latest_article_date": "2026-06-10",
+          "representative_article_slugs": [
+            "best-furniture-for-earthy-kitchen"
           ]
         }
       ],

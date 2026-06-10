@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "cb93b39208beceaf0005418be7272cb0be451865317f45d1d669dce24a2e7a90",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-earthy-kitchen/hero.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-1": {
+    "cache_key": "31a17e330f59048b70e2be1e18bc31c8490e7992eddacc63d53ea48c9fcc791e",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-earthy-kitchen/section-1.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-2": {
+    "cache_key": "9a0f3beef14bbd40806a1502b50d1d902667611f5b5687b5a10c7b4b2e4a1e46",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-earthy-kitchen/section-2.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-3": {
+    "cache_key": "4a33c731b405c6085a2e7e7ff4699679f465ebc8e01ac24445b39c5840823ed7",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-earthy-kitchen/section-3.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-4": {
+    "cache_key": "bd6e4c8347890c4937d82f07da77d584e7e65e1f0a48ae05371864d028ae38df",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-earthy-kitchen/section-4.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-5": {
+    "cache_key": "d54e2a54d278095928f917871a545dfe8b4cafd388cafc7d4504674fc5836126",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-earthy-kitchen/section-5.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  }
+}
