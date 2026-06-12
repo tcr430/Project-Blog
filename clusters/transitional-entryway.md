@@ -7,7 +7,7 @@ cluster_name: "transitional entryway"
 cluster_slug: "transitional-entryway"
 cluster_article_count: 1
 cluster_primary_keywords: ["transitional entryway texture mistakes to avoid"]
-cluster_generated_at: "2026-06-10T12:21:19.969377+00:00"
+cluster_generated_at: "2026-06-12T12:19:20.287350+00:00"
 cluster_intro: "Transitional Entryway is a useful decorating topic because it combines inspiration with practical decision-making. Readers usually arrive here looking for a clear style direction, help solving a room problem, or confidence about how to make the look feel intentional at home.
 
 This pillar page brings together the site's coverage around transitional entryway, with article angles shaped by keyword themes such as transitional entryway texture mistakes to avoid. That mix helps the page support both broader search intent and more specific decorating questions without feeling repetitive.
@@ -55,16 +55,16 @@ These adjacent hubs help readers keep moving through the topic without losing th
 <p><a class="cluster-hub-link" href="/clusters/transitional-bathroom/">Open this cluster</a></p>
 </div>
 <div class="cluster-hub-card">
+<h3><a href="/clusters/earthy-entryway/">Earthy Entryway</a></h3>
+<p>Broad editorial cluster for earthy entryway topics.</p>
+<p class="cluster-hub-meta">1 article</p>
+<p><a class="cluster-hub-link" href="/clusters/earthy-entryway/">Open this cluster</a></p>
+</div>
+<div class="cluster-hub-card">
 <h3><a href="/clusters/neutral-entryway/">Neutral Entryway</a></h3>
 <p>Broad editorial cluster for neutral entryway topics.</p>
 <p class="cluster-hub-meta">1 article</p>
 <p><a class="cluster-hub-link" href="/clusters/neutral-entryway/">Open this cluster</a></p>
-</div>
-<div class="cluster-hub-card">
-<h3><a href="/clusters/biophilic-entryway/">Biophilic Entryway</a></h3>
-<p>Broad editorial cluster for biophilic entryway topics.</p>
-<p class="cluster-hub-meta">0 articles</p>
-<p><a class="cluster-hub-link" href="/clusters/biophilic-entryway/">Open this cluster</a></p>
 </div>
 </div>
 
@@ -74,4 +74,4 @@ A simple path through this topic so readers can build confidence one step at a t
 
 1. Start with [What Goes Wrong with Transitional Entryway?](/mistakes%20%26%20fixes/2026/06/03/transitional-entryway-texture-mistakes-to-avoid/) for the broadest orientation.
 2. After that, move into [Transitional Bathroom](/clusters/transitional-bathroom/) to keep the topic expanding naturally.
-3. After that, move into [Neutral Entryway](/clusters/neutral-entryway/) to keep the topic expanding naturally.
+3. After that, move into [Earthy Entryway](/clusters/earthy-entryway/) to keep the topic expanding naturally.

@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "fa5042377df644c3042b67355669cbad31952fda4792b924a6d15ec169091e6d",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-earthy-entryway/hero.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-1": {
+    "cache_key": "895959b8054c421fe925bf60a0619773f2a75e75ae6e643b413651af82eb48bb",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-earthy-entryway/section-1.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-2": {
+    "cache_key": "ebc3f9c04423f86fe68594273f9cb0c4e90fb66b932a824c43160793121af03a",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-earthy-entryway/section-2.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-3": {
+    "cache_key": "c88326f692534b04447b2cbefcc64d3e0e159619bd5157cb4e1b761cedf11fc5",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-earthy-entryway/section-3.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-4": {
+    "cache_key": "0c7a417705f10509d2ab3085eb72a1c4d1c2b6222aa5bdf36934c35e7e27d0e4",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-earthy-entryway/section-4.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-5": {
+    "cache_key": "c8a4496476e7ec70744285b1323af319261bb7da0c3bb55a2c4a924316ae7ea1",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-earthy-entryway/section-5.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  }
+}

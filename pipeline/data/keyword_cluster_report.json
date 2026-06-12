@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-10T12:21:18.287114+00:00",
-  "cluster_count": 44,
-  "article_count": 47,
+  "generated_at": "2026-06-12T12:19:18.521289+00:00",
+  "cluster_count": 45,
+  "article_count": 48,
   "subtopic_count": 10,
   "angle_count": 5,
   "angle_distribution": {
-    "best_options": 22,
+    "best_options": 23,
     "how_to": 4,
     "ideas": 4,
     "mistakes": 16,
@@ -600,7 +600,7 @@
       "representative_article_slugs": [
         "cottage-bathroom-texture-mistakes-to-avoid"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
@@ -745,6 +745,50 @@
           "latest_article_date": "2026-03-18",
           "representative_article_slugs": [
             "best-furniture-for-earthy-bedroom"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "best_options": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_id": "earthy_entryway",
+      "cluster_name": "earthy entryway",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "utility_transition"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "best furniture for an earthy entryway"
+      ],
+      "latest_article_date": "2026-06-12",
+      "latest_publication": {
+        "article_slug": "best-furniture-earthy-entryway",
+        "article_title": "How to Choose Furniture for an Earthy Entryway",
+        "publish_date": "2026-06-12",
+        "subtopic_id": "furniture",
+        "subtopic_name": "furniture and anchors",
+        "angle_id": "best_options"
+      },
+      "representative_article_slugs": [
+        "best-furniture-earthy-entryway"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "furniture",
+          "subtopic_name": "furniture and anchors",
+          "article_count": 1,
+          "latest_article_date": "2026-06-12",
+          "representative_article_slugs": [
+            "best-furniture-earthy-entryway"
           ]
         }
       ],
