@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-12T12:19:18.526440+00:00",
-  "cluster_count": 45,
+  "generated_at": "2026-06-15T15:15:33.537346+00:00",
+  "cluster_count": 46,
   "summary": {
     "hot": 0,
     "warm": 0,
     "cold": 18,
-    "no_data": 27
+    "no_data": 28
   },
   "clusters": [
     {
@@ -867,6 +867,30 @@
       "average_saves": 0.0,
       "signal_label": "cold",
       "signal_boost": -6
+    },
+    {
+      "cluster_name": "scandinavian kitchen",
+      "article_count": 1,
+      "article_slugs": [
+        "best-furniture-for-a-scandinavian-kitchen"
+      ],
+      "primary_keywords": [
+        "best furniture for a scandinavian kitchen"
+      ],
+      "secondary_keywords": [
+        "scandinavian kitchen ideas",
+        "how to style a scandinavian kitchen",
+        "scandinavian kitchen decor",
+        "scandinavian kitchen layout ideas"
+      ],
+      "pinterest_article_count": 0,
+      "strong_article_count": 0,
+      "weak_article_count": 0,
+      "average_score": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_saves": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0
     },
     {
       "cluster_name": "small dining nook",

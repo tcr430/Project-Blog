@@ -1,16 +1,17 @@
 # Weekly Pipeline Report
 
-Generated: 2026-06-12
+Generated: 2026-06-15
 Window: last 7 days
 
-Articles Published: 2  
-Pins Generated: 6  
-Pins Scheduled: 62  
+Articles Published: 3  
+Pins Generated: 9  
+Pins Scheduled: 65  
 Pins Published: 0  
 Repins Scheduled: 0
 
 ## Articles Published
 - best-furniture-earthy-entryway
+- best-furniture-for-a-scandinavian-kitchen
 - best-furniture-for-earthy-kitchen
 
 ## Top Performing Pins

@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "c7baecb946fc0035186e299df02a04b7a8b11c1524e13f148e72f52a495cef13",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-a-scandinavian-kitchen/hero.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-1": {
+    "cache_key": "530f909c594f0feabedcb52461d426ad04537e166078884886bc4b9394fd605a",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-a-scandinavian-kitchen/section-1.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-2": {
+    "cache_key": "b4260ebe521eeb328ba9b4b4d6f4f389a52260ebb42327bdb22fe6a3ca784732",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-a-scandinavian-kitchen/section-2.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-3": {
+    "cache_key": "78c0b84c5bbdf67f47cdcc3b90010caeb70d492999641733e530e326eac6d941",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-a-scandinavian-kitchen/section-3.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-4": {
+    "cache_key": "adc6f27abe5cfd7b4926d1b4d1cc2d5c110ade02d01319a255c41199d5878989",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-a-scandinavian-kitchen/section-4.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-5": {
+    "cache_key": "1f5cdc51c6760e7f7becc5acbd50aa1396d7e19f3d5cdb97498ee6301ae51182",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-a-scandinavian-kitchen/section-5.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  }
+}

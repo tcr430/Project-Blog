@@ -1,22 +1,23 @@
 {
-  "generated_at": "2026-06-12T12:16:20.086200+00:00",
+  "generated_at": "2026-06-15T15:11:49.498413+00:00",
   "articles": [
     {
-      "article_slug": "best-furniture-earthy-entryway",
-      "cluster": "earthy entryway",
-      "cluster_id": "earthy entryway",
+      "article_slug": "best-furniture-for-a-scandinavian-kitchen",
+      "cluster": "scandinavian kitchen",
+      "cluster_id": "scandinavian kitchen",
       "subtopic_id": "furniture",
       "subtopic_name": "furniture and anchors",
       "angle_id": "best options",
       "intent_id": "comparison",
-      "primary_keyword": "best furniture for an earthy entryway",
+      "primary_keyword": "best furniture for a scandinavian kitchen",
       "validation_status": "warning",
       "warnings": [
-        "Display title still uses an overused opening pattern."
+        "None of the secondary keywords appear in the article body.",
+        "Primary keyword appears very lightly in the article body."
       ],
       "errors": [],
       "duplicate_candidate_slugs": [],
-      "timestamp": "2026-06-12T12:16:20.085921+00:00"
+      "timestamp": "2026-06-15T15:11:49.498126+00:00"
     },
     {
       "article_slug": "thoughtful-small-bathroom-ideas-layered-light-spaces",
@@ -36,7 +37,7 @@
       ],
       "errors": [],
       "duplicate_candidate_slugs": [],
-      "timestamp": "2026-06-12T12:15:07.058188+00:00"
+      "timestamp": "2026-06-15T15:11:00.795988+00:00"
     },
     {
       "article_slug": "summer-balcony-styling-mistakes-to-avoid",
@@ -55,7 +56,24 @@
       ],
       "errors": [],
       "duplicate_candidate_slugs": [],
-      "timestamp": "2026-06-12T12:15:06.828713+00:00"
+      "timestamp": "2026-06-15T15:11:00.573826+00:00"
+    },
+    {
+      "article_slug": "best-furniture-earthy-entryway",
+      "cluster": "earthy entryway",
+      "cluster_id": "earthy entryway",
+      "subtopic_id": "furniture",
+      "subtopic_name": "furniture and anchors",
+      "angle_id": "best options",
+      "intent_id": "comparison",
+      "primary_keyword": "best furniture for an earthy entryway",
+      "validation_status": "warning",
+      "warnings": [
+        "Display title still uses an overused opening pattern."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-06-12T12:16:20.085921+00:00"
     },
     {
       "article_slug": "best-furniture-for-earthy-kitchen",

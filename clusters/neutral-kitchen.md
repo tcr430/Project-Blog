@@ -7,7 +7,7 @@ cluster_name: "neutral kitchen"
 cluster_slug: "neutral-kitchen"
 cluster_article_count: 1
 cluster_primary_keywords: ["how to style a neutral kitchen"]
-cluster_generated_at: "2026-06-12T12:19:20.287350+00:00"
+cluster_generated_at: "2026-06-15T15:15:35.248852+00:00"
 cluster_intro: "Neutral Kitchen is a useful decorating topic because it combines inspiration with practical decision-making. Readers usually arrive here looking for a clear style direction, help solving a room problem, or confidence about how to make the look feel intentional at home.
 
 This pillar page brings together the site's coverage around neutral kitchen, with article angles shaped by keyword themes such as how to style a neutral kitchen. That mix helps the page support both broader search intent and more specific decorating questions without feeling repetitive.
@@ -55,16 +55,16 @@ These adjacent hubs help readers keep moving through the topic without losing th
 <p><a class="cluster-hub-link" href="/clusters/earthy-kitchen/">Open this cluster</a></p>
 </div>
 <div class="cluster-hub-card">
+<h3><a href="/clusters/scandinavian-kitchen/">Scandinavian Kitchen</a></h3>
+<p>Broad editorial cluster for scandinavian kitchen topics.</p>
+<p class="cluster-hub-meta">1 article</p>
+<p><a class="cluster-hub-link" href="/clusters/scandinavian-kitchen/">Open this cluster</a></p>
+</div>
+<div class="cluster-hub-card">
 <h3><a href="/clusters/transitional-kitchen/">Transitional Kitchen</a></h3>
 <p>Broad editorial cluster for transitional kitchen topics.</p>
 <p class="cluster-hub-meta">1 article</p>
 <p><a class="cluster-hub-link" href="/clusters/transitional-kitchen/">Open this cluster</a></p>
-</div>
-<div class="cluster-hub-card">
-<h3><a href="/clusters/biophilic-kitchen/">Biophilic Kitchen</a></h3>
-<p>Broad editorial cluster for biophilic kitchen topics.</p>
-<p class="cluster-hub-meta">0 articles</p>
-<p><a class="cluster-hub-link" href="/clusters/biophilic-kitchen/">Open this cluster</a></p>
 </div>
 </div>
 
@@ -74,4 +74,4 @@ A simple path through this topic so readers can build confidence one step at a t
 
 1. Start with [How to Style a Neutral Kitchen: A Clear Starting Point](/styling%20advice/2026/05/18/how-to-style-a-neutral-kitchen/) for the broadest orientation.
 2. After that, move into [Earthy Kitchen](/clusters/earthy-kitchen/) to keep the topic expanding naturally.
-3. After that, move into [Transitional Kitchen](/clusters/transitional-kitchen/) to keep the topic expanding naturally.
+3. After that, move into [Scandinavian Kitchen](/clusters/scandinavian-kitchen/) to keep the topic expanding naturally.

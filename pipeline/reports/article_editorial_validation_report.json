@@ -1,41 +1,41 @@
 {
-  "generated_at": "2026-06-12T12:16:20.089784+00:00",
+  "generated_at": "2026-06-15T15:11:49.502166+00:00",
   "articles": [
     {
-      "article_slug": "best-furniture-earthy-entryway",
-      "cluster_id": "earthy_entryway",
+      "article_slug": "best-furniture-for-a-scandinavian-kitchen",
+      "cluster_id": "scandinavian_kitchen",
       "subtopic_id": "furniture",
       "angle_id": "best_options",
-      "primary_keyword": "best furniture for an earthy entryway",
+      "primary_keyword": "best furniture for a scandinavian kitchen",
       "validation_status": "warning",
       "warnings": [
-        "Several section headings do not signal the topic strongly enough."
+        "Supporting keyword ideas are barely reflected in the body."
       ],
       "errors": [],
       "checks": {
         "generic_intro": {
-          "intro_word_count": 148,
+          "intro_word_count": 121,
           "concept_overlap": 5,
-          "first_sentence": "Creating an entryway that feels grounded and inviting requires more than just choosing pieces to fill space — it’s about selecting furniture that ties into a calm, earthy palette while serving practical daily needs."
+          "first_sentence": "Finding the right furniture for a Scandinavian kitchen might seem straightforward, but thoughtful choices reveal a more nuanced challenge."
         },
         "heading_quality": {
           "heading_count": 5,
           "vague_heading_count": 0,
-          "low_specificity_heading_count": 2,
+          "low_specificity_heading_count": 1,
           "repeated_signature_count": 0,
           "repeated_stem_count": 0,
           "headings": [
-            "Understanding Key Criteria for Earthy Entryway Furniture",
-            "Oak and Natural Wood Furniture as Anchor Pieces",
-            "Woven and Carved Accents to Add Organic Layers",
-            "Matching Furniture Scale to Your Entryway Dimensions",
-            "Navigating Purchase Decisions: How to Narrow Your Options"
+            "Key Criteria for Selecting Scandinavian Kitchen Furniture",
+            "Oak Furniture: The Scandinavian Staple with Lasting Appeal",
+            "Pine and Birch: Lightweight Alternatives for Small Spaces",
+            "Matching Furniture to Kitchen Size and Layout Considerations",
+            "How to Narrow Your Furniture Choices with Confidence"
           ]
         },
         "specificity": {
-          "concept_token_hits": 8,
-          "specificity_term_hits": 8,
-          "secondary_keyword_hits": 1
+          "concept_token_hits": 7,
+          "specificity_term_hits": 9,
+          "secondary_keyword_hits": 0
         },
         "distinctiveness": {
           "nearest_article_slug": "",
@@ -43,7 +43,7 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-06-12T12:16:20.089275+00:00"
+      "timestamp": "2026-06-15T15:11:49.501679+00:00"
     },
     {
       "article_slug": "thoughtful-small-bathroom-ideas-layered-light-spaces",
@@ -91,7 +91,7 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-06-12T12:15:07.061558+00:00"
+      "timestamp": "2026-06-15T15:11:00.799625+00:00"
     },
     {
       "article_slug": "summer-balcony-styling-mistakes-to-avoid",
@@ -138,7 +138,51 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-06-12T12:15:06.832937+00:00"
+      "timestamp": "2026-06-15T15:11:00.578197+00:00"
+    },
+    {
+      "article_slug": "best-furniture-earthy-entryway",
+      "cluster_id": "earthy_entryway",
+      "subtopic_id": "furniture",
+      "angle_id": "best_options",
+      "primary_keyword": "best furniture for an earthy entryway",
+      "validation_status": "warning",
+      "warnings": [
+        "Several section headings do not signal the topic strongly enough."
+      ],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 148,
+          "concept_overlap": 5,
+          "first_sentence": "Creating an entryway that feels grounded and inviting requires more than just choosing pieces to fill space — it’s about selecting furniture that ties into a calm, earthy palette while serving practical daily needs."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 2,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Understanding Key Criteria for Earthy Entryway Furniture",
+            "Oak and Natural Wood Furniture as Anchor Pieces",
+            "Woven and Carved Accents to Add Organic Layers",
+            "Matching Furniture Scale to Your Entryway Dimensions",
+            "Navigating Purchase Decisions: How to Narrow Your Options"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 8,
+          "specificity_term_hits": 8,
+          "secondary_keyword_hits": 1
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-06-12T12:16:20.089275+00:00"
     },
     {
       "article_slug": "best-furniture-for-earthy-kitchen",

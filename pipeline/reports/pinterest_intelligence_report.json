@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-12T12:14:46.430146+00:00",
+  "generated_at": "2026-06-15T15:10:40.795674+00:00",
   "overview": {
-    "pin_count": 110,
+    "pin_count": 113,
     "published_pin_count": 51,
     "analytics_ready_pin_count": 0,
-    "tracked_article_count": 34
+    "tracked_article_count": 35
   },
   "best_performing_clusters": [
     {
@@ -167,6 +167,24 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "best-furniture-for-earthy-bedroom"
+      ]
+    },
+    {
+      "cluster_id": "earthy_entryway",
+      "cluster_name": "earthy entryway",
+      "pin_count": 3,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-earthy-entryway"
       ]
     },
     {
@@ -604,6 +622,25 @@
     }
   ],
   "best_performing_subtopics": [
+    {
+      "cluster_id": "earthy_entryway",
+      "subtopic_id": "furniture",
+      "subtopic_name": "furniture and anchors",
+      "pin_count": 3,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-earthy-entryway"
+      ]
+    },
     {
       "cluster_id": "scandinavian_bathroom",
       "subtopic_id": "furniture",
@@ -1254,7 +1291,7 @@
   "best_performing_angles": [
     {
       "angle_id": "best_options",
-      "pin_count": 54,
+      "pin_count": 57,
       "published_pin_count": 24,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1268,9 +1305,9 @@
       "top_article_slugs": [
         "balancing-light-layers-best-lighting-for-living-room",
         "best-decor-accents-for-living-room",
+        "best-furniture-earthy-entryway",
         "best-furniture-for-a-scandinavian-bathroom",
-        "best-furniture-for-an-earthy-bathroom",
-        "best-furniture-for-coastal-bathroom"
+        "best-furniture-for-an-earthy-bathroom"
       ]
     },
     {
@@ -1443,6 +1480,27 @@
       ]
     },
     {
+      "visual_style_key": "bottom_title|collected_natural|textures_materials|implementation",
+      "style_name": "bottom-title",
+      "visual_family_id": "collected_natural",
+      "shot_library_id": "textures_materials",
+      "intent_id": "implementation",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "how-to-style-a-neutral-entryway"
+      ]
+    },
+    {
       "visual_style_key": "bottom_title|crisp_modern|color_palette|implementation",
       "style_name": "bottom-title",
       "visual_family_id": "crisp_modern",
@@ -1514,7 +1572,7 @@
       "visual_family_id": "crisp_modern",
       "shot_library_id": "lighting",
       "intent_id": "comparison",
-      "pin_count": 4,
+      "pin_count": 5,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1601,6 +1659,27 @@
       ]
     },
     {
+      "visual_style_key": "bottom_title|warm_layered|storage_organization|comparison",
+      "style_name": "bottom-title",
+      "visual_family_id": "warm_layered",
+      "shot_library_id": "storage_organization",
+      "intent_id": "comparison",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-earthy-entryway"
+      ]
+    },
+    {
       "visual_style_key": "bottom_title|warm_layered|textures_materials|problem_solving",
       "style_name": "bottom-title",
       "visual_family_id": "warm_layered",
@@ -1619,6 +1698,7 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "japandi-bathroom-texture-mistakes-to-avoid",
+        "transitional-bedroom-texture-mistakes-to-avoid",
         "transitional-entryway-texture-mistakes-to-avoid",
         "transitional-kitchen-texture-mistakes-to-avoid"
       ]
@@ -1803,7 +1883,7 @@
       "visual_family_id": "crisp_modern",
       "shot_library_id": "lighting",
       "intent_id": "comparison",
-      "pin_count": 2,
+      "pin_count": 1,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1815,8 +1895,7 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
-        "balancing-light-layers-best-lighting-for-living-room",
-        "best-lighting-for-bathroom-layered-approach"
+        "balancing-light-layers-best-lighting-for-living-room"
       ]
     },
     {
@@ -1887,12 +1966,33 @@
       ]
     },
     {
+      "visual_style_key": "centered_title|warm_layered|storage_organization|comparison",
+      "style_name": "centered-title",
+      "visual_family_id": "warm_layered",
+      "shot_library_id": "storage_organization",
+      "intent_id": "comparison",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-earthy-entryway"
+      ]
+    },
+    {
       "visual_style_key": "centered_title|warm_layered|textures_materials|problem_solving",
       "style_name": "centered-title",
       "visual_family_id": "warm_layered",
       "shot_library_id": "textures_materials",
       "intent_id": "problem_solving",
-      "pin_count": 5,
+      "pin_count": 4,
       "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -2215,27 +2315,6 @@
       ]
     },
     {
-      "visual_style_key": "top_title|collected_natural|textures_materials|implementation",
-      "style_name": "top-title",
-      "visual_family_id": "collected_natural",
-      "shot_library_id": "textures_materials",
-      "intent_id": "implementation",
-      "pin_count": 1,
-      "published_pin_count": 0,
-      "analytics_ready_count": 0,
-      "average_score": 0.0,
-      "average_impressions": 0.0,
-      "average_saves": 0.0,
-      "average_outbound_clicks": 0.0,
-      "average_pin_clicks": 0.0,
-      "average_closeups": 0.0,
-      "signal_label": "no_data",
-      "signal_boost": 0,
-      "top_article_slugs": [
-        "how-to-style-a-neutral-entryway"
-      ]
-    },
-    {
       "visual_style_key": "top_title|crisp_modern|color_palette|implementation",
       "style_name": "top-title",
       "visual_family_id": "crisp_modern",
@@ -2392,12 +2471,33 @@
       ]
     },
     {
+      "visual_style_key": "top_title|warm_layered|storage_organization|comparison",
+      "style_name": "top-title",
+      "visual_family_id": "warm_layered",
+      "shot_library_id": "storage_organization",
+      "intent_id": "comparison",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-earthy-entryway"
+      ]
+    },
+    {
       "visual_style_key": "top_title|warm_layered|textures_materials|problem_solving",
       "style_name": "top-title",
       "visual_family_id": "warm_layered",
       "shot_library_id": "textures_materials",
       "intent_id": "problem_solving",
-      "pin_count": 1,
+      "pin_count": 2,
       "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -2409,7 +2509,8 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
-        "japandi-bathroom-texture-mistakes-to-avoid"
+        "japandi-bathroom-texture-mistakes-to-avoid",
+        "transitional-entryway-texture-mistakes-to-avoid"
       ]
     }
   ],
@@ -2508,6 +2609,25 @@
     ],
     "subtopics": [
       {
+        "cluster_id": "earthy_entryway",
+        "subtopic_id": "furniture",
+        "subtopic_name": "furniture and anchors",
+        "pin_count": 3,
+        "published_pin_count": 0,
+        "analytics_ready_count": 0,
+        "average_score": 0.0,
+        "average_impressions": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_pin_clicks": 0.0,
+        "average_closeups": 0.0,
+        "signal_label": "no_data",
+        "signal_boost": 0,
+        "top_article_slugs": [
+          "best-furniture-earthy-entryway"
+        ]
+      },
+      {
         "cluster_id": "scandinavian_bathroom",
         "subtopic_id": "furniture",
         "subtopic_name": "furniture and anchors",
@@ -2582,31 +2702,12 @@
         "top_article_slugs": [
           "best-furniture-for-earthy-bedroom"
         ]
-      },
-      {
-        "cluster_id": "earthy_kitchen",
-        "subtopic_id": "furniture",
-        "subtopic_name": "furniture and anchors",
-        "pin_count": 3,
-        "published_pin_count": 0,
-        "analytics_ready_count": 0,
-        "average_score": 0.0,
-        "average_impressions": 0.0,
-        "average_saves": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_pin_clicks": 0.0,
-        "average_closeups": 0.0,
-        "signal_label": "no_data",
-        "signal_boost": 0,
-        "top_article_slugs": [
-          "best-furniture-for-earthy-kitchen"
-        ]
       }
     ],
     "angles": [
       {
         "angle_id": "best_options",
-        "pin_count": 54,
+        "pin_count": 57,
         "published_pin_count": 24,
         "analytics_ready_count": 0,
         "average_score": 0.0,
@@ -2620,9 +2721,9 @@
         "top_article_slugs": [
           "balancing-light-layers-best-lighting-for-living-room",
           "best-decor-accents-for-living-room",
+          "best-furniture-earthy-entryway",
           "best-furniture-for-a-scandinavian-bathroom",
-          "best-furniture-for-an-earthy-bathroom",
-          "best-furniture-for-coastal-bathroom"
+          "best-furniture-for-an-earthy-bathroom"
         ]
       },
       {

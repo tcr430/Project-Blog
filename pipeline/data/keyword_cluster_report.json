@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-12T12:19:18.521289+00:00",
-  "cluster_count": 45,
-  "article_count": 48,
+  "generated_at": "2026-06-15T15:15:33.532094+00:00",
+  "cluster_count": 46,
+  "article_count": 49,
   "subtopic_count": 10,
   "angle_count": 5,
   "angle_distribution": {
-    "best_options": 23,
+    "best_options": 24,
     "how_to": 4,
     "ideas": 4,
     "mistakes": 16,
@@ -512,7 +512,7 @@
       "representative_article_slugs": [
         "best-furniture-for-coastal-bathroom"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
@@ -556,7 +556,7 @@
       "representative_article_slugs": [
         "choosing-best-furniture-coastal-bedroom"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
@@ -1761,6 +1761,50 @@
           "latest_article_date": "2026-03-28",
           "representative_article_slugs": [
             "best-furniture-for-scandinavian-bedroom"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "best_options": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_id": "scandinavian_kitchen",
+      "cluster_name": "scandinavian kitchen",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "kitchens_dining"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "best furniture for a scandinavian kitchen"
+      ],
+      "latest_article_date": "2026-06-15",
+      "latest_publication": {
+        "article_slug": "best-furniture-for-a-scandinavian-kitchen",
+        "article_title": "Furniture for a Scandinavian Kitchen: A Practical Buying Guide",
+        "publish_date": "2026-06-15",
+        "subtopic_id": "furniture",
+        "subtopic_name": "furniture and anchors",
+        "angle_id": "best_options"
+      },
+      "representative_article_slugs": [
+        "best-furniture-for-a-scandinavian-kitchen"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "furniture",
+          "subtopic_name": "furniture and anchors",
+          "article_count": 1,
+          "latest_article_date": "2026-06-15",
+          "representative_article_slugs": [
+            "best-furniture-for-a-scandinavian-kitchen"
           ]
         }
       ],
