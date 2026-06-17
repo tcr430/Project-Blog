@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-15T15:15:33.532094+00:00",
-  "cluster_count": 46,
-  "article_count": 49,
+  "generated_at": "2026-06-17T12:53:12.689446+00:00",
+  "cluster_count": 47,
+  "article_count": 50,
   "subtopic_count": 10,
   "angle_count": 5,
   "angle_distribution": {
     "best_options": 24,
     "how_to": 4,
     "ideas": 4,
-    "mistakes": 16,
+    "mistakes": 17,
     "style_specific": 1
   },
   "clusters": [
@@ -1766,6 +1766,50 @@
       ],
       "angle_distribution": {
         "best_options": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_id": "scandinavian_entryway",
+      "cluster_name": "scandinavian entryway",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "utility_transition"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "scandinavian entryway texture mistakes to avoid"
+      ],
+      "latest_article_date": "2026-06-17",
+      "latest_publication": {
+        "article_slug": "scandinavian-entryway-texture-mistakes-to-avoid",
+        "article_title": "Scandinavian Entryway Texture Mistakes to Avoid",
+        "publish_date": "2026-06-17",
+        "subtopic_id": "textures",
+        "subtopic_name": "textures and layers",
+        "angle_id": "mistakes"
+      },
+      "representative_article_slugs": [
+        "scandinavian-entryway-texture-mistakes-to-avoid"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "textures",
+          "subtopic_name": "textures and layers",
+          "article_count": 1,
+          "latest_article_date": "2026-06-17",
+          "representative_article_slugs": [
+            "scandinavian-entryway-texture-mistakes-to-avoid"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "mistakes": 1
       },
       "status": "underdeveloped"
     },

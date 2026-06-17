@@ -7,7 +7,7 @@ cluster_name: "neutral entryway"
 cluster_slug: "neutral-entryway"
 cluster_article_count: 1
 cluster_primary_keywords: ["how to style a neutral entryway"]
-cluster_generated_at: "2026-06-15T15:15:35.248852+00:00"
+cluster_generated_at: "2026-06-17T12:53:14.486408+00:00"
 cluster_intro: "Neutral Entryway is a useful decorating topic because it combines inspiration with practical decision-making. Readers usually arrive here looking for a clear style direction, help solving a room problem, or confidence about how to make the look feel intentional at home.
 
 This pillar page brings together the site's coverage around neutral entryway, with article angles shaped by keyword themes such as how to style a neutral entryway. That mix helps the page support both broader search intent and more specific decorating questions without feeling repetitive.
@@ -61,10 +61,10 @@ These adjacent hubs help readers keep moving through the topic without losing th
 <p><a class="cluster-hub-link" href="/clusters/neutral-bathroom/">Open this cluster</a></p>
 </div>
 <div class="cluster-hub-card">
-<h3><a href="/clusters/transitional-entryway/">Transitional Entryway</a></h3>
-<p>Broad editorial cluster for transitional entryway topics.</p>
+<h3><a href="/clusters/scandinavian-entryway/">Scandinavian Entryway</a></h3>
+<p>Broad editorial cluster for scandinavian entryway topics.</p>
 <p class="cluster-hub-meta">1 article</p>
-<p><a class="cluster-hub-link" href="/clusters/transitional-entryway/">Open this cluster</a></p>
+<p><a class="cluster-hub-link" href="/clusters/scandinavian-entryway/">Open this cluster</a></p>
 </div>
 </div>
 

@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-15T15:10:40.795674+00:00",
+  "generated_at": "2026-06-17T12:48:50.668899+00:00",
   "overview": {
-    "pin_count": 113,
+    "pin_count": 116,
     "published_pin_count": 51,
     "analytics_ready_pin_count": 0,
-    "tracked_article_count": 35
+    "tracked_article_count": 36
   },
   "best_performing_clusters": [
     {
@@ -476,6 +476,24 @@
       ]
     },
     {
+      "cluster_id": "scandinavian_kitchen",
+      "cluster_name": "scandinavian kitchen",
+      "pin_count": 3,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-for-a-scandinavian-kitchen"
+      ]
+    },
+    {
       "cluster_id": "spring_bedroom_refresh",
       "cluster_name": "spring bedroom refresh",
       "pin_count": 4,
@@ -658,6 +676,25 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "best-furniture-for-a-scandinavian-bathroom"
+      ]
+    },
+    {
+      "cluster_id": "scandinavian_kitchen",
+      "subtopic_id": "furniture",
+      "subtopic_name": "furniture and anchors",
+      "pin_count": 3,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-for-a-scandinavian-kitchen"
       ]
     },
     {
@@ -1291,7 +1328,7 @@
   "best_performing_angles": [
     {
       "angle_id": "best_options",
-      "pin_count": 57,
+      "pin_count": 60,
       "published_pin_count": 24,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1307,7 +1344,7 @@
         "best-decor-accents-for-living-room",
         "best-furniture-earthy-entryway",
         "best-furniture-for-a-scandinavian-bathroom",
-        "best-furniture-for-an-earthy-bathroom"
+        "best-furniture-for-a-scandinavian-kitchen"
       ]
     },
     {
@@ -1639,7 +1676,7 @@
       "visual_family_id": "warm_layered",
       "shot_library_id": "general_decor",
       "intent_id": "comparison",
-      "pin_count": 8,
+      "pin_count": 9,
       "published_pin_count": 5,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1651,11 +1688,11 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
+        "best-furniture-for-a-scandinavian-kitchen",
         "best-furniture-for-coastal-bathroom",
         "best-furniture-for-earthy-bedroom",
         "best-furniture-for-scandinavian-bedroom",
-        "best-furniture-minimalist-bathroom",
-        "best-furniture-transitional-bedroom"
+        "best-furniture-minimalist-bathroom"
       ]
     },
     {
@@ -1946,7 +1983,7 @@
       "visual_family_id": "warm_layered",
       "shot_library_id": "general_decor",
       "intent_id": "comparison",
-      "pin_count": 5,
+      "pin_count": 6,
       "published_pin_count": 2,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1958,11 +1995,11 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
+        "best-furniture-for-a-scandinavian-kitchen",
         "best-furniture-for-coastal-bathroom",
         "best-furniture-for-earthy-bedroom",
         "best-furniture-for-scandinavian-bedroom",
-        "best-furniture-transitional-bedroom",
-        "choosing-best-furniture-coastal-bedroom"
+        "best-furniture-transitional-bedroom"
       ]
     },
     {
@@ -2453,7 +2490,7 @@
       "visual_family_id": "warm_layered",
       "shot_library_id": "general_decor",
       "intent_id": "comparison",
-      "pin_count": 3,
+      "pin_count": 4,
       "published_pin_count": 2,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -2465,6 +2502,7 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
+        "best-furniture-for-a-scandinavian-kitchen",
         "best-furniture-for-earthy-bedroom",
         "best-furniture-for-scandinavian-bedroom",
         "best-furniture-transitional-bedroom"
@@ -2647,6 +2685,25 @@
         ]
       },
       {
+        "cluster_id": "scandinavian_kitchen",
+        "subtopic_id": "furniture",
+        "subtopic_name": "furniture and anchors",
+        "pin_count": 3,
+        "published_pin_count": 0,
+        "analytics_ready_count": 0,
+        "average_score": 0.0,
+        "average_impressions": 0.0,
+        "average_saves": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_pin_clicks": 0.0,
+        "average_closeups": 0.0,
+        "signal_label": "no_data",
+        "signal_boost": 0,
+        "top_article_slugs": [
+          "best-furniture-for-a-scandinavian-kitchen"
+        ]
+      },
+      {
         "cluster_id": "earthy_bathroom",
         "subtopic_id": "furniture",
         "subtopic_name": "furniture and anchors",
@@ -2683,31 +2740,12 @@
         "top_article_slugs": [
           "best-furniture-for-coastal-bathroom"
         ]
-      },
-      {
-        "cluster_id": "earthy_bedroom",
-        "subtopic_id": "furniture",
-        "subtopic_name": "furniture and anchors",
-        "pin_count": 4,
-        "published_pin_count": 4,
-        "analytics_ready_count": 0,
-        "average_score": 0.0,
-        "average_impressions": 0.0,
-        "average_saves": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_pin_clicks": 0.0,
-        "average_closeups": 0.0,
-        "signal_label": "no_data",
-        "signal_boost": 0,
-        "top_article_slugs": [
-          "best-furniture-for-earthy-bedroom"
-        ]
       }
     ],
     "angles": [
       {
         "angle_id": "best_options",
-        "pin_count": 57,
+        "pin_count": 60,
         "published_pin_count": 24,
         "analytics_ready_count": 0,
         "average_score": 0.0,
@@ -2723,7 +2761,7 @@
           "best-decor-accents-for-living-room",
           "best-furniture-earthy-entryway",
           "best-furniture-for-a-scandinavian-bathroom",
-          "best-furniture-for-an-earthy-bathroom"
+          "best-furniture-for-a-scandinavian-kitchen"
         ]
       },
       {

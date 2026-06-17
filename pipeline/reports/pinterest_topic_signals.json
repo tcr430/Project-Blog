@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-15T15:15:33.537346+00:00",
-  "cluster_count": 46,
+  "generated_at": "2026-06-17T12:53:12.695166+00:00",
+  "cluster_count": 47,
   "summary": {
     "hot": 0,
     "warm": 0,
     "cold": 18,
-    "no_data": 28
+    "no_data": 29
   },
   "clusters": [
     {
@@ -867,6 +867,30 @@
       "average_saves": 0.0,
       "signal_label": "cold",
       "signal_boost": -6
+    },
+    {
+      "cluster_name": "scandinavian entryway",
+      "article_count": 1,
+      "article_slugs": [
+        "scandinavian-entryway-texture-mistakes-to-avoid"
+      ],
+      "primary_keywords": [
+        "scandinavian entryway texture mistakes to avoid"
+      ],
+      "secondary_keywords": [
+        "scandinavian entryway ideas",
+        "how to style a scandinavian entryway",
+        "scandinavian entryway decor",
+        "scandinavian entryway layout ideas"
+      ],
+      "pinterest_article_count": 0,
+      "strong_article_count": 0,
+      "weak_article_count": 0,
+      "average_score": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_saves": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0
     },
     {
       "cluster_name": "scandinavian kitchen",

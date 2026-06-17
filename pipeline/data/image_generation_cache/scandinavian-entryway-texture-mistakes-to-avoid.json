@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "1ee746cbf8c816015314dc434e97c20f547d383f21e3350bf93d1b7b14a3692d",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/scandinavian-entryway-texture-mistakes-to-avoid/hero.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-1": {
+    "cache_key": "7c5104cfd8dfc9c978f955880a292aced8a95833d7e753f4262ac4b9e9c193e8",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/scandinavian-entryway-texture-mistakes-to-avoid/section-1.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-2": {
+    "cache_key": "a23441731954815666ce3502b7e07831dba6a88045b013a9f31ec094fdba782f",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/scandinavian-entryway-texture-mistakes-to-avoid/section-2.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-3": {
+    "cache_key": "feb323260d8d441932276c38f2666424c1b1264de3cac3c0bcd68223527cf1a3",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/scandinavian-entryway-texture-mistakes-to-avoid/section-3.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-4": {
+    "cache_key": "27abd315f3f353268ee540e1204a33c5ae209f0f25fa795fefef129b9dab46f3",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/scandinavian-entryway-texture-mistakes-to-avoid/section-4.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-5": {
+    "cache_key": "1a744f2d7bd22cf3968e32107c87a4f4d0c7fa636667be5ff4449c0e8e789608",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/scandinavian-entryway-texture-mistakes-to-avoid/section-5.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  }
+}
