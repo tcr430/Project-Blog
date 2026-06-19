@@ -1,49 +1,47 @@
 {
-  "generated_at": "2026-06-17T12:49:52.898396+00:00",
+  "generated_at": "2026-06-19T12:44:01.949595+00:00",
   "articles": [
     {
-      "article_slug": "scandinavian-entryway-texture-mistakes-to-avoid",
-      "cluster_id": "scandinavian_entryway",
-      "subtopic_id": "textures",
-      "angle_id": "mistakes",
-      "primary_keyword": "scandinavian entryway texture mistakes to avoid",
-      "validation_status": "warning",
-      "warnings": [
-        "Section headings rely on repetitive formulas instead of distinct editorial moves."
-      ],
+      "article_slug": "best-furniture-neutral-bathroom",
+      "cluster_id": "neutral_bathroom",
+      "subtopic_id": "furniture",
+      "angle_id": "best_options",
+      "primary_keyword": "best furniture for a neutral bathroom",
+      "validation_status": "pass",
+      "warnings": [],
       "errors": [],
       "checks": {
         "generic_intro": {
-          "intro_word_count": 135,
-          "concept_overlap": 6,
-          "first_sentence": "The Scandinavian entryway is often the first impression of a home’s understated warmth—offering a transition from the outside world into a space of calm, light, and natural texture."
+          "intro_word_count": 134,
+          "concept_overlap": 8,
+          "first_sentence": "Neutral bathrooms are a calm refuge in the home, prized for their timeless appeal and flexibility to adapt through seasons or evolving tastes."
         },
         "heading_quality": {
           "heading_count": 5,
           "vague_heading_count": 0,
           "low_specificity_heading_count": 1,
           "repeated_signature_count": 0,
-          "repeated_stem_count": 1,
+          "repeated_stem_count": 0,
           "headings": [
-            "Mistake 1: Neglecting Base Texture with Bare or Hard Flooring",
-            "Mistake 2: Overloading with Heavy or Clashing Textiles",
-            "Mistake 3: Mixing Unrelated Material Textures That Disrupt Cohesion",
-            "Mistake 4: Using Oversized or Heavy Textures That Disrupt Light and Space",
-            "Mistake 5: Skimping on Layered Textures Altogether, Leaving the Entry Cold"
+            "Defining What Good Furniture Means for Neutral Bathroom Ideas",
+            "Warm Wood Vanities and Open Shelving for Timeless Appeal",
+            "Freestanding Furniture Options for Flexible Layouts",
+            "Matching Furniture to Bathroom Size and Lighting Conditions",
+            "Confident Buying Decisions: Prioritize Longevity and Style Adaptability"
           ]
         },
         "specificity": {
-          "concept_token_hits": 9,
-          "specificity_term_hits": 11,
-          "secondary_keyword_hits": 1
+          "concept_token_hits": 12,
+          "specificity_term_hits": 15,
+          "secondary_keyword_hits": 2
         },
         "distinctiveness": {
-          "nearest_article_slug": "",
-          "max_similarity": 0.0,
+          "nearest_article_slug": "how-to-style-a-neutral-bathroom",
+          "max_similarity": 0.4,
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-06-17T12:49:52.897851+00:00"
+      "timestamp": "2026-06-19T12:44:01.949105+00:00"
     },
     {
       "article_slug": "summer-balcony-styling-mistakes-to-avoid",
@@ -90,7 +88,51 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-06-17T12:49:11.723704+00:00"
+      "timestamp": "2026-06-19T12:43:38.340300+00:00"
+    },
+    {
+      "article_slug": "scandinavian-entryway-texture-mistakes-to-avoid",
+      "cluster_id": "scandinavian_entryway",
+      "subtopic_id": "textures",
+      "angle_id": "mistakes",
+      "primary_keyword": "scandinavian entryway texture mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Section headings rely on repetitive formulas instead of distinct editorial moves."
+      ],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 135,
+          "concept_overlap": 6,
+          "first_sentence": "The Scandinavian entryway is often the first impression of a home’s understated warmth—offering a transition from the outside world into a space of calm, light, and natural texture."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 1,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 1,
+          "headings": [
+            "Mistake 1: Neglecting Base Texture with Bare or Hard Flooring",
+            "Mistake 2: Overloading with Heavy or Clashing Textiles",
+            "Mistake 3: Mixing Unrelated Material Textures That Disrupt Cohesion",
+            "Mistake 4: Using Oversized or Heavy Textures That Disrupt Light and Space",
+            "Mistake 5: Skimping on Layered Textures Altogether, Leaving the Entry Cold"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 9,
+          "specificity_term_hits": 11,
+          "secondary_keyword_hits": 1
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-06-17T12:49:52.897851+00:00"
     },
     {
       "article_slug": "best-furniture-for-a-scandinavian-kitchen",

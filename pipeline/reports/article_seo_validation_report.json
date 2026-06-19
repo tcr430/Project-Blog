@@ -1,6 +1,42 @@
 {
-  "generated_at": "2026-06-17T12:49:52.894454+00:00",
+  "generated_at": "2026-06-19T12:44:01.945819+00:00",
   "articles": [
+    {
+      "article_slug": "best-furniture-neutral-bathroom",
+      "cluster": "neutral bathroom",
+      "cluster_id": "neutral bathroom",
+      "subtopic_id": "furniture",
+      "subtopic_name": "furniture and anchors",
+      "angle_id": "best options",
+      "intent_id": "comparison",
+      "primary_keyword": "best furniture for a neutral bathroom",
+      "validation_status": "warning",
+      "warnings": [
+        "Primary keyword appears very lightly in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-06-19T12:44:01.945538+00:00"
+    },
+    {
+      "article_slug": "summer-balcony-styling-mistakes-to-avoid",
+      "cluster": "summer balcony styling",
+      "cluster_id": "summer balcony styling",
+      "subtopic_id": "refresh",
+      "subtopic_name": "seasonal refresh",
+      "angle_id": "mistakes",
+      "intent_id": "problem_solving",
+      "primary_keyword": "summer balcony styling mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Main section headings may be too generic for the chosen keyword.",
+        "None of the secondary keywords appear in the article body.",
+        "Primary keyword appears very lightly in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-06-19T12:43:38.335652+00:00"
+    },
     {
       "article_slug": "scandinavian-entryway-texture-mistakes-to-avoid",
       "cluster": "scandinavian entryway",
@@ -20,25 +56,6 @@
       "errors": [],
       "duplicate_candidate_slugs": [],
       "timestamp": "2026-06-17T12:49:52.894069+00:00"
-    },
-    {
-      "article_slug": "summer-balcony-styling-mistakes-to-avoid",
-      "cluster": "summer balcony styling",
-      "cluster_id": "summer balcony styling",
-      "subtopic_id": "refresh",
-      "subtopic_name": "seasonal refresh",
-      "angle_id": "mistakes",
-      "intent_id": "problem_solving",
-      "primary_keyword": "summer balcony styling mistakes to avoid",
-      "validation_status": "warning",
-      "warnings": [
-        "Main section headings may be too generic for the chosen keyword.",
-        "None of the secondary keywords appear in the article body.",
-        "Primary keyword appears very lightly in the article body."
-      ],
-      "errors": [],
-      "duplicate_candidate_slugs": [],
-      "timestamp": "2026-06-17T12:49:11.719390+00:00"
     },
     {
       "article_slug": "best-furniture-for-a-scandinavian-kitchen",

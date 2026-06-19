@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "bb8c5d672b1c6fcba87aad1bc2ad90948955d0404817bf25e01bf4ee14f42f66",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-neutral-bathroom/hero.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-1": {
+    "cache_key": "b48ca942f92b474569ba0d70de9cb5915a5ed437f8b2845f51742c5a9855020b",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-neutral-bathroom/section-1.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-2": {
+    "cache_key": "ba15154bbd162bf69ea22e129ed8fa33ea74eebae8e67a0e641076ede29d1cf3",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-neutral-bathroom/section-2.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-3": {
+    "cache_key": "b648da59af401d3ba07fc59a1134e4d79a71652689f157ec390f68a442b539d1",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-neutral-bathroom/section-3.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-4": {
+    "cache_key": "df9aea43f75d0cbba278973318ad746f5e2b142dba251b11fc1e2ed54bd8b44d",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-neutral-bathroom/section-4.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-5": {
+    "cache_key": "9267e0f56af45b1a6e5ed081571fc73707aa0828db2875c8998b913f55c96e8e",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-neutral-bathroom/section-5.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  }
+}

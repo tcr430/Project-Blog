@@ -1,17 +1,73 @@
 {
-  "generated_at": "2026-06-17T12:53:12.689446+00:00",
+  "generated_at": "2026-06-19T12:47:08.727015+00:00",
   "cluster_count": 47,
-  "article_count": 50,
+  "article_count": 51,
   "subtopic_count": 10,
   "angle_count": 5,
   "angle_distribution": {
-    "best_options": 24,
+    "best_options": 25,
     "how_to": 4,
     "ideas": 4,
     "mistakes": 17,
     "style_specific": 1
   },
   "clusters": [
+    {
+      "cluster_id": "neutral_bathroom",
+      "cluster_name": "neutral bathroom",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "utility_transition"
+      ],
+      "article_count": 2,
+      "primary_keywords_used": [
+        "best furniture for a neutral bathroom",
+        "how to style a neutral bathroom"
+      ],
+      "latest_article_date": "2026-06-19",
+      "latest_publication": {
+        "article_slug": "best-furniture-neutral-bathroom",
+        "article_title": "Choosing the Best Furniture for a Neutral Bathroom: Practical Options That Balance Style and Function",
+        "publish_date": "2026-06-19",
+        "subtopic_id": "furniture",
+        "subtopic_name": "furniture and anchors",
+        "angle_id": "best_options"
+      },
+      "representative_article_slugs": [
+        "best-furniture-neutral-bathroom",
+        "how-to-style-a-neutral-bathroom"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 1,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 2,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "furniture",
+          "subtopic_name": "furniture and anchors",
+          "article_count": 1,
+          "latest_article_date": "2026-06-19",
+          "representative_article_slugs": [
+            "best-furniture-neutral-bathroom"
+          ]
+        },
+        {
+          "subtopic_id": "layout",
+          "subtopic_name": "layout and foundation",
+          "article_count": 1,
+          "latest_article_date": "2026-03-20",
+          "representative_article_slugs": [
+            "how-to-style-a-neutral-bathroom"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "best_options": 1,
+        "how_to": 1
+      },
+      "status": "growing"
+    },
     {
       "cluster_id": "spring_living_room_styling",
       "cluster_name": "spring living room styling",
@@ -468,7 +524,7 @@
       "representative_article_slugs": [
         "best-furniture-for-biophilic-bedroom"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
@@ -1370,50 +1426,6 @@
       ],
       "angle_distribution": {
         "mistakes": 1
-      },
-      "status": "underdeveloped"
-    },
-    {
-      "cluster_id": "neutral_bathroom",
-      "cluster_name": "neutral bathroom",
-      "legacy_cluster_names": [],
-      "domain_ids": [
-        "utility_transition"
-      ],
-      "article_count": 1,
-      "primary_keywords_used": [
-        "how to style a neutral bathroom"
-      ],
-      "latest_article_date": "2026-03-20",
-      "latest_publication": {
-        "article_slug": "how-to-style-a-neutral-bathroom",
-        "article_title": "How to Style a Neutral Bathroom with Timeless Modern Elegance",
-        "publish_date": "2026-03-20",
-        "subtopic_id": "layout",
-        "subtopic_name": "layout and foundation",
-        "angle_id": "how_to"
-      },
-      "representative_article_slugs": [
-        "how-to-style-a-neutral-bathroom"
-      ],
-      "recent_article_count": 0,
-      "internal_link_targets_available": 0,
-      "promoted_article_count": 0,
-      "weak_article_count": 0,
-      "subtopic_count": 1,
-      "subtopic_coverage": [
-        {
-          "subtopic_id": "layout",
-          "subtopic_name": "layout and foundation",
-          "article_count": 1,
-          "latest_article_date": "2026-03-20",
-          "representative_article_slugs": [
-            "how-to-style-a-neutral-bathroom"
-          ]
-        }
-      ],
-      "angle_distribution": {
-        "how_to": 1
       },
       "status": "underdeveloped"
     },

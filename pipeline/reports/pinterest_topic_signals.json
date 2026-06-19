@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-17T12:53:12.695166+00:00",
+  "generated_at": "2026-06-19T12:47:08.732198+00:00",
   "cluster_count": 47,
   "summary": {
     "hot": 0,
@@ -655,15 +655,18 @@
     },
     {
       "cluster_name": "neutral bathroom",
-      "article_count": 1,
+      "article_count": 2,
       "article_slugs": [
+        "best-furniture-neutral-bathroom",
         "how-to-style-a-neutral-bathroom"
       ],
       "primary_keywords": [
+        "best furniture for a neutral bathroom",
         "how to style a neutral bathroom"
       ],
       "secondary_keywords": [
         "neutral bathroom ideas",
+        "how to style a neutral bathroom",
         "neutral bathroom decor",
         "neutral bathroom layout ideas",
         "neutral bathroom color palette"

@@ -1,17 +1,17 @@
 # Weekly Pipeline Report
 
-Generated: 2026-06-17
+Generated: 2026-06-19
 Window: last 7 days
 
 Articles Published: 3  
 Pins Generated: 9  
-Pins Scheduled: 68  
+Pins Scheduled: 71  
 Pins Published: 0  
 Repins Scheduled: 0
 
 ## Articles Published
-- best-furniture-earthy-entryway
 - best-furniture-for-a-scandinavian-kitchen
+- best-furniture-neutral-bathroom
 - scandinavian-entryway-texture-mistakes-to-avoid
 
 ## Top Performing Pins
