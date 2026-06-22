@@ -7,7 +7,7 @@ cluster_name: "earthy kitchen"
 cluster_slug: "earthy-kitchen"
 cluster_article_count: 1
 cluster_primary_keywords: ["best furniture for an earthy kitchen"]
-cluster_generated_at: "2026-06-19T12:47:10.427940+00:00"
+cluster_generated_at: "2026-06-22T14:37:20.631262+00:00"
 cluster_intro: "Earthy Kitchen is a useful decorating topic because it combines inspiration with practical decision-making. Readers usually arrive here looking for a clear style direction, help solving a room problem, or confidence about how to make the look feel intentional at home.
 
 This pillar page brings together the site's coverage around earthy kitchen, with article angles shaped by keyword themes such as best furniture for an earthy kitchen. That mix helps the page support both broader search intent and more specific decorating questions without feeling repetitive.
@@ -55,16 +55,16 @@ These adjacent hubs help readers keep moving through the topic without losing th
 <p><a class="cluster-hub-link" href="/clusters/neutral-kitchen/">Open this cluster</a></p>
 </div>
 <div class="cluster-hub-card">
+<h3><a href="/clusters/parisian-kitchen/">Parisian Kitchen</a></h3>
+<p>Broad editorial cluster for parisian kitchen topics.</p>
+<p class="cluster-hub-meta">1 article</p>
+<p><a class="cluster-hub-link" href="/clusters/parisian-kitchen/">Open this cluster</a></p>
+</div>
+<div class="cluster-hub-card">
 <h3><a href="/clusters/scandinavian-kitchen/">Scandinavian Kitchen</a></h3>
 <p>Broad editorial cluster for scandinavian kitchen topics.</p>
 <p class="cluster-hub-meta">1 article</p>
 <p><a class="cluster-hub-link" href="/clusters/scandinavian-kitchen/">Open this cluster</a></p>
-</div>
-<div class="cluster-hub-card">
-<h3><a href="/clusters/transitional-kitchen/">Transitional Kitchen</a></h3>
-<p>Broad editorial cluster for transitional kitchen topics.</p>
-<p class="cluster-hub-meta">1 article</p>
-<p><a class="cluster-hub-link" href="/clusters/transitional-kitchen/">Open this cluster</a></p>
 </div>
 </div>
 
@@ -74,4 +74,4 @@ A simple path through this topic so readers can build confidence one step at a t
 
 1. Start with [Furniture for an Earthy Kitchen: A Practical Buying Guide](/ideas/2026/06/10/best-furniture-for-earthy-kitchen/) for the broadest orientation.
 2. After that, move into [Neutral Kitchen](/clusters/neutral-kitchen/) to keep the topic expanding naturally.
-3. After that, move into [Scandinavian Kitchen](/clusters/scandinavian-kitchen/) to keep the topic expanding naturally.
+3. After that, move into [Parisian Kitchen](/clusters/parisian-kitchen/) to keep the topic expanding naturally.

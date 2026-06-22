@@ -7,7 +7,7 @@ cluster_name: "transitional kitchen"
 cluster_slug: "transitional-kitchen"
 cluster_article_count: 1
 cluster_primary_keywords: ["transitional kitchen texture mistakes to avoid"]
-cluster_generated_at: "2026-06-19T12:47:10.427940+00:00"
+cluster_generated_at: "2026-06-22T14:37:20.631262+00:00"
 cluster_intro: "Transitional Kitchen is a useful decorating topic because it combines inspiration with practical decision-making. Readers usually arrive here looking for a clear style direction, help solving a room problem, or confidence about how to make the look feel intentional at home.
 
 This pillar page brings together the site's coverage around transitional kitchen, with article angles shaped by keyword themes such as transitional kitchen texture mistakes to avoid. That mix helps the page support both broader search intent and more specific decorating questions without feeling repetitive.
@@ -61,10 +61,10 @@ These adjacent hubs help readers keep moving through the topic without losing th
 <p><a class="cluster-hub-link" href="/clusters/neutral-kitchen/">Open this cluster</a></p>
 </div>
 <div class="cluster-hub-card">
-<h3><a href="/clusters/scandinavian-kitchen/">Scandinavian Kitchen</a></h3>
-<p>Broad editorial cluster for scandinavian kitchen topics.</p>
+<h3><a href="/clusters/parisian-kitchen/">Parisian Kitchen</a></h3>
+<p>Broad editorial cluster for parisian kitchen topics.</p>
 <p class="cluster-hub-meta">1 article</p>
-<p><a class="cluster-hub-link" href="/clusters/scandinavian-kitchen/">Open this cluster</a></p>
+<p><a class="cluster-hub-link" href="/clusters/parisian-kitchen/">Open this cluster</a></p>
 </div>
 </div>
 

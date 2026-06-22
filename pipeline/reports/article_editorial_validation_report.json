@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-06-19T12:44:01.949595+00:00",
+  "generated_at": "2026-06-22T14:34:11.997946+00:00",
   "articles": [
     {
-      "article_slug": "best-furniture-neutral-bathroom",
-      "cluster_id": "neutral_bathroom",
-      "subtopic_id": "furniture",
-      "angle_id": "best_options",
-      "primary_keyword": "best furniture for a neutral bathroom",
+      "article_slug": "parisian-kitchen-texture-mistakes-to-avoid",
+      "cluster_id": "parisian_kitchen",
+      "subtopic_id": "textures",
+      "angle_id": "mistakes",
+      "primary_keyword": "parisian kitchen texture mistakes to avoid",
       "validation_status": "pass",
       "warnings": [],
       "errors": [],
       "checks": {
         "generic_intro": {
-          "intro_word_count": 134,
+          "intro_word_count": 118,
           "concept_overlap": 8,
-          "first_sentence": "Neutral bathrooms are a calm refuge in the home, prized for their timeless appeal and flexibility to adapt through seasons or evolving tastes."
+          "first_sentence": "Parisian kitchens embody a refined balance between effortless elegance and lived-in charm, inviting natural light and softness through layered textures."
         },
         "heading_quality": {
           "heading_count": 5,
@@ -23,25 +23,25 @@
           "repeated_signature_count": 0,
           "repeated_stem_count": 0,
           "headings": [
-            "Defining What Good Furniture Means for Neutral Bathroom Ideas",
-            "Warm Wood Vanities and Open Shelving for Timeless Appeal",
-            "Freestanding Furniture Options for Flexible Layouts",
-            "Matching Furniture to Bathroom Size and Lighting Conditions",
-            "Confident Buying Decisions: Prioritize Longevity and Style Adaptability"
+            "The Glossy Surface Trap: Why Overly Polished Finishes Undermine Texture Balance",
+            "When Wood Types Clash: The Pitfall of Mixing Unrelated Textures",
+            "Flat Texture Layers: How Lack of Contrast Makes the Room Feel Uninviting",
+            "Overscaled Elements and Texture Overload in Small Kitchens",
+            "The Missing Warmth: How Overuse of Cold Metals and Hard Surfaces Derails the Look"
           ]
         },
         "specificity": {
-          "concept_token_hits": 12,
-          "specificity_term_hits": 15,
-          "secondary_keyword_hits": 2
+          "concept_token_hits": 10,
+          "specificity_term_hits": 14,
+          "secondary_keyword_hits": 1
         },
         "distinctiveness": {
-          "nearest_article_slug": "how-to-style-a-neutral-bathroom",
-          "max_similarity": 0.4,
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-06-19T12:44:01.949105+00:00"
+      "timestamp": "2026-06-22T14:34:11.997441+00:00"
     },
     {
       "article_slug": "summer-balcony-styling-mistakes-to-avoid",
@@ -88,7 +88,49 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-06-19T12:43:38.340300+00:00"
+      "timestamp": "2026-06-22T14:32:53.147891+00:00"
+    },
+    {
+      "article_slug": "best-furniture-neutral-bathroom",
+      "cluster_id": "neutral_bathroom",
+      "subtopic_id": "furniture",
+      "angle_id": "best_options",
+      "primary_keyword": "best furniture for a neutral bathroom",
+      "validation_status": "pass",
+      "warnings": [],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 134,
+          "concept_overlap": 8,
+          "first_sentence": "Neutral bathrooms are a calm refuge in the home, prized for their timeless appeal and flexibility to adapt through seasons or evolving tastes."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 1,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Defining What Good Furniture Means for Neutral Bathroom Ideas",
+            "Warm Wood Vanities and Open Shelving for Timeless Appeal",
+            "Freestanding Furniture Options for Flexible Layouts",
+            "Matching Furniture to Bathroom Size and Lighting Conditions",
+            "Confident Buying Decisions: Prioritize Longevity and Style Adaptability"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 12,
+          "specificity_term_hits": 15,
+          "secondary_keyword_hits": 2
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "how-to-style-a-neutral-bathroom",
+          "max_similarity": 0.4,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-06-19T12:44:01.949105+00:00"
     },
     {
       "article_slug": "scandinavian-entryway-texture-mistakes-to-avoid",

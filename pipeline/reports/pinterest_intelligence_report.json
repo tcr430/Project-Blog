@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-19T12:43:17.951753+00:00",
+  "generated_at": "2026-06-22T14:32:30.914838+00:00",
   "overview": {
-    "pin_count": 119,
+    "pin_count": 122,
     "published_pin_count": 51,
     "analytics_ready_pin_count": 0,
-    "tracked_article_count": 37
+    "tracked_article_count": 38
   },
   "best_performing_clusters": [
     {
@@ -334,7 +334,7 @@
     {
       "cluster_id": "neutral_bathroom",
       "cluster_name": "neutral bathroom",
-      "pin_count": 4,
+      "pin_count": 7,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -346,6 +346,7 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
+        "best-furniture-neutral-bathroom",
         "how-to-style-a-neutral-bathroom"
       ]
     },
@@ -868,6 +869,25 @@
       ]
     },
     {
+      "cluster_id": "neutral_bathroom",
+      "subtopic_id": "furniture",
+      "subtopic_name": "furniture and anchors",
+      "pin_count": 3,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-neutral-bathroom"
+      ]
+    },
+    {
       "cluster_id": "parisian_bedroom",
       "subtopic_id": "furniture",
       "subtopic_name": "furniture and anchors",
@@ -1365,7 +1385,7 @@
   "best_performing_angles": [
     {
       "angle_id": "best_options",
-      "pin_count": 60,
+      "pin_count": 63,
       "published_pin_count": 24,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1554,6 +1574,27 @@
       ]
     },
     {
+      "visual_style_key": "bottom_title|crisp_modern|color_palette|comparison",
+      "style_name": "bottom-title",
+      "visual_family_id": "crisp_modern",
+      "shot_library_id": "color_palette",
+      "intent_id": "comparison",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-neutral-bathroom"
+      ]
+    },
+    {
       "visual_style_key": "bottom_title|crisp_modern|color_palette|implementation",
       "style_name": "bottom-title",
       "visual_family_id": "crisp_modern",
@@ -1625,7 +1666,7 @@
       "visual_family_id": "crisp_modern",
       "shot_library_id": "lighting",
       "intent_id": "comparison",
-      "pin_count": 5,
+      "pin_count": 4,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1717,7 +1758,7 @@
       "visual_family_id": "warm_layered",
       "shot_library_id": "storage_organization",
       "intent_id": "comparison",
-      "pin_count": 1,
+      "pin_count": 2,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1738,7 +1779,7 @@
       "visual_family_id": "warm_layered",
       "shot_library_id": "textures_materials",
       "intent_id": "problem_solving",
-      "pin_count": 5,
+      "pin_count": 6,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1886,6 +1927,27 @@
       ]
     },
     {
+      "visual_style_key": "centered_title|crisp_modern|color_palette|comparison",
+      "style_name": "centered-title",
+      "visual_family_id": "crisp_modern",
+      "shot_library_id": "color_palette",
+      "intent_id": "comparison",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-neutral-bathroom"
+      ]
+    },
+    {
       "visual_style_key": "centered_title|crisp_modern|color_palette|implementation",
       "style_name": "centered-title",
       "visual_family_id": "crisp_modern",
@@ -1936,7 +1998,7 @@
       "visual_family_id": "crisp_modern",
       "shot_library_id": "lighting",
       "intent_id": "comparison",
-      "pin_count": 1,
+      "pin_count": 2,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1948,7 +2010,8 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
-        "balancing-light-layers-best-lighting-for-living-room"
+        "balancing-light-layers-best-lighting-for-living-room",
+        "best-lighting-for-bathroom-layered-approach"
       ]
     },
     {
@@ -2390,6 +2453,27 @@
       ]
     },
     {
+      "visual_style_key": "top_title|crisp_modern|color_palette|comparison",
+      "style_name": "top-title",
+      "visual_family_id": "crisp_modern",
+      "shot_library_id": "color_palette",
+      "intent_id": "comparison",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-neutral-bathroom"
+      ]
+    },
+    {
       "visual_style_key": "top_title|crisp_modern|color_palette|implementation",
       "style_name": "top-title",
       "visual_family_id": "crisp_modern",
@@ -2547,33 +2631,12 @@
       ]
     },
     {
-      "visual_style_key": "top_title|warm_layered|storage_organization|comparison",
-      "style_name": "top-title",
-      "visual_family_id": "warm_layered",
-      "shot_library_id": "storage_organization",
-      "intent_id": "comparison",
-      "pin_count": 1,
-      "published_pin_count": 0,
-      "analytics_ready_count": 0,
-      "average_score": 0.0,
-      "average_impressions": 0.0,
-      "average_saves": 0.0,
-      "average_outbound_clicks": 0.0,
-      "average_pin_clicks": 0.0,
-      "average_closeups": 0.0,
-      "signal_label": "no_data",
-      "signal_boost": 0,
-      "top_article_slugs": [
-        "best-furniture-earthy-entryway"
-      ]
-    },
-    {
       "visual_style_key": "top_title|warm_layered|textures_materials|problem_solving",
       "style_name": "top-title",
       "visual_family_id": "warm_layered",
       "shot_library_id": "textures_materials",
       "intent_id": "problem_solving",
-      "pin_count": 3,
+      "pin_count": 2,
       "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -2586,8 +2649,7 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "japandi-bathroom-texture-mistakes-to-avoid",
-        "scandinavian-entryway-texture-mistakes-to-avoid",
-        "transitional-entryway-texture-mistakes-to-avoid"
+        "scandinavian-entryway-texture-mistakes-to-avoid"
       ]
     }
   ],
@@ -2784,7 +2846,7 @@
     "angles": [
       {
         "angle_id": "best_options",
-        "pin_count": 60,
+        "pin_count": 63,
         "published_pin_count": 24,
         "analytics_ready_count": 0,
         "average_score": 0.0,

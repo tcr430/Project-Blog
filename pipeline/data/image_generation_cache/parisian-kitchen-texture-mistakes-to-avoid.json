@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "266cff2afea5661380a352aa4c34805943fd555b4070e63a88d2bf227225afb6",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/parisian-kitchen-texture-mistakes-to-avoid/hero.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-1": {
+    "cache_key": "b74b45d51f81189a72203fe1b10718c9eadb0b609682bd2e5b70531b004d7af1",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/parisian-kitchen-texture-mistakes-to-avoid/section-1.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-2": {
+    "cache_key": "b671b80c942755a006290f4a8b582644581252fabe41ebcc7ae67c6aa7523745",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/parisian-kitchen-texture-mistakes-to-avoid/section-2.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-3": {
+    "cache_key": "48874d5a3c9236fb88818142814c92fac4506c39e8cefba69712103faafed19b",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/parisian-kitchen-texture-mistakes-to-avoid/section-3.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-4": {
+    "cache_key": "555ebbe365d9a0aa37dcc09e5842779f3f4deb61c82b4e3160ddd5368deb8594",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/parisian-kitchen-texture-mistakes-to-avoid/section-4.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-5": {
+    "cache_key": "9e4af129ff0639a5ebabd1ca423003e6becb1cfd4ccafbee2ceccfd21a5a0d80",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/parisian-kitchen-texture-mistakes-to-avoid/section-5.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  }
+}

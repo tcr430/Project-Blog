@@ -1,17 +1,18 @@
 # Weekly Pipeline Report
 
-Generated: 2026-06-19
+Generated: 2026-06-22
 Window: last 7 days
 
-Articles Published: 3  
-Pins Generated: 9  
-Pins Scheduled: 71  
+Articles Published: 4  
+Pins Generated: 12  
+Pins Scheduled: 74  
 Pins Published: 0  
 Repins Scheduled: 0
 
 ## Articles Published
 - best-furniture-for-a-scandinavian-kitchen
 - best-furniture-neutral-bathroom
+- parisian-kitchen-texture-mistakes-to-avoid
 - scandinavian-entryway-texture-mistakes-to-avoid
 
 ## Top Performing Pins

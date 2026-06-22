@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-19T12:47:08.727015+00:00",
-  "cluster_count": 47,
-  "article_count": 51,
+  "generated_at": "2026-06-22T14:37:18.903191+00:00",
+  "cluster_count": 48,
+  "article_count": 52,
   "subtopic_count": 10,
   "angle_count": 5,
   "angle_distribution": {
     "best_options": 25,
     "how_to": 4,
     "ideas": 4,
-    "mistakes": 17,
+    "mistakes": 18,
     "style_specific": 1
   },
   "clusters": [
@@ -480,7 +480,7 @@
       "representative_article_slugs": [
         "biophilic-bathroom-texture-mistakes-to-avoid"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
@@ -1052,7 +1052,7 @@
       "representative_article_slugs": [
         "best-decor-accents-for-living-room"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
@@ -1690,6 +1690,50 @@
       ],
       "angle_distribution": {
         "best_options": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_id": "parisian_kitchen",
+      "cluster_name": "parisian kitchen",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "kitchens_dining"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "parisian kitchen texture mistakes to avoid"
+      ],
+      "latest_article_date": "2026-06-22",
+      "latest_publication": {
+        "article_slug": "parisian-kitchen-texture-mistakes-to-avoid",
+        "article_title": "What Goes Wrong with Parisian Kitchen?",
+        "publish_date": "2026-06-22",
+        "subtopic_id": "textures",
+        "subtopic_name": "textures and layers",
+        "angle_id": "mistakes"
+      },
+      "representative_article_slugs": [
+        "parisian-kitchen-texture-mistakes-to-avoid"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "textures",
+          "subtopic_name": "textures and layers",
+          "article_count": 1,
+          "latest_article_date": "2026-06-22",
+          "representative_article_slugs": [
+            "parisian-kitchen-texture-mistakes-to-avoid"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "mistakes": 1
       },
       "status": "underdeveloped"
     },

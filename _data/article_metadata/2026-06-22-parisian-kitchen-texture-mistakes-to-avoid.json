@@ -1,0 +1,235 @@
+{
+  "title": "What Goes Wrong with Parisian Kitchen?",
+  "seo_title": "Parisian Kitchen Texture Mistakes to Avoid",
+  "title_family": "question_led",
+  "seo_title_family": "problem_mistake_led",
+  "title_candidates": [
+    {
+      "title": "What Goes Wrong with Parisian Kitchen?",
+      "family": "question_led",
+      "source": "rules",
+      "score": 102.6,
+      "seo_score": 92.2,
+      "opening": "what",
+      "max_similarity": 0.5,
+      "notes": [
+        "weak keyword/topic coverage"
+      ]
+    },
+    {
+      "title": "Parisian Kitchen: Common Mistakes to Avoid",
+      "family": "direct_guide",
+      "source": "rules",
+      "score": 100.86,
+      "seo_score": 116.57,
+      "opening": "parisian kitchen:",
+      "max_similarity": 0.5,
+      "notes": [
+        "repeated title skeleton"
+      ]
+    },
+    {
+      "title": "Parisian Kitchen Texture Mistakes to Avoid for a Balanced and Timeless Look",
+      "family": "problem_mistake_led",
+      "source": "model",
+      "score": 95.0,
+      "seo_score": 100.0,
+      "opening": "parisian kitchen",
+      "max_similarity": 0.571,
+      "notes": [
+        "truncation risk",
+        "family overused site-wide"
+      ]
+    },
+    {
+      "title": "Parisian Kitchen Texture Mistakes to Avoid",
+      "family": "problem_mistake_led",
+      "source": "keyword",
+      "score": 94.0,
+      "seo_score": 117.0,
+      "opening": "parisian kitchen",
+      "max_similarity": 0.714,
+      "notes": [
+        "family overused site-wide",
+        "repeated title skeleton",
+        "close to existing title"
+      ]
+    },
+    {
+      "title": "Parisian Kitchen: The Mistakes That Throw It Off",
+      "family": "problem_mistake_led",
+      "source": "rules",
+      "score": 88.91,
+      "seo_score": 94.09,
+      "opening": "parisian kitchen:",
+      "max_similarity": 0.167,
+      "notes": [
+        "weak keyword/topic coverage",
+        "family overused site-wide"
+      ]
+    },
+    {
+      "title": "Parisian Kitchen: The Fixes That Make the Difference",
+      "family": "framework_process",
+      "source": "rules",
+      "score": 87.27,
+      "seo_score": 90.73,
+      "opening": "parisian kitchen:",
+      "max_similarity": 0.125,
+      "notes": [
+        "weak keyword/topic coverage",
+        "family overused site-wide"
+      ]
+    }
+  ],
+  "slug": "parisian-kitchen-texture-mistakes-to-avoid",
+  "publish_date": "2026-06-22",
+  "published_at": "2026-06-22T14:34:12.009328",
+  "meta_description": "Discover common texture mistakes that can disrupt the relaxed elegance of a Parisian kitchen and learn refined fixes to create a warm, layered, and balanced space.",
+  "permalink": "/mistakes%20%26%20fixes/2026/06/22/parisian-kitchen-texture-mistakes-to-avoid/",
+  "article_relative_url": "/mistakes%20%26%20fixes/2026/06/22/parisian-kitchen-texture-mistakes-to-avoid/",
+  "primary_keyword": "parisian kitchen texture mistakes to avoid",
+  "secondary_keywords": [
+    "parisian kitchen ideas",
+    "how to style a parisian kitchen",
+    "parisian kitchen decor",
+    "parisian kitchen layout ideas"
+  ],
+  "topical_cluster": "parisian kitchen",
+  "cluster_name": "parisian kitchen",
+  "cluster_keywords": [
+    "parisian kitchen ideas",
+    "how to style a parisian kitchen",
+    "parisian kitchen decor",
+    "parisian kitchen layout ideas",
+    "parisian kitchen color palette",
+    "parisian kitchen layout mistakes to avoid",
+    "best layout for a parisian kitchen",
+    "parisian kitchen color palette ideas",
+    "how to choose colors for a parisian kitchen",
+    "parisian kitchen color mistakes to avoid",
+    "parisian kitchen paint and color ideas",
+    "parisian kitchen furniture ideas"
+  ],
+  "search_intent": "problem solution",
+  "estimated_reading_time": "7 min read",
+  "author_id": "elena_hart",
+  "author_name": "Elena Hart",
+  "categories": [
+    "Mistakes & Fixes"
+  ],
+  "excerpt": "Discover common texture mistakes that can disrupt the relaxed elegance of a Parisian kitchen and learn refined fixes to create a warm, layered, and balanced space.",
+  "featured": false,
+  "domain_id": "kitchens_dining",
+  "cluster_id": "parisian_kitchen",
+  "subtopic_id": "textures",
+  "subtopic_name": "textures and layers",
+  "angle_id": "mistakes",
+  "intent_id": "problem_solving",
+  "modifier": "",
+  "internal_link_suggestions": [],
+  "keywords": [
+    "parisian kitchen texture mistakes to avoid",
+    "parisian kitchen ideas",
+    "how to style a parisian kitchen",
+    "parisian kitchen decor",
+    "parisian kitchen layout ideas"
+  ],
+  "hero_image_prompt": "Create a hero image for the article 'What Goes Wrong with Parisian Kitchen?'. Show a focused problem-area vignette that expresses 'parisian kitchen' in a magazine-worthy but believable way. Show a convincing room that makes the fix or correction feel tangible. Prioritize one memorable focal point, clear spatial depth, and an image that feels editorial rather than staged for ecommerce. Style direction: clean, sculptural, modern editorial restraint. Visual language: corrective, practical, and specific while still attractive enough for editorial use. Room context: kitchen. Lighting: clear daylight with crisp shadow definition. Palette: soft white, black accents, stone, pale oak. Subject emphasis: tactile layering, material contrast, and a room that feels touchable and rich without clutter. Primary composition: focused problem-area vignette. Occasional variation: tight correction crop. Medium: editorial interior photography. Constraints: realistic materials, no text, no logos, no people, no artificial collage effects. Keep the architecture believable and the furniture layout realistic for a real home. Do not duplicate the main focal furnishing unless the prompt clearly calls for a shared or twin-room setup. Avoid mirrored, side-by-side, or repeated hero objects that make the room read as AI-generated.. Editorial interior photography, natural daylight, realistic materials, no text, no logos, no people.",
+  "section_image_prompts": [
+    "Create section image 1 for the article 'What Goes Wrong with Parisian Kitchen?'. Focus on 'The Glossy Surface Trap: Why Overly Polished Finishes Undermine Texture Balance'. Use a room-wide shot that shows layered materials working together. Let the main emphasis be fabric layering. Highlight scale fixes. Focus on problem areas, corrections, and proportion or material adjustments. The image should clearly support this specific section rather than repeat the hero image. Vary focal distance, crop, and visual weight so the image set feels intentionally diverse. Style direction: clean, sculptural, modern editorial restraint. Visual language: corrective, practical, and specific while still attractive enough for editorial use. Room context: kitchen. Lighting: clear daylight with crisp shadow definition. Palette: soft white, black accents, stone, pale oak. Subject emphasis: tactile layering, material contrast, and a room that feels touchable and rich without clutter. Primary composition: quiet editorial crop. Occasional variation: before-and-after style framing without literal split screens. Medium: editorial interior photography. Constraints: realistic materials, no text, no logos, no people, no artificial collage effects. Keep the architecture believable and the furniture layout realistic for a real home. Do not duplicate the main focal furnishing unless the prompt clearly calls for a shared or twin-room setup. Avoid mirrored, side-by-side, or repeated hero objects that make the room read as AI-generated. For detail-driven images, prefer a tight crop of one believable setup instead of widening into multiple duplicated furniture groupings.. Editorial interior photography, natural daylight, realistic materials, no text, no logos, no people.",
+    "Create section image 2 for the article 'What Goes Wrong with Parisian Kitchen?'. Focus on 'When Wood Types Clash: The Pitfall of Mixing Unrelated Textures'. Use a tight tactile close-up of fabric and finish interplay. Let the main emphasis be wood and stone balance. Highlight balance corrections. Focus on problem areas, corrections, and proportion or material adjustments. The image should clearly support this specific section rather than repeat the hero image. Vary focal distance, crop, and visual weight so the image set feels intentionally diverse. Style direction: clean, sculptural, modern editorial restraint. Visual language: corrective, practical, and specific while still attractive enough for editorial use. Room context: kitchen. Lighting: clear daylight with crisp shadow definition. Palette: soft white, black accents, stone, pale oak. Subject emphasis: tactile layering, material contrast, and a room that feels touchable and rich without clutter. Primary composition: layered vignette. Occasional variation: focused problem-area vignette. Medium: editorial interior photography. Constraints: realistic materials, no text, no logos, no people, no artificial collage effects. Keep the architecture believable and the furniture layout realistic for a real home. Do not duplicate the main focal furnishing unless the prompt clearly calls for a shared or twin-room setup. Avoid mirrored, side-by-side, or repeated hero objects that make the room read as AI-generated. For detail-driven images, prefer a tight crop of one believable setup instead of widening into multiple duplicated furniture groupings.. Editorial interior photography, natural daylight, realistic materials, no text, no logos, no people.",
+    "Create section image 3 for the article 'What Goes Wrong with Parisian Kitchen?'. Focus on 'Flat Texture Layers: How Lack of Contrast Makes the Room Feel Uninviting'. Use a furniture-and-surface composition highlighting material balance. Let the main emphasis be finish contrast. Highlight material mismatches. Focus on problem areas, corrections, and proportion or material adjustments. The image should clearly support this specific section rather than repeat the hero image. Vary focal distance, crop, and visual weight so the image set feels intentionally diverse. Style direction: clean, sculptural, modern editorial restraint. Visual language: corrective, practical, and specific while still attractive enough for editorial use. Room context: kitchen. Lighting: clear daylight with crisp shadow definition. Palette: soft white, black accents, stone, pale oak. Subject emphasis: tactile layering, material contrast, and a room that feels touchable and rich without clutter. Primary composition: before-and-after style framing without literal split screens. Occasional variation: surface detail view. Medium: editorial interior photography. Constraints: realistic materials, no text, no logos, no people, no artificial collage effects. Keep the architecture believable and the furniture layout realistic for a real home. Do not duplicate the main focal furnishing unless the prompt clearly calls for a shared or twin-room setup. Avoid mirrored, side-by-side, or repeated hero objects that make the room read as AI-generated.. Editorial interior photography, natural daylight, realistic materials, no text, no logos, no people.",
+    "Create section image 4 for the article 'What Goes Wrong with Parisian Kitchen?'. Focus on 'Overscaled Elements and Texture Overload in Small Kitchens'. Use a small styling vignette with tactile contrast. Let the main emphasis be soft-versus-hard texture interplay. Highlight scale fixes. Focus on problem areas, corrections, and proportion or material adjustments. The image should clearly support this specific section rather than repeat the hero image. Vary focal distance, crop, and visual weight so the image set feels intentionally diverse. Style direction: clean, sculptural, modern editorial restraint. Visual language: corrective, practical, and specific while still attractive enough for editorial use. Room context: kitchen. Lighting: clear daylight with crisp shadow definition. Palette: soft white, black accents, stone, pale oak. Subject emphasis: tactile layering, material contrast, and a room that feels touchable and rich without clutter. Primary composition: tight correction crop. Occasional variation: before-and-after style framing without literal split screens. Medium: editorial interior photography. Constraints: realistic materials, no text, no logos, no people, no artificial collage effects. Keep the architecture believable and the furniture layout realistic for a real home. Do not duplicate the main focal furnishing unless the prompt clearly calls for a shared or twin-room setup. Avoid mirrored, side-by-side, or repeated hero objects that make the room read as AI-generated.. Editorial interior photography, natural daylight, realistic materials, no text, no logos, no people.",
+    "Create section image 5 for the article 'What Goes Wrong with Parisian Kitchen?'. Focus on 'The Missing Warmth: How Overuse of Cold Metals and Hard Surfaces Derails the Look'. Use a quiet finishing composition focused on layered texture. Let the main emphasis be restrained tactile depth. Highlight balance corrections. Focus on problem areas, corrections, and proportion or material adjustments. The image should clearly support this specific section rather than repeat the hero image. Vary focal distance, crop, and visual weight so the image set feels intentionally diverse. Style direction: clean, sculptural, modern editorial restraint. Visual language: corrective, practical, and specific while still attractive enough for editorial use. Room context: kitchen. Lighting: clear daylight with crisp shadow definition. Palette: soft white, black accents, stone, pale oak. Subject emphasis: tactile layering, material contrast, and a room that feels touchable and rich without clutter. Primary composition: tight correction crop. Occasional variation: tactile close crop. Medium: editorial interior photography. Constraints: realistic materials, no text, no logos, no people, no artificial collage effects. Keep the architecture believable and the furniture layout realistic for a real home. Do not duplicate the main focal furnishing unless the prompt clearly calls for a shared or twin-room setup. Avoid mirrored, side-by-side, or repeated hero objects that make the room read as AI-generated.. Editorial interior photography, natural daylight, realistic materials, no text, no logos, no people."
+  ],
+  "hero_image_path": "/assets/img/parisian-kitchen-texture-mistakes-to-avoid/hero.png",
+  "hero_image_alt": "What Goes Wrong with Parisian Kitchen? interior design inspiration",
+  "section_image_paths": [
+    "/assets/img/parisian-kitchen-texture-mistakes-to-avoid/section-1.png",
+    "/assets/img/parisian-kitchen-texture-mistakes-to-avoid/section-2.png",
+    "/assets/img/parisian-kitchen-texture-mistakes-to-avoid/section-3.png",
+    "/assets/img/parisian-kitchen-texture-mistakes-to-avoid/section-4.png",
+    "/assets/img/parisian-kitchen-texture-mistakes-to-avoid/section-5.png"
+  ],
+  "section_image_alts": [
+    "What Goes Wrong with Parisian Kitchen? section 1 interior styling detail",
+    "What Goes Wrong with Parisian Kitchen? section 2 interior styling detail",
+    "What Goes Wrong with Parisian Kitchen? section 3 interior styling detail",
+    "What Goes Wrong with Parisian Kitchen? section 4 interior styling detail",
+    "What Goes Wrong with Parisian Kitchen? section 5 interior styling detail"
+  ],
+  "pinterest_titles": [
+    "Avoid These Texture Pitfalls in Your Parisian Kitchen",
+    "How to Fix Common Parisian Kitchen Texture Mistakes",
+    "Create Warmth in Your Parisian Kitchen by Avoiding These Texture Errors",
+    "The Texture Tweaks Every Parisian Kitchen Needs",
+    "Simple Corrections for Parisian Kitchen Texture Imbalance"
+  ],
+  "pinterest_descriptions": [
+    "Explore practical fixes to common texture mistakes that can dull the charm of your Parisian kitchen and learn how to invite warmth and balance through natural materials.",
+    "Struggling with your Parisian kitchen decor? Discover which texture mistakes to avoid and how to layer linens, oak, and stone with calm precision.",
+    "Master the art of layering texture in a Parisian kitchen by recognizing and correcting these frequent design missteps for a timeless, lived-in feel.",
+    "These texture tips will help you achieve the quiet warmth and visual balance that define Parisian kitchen style, avoiding common decor misfires.",
+    "Learn how simple texture corrections can turn a flat or cold Parisian kitchen into a softly layered, inviting space that feels naturally elegant."
+  ],
+  "visual_direction": {
+    "family_id": "crisp_modern",
+    "mood": "clean, sculptural, modern editorial restraint",
+    "lighting": "clear daylight with crisp shadow definition",
+    "palette": "soft white, black accents, stone, pale oak",
+    "intent_id": "problem_solving",
+    "profile_id": "problem_solving",
+    "shot_library_id": "textures_materials"
+  },
+  "image_prompt_diagnostics": {
+    "sameness_warnings": [],
+    "recent_articles_checked": 12
+  },
+  "affiliate_products": [],
+  "monetization_profile": {
+    "profile_id": "fix_oriented",
+    "name": "Fix Oriented",
+    "description": "Corrective, problem-solving monetization for mistakes-and-fixes articles.",
+    "min_products_to_enable": 1,
+    "max_products": 2,
+    "max_inline_links": 2,
+    "preferred_section_indexes": [
+      2,
+      4
+    ],
+    "shop_block_enabled": true,
+    "shop_block_kicker": "Helpful Fixes",
+    "shop_block_heading": "Products That Can Help Fix the Problem",
+    "shop_button_label": "See Fix",
+    "prompt_guidance": "Use fix-oriented product mentions sparingly and only where they directly help solve the problem discussed in the section.",
+    "inline_sentence_templates": [
+      "A useful fix here is [{title}]({affiliate_url}) if you want a straightforward solution.",
+      "When this issue needs a practical correction, [{title}]({affiliate_url}) is worth considering."
+    ]
+  },
+  "faq_items": [
+    {
+      "question": "How can I add texture to a small Parisian kitchen without cluttering it?",
+      "answer": "Focus on layering subtle tactile contrasts, like a linen curtain paired with honed stone and matte oak. Choose lighter tones and slim profiles to maintain openness while introducing soft texture."
+    },
+    {
+      "question": "Are glossy cabinets appropriate in Parisian kitchens?",
+      "answer": "Glossy finishes tend to conflict with the natural, calming texture palette. Matte or lightly textured wood or painted cabinetry better support the timeless, cozy feel."
+    },
+    {
+      "question": "What wood finish best complements Parisian kitchen stone surfaces?",
+      "answer": "Natural oak with a matte or lightly brushed finish harmonizes well with stone and balances texture without overpowering."
+    },
+    {
+      "question": "How do I balance metals in Parisian kitchen decor?",
+      "answer": "Favor warm or muted metal finishes over cold, reflective ones. Brushed brass or aged bronze bring warmth without being too flashy."
+    },
+    {
+      "question": "Can texture mistakes ruin the overall Parisian kitchen look?",
+      "answer": "Texture mistakes often disrupt visual balance and warmth but are reversible with thoughtful layering and material choices. A Parisian kitchen conveys a quiet sense of ease through texture as much as form. Avoiding glossy surfaces that betray the natural materials’ spirit, choosing wood textures that harmonize rather than compete, and layering tactile contrasts with care nurture this aesthetic’s distinctive temperance. Paying attention to scale and material temperature ensures the room feels both balanced and inviting — not cold, cluttered, or overstated. Focus first on editing glossy finishes and mismatched woods; these shifts yield layered warmth that feels fresh yet enduring. Approached thoughtfully, texture becomes the language through which your Parisian kitchen quietly speaks of graceful, lived-in beauty."
+    }
+  ],
+  "post_path": "/home/runner/work/Project-Blog/Project-Blog/_posts/2026-06-22-parisian-kitchen-texture-mistakes-to-avoid.md",
+  "updated_at": "2026-06-22T14:34:12.229695"
+}
