@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "998dd52f98177016ef567d729692655f21a14be9386c5c0ab6b12d5efae65c54",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/parisian-entryway-texture-mistakes-to-avoid/hero.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-1": {
+    "cache_key": "de79792eb7204ed865286e1e6009035d20a75292bd265f5ac5d0d9695128b2a9",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/parisian-entryway-texture-mistakes-to-avoid/section-1.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-2": {
+    "cache_key": "a3053807fa07873eb5a21fff4059a105e858721c15bfd3aeb06baf8cbbbeeb31",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/parisian-entryway-texture-mistakes-to-avoid/section-2.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-3": {
+    "cache_key": "f6b8867df4fb84d2f35f230358e6021ccef8ffb465f8103bef11c69215bd035c",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/parisian-entryway-texture-mistakes-to-avoid/section-3.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-4": {
+    "cache_key": "7309af058bebc11a9e50e956a84b8e2f8d56d55cf90e895c2fa80e6dc64e8ac5",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/parisian-entryway-texture-mistakes-to-avoid/section-4.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-5": {
+    "cache_key": "36b651b150a3d8d63695875249dbe83e2449a2ffb5ed7ed78691c48d72e2caa0",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/parisian-entryway-texture-mistakes-to-avoid/section-5.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  }
+}

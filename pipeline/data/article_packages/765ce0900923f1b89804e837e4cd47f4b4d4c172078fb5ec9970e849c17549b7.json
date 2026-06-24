@@ -1,0 +1,193 @@
+{
+  "saved_at": "2026-06-24T11:43:28.657650+00:00",
+  "package": {
+    "title": "Parisian Entryway: Common Mistakes to Avoid",
+    "seo_title": "Parisian Entryway Texture Mistakes to Avoid",
+    "title_family": "direct_guide",
+    "seo_title_family": "problem_mistake_led",
+    "title_candidates": [
+      {
+        "title": "Parisian Entryway: Common Mistakes to Avoid",
+        "family": "direct_guide",
+        "source": "rules",
+        "score": 100.86,
+        "seo_score": 116.57,
+        "opening": "parisian entryway:",
+        "max_similarity": 0.5,
+        "notes": [
+          "repeated title skeleton"
+        ]
+      },
+      {
+        "title": "Parisian Entryway Texture Mistakes to Avoid",
+        "family": "problem_mistake_led",
+        "source": "keyword",
+        "score": 94.0,
+        "seo_score": 117.0,
+        "opening": "parisian entryway",
+        "max_similarity": 0.714,
+        "notes": [
+          "family overused site-wide",
+          "repeated title skeleton",
+          "close to existing title"
+        ]
+      },
+      {
+        "title": "Parisian Entryway: The Mistakes That Throw It Off",
+        "family": "problem_mistake_led",
+        "source": "rules",
+        "score": 88.91,
+        "seo_score": 94.09,
+        "opening": "parisian entryway:",
+        "max_similarity": 0.167,
+        "notes": [
+          "weak keyword/topic coverage",
+          "family overused site-wide"
+        ]
+      },
+      {
+        "title": "Parisian Entryway: The Fixes That Make the Difference",
+        "family": "framework_process",
+        "source": "rules",
+        "score": 87.27,
+        "seo_score": 90.73,
+        "opening": "parisian entryway:",
+        "max_similarity": 0.125,
+        "notes": [
+          "weak keyword/topic coverage",
+          "family overused site-wide"
+        ]
+      },
+      {
+        "title": "What Goes Wrong with Parisian Entryway?",
+        "family": "question_led",
+        "source": "rules",
+        "score": 76.6,
+        "seo_score": 72.2,
+        "opening": "what",
+        "max_similarity": 0.714,
+        "notes": [
+          "weak keyword/topic coverage",
+          "repeated title skeleton",
+          "close to existing title"
+        ]
+      },
+      {
+        "title": "Parisian Entryway Texture Mistakes to Avoid for a Balanced, Inviting Space",
+        "family": "problem_mistake_led",
+        "source": "model",
+        "score": 69.82,
+        "seo_score": 81.18,
+        "opening": "parisian entryway",
+        "max_similarity": 0.692,
+        "notes": [
+          "truncation risk",
+          "family overused site-wide",
+          "repeated title skeleton",
+          "close to existing title"
+        ]
+      }
+    ],
+    "slug": "parisian-entryway-texture-mistakes-to-avoid",
+    "meta_description": "Discover common texture mistakes in Parisian entryway decor and learn how to fix them for a harmonious, layered look that feels natural and well-balanced.",
+    "keywords": [
+      "parisian entryway texture mistakes to avoid",
+      "parisian entryway ideas",
+      "how to style a parisian entryway",
+      "parisian entryway decor",
+      "parisian entryway layout ideas"
+    ],
+    "affiliate_products": [],
+    "monetization_profile": {
+      "profile_id": "fix_oriented",
+      "name": "Fix Oriented",
+      "description": "Corrective, problem-solving monetization for mistakes-and-fixes articles.",
+      "min_products_to_enable": 1,
+      "max_products": 2,
+      "max_inline_links": 2,
+      "preferred_section_indexes": [
+        2,
+        4
+      ],
+      "shop_block_enabled": true,
+      "shop_block_kicker": "Helpful Fixes",
+      "shop_block_heading": "Products That Can Help Fix the Problem",
+      "shop_button_label": "See Fix",
+      "prompt_guidance": "Use fix-oriented product mentions sparingly and only where they directly help solve the problem discussed in the section.",
+      "inline_sentence_templates": [
+        "A useful fix here is [{title}]({affiliate_url}) if you want a straightforward solution.",
+        "When this issue needs a practical correction, [{title}]({affiliate_url}) is worth considering."
+      ]
+    },
+    "primary_keyword": "parisian entryway texture mistakes to avoid",
+    "secondary_keywords": [
+      "parisian entryway ideas",
+      "how to style a parisian entryway",
+      "parisian entryway decor",
+      "parisian entryway layout ideas"
+    ],
+    "topical_cluster": "parisian entryway",
+    "cluster_keywords": [
+      "parisian entryway ideas",
+      "how to style a parisian entryway",
+      "parisian entryway decor",
+      "parisian entryway layout ideas",
+      "parisian entryway color palette",
+      "parisian entryway layout mistakes to avoid",
+      "best layout for a parisian entryway",
+      "parisian entryway color palette ideas",
+      "how to choose colors for a parisian entryway",
+      "parisian entryway color mistakes to avoid",
+      "parisian entryway paint and color ideas",
+      "parisian entryway furniture ideas"
+    ],
+    "search_intent": "problem solution",
+    "intent_id": "problem_solving",
+    "domain_id": "utility_transition",
+    "cluster_id": "parisian_entryway",
+    "subtopic_id": "textures",
+    "subtopic_name": "textures and layers",
+    "angle_id": "mistakes",
+    "modifier": "",
+    "internal_link_suggestions": [],
+    "estimated_reading_time": "7 min read",
+    "hero_image_prompt": "Create a hero image for the article 'Parisian Entryway: Common Mistakes to Avoid'. Show a focused problem-area vignette that expresses 'parisian entryway' in a magazine-worthy but believable way. Show a convincing room that makes the fix or correction feel tangible. Prioritize one memorable focal point, clear spatial depth, and an image that feels editorial rather than staged for ecommerce. Style direction: clean, sculptural, modern editorial restraint. Visual language: corrective, practical, and specific while still attractive enough for editorial use. Room context: entryway. Lighting: clear daylight with crisp shadow definition. Palette: soft white, black accents, stone, pale oak. Subject emphasis: tactile layering, material contrast, and a room that feels touchable and rich without clutter. Primary composition: focused problem-area vignette. Occasional variation: focused problem-area vignette. Medium: editorial interior photography. Constraints: realistic materials, no text, no logos, no people, no artificial collage effects. Keep the architecture believable and the furniture layout realistic for a real home. Do not duplicate the main focal furnishing unless the prompt clearly calls for a shared or twin-room setup. Avoid mirrored, side-by-side, or repeated hero objects that make the room read as AI-generated.. Editorial interior photography, natural daylight, realistic materials, no text, no logos, no people.",
+    "section_image_prompts": [
+      "Create section image 1 for the article 'Parisian Entryway: Common Mistakes to Avoid'. Focus on 'Overloading Similar Textures Leading to a Flat Entryway'. Use a room-wide shot that shows layered materials working together. Let the main emphasis be fabric layering. Highlight scale fixes. Focus on problem areas, corrections, and proportion or material adjustments. The image should clearly support this specific section rather than repeat the hero image. Vary focal distance, crop, and visual weight so the image set feels intentionally diverse. Style direction: clean, sculptural, modern editorial restraint. Visual language: corrective, practical, and specific while still attractive enough for editorial use. Room context: entryway. Lighting: clear daylight with crisp shadow definition. Palette: soft white, black accents, stone, pale oak. Subject emphasis: tactile layering, material contrast, and a room that feels touchable and rich without clutter. Primary composition: tight correction crop. Occasional variation: surface detail view. Medium: editorial interior photography. Constraints: realistic materials, no text, no logos, no people, no artificial collage effects. Keep the architecture believable and the furniture layout realistic for a real home. Do not duplicate the main focal furnishing unless the prompt clearly calls for a shared or twin-room setup. Avoid mirrored, side-by-side, or repeated hero objects that make the room read as AI-generated. For detail-driven images, prefer a tight crop of one believable setup instead of widening into multiple duplicated furniture groupings.. Editorial interior photography, natural daylight, realistic materials, no text, no logos, no people.",
+      "Create section image 2 for the article 'Parisian Entryway: Common Mistakes to Avoid'. Focus on 'Overusing Textures That Clash with the Parisian Palette'. Use a tight tactile close-up of fabric and finish interplay. Let the main emphasis be wood and stone balance. Highlight balance corrections. Focus on problem areas, corrections, and proportion or material adjustments. The image should clearly support this specific section rather than repeat the hero image. Vary focal distance, crop, and visual weight so the image set feels intentionally diverse. Style direction: clean, sculptural, modern editorial restraint. Visual language: corrective, practical, and specific while still attractive enough for editorial use. Room context: entryway. Lighting: clear daylight with crisp shadow definition. Palette: soft white, black accents, stone, pale oak. Subject emphasis: tactile layering, material contrast, and a room that feels touchable and rich without clutter. Primary composition: focused problem-area vignette. Occasional variation: tight correction crop. Medium: editorial interior photography. Constraints: realistic materials, no text, no logos, no people, no artificial collage effects. Keep the architecture believable and the furniture layout realistic for a real home. Do not duplicate the main focal furnishing unless the prompt clearly calls for a shared or twin-room setup. Avoid mirrored, side-by-side, or repeated hero objects that make the room read as AI-generated. For detail-driven images, prefer a tight crop of one believable setup instead of widening into multiple duplicated furniture groupings.. Editorial interior photography, natural daylight, realistic materials, no text, no logos, no people.",
+      "Create section image 3 for the article 'Parisian Entryway: Common Mistakes to Avoid'. Focus on 'Missing the Subtle Layering that Defines Parisian Entryways'. Use a furniture-and-surface composition highlighting material balance. Let the main emphasis be finish contrast. Highlight material mismatches. Focus on problem areas, corrections, and proportion or material adjustments. The image should clearly support this specific section rather than repeat the hero image. Vary focal distance, crop, and visual weight so the image set feels intentionally diverse. Style direction: clean, sculptural, modern editorial restraint. Visual language: corrective, practical, and specific while still attractive enough for editorial use. Room context: entryway. Lighting: clear daylight with crisp shadow definition. Palette: soft white, black accents, stone, pale oak. Subject emphasis: tactile layering, material contrast, and a room that feels touchable and rich without clutter. Primary composition: surface detail view. Occasional variation: before-and-after style framing without literal split screens. Medium: editorial interior photography. Constraints: realistic materials, no text, no logos, no people, no artificial collage effects. Keep the architecture believable and the furniture layout realistic for a real home. Do not duplicate the main focal furnishing unless the prompt clearly calls for a shared or twin-room setup. Avoid mirrored, side-by-side, or repeated hero objects that make the room read as AI-generated.. Editorial interior photography, natural daylight, realistic materials, no text, no logos, no people.",
+      "Create section image 4 for the article 'Parisian Entryway: Common Mistakes to Avoid'. Focus on 'Skewed Proportions Between Textured Materials That Disrupt Balance'. Use a small styling vignette with tactile contrast. Let the main emphasis be soft-versus-hard texture interplay. Highlight scale fixes. Focus on problem areas, corrections, and proportion or material adjustments. The image should clearly support this specific section rather than repeat the hero image. Vary focal distance, crop, and visual weight so the image set feels intentionally diverse. Style direction: clean, sculptural, modern editorial restraint. Visual language: corrective, practical, and specific while still attractive enough for editorial use. Room context: entryway. Lighting: clear daylight with crisp shadow definition. Palette: soft white, black accents, stone, pale oak. Subject emphasis: tactile layering, material contrast, and a room that feels touchable and rich without clutter. Primary composition: tight correction crop. Occasional variation: before-and-after style framing without literal split screens. Medium: editorial interior photography. Constraints: realistic materials, no text, no logos, no people, no artificial collage effects. Keep the architecture believable and the furniture layout realistic for a real home. Do not duplicate the main focal furnishing unless the prompt clearly calls for a shared or twin-room setup. Avoid mirrored, side-by-side, or repeated hero objects that make the room read as AI-generated. For detail-driven images, prefer a tight crop of one believable setup instead of widening into multiple duplicated furniture groupings.. Editorial interior photography, natural daylight, realistic materials, no text, no logos, no people.",
+      "Create section image 5 for the article 'Parisian Entryway: Common Mistakes to Avoid'. Focus on 'Allowing Too Many Contrasting Rough Textures to Create Visual Chaos'. Use a quiet finishing composition focused on layered texture. Let the main emphasis be restrained tactile depth. Highlight balance corrections. Focus on problem areas, corrections, and proportion or material adjustments. The image should clearly support this specific section rather than repeat the hero image. Vary focal distance, crop, and visual weight so the image set feels intentionally diverse. Style direction: clean, sculptural, modern editorial restraint. Visual language: corrective, practical, and specific while still attractive enough for editorial use. Room context: entryway. Lighting: clear daylight with crisp shadow definition. Palette: soft white, black accents, stone, pale oak. Subject emphasis: tactile layering, material contrast, and a room that feels touchable and rich without clutter. Primary composition: balanced material composition. Occasional variation: tight correction crop. Medium: editorial interior photography. Constraints: realistic materials, no text, no logos, no people, no artificial collage effects. Keep the architecture believable and the furniture layout realistic for a real home. Do not duplicate the main focal furnishing unless the prompt clearly calls for a shared or twin-room setup. Avoid mirrored, side-by-side, or repeated hero objects that make the room read as AI-generated. For detail-driven images, prefer a tight crop of one believable setup instead of widening into multiple duplicated furniture groupings.. Editorial interior photography, natural daylight, realistic materials, no text, no logos, no people."
+    ],
+    "visual_direction": {
+      "family_id": "crisp_modern",
+      "mood": "clean, sculptural, modern editorial restraint",
+      "lighting": "clear daylight with crisp shadow definition",
+      "palette": "soft white, black accents, stone, pale oak",
+      "intent_id": "problem_solving",
+      "profile_id": "problem_solving",
+      "shot_library_id": "textures_materials"
+    },
+    "image_prompt_diagnostics": {
+      "sameness_warnings": [
+        "Recent-article sameness warning: the hero prompt is very close to multiple recent hero prompts."
+      ],
+      "recent_articles_checked": 12
+    },
+    "pinterest_titles": [
+      "Avoid These Texture Mistakes in Your Parisian Entryway",
+      "How to Fix Common Parisian Entryway Texture Slip-ups",
+      "Create a Balanced Parisian Entryway by Fixing Texture Errors",
+      "Parisian Entryway Decor: Texture Mistakes You Might Be Making",
+      "Master Parisian Entryway Style by Avoiding These Texture Pitfalls"
+    ],
+    "pinterest_descriptions": [
+      "Learn the top texture mistakes that disrupt the harmony of a Parisian entryway and practical fixes to create a warm, layered look.",
+      "Discover simple adjustments to balance texture and keep your Parisian entryway inviting, calm, and polished.",
+      "Troubled by flat or cluttered entryway decor? Find out how to correct texture choices typical in Parisian-inspired spaces.",
+      "Get expert advice on steering clear of common texture errors in Parisian entryway styling for a timeless, natural feel.",
+      "Fix texture pitfalls in your Parisian entryway with thoughtful layering and material mixing for an effortless, lived-in vibe."
+    ],
+    "article_markdown": "A Parisian entryway effortlessly suggests a welcome invitation to your home — a soft first impression shaped by natural light, well-chosen materials, and textured layers. Yet, this look can easily fall flat or feel disjointed if textures aren’t carefully balanced. The charm of a Parisian entryway lies in its subtle layers of tactile surfaces that feel both timeless and collected, but without planning, it quickly slips toward visual confusion or flatness.\n\nTextures shape how we experience a space—they influence warmth, depth, and flow. For entryways expected to handle practical wear while remaining elegant, the mix needs finesse. This guide highlights common texture mistakes in Parisian entryway decor and offers clear, practical corrections so your space feels composed, inviting, and balanced in everyday life.\n\n## Overloading Similar Textures Leading to a Flat Entryway\n\nOne frequent misstep in Parisian entryway styling is relying too heavily on a single texture, such as layered linens or too much unvaried plaster on walls. While linen or softly plastered walls evoke that quiet, lived-in feel, repeating the same surface without contrast can dull the visual interest and flatten the space.\n\nTo fix this, layer complementary textures rather than identical ones. For example, if your walls are smooth plaster in a muted cream, introduce woven baskets in natural rattan or a handwoven wall hanging with slight irregularity. This contrast adds depth without overwhelming the understated palette. The key is gentle variation — a soft oak bench with visible grain next to refined plaster completes the picture more dynamically than one continuous material.\n\nWhen applying this in your home, consider the scale of each texture to maintain balance. Avoid overusing similar textures on adjoining surfaces; aim for enough difference in tactile quality to create subtle tension and visual layering.\n\n## Overusing Textures That Clash with the Parisian Palette\n\nSometimes the problem isn’t too little texture variation but too much in the wrong way. Glossy metals, heavy velvets, or synthetic weaves can clash with the soft, natural materials typical in Parisian entryways, breaking the calm flow and leaving the space feeling forced.\n\nHere, moderation and restraint work best. If a brass hook is your only metal accent, pair it with matte ceramic pots and raw oak furniture rather than mixing multiple shiny finishes or bold fabrics. The natural palettes of linen, stone, oak, and soft neutrals invite a specific kind of texture harmony that bright or heavy elements disrupt.\n\nTest a new material by placing it next to something tactile and familiar in your entryway—like a stone floor or linen rug. If it visually competes instead of complements, it’s likely an unnecessary stretch for this decor style.\n\n## Missing the Subtle Layering that Defines Parisian Entryways\n\nA more understated mistake can be the absence of carefully curated texture layers—placing all textures in the same visual plane rather than staggered heights and finishes. This makes the room feel one-dimensional and rushed.\n\nFor instance, pairing a soft linen bench cushion directly on a smooth oak seat doesn’t create enough play, nor does putting a flat mirror against flat walls without textural framing. Instead, elevate softness with layered throw pillows or a light wool blanket casually draped, which contrasts with the oak’s grain and warmth. Surround mirrors with a slim rattan or brassed frame to introduce another tactile element without overpowering.\n\nIn practical terms, vary your entryway's elements vertically and horizontally. Think beyond floor-to-wall and add texture via decor objects like a hand-thrown ceramic vase or a softly fringed throw. This gradual build ensures the space breathes and feels collected rather than assembled last minute.\n\n## Skewed Proportions Between Textured Materials That Disrupt Balance\n\nThe challenge of proportion in texture is often overlooked. A large-format, rough stone floor will overpower delicate, light textiles if they are too sparse or small. This scale mismatch distracts from the cohesive Parisian mood and leans more toward visual discord.\n\nBalance comes from grounding heavier, dense textures with softer, airy ones that are appropriately sized. For example, place a generous linen runner with a relaxed weave over stone flooring to soften and visually connect the hard surface to lighter accents in upholstery or wall decor.\n\nLikewise, avoid tiny textured accents alone on broad surfaces—they vanish visually and do not anchor the room. If your floor tiles are large and textured, complement them with a bench covered in a plain but softly tactile linen that feels ample rather than cramped.\n\nThis equilibrium between texture weight and scale supports natural light reflection and creates flow that's more true to Parisian entryway style.\n\n## Allowing Too Many Contrasting Rough Textures to Create Visual Chaos\n\nThe defining atmosphere of a Parisian entryway is quiet warmth and subtle layering—not a patchwork of disjointed surfaces. Combining too many rough textures—wool rugs, coarse baskets, jagged stone floors, and chunky wood furniture—often steals away the gentle sophistication.\n\nTo correct this, introduce soft with rough in well-measured doses rather than piling on every tactile option. For example, pair a coarse woven rug with a polished oak bench and smooth plaster walls rather than adding more rough wood or jagged stone objects.\n\nThink of your space like a natural landscape where each texture embodies a different element—stone, earth, wood, plants—but all interacting harmoniously. Limit rough materials to two or three distinct types, and counterbalance with polished or soft counterparts.\n\nBy doing so, your entryway will hold the quiet grace of a Parisian home without tipping into visual noise.\n\n## Frequently Asked Questions\n\n### What are the key textures to use in a Parisian entryway?\nNatural materials like linen, soft plastered walls, oak wood, stone flooring, and woven fibers create a timeless and tactile base.\n\n### How do I avoid making the entryway feel cluttered with textures?\nLimit the types of rough textures and balance them with smooth or soft finishes. Use layering thoughtfully with varying scale and placement.\n\n### Can metallics work in Parisian-style entryways?\nYes, but sparingly. Opt for matte or brushed metals rather than gloss and combine them with natural materials.\n\n### How important is proportion when layering textures?\nVery important—larger, rougher textures need counterpoints in size and softness to maintain harmony and flow.\n\n### Is it necessary to match all textures to the same color palette?\nNot exactly, but favoring soft, earthy neutrals and gentle contrasts helps keep the look cohesive and calming.\n\nA Parisian entryway thrives on refined texture balance that feels natural and effortless but requires thoughtful layering and proportion. Avoid flatness by mixing subtle tactile contrasts and steer clear of clutter by restraining overly rough material combinations. Practical fixes—like pairing woven baskets with soft linens or balancing large stone floors with ample light textiles—root this style in everyday reality while maintaining its inviting, elegant character.\n\nStart by observing your current textures and identify where repetition or discord appears. Then introduce subtle variations—whether a new woven accent or adjusting a rug’s size—to bring new layers of quiet warmth and collected ease into your entryway."
+  }
+}

@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-06-22T14:37:20.415957+00:00",
+  "generated_at": "2026-06-24T11:46:43.885654+00:00",
   "total_clusters": 396,
   "summary": {
-    "missing": 348,
-    "underdeveloped": 48,
+    "missing": 347,
+    "underdeveloped": 49,
     "growing": 0,
     "strong": 0,
     "saturated": 0
   },
   "saturation_summary": {
-    "empty": 348,
-    "needs_growth": 48
+    "empty": 347,
+    "needs_growth": 49
   },
   "editorial_mix_rules": {
     "recent_window_article_count": 8,
@@ -254,7 +254,6 @@
     "organic modern patio",
     "parisian balcony",
     "parisian dining room",
-    "parisian entryway",
     "parisian guest bedroom",
     "parisian home office",
     "parisian laundry room",
@@ -444,6 +443,7 @@
     "scandinavian kitchen",
     "scandinavian entryway",
     "parisian kitchen",
+    "parisian entryway",
     "living room textures and materials",
     "small dining nook",
     "scandinavian bedroom",
@@ -37829,217 +37829,6 @@
       ]
     },
     {
-      "cluster_id": "parisian_entryway",
-      "cluster_name": "parisian entryway",
-      "domain_id": "utility_transition",
-      "health_label": "missing",
-      "article_count": 0,
-      "article_capacity_target": 14,
-      "capacity_ratio": 0.0,
-      "growth_openings": 10,
-      "saturation_state": "empty",
-      "selection_action": "boost",
-      "latest_publication_date": "",
-      "days_since_latest": null,
-      "subtopics_total": 5,
-      "subtopics_covered": [],
-      "subtopic_ids_covered": [],
-      "subtopics_missing": [
-        "Layout and Foundation",
-        "Color Palette",
-        "Furniture and Anchors",
-        "Lighting",
-        "Textures and Layers"
-      ],
-      "subtopic_ids_missing": [
-        "layout",
-        "colors",
-        "furniture",
-        "lighting",
-        "textures"
-      ],
-      "angle_distribution": {
-        "ideas": 0,
-        "how_to": 0,
-        "mistakes": 0,
-        "best_options": 0,
-        "style_specific": 0
-      },
-      "underused_angles": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "style_specific"
-      ],
-      "overused_angles": [],
-      "intent_distribution": {
-        "comparison": 0,
-        "decision_making": 0,
-        "implementation": 0,
-        "inspiration": 0,
-        "problem_solving": 0
-      },
-      "underused_intents": [
-        "comparison",
-        "decision_making",
-        "implementation",
-        "inspiration",
-        "problem_solving"
-      ],
-      "overused_intents": [],
-      "recommended_concepts": [
-        {
-          "cluster_id": "parisian_entryway",
-          "cluster_name": "parisian entryway",
-          "domain_id": "utility_transition",
-          "subtopic_id": "colors",
-          "subtopic_name": "Color Palette",
-          "angle_id": "how_to",
-          "intent_id": "implementation",
-          "modifier": "",
-          "primary_keyword": "how to choose colors for a parisian entryway",
-          "secondary_keywords": [
-            "parisian entryway ideas",
-            "how to style a parisian entryway",
-            "parisian entryway decor",
-            "parisian entryway layout ideas"
-          ],
-          "search_intent": "how_to",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 96,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "parisian_entryway",
-          "cluster_name": "parisian entryway",
-          "domain_id": "utility_transition",
-          "subtopic_id": "colors",
-          "subtopic_name": "Color Palette",
-          "angle_id": "ideas",
-          "intent_id": "inspiration",
-          "modifier": "",
-          "primary_keyword": "parisian entryway color palette ideas",
-          "secondary_keywords": [
-            "parisian entryway ideas",
-            "how to style a parisian entryway",
-            "parisian entryway decor",
-            "parisian entryway layout ideas"
-          ],
-          "search_intent": "ideas",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 96,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "parisian_entryway",
-          "cluster_name": "parisian entryway",
-          "domain_id": "utility_transition",
-          "subtopic_id": "colors",
-          "subtopic_name": "Color Palette",
-          "angle_id": "mistakes",
-          "intent_id": "problem_solving",
-          "modifier": "",
-          "primary_keyword": "parisian entryway color mistakes to avoid",
-          "secondary_keywords": [
-            "parisian entryway ideas",
-            "how to style a parisian entryway",
-            "parisian entryway decor",
-            "parisian entryway layout ideas"
-          ],
-          "search_intent": "problem_solution",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 96,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        }
-      ],
-      "recommended_topics": [
-        "how to choose colors for a parisian entryway",
-        "parisian entryway color palette ideas",
-        "parisian entryway color mistakes to avoid"
-      ],
-      "priority_score": 100,
-      "season": "",
-      "holiday": "",
-      "source": "content architecture",
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "pinterest_intelligence": {
-        "cluster_signal_label": "no_data",
-        "cluster_signal_boost": 0
-      },
-      "seed_keywords": [
-        "parisian entryway ideas",
-        "how to style a parisian entryway",
-        "parisian entryway decor",
-        "parisian entryway layout ideas",
-        "parisian entryway color palette"
-      ],
-      "allowed_angle_ids": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "style_specific"
-      ]
-    },
-    {
       "cluster_id": "parisian_guest_bedroom",
       "cluster_name": "parisian guest bedroom",
       "domain_id": "bedrooms",
@@ -74271,7 +74060,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-08",
-      "days_since_latest": 75,
+      "days_since_latest": 77,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -74484,7 +74273,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-08",
-      "days_since_latest": 74,
+      "days_since_latest": 76,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -74697,7 +74486,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-17",
-      "days_since_latest": 66,
+      "days_since_latest": 68,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -74910,7 +74699,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-04",
-      "days_since_latest": 49,
+      "days_since_latest": 51,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -75123,7 +74912,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-06",
-      "days_since_latest": 47,
+      "days_since_latest": 49,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -75336,7 +75125,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-18",
-      "days_since_latest": 95,
+      "days_since_latest": 97,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -75549,7 +75338,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-23",
-      "days_since_latest": 91,
+      "days_since_latest": 93,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -75762,7 +75551,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-18",
-      "days_since_latest": 35,
+      "days_since_latest": 36,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation"
@@ -75975,7 +75764,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-27",
-      "days_since_latest": 26,
+      "days_since_latest": 27,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation"
@@ -76188,7 +75977,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-01",
-      "days_since_latest": 20,
+      "days_since_latest": 22,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -76263,7 +76052,7 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 74,
+          "score": 78,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -76300,7 +76089,7 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 74,
+          "score": 78,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -76337,7 +76126,7 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 74,
+          "score": 78,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -76401,7 +76190,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-03",
-      "days_since_latest": 19,
+      "days_since_latest": 20,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -76614,7 +76403,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-10",
-      "days_since_latest": 12,
+      "days_since_latest": 13,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -76827,7 +76616,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-12",
-      "days_since_latest": 10,
+      "days_since_latest": 11,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -77040,7 +76829,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-15",
-      "days_since_latest": 6,
+      "days_since_latest": 8,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -77253,7 +77042,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-17",
-      "days_since_latest": 5,
+      "days_since_latest": 6,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -77466,7 +77255,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-22",
-      "days_since_latest": 0,
+      "days_since_latest": 1,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -77658,6 +77447,219 @@
         "parisian kitchen decor",
         "parisian kitchen layout ideas",
         "parisian kitchen color palette"
+      ],
+      "allowed_angle_ids": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "style_specific"
+      ]
+    },
+    {
+      "cluster_id": "parisian_entryway",
+      "cluster_name": "parisian entryway",
+      "domain_id": "utility_transition",
+      "health_label": "underdeveloped",
+      "article_count": 1,
+      "article_capacity_target": 14,
+      "capacity_ratio": 0.07,
+      "growth_openings": 9,
+      "saturation_state": "needs_growth",
+      "selection_action": "boost",
+      "latest_publication_date": "2026-06-24",
+      "days_since_latest": 0,
+      "subtopics_total": 5,
+      "subtopics_covered": [
+        "Textures and Layers"
+      ],
+      "subtopic_ids_covered": [
+        "textures"
+      ],
+      "subtopics_missing": [
+        "Layout and Foundation",
+        "Color Palette",
+        "Furniture and Anchors",
+        "Lighting"
+      ],
+      "subtopic_ids_missing": [
+        "layout",
+        "colors",
+        "furniture",
+        "lighting"
+      ],
+      "angle_distribution": {
+        "ideas": 0,
+        "how_to": 0,
+        "mistakes": 1,
+        "best_options": 0,
+        "style_specific": 0
+      },
+      "underused_angles": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "style_specific"
+      ],
+      "overused_angles": [],
+      "intent_distribution": {
+        "comparison": 0,
+        "decision_making": 0,
+        "implementation": 0,
+        "inspiration": 0,
+        "problem_solving": 1
+      },
+      "underused_intents": [
+        "comparison",
+        "decision_making",
+        "implementation",
+        "inspiration",
+        "problem_solving"
+      ],
+      "overused_intents": [],
+      "recommended_concepts": [
+        {
+          "cluster_id": "parisian_entryway",
+          "cluster_name": "parisian entryway",
+          "domain_id": "utility_transition",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "how_to",
+          "intent_id": "implementation",
+          "modifier": "",
+          "primary_keyword": "how to choose colors for a parisian entryway",
+          "secondary_keywords": [
+            "parisian entryway ideas",
+            "how to style a parisian entryway",
+            "parisian entryway decor",
+            "parisian entryway layout ideas"
+          ],
+          "search_intent": "how_to",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 74,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        },
+        {
+          "cluster_id": "parisian_entryway",
+          "cluster_name": "parisian entryway",
+          "domain_id": "utility_transition",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "ideas",
+          "intent_id": "inspiration",
+          "modifier": "",
+          "primary_keyword": "parisian entryway color palette ideas",
+          "secondary_keywords": [
+            "parisian entryway ideas",
+            "how to style a parisian entryway",
+            "parisian entryway decor",
+            "parisian entryway layout ideas"
+          ],
+          "search_intent": "ideas",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 74,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        },
+        {
+          "cluster_id": "parisian_entryway",
+          "cluster_name": "parisian entryway",
+          "domain_id": "utility_transition",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "style_specific",
+          "intent_id": "inspiration",
+          "modifier": "",
+          "primary_keyword": "parisian entryway paint and color ideas",
+          "secondary_keywords": [
+            "parisian entryway ideas",
+            "how to style a parisian entryway",
+            "parisian entryway decor",
+            "parisian entryway layout ideas"
+          ],
+          "search_intent": "styling_advice",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 74,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        }
+      ],
+      "recommended_topics": [
+        "how to choose colors for a parisian entryway",
+        "parisian entryway color palette ideas",
+        "parisian entryway paint and color ideas"
+      ],
+      "priority_score": 70,
+      "season": "",
+      "holiday": "",
+      "source": "content architecture",
+      "pinterest_signal": {
+        "label": "no_data",
+        "boost": 0,
+        "pinterest_article_count": 0,
+        "strong_article_count": 0,
+        "weak_article_count": 0,
+        "average_score": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_saves": 0.0
+      },
+      "pinterest_intelligence": {
+        "cluster_signal_label": "no_data",
+        "cluster_signal_boost": 0
+      },
+      "seed_keywords": [
+        "parisian entryway ideas",
+        "how to style a parisian entryway",
+        "parisian entryway decor",
+        "parisian entryway layout ideas",
+        "parisian entryway color palette"
       ],
       "allowed_angle_ids": [
         "ideas",
@@ -78100,7 +78102,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-28",
-      "days_since_latest": 85,
+      "days_since_latest": 87,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -78313,7 +78315,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-30",
-      "days_since_latest": 84,
+      "days_since_latest": 86,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -78526,7 +78528,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-01",
-      "days_since_latest": 81,
+      "days_since_latest": 83,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation"
@@ -78739,7 +78741,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-01",
-      "days_since_latest": 81,
+      "days_since_latest": 83,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -78952,7 +78954,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-03",
-      "days_since_latest": 80,
+      "days_since_latest": 82,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -79165,7 +79167,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-06",
-      "days_since_latest": 77,
+      "days_since_latest": 79,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -79378,7 +79380,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-10",
-      "days_since_latest": 73,
+      "days_since_latest": 75,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -79591,7 +79593,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-13",
-      "days_since_latest": 70,
+      "days_since_latest": 72,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -79804,7 +79806,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-20",
-      "days_since_latest": 63,
+      "days_since_latest": 65,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -80017,7 +80019,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-22",
-      "days_since_latest": 61,
+      "days_since_latest": 63,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -80230,7 +80232,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-24",
-      "days_since_latest": 59,
+      "days_since_latest": 61,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -80443,7 +80445,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-27",
-      "days_since_latest": 56,
+      "days_since_latest": 58,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -80656,7 +80658,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-29",
-      "days_since_latest": 54,
+      "days_since_latest": 56,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -80869,7 +80871,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-01",
-      "days_since_latest": 52,
+      "days_since_latest": 54,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -81082,7 +81084,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-08",
-      "days_since_latest": 45,
+      "days_since_latest": 47,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Surface Styling"
@@ -81291,7 +81293,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-05",
-      "days_since_latest": 17,
+      "days_since_latest": 18,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors",
@@ -81504,7 +81506,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-08",
-      "days_since_latest": 14,
+      "days_since_latest": 15,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors",
@@ -81717,7 +81719,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-19",
-      "days_since_latest": 3,
+      "days_since_latest": 4,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation",
@@ -81930,7 +81932,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-11",
-      "days_since_latest": 42,
+      "days_since_latest": 43,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Surface Styling"
@@ -82139,7 +82141,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-13",
-      "days_since_latest": 40,
+      "days_since_latest": 42,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Surface Styling"
@@ -82348,7 +82350,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-15",
-      "days_since_latest": 38,
+      "days_since_latest": 40,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Seasonal Refresh"
@@ -82560,7 +82562,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-02",
-      "days_since_latest": 81,
+      "days_since_latest": 83,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Seasonal Refresh"
@@ -82772,7 +82774,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-20",
-      "days_since_latest": 33,
+      "days_since_latest": 34,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Light and Openness"
@@ -82978,7 +82980,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-22",
-      "days_since_latest": 31,
+      "days_since_latest": 33,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Layered Lighting"
@@ -83184,7 +83186,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-25",
-      "days_since_latest": 28,
+      "days_since_latest": 29,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Layered Lighting"
@@ -83390,7 +83392,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-29",
-      "days_since_latest": 24,
+      "days_since_latest": 25,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Layered Lighting"
@@ -83596,7 +83598,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-15",
-      "days_since_latest": 68,
+      "days_since_latest": 70,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Seasonal Refresh",

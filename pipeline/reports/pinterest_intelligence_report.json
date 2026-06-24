@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-22T14:32:30.914838+00:00",
+  "generated_at": "2026-06-24T11:42:09.293932+00:00",
   "overview": {
-    "pin_count": 122,
+    "pin_count": 125,
     "published_pin_count": 51,
     "analytics_ready_pin_count": 0,
-    "tracked_article_count": 38
+    "tracked_article_count": 39
   },
   "best_performing_clusters": [
     {
@@ -438,6 +438,24 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "best-furniture-parisian-bedroom"
+      ]
+    },
+    {
+      "cluster_id": "parisian_kitchen",
+      "cluster_name": "parisian kitchen",
+      "pin_count": 3,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "parisian-kitchen-texture-mistakes-to-avoid"
       ]
     },
     {
@@ -1306,6 +1324,25 @@
       ]
     },
     {
+      "cluster_id": "parisian_kitchen",
+      "subtopic_id": "textures",
+      "subtopic_name": "textures and layers",
+      "pin_count": 3,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "parisian-kitchen-texture-mistakes-to-avoid"
+      ]
+    },
+    {
       "cluster_id": "scandinavian_entryway",
       "subtopic_id": "textures",
       "subtopic_name": "textures and layers",
@@ -1443,7 +1480,7 @@
     },
     {
       "angle_id": "mistakes",
-      "pin_count": 42,
+      "pin_count": 45,
       "published_pin_count": 20,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1666,7 +1703,7 @@
       "visual_family_id": "crisp_modern",
       "shot_library_id": "lighting",
       "intent_id": "comparison",
-      "pin_count": 4,
+      "pin_count": 5,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1689,7 +1726,7 @@
       "visual_family_id": "crisp_modern",
       "shot_library_id": "textures_materials",
       "intent_id": "problem_solving",
-      "pin_count": 4,
+      "pin_count": 5,
       "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1703,7 +1740,8 @@
       "top_article_slugs": [
         "cottage-bathroom-texture-mistakes-to-avoid",
         "cottage-bedroom-texture-mistakes-to-avoid",
-        "japandi-bedroom-texture-mistakes-to-avoid"
+        "japandi-bedroom-texture-mistakes-to-avoid",
+        "parisian-kitchen-texture-mistakes-to-avoid"
       ]
     },
     {
@@ -1758,7 +1796,7 @@
       "visual_family_id": "warm_layered",
       "shot_library_id": "storage_organization",
       "intent_id": "comparison",
-      "pin_count": 2,
+      "pin_count": 1,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1779,7 +1817,7 @@
       "visual_family_id": "warm_layered",
       "shot_library_id": "textures_materials",
       "intent_id": "problem_solving",
-      "pin_count": 6,
+      "pin_count": 5,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1998,7 +2036,7 @@
       "visual_family_id": "crisp_modern",
       "shot_library_id": "lighting",
       "intent_id": "comparison",
-      "pin_count": 2,
+      "pin_count": 1,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -2010,8 +2048,7 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
-        "balancing-light-layers-best-lighting-for-living-room",
-        "best-lighting-for-bathroom-layered-approach"
+        "balancing-light-layers-best-lighting-for-living-room"
       ]
     },
     {
@@ -2020,7 +2057,7 @@
       "visual_family_id": "crisp_modern",
       "shot_library_id": "textures_materials",
       "intent_id": "problem_solving",
-      "pin_count": 1,
+      "pin_count": 2,
       "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -2032,7 +2069,8 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
-        "cottage-bedroom-texture-mistakes-to-avoid"
+        "cottage-bedroom-texture-mistakes-to-avoid",
+        "parisian-kitchen-texture-mistakes-to-avoid"
       ]
     },
     {
@@ -2568,7 +2606,7 @@
       "visual_family_id": "crisp_modern",
       "shot_library_id": "textures_materials",
       "intent_id": "problem_solving",
-      "pin_count": 3,
+      "pin_count": 4,
       "published_pin_count": 3,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -2582,7 +2620,8 @@
       "top_article_slugs": [
         "cottage-bathroom-texture-mistakes-to-avoid",
         "cottage-bedroom-texture-mistakes-to-avoid",
-        "japandi-bedroom-texture-mistakes-to-avoid"
+        "japandi-bedroom-texture-mistakes-to-avoid",
+        "parisian-kitchen-texture-mistakes-to-avoid"
       ]
     },
     {
@@ -2631,12 +2670,33 @@
       ]
     },
     {
+      "visual_style_key": "top_title|warm_layered|storage_organization|comparison",
+      "style_name": "top-title",
+      "visual_family_id": "warm_layered",
+      "shot_library_id": "storage_organization",
+      "intent_id": "comparison",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-earthy-entryway"
+      ]
+    },
+    {
       "visual_style_key": "top_title|warm_layered|textures_materials|problem_solving",
       "style_name": "top-title",
       "visual_family_id": "warm_layered",
       "shot_library_id": "textures_materials",
       "intent_id": "problem_solving",
-      "pin_count": 2,
+      "pin_count": 3,
       "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -2649,7 +2709,8 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "japandi-bathroom-texture-mistakes-to-avoid",
-        "scandinavian-entryway-texture-mistakes-to-avoid"
+        "scandinavian-entryway-texture-mistakes-to-avoid",
+        "transitional-entryway-texture-mistakes-to-avoid"
       ]
     }
   ],
@@ -2904,7 +2965,7 @@
       },
       {
         "angle_id": "mistakes",
-        "pin_count": 42,
+        "pin_count": 45,
         "published_pin_count": 20,
         "analytics_ready_count": 0,
         "average_score": 0.0,

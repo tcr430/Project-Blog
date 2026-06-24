@@ -7,7 +7,7 @@ cluster_name: "scandinavian entryway"
 cluster_slug: "scandinavian-entryway"
 cluster_article_count: 1
 cluster_primary_keywords: ["scandinavian entryway texture mistakes to avoid"]
-cluster_generated_at: "2026-06-22T14:37:20.631262+00:00"
+cluster_generated_at: "2026-06-24T11:46:44.114750+00:00"
 cluster_intro: "Scandinavian Entryway is a useful decorating topic because it combines inspiration with practical decision-making. Readers usually arrive here looking for a clear style direction, help solving a room problem, or confidence about how to make the look feel intentional at home.
 
 This pillar page brings together the site's coverage around scandinavian entryway, with article angles shaped by keyword themes such as scandinavian entryway texture mistakes to avoid. That mix helps the page support both broader search intent and more specific decorating questions without feeling repetitive.
@@ -61,10 +61,10 @@ These adjacent hubs help readers keep moving through the topic without losing th
 <p><a class="cluster-hub-link" href="/clusters/neutral-entryway/">Open this cluster</a></p>
 </div>
 <div class="cluster-hub-card">
-<h3><a href="/clusters/scandinavian-bathroom/">Scandinavian Bathroom</a></h3>
-<p>Broad editorial cluster for scandinavian bathroom topics.</p>
+<h3><a href="/clusters/parisian-entryway/">Parisian Entryway</a></h3>
+<p>Broad editorial cluster for parisian entryway topics.</p>
 <p class="cluster-hub-meta">1 article</p>
-<p><a class="cluster-hub-link" href="/clusters/scandinavian-bathroom/">Open this cluster</a></p>
+<p><a class="cluster-hub-link" href="/clusters/parisian-entryway/">Open this cluster</a></p>
 </div>
 </div>
 

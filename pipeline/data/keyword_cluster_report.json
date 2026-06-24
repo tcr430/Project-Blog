@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-22T14:37:18.903191+00:00",
-  "cluster_count": 48,
-  "article_count": 52,
+  "generated_at": "2026-06-24T11:46:42.367282+00:00",
+  "cluster_count": 49,
+  "article_count": 53,
   "subtopic_count": 10,
   "angle_count": 5,
   "angle_distribution": {
     "best_options": 25,
     "how_to": 4,
     "ideas": 4,
-    "mistakes": 18,
+    "mistakes": 19,
     "style_specific": 1
   },
   "clusters": [
@@ -1690,6 +1690,50 @@
       ],
       "angle_distribution": {
         "best_options": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_id": "parisian_entryway",
+      "cluster_name": "parisian entryway",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "utility_transition"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "parisian entryway texture mistakes to avoid"
+      ],
+      "latest_article_date": "2026-06-24",
+      "latest_publication": {
+        "article_slug": "parisian-entryway-texture-mistakes-to-avoid",
+        "article_title": "Parisian Entryway: Common Mistakes to Avoid",
+        "publish_date": "2026-06-24",
+        "subtopic_id": "textures",
+        "subtopic_name": "textures and layers",
+        "angle_id": "mistakes"
+      },
+      "representative_article_slugs": [
+        "parisian-entryway-texture-mistakes-to-avoid"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "textures",
+          "subtopic_name": "textures and layers",
+          "article_count": 1,
+          "latest_article_date": "2026-06-24",
+          "representative_article_slugs": [
+            "parisian-entryway-texture-mistakes-to-avoid"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "mistakes": 1
       },
       "status": "underdeveloped"
     },

@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-06-22T14:34:11.997946+00:00",
+  "generated_at": "2026-06-24T11:43:28.667812+00:00",
   "articles": [
     {
-      "article_slug": "parisian-kitchen-texture-mistakes-to-avoid",
-      "cluster_id": "parisian_kitchen",
+      "article_slug": "parisian-entryway-texture-mistakes-to-avoid",
+      "cluster_id": "parisian_entryway",
       "subtopic_id": "textures",
       "angle_id": "mistakes",
-      "primary_keyword": "parisian kitchen texture mistakes to avoid",
+      "primary_keyword": "parisian entryway texture mistakes to avoid",
       "validation_status": "pass",
       "warnings": [],
       "errors": [],
       "checks": {
         "generic_intro": {
-          "intro_word_count": 118,
+          "intro_word_count": 123,
           "concept_overlap": 8,
-          "first_sentence": "Parisian kitchens embody a refined balance between effortless elegance and lived-in charm, inviting natural light and softness through layered textures."
+          "first_sentence": "A Parisian entryway effortlessly suggests a welcome invitation to your home — a soft first impression shaped by natural light, well-chosen materials, and textured layers."
         },
         "heading_quality": {
           "heading_count": 5,
@@ -23,16 +23,16 @@
           "repeated_signature_count": 0,
           "repeated_stem_count": 0,
           "headings": [
-            "The Glossy Surface Trap: Why Overly Polished Finishes Undermine Texture Balance",
-            "When Wood Types Clash: The Pitfall of Mixing Unrelated Textures",
-            "Flat Texture Layers: How Lack of Contrast Makes the Room Feel Uninviting",
-            "Overscaled Elements and Texture Overload in Small Kitchens",
-            "The Missing Warmth: How Overuse of Cold Metals and Hard Surfaces Derails the Look"
+            "Overloading Similar Textures Leading to a Flat Entryway",
+            "Overusing Textures That Clash with the Parisian Palette",
+            "Missing the Subtle Layering that Defines Parisian Entryways",
+            "Skewed Proportions Between Textured Materials That Disrupt Balance",
+            "Allowing Too Many Contrasting Rough Textures to Create Visual Chaos"
           ]
         },
         "specificity": {
           "concept_token_hits": 10,
-          "specificity_term_hits": 14,
+          "specificity_term_hits": 11,
           "secondary_keyword_hits": 1
         },
         "distinctiveness": {
@@ -41,7 +41,7 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-06-22T14:34:11.997441+00:00"
+      "timestamp": "2026-06-24T11:43:28.667301+00:00"
     },
     {
       "article_slug": "summer-balcony-styling-mistakes-to-avoid",
@@ -88,7 +88,49 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-06-22T14:32:53.147891+00:00"
+      "timestamp": "2026-06-24T11:42:29.843204+00:00"
+    },
+    {
+      "article_slug": "parisian-kitchen-texture-mistakes-to-avoid",
+      "cluster_id": "parisian_kitchen",
+      "subtopic_id": "textures",
+      "angle_id": "mistakes",
+      "primary_keyword": "parisian kitchen texture mistakes to avoid",
+      "validation_status": "pass",
+      "warnings": [],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 118,
+          "concept_overlap": 8,
+          "first_sentence": "Parisian kitchens embody a refined balance between effortless elegance and lived-in charm, inviting natural light and softness through layered textures."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 1,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "The Glossy Surface Trap: Why Overly Polished Finishes Undermine Texture Balance",
+            "When Wood Types Clash: The Pitfall of Mixing Unrelated Textures",
+            "Flat Texture Layers: How Lack of Contrast Makes the Room Feel Uninviting",
+            "Overscaled Elements and Texture Overload in Small Kitchens",
+            "The Missing Warmth: How Overuse of Cold Metals and Hard Surfaces Derails the Look"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 10,
+          "specificity_term_hits": 14,
+          "secondary_keyword_hits": 1
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-06-22T14:34:11.997441+00:00"
     },
     {
       "article_slug": "best-furniture-neutral-bathroom",
