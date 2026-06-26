@@ -7,7 +7,7 @@ cluster_name: "parisian kitchen"
 cluster_slug: "parisian-kitchen"
 cluster_article_count: 1
 cluster_primary_keywords: ["parisian kitchen texture mistakes to avoid"]
-cluster_generated_at: "2026-06-24T11:46:44.114750+00:00"
+cluster_generated_at: "2026-06-26T11:47:59.285277+00:00"
 cluster_intro: "Parisian Kitchen is a useful decorating topic because it combines inspiration with practical decision-making. Readers usually arrive here looking for a clear style direction, help solving a room problem, or confidence about how to make the look feel intentional at home.
 
 This pillar page brings together the site's coverage around parisian kitchen, with article angles shaped by keyword themes such as parisian kitchen texture mistakes to avoid. That mix helps the page support both broader search intent and more specific decorating questions without feeling repetitive.
@@ -55,16 +55,16 @@ These adjacent hubs help readers keep moving through the topic without losing th
 <p><a class="cluster-hub-link" href="/clusters/earthy-kitchen/">Open this cluster</a></p>
 </div>
 <div class="cluster-hub-card">
+<h3><a href="/clusters/moody-kitchen/">Moody Kitchen</a></h3>
+<p>Broad editorial cluster for moody kitchen topics.</p>
+<p class="cluster-hub-meta">1 article</p>
+<p><a class="cluster-hub-link" href="/clusters/moody-kitchen/">Open this cluster</a></p>
+</div>
+<div class="cluster-hub-card">
 <h3><a href="/clusters/neutral-kitchen/">Neutral Kitchen</a></h3>
 <p>Broad editorial cluster for neutral kitchen topics.</p>
 <p class="cluster-hub-meta">1 article</p>
 <p><a class="cluster-hub-link" href="/clusters/neutral-kitchen/">Open this cluster</a></p>
-</div>
-<div class="cluster-hub-card">
-<h3><a href="/clusters/scandinavian-kitchen/">Scandinavian Kitchen</a></h3>
-<p>Broad editorial cluster for scandinavian kitchen topics.</p>
-<p class="cluster-hub-meta">1 article</p>
-<p><a class="cluster-hub-link" href="/clusters/scandinavian-kitchen/">Open this cluster</a></p>
 </div>
 </div>
 
@@ -74,4 +74,4 @@ A simple path through this topic so readers can build confidence one step at a t
 
 1. Start with [What Goes Wrong with Parisian Kitchen?](/mistakes%20%26%20fixes/2026/06/22/parisian-kitchen-texture-mistakes-to-avoid/) for the broadest orientation.
 2. After that, move into [Earthy Kitchen](/clusters/earthy-kitchen/) to keep the topic expanding naturally.
-3. After that, move into [Neutral Kitchen](/clusters/neutral-kitchen/) to keep the topic expanding naturally.
+3. After that, move into [Moody Kitchen](/clusters/moody-kitchen/) to keep the topic expanding naturally.

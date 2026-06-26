@@ -1,0 +1,304 @@
+{
+  "generated_at": "2026-06-26T11:47:57.384611+00:00",
+  "trend": "moody kitchen texture mistakes to avoid",
+  "slug": "moody-kitchen-texture-mistakes-to-avoid",
+  "article_generation": {
+    "cache_hit": false,
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/article_packages/d1df92b6a13962cf054d8f9a1e218dfc2d49b378ba295158ce82e117bd96660b.json",
+    "model": "gpt-4.1-mini",
+    "generation_calls": 3,
+    "short_retries": 0,
+    "angle_retries": 1,
+    "product_retries": 0,
+    "selected_products": 0,
+    "affiliate_mode": false,
+    "monetization_profile_id": "fix_oriented",
+    "generated_link_count": 0,
+    "primary_keyword": "moody kitchen texture mistakes to avoid",
+    "topical_cluster": "moody kitchen"
+  },
+  "seo_validation": {
+    "article_slug": "moody-kitchen-texture-mistakes-to-avoid",
+    "cluster": "moody kitchen",
+    "cluster_id": "moody kitchen",
+    "subtopic_id": "textures",
+    "subtopic_name": "textures and layers",
+    "angle_id": "mistakes",
+    "intent_id": "problem_solving",
+    "primary_keyword": "moody kitchen texture mistakes to avoid",
+    "validation_status": "warning",
+    "warnings": [
+      "Chosen title is still close to an existing site title pattern.",
+      "Main section headings may be too generic for the chosen keyword.",
+      "Primary keyword appears very lightly in the article body."
+    ],
+    "errors": [],
+    "duplicate_candidate_slugs": [],
+    "timestamp": "2026-06-26T11:44:46.062835+00:00"
+  },
+  "editorial_validation": {
+    "article_slug": "moody-kitchen-texture-mistakes-to-avoid",
+    "cluster_id": "moody_kitchen",
+    "subtopic_id": "textures",
+    "angle_id": "mistakes",
+    "primary_keyword": "moody kitchen texture mistakes to avoid",
+    "validation_status": "pass",
+    "warnings": [],
+    "errors": [],
+    "checks": {
+      "generic_intro": {
+        "intro_word_count": 140,
+        "concept_overlap": 5,
+        "first_sentence": "Moody kitchens have a powerful visual appeal: dark, rich tones create a dramatic backdrop that feels intimate and refined."
+      },
+      "heading_quality": {
+        "heading_count": 5,
+        "vague_heading_count": 0,
+        "low_specificity_heading_count": 1,
+        "repeated_signature_count": 0,
+        "repeated_stem_count": 0,
+        "headings": [
+          "Skipping Material Variation Leaves Your Kitchen Feeling Flat and Uninviting",
+          "Overusing Cool Metals Creates a Sterile Atmosphere",
+          "Ignoring Color Temperature in Layered Textures Disrupts the Palette",
+          "Overloading Heavy Textures in Small or Low-Light Kitchens Undermines Space",
+          "Mistaking Texture Quantity for Quality Throws Off the Final Mood"
+        ]
+      },
+      "specificity": {
+        "concept_token_hits": 9,
+        "specificity_term_hits": 13,
+        "secondary_keyword_hits": 3
+      },
+      "distinctiveness": {
+        "nearest_article_slug": "",
+        "max_similarity": 0.0,
+        "strongest_heading_overlap": 0
+      }
+    },
+    "timestamp": "2026-06-26T11:44:46.066714+00:00"
+  },
+  "image_generation": {
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/image_generation_cache/moody-kitchen-texture-mistakes-to-avoid.json",
+    "provider": "flux",
+    "provider_model": "flux-2-max",
+    "model": "flux-2-max",
+    "fallback_provider": "openai",
+    "fallback_model": "gpt-image-1",
+    "size": "1536x1024",
+    "hero_quality": "high",
+    "section_quality": "medium",
+    "allow_fallback": true,
+    "fallback_events": 6,
+    "generated_images": 6,
+    "cache_hits": 0,
+    "generation_calls": 12,
+    "qa_calls": 1,
+    "details": [
+      {
+        "label": "hero",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 2,
+        "qa_calls": 1,
+        "quality": "high",
+        "qa_enabled": true,
+        "provider": "openai",
+        "provider_model": "gpt-image-1",
+        "fallback_used": true,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "error": "HTTP Error 402: Payment Required"
+          },
+          {
+            "provider": "openai",
+            "model": "gpt-image-1",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "quality": "high",
+            "elapsed_seconds_total": 49.81,
+            "width": 1536,
+            "height": 1024,
+            "format": "PNG"
+          }
+        ],
+        "validation_reason": "image passed basic validation",
+        "qa_reason": "The image perfectly aligns with the prompt, showcasing a tactile close crop of a moody kitchen with warm, layered textures and a practical, inviting atmosphere. The lighting is natural, the palette matches creams, camel, honey wood, and soft terracotta accents, and the composition highlights tactile layering and material contrast without clutter. It is editorial in style and realistic in setting."
+      },
+      {
+        "label": "section-1",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 2,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "openai",
+        "provider_model": "gpt-image-1",
+        "fallback_used": true,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "error": "HTTP Error 402: Payment Required"
+          },
+          {
+            "provider": "openai",
+            "model": "gpt-image-1",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "quality": "medium",
+            "elapsed_seconds_total": 20.71,
+            "width": 1536,
+            "height": 1024,
+            "format": "PNG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-2",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 2,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "openai",
+        "provider_model": "gpt-image-1",
+        "fallback_used": true,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "error": "HTTP Error 402: Payment Required"
+          },
+          {
+            "provider": "openai",
+            "model": "gpt-image-1",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "quality": "medium",
+            "elapsed_seconds_total": 23.89,
+            "width": 1536,
+            "height": 1024,
+            "format": "PNG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-3",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 2,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "openai",
+        "provider_model": "gpt-image-1",
+        "fallback_used": true,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "error": "HTTP Error 402: Payment Required"
+          },
+          {
+            "provider": "openai",
+            "model": "gpt-image-1",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "quality": "medium",
+            "elapsed_seconds_total": 18.14,
+            "width": 1536,
+            "height": 1024,
+            "format": "PNG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-4",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 2,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "openai",
+        "provider_model": "gpt-image-1",
+        "fallback_used": true,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "error": "HTTP Error 402: Payment Required"
+          },
+          {
+            "provider": "openai",
+            "model": "gpt-image-1",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "quality": "medium",
+            "elapsed_seconds_total": 26.56,
+            "width": 1536,
+            "height": 1024,
+            "format": "PNG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-5",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 2,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "openai",
+        "provider_model": "gpt-image-1",
+        "fallback_used": true,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "error": "HTTP Error 402: Payment Required"
+          },
+          {
+            "provider": "openai",
+            "model": "gpt-image-1",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "quality": "medium",
+            "elapsed_seconds_total": 22.76,
+            "width": 1536,
+            "height": 1024,
+            "format": "PNG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      }
+    ]
+  },
+  "pinterest": {
+    "variants_requested": 4,
+    "pin_assets_generated": false,
+    "mode": null
+  }
+}

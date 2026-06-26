@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "475e8b8a70b2b0ea66974070d8101543ce2e27f28f708c7b1adb476e3e379b0c",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/moody-kitchen-texture-mistakes-to-avoid/hero.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-1": {
+    "cache_key": "da90ad5a52a6fe087204b5fb9769a1529b9df52c3f347100d48a583c94fb56d8",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/moody-kitchen-texture-mistakes-to-avoid/section-1.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-2": {
+    "cache_key": "4b6931827b95bc6bddbe0cb9b54f8254f3f57c372c56446c27768b65de97e75d",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/moody-kitchen-texture-mistakes-to-avoid/section-2.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-3": {
+    "cache_key": "9f550fe33eb1d2823a05814cc999868e0ddca0f3617de511d6ca8121f4018e14",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/moody-kitchen-texture-mistakes-to-avoid/section-3.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-4": {
+    "cache_key": "a41eb80e7e63b7dbc145a578c89ab279d24e48267b2685c5c2eeba761c4acc84",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/moody-kitchen-texture-mistakes-to-avoid/section-4.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-5": {
+    "cache_key": "681a0bf73515fed4c1e2fe3b64667d42c3b1d4449bf7dc01ecb2cc7d2c0e586f",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/moody-kitchen-texture-mistakes-to-avoid/section-5.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  }
+}

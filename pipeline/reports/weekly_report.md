@@ -1,19 +1,19 @@
 # Weekly Pipeline Report
 
-Generated: 2026-06-24
+Generated: 2026-06-26
 Window: last 7 days
 
 Articles Published: 4  
 Pins Generated: 12  
-Pins Scheduled: 77  
+Pins Scheduled: 80  
 Pins Published: 0  
 Repins Scheduled: 0
 
 ## Articles Published
 - best-furniture-neutral-bathroom
+- moody-kitchen-texture-mistakes-to-avoid
 - parisian-entryway-texture-mistakes-to-avoid
 - parisian-kitchen-texture-mistakes-to-avoid
-- scandinavian-entryway-texture-mistakes-to-avoid
 
 ## Top Performing Pins
 - No published pin analytics were available for this window.

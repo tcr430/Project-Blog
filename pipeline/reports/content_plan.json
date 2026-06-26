@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-06-24T11:46:43.885654+00:00",
+  "generated_at": "2026-06-26T11:47:59.067884+00:00",
   "total_clusters": 396,
   "summary": {
-    "missing": 347,
-    "underdeveloped": 49,
+    "missing": 346,
+    "underdeveloped": 50,
     "growing": 0,
     "strong": 0,
     "saturated": 0
   },
   "saturation_summary": {
-    "empty": 347,
-    "needs_growth": 49
+    "empty": 346,
+    "needs_growth": 50
   },
   "editorial_mix_rules": {
     "recent_window_article_count": 8,
@@ -228,7 +228,6 @@
     "moody entryway",
     "moody guest bedroom",
     "moody home office",
-    "moody kitchen",
     "moody laundry room",
     "moody living room",
     "moody nursery",
@@ -444,6 +443,7 @@
     "scandinavian entryway",
     "parisian kitchen",
     "parisian entryway",
+    "moody kitchen",
     "living room textures and materials",
     "small dining nook",
     "scandinavian bedroom",
@@ -461,10 +461,10 @@
     "coastal bedroom",
     "coastal bathroom",
     "living room styling details",
+    "bedroom styling details",
     "transitional bedroom",
     "transitional bathroom",
     "neutral bathroom",
-    "bedroom styling details",
     "bathroom styling details",
     "summer patio decor",
     "spring bedroom refresh",
@@ -32333,217 +32333,6 @@
         "moody home office decor",
         "moody home office layout ideas",
         "moody home office color palette"
-      ],
-      "allowed_angle_ids": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "style_specific"
-      ]
-    },
-    {
-      "cluster_id": "moody_kitchen",
-      "cluster_name": "moody kitchen",
-      "domain_id": "kitchens_dining",
-      "health_label": "missing",
-      "article_count": 0,
-      "article_capacity_target": 14,
-      "capacity_ratio": 0.0,
-      "growth_openings": 10,
-      "saturation_state": "empty",
-      "selection_action": "boost",
-      "latest_publication_date": "",
-      "days_since_latest": null,
-      "subtopics_total": 5,
-      "subtopics_covered": [],
-      "subtopic_ids_covered": [],
-      "subtopics_missing": [
-        "Layout and Foundation",
-        "Color Palette",
-        "Furniture and Anchors",
-        "Lighting",
-        "Textures and Layers"
-      ],
-      "subtopic_ids_missing": [
-        "layout",
-        "colors",
-        "furniture",
-        "lighting",
-        "textures"
-      ],
-      "angle_distribution": {
-        "ideas": 0,
-        "how_to": 0,
-        "mistakes": 0,
-        "best_options": 0,
-        "style_specific": 0
-      },
-      "underused_angles": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "style_specific"
-      ],
-      "overused_angles": [],
-      "intent_distribution": {
-        "comparison": 0,
-        "decision_making": 0,
-        "implementation": 0,
-        "inspiration": 0,
-        "problem_solving": 0
-      },
-      "underused_intents": [
-        "comparison",
-        "decision_making",
-        "implementation",
-        "inspiration",
-        "problem_solving"
-      ],
-      "overused_intents": [],
-      "recommended_concepts": [
-        {
-          "cluster_id": "moody_kitchen",
-          "cluster_name": "moody kitchen",
-          "domain_id": "kitchens_dining",
-          "subtopic_id": "colors",
-          "subtopic_name": "Color Palette",
-          "angle_id": "how_to",
-          "intent_id": "implementation",
-          "modifier": "",
-          "primary_keyword": "how to choose colors for a moody kitchen",
-          "secondary_keywords": [
-            "moody kitchen ideas",
-            "how to style a moody kitchen",
-            "moody kitchen decor",
-            "moody kitchen layout ideas"
-          ],
-          "search_intent": "how_to",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 96,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "moody_kitchen",
-          "cluster_name": "moody kitchen",
-          "domain_id": "kitchens_dining",
-          "subtopic_id": "colors",
-          "subtopic_name": "Color Palette",
-          "angle_id": "ideas",
-          "intent_id": "inspiration",
-          "modifier": "",
-          "primary_keyword": "moody kitchen color palette ideas",
-          "secondary_keywords": [
-            "moody kitchen ideas",
-            "how to style a moody kitchen",
-            "moody kitchen decor",
-            "moody kitchen layout ideas"
-          ],
-          "search_intent": "ideas",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 96,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "moody_kitchen",
-          "cluster_name": "moody kitchen",
-          "domain_id": "kitchens_dining",
-          "subtopic_id": "colors",
-          "subtopic_name": "Color Palette",
-          "angle_id": "mistakes",
-          "intent_id": "problem_solving",
-          "modifier": "",
-          "primary_keyword": "moody kitchen color mistakes to avoid",
-          "secondary_keywords": [
-            "moody kitchen ideas",
-            "how to style a moody kitchen",
-            "moody kitchen decor",
-            "moody kitchen layout ideas"
-          ],
-          "search_intent": "problem_solution",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 96,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        }
-      ],
-      "recommended_topics": [
-        "how to choose colors for a moody kitchen",
-        "moody kitchen color palette ideas",
-        "moody kitchen color mistakes to avoid"
-      ],
-      "priority_score": 100,
-      "season": "",
-      "holiday": "",
-      "source": "content architecture",
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "pinterest_intelligence": {
-        "cluster_signal_label": "no_data",
-        "cluster_signal_boost": 0
-      },
-      "seed_keywords": [
-        "moody kitchen ideas",
-        "how to style a moody kitchen",
-        "moody kitchen decor",
-        "moody kitchen layout ideas",
-        "moody kitchen color palette"
       ],
       "allowed_angle_ids": [
         "ideas",
@@ -74060,7 +73849,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-08",
-      "days_since_latest": 77,
+      "days_since_latest": 79,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -74273,7 +74062,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-08",
-      "days_since_latest": 76,
+      "days_since_latest": 78,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -74486,7 +74275,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-17",
-      "days_since_latest": 68,
+      "days_since_latest": 70,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -74699,7 +74488,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-04",
-      "days_since_latest": 51,
+      "days_since_latest": 53,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -74912,7 +74701,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-06",
-      "days_since_latest": 49,
+      "days_since_latest": 51,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -75125,7 +74914,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-18",
-      "days_since_latest": 97,
+      "days_since_latest": 99,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -75338,7 +75127,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-23",
-      "days_since_latest": 93,
+      "days_since_latest": 95,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -75551,7 +75340,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-18",
-      "days_since_latest": 36,
+      "days_since_latest": 38,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation"
@@ -75764,7 +75553,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-27",
-      "days_since_latest": 27,
+      "days_since_latest": 29,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation"
@@ -75977,7 +75766,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-01",
-      "days_since_latest": 22,
+      "days_since_latest": 24,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -76190,7 +75979,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-03",
-      "days_since_latest": 20,
+      "days_since_latest": 22,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -76265,7 +76054,7 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 74,
+          "score": 78,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -76302,7 +76091,7 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 74,
+          "score": 78,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -76339,7 +76128,7 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 74,
+          "score": 78,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -76403,7 +76192,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-10",
-      "days_since_latest": 13,
+      "days_since_latest": 15,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -76616,7 +76405,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-12",
-      "days_since_latest": 11,
+      "days_since_latest": 13,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -76829,7 +76618,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-15",
-      "days_since_latest": 8,
+      "days_since_latest": 10,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -77042,7 +76831,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-17",
-      "days_since_latest": 6,
+      "days_since_latest": 8,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -77255,7 +77044,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-22",
-      "days_since_latest": 1,
+      "days_since_latest": 3,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -77468,7 +77257,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-24",
-      "days_since_latest": 0,
+      "days_since_latest": 2,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -77660,6 +77449,219 @@
         "parisian entryway decor",
         "parisian entryway layout ideas",
         "parisian entryway color palette"
+      ],
+      "allowed_angle_ids": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "style_specific"
+      ]
+    },
+    {
+      "cluster_id": "moody_kitchen",
+      "cluster_name": "moody kitchen",
+      "domain_id": "kitchens_dining",
+      "health_label": "underdeveloped",
+      "article_count": 1,
+      "article_capacity_target": 14,
+      "capacity_ratio": 0.07,
+      "growth_openings": 9,
+      "saturation_state": "needs_growth",
+      "selection_action": "boost",
+      "latest_publication_date": "2026-06-26",
+      "days_since_latest": 0,
+      "subtopics_total": 5,
+      "subtopics_covered": [
+        "Textures and Layers"
+      ],
+      "subtopic_ids_covered": [
+        "textures"
+      ],
+      "subtopics_missing": [
+        "Layout and Foundation",
+        "Color Palette",
+        "Furniture and Anchors",
+        "Lighting"
+      ],
+      "subtopic_ids_missing": [
+        "layout",
+        "colors",
+        "furniture",
+        "lighting"
+      ],
+      "angle_distribution": {
+        "ideas": 0,
+        "how_to": 0,
+        "mistakes": 1,
+        "best_options": 0,
+        "style_specific": 0
+      },
+      "underused_angles": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "style_specific"
+      ],
+      "overused_angles": [],
+      "intent_distribution": {
+        "comparison": 0,
+        "decision_making": 0,
+        "implementation": 0,
+        "inspiration": 0,
+        "problem_solving": 1
+      },
+      "underused_intents": [
+        "comparison",
+        "decision_making",
+        "implementation",
+        "inspiration",
+        "problem_solving"
+      ],
+      "overused_intents": [],
+      "recommended_concepts": [
+        {
+          "cluster_id": "moody_kitchen",
+          "cluster_name": "moody kitchen",
+          "domain_id": "kitchens_dining",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "how_to",
+          "intent_id": "implementation",
+          "modifier": "",
+          "primary_keyword": "how to choose colors for a moody kitchen",
+          "secondary_keywords": [
+            "moody kitchen ideas",
+            "how to style a moody kitchen",
+            "moody kitchen decor",
+            "moody kitchen layout ideas"
+          ],
+          "search_intent": "how_to",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 74,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        },
+        {
+          "cluster_id": "moody_kitchen",
+          "cluster_name": "moody kitchen",
+          "domain_id": "kitchens_dining",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "ideas",
+          "intent_id": "inspiration",
+          "modifier": "",
+          "primary_keyword": "moody kitchen color palette ideas",
+          "secondary_keywords": [
+            "moody kitchen ideas",
+            "how to style a moody kitchen",
+            "moody kitchen decor",
+            "moody kitchen layout ideas"
+          ],
+          "search_intent": "ideas",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 74,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        },
+        {
+          "cluster_id": "moody_kitchen",
+          "cluster_name": "moody kitchen",
+          "domain_id": "kitchens_dining",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "style_specific",
+          "intent_id": "inspiration",
+          "modifier": "",
+          "primary_keyword": "moody kitchen paint and color ideas",
+          "secondary_keywords": [
+            "moody kitchen ideas",
+            "how to style a moody kitchen",
+            "moody kitchen decor",
+            "moody kitchen layout ideas"
+          ],
+          "search_intent": "styling_advice",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 74,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        }
+      ],
+      "recommended_topics": [
+        "how to choose colors for a moody kitchen",
+        "moody kitchen color palette ideas",
+        "moody kitchen paint and color ideas"
+      ],
+      "priority_score": 70,
+      "season": "",
+      "holiday": "",
+      "source": "content architecture",
+      "pinterest_signal": {
+        "label": "no_data",
+        "boost": 0,
+        "pinterest_article_count": 0,
+        "strong_article_count": 0,
+        "weak_article_count": 0,
+        "average_score": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_saves": 0.0
+      },
+      "pinterest_intelligence": {
+        "cluster_signal_label": "no_data",
+        "cluster_signal_boost": 0
+      },
+      "seed_keywords": [
+        "moody kitchen ideas",
+        "how to style a moody kitchen",
+        "moody kitchen decor",
+        "moody kitchen layout ideas",
+        "moody kitchen color palette"
       ],
       "allowed_angle_ids": [
         "ideas",
@@ -78102,7 +78104,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-28",
-      "days_since_latest": 87,
+      "days_since_latest": 89,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -78315,7 +78317,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-30",
-      "days_since_latest": 86,
+      "days_since_latest": 88,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -78528,7 +78530,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-01",
-      "days_since_latest": 83,
+      "days_since_latest": 85,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation"
@@ -78741,7 +78743,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-01",
-      "days_since_latest": 83,
+      "days_since_latest": 85,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -78954,7 +78956,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-03",
-      "days_since_latest": 82,
+      "days_since_latest": 84,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -79167,7 +79169,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-06",
-      "days_since_latest": 79,
+      "days_since_latest": 81,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -79380,7 +79382,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-10",
-      "days_since_latest": 75,
+      "days_since_latest": 77,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -79593,7 +79595,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-13",
-      "days_since_latest": 72,
+      "days_since_latest": 74,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -79806,7 +79808,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-20",
-      "days_since_latest": 65,
+      "days_since_latest": 67,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -80019,7 +80021,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-22",
-      "days_since_latest": 63,
+      "days_since_latest": 65,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -80232,7 +80234,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-24",
-      "days_since_latest": 61,
+      "days_since_latest": 63,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -80445,7 +80447,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-27",
-      "days_since_latest": 58,
+      "days_since_latest": 60,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -80658,7 +80660,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-29",
-      "days_since_latest": 56,
+      "days_since_latest": 58,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -80871,7 +80873,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-01",
-      "days_since_latest": 54,
+      "days_since_latest": 56,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -81084,7 +81086,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-08",
-      "days_since_latest": 47,
+      "days_since_latest": 49,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Surface Styling"
@@ -81282,6 +81284,215 @@
       ]
     },
     {
+      "cluster_id": "bedroom_styling_details",
+      "cluster_name": "bedroom styling details",
+      "domain_id": "bedrooms",
+      "health_label": "underdeveloped",
+      "article_count": 1,
+      "article_capacity_target": 10,
+      "capacity_ratio": 0.1,
+      "growth_openings": 8,
+      "saturation_state": "needs_growth",
+      "selection_action": "boost",
+      "latest_publication_date": "2026-05-11",
+      "days_since_latest": 45,
+      "subtopics_total": 3,
+      "subtopics_covered": [
+        "Surface Styling"
+      ],
+      "subtopic_ids_covered": [
+        "surfaces"
+      ],
+      "subtopics_missing": [
+        "Shelf Styling",
+        "Accessories and Finishing Touches"
+      ],
+      "subtopic_ids_missing": [
+        "shelves",
+        "accessories"
+      ],
+      "angle_distribution": {
+        "ideas": 0,
+        "how_to": 0,
+        "mistakes": 1,
+        "best_options": 0,
+        "budget": 0,
+        "style_specific": 0
+      },
+      "underused_angles": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "budget",
+        "style_specific"
+      ],
+      "overused_angles": [],
+      "intent_distribution": {
+        "comparison": 0,
+        "decision_making": 0,
+        "implementation": 0,
+        "inspiration": 0,
+        "problem_solving": 1
+      },
+      "underused_intents": [
+        "comparison",
+        "decision_making",
+        "implementation",
+        "inspiration",
+        "problem_solving"
+      ],
+      "overused_intents": [],
+      "recommended_concepts": [
+        {
+          "cluster_id": "bedroom_styling_details",
+          "cluster_name": "bedroom styling details",
+          "domain_id": "bedrooms",
+          "subtopic_id": "accessories",
+          "subtopic_name": "Accessories and Finishing Touches",
+          "angle_id": "how_to",
+          "intent_id": "implementation",
+          "modifier": "",
+          "primary_keyword": "how to accessorize bedroom",
+          "secondary_keywords": [
+            "bedroom surface styling ideas",
+            "bedroom finishing touch ideas",
+            "how to style surfaces in bedroom",
+            "bedroom surface styling mistakes to avoid"
+          ],
+          "search_intent": "how_to",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 82,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": true,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        },
+        {
+          "cluster_id": "bedroom_styling_details",
+          "cluster_name": "bedroom styling details",
+          "domain_id": "bedrooms",
+          "subtopic_id": "accessories",
+          "subtopic_name": "Accessories and Finishing Touches",
+          "angle_id": "ideas",
+          "intent_id": "inspiration",
+          "modifier": "",
+          "primary_keyword": "bedroom finishing touch ideas",
+          "secondary_keywords": [
+            "bedroom surface styling ideas",
+            "how to style surfaces in bedroom",
+            "bedroom surface styling mistakes to avoid",
+            "best decor accents for bedroom"
+          ],
+          "search_intent": "ideas",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 82,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": true,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        },
+        {
+          "cluster_id": "bedroom_styling_details",
+          "cluster_name": "bedroom styling details",
+          "domain_id": "bedrooms",
+          "subtopic_id": "accessories",
+          "subtopic_name": "Accessories and Finishing Touches",
+          "angle_id": "style_specific",
+          "intent_id": "inspiration",
+          "modifier": "",
+          "primary_keyword": "minimalist decor accents for bedroom",
+          "secondary_keywords": [
+            "bedroom surface styling ideas",
+            "bedroom finishing touch ideas",
+            "how to style surfaces in bedroom",
+            "bedroom surface styling mistakes to avoid"
+          ],
+          "search_intent": "styling_advice",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 82,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": true,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        }
+      ],
+      "recommended_topics": [
+        "how to accessorize bedroom",
+        "bedroom finishing touch ideas",
+        "minimalist decor accents for bedroom"
+      ],
+      "priority_score": 67,
+      "season": "",
+      "holiday": "",
+      "source": "content architecture",
+      "pinterest_signal": {
+        "label": "no_data",
+        "boost": 0,
+        "pinterest_article_count": 0,
+        "strong_article_count": 0,
+        "weak_article_count": 0,
+        "average_score": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_saves": 0.0
+      },
+      "pinterest_intelligence": {
+        "cluster_signal_label": "no_data",
+        "cluster_signal_boost": 0
+      },
+      "seed_keywords": [
+        "bedroom surface styling ideas",
+        "bedroom finishing touch ideas"
+      ],
+      "allowed_angle_ids": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "budget",
+        "style_specific"
+      ]
+    },
+    {
       "cluster_id": "transitional_bedroom",
       "cluster_name": "transitional bedroom",
       "domain_id": "bedrooms",
@@ -81293,7 +81504,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-05",
-      "days_since_latest": 18,
+      "days_since_latest": 20,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors",
@@ -81506,7 +81717,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-08",
-      "days_since_latest": 15,
+      "days_since_latest": 17,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors",
@@ -81719,7 +81930,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-19",
-      "days_since_latest": 4,
+      "days_since_latest": 6,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation",
@@ -81921,215 +82132,6 @@
       ]
     },
     {
-      "cluster_id": "bedroom_styling_details",
-      "cluster_name": "bedroom styling details",
-      "domain_id": "bedrooms",
-      "health_label": "underdeveloped",
-      "article_count": 1,
-      "article_capacity_target": 10,
-      "capacity_ratio": 0.1,
-      "growth_openings": 8,
-      "saturation_state": "needs_growth",
-      "selection_action": "boost",
-      "latest_publication_date": "2026-05-11",
-      "days_since_latest": 43,
-      "subtopics_total": 3,
-      "subtopics_covered": [
-        "Surface Styling"
-      ],
-      "subtopic_ids_covered": [
-        "surfaces"
-      ],
-      "subtopics_missing": [
-        "Shelf Styling",
-        "Accessories and Finishing Touches"
-      ],
-      "subtopic_ids_missing": [
-        "shelves",
-        "accessories"
-      ],
-      "angle_distribution": {
-        "ideas": 0,
-        "how_to": 0,
-        "mistakes": 1,
-        "best_options": 0,
-        "budget": 0,
-        "style_specific": 0
-      },
-      "underused_angles": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "budget",
-        "style_specific"
-      ],
-      "overused_angles": [],
-      "intent_distribution": {
-        "comparison": 0,
-        "decision_making": 0,
-        "implementation": 0,
-        "inspiration": 0,
-        "problem_solving": 1
-      },
-      "underused_intents": [
-        "comparison",
-        "decision_making",
-        "implementation",
-        "inspiration",
-        "problem_solving"
-      ],
-      "overused_intents": [],
-      "recommended_concepts": [
-        {
-          "cluster_id": "bedroom_styling_details",
-          "cluster_name": "bedroom styling details",
-          "domain_id": "bedrooms",
-          "subtopic_id": "accessories",
-          "subtopic_name": "Accessories and Finishing Touches",
-          "angle_id": "how_to",
-          "intent_id": "implementation",
-          "modifier": "",
-          "primary_keyword": "how to accessorize bedroom",
-          "secondary_keywords": [
-            "bedroom surface styling ideas",
-            "bedroom finishing touch ideas",
-            "how to style surfaces in bedroom",
-            "bedroom surface styling mistakes to avoid"
-          ],
-          "search_intent": "how_to",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 78,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": false,
-            "cluster_health": "underdeveloped",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "bedroom_styling_details",
-          "cluster_name": "bedroom styling details",
-          "domain_id": "bedrooms",
-          "subtopic_id": "accessories",
-          "subtopic_name": "Accessories and Finishing Touches",
-          "angle_id": "ideas",
-          "intent_id": "inspiration",
-          "modifier": "",
-          "primary_keyword": "bedroom finishing touch ideas",
-          "secondary_keywords": [
-            "bedroom surface styling ideas",
-            "how to style surfaces in bedroom",
-            "bedroom surface styling mistakes to avoid",
-            "best decor accents for bedroom"
-          ],
-          "search_intent": "ideas",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 78,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": false,
-            "cluster_health": "underdeveloped",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "bedroom_styling_details",
-          "cluster_name": "bedroom styling details",
-          "domain_id": "bedrooms",
-          "subtopic_id": "accessories",
-          "subtopic_name": "Accessories and Finishing Touches",
-          "angle_id": "style_specific",
-          "intent_id": "inspiration",
-          "modifier": "",
-          "primary_keyword": "minimalist decor accents for bedroom",
-          "secondary_keywords": [
-            "bedroom surface styling ideas",
-            "bedroom finishing touch ideas",
-            "how to style surfaces in bedroom",
-            "bedroom surface styling mistakes to avoid"
-          ],
-          "search_intent": "styling_advice",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 78,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": false,
-            "cluster_health": "underdeveloped",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        }
-      ],
-      "recommended_topics": [
-        "how to accessorize bedroom",
-        "bedroom finishing touch ideas",
-        "minimalist decor accents for bedroom"
-      ],
-      "priority_score": 62,
-      "season": "",
-      "holiday": "",
-      "source": "content architecture",
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "pinterest_intelligence": {
-        "cluster_signal_label": "no_data",
-        "cluster_signal_boost": 0
-      },
-      "seed_keywords": [
-        "bedroom surface styling ideas",
-        "bedroom finishing touch ideas"
-      ],
-      "allowed_angle_ids": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "budget",
-        "style_specific"
-      ]
-    },
-    {
       "cluster_id": "bathroom_styling_details",
       "cluster_name": "bathroom styling details",
       "domain_id": "utility_transition",
@@ -82141,7 +82143,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-13",
-      "days_since_latest": 42,
+      "days_since_latest": 44,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Surface Styling"
@@ -82350,7 +82352,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-15",
-      "days_since_latest": 40,
+      "days_since_latest": 42,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Seasonal Refresh"
@@ -82562,7 +82564,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-02",
-      "days_since_latest": 83,
+      "days_since_latest": 85,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Seasonal Refresh"
@@ -82774,7 +82776,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-20",
-      "days_since_latest": 34,
+      "days_since_latest": 36,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Light and Openness"
@@ -82980,7 +82982,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-22",
-      "days_since_latest": 33,
+      "days_since_latest": 35,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Layered Lighting"
@@ -83186,7 +83188,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-25",
-      "days_since_latest": 29,
+      "days_since_latest": 31,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Layered Lighting"
@@ -83392,7 +83394,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-29",
-      "days_since_latest": 25,
+      "days_since_latest": 27,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Layered Lighting"
@@ -83598,7 +83600,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-15",
-      "days_since_latest": 70,
+      "days_since_latest": 72,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Seasonal Refresh",

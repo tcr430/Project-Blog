@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-06-24T11:43:28.667812+00:00",
+  "generated_at": "2026-06-26T11:44:46.067263+00:00",
   "articles": [
     {
-      "article_slug": "parisian-entryway-texture-mistakes-to-avoid",
-      "cluster_id": "parisian_entryway",
+      "article_slug": "moody-kitchen-texture-mistakes-to-avoid",
+      "cluster_id": "moody_kitchen",
       "subtopic_id": "textures",
       "angle_id": "mistakes",
-      "primary_keyword": "parisian entryway texture mistakes to avoid",
+      "primary_keyword": "moody kitchen texture mistakes to avoid",
       "validation_status": "pass",
       "warnings": [],
       "errors": [],
       "checks": {
         "generic_intro": {
-          "intro_word_count": 123,
-          "concept_overlap": 8,
-          "first_sentence": "A Parisian entryway effortlessly suggests a welcome invitation to your home — a soft first impression shaped by natural light, well-chosen materials, and textured layers."
+          "intro_word_count": 140,
+          "concept_overlap": 5,
+          "first_sentence": "Moody kitchens have a powerful visual appeal: dark, rich tones create a dramatic backdrop that feels intimate and refined."
         },
         "heading_quality": {
           "heading_count": 5,
@@ -23,17 +23,17 @@
           "repeated_signature_count": 0,
           "repeated_stem_count": 0,
           "headings": [
-            "Overloading Similar Textures Leading to a Flat Entryway",
-            "Overusing Textures That Clash with the Parisian Palette",
-            "Missing the Subtle Layering that Defines Parisian Entryways",
-            "Skewed Proportions Between Textured Materials That Disrupt Balance",
-            "Allowing Too Many Contrasting Rough Textures to Create Visual Chaos"
+            "Skipping Material Variation Leaves Your Kitchen Feeling Flat and Uninviting",
+            "Overusing Cool Metals Creates a Sterile Atmosphere",
+            "Ignoring Color Temperature in Layered Textures Disrupts the Palette",
+            "Overloading Heavy Textures in Small or Low-Light Kitchens Undermines Space",
+            "Mistaking Texture Quantity for Quality Throws Off the Final Mood"
           ]
         },
         "specificity": {
-          "concept_token_hits": 10,
-          "specificity_term_hits": 11,
-          "secondary_keyword_hits": 1
+          "concept_token_hits": 9,
+          "specificity_term_hits": 13,
+          "secondary_keyword_hits": 3
         },
         "distinctiveness": {
           "nearest_article_slug": "",
@@ -41,7 +41,7 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-06-24T11:43:28.667301+00:00"
+      "timestamp": "2026-06-26T11:44:46.066714+00:00"
     },
     {
       "article_slug": "summer-balcony-styling-mistakes-to-avoid",
@@ -88,7 +88,49 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-06-24T11:42:29.843204+00:00"
+      "timestamp": "2026-06-26T11:43:22.217469+00:00"
+    },
+    {
+      "article_slug": "parisian-entryway-texture-mistakes-to-avoid",
+      "cluster_id": "parisian_entryway",
+      "subtopic_id": "textures",
+      "angle_id": "mistakes",
+      "primary_keyword": "parisian entryway texture mistakes to avoid",
+      "validation_status": "pass",
+      "warnings": [],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 123,
+          "concept_overlap": 8,
+          "first_sentence": "A Parisian entryway effortlessly suggests a welcome invitation to your home — a soft first impression shaped by natural light, well-chosen materials, and textured layers."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 1,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Overloading Similar Textures Leading to a Flat Entryway",
+            "Overusing Textures That Clash with the Parisian Palette",
+            "Missing the Subtle Layering that Defines Parisian Entryways",
+            "Skewed Proportions Between Textured Materials That Disrupt Balance",
+            "Allowing Too Many Contrasting Rough Textures to Create Visual Chaos"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 10,
+          "specificity_term_hits": 11,
+          "secondary_keyword_hits": 1
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-06-24T11:43:28.667301+00:00"
     },
     {
       "article_slug": "parisian-kitchen-texture-mistakes-to-avoid",
