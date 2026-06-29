@@ -7,7 +7,7 @@ cluster_name: "neutral kitchen"
 cluster_slug: "neutral-kitchen"
 cluster_article_count: 1
 cluster_primary_keywords: ["how to style a neutral kitchen"]
-cluster_generated_at: "2026-06-26T11:47:59.285277+00:00"
+cluster_generated_at: "2026-06-29T13:06:49.099863+00:00"
 cluster_intro: "Neutral Kitchen is a useful decorating topic because it combines inspiration with practical decision-making. Readers usually arrive here looking for a clear style direction, help solving a room problem, or confidence about how to make the look feel intentional at home.
 
 This pillar page brings together the site's coverage around neutral kitchen, with article angles shaped by keyword themes such as how to style a neutral kitchen. That mix helps the page support both broader search intent and more specific decorating questions without feeling repetitive.

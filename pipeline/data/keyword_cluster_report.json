@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-26T11:47:57.576921+00:00",
-  "cluster_count": 50,
-  "article_count": 54,
+  "generated_at": "2026-06-29T13:06:47.391522+00:00",
+  "cluster_count": 51,
+  "article_count": 55,
   "subtopic_count": 10,
   "angle_count": 5,
   "angle_distribution": {
     "best_options": 25,
     "how_to": 4,
     "ideas": 4,
-    "mistakes": 20,
+    "mistakes": 21,
     "style_specific": 1
   },
   "clusters": [
@@ -302,7 +302,7 @@
       "representative_article_slugs": [
         "bathroom-surface-styling-mistakes-to-avoid"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
@@ -1430,6 +1430,50 @@
       "status": "underdeveloped"
     },
     {
+      "cluster_id": "moody_entryway",
+      "cluster_name": "moody entryway",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "utility_transition"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "moody entryway texture mistakes to avoid"
+      ],
+      "latest_article_date": "2026-06-29",
+      "latest_publication": {
+        "article_slug": "moody-entryway-texture-mistakes-to-avoid",
+        "article_title": "Moody Entryway Texture Mistakes to Avoid",
+        "publish_date": "2026-06-29",
+        "subtopic_id": "textures",
+        "subtopic_name": "textures and layers",
+        "angle_id": "mistakes"
+      },
+      "representative_article_slugs": [
+        "moody-entryway-texture-mistakes-to-avoid"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "textures",
+          "subtopic_name": "textures and layers",
+          "article_count": 1,
+          "latest_article_date": "2026-06-29",
+          "representative_article_slugs": [
+            "moody-entryway-texture-mistakes-to-avoid"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "mistakes": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
       "cluster_id": "moody_kitchen",
       "cluster_name": "moody kitchen",
       "legacy_cluster_names": [],
@@ -2112,7 +2156,7 @@
       "representative_article_slugs": [
         "summer-patio-decor-mistakes-to-avoid"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,

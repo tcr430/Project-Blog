@@ -1,24 +1,25 @@
 {
-  "generated_at": "2026-06-26T11:44:46.063154+00:00",
+  "generated_at": "2026-06-29T13:03:34.175007+00:00",
   "articles": [
     {
-      "article_slug": "moody-kitchen-texture-mistakes-to-avoid",
-      "cluster": "moody kitchen",
-      "cluster_id": "moody kitchen",
+      "article_slug": "moody-entryway-texture-mistakes-to-avoid",
+      "cluster": "moody entryway",
+      "cluster_id": "moody entryway",
       "subtopic_id": "textures",
       "subtopic_name": "textures and layers",
       "angle_id": "mistakes",
       "intent_id": "problem_solving",
-      "primary_keyword": "moody kitchen texture mistakes to avoid",
+      "primary_keyword": "moody entryway texture mistakes to avoid",
       "validation_status": "warning",
       "warnings": [
         "Chosen title is still close to an existing site title pattern.",
-        "Main section headings may be too generic for the chosen keyword.",
+        "Headings do not reflect the topic cluster strongly enough.",
+        "None of the secondary keywords appear in the article body.",
         "Primary keyword appears very lightly in the article body."
       ],
       "errors": [],
       "duplicate_candidate_slugs": [],
-      "timestamp": "2026-06-26T11:44:46.062835+00:00"
+      "timestamp": "2026-06-29T13:03:34.174739+00:00"
     },
     {
       "article_slug": "summer-balcony-styling-mistakes-to-avoid",
@@ -37,7 +38,26 @@
       ],
       "errors": [],
       "duplicate_candidate_slugs": [],
-      "timestamp": "2026-06-26T11:43:22.212839+00:00"
+      "timestamp": "2026-06-29T13:02:59.772836+00:00"
+    },
+    {
+      "article_slug": "moody-kitchen-texture-mistakes-to-avoid",
+      "cluster": "moody kitchen",
+      "cluster_id": "moody kitchen",
+      "subtopic_id": "textures",
+      "subtopic_name": "textures and layers",
+      "angle_id": "mistakes",
+      "intent_id": "problem_solving",
+      "primary_keyword": "moody kitchen texture mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Chosen title is still close to an existing site title pattern.",
+        "Main section headings may be too generic for the chosen keyword.",
+        "Primary keyword appears very lightly in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-06-26T11:44:46.062835+00:00"
     },
     {
       "article_slug": "parisian-entryway-texture-mistakes-to-avoid",

@@ -7,7 +7,7 @@ cluster_name: "neutral bathroom"
 cluster_slug: "neutral-bathroom"
 cluster_article_count: 2
 cluster_primary_keywords: ["best furniture for a neutral bathroom", "how to style a neutral bathroom"]
-cluster_generated_at: "2026-06-26T11:47:59.285277+00:00"
+cluster_generated_at: "2026-06-29T13:06:49.099863+00:00"
 cluster_intro: "Neutral Bathroom is a useful decorating topic because it combines inspiration with practical decision-making. Readers usually arrive here looking for a clear style direction, help solving a room problem, or confidence about how to make the look feel intentional at home.
 
 This pillar page brings together the site's coverage around neutral bathroom, with article angles shaped by keyword themes such as best furniture for a neutral bathroom, how to style a neutral bathroom. That mix helps the page support both broader search intent and more specific decorating questions without feeling repetitive.

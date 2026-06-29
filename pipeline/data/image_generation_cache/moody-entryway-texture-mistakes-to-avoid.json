@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "2a2c3a536d841f1f0fa79d735ced947ec2417c65f0f206ab467e508766e72ec0",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/moody-entryway-texture-mistakes-to-avoid/hero.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-1": {
+    "cache_key": "f6d9f01d6da1d4efdea1c400ffc4cd405c5ecef96129a5fbd34681da9cd55389",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/moody-entryway-texture-mistakes-to-avoid/section-1.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-2": {
+    "cache_key": "ccfac9245ee5d24437c3811c2b8400712746c535d4d223cb91079ba9b45b55b8",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/moody-entryway-texture-mistakes-to-avoid/section-2.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-3": {
+    "cache_key": "fda78fb220d03ecc15da0f3cf9af06deac4f4a74655873040f60a9aef7007aa1",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/moody-entryway-texture-mistakes-to-avoid/section-3.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-4": {
+    "cache_key": "951292d387c77d0eed66ba31af66c545e0e86e2543c0c12a8a8523cb06bd7aeb",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/moody-entryway-texture-mistakes-to-avoid/section-4.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-5": {
+    "cache_key": "238312d6a1054ef65a648f1136c5a640b7f3e066ee98b4972b0afc77f351775e",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/moody-entryway-texture-mistakes-to-avoid/section-5.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  }
+}
