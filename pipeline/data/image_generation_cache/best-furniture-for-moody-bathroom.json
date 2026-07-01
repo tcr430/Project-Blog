@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "cddc6e5e1b45df7a46e95904282b834085561bee3aadeee4b77dd42772f32a4d",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-moody-bathroom/hero.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-1": {
+    "cache_key": "b985bc483207e39148ce87d5286d4e0ac24ad1a1581822e4562b07aacba69a0f",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-moody-bathroom/section-1.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-2": {
+    "cache_key": "f7c878de35398a5b9ff1a951fd1bc598c2820c54e2bf98d85b4384a0efa596ed",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-moody-bathroom/section-2.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-3": {
+    "cache_key": "5f4a00a98567f39b3223e82e10c90cbc888cc555a3b0d659f5f37dbbe2d78695",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-moody-bathroom/section-3.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-4": {
+    "cache_key": "72c44782e71dd9661cb5a28f84ac2293c539daa09ac73ca7aa33e73d8bfb7a21",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-moody-bathroom/section-4.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-5": {
+    "cache_key": "30dded9d3636fe6c038773690d0a979edf79fed5356327f7a35bc843fb5c946a",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-moody-bathroom/section-5.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  }
+}

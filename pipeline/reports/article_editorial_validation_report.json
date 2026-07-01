@@ -1,42 +1,86 @@
 {
-  "generated_at": "2026-06-29T13:03:34.178652+00:00",
+  "generated_at": "2026-07-01T11:57:36.280608+00:00",
   "articles": [
     {
-      "article_slug": "moody-entryway-texture-mistakes-to-avoid",
-      "cluster_id": "moody_entryway",
-      "subtopic_id": "textures",
-      "angle_id": "mistakes",
-      "primary_keyword": "moody entryway texture mistakes to avoid",
-      "validation_status": "warning",
+      "article_slug": "best-furniture-for-moody-bathroom",
+      "cluster_id": "moody_bathroom",
+      "subtopic_id": "furniture",
+      "angle_id": "best_options",
+      "primary_keyword": "best furniture for a moody bathroom",
+      "validation_status": "pass",
+      "warnings": [],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 147,
+          "concept_overlap": 4,
+          "first_sentence": "Designing a moody bathroom is about creating a space that feels both intimate and intriguing."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 0,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Prioritizing Durability and Visual Weight in Moody Bathroom Furniture",
+            "Classic Wood Vanities Bring Warmth and Texture to Moody Bathroom Decor",
+            "Black Metal and Industrial-Style Cabinets Enhance Mood with Sleek Edge",
+            "Furniture Choices That Adapt to Bathroom Size and Layout Without Sacrificing Style",
+            "Narrowing Your Choices: How to Confidently Select Furniture for Your Moody Bathroom"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 8,
+          "specificity_term_hits": 10,
+          "secondary_keyword_hits": 1
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "moody-bathroom-texture-mistakes-to-avoid",
+          "max_similarity": 0.286,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-07-01T11:57:36.280049+00:00"
+    },
+    {
+      "article_slug": "thoughtful-small-bathroom-ideas-layered-light-spaces",
+      "cluster_id": "small bathroom ideas",
+      "subtopic_id": "legacy_unspecified",
+      "angle_id": "legacy_unspecified",
+      "primary_keyword": "small bathroom ideas",
+      "validation_status": "fail",
       "warnings": [
         "Several section headings do not signal the topic strongly enough.",
         "Supporting keyword ideas are barely reflected in the body."
       ],
-      "errors": [],
+      "errors": [
+        "Section headings are too unspecific to support a strong editorial frame."
+      ],
       "checks": {
         "generic_intro": {
-          "intro_word_count": 122,
+          "intro_word_count": 125,
           "concept_overlap": 5,
-          "first_sentence": "Moody entryways offer a compelling first impression, anchoring your home with a sense of intimacy and sophistication."
+          "first_sentence": "A small bathroom often feels like a puzzle: how to balance function with style while making the most of limited space?"
         },
         "heading_quality": {
           "heading_count": 6,
           "vague_heading_count": 0,
-          "low_specificity_heading_count": 2,
+          "low_specificity_heading_count": 5,
           "repeated_signature_count": 0,
           "repeated_stem_count": 0,
           "headings": [
-            "Overly Smooth Surfaces That Flatten the Mood",
-            "Mixing Textures Without Clear Contrast Can Feel Chaotic",
-            "Overlooking Cohesion When Selecting Texture Families",
-            "Getting Texture Proportions Wrong in a Small Entryway",
-            "Forgetting Texture’s Role in Softening Lighting and Mood",
+            "Establishing the Foundation: Neutral Layers and Natural Surfaces",
+            "Introducing Depth with Color and Complementary Tones",
+            "Layering Function and Style in the Shower or Bath Zone",
+            "Styling Open Storage: A Subtle Balance of Practicality and Calm",
+            "Final Decisions: Mirrors, Lighting, and Finishing Details for Cohesion",
             "Conclusion"
           ]
         },
         "specificity": {
-          "concept_token_hits": 7,
-          "specificity_term_hits": 14,
+          "concept_token_hits": 10,
+          "specificity_term_hits": 12,
           "secondary_keyword_hits": 0
         },
         "distinctiveness": {
@@ -45,7 +89,7 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-06-29T13:03:34.178081+00:00"
+      "timestamp": "2026-07-01T11:56:59.828719+00:00"
     },
     {
       "article_slug": "summer-balcony-styling-mistakes-to-avoid",
@@ -92,7 +136,53 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-06-29T13:02:59.777429+00:00"
+      "timestamp": "2026-07-01T11:56:59.608756+00:00"
+    },
+    {
+      "article_slug": "moody-entryway-texture-mistakes-to-avoid",
+      "cluster_id": "moody_entryway",
+      "subtopic_id": "textures",
+      "angle_id": "mistakes",
+      "primary_keyword": "moody entryway texture mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Several section headings do not signal the topic strongly enough.",
+        "Supporting keyword ideas are barely reflected in the body."
+      ],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 122,
+          "concept_overlap": 5,
+          "first_sentence": "Moody entryways offer a compelling first impression, anchoring your home with a sense of intimacy and sophistication."
+        },
+        "heading_quality": {
+          "heading_count": 6,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 2,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Overly Smooth Surfaces That Flatten the Mood",
+            "Mixing Textures Without Clear Contrast Can Feel Chaotic",
+            "Overlooking Cohesion When Selecting Texture Families",
+            "Getting Texture Proportions Wrong in a Small Entryway",
+            "Forgetting Texture’s Role in Softening Lighting and Mood",
+            "Conclusion"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 7,
+          "specificity_term_hits": 14,
+          "secondary_keyword_hits": 0
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-06-29T13:03:34.178081+00:00"
     },
     {
       "article_slug": "moody-kitchen-texture-mistakes-to-avoid",
@@ -349,54 +439,6 @@
         }
       },
       "timestamp": "2026-06-15T15:11:49.501679+00:00"
-    },
-    {
-      "article_slug": "thoughtful-small-bathroom-ideas-layered-light-spaces",
-      "cluster_id": "small bathroom ideas",
-      "subtopic_id": "legacy_unspecified",
-      "angle_id": "legacy_unspecified",
-      "primary_keyword": "small bathroom ideas",
-      "validation_status": "fail",
-      "warnings": [
-        "Several section headings do not signal the topic strongly enough.",
-        "Supporting keyword ideas are barely reflected in the body."
-      ],
-      "errors": [
-        "Section headings are too unspecific to support a strong editorial frame."
-      ],
-      "checks": {
-        "generic_intro": {
-          "intro_word_count": 125,
-          "concept_overlap": 3,
-          "first_sentence": "A small bathroom often feels like a puzzle: how to balance function with style while making the most of limited space?"
-        },
-        "heading_quality": {
-          "heading_count": 6,
-          "vague_heading_count": 0,
-          "low_specificity_heading_count": 5,
-          "repeated_signature_count": 0,
-          "repeated_stem_count": 0,
-          "headings": [
-            "Establishing the Foundation: Neutral Layers and Natural Surfaces",
-            "Introducing Depth with Color and Complementary Tones",
-            "Layering Function and Style in the Shower or Bath Zone",
-            "Styling Open Storage: A Subtle Balance of Practicality and Calm",
-            "Final Decisions: Mirrors, Lighting, and Finishing Details for Cohesion",
-            "Conclusion"
-          ]
-        },
-        "specificity": {
-          "concept_token_hits": 10,
-          "specificity_term_hits": 12,
-          "secondary_keyword_hits": 0
-        },
-        "distinctiveness": {
-          "nearest_article_slug": "",
-          "max_similarity": 0.0,
-          "strongest_heading_overlap": 0
-        }
-      },
-      "timestamp": "2026-06-15T15:11:00.799625+00:00"
     },
     {
       "article_slug": "best-furniture-earthy-entryway",

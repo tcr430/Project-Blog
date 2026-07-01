@@ -1,19 +1,18 @@
 # Weekly Pipeline Report
 
-Generated: 2026-06-29
+Generated: 2026-07-01
 Window: last 7 days
 
-Articles Published: 4  
-Pins Generated: 12  
-Pins Scheduled: 83  
+Articles Published: 3  
+Pins Generated: 9  
+Pins Scheduled: 86  
 Pins Published: 0  
 Repins Scheduled: 0
 
 ## Articles Published
+- best-furniture-for-moody-bathroom
 - moody-entryway-texture-mistakes-to-avoid
 - moody-kitchen-texture-mistakes-to-avoid
-- parisian-entryway-texture-mistakes-to-avoid
-- parisian-kitchen-texture-mistakes-to-avoid
 
 ## Top Performing Pins
 - No published pin analytics were available for this window.

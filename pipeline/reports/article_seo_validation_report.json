@@ -1,6 +1,63 @@
 {
-  "generated_at": "2026-06-29T13:03:34.175007+00:00",
+  "generated_at": "2026-07-01T11:57:36.276535+00:00",
   "articles": [
+    {
+      "article_slug": "best-furniture-for-moody-bathroom",
+      "cluster": "moody bathroom",
+      "cluster_id": "moody bathroom",
+      "subtopic_id": "furniture",
+      "subtopic_name": "furniture and anchors",
+      "angle_id": "best options",
+      "intent_id": "comparison",
+      "primary_keyword": "best furniture for a moody bathroom",
+      "validation_status": "warning",
+      "warnings": [
+        "Primary keyword appears very lightly in the article body.",
+        "Title does not reflect the primary keyword strongly enough."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-07-01T11:57:36.276281+00:00"
+    },
+    {
+      "article_slug": "thoughtful-small-bathroom-ideas-layered-light-spaces",
+      "cluster": "small bathroom ideas",
+      "cluster_id": "",
+      "subtopic_id": "legacy_unspecified",
+      "subtopic_name": "Legacy / Unspecified",
+      "angle_id": "how_to",
+      "intent_id": "inspiration",
+      "primary_keyword": "small bathroom ideas",
+      "validation_status": "warning",
+      "warnings": [
+        "Headings do not reflect the topic cluster strongly enough.",
+        "Main section headings may be too generic for the chosen keyword.",
+        "None of the secondary keywords appear in the article body.",
+        "Primary keyword appears very lightly in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-07-01T11:56:59.825016+00:00"
+    },
+    {
+      "article_slug": "summer-balcony-styling-mistakes-to-avoid",
+      "cluster": "summer balcony styling",
+      "cluster_id": "summer balcony styling",
+      "subtopic_id": "refresh",
+      "subtopic_name": "seasonal refresh",
+      "angle_id": "mistakes",
+      "intent_id": "problem_solving",
+      "primary_keyword": "summer balcony styling mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Main section headings may be too generic for the chosen keyword.",
+        "None of the secondary keywords appear in the article body.",
+        "Primary keyword appears very lightly in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-07-01T11:56:59.604157+00:00"
+    },
     {
       "article_slug": "moody-entryway-texture-mistakes-to-avoid",
       "cluster": "moody entryway",
@@ -20,25 +77,6 @@
       "errors": [],
       "duplicate_candidate_slugs": [],
       "timestamp": "2026-06-29T13:03:34.174739+00:00"
-    },
-    {
-      "article_slug": "summer-balcony-styling-mistakes-to-avoid",
-      "cluster": "summer balcony styling",
-      "cluster_id": "summer balcony styling",
-      "subtopic_id": "refresh",
-      "subtopic_name": "seasonal refresh",
-      "angle_id": "mistakes",
-      "intent_id": "problem_solving",
-      "primary_keyword": "summer balcony styling mistakes to avoid",
-      "validation_status": "warning",
-      "warnings": [
-        "Main section headings may be too generic for the chosen keyword.",
-        "None of the secondary keywords appear in the article body.",
-        "Primary keyword appears very lightly in the article body."
-      ],
-      "errors": [],
-      "duplicate_candidate_slugs": [],
-      "timestamp": "2026-06-29T13:02:59.772836+00:00"
     },
     {
       "article_slug": "moody-kitchen-texture-mistakes-to-avoid",
@@ -152,26 +190,6 @@
       "errors": [],
       "duplicate_candidate_slugs": [],
       "timestamp": "2026-06-15T15:11:49.498126+00:00"
-    },
-    {
-      "article_slug": "thoughtful-small-bathroom-ideas-layered-light-spaces",
-      "cluster": "small bathroom ideas",
-      "cluster_id": "",
-      "subtopic_id": "legacy_unspecified",
-      "subtopic_name": "Legacy / Unspecified",
-      "angle_id": "how_to",
-      "intent_id": "inspiration",
-      "primary_keyword": "small bathroom ideas",
-      "validation_status": "warning",
-      "warnings": [
-        "Headings do not reflect the topic cluster strongly enough.",
-        "Main section headings may be too generic for the chosen keyword.",
-        "None of the secondary keywords appear in the article body.",
-        "Primary keyword appears very lightly in the article body."
-      ],
-      "errors": [],
-      "duplicate_candidate_slugs": [],
-      "timestamp": "2026-06-15T15:11:00.795988+00:00"
     },
     {
       "article_slug": "best-furniture-earthy-entryway",

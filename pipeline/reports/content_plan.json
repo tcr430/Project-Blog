@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T13:06:48.823113+00:00",
+  "generated_at": "2026-07-01T12:00:43.084407+00:00",
   "total_clusters": 396,
   "summary": {
     "missing": 345,
@@ -426,7 +426,6 @@
     "bedroom window treatments",
     "living room window treatments",
     "organic modern living room",
-    "moody bathroom",
     "minimalist bedroom",
     "mediterranean bathroom",
     "biophilic bedroom",
@@ -435,6 +434,8 @@
     "earthy bathroom",
     "scandinavian bedroom",
     "scandinavian bathroom",
+    "neutral bedroom",
+    "parisian bedroom",
     "neutral kitchen",
     "neutral entryway",
     "transitional kitchen",
@@ -449,8 +450,6 @@
     "moody entryway",
     "living room textures and materials",
     "small dining nook",
-    "neutral bedroom",
-    "parisian bedroom",
     "parisian bathroom",
     "moody bedroom",
     "minimalist bathroom",
@@ -468,6 +467,7 @@
     "transitional bedroom",
     "transitional bathroom",
     "neutral bathroom",
+    "moody bathroom",
     "spring bedroom refresh",
     "tiny bathroom decor",
     "living room lighting",
@@ -74557,222 +74557,6 @@
       ]
     },
     {
-      "cluster_id": "moody_bathroom",
-      "cluster_name": "moody bathroom",
-      "domain_id": "utility_transition",
-      "health_label": "underdeveloped",
-      "article_count": 1,
-      "article_capacity_target": 14,
-      "capacity_ratio": 0.07,
-      "growth_openings": 9,
-      "saturation_state": "needs_growth",
-      "selection_action": "boost",
-      "latest_publication_date": "2026-04-08",
-      "days_since_latest": 82,
-      "subtopics_total": 5,
-      "subtopics_covered": [
-        "Textures and Layers"
-      ],
-      "subtopic_ids_covered": [
-        "textures"
-      ],
-      "subtopics_missing": [
-        "Layout and Foundation",
-        "Color Palette",
-        "Furniture and Anchors",
-        "Lighting"
-      ],
-      "subtopic_ids_missing": [
-        "layout",
-        "colors",
-        "furniture",
-        "lighting"
-      ],
-      "angle_distribution": {
-        "ideas": 0,
-        "how_to": 0,
-        "mistakes": 1,
-        "best_options": 0,
-        "style_specific": 0
-      },
-      "underused_angles": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "style_specific"
-      ],
-      "overused_angles": [],
-      "intent_distribution": {
-        "comparison": 0,
-        "decision_making": 0,
-        "implementation": 0,
-        "inspiration": 0,
-        "problem_solving": 1
-      },
-      "underused_intents": [
-        "comparison",
-        "decision_making",
-        "implementation",
-        "inspiration",
-        "problem_solving"
-      ],
-      "overused_intents": [],
-      "recommended_concepts": [
-        {
-          "cluster_id": "moody_bathroom",
-          "cluster_name": "moody bathroom",
-          "domain_id": "utility_transition",
-          "subtopic_id": "furniture",
-          "subtopic_name": "Furniture and Anchors",
-          "angle_id": "best_options",
-          "intent_id": "comparison",
-          "modifier": "",
-          "primary_keyword": "best furniture for a moody bathroom",
-          "secondary_keywords": [
-            "moody bathroom ideas",
-            "how to style a moody bathroom",
-            "moody bathroom decor",
-            "moody bathroom layout ideas"
-          ],
-          "search_intent": "comparison",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "monetizable_decision",
-          "editorial_mix_tags": [
-            "monetizable_decision",
-            "evergreen_authority"
-          ],
-          "score": 82,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "underdeveloped",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "moody_bathroom",
-          "cluster_name": "moody bathroom",
-          "domain_id": "utility_transition",
-          "subtopic_id": "layout",
-          "subtopic_name": "Layout and Foundation",
-          "angle_id": "best_options",
-          "intent_id": "comparison",
-          "modifier": "",
-          "primary_keyword": "best layout for a moody bathroom",
-          "secondary_keywords": [
-            "moody bathroom ideas",
-            "how to style a moody bathroom",
-            "moody bathroom decor",
-            "moody bathroom layout ideas"
-          ],
-          "search_intent": "comparison",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "monetizable_decision",
-          "editorial_mix_tags": [
-            "monetizable_decision",
-            "evergreen_authority"
-          ],
-          "score": 82,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "underdeveloped",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "moody_bathroom",
-          "cluster_name": "moody bathroom",
-          "domain_id": "utility_transition",
-          "subtopic_id": "lighting",
-          "subtopic_name": "Lighting",
-          "angle_id": "best_options",
-          "intent_id": "comparison",
-          "modifier": "",
-          "primary_keyword": "best lighting for a moody bathroom",
-          "secondary_keywords": [
-            "moody bathroom ideas",
-            "how to style a moody bathroom",
-            "moody bathroom decor",
-            "moody bathroom layout ideas"
-          ],
-          "search_intent": "comparison",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "monetizable_decision",
-          "editorial_mix_tags": [
-            "monetizable_decision",
-            "evergreen_authority"
-          ],
-          "score": 82,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "underdeveloped",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        }
-      ],
-      "recommended_topics": [
-        "best furniture for a moody bathroom",
-        "best layout for a moody bathroom",
-        "best lighting for a moody bathroom"
-      ],
-      "priority_score": 75,
-      "season": "",
-      "holiday": "",
-      "source": "content architecture",
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "pinterest_intelligence": {
-        "cluster_signal_label": "no_data",
-        "cluster_signal_boost": 0
-      },
-      "seed_keywords": [
-        "moody bathroom ideas",
-        "how to style a moody bathroom",
-        "moody bathroom decor",
-        "moody bathroom layout ideas",
-        "moody bathroom color palette"
-      ],
-      "allowed_angle_ids": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "style_specific"
-      ]
-    },
-    {
       "cluster_id": "minimalist_bedroom",
       "cluster_name": "minimalist bedroom",
       "domain_id": "bedrooms",
@@ -74784,7 +74568,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-08",
-      "days_since_latest": 81,
+      "days_since_latest": 83,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -74997,7 +74781,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-17",
-      "days_since_latest": 73,
+      "days_since_latest": 75,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -75210,7 +74994,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-04",
-      "days_since_latest": 56,
+      "days_since_latest": 58,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -75423,7 +75207,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-06",
-      "days_since_latest": 54,
+      "days_since_latest": 56,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -75639,7 +75423,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-18",
-      "days_since_latest": 102,
+      "days_since_latest": 104,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -75852,7 +75636,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-23",
-      "days_since_latest": 98,
+      "days_since_latest": 100,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -76065,7 +75849,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-28",
-      "days_since_latest": 92,
+      "days_since_latest": 94,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -76278,7 +76062,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-30",
-      "days_since_latest": 91,
+      "days_since_latest": 93,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -76480,6 +76264,434 @@
       ]
     },
     {
+      "cluster_id": "neutral_bedroom",
+      "cluster_name": "neutral bedroom",
+      "domain_id": "bedrooms",
+      "health_label": "underdeveloped",
+      "article_count": 1,
+      "article_capacity_target": 14,
+      "capacity_ratio": 0.07,
+      "growth_openings": 9,
+      "saturation_state": "needs_growth",
+      "selection_action": "boost",
+      "latest_publication_date": "2026-04-01",
+      "days_since_latest": 90,
+      "subtopics_total": 5,
+      "subtopics_covered": [
+        "Layout and Foundation"
+      ],
+      "subtopic_ids_covered": [
+        "layout"
+      ],
+      "subtopics_missing": [
+        "Color Palette",
+        "Furniture and Anchors",
+        "Lighting",
+        "Textures and Layers"
+      ],
+      "subtopic_ids_missing": [
+        "colors",
+        "furniture",
+        "lighting",
+        "textures"
+      ],
+      "angle_distribution": {
+        "ideas": 0,
+        "how_to": 1,
+        "mistakes": 0,
+        "best_options": 0,
+        "style_specific": 0
+      },
+      "underused_angles": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "style_specific"
+      ],
+      "overused_angles": [],
+      "intent_distribution": {
+        "comparison": 0,
+        "decision_making": 0,
+        "implementation": 1,
+        "inspiration": 0,
+        "problem_solving": 0
+      },
+      "underused_intents": [
+        "comparison",
+        "decision_making",
+        "implementation",
+        "inspiration",
+        "problem_solving"
+      ],
+      "overused_intents": [],
+      "recommended_concepts": [
+        {
+          "cluster_id": "neutral_bedroom",
+          "cluster_name": "neutral bedroom",
+          "domain_id": "bedrooms",
+          "subtopic_id": "furniture",
+          "subtopic_name": "Furniture and Anchors",
+          "angle_id": "best_options",
+          "intent_id": "comparison",
+          "modifier": "",
+          "primary_keyword": "best furniture for a neutral bedroom",
+          "secondary_keywords": [
+            "neutral bedroom ideas",
+            "how to style a neutral bedroom",
+            "neutral bedroom decor",
+            "neutral bedroom layout ideas"
+          ],
+          "search_intent": "comparison",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "monetizable_decision",
+          "editorial_mix_tags": [
+            "monetizable_decision",
+            "evergreen_authority"
+          ],
+          "score": 80,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": true,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        },
+        {
+          "cluster_id": "neutral_bedroom",
+          "cluster_name": "neutral bedroom",
+          "domain_id": "bedrooms",
+          "subtopic_id": "lighting",
+          "subtopic_name": "Lighting",
+          "angle_id": "best_options",
+          "intent_id": "comparison",
+          "modifier": "",
+          "primary_keyword": "best lighting for a neutral bedroom",
+          "secondary_keywords": [
+            "neutral bedroom ideas",
+            "how to style a neutral bedroom",
+            "neutral bedroom decor",
+            "neutral bedroom layout ideas"
+          ],
+          "search_intent": "comparison",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "monetizable_decision",
+          "editorial_mix_tags": [
+            "monetizable_decision",
+            "evergreen_authority"
+          ],
+          "score": 80,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": true,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        },
+        {
+          "cluster_id": "neutral_bedroom",
+          "cluster_name": "neutral bedroom",
+          "domain_id": "bedrooms",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "ideas",
+          "intent_id": "inspiration",
+          "modifier": "",
+          "primary_keyword": "neutral bedroom color palette ideas",
+          "secondary_keywords": [
+            "neutral bedroom ideas",
+            "how to style a neutral bedroom",
+            "neutral bedroom decor",
+            "neutral bedroom layout ideas"
+          ],
+          "search_intent": "ideas",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 74,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": true,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": "editorial mix: evergreen_authority is overrepresented recently (-6)"
+          }
+        }
+      ],
+      "recommended_topics": [
+        "best furniture for a neutral bedroom",
+        "best lighting for a neutral bedroom",
+        "neutral bedroom color palette ideas"
+      ],
+      "priority_score": 72,
+      "season": "",
+      "holiday": "",
+      "source": "content architecture",
+      "pinterest_signal": {
+        "label": "cold",
+        "boost": -6,
+        "pinterest_article_count": 1,
+        "strong_article_count": 0,
+        "weak_article_count": 1,
+        "average_score": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_saves": 0.0
+      },
+      "pinterest_intelligence": {
+        "cluster_signal_label": "no_data",
+        "cluster_signal_boost": 0
+      },
+      "seed_keywords": [
+        "neutral bedroom ideas",
+        "how to style a neutral bedroom",
+        "neutral bedroom decor",
+        "neutral bedroom layout ideas",
+        "neutral bedroom color palette"
+      ],
+      "allowed_angle_ids": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "style_specific"
+      ]
+    },
+    {
+      "cluster_id": "parisian_bedroom",
+      "cluster_name": "parisian bedroom",
+      "domain_id": "bedrooms",
+      "health_label": "underdeveloped",
+      "article_count": 1,
+      "article_capacity_target": 14,
+      "capacity_ratio": 0.07,
+      "growth_openings": 9,
+      "saturation_state": "needs_growth",
+      "selection_action": "boost",
+      "latest_publication_date": "2026-04-01",
+      "days_since_latest": 90,
+      "subtopics_total": 5,
+      "subtopics_covered": [
+        "Furniture and Anchors"
+      ],
+      "subtopic_ids_covered": [
+        "furniture"
+      ],
+      "subtopics_missing": [
+        "Layout and Foundation",
+        "Color Palette",
+        "Lighting",
+        "Textures and Layers"
+      ],
+      "subtopic_ids_missing": [
+        "layout",
+        "colors",
+        "lighting",
+        "textures"
+      ],
+      "angle_distribution": {
+        "ideas": 0,
+        "how_to": 0,
+        "mistakes": 0,
+        "best_options": 1,
+        "style_specific": 0
+      },
+      "underused_angles": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "style_specific"
+      ],
+      "overused_angles": [],
+      "intent_distribution": {
+        "comparison": 1,
+        "decision_making": 0,
+        "implementation": 0,
+        "inspiration": 0,
+        "problem_solving": 0
+      },
+      "underused_intents": [
+        "comparison",
+        "decision_making",
+        "implementation",
+        "inspiration",
+        "problem_solving"
+      ],
+      "overused_intents": [],
+      "recommended_concepts": [
+        {
+          "cluster_id": "parisian_bedroom",
+          "cluster_name": "parisian bedroom",
+          "domain_id": "bedrooms",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "how_to",
+          "intent_id": "implementation",
+          "modifier": "",
+          "primary_keyword": "how to choose colors for a parisian bedroom",
+          "secondary_keywords": [
+            "parisian bedroom ideas",
+            "how to style a parisian bedroom",
+            "parisian bedroom decor",
+            "parisian bedroom layout ideas"
+          ],
+          "search_intent": "how_to",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 74,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": true,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": "editorial mix: evergreen_authority is overrepresented recently (-6)"
+          }
+        },
+        {
+          "cluster_id": "parisian_bedroom",
+          "cluster_name": "parisian bedroom",
+          "domain_id": "bedrooms",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "ideas",
+          "intent_id": "inspiration",
+          "modifier": "",
+          "primary_keyword": "parisian bedroom color palette ideas",
+          "secondary_keywords": [
+            "parisian bedroom ideas",
+            "how to style a parisian bedroom",
+            "parisian bedroom decor",
+            "parisian bedroom layout ideas"
+          ],
+          "search_intent": "ideas",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 74,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": true,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": "editorial mix: evergreen_authority is overrepresented recently (-6)"
+          }
+        },
+        {
+          "cluster_id": "parisian_bedroom",
+          "cluster_name": "parisian bedroom",
+          "domain_id": "bedrooms",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "mistakes",
+          "intent_id": "problem_solving",
+          "modifier": "",
+          "primary_keyword": "parisian bedroom color mistakes to avoid",
+          "secondary_keywords": [
+            "parisian bedroom ideas",
+            "how to style a parisian bedroom",
+            "parisian bedroom decor",
+            "parisian bedroom layout ideas"
+          ],
+          "search_intent": "problem_solution",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 74,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": true,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": "editorial mix: evergreen_authority is overrepresented recently (-6)"
+          }
+        }
+      ],
+      "recommended_topics": [
+        "how to choose colors for a parisian bedroom",
+        "parisian bedroom color palette ideas",
+        "parisian bedroom color mistakes to avoid"
+      ],
+      "priority_score": 72,
+      "season": "",
+      "holiday": "",
+      "source": "content architecture",
+      "pinterest_signal": {
+        "label": "cold",
+        "boost": -6,
+        "pinterest_article_count": 1,
+        "strong_article_count": 0,
+        "weak_article_count": 1,
+        "average_score": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_saves": 0.0
+      },
+      "pinterest_intelligence": {
+        "cluster_signal_label": "no_data",
+        "cluster_signal_boost": 0
+      },
+      "seed_keywords": [
+        "parisian bedroom ideas",
+        "how to style a parisian bedroom",
+        "parisian bedroom decor",
+        "parisian bedroom layout ideas",
+        "parisian bedroom color palette"
+      ],
+      "allowed_angle_ids": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "style_specific"
+      ]
+    },
+    {
       "cluster_id": "neutral_kitchen",
       "cluster_name": "neutral kitchen",
       "domain_id": "kitchens_dining",
@@ -76491,7 +76703,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-18",
-      "days_since_latest": 42,
+      "days_since_latest": 43,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation"
@@ -76706,7 +76918,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-27",
-      "days_since_latest": 33,
+      "days_since_latest": 34,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation"
@@ -76921,7 +77133,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-01",
-      "days_since_latest": 27,
+      "days_since_latest": 29,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -77137,7 +77349,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-03",
-      "days_since_latest": 25,
+      "days_since_latest": 27,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -77353,7 +77565,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-10",
-      "days_since_latest": 19,
+      "days_since_latest": 20,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -77566,7 +77778,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-12",
-      "days_since_latest": 17,
+      "days_since_latest": 18,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -77779,7 +77991,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-15",
-      "days_since_latest": 13,
+      "days_since_latest": 15,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -77992,7 +78204,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-17",
-      "days_since_latest": 12,
+      "days_since_latest": 13,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -78208,7 +78420,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-22",
-      "days_since_latest": 6,
+      "days_since_latest": 8,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -78424,7 +78636,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-24",
-      "days_since_latest": 5,
+      "days_since_latest": 7,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -78640,7 +78852,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-26",
-      "days_since_latest": 3,
+      "days_since_latest": 5,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -78856,7 +79068,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-29",
-      "days_since_latest": 0,
+      "days_since_latest": 1,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -79483,434 +79695,6 @@
       ]
     },
     {
-      "cluster_id": "neutral_bedroom",
-      "cluster_name": "neutral bedroom",
-      "domain_id": "bedrooms",
-      "health_label": "underdeveloped",
-      "article_count": 1,
-      "article_capacity_target": 14,
-      "capacity_ratio": 0.07,
-      "growth_openings": 9,
-      "saturation_state": "needs_growth",
-      "selection_action": "boost",
-      "latest_publication_date": "2026-04-01",
-      "days_since_latest": 88,
-      "subtopics_total": 5,
-      "subtopics_covered": [
-        "Layout and Foundation"
-      ],
-      "subtopic_ids_covered": [
-        "layout"
-      ],
-      "subtopics_missing": [
-        "Color Palette",
-        "Furniture and Anchors",
-        "Lighting",
-        "Textures and Layers"
-      ],
-      "subtopic_ids_missing": [
-        "colors",
-        "furniture",
-        "lighting",
-        "textures"
-      ],
-      "angle_distribution": {
-        "ideas": 0,
-        "how_to": 1,
-        "mistakes": 0,
-        "best_options": 0,
-        "style_specific": 0
-      },
-      "underused_angles": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "style_specific"
-      ],
-      "overused_angles": [],
-      "intent_distribution": {
-        "comparison": 0,
-        "decision_making": 0,
-        "implementation": 1,
-        "inspiration": 0,
-        "problem_solving": 0
-      },
-      "underused_intents": [
-        "comparison",
-        "decision_making",
-        "implementation",
-        "inspiration",
-        "problem_solving"
-      ],
-      "overused_intents": [],
-      "recommended_concepts": [
-        {
-          "cluster_id": "neutral_bedroom",
-          "cluster_name": "neutral bedroom",
-          "domain_id": "bedrooms",
-          "subtopic_id": "furniture",
-          "subtopic_name": "Furniture and Anchors",
-          "angle_id": "best_options",
-          "intent_id": "comparison",
-          "modifier": "",
-          "primary_keyword": "best furniture for a neutral bedroom",
-          "secondary_keywords": [
-            "neutral bedroom ideas",
-            "how to style a neutral bedroom",
-            "neutral bedroom decor",
-            "neutral bedroom layout ideas"
-          ],
-          "search_intent": "comparison",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "monetizable_decision",
-          "editorial_mix_tags": [
-            "monetizable_decision",
-            "evergreen_authority"
-          ],
-          "score": 76,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "underdeveloped",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "neutral_bedroom",
-          "cluster_name": "neutral bedroom",
-          "domain_id": "bedrooms",
-          "subtopic_id": "lighting",
-          "subtopic_name": "Lighting",
-          "angle_id": "best_options",
-          "intent_id": "comparison",
-          "modifier": "",
-          "primary_keyword": "best lighting for a neutral bedroom",
-          "secondary_keywords": [
-            "neutral bedroom ideas",
-            "how to style a neutral bedroom",
-            "neutral bedroom decor",
-            "neutral bedroom layout ideas"
-          ],
-          "search_intent": "comparison",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "monetizable_decision",
-          "editorial_mix_tags": [
-            "monetizable_decision",
-            "evergreen_authority"
-          ],
-          "score": 76,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "underdeveloped",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "neutral_bedroom",
-          "cluster_name": "neutral bedroom",
-          "domain_id": "bedrooms",
-          "subtopic_id": "colors",
-          "subtopic_name": "Color Palette",
-          "angle_id": "ideas",
-          "intent_id": "inspiration",
-          "modifier": "",
-          "primary_keyword": "neutral bedroom color palette ideas",
-          "secondary_keywords": [
-            "neutral bedroom ideas",
-            "how to style a neutral bedroom",
-            "neutral bedroom decor",
-            "neutral bedroom layout ideas"
-          ],
-          "search_intent": "ideas",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 70,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "underdeveloped",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": "editorial mix: evergreen_authority is overrepresented recently (-6)"
-          }
-        }
-      ],
-      "recommended_topics": [
-        "best furniture for a neutral bedroom",
-        "best lighting for a neutral bedroom",
-        "neutral bedroom color palette ideas"
-      ],
-      "priority_score": 69,
-      "season": "",
-      "holiday": "",
-      "source": "content architecture",
-      "pinterest_signal": {
-        "label": "cold",
-        "boost": -6,
-        "pinterest_article_count": 1,
-        "strong_article_count": 0,
-        "weak_article_count": 1,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "pinterest_intelligence": {
-        "cluster_signal_label": "no_data",
-        "cluster_signal_boost": 0
-      },
-      "seed_keywords": [
-        "neutral bedroom ideas",
-        "how to style a neutral bedroom",
-        "neutral bedroom decor",
-        "neutral bedroom layout ideas",
-        "neutral bedroom color palette"
-      ],
-      "allowed_angle_ids": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "style_specific"
-      ]
-    },
-    {
-      "cluster_id": "parisian_bedroom",
-      "cluster_name": "parisian bedroom",
-      "domain_id": "bedrooms",
-      "health_label": "underdeveloped",
-      "article_count": 1,
-      "article_capacity_target": 14,
-      "capacity_ratio": 0.07,
-      "growth_openings": 9,
-      "saturation_state": "needs_growth",
-      "selection_action": "boost",
-      "latest_publication_date": "2026-04-01",
-      "days_since_latest": 88,
-      "subtopics_total": 5,
-      "subtopics_covered": [
-        "Furniture and Anchors"
-      ],
-      "subtopic_ids_covered": [
-        "furniture"
-      ],
-      "subtopics_missing": [
-        "Layout and Foundation",
-        "Color Palette",
-        "Lighting",
-        "Textures and Layers"
-      ],
-      "subtopic_ids_missing": [
-        "layout",
-        "colors",
-        "lighting",
-        "textures"
-      ],
-      "angle_distribution": {
-        "ideas": 0,
-        "how_to": 0,
-        "mistakes": 0,
-        "best_options": 1,
-        "style_specific": 0
-      },
-      "underused_angles": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "style_specific"
-      ],
-      "overused_angles": [],
-      "intent_distribution": {
-        "comparison": 1,
-        "decision_making": 0,
-        "implementation": 0,
-        "inspiration": 0,
-        "problem_solving": 0
-      },
-      "underused_intents": [
-        "comparison",
-        "decision_making",
-        "implementation",
-        "inspiration",
-        "problem_solving"
-      ],
-      "overused_intents": [],
-      "recommended_concepts": [
-        {
-          "cluster_id": "parisian_bedroom",
-          "cluster_name": "parisian bedroom",
-          "domain_id": "bedrooms",
-          "subtopic_id": "colors",
-          "subtopic_name": "Color Palette",
-          "angle_id": "how_to",
-          "intent_id": "implementation",
-          "modifier": "",
-          "primary_keyword": "how to choose colors for a parisian bedroom",
-          "secondary_keywords": [
-            "parisian bedroom ideas",
-            "how to style a parisian bedroom",
-            "parisian bedroom decor",
-            "parisian bedroom layout ideas"
-          ],
-          "search_intent": "how_to",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 70,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "underdeveloped",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": "editorial mix: evergreen_authority is overrepresented recently (-6)"
-          }
-        },
-        {
-          "cluster_id": "parisian_bedroom",
-          "cluster_name": "parisian bedroom",
-          "domain_id": "bedrooms",
-          "subtopic_id": "colors",
-          "subtopic_name": "Color Palette",
-          "angle_id": "ideas",
-          "intent_id": "inspiration",
-          "modifier": "",
-          "primary_keyword": "parisian bedroom color palette ideas",
-          "secondary_keywords": [
-            "parisian bedroom ideas",
-            "how to style a parisian bedroom",
-            "parisian bedroom decor",
-            "parisian bedroom layout ideas"
-          ],
-          "search_intent": "ideas",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 70,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "underdeveloped",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": "editorial mix: evergreen_authority is overrepresented recently (-6)"
-          }
-        },
-        {
-          "cluster_id": "parisian_bedroom",
-          "cluster_name": "parisian bedroom",
-          "domain_id": "bedrooms",
-          "subtopic_id": "colors",
-          "subtopic_name": "Color Palette",
-          "angle_id": "mistakes",
-          "intent_id": "problem_solving",
-          "modifier": "",
-          "primary_keyword": "parisian bedroom color mistakes to avoid",
-          "secondary_keywords": [
-            "parisian bedroom ideas",
-            "how to style a parisian bedroom",
-            "parisian bedroom decor",
-            "parisian bedroom layout ideas"
-          ],
-          "search_intent": "problem_solution",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 70,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "underdeveloped",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": "editorial mix: evergreen_authority is overrepresented recently (-6)"
-          }
-        }
-      ],
-      "recommended_topics": [
-        "how to choose colors for a parisian bedroom",
-        "parisian bedroom color palette ideas",
-        "parisian bedroom color mistakes to avoid"
-      ],
-      "priority_score": 69,
-      "season": "",
-      "holiday": "",
-      "source": "content architecture",
-      "pinterest_signal": {
-        "label": "cold",
-        "boost": -6,
-        "pinterest_article_count": 1,
-        "strong_article_count": 0,
-        "weak_article_count": 1,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "pinterest_intelligence": {
-        "cluster_signal_label": "no_data",
-        "cluster_signal_boost": 0
-      },
-      "seed_keywords": [
-        "parisian bedroom ideas",
-        "how to style a parisian bedroom",
-        "parisian bedroom decor",
-        "parisian bedroom layout ideas",
-        "parisian bedroom color palette"
-      ],
-      "allowed_angle_ids": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "style_specific"
-      ]
-    },
-    {
       "cluster_id": "parisian_bathroom",
       "cluster_name": "parisian bathroom",
       "domain_id": "utility_transition",
@@ -79922,7 +79706,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-03",
-      "days_since_latest": 87,
+      "days_since_latest": 89,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -80138,7 +79922,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-06",
-      "days_since_latest": 84,
+      "days_since_latest": 86,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -80354,7 +80138,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-10",
-      "days_since_latest": 80,
+      "days_since_latest": 82,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -80567,7 +80351,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-13",
-      "days_since_latest": 77,
+      "days_since_latest": 79,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -80780,7 +80564,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-20",
-      "days_since_latest": 70,
+      "days_since_latest": 72,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -80996,7 +80780,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-22",
-      "days_since_latest": 68,
+      "days_since_latest": 70,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -81212,7 +80996,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-24",
-      "days_since_latest": 66,
+      "days_since_latest": 68,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -81428,7 +81212,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-27",
-      "days_since_latest": 63,
+      "days_since_latest": 65,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -81644,7 +81428,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-29",
-      "days_since_latest": 61,
+      "days_since_latest": 63,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -81857,7 +81641,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-01",
-      "days_since_latest": 59,
+      "days_since_latest": 61,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -82070,7 +81854,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-08",
-      "days_since_latest": 52,
+      "days_since_latest": 54,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Surface Styling"
@@ -82280,7 +82064,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-11",
-      "days_since_latest": 49,
+      "days_since_latest": 50,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Surface Styling"
@@ -82490,7 +82274,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-13",
-      "days_since_latest": 47,
+      "days_since_latest": 49,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Surface Styling"
@@ -82700,7 +82484,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-15",
-      "days_since_latest": 45,
+      "days_since_latest": 47,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Seasonal Refresh"
@@ -82912,7 +82696,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-05",
-      "days_since_latest": 24,
+      "days_since_latest": 26,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors",
@@ -83125,7 +82909,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-08",
-      "days_since_latest": 21,
+      "days_since_latest": 22,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors",
@@ -83338,7 +83122,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-19",
-      "days_since_latest": 10,
+      "days_since_latest": 11,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation",
@@ -83540,6 +83324,219 @@
       ]
     },
     {
+      "cluster_id": "moody_bathroom",
+      "cluster_name": "moody bathroom",
+      "domain_id": "utility_transition",
+      "health_label": "underdeveloped",
+      "article_count": 2,
+      "article_capacity_target": 14,
+      "capacity_ratio": 0.14,
+      "growth_openings": 8,
+      "saturation_state": "needs_growth",
+      "selection_action": "boost",
+      "latest_publication_date": "2026-07-01",
+      "days_since_latest": 0,
+      "subtopics_total": 5,
+      "subtopics_covered": [
+        "Furniture and Anchors",
+        "Textures and Layers"
+      ],
+      "subtopic_ids_covered": [
+        "furniture",
+        "textures"
+      ],
+      "subtopics_missing": [
+        "Layout and Foundation",
+        "Color Palette",
+        "Lighting"
+      ],
+      "subtopic_ids_missing": [
+        "layout",
+        "colors",
+        "lighting"
+      ],
+      "angle_distribution": {
+        "ideas": 0,
+        "how_to": 0,
+        "mistakes": 1,
+        "best_options": 1,
+        "style_specific": 0
+      },
+      "underused_angles": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "style_specific"
+      ],
+      "overused_angles": [],
+      "intent_distribution": {
+        "comparison": 1,
+        "decision_making": 0,
+        "implementation": 0,
+        "inspiration": 0,
+        "problem_solving": 1
+      },
+      "underused_intents": [
+        "comparison",
+        "decision_making",
+        "implementation",
+        "inspiration",
+        "problem_solving"
+      ],
+      "overused_intents": [],
+      "recommended_concepts": [
+        {
+          "cluster_id": "moody_bathroom",
+          "cluster_name": "moody bathroom",
+          "domain_id": "utility_transition",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "how_to",
+          "intent_id": "implementation",
+          "modifier": "",
+          "primary_keyword": "how to choose colors for a moody bathroom",
+          "secondary_keywords": [
+            "moody bathroom ideas",
+            "how to style a moody bathroom",
+            "moody bathroom decor",
+            "moody bathroom layout ideas"
+          ],
+          "search_intent": "how_to",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 68,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": "editorial mix: evergreen_authority is overrepresented recently (-6)"
+          }
+        },
+        {
+          "cluster_id": "moody_bathroom",
+          "cluster_name": "moody bathroom",
+          "domain_id": "utility_transition",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "ideas",
+          "intent_id": "inspiration",
+          "modifier": "",
+          "primary_keyword": "moody bathroom color palette ideas",
+          "secondary_keywords": [
+            "moody bathroom ideas",
+            "how to style a moody bathroom",
+            "moody bathroom decor",
+            "moody bathroom layout ideas"
+          ],
+          "search_intent": "ideas",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 68,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": "editorial mix: evergreen_authority is overrepresented recently (-6)"
+          }
+        },
+        {
+          "cluster_id": "moody_bathroom",
+          "cluster_name": "moody bathroom",
+          "domain_id": "utility_transition",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "style_specific",
+          "intent_id": "inspiration",
+          "modifier": "",
+          "primary_keyword": "moody bathroom paint and color ideas",
+          "secondary_keywords": [
+            "moody bathroom ideas",
+            "how to style a moody bathroom",
+            "moody bathroom decor",
+            "moody bathroom layout ideas"
+          ],
+          "search_intent": "styling_advice",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 68,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": "editorial mix: evergreen_authority is overrepresented recently (-6)"
+          }
+        }
+      ],
+      "recommended_topics": [
+        "how to choose colors for a moody bathroom",
+        "moody bathroom color palette ideas",
+        "moody bathroom paint and color ideas"
+      ],
+      "priority_score": 65,
+      "season": "",
+      "holiday": "",
+      "source": "content architecture",
+      "pinterest_signal": {
+        "label": "no_data",
+        "boost": 0,
+        "pinterest_article_count": 0,
+        "strong_article_count": 0,
+        "weak_article_count": 0,
+        "average_score": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_saves": 0.0
+      },
+      "pinterest_intelligence": {
+        "cluster_signal_label": "no_data",
+        "cluster_signal_boost": 0
+      },
+      "seed_keywords": [
+        "moody bathroom ideas",
+        "how to style a moody bathroom",
+        "moody bathroom decor",
+        "moody bathroom layout ideas",
+        "moody bathroom color palette"
+      ],
+      "allowed_angle_ids": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "style_specific"
+      ]
+    },
+    {
       "cluster_id": "spring_bedroom_refresh",
       "cluster_name": "spring bedroom refresh",
       "domain_id": "seasonal_styling",
@@ -83551,7 +83548,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-02",
-      "days_since_latest": 88,
+      "days_since_latest": 90,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Seasonal Refresh"
@@ -83625,7 +83622,7 @@
             "seasonal_opportunity",
             "evergreen_authority"
           ],
-          "score": 83,
+          "score": 87,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -83663,7 +83660,7 @@
             "seasonal_opportunity",
             "evergreen_authority"
           ],
-          "score": 83,
+          "score": 87,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -83701,7 +83698,7 @@
             "seasonal_opportunity",
             "evergreen_authority"
           ],
-          "score": 83,
+          "score": 87,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -83720,7 +83717,7 @@
         "spring bedroom refresh color palette",
         "natural spring bedroom refresh ideas"
       ],
-      "priority_score": 61,
+      "priority_score": 64,
       "season": "spring",
       "holiday": "",
       "source": "content architecture",
@@ -83763,7 +83760,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-20",
-      "days_since_latest": 40,
+      "days_since_latest": 42,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Light and Openness"
@@ -83970,7 +83967,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-22",
-      "days_since_latest": 38,
+      "days_since_latest": 40,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Layered Lighting"
@@ -84176,7 +84173,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-25",
-      "days_since_latest": 35,
+      "days_since_latest": 36,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Layered Lighting"
@@ -84382,7 +84379,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-29",
-      "days_since_latest": 31,
+      "days_since_latest": 32,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Layered Lighting"
@@ -84588,7 +84585,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-15",
-      "days_since_latest": 75,
+      "days_since_latest": 77,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Seasonal Refresh",

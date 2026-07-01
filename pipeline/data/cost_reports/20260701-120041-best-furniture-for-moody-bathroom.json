@@ -1,0 +1,303 @@
+{
+  "generated_at": "2026-07-01T12:00:41.393264+00:00",
+  "trend": "best furniture for a moody bathroom",
+  "slug": "best-furniture-for-moody-bathroom",
+  "article_generation": {
+    "cache_hit": false,
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/article_packages/ad949800ad79604ffd0e33b7a8004c229613a252e9f2ba30a7667a2836d433a8.json",
+    "model": "gpt-4.1-mini",
+    "generation_calls": 1,
+    "short_retries": 0,
+    "angle_retries": 0,
+    "product_retries": 0,
+    "selected_products": 0,
+    "affiliate_mode": false,
+    "monetization_profile_id": "commercial_strong",
+    "generated_link_count": 0,
+    "primary_keyword": "best furniture for a moody bathroom",
+    "topical_cluster": "moody bathroom"
+  },
+  "seo_validation": {
+    "article_slug": "best-furniture-for-moody-bathroom",
+    "cluster": "moody bathroom",
+    "cluster_id": "moody bathroom",
+    "subtopic_id": "furniture",
+    "subtopic_name": "furniture and anchors",
+    "angle_id": "best options",
+    "intent_id": "comparison",
+    "primary_keyword": "best furniture for a moody bathroom",
+    "validation_status": "warning",
+    "warnings": [
+      "Primary keyword appears very lightly in the article body.",
+      "Title does not reflect the primary keyword strongly enough."
+    ],
+    "errors": [],
+    "duplicate_candidate_slugs": [],
+    "timestamp": "2026-07-01T11:57:36.276281+00:00"
+  },
+  "editorial_validation": {
+    "article_slug": "best-furniture-for-moody-bathroom",
+    "cluster_id": "moody_bathroom",
+    "subtopic_id": "furniture",
+    "angle_id": "best_options",
+    "primary_keyword": "best furniture for a moody bathroom",
+    "validation_status": "pass",
+    "warnings": [],
+    "errors": [],
+    "checks": {
+      "generic_intro": {
+        "intro_word_count": 147,
+        "concept_overlap": 4,
+        "first_sentence": "Designing a moody bathroom is about creating a space that feels both intimate and intriguing."
+      },
+      "heading_quality": {
+        "heading_count": 5,
+        "vague_heading_count": 0,
+        "low_specificity_heading_count": 0,
+        "repeated_signature_count": 0,
+        "repeated_stem_count": 0,
+        "headings": [
+          "Prioritizing Durability and Visual Weight in Moody Bathroom Furniture",
+          "Classic Wood Vanities Bring Warmth and Texture to Moody Bathroom Decor",
+          "Black Metal and Industrial-Style Cabinets Enhance Mood with Sleek Edge",
+          "Furniture Choices That Adapt to Bathroom Size and Layout Without Sacrificing Style",
+          "Narrowing Your Choices: How to Confidently Select Furniture for Your Moody Bathroom"
+        ]
+      },
+      "specificity": {
+        "concept_token_hits": 8,
+        "specificity_term_hits": 10,
+        "secondary_keyword_hits": 1
+      },
+      "distinctiveness": {
+        "nearest_article_slug": "moody-bathroom-texture-mistakes-to-avoid",
+        "max_similarity": 0.286,
+        "strongest_heading_overlap": 0
+      }
+    },
+    "timestamp": "2026-07-01T11:57:36.280049+00:00"
+  },
+  "image_generation": {
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/image_generation_cache/best-furniture-for-moody-bathroom.json",
+    "provider": "flux",
+    "provider_model": "flux-2-max",
+    "model": "flux-2-max",
+    "fallback_provider": "openai",
+    "fallback_model": "gpt-image-1",
+    "size": "1536x1024",
+    "hero_quality": "high",
+    "section_quality": "medium",
+    "allow_fallback": true,
+    "fallback_events": 6,
+    "generated_images": 6,
+    "cache_hits": 0,
+    "generation_calls": 12,
+    "qa_calls": 1,
+    "details": [
+      {
+        "label": "hero",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 2,
+        "qa_calls": 1,
+        "quality": "high",
+        "qa_enabled": true,
+        "provider": "openai",
+        "provider_model": "gpt-image-1",
+        "fallback_used": true,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "error": "HTTP Error 402: Payment Required"
+          },
+          {
+            "provider": "openai",
+            "model": "gpt-image-1",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "quality": "high",
+            "elapsed_seconds_total": 47.47,
+            "width": 1536,
+            "height": 1024,
+            "format": "PNG"
+          }
+        ],
+        "validation_reason": "image passed basic validation",
+        "qa_reason": "The image shows a wide establishing shot of a bathroom with a moody, subdued color palette of chalky whites, oat tones, and pale wood. The room has believable architecture and furniture layout, with one coherent vanity and a memorable focal point on the bathtub. The lighting is soft and natural, creating a polished editorial feel suitable for a decor blog article titled 'Moody Bathroom: What Actually Matters.' The image is clean and free from text, logos, people, or heavy clutter."
+      },
+      {
+        "label": "section-1",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 2,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "openai",
+        "provider_model": "gpt-image-1",
+        "fallback_used": true,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "error": "HTTP Error 402: Payment Required"
+          },
+          {
+            "provider": "openai",
+            "model": "gpt-image-1",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "quality": "medium",
+            "elapsed_seconds_total": 21.08,
+            "width": 1536,
+            "height": 1024,
+            "format": "PNG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-2",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 2,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "openai",
+        "provider_model": "gpt-image-1",
+        "fallback_used": true,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "error": "HTTP Error 402: Payment Required"
+          },
+          {
+            "provider": "openai",
+            "model": "gpt-image-1",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "quality": "medium",
+            "elapsed_seconds_total": 19.12,
+            "width": 1536,
+            "height": 1024,
+            "format": "PNG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-3",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 2,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "openai",
+        "provider_model": "gpt-image-1",
+        "fallback_used": true,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "error": "HTTP Error 402: Payment Required"
+          },
+          {
+            "provider": "openai",
+            "model": "gpt-image-1",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "quality": "medium",
+            "elapsed_seconds_total": 19.16,
+            "width": 1536,
+            "height": 1024,
+            "format": "PNG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-4",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 2,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "openai",
+        "provider_model": "gpt-image-1",
+        "fallback_used": true,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "error": "HTTP Error 402: Payment Required"
+          },
+          {
+            "provider": "openai",
+            "model": "gpt-image-1",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "quality": "medium",
+            "elapsed_seconds_total": 20.47,
+            "width": 1536,
+            "height": 1024,
+            "format": "PNG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-5",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 2,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "openai",
+        "provider_model": "gpt-image-1",
+        "fallback_used": true,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "error": "HTTP Error 402: Payment Required"
+          },
+          {
+            "provider": "openai",
+            "model": "gpt-image-1",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "quality": "medium",
+            "elapsed_seconds_total": 22.92,
+            "width": 1536,
+            "height": 1024,
+            "format": "PNG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      }
+    ]
+  },
+  "pinterest": {
+    "variants_requested": 4,
+    "pin_assets_generated": false,
+    "mode": null
+  }
+}

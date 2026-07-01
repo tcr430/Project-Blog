@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T13:06:47.397486+00:00",
+  "generated_at": "2026-07-01T12:00:41.682205+00:00",
   "cluster_count": 51,
   "summary": {
     "hot": 0,
@@ -607,11 +607,13 @@
     },
     {
       "cluster_name": "moody bathroom",
-      "article_count": 1,
+      "article_count": 2,
       "article_slugs": [
+        "best-furniture-for-moody-bathroom",
         "moody-bathroom-texture-mistakes-to-avoid"
       ],
       "primary_keywords": [
+        "best furniture for a moody bathroom",
         "moody bathroom texture mistakes to avoid"
       ],
       "secondary_keywords": [
