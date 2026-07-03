@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-01T12:00:41.682205+00:00",
-  "cluster_count": 51,
+  "generated_at": "2026-07-03T11:37:38.325675+00:00",
+  "cluster_count": 52,
   "summary": {
     "hot": 0,
     "warm": 0,
     "cold": 18,
-    "no_data": 33
+    "no_data": 34
   },
   "clusters": [
     {
@@ -595,6 +595,30 @@
         "how to style a minimalist bedroom",
         "minimalist bedroom decor",
         "minimalist bedroom layout ideas"
+      ],
+      "pinterest_article_count": 0,
+      "strong_article_count": 0,
+      "weak_article_count": 0,
+      "average_score": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_saves": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0
+    },
+    {
+      "cluster_name": "minimalist kitchen",
+      "article_count": 1,
+      "article_slugs": [
+        "best-furniture-for-a-minimalist-kitchen"
+      ],
+      "primary_keywords": [
+        "best furniture for a minimalist kitchen"
+      ],
+      "secondary_keywords": [
+        "minimalist kitchen ideas",
+        "how to style a minimalist kitchen",
+        "minimalist kitchen decor",
+        "minimalist kitchen layout ideas"
       ],
       "pinterest_article_count": 0,
       "strong_article_count": 0,

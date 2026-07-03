@@ -1,47 +1,49 @@
 {
-  "generated_at": "2026-07-01T11:57:36.280608+00:00",
+  "generated_at": "2026-07-03T11:34:18.841792+00:00",
   "articles": [
     {
-      "article_slug": "best-furniture-for-moody-bathroom",
-      "cluster_id": "moody_bathroom",
+      "article_slug": "best-furniture-for-a-minimalist-kitchen",
+      "cluster_id": "minimalist_kitchen",
       "subtopic_id": "furniture",
       "angle_id": "best_options",
-      "primary_keyword": "best furniture for a moody bathroom",
-      "validation_status": "pass",
-      "warnings": [],
+      "primary_keyword": "best furniture for a minimalist kitchen",
+      "validation_status": "warning",
+      "warnings": [
+        "Supporting keyword ideas are barely reflected in the body."
+      ],
       "errors": [],
       "checks": {
         "generic_intro": {
-          "intro_word_count": 147,
-          "concept_overlap": 4,
-          "first_sentence": "Designing a moody bathroom is about creating a space that feels both intimate and intriguing."
+          "intro_word_count": 87,
+          "concept_overlap": 6,
+          "first_sentence": "Minimalist kitchens have a neat, uncluttered charm that feels both calming and efficient."
         },
         "heading_quality": {
           "heading_count": 5,
           "vague_heading_count": 0,
-          "low_specificity_heading_count": 0,
+          "low_specificity_heading_count": 1,
           "repeated_signature_count": 0,
           "repeated_stem_count": 0,
           "headings": [
-            "Prioritizing Durability and Visual Weight in Moody Bathroom Furniture",
-            "Classic Wood Vanities Bring Warmth and Texture to Moody Bathroom Decor",
-            "Black Metal and Industrial-Style Cabinets Enhance Mood with Sleek Edge",
-            "Furniture Choices That Adapt to Bathroom Size and Layout Without Sacrificing Style",
-            "Narrowing Your Choices: How to Confidently Select Furniture for Your Moody Bathroom"
+            "Defining the Most Important Furniture Criteria for Minimalist Kitchens",
+            "Warm Wood Tones: A Classic Option That Adds Quiet Texture",
+            "Sleek Metal and Glass: Contemporary Options for a Crisp Minimalist Feel",
+            "Matching Furniture to Kitchen Size and Layout: From Cozy Nooks to Open Plans",
+            "Confident Buying Choices: Narrowing Down the Best Furniture for Your Minimalist Kitchen"
           ]
         },
         "specificity": {
-          "concept_token_hits": 8,
-          "specificity_term_hits": 10,
-          "secondary_keyword_hits": 1
+          "concept_token_hits": 10,
+          "specificity_term_hits": 7,
+          "secondary_keyword_hits": 0
         },
         "distinctiveness": {
-          "nearest_article_slug": "moody-bathroom-texture-mistakes-to-avoid",
-          "max_similarity": 0.286,
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-07-01T11:57:36.280049+00:00"
+      "timestamp": "2026-07-03T11:34:18.841215+00:00"
     },
     {
       "article_slug": "thoughtful-small-bathroom-ideas-layered-light-spaces",
@@ -89,7 +91,7 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-07-01T11:56:59.828719+00:00"
+      "timestamp": "2026-07-03T11:29:36.873770+00:00"
     },
     {
       "article_slug": "summer-balcony-styling-mistakes-to-avoid",
@@ -136,7 +138,49 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-07-01T11:56:59.608756+00:00"
+      "timestamp": "2026-07-03T11:29:36.656819+00:00"
+    },
+    {
+      "article_slug": "best-furniture-for-moody-bathroom",
+      "cluster_id": "moody_bathroom",
+      "subtopic_id": "furniture",
+      "angle_id": "best_options",
+      "primary_keyword": "best furniture for a moody bathroom",
+      "validation_status": "pass",
+      "warnings": [],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 147,
+          "concept_overlap": 4,
+          "first_sentence": "Designing a moody bathroom is about creating a space that feels both intimate and intriguing."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 0,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Prioritizing Durability and Visual Weight in Moody Bathroom Furniture",
+            "Classic Wood Vanities Bring Warmth and Texture to Moody Bathroom Decor",
+            "Black Metal and Industrial-Style Cabinets Enhance Mood with Sleek Edge",
+            "Furniture Choices That Adapt to Bathroom Size and Layout Without Sacrificing Style",
+            "Narrowing Your Choices: How to Confidently Select Furniture for Your Moody Bathroom"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 8,
+          "specificity_term_hits": 10,
+          "secondary_keyword_hits": 1
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "moody-bathroom-texture-mistakes-to-avoid",
+          "max_similarity": 0.286,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-07-01T11:57:36.280049+00:00"
     },
     {
       "article_slug": "moody-entryway-texture-mistakes-to-avoid",

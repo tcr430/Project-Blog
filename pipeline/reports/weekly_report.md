@@ -1,15 +1,16 @@
 # Weekly Pipeline Report
 
-Generated: 2026-07-01
+Generated: 2026-07-03
 Window: last 7 days
 
-Articles Published: 3  
-Pins Generated: 9  
-Pins Scheduled: 86  
+Articles Published: 4  
+Pins Generated: 12  
+Pins Scheduled: 89  
 Pins Published: 0  
 Repins Scheduled: 0
 
 ## Articles Published
+- best-furniture-for-a-minimalist-kitchen
 - best-furniture-for-moody-bathroom
 - moody-entryway-texture-mistakes-to-avoid
 - moody-kitchen-texture-mistakes-to-avoid

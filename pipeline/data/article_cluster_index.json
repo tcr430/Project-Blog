@@ -1,7 +1,39 @@
 {
-  "generated_at": "2026-07-01T12:00:41.679529+00:00",
-  "article_count": 56,
+  "generated_at": "2026-07-03T11:37:38.323033+00:00",
+  "article_count": 57,
   "articles": [
+    {
+      "article_slug": "best-furniture-for-a-minimalist-kitchen",
+      "article_title": "Choosing the Best Furniture for a Minimalist Kitchen: Practical Options for Real Homes",
+      "domain_id": "kitchens_dining",
+      "cluster_id": "minimalist_kitchen",
+      "subtopic_id": "furniture",
+      "subtopic_name": "furniture and anchors",
+      "angle_id": "best_options",
+      "modifier": "",
+      "primary_keyword": "best furniture for a minimalist kitchen",
+      "secondary_keywords": [
+        "minimalist kitchen ideas",
+        "how to style a minimalist kitchen",
+        "minimalist kitchen decor",
+        "minimalist kitchen layout ideas"
+      ],
+      "cluster_name": "minimalist kitchen",
+      "canonical_cluster_name": "minimalist kitchen",
+      "legacy_cluster_name": "",
+      "publish_date": "2026-07-03",
+      "published_at": "2026-07-03T11:34:18.853437+00:00",
+      "tags": [
+        "best furniture for a minimalist kitchen",
+        "minimalist kitchen ideas",
+        "minimalist kitchen decor",
+        "how to style a minimalist kitchen",
+        "minimalist kitchen layout ideas"
+      ],
+      "permalink": "/ideas/2026/07/03/best-furniture-for-a-minimalist-kitchen/",
+      "search_intent": "comparison",
+      "excerpt": "Discover how to select furniture that complements a minimalist kitchen with practical guidance on materials, layouts, and styling for a clean yet inviting space."
+    },
     {
       "article_slug": "best-furniture-for-moody-bathroom",
       "article_title": "Moody Bathroom: What Actually Matters",

@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "69f27a1f7d219b78faf11a960578c3f1b8686852918e434c4b8dce536986ff4f",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-a-minimalist-kitchen/hero.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-1": {
+    "cache_key": "a5eb6f58a93c196ce7ea32dea5067253e271cbf3116d39917ad973de3dcc5dda",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-a-minimalist-kitchen/section-1.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-2": {
+    "cache_key": "62b4a48be08e10cbabd3a9f28e21a82fbbca25209ab64ee4a8dc36638953fe83",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-a-minimalist-kitchen/section-2.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-3": {
+    "cache_key": "7c613f37d149bb157b4191f34d41ea9c82664e3e8e4e06624a2ae5468e3010f9",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-a-minimalist-kitchen/section-3.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-4": {
+    "cache_key": "64074443f8cd6fa504f02239ae0d1ab061e186de0b61ca52cfec4e632b836411",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-a-minimalist-kitchen/section-4.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-5": {
+    "cache_key": "57ea323da599dab84b6fe1acf7ae0438a4e6ff9704a253012dce1fa8804b7ceb",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-a-minimalist-kitchen/section-5.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  }
+}

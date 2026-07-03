@@ -1,23 +1,24 @@
 {
-  "generated_at": "2026-07-01T11:57:36.276535+00:00",
+  "generated_at": "2026-07-03T11:34:18.837841+00:00",
   "articles": [
     {
-      "article_slug": "best-furniture-for-moody-bathroom",
-      "cluster": "moody bathroom",
-      "cluster_id": "moody bathroom",
+      "article_slug": "best-furniture-for-a-minimalist-kitchen",
+      "cluster": "minimalist kitchen",
+      "cluster_id": "minimalist kitchen",
       "subtopic_id": "furniture",
       "subtopic_name": "furniture and anchors",
       "angle_id": "best options",
       "intent_id": "comparison",
-      "primary_keyword": "best furniture for a moody bathroom",
+      "primary_keyword": "best furniture for a minimalist kitchen",
       "validation_status": "warning",
       "warnings": [
-        "Primary keyword appears very lightly in the article body.",
-        "Title does not reflect the primary keyword strongly enough."
+        "Chosen title is still close to an existing site title pattern.",
+        "None of the secondary keywords appear in the article body.",
+        "Primary keyword appears very lightly in the article body."
       ],
       "errors": [],
       "duplicate_candidate_slugs": [],
-      "timestamp": "2026-07-01T11:57:36.276281+00:00"
+      "timestamp": "2026-07-03T11:34:18.837622+00:00"
     },
     {
       "article_slug": "thoughtful-small-bathroom-ideas-layered-light-spaces",
@@ -37,7 +38,7 @@
       ],
       "errors": [],
       "duplicate_candidate_slugs": [],
-      "timestamp": "2026-07-01T11:56:59.825016+00:00"
+      "timestamp": "2026-07-03T11:29:36.870135+00:00"
     },
     {
       "article_slug": "summer-balcony-styling-mistakes-to-avoid",
@@ -56,7 +57,25 @@
       ],
       "errors": [],
       "duplicate_candidate_slugs": [],
-      "timestamp": "2026-07-01T11:56:59.604157+00:00"
+      "timestamp": "2026-07-03T11:29:36.652276+00:00"
+    },
+    {
+      "article_slug": "best-furniture-for-moody-bathroom",
+      "cluster": "moody bathroom",
+      "cluster_id": "moody bathroom",
+      "subtopic_id": "furniture",
+      "subtopic_name": "furniture and anchors",
+      "angle_id": "best options",
+      "intent_id": "comparison",
+      "primary_keyword": "best furniture for a moody bathroom",
+      "validation_status": "warning",
+      "warnings": [
+        "Primary keyword appears very lightly in the article body.",
+        "Title does not reflect the primary keyword strongly enough."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-07-01T11:57:36.276281+00:00"
     },
     {
       "article_slug": "moody-entryway-texture-mistakes-to-avoid",

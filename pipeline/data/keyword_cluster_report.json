@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-01T12:00:41.676034+00:00",
-  "cluster_count": 51,
-  "article_count": 56,
+  "generated_at": "2026-07-03T11:37:38.319592+00:00",
+  "cluster_count": 52,
+  "article_count": 57,
   "subtopic_count": 10,
   "angle_count": 5,
   "angle_distribution": {
-    "best_options": 26,
+    "best_options": 27,
     "how_to": 4,
     "ideas": 4,
     "mistakes": 21,
@@ -1398,6 +1398,50 @@
       "status": "underdeveloped"
     },
     {
+      "cluster_id": "minimalist_kitchen",
+      "cluster_name": "minimalist kitchen",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "kitchens_dining"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "best furniture for a minimalist kitchen"
+      ],
+      "latest_article_date": "2026-07-03",
+      "latest_publication": {
+        "article_slug": "best-furniture-for-a-minimalist-kitchen",
+        "article_title": "Choosing the Best Furniture for a Minimalist Kitchen: Practical Options for Real Homes",
+        "publish_date": "2026-07-03",
+        "subtopic_id": "furniture",
+        "subtopic_name": "furniture and anchors",
+        "angle_id": "best_options"
+      },
+      "representative_article_slugs": [
+        "best-furniture-for-a-minimalist-kitchen"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "furniture",
+          "subtopic_name": "furniture and anchors",
+          "article_count": 1,
+          "latest_article_date": "2026-07-03",
+          "representative_article_slugs": [
+            "best-furniture-for-a-minimalist-kitchen"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "best_options": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
       "cluster_id": "moody_bedroom",
       "cluster_name": "moody bedroom",
       "legacy_cluster_names": [],
@@ -1640,7 +1684,7 @@
       "representative_article_slugs": [
         "how-to-style-a-neutral-kitchen"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
