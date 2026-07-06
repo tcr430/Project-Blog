@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-03T11:37:38.319592+00:00",
-  "cluster_count": 52,
-  "article_count": 57,
+  "generated_at": "2026-07-06T12:46:54.356570+00:00",
+  "cluster_count": 53,
+  "article_count": 58,
   "subtopic_count": 10,
   "angle_count": 5,
   "angle_distribution": {
-    "best_options": 27,
+    "best_options": 28,
     "how_to": 4,
     "ideas": 4,
     "mistakes": 21,
@@ -1064,7 +1064,7 @@
       "representative_article_slugs": [
         "balancing-light-layers-best-lighting-for-living-room"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
@@ -1389,6 +1389,50 @@
           "latest_article_date": "2026-04-08",
           "representative_article_slugs": [
             "best-furniture-for-a-minimalist-bedroom"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "best_options": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_id": "minimalist_entryway",
+      "cluster_name": "minimalist entryway",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "utility_transition"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "best furniture for a minimalist entryway"
+      ],
+      "latest_article_date": "2026-07-06",
+      "latest_publication": {
+        "article_slug": "best-furniture-for-minimalist-entryway",
+        "article_title": "Nailing the Best Furniture for a Minimalist Entryway: Smart Choices for Stylish Simplicity",
+        "publish_date": "2026-07-06",
+        "subtopic_id": "furniture",
+        "subtopic_name": "furniture and anchors",
+        "angle_id": "best_options"
+      },
+      "representative_article_slugs": [
+        "best-furniture-for-minimalist-entryway"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "furniture",
+          "subtopic_name": "furniture and anchors",
+          "article_count": 1,
+          "latest_article_date": "2026-07-06",
+          "representative_article_slugs": [
+            "best-furniture-for-minimalist-entryway"
           ]
         }
       ],
@@ -2256,7 +2300,7 @@
       "representative_article_slugs": [
         "thoughtful-color-choices-tiny-bathroom-decor"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,

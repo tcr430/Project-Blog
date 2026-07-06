@@ -7,7 +7,7 @@ cluster_name: "bathroom styling details"
 cluster_slug: "bathroom-styling-details"
 cluster_article_count: 1
 cluster_primary_keywords: ["bathroom surface styling mistakes to avoid"]
-cluster_generated_at: "2026-07-03T11:37:40.026097+00:00"
+cluster_generated_at: "2026-07-06T12:46:56.036651+00:00"
 cluster_intro: "Bathroom Styling Details is a useful decorating topic because it combines inspiration with practical decision-making. Readers usually arrive here looking for a clear style direction, help solving a room problem, or confidence about how to make the look feel intentional at home.
 
 This pillar page brings together the site's coverage around bathroom styling details, with article angles shaped by keyword themes such as bathroom surface styling mistakes to avoid. That mix helps the page support both broader search intent and more specific decorating questions without feeling repetitive.

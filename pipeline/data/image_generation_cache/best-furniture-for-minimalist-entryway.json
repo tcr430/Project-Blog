@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "25b88ba3889051834889a3ac2c7ad294e939f347b687fdf27c4fa8e17e673c76",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-minimalist-entryway/hero.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-1": {
+    "cache_key": "dafa01e5ecd09a19df95974324daf8a99b9920c0e62508b830155e6c9505c9ec",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-minimalist-entryway/section-1.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-2": {
+    "cache_key": "424a496019ebd907932f5a78fb9e4d8c5cc280a3d3dd09573597203d6dd5612a",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-minimalist-entryway/section-2.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-3": {
+    "cache_key": "e08dcc28816c9dcd4256942d0b7d0ceb3f54a5fe7a1e220a351c0541c1a1c171",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-minimalist-entryway/section-3.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-4": {
+    "cache_key": "4569ab5e2211603a39fa6659360ec45bb3019842615891a99b13594ed85e928e",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-minimalist-entryway/section-4.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-5": {
+    "cache_key": "aa386e5317bea72a4b30d3748461a041c2b0e3dc647e58cf06613134e0ba6f55",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-minimalist-entryway/section-5.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  }
+}
