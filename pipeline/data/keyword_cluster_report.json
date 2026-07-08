@@ -1,17 +1,73 @@
 {
-  "generated_at": "2026-07-06T12:46:54.356570+00:00",
+  "generated_at": "2026-07-08T11:04:30.183173+00:00",
   "cluster_count": 53,
-  "article_count": 58,
+  "article_count": 59,
   "subtopic_count": 10,
   "angle_count": 5,
   "angle_distribution": {
     "best_options": 28,
     "how_to": 4,
     "ideas": 4,
-    "mistakes": 21,
+    "mistakes": 22,
     "style_specific": 1
   },
   "clusters": [
+    {
+      "cluster_id": "minimalist_bedroom",
+      "cluster_name": "minimalist bedroom",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "bedrooms"
+      ],
+      "article_count": 2,
+      "primary_keywords_used": [
+        "minimalist bedroom texture mistakes to avoid",
+        "best furniture for a minimalist bedroom"
+      ],
+      "latest_article_date": "2026-07-08",
+      "latest_publication": {
+        "article_slug": "minimalist-bedroom-texture-mistakes-to-avoid",
+        "article_title": "Minimalist Bedroom Texture Mistakes to Avoid",
+        "publish_date": "2026-07-08",
+        "subtopic_id": "textures",
+        "subtopic_name": "textures and layers",
+        "angle_id": "mistakes"
+      },
+      "representative_article_slugs": [
+        "minimalist-bedroom-texture-mistakes-to-avoid",
+        "best-furniture-for-a-minimalist-bedroom"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 1,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 2,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "furniture",
+          "subtopic_name": "furniture and anchors",
+          "article_count": 1,
+          "latest_article_date": "2026-04-08",
+          "representative_article_slugs": [
+            "best-furniture-for-a-minimalist-bedroom"
+          ]
+        },
+        {
+          "subtopic_id": "textures",
+          "subtopic_name": "textures and layers",
+          "article_count": 1,
+          "latest_article_date": "2026-07-08",
+          "representative_article_slugs": [
+            "minimalist-bedroom-texture-mistakes-to-avoid"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "best_options": 1,
+        "mistakes": 1
+      },
+      "status": "growing"
+    },
     {
       "cluster_id": "moody_bathroom",
       "cluster_name": "moody bathroom",
@@ -1345,50 +1401,6 @@
           "latest_article_date": "2026-04-10",
           "representative_article_slugs": [
             "best-furniture-minimalist-bathroom"
-          ]
-        }
-      ],
-      "angle_distribution": {
-        "best_options": 1
-      },
-      "status": "underdeveloped"
-    },
-    {
-      "cluster_id": "minimalist_bedroom",
-      "cluster_name": "minimalist bedroom",
-      "legacy_cluster_names": [],
-      "domain_ids": [
-        "bedrooms"
-      ],
-      "article_count": 1,
-      "primary_keywords_used": [
-        "best furniture for a minimalist bedroom"
-      ],
-      "latest_article_date": "2026-04-08",
-      "latest_publication": {
-        "article_slug": "best-furniture-for-a-minimalist-bedroom",
-        "article_title": "Furniture for a Minimalist Bedroom: A Practical Buying Guide",
-        "publish_date": "2026-04-08",
-        "subtopic_id": "furniture",
-        "subtopic_name": "furniture and anchors",
-        "angle_id": "best_options"
-      },
-      "representative_article_slugs": [
-        "best-furniture-for-a-minimalist-bedroom"
-      ],
-      "recent_article_count": 0,
-      "internal_link_targets_available": 0,
-      "promoted_article_count": 0,
-      "weak_article_count": 0,
-      "subtopic_count": 1,
-      "subtopic_coverage": [
-        {
-          "subtopic_id": "furniture",
-          "subtopic_name": "furniture and anchors",
-          "article_count": 1,
-          "latest_article_date": "2026-04-08",
-          "representative_article_slugs": [
-            "best-furniture-for-a-minimalist-bedroom"
           ]
         }
       ],

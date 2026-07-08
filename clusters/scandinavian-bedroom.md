@@ -7,7 +7,7 @@ cluster_name: "scandinavian bedroom"
 cluster_slug: "scandinavian-bedroom"
 cluster_article_count: 1
 cluster_primary_keywords: ["best furniture for a scandinavian bedroom"]
-cluster_generated_at: "2026-07-06T12:46:56.036651+00:00"
+cluster_generated_at: "2026-07-08T11:04:31.863678+00:00"
 cluster_intro: "Scandinavian Bedroom is a useful decorating topic because it combines inspiration with practical decision-making. Readers usually arrive here looking for a clear style direction, help solving a room problem, or confidence about how to make the look feel intentional at home.
 
 This pillar page brings together the site's coverage around scandinavian bedroom, with article angles shaped by keyword themes such as best furniture for a scandinavian bedroom. That mix helps the page support both broader search intent and more specific decorating questions without feeling repetitive.
@@ -55,16 +55,16 @@ These adjacent hubs help readers keep moving through the topic without losing th
 <p><a class="cluster-hub-link" href="/clusters/scandinavian-guest-bedroom/">Open this cluster</a></p>
 </div>
 <div class="cluster-hub-card">
+<h3><a href="/clusters/minimalist-bedroom/">Minimalist Bedroom</a></h3>
+<p>Broad editorial cluster for minimalist bedroom topics.</p>
+<p class="cluster-hub-meta">2 articles</p>
+<p><a class="cluster-hub-link" href="/clusters/minimalist-bedroom/">Open this cluster</a></p>
+</div>
+<div class="cluster-hub-card">
 <h3><a href="/clusters/transitional-bedroom/">Transitional Bedroom</a></h3>
 <p>Broad editorial cluster for transitional bedroom topics.</p>
 <p class="cluster-hub-meta">2 articles</p>
 <p><a class="cluster-hub-link" href="/clusters/transitional-bedroom/">Open this cluster</a></p>
-</div>
-<div class="cluster-hub-card">
-<h3><a href="/clusters/bedroom-lighting/">Bedroom Lighting</a></h3>
-<p>Broad editorial cluster for bedroom lighting topics.</p>
-<p class="cluster-hub-meta">1 article</p>
-<p><a class="cluster-hub-link" href="/clusters/bedroom-lighting/">Open this cluster</a></p>
 </div>
 </div>
 
@@ -74,4 +74,4 @@ A simple path through this topic so readers can build confidence one step at a t
 
 1. Start with [Best Furniture for a Scandinavian Bedroom: Choosing Calm, Cozy, and Functional Pieces](/ideas/2026/03/28/best-furniture-for-scandinavian-bedroom/) for the broadest orientation.
 2. After that, move into [Scandinavian Guest Bedroom](/clusters/scandinavian-guest-bedroom/) to keep the topic expanding naturally.
-3. After that, move into [Transitional Bedroom](/clusters/transitional-bedroom/) to keep the topic expanding naturally.
+3. After that, move into [Minimalist Bedroom](/clusters/minimalist-bedroom/) to keep the topic expanding naturally.

@@ -1,6 +1,44 @@
 {
-  "generated_at": "2026-07-06T12:43:31.187453+00:00",
+  "generated_at": "2026-07-08T11:01:16.738321+00:00",
   "articles": [
+    {
+      "article_slug": "minimalist-bedroom-texture-mistakes-to-avoid",
+      "cluster": "minimalist bedroom",
+      "cluster_id": "minimalist bedroom",
+      "subtopic_id": "textures",
+      "subtopic_name": "textures and layers",
+      "angle_id": "mistakes",
+      "intent_id": "problem_solving",
+      "primary_keyword": "minimalist bedroom texture mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Chosen title is still close to an existing site title pattern.",
+        "Main section headings may be too generic for the chosen keyword.",
+        "Primary keyword appears very lightly in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-07-08T11:01:16.738083+00:00"
+    },
+    {
+      "article_slug": "summer-balcony-styling-mistakes-to-avoid",
+      "cluster": "summer balcony styling",
+      "cluster_id": "summer balcony styling",
+      "subtopic_id": "refresh",
+      "subtopic_name": "seasonal refresh",
+      "angle_id": "mistakes",
+      "intent_id": "problem_solving",
+      "primary_keyword": "summer balcony styling mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Main section headings may be too generic for the chosen keyword.",
+        "None of the secondary keywords appear in the article body.",
+        "Primary keyword appears very lightly in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-07-08T11:00:43.963754+00:00"
+    },
     {
       "article_slug": "best-furniture-for-minimalist-entryway",
       "cluster": "minimalist entryway",
@@ -39,25 +77,6 @@
       "errors": [],
       "duplicate_candidate_slugs": [],
       "timestamp": "2026-07-06T12:42:43.270165+00:00"
-    },
-    {
-      "article_slug": "summer-balcony-styling-mistakes-to-avoid",
-      "cluster": "summer balcony styling",
-      "cluster_id": "summer balcony styling",
-      "subtopic_id": "refresh",
-      "subtopic_name": "seasonal refresh",
-      "angle_id": "mistakes",
-      "intent_id": "problem_solving",
-      "primary_keyword": "summer balcony styling mistakes to avoid",
-      "validation_status": "warning",
-      "warnings": [
-        "Main section headings may be too generic for the chosen keyword.",
-        "None of the secondary keywords appear in the article body.",
-        "Primary keyword appears very lightly in the article body."
-      ],
-      "errors": [],
-      "duplicate_candidate_slugs": [],
-      "timestamp": "2026-07-06T12:42:43.052775+00:00"
     },
     {
       "article_slug": "best-furniture-for-a-minimalist-kitchen",

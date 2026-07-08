@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T12:42:21.274205+00:00",
+  "generated_at": "2026-07-08T11:00:22.785732+00:00",
   "overview": {
     "pin_count": 140,
     "published_pin_count": 51,
@@ -1735,7 +1735,7 @@
       "visual_family_id": "airy_editorial",
       "shot_library_id": "general_decor",
       "intent_id": "comparison",
-      "pin_count": 4,
+      "pin_count": 5,
       "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1823,7 +1823,7 @@
       "visual_family_id": "crisp_modern",
       "shot_library_id": "color_palette",
       "intent_id": "comparison",
-      "pin_count": 1,
+      "pin_count": 2,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1910,7 +1910,7 @@
       "visual_family_id": "crisp_modern",
       "shot_library_id": "lighting",
       "intent_id": "comparison",
-      "pin_count": 5,
+      "pin_count": 4,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -2004,7 +2004,7 @@
       "visual_family_id": "warm_layered",
       "shot_library_id": "storage_organization",
       "intent_id": "comparison",
-      "pin_count": 1,
+      "pin_count": 2,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -2175,27 +2175,6 @@
       ]
     },
     {
-      "visual_style_key": "centered_title|crisp_modern|color_palette|comparison",
-      "style_name": "centered-title",
-      "visual_family_id": "crisp_modern",
-      "shot_library_id": "color_palette",
-      "intent_id": "comparison",
-      "pin_count": 1,
-      "published_pin_count": 0,
-      "analytics_ready_count": 0,
-      "average_score": 0.0,
-      "average_impressions": 0.0,
-      "average_saves": 0.0,
-      "average_outbound_clicks": 0.0,
-      "average_pin_clicks": 0.0,
-      "average_closeups": 0.0,
-      "signal_label": "no_data",
-      "signal_boost": 0,
-      "top_article_slugs": [
-        "best-furniture-neutral-bathroom"
-      ]
-    },
-    {
       "visual_style_key": "centered_title|crisp_modern|color_palette|implementation",
       "style_name": "centered-title",
       "visual_family_id": "crisp_modern",
@@ -2246,7 +2225,7 @@
       "visual_family_id": "crisp_modern",
       "shot_library_id": "lighting",
       "intent_id": "comparison",
-      "pin_count": 1,
+      "pin_count": 2,
       "published_pin_count": 0,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -2258,7 +2237,8 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
-        "balancing-light-layers-best-lighting-for-living-room"
+        "balancing-light-layers-best-lighting-for-living-room",
+        "best-lighting-for-bathroom-layered-approach"
       ]
     },
     {
@@ -2621,7 +2601,7 @@
       "visual_family_id": "airy_editorial",
       "shot_library_id": "general_decor",
       "intent_id": "comparison",
-      "pin_count": 3,
+      "pin_count": 2,
       "published_pin_count": 1,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -2634,8 +2614,7 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "best-decor-accents-for-living-room",
-        "best-furniture-for-a-scandinavian-bathroom",
-        "best-furniture-for-moody-bathroom"
+        "best-furniture-for-a-scandinavian-bathroom"
       ]
     },
     {
@@ -2862,27 +2841,6 @@
       ]
     },
     {
-      "visual_style_key": "top_title|warm_layered|storage_organization|comparison",
-      "style_name": "top-title",
-      "visual_family_id": "warm_layered",
-      "shot_library_id": "storage_organization",
-      "intent_id": "comparison",
-      "pin_count": 1,
-      "published_pin_count": 0,
-      "analytics_ready_count": 0,
-      "average_score": 0.0,
-      "average_impressions": 0.0,
-      "average_saves": 0.0,
-      "average_outbound_clicks": 0.0,
-      "average_pin_clicks": 0.0,
-      "average_closeups": 0.0,
-      "signal_label": "no_data",
-      "signal_boost": 0,
-      "top_article_slugs": [
-        "best-furniture-earthy-entryway"
-      ]
-    },
-    {
       "visual_style_key": "top_title|warm_layered|textures_materials|problem_solving",
       "style_name": "top-title",
       "visual_family_id": "warm_layered",
@@ -2901,8 +2859,8 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "japandi-bathroom-texture-mistakes-to-avoid",
-        "scandinavian-entryway-texture-mistakes-to-avoid",
-        "transitional-entryway-texture-mistakes-to-avoid"
+        "moody-kitchen-texture-mistakes-to-avoid",
+        "scandinavian-entryway-texture-mistakes-to-avoid"
       ]
     }
   ],
@@ -3227,7 +3185,7 @@
         "visual_family_id": "airy_editorial",
         "shot_library_id": "general_decor",
         "intent_id": "comparison",
-        "pin_count": 4,
+        "pin_count": 5,
         "published_pin_count": 1,
         "analytics_ready_count": 0,
         "average_score": 0.0,

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T12:46:54.362478+00:00",
+  "generated_at": "2026-07-08T11:04:30.189065+00:00",
   "cluster_count": 53,
   "summary": {
     "hot": 0,
@@ -583,11 +583,13 @@
     },
     {
       "cluster_name": "minimalist bedroom",
-      "article_count": 1,
+      "article_count": 2,
       "article_slugs": [
+        "minimalist-bedroom-texture-mistakes-to-avoid",
         "best-furniture-for-a-minimalist-bedroom"
       ],
       "primary_keywords": [
+        "minimalist bedroom texture mistakes to avoid",
         "best furniture for a minimalist bedroom"
       ],
       "secondary_keywords": [

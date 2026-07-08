@@ -7,7 +7,7 @@ cluster_name: "transitional entryway"
 cluster_slug: "transitional-entryway"
 cluster_article_count: 1
 cluster_primary_keywords: ["transitional entryway texture mistakes to avoid"]
-cluster_generated_at: "2026-07-06T12:46:56.036651+00:00"
+cluster_generated_at: "2026-07-08T11:04:31.863678+00:00"
 cluster_intro: "Transitional Entryway is a useful decorating topic because it combines inspiration with practical decision-making. Readers usually arrive here looking for a clear style direction, help solving a room problem, or confidence about how to make the look feel intentional at home.
 
 This pillar page brings together the site's coverage around transitional entryway, with article angles shaped by keyword themes such as transitional entryway texture mistakes to avoid. That mix helps the page support both broader search intent and more specific decorating questions without feeling repetitive.

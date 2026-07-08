@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "c0ac9eefa4fee0baa3cdcb8e9d4eae90aabcf2055721fcdda7ae4a54eb6512e0",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/minimalist-bedroom-texture-mistakes-to-avoid/hero.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-1": {
+    "cache_key": "d9ed48dff1cfc0d45e4bb616ab578fb058adff5961c914bc408c1683600d6ec7",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/minimalist-bedroom-texture-mistakes-to-avoid/section-1.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-2": {
+    "cache_key": "3dd3dab54ce9a26743a88f4d503f80001a913a823af1b95520b9be63a99fa19d",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/minimalist-bedroom-texture-mistakes-to-avoid/section-2.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-3": {
+    "cache_key": "8da517bc94a3f4045eb0cd2d8202131fea2c53e24c035108e16b88b9b1835645",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/minimalist-bedroom-texture-mistakes-to-avoid/section-3.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-4": {
+    "cache_key": "d3bb5e17955676ae06434500f0b8738fdd483f181f3a0ff1b3eadd0113a7ec00",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/minimalist-bedroom-texture-mistakes-to-avoid/section-4.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-5": {
+    "cache_key": "a29a6f4aec578f31e301818a87e5f175b0c68bbdf08087701b1b9898edb2eaa2",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/minimalist-bedroom-texture-mistakes-to-avoid/section-5.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  }
+}

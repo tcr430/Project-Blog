@@ -1,6 +1,95 @@
 {
-  "generated_at": "2026-07-06T12:43:31.191427+00:00",
+  "generated_at": "2026-07-08T11:01:16.742476+00:00",
   "articles": [
+    {
+      "article_slug": "minimalist-bedroom-texture-mistakes-to-avoid",
+      "cluster_id": "minimalist_bedroom",
+      "subtopic_id": "textures",
+      "angle_id": "mistakes",
+      "primary_keyword": "minimalist bedroom texture mistakes to avoid",
+      "validation_status": "pass",
+      "warnings": [],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 155,
+          "concept_overlap": 8,
+          "first_sentence": "Minimalist bedrooms are beloved for their clean lines and uncluttered feel, but when textures aren’t handled thoughtfully, the space can quickly feel cold, flat, or oddly stark."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 1,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "When Texture Is Too Matchy-Matchy",
+            "Avoid Layering Too Many Similar Soft Textiles",
+            "Skipping the Natural Material Layer Can Feel Too Clinical",
+            "Getting Texture Proportions Off Throws the Overall Balance",
+            "Neglecting Texture’s Role in Color Layering Drains Warmth"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 10,
+          "specificity_term_hits": 14,
+          "secondary_keyword_hits": 1
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "best-furniture-for-a-minimalist-bedroom",
+          "max_similarity": 0.286,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-07-08T11:01:16.741914+00:00"
+    },
+    {
+      "article_slug": "summer-balcony-styling-mistakes-to-avoid",
+      "cluster_id": "summer_balcony_styling",
+      "subtopic_id": "refresh",
+      "angle_id": "mistakes",
+      "primary_keyword": "summer balcony styling mistakes to avoid",
+      "validation_status": "fail",
+      "warnings": [
+        "Several section headings do not signal the topic strongly enough.",
+        "Supporting keyword ideas are barely reflected in the body."
+      ],
+      "errors": [
+        "Section headings are too unspecific to support a strong editorial frame."
+      ],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 163,
+          "concept_overlap": 9,
+          "first_sentence": "Summer balconies offer the perfect opportunity for a seasonal refresh, but it’s surprisingly easy to get styling off on the wrong foot."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 5,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Overcrowding Without a Clear Plan Crushes Outdoor Flow",
+            "Bright Color Overload Breaks Harmony and Feels Overwhelming",
+            "Ignoring Texture Coordination Creates Visual Confusion",
+            "Oversized Furniture and Poor Placement Kill Airiness and Light",
+            "Forgetting to Layer Lighting and Accessories Ends in a Flat, Uninviting Space"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 12,
+          "specificity_term_hits": 9,
+          "secondary_keyword_hits": 0
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-07-08T11:00:43.987187+00:00"
+    },
     {
       "article_slug": "best-furniture-for-minimalist-entryway",
       "cluster_id": "minimalist_entryway",
@@ -92,53 +181,6 @@
         }
       },
       "timestamp": "2026-07-06T12:42:43.273776+00:00"
-    },
-    {
-      "article_slug": "summer-balcony-styling-mistakes-to-avoid",
-      "cluster_id": "summer_balcony_styling",
-      "subtopic_id": "refresh",
-      "angle_id": "mistakes",
-      "primary_keyword": "summer balcony styling mistakes to avoid",
-      "validation_status": "fail",
-      "warnings": [
-        "Several section headings do not signal the topic strongly enough.",
-        "Supporting keyword ideas are barely reflected in the body."
-      ],
-      "errors": [
-        "Section headings are too unspecific to support a strong editorial frame."
-      ],
-      "checks": {
-        "generic_intro": {
-          "intro_word_count": 163,
-          "concept_overlap": 9,
-          "first_sentence": "Summer balconies offer the perfect opportunity for a seasonal refresh, but it’s surprisingly easy to get styling off on the wrong foot."
-        },
-        "heading_quality": {
-          "heading_count": 5,
-          "vague_heading_count": 0,
-          "low_specificity_heading_count": 5,
-          "repeated_signature_count": 0,
-          "repeated_stem_count": 0,
-          "headings": [
-            "Overcrowding Without a Clear Plan Crushes Outdoor Flow",
-            "Bright Color Overload Breaks Harmony and Feels Overwhelming",
-            "Ignoring Texture Coordination Creates Visual Confusion",
-            "Oversized Furniture and Poor Placement Kill Airiness and Light",
-            "Forgetting to Layer Lighting and Accessories Ends in a Flat, Uninviting Space"
-          ]
-        },
-        "specificity": {
-          "concept_token_hits": 12,
-          "specificity_term_hits": 9,
-          "secondary_keyword_hits": 0
-        },
-        "distinctiveness": {
-          "nearest_article_slug": "",
-          "max_similarity": 0.0,
-          "strongest_heading_overlap": 0
-        }
-      },
-      "timestamp": "2026-07-06T12:42:43.057522+00:00"
     },
     {
       "article_slug": "best-furniture-for-a-minimalist-kitchen",
