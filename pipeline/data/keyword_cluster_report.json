@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-08T11:04:30.183173+00:00",
-  "cluster_count": 53,
-  "article_count": 59,
+  "generated_at": "2026-07-10T11:51:22.530835+00:00",
+  "cluster_count": 54,
+  "article_count": 60,
   "subtopic_count": 10,
   "angle_count": 5,
   "angle_distribution": {
-    "best_options": 28,
+    "best_options": 29,
     "how_to": 4,
     "ideas": 4,
     "mistakes": 22,
@@ -458,7 +458,7 @@
       "representative_article_slugs": [
         "best-lighting-for-bedroom-layered-approach"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
@@ -1357,6 +1357,50 @@
           "latest_article_date": "2026-04-13",
           "representative_article_slugs": [
             "best-furniture-mediterranean-bedroom"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "best_options": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_id": "mediterranean_kitchen",
+      "cluster_name": "mediterranean kitchen",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "kitchens_dining"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "best furniture for a mediterranean kitchen"
+      ],
+      "latest_article_date": "2026-07-10",
+      "latest_publication": {
+        "article_slug": "best-furniture-for-a-mediterranean-kitchen",
+        "article_title": "How to Choose Furniture for a Mediterranean Kitchen",
+        "publish_date": "2026-07-10",
+        "subtopic_id": "furniture",
+        "subtopic_name": "furniture and anchors",
+        "angle_id": "best_options"
+      },
+      "representative_article_slugs": [
+        "best-furniture-for-a-mediterranean-kitchen"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "furniture",
+          "subtopic_name": "furniture and anchors",
+          "article_count": 1,
+          "latest_article_date": "2026-07-10",
+          "representative_article_slugs": [
+            "best-furniture-for-a-mediterranean-kitchen"
           ]
         }
       ],

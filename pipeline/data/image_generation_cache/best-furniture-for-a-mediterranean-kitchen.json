@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "6c23593f23e6b69d707b15657699b2acda22eb5d1582f84d10d108878e476acc",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-a-mediterranean-kitchen/hero.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-1": {
+    "cache_key": "88686daa24af1cd7d6339d736b4aebab1830fcc4aca97319e5e50a8ccda06ca0",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-a-mediterranean-kitchen/section-1.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-2": {
+    "cache_key": "ebececdd96a7158b4f7a3692197453d721d99c1f2e489ed2fbb0995a5b731b23",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-a-mediterranean-kitchen/section-2.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-3": {
+    "cache_key": "ba8046bc179a33f7807b77de1e76d7823cfab65b98f5ef90117f7fa2687ba053",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-a-mediterranean-kitchen/section-3.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-4": {
+    "cache_key": "00f877508dfce991eed9cf2bf207a90c714cd437e0823ca5c8db5d4af89c3d5b",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-a-mediterranean-kitchen/section-4.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-5": {
+    "cache_key": "ac97dcbe5f5d9f7f088f0db146766603f5c5a739c5c2d4c6dc8a06b9f87677d7",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-a-mediterranean-kitchen/section-5.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  }
+}

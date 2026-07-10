@@ -7,7 +7,7 @@ cluster_name: "earthy bathroom"
 cluster_slug: "earthy-bathroom"
 cluster_article_count: 1
 cluster_primary_keywords: ["best furniture for an earthy bathroom"]
-cluster_generated_at: "2026-07-08T11:04:31.863678+00:00"
+cluster_generated_at: "2026-07-10T11:51:24.235365+00:00"
 cluster_intro: "Earthy Bathroom is a useful decorating topic because it combines inspiration with practical decision-making. Readers usually arrive here looking for a clear style direction, help solving a room problem, or confidence about how to make the look feel intentional at home.
 
 This pillar page brings together the site's coverage around earthy bathroom, with article angles shaped by keyword themes such as best furniture for an earthy bathroom. That mix helps the page support both broader search intent and more specific decorating questions without feeling repetitive.

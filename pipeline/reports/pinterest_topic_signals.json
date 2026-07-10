@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-08T11:04:30.189065+00:00",
-  "cluster_count": 53,
+  "generated_at": "2026-07-10T11:51:22.537171+00:00",
+  "cluster_count": 54,
   "summary": {
     "hot": 0,
     "warm": 0,
     "cold": 18,
-    "no_data": 35
+    "no_data": 36
   },
   "clusters": [
     {
@@ -556,6 +556,30 @@
       "average_saves": 0.0,
       "signal_label": "cold",
       "signal_boost": -6
+    },
+    {
+      "cluster_name": "mediterranean kitchen",
+      "article_count": 1,
+      "article_slugs": [
+        "best-furniture-for-a-mediterranean-kitchen"
+      ],
+      "primary_keywords": [
+        "best furniture for a mediterranean kitchen"
+      ],
+      "secondary_keywords": [
+        "mediterranean kitchen ideas",
+        "how to style a mediterranean kitchen",
+        "mediterranean kitchen decor",
+        "mediterranean kitchen layout ideas"
+      ],
+      "pinterest_article_count": 0,
+      "strong_article_count": 0,
+      "weak_article_count": 0,
+      "average_score": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_saves": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0
     },
     {
       "cluster_name": "minimalist bathroom",
