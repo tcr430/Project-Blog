@@ -1,6 +1,46 @@
 {
-  "generated_at": "2026-07-10T11:47:59.647870+00:00",
+  "generated_at": "2026-07-15T10:47:24.071389+00:00",
   "articles": [
+    {
+      "article_slug": "mediterranean-entryway-texture-mistakes-to-avoid",
+      "cluster": "mediterranean entryway",
+      "cluster_id": "mediterranean entryway",
+      "subtopic_id": "textures",
+      "subtopic_name": "textures and layers",
+      "angle_id": "mistakes",
+      "intent_id": "problem_solving",
+      "primary_keyword": "mediterranean entryway texture mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Chosen title is still close to an existing site title pattern.",
+        "Headings do not reflect the topic cluster strongly enough.",
+        "Main section headings may be too generic for the chosen keyword.",
+        "None of the secondary keywords appear in the article body.",
+        "Primary keyword appears very lightly in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-07-15T10:47:24.071147+00:00"
+    },
+    {
+      "article_slug": "summer-balcony-styling-mistakes-to-avoid",
+      "cluster": "summer balcony styling",
+      "cluster_id": "summer balcony styling",
+      "subtopic_id": "refresh",
+      "subtopic_name": "seasonal refresh",
+      "angle_id": "mistakes",
+      "intent_id": "problem_solving",
+      "primary_keyword": "summer balcony styling mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Main section headings may be too generic for the chosen keyword.",
+        "None of the secondary keywords appear in the article body.",
+        "Primary keyword appears very lightly in the article body."
+      ],
+      "errors": [],
+      "duplicate_candidate_slugs": [],
+      "timestamp": "2026-07-15T10:45:35.344584+00:00"
+    },
     {
       "article_slug": "best-furniture-for-a-mediterranean-kitchen",
       "cluster": "mediterranean kitchen",
@@ -39,25 +79,6 @@
       "errors": [],
       "duplicate_candidate_slugs": [],
       "timestamp": "2026-07-10T11:47:16.528181+00:00"
-    },
-    {
-      "article_slug": "summer-balcony-styling-mistakes-to-avoid",
-      "cluster": "summer balcony styling",
-      "cluster_id": "summer balcony styling",
-      "subtopic_id": "refresh",
-      "subtopic_name": "seasonal refresh",
-      "angle_id": "mistakes",
-      "intent_id": "problem_solving",
-      "primary_keyword": "summer balcony styling mistakes to avoid",
-      "validation_status": "warning",
-      "warnings": [
-        "Main section headings may be too generic for the chosen keyword.",
-        "None of the secondary keywords appear in the article body.",
-        "Primary keyword appears very lightly in the article body."
-      ],
-      "errors": [],
-      "duplicate_candidate_slugs": [],
-      "timestamp": "2026-07-10T11:47:16.302994+00:00"
     },
     {
       "article_slug": "minimalist-bedroom-texture-mistakes-to-avoid",

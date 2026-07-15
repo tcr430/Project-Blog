@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-10T11:51:22.530835+00:00",
-  "cluster_count": 54,
-  "article_count": 60,
+  "generated_at": "2026-07-15T10:51:52.281581+00:00",
+  "cluster_count": 55,
+  "article_count": 61,
   "subtopic_count": 10,
   "angle_count": 5,
   "angle_distribution": {
     "best_options": 29,
     "how_to": 4,
     "ideas": 4,
-    "mistakes": 22,
+    "mistakes": 23,
     "style_specific": 1
   },
   "clusters": [
@@ -370,7 +370,7 @@
       "representative_article_slugs": [
         "best-lighting-for-bathroom-layered-approach"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
@@ -1366,6 +1366,50 @@
       "status": "underdeveloped"
     },
     {
+      "cluster_id": "mediterranean_entryway",
+      "cluster_name": "mediterranean entryway",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "utility_transition"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "mediterranean entryway texture mistakes to avoid"
+      ],
+      "latest_article_date": "2026-07-15",
+      "latest_publication": {
+        "article_slug": "mediterranean-entryway-texture-mistakes-to-avoid",
+        "article_title": "Mediterranean Entryway Texture Mistakes to Avoid",
+        "publish_date": "2026-07-15",
+        "subtopic_id": "textures",
+        "subtopic_name": "textures and layers",
+        "angle_id": "mistakes"
+      },
+      "representative_article_slugs": [
+        "mediterranean-entryway-texture-mistakes-to-avoid"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "textures",
+          "subtopic_name": "textures and layers",
+          "article_count": 1,
+          "latest_article_date": "2026-07-15",
+          "representative_article_slugs": [
+            "mediterranean-entryway-texture-mistakes-to-avoid"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "mistakes": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
       "cluster_id": "mediterranean_kitchen",
       "cluster_name": "mediterranean kitchen",
       "legacy_cluster_names": [],
@@ -1740,7 +1784,7 @@
       "representative_article_slugs": [
         "how-to-style-a-neutral-entryway"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,

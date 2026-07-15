@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-07-10T11:51:24.017636+00:00",
+  "generated_at": "2026-07-15T10:51:53.825151+00:00",
   "total_clusters": 396,
   "summary": {
-    "missing": 342,
-    "underdeveloped": 54,
+    "missing": 341,
+    "underdeveloped": 55,
     "growing": 0,
     "strong": 0,
     "saturated": 0
   },
   "saturation_summary": {
-    "empty": 342,
-    "needs_growth": 54
+    "empty": 341,
+    "needs_growth": 55
   },
   "editorial_mix_rules": {
     "recent_window_article_count": 8,
@@ -193,7 +193,6 @@
     "japandi patio",
     "mediterranean balcony",
     "mediterranean dining room",
-    "mediterranean entryway",
     "mediterranean guest bedroom",
     "mediterranean home office",
     "mediterranean laundry room",
@@ -426,6 +425,7 @@
     "biophilic bedroom",
     "biophilic bathroom",
     "neutral kitchen",
+    "neutral entryway",
     "earthy bedroom",
     "earthy bathroom",
     "scandinavian bedroom",
@@ -435,7 +435,7 @@
     "parisian bathroom",
     "moody bedroom",
     "minimalist bathroom",
-    "neutral entryway",
+    "mediterranean bedroom",
     "transitional kitchen",
     "transitional entryway",
     "earthy kitchen",
@@ -449,9 +449,9 @@
     "minimalist kitchen",
     "minimalist entryway",
     "mediterranean kitchen",
+    "mediterranean entryway",
     "living room textures and materials",
     "small dining nook",
-    "mediterranean bedroom",
     "japandi bedroom",
     "japandi bathroom",
     "cottage bedroom",
@@ -465,13 +465,13 @@
     "tiny bathroom decor",
     "living room lighting",
     "bedroom lighting",
+    "bathroom lighting",
     "transitional bedroom",
     "transitional bathroom",
     "neutral bathroom",
     "moody bathroom",
     "minimalist bedroom",
     "spring bedroom refresh",
-    "bathroom lighting",
     "spring living room styling"
   ],
   "clusters": [
@@ -24948,217 +24948,6 @@
         "mediterranean dining room decor",
         "mediterranean dining room layout ideas",
         "mediterranean dining room color palette"
-      ],
-      "allowed_angle_ids": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "style_specific"
-      ]
-    },
-    {
-      "cluster_id": "mediterranean_entryway",
-      "cluster_name": "mediterranean entryway",
-      "domain_id": "utility_transition",
-      "health_label": "missing",
-      "article_count": 0,
-      "article_capacity_target": 14,
-      "capacity_ratio": 0.0,
-      "growth_openings": 10,
-      "saturation_state": "empty",
-      "selection_action": "boost",
-      "latest_publication_date": "",
-      "days_since_latest": null,
-      "subtopics_total": 5,
-      "subtopics_covered": [],
-      "subtopic_ids_covered": [],
-      "subtopics_missing": [
-        "Layout and Foundation",
-        "Color Palette",
-        "Furniture and Anchors",
-        "Lighting",
-        "Textures and Layers"
-      ],
-      "subtopic_ids_missing": [
-        "layout",
-        "colors",
-        "furniture",
-        "lighting",
-        "textures"
-      ],
-      "angle_distribution": {
-        "ideas": 0,
-        "how_to": 0,
-        "mistakes": 0,
-        "best_options": 0,
-        "style_specific": 0
-      },
-      "underused_angles": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "style_specific"
-      ],
-      "overused_angles": [],
-      "intent_distribution": {
-        "comparison": 0,
-        "decision_making": 0,
-        "implementation": 0,
-        "inspiration": 0,
-        "problem_solving": 0
-      },
-      "underused_intents": [
-        "comparison",
-        "decision_making",
-        "implementation",
-        "inspiration",
-        "problem_solving"
-      ],
-      "overused_intents": [],
-      "recommended_concepts": [
-        {
-          "cluster_id": "mediterranean_entryway",
-          "cluster_name": "mediterranean entryway",
-          "domain_id": "utility_transition",
-          "subtopic_id": "colors",
-          "subtopic_name": "Color Palette",
-          "angle_id": "how_to",
-          "intent_id": "implementation",
-          "modifier": "",
-          "primary_keyword": "how to choose colors for a mediterranean entryway",
-          "secondary_keywords": [
-            "mediterranean entryway ideas",
-            "how to style a mediterranean entryway",
-            "mediterranean entryway decor",
-            "mediterranean entryway layout ideas"
-          ],
-          "search_intent": "how_to",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 96,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "mediterranean_entryway",
-          "cluster_name": "mediterranean entryway",
-          "domain_id": "utility_transition",
-          "subtopic_id": "colors",
-          "subtopic_name": "Color Palette",
-          "angle_id": "ideas",
-          "intent_id": "inspiration",
-          "modifier": "",
-          "primary_keyword": "mediterranean entryway color palette ideas",
-          "secondary_keywords": [
-            "mediterranean entryway ideas",
-            "how to style a mediterranean entryway",
-            "mediterranean entryway decor",
-            "mediterranean entryway layout ideas"
-          ],
-          "search_intent": "ideas",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 96,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "mediterranean_entryway",
-          "cluster_name": "mediterranean entryway",
-          "domain_id": "utility_transition",
-          "subtopic_id": "colors",
-          "subtopic_name": "Color Palette",
-          "angle_id": "mistakes",
-          "intent_id": "problem_solving",
-          "modifier": "",
-          "primary_keyword": "mediterranean entryway color mistakes to avoid",
-          "secondary_keywords": [
-            "mediterranean entryway ideas",
-            "how to style a mediterranean entryway",
-            "mediterranean entryway decor",
-            "mediterranean entryway layout ideas"
-          ],
-          "search_intent": "problem_solution",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 96,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        }
-      ],
-      "recommended_topics": [
-        "how to choose colors for a mediterranean entryway",
-        "mediterranean entryway color palette ideas",
-        "mediterranean entryway color mistakes to avoid"
-      ],
-      "priority_score": 100,
-      "season": "",
-      "holiday": "",
-      "source": "content architecture",
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "pinterest_intelligence": {
-        "cluster_signal_label": "no_data",
-        "cluster_signal_boost": 0
-      },
-      "seed_keywords": [
-        "mediterranean entryway ideas",
-        "how to style a mediterranean entryway",
-        "mediterranean entryway decor",
-        "mediterranean entryway layout ideas",
-        "mediterranean entryway color palette"
       ],
       "allowed_angle_ids": [
         "ideas",
@@ -73005,7 +72794,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-17",
-      "days_since_latest": 84,
+      "days_since_latest": 89,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -73218,7 +73007,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-04",
-      "days_since_latest": 67,
+      "days_since_latest": 71,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -73431,7 +73220,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-06",
-      "days_since_latest": 65,
+      "days_since_latest": 69,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -73644,7 +73433,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-18",
-      "days_since_latest": 52,
+      "days_since_latest": 57,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation"
@@ -73846,6 +73635,219 @@
       ]
     },
     {
+      "cluster_id": "neutral_entryway",
+      "cluster_name": "neutral entryway",
+      "domain_id": "utility_transition",
+      "health_label": "underdeveloped",
+      "article_count": 1,
+      "article_capacity_target": 14,
+      "capacity_ratio": 0.07,
+      "growth_openings": 9,
+      "saturation_state": "needs_growth",
+      "selection_action": "boost",
+      "latest_publication_date": "2026-05-27",
+      "days_since_latest": 48,
+      "subtopics_total": 5,
+      "subtopics_covered": [
+        "Layout and Foundation"
+      ],
+      "subtopic_ids_covered": [
+        "layout"
+      ],
+      "subtopics_missing": [
+        "Color Palette",
+        "Furniture and Anchors",
+        "Lighting",
+        "Textures and Layers"
+      ],
+      "subtopic_ids_missing": [
+        "colors",
+        "furniture",
+        "lighting",
+        "textures"
+      ],
+      "angle_distribution": {
+        "ideas": 0,
+        "how_to": 1,
+        "mistakes": 0,
+        "best_options": 0,
+        "style_specific": 0
+      },
+      "underused_angles": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "style_specific"
+      ],
+      "overused_angles": [],
+      "intent_distribution": {
+        "comparison": 0,
+        "decision_making": 0,
+        "implementation": 1,
+        "inspiration": 0,
+        "problem_solving": 0
+      },
+      "underused_intents": [
+        "comparison",
+        "decision_making",
+        "implementation",
+        "inspiration",
+        "problem_solving"
+      ],
+      "overused_intents": [],
+      "recommended_concepts": [
+        {
+          "cluster_id": "neutral_entryway",
+          "cluster_name": "neutral entryway",
+          "domain_id": "utility_transition",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "ideas",
+          "intent_id": "inspiration",
+          "modifier": "",
+          "primary_keyword": "neutral entryway color palette ideas",
+          "secondary_keywords": [
+            "neutral entryway ideas",
+            "how to style a neutral entryway",
+            "neutral entryway decor",
+            "neutral entryway layout ideas"
+          ],
+          "search_intent": "ideas",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 82,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": true,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        },
+        {
+          "cluster_id": "neutral_entryway",
+          "cluster_name": "neutral entryway",
+          "domain_id": "utility_transition",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "mistakes",
+          "intent_id": "problem_solving",
+          "modifier": "",
+          "primary_keyword": "neutral entryway color mistakes to avoid",
+          "secondary_keywords": [
+            "neutral entryway ideas",
+            "how to style a neutral entryway",
+            "neutral entryway decor",
+            "neutral entryway layout ideas"
+          ],
+          "search_intent": "problem_solution",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 82,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": true,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        },
+        {
+          "cluster_id": "neutral_entryway",
+          "cluster_name": "neutral entryway",
+          "domain_id": "utility_transition",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "style_specific",
+          "intent_id": "inspiration",
+          "modifier": "",
+          "primary_keyword": "neutral entryway paint and color ideas",
+          "secondary_keywords": [
+            "neutral entryway ideas",
+            "how to style a neutral entryway",
+            "neutral entryway decor",
+            "neutral entryway layout ideas"
+          ],
+          "search_intent": "styling_advice",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 82,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": true,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        }
+      ],
+      "recommended_topics": [
+        "neutral entryway color palette ideas",
+        "neutral entryway color mistakes to avoid",
+        "neutral entryway paint and color ideas"
+      ],
+      "priority_score": 75,
+      "season": "",
+      "holiday": "",
+      "source": "content architecture",
+      "pinterest_signal": {
+        "label": "no_data",
+        "boost": 0,
+        "pinterest_article_count": 0,
+        "strong_article_count": 0,
+        "weak_article_count": 0,
+        "average_score": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_saves": 0.0
+      },
+      "pinterest_intelligence": {
+        "cluster_signal_label": "no_data",
+        "cluster_signal_boost": 0
+      },
+      "seed_keywords": [
+        "neutral entryway ideas",
+        "how to style a neutral entryway",
+        "neutral entryway decor",
+        "neutral entryway layout ideas",
+        "neutral entryway color palette"
+      ],
+      "allowed_angle_ids": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "style_specific"
+      ]
+    },
+    {
       "cluster_id": "earthy_bedroom",
       "cluster_name": "earthy bedroom",
       "domain_id": "bedrooms",
@@ -73857,7 +73859,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-18",
-      "days_since_latest": 113,
+      "days_since_latest": 118,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -74070,7 +74072,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-23",
-      "days_since_latest": 109,
+      "days_since_latest": 114,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -74283,7 +74285,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-28",
-      "days_since_latest": 103,
+      "days_since_latest": 108,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -74496,7 +74498,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-30",
-      "days_since_latest": 102,
+      "days_since_latest": 107,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -74709,7 +74711,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-01",
-      "days_since_latest": 99,
+      "days_since_latest": 104,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation"
@@ -74922,7 +74924,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-01",
-      "days_since_latest": 99,
+      "days_since_latest": 104,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -75135,7 +75137,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-03",
-      "days_since_latest": 98,
+      "days_since_latest": 103,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -75348,7 +75350,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-06",
-      "days_since_latest": 95,
+      "days_since_latest": 100,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -75561,7 +75563,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-10",
-      "days_since_latest": 91,
+      "days_since_latest": 96,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -75763,9 +75765,9 @@
       ]
     },
     {
-      "cluster_id": "neutral_entryway",
-      "cluster_name": "neutral entryway",
-      "domain_id": "utility_transition",
+      "cluster_id": "mediterranean_bedroom",
+      "cluster_name": "mediterranean bedroom",
+      "domain_id": "bedrooms",
       "health_label": "underdeveloped",
       "article_count": 1,
       "article_capacity_target": 14,
@@ -75773,32 +75775,32 @@
       "growth_openings": 9,
       "saturation_state": "needs_growth",
       "selection_action": "boost",
-      "latest_publication_date": "2026-05-27",
-      "days_since_latest": 43,
+      "latest_publication_date": "2026-04-13",
+      "days_since_latest": 93,
       "subtopics_total": 5,
       "subtopics_covered": [
-        "Layout and Foundation"
+        "Furniture and Anchors"
       ],
       "subtopic_ids_covered": [
-        "layout"
+        "furniture"
       ],
       "subtopics_missing": [
+        "Layout and Foundation",
         "Color Palette",
-        "Furniture and Anchors",
         "Lighting",
         "Textures and Layers"
       ],
       "subtopic_ids_missing": [
+        "layout",
         "colors",
-        "furniture",
         "lighting",
         "textures"
       ],
       "angle_distribution": {
         "ideas": 0,
-        "how_to": 1,
+        "how_to": 0,
         "mistakes": 0,
-        "best_options": 0,
+        "best_options": 1,
         "style_specific": 0
       },
       "underused_angles": [
@@ -75810,9 +75812,9 @@
       ],
       "overused_angles": [],
       "intent_distribution": {
-        "comparison": 0,
+        "comparison": 1,
         "decision_making": 0,
-        "implementation": 1,
+        "implementation": 0,
         "inspiration": 0,
         "problem_solving": 0
       },
@@ -75826,20 +75828,57 @@
       "overused_intents": [],
       "recommended_concepts": [
         {
-          "cluster_id": "neutral_entryway",
-          "cluster_name": "neutral entryway",
-          "domain_id": "utility_transition",
+          "cluster_id": "mediterranean_bedroom",
+          "cluster_name": "mediterranean bedroom",
+          "domain_id": "bedrooms",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "how_to",
+          "intent_id": "implementation",
+          "modifier": "",
+          "primary_keyword": "how to choose colors for a mediterranean bedroom",
+          "secondary_keywords": [
+            "mediterranean bedroom ideas",
+            "how to style a mediterranean bedroom",
+            "mediterranean bedroom decor",
+            "mediterranean bedroom layout ideas"
+          ],
+          "search_intent": "how_to",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 80,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": true,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        },
+        {
+          "cluster_id": "mediterranean_bedroom",
+          "cluster_name": "mediterranean bedroom",
+          "domain_id": "bedrooms",
           "subtopic_id": "colors",
           "subtopic_name": "Color Palette",
           "angle_id": "ideas",
           "intent_id": "inspiration",
           "modifier": "",
-          "primary_keyword": "neutral entryway color palette ideas",
+          "primary_keyword": "mediterranean bedroom color palette ideas",
           "secondary_keywords": [
-            "neutral entryway ideas",
-            "how to style a neutral entryway",
-            "neutral entryway decor",
-            "neutral entryway layout ideas"
+            "mediterranean bedroom ideas",
+            "how to style a mediterranean bedroom",
+            "mediterranean bedroom decor",
+            "mediterranean bedroom layout ideas"
           ],
           "search_intent": "ideas",
           "season": "",
@@ -75849,13 +75888,13 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 78,
+          "score": 80,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
             "underused_angle": true,
             "underused_intent": true,
-            "stale_cluster": false,
+            "stale_cluster": true,
             "cluster_health": "underdeveloped",
             "pinterest_subtopic_signal": "no_data",
             "pinterest_angle_signal": "no_data",
@@ -75863,20 +75902,20 @@
           }
         },
         {
-          "cluster_id": "neutral_entryway",
-          "cluster_name": "neutral entryway",
-          "domain_id": "utility_transition",
+          "cluster_id": "mediterranean_bedroom",
+          "cluster_name": "mediterranean bedroom",
+          "domain_id": "bedrooms",
           "subtopic_id": "colors",
           "subtopic_name": "Color Palette",
           "angle_id": "mistakes",
           "intent_id": "problem_solving",
           "modifier": "",
-          "primary_keyword": "neutral entryway color mistakes to avoid",
+          "primary_keyword": "mediterranean bedroom color mistakes to avoid",
           "secondary_keywords": [
-            "neutral entryway ideas",
-            "how to style a neutral entryway",
-            "neutral entryway decor",
-            "neutral entryway layout ideas"
+            "mediterranean bedroom ideas",
+            "how to style a mediterranean bedroom",
+            "mediterranean bedroom decor",
+            "mediterranean bedroom layout ideas"
           ],
           "search_intent": "problem_solution",
           "season": "",
@@ -75886,50 +75925,13 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 78,
+          "score": 80,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
             "underused_angle": true,
             "underused_intent": true,
-            "stale_cluster": false,
-            "cluster_health": "underdeveloped",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "neutral_entryway",
-          "cluster_name": "neutral entryway",
-          "domain_id": "utility_transition",
-          "subtopic_id": "colors",
-          "subtopic_name": "Color Palette",
-          "angle_id": "style_specific",
-          "intent_id": "inspiration",
-          "modifier": "",
-          "primary_keyword": "neutral entryway paint and color ideas",
-          "secondary_keywords": [
-            "neutral entryway ideas",
-            "how to style a neutral entryway",
-            "neutral entryway decor",
-            "neutral entryway layout ideas"
-          ],
-          "search_intent": "styling_advice",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 78,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": false,
+            "stale_cluster": true,
             "cluster_health": "underdeveloped",
             "pinterest_subtopic_signal": "no_data",
             "pinterest_angle_signal": "no_data",
@@ -75938,20 +75940,20 @@
         }
       ],
       "recommended_topics": [
-        "neutral entryway color palette ideas",
-        "neutral entryway color mistakes to avoid",
-        "neutral entryway paint and color ideas"
+        "how to choose colors for a mediterranean bedroom",
+        "mediterranean bedroom color palette ideas",
+        "mediterranean bedroom color mistakes to avoid"
       ],
-      "priority_score": 70,
+      "priority_score": 72,
       "season": "",
       "holiday": "",
       "source": "content architecture",
       "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
+        "label": "cold",
+        "boost": -6,
+        "pinterest_article_count": 1,
         "strong_article_count": 0,
-        "weak_article_count": 0,
+        "weak_article_count": 1,
         "average_score": 0.0,
         "average_outbound_clicks": 0.0,
         "average_saves": 0.0
@@ -75961,11 +75963,11 @@
         "cluster_signal_boost": 0
       },
       "seed_keywords": [
-        "neutral entryway ideas",
-        "how to style a neutral entryway",
-        "neutral entryway decor",
-        "neutral entryway layout ideas",
-        "neutral entryway color palette"
+        "mediterranean bedroom ideas",
+        "how to style a mediterranean bedroom",
+        "mediterranean bedroom decor",
+        "mediterranean bedroom layout ideas",
+        "mediterranean bedroom color palette"
       ],
       "allowed_angle_ids": [
         "ideas",
@@ -75987,7 +75989,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-01",
-      "days_since_latest": 38,
+      "days_since_latest": 43,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -76200,7 +76202,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-03",
-      "days_since_latest": 36,
+      "days_since_latest": 41,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -76413,7 +76415,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-10",
-      "days_since_latest": 29,
+      "days_since_latest": 34,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -76626,7 +76628,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-12",
-      "days_since_latest": 27,
+      "days_since_latest": 32,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -76839,7 +76841,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-15",
-      "days_since_latest": 24,
+      "days_since_latest": 29,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -77052,7 +77054,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-17",
-      "days_since_latest": 22,
+      "days_since_latest": 27,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -77265,7 +77267,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-22",
-      "days_since_latest": 17,
+      "days_since_latest": 22,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -77340,7 +77342,7 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 74,
+          "score": 78,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -77377,7 +77379,7 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 74,
+          "score": 78,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -77414,7 +77416,7 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 74,
+          "score": 78,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -77478,7 +77480,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-24",
-      "days_since_latest": 16,
+      "days_since_latest": 20,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -77691,7 +77693,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-26",
-      "days_since_latest": 14,
+      "days_since_latest": 18,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -77904,7 +77906,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-29",
-      "days_since_latest": 10,
+      "days_since_latest": 15,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -78117,7 +78119,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-07-03",
-      "days_since_latest": 7,
+      "days_since_latest": 11,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -78330,7 +78332,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-07-06",
-      "days_since_latest": 3,
+      "days_since_latest": 8,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -78543,7 +78545,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-07-10",
-      "days_since_latest": 0,
+      "days_since_latest": 4,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -78735,6 +78737,219 @@
         "mediterranean kitchen decor",
         "mediterranean kitchen layout ideas",
         "mediterranean kitchen color palette"
+      ],
+      "allowed_angle_ids": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "style_specific"
+      ]
+    },
+    {
+      "cluster_id": "mediterranean_entryway",
+      "cluster_name": "mediterranean entryway",
+      "domain_id": "utility_transition",
+      "health_label": "underdeveloped",
+      "article_count": 1,
+      "article_capacity_target": 14,
+      "capacity_ratio": 0.07,
+      "growth_openings": 9,
+      "saturation_state": "needs_growth",
+      "selection_action": "boost",
+      "latest_publication_date": "2026-07-15",
+      "days_since_latest": 0,
+      "subtopics_total": 5,
+      "subtopics_covered": [
+        "Textures and Layers"
+      ],
+      "subtopic_ids_covered": [
+        "textures"
+      ],
+      "subtopics_missing": [
+        "Layout and Foundation",
+        "Color Palette",
+        "Furniture and Anchors",
+        "Lighting"
+      ],
+      "subtopic_ids_missing": [
+        "layout",
+        "colors",
+        "furniture",
+        "lighting"
+      ],
+      "angle_distribution": {
+        "ideas": 0,
+        "how_to": 0,
+        "mistakes": 1,
+        "best_options": 0,
+        "style_specific": 0
+      },
+      "underused_angles": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "style_specific"
+      ],
+      "overused_angles": [],
+      "intent_distribution": {
+        "comparison": 0,
+        "decision_making": 0,
+        "implementation": 0,
+        "inspiration": 0,
+        "problem_solving": 1
+      },
+      "underused_intents": [
+        "comparison",
+        "decision_making",
+        "implementation",
+        "inspiration",
+        "problem_solving"
+      ],
+      "overused_intents": [],
+      "recommended_concepts": [
+        {
+          "cluster_id": "mediterranean_entryway",
+          "cluster_name": "mediterranean entryway",
+          "domain_id": "utility_transition",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "how_to",
+          "intent_id": "implementation",
+          "modifier": "",
+          "primary_keyword": "how to choose colors for a mediterranean entryway",
+          "secondary_keywords": [
+            "mediterranean entryway ideas",
+            "how to style a mediterranean entryway",
+            "mediterranean entryway decor",
+            "mediterranean entryway layout ideas"
+          ],
+          "search_intent": "how_to",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 74,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        },
+        {
+          "cluster_id": "mediterranean_entryway",
+          "cluster_name": "mediterranean entryway",
+          "domain_id": "utility_transition",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "ideas",
+          "intent_id": "inspiration",
+          "modifier": "",
+          "primary_keyword": "mediterranean entryway color palette ideas",
+          "secondary_keywords": [
+            "mediterranean entryway ideas",
+            "how to style a mediterranean entryway",
+            "mediterranean entryway decor",
+            "mediterranean entryway layout ideas"
+          ],
+          "search_intent": "ideas",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 74,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        },
+        {
+          "cluster_id": "mediterranean_entryway",
+          "cluster_name": "mediterranean entryway",
+          "domain_id": "utility_transition",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "style_specific",
+          "intent_id": "inspiration",
+          "modifier": "",
+          "primary_keyword": "mediterranean entryway paint and color ideas",
+          "secondary_keywords": [
+            "mediterranean entryway ideas",
+            "how to style a mediterranean entryway",
+            "mediterranean entryway decor",
+            "mediterranean entryway layout ideas"
+          ],
+          "search_intent": "styling_advice",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 74,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        }
+      ],
+      "recommended_topics": [
+        "how to choose colors for a mediterranean entryway",
+        "mediterranean entryway color palette ideas",
+        "mediterranean entryway paint and color ideas"
+      ],
+      "priority_score": 70,
+      "season": "",
+      "holiday": "",
+      "source": "content architecture",
+      "pinterest_signal": {
+        "label": "no_data",
+        "boost": 0,
+        "pinterest_article_count": 0,
+        "strong_article_count": 0,
+        "weak_article_count": 0,
+        "average_score": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_saves": 0.0
+      },
+      "pinterest_intelligence": {
+        "cluster_signal_label": "no_data",
+        "cluster_signal_boost": 0
+      },
+      "seed_keywords": [
+        "mediterranean entryway ideas",
+        "how to style a mediterranean entryway",
+        "mediterranean entryway decor",
+        "mediterranean entryway layout ideas",
+        "mediterranean entryway color palette"
       ],
       "allowed_angle_ids": [
         "ideas",
@@ -79166,219 +79381,6 @@
       ]
     },
     {
-      "cluster_id": "mediterranean_bedroom",
-      "cluster_name": "mediterranean bedroom",
-      "domain_id": "bedrooms",
-      "health_label": "underdeveloped",
-      "article_count": 1,
-      "article_capacity_target": 14,
-      "capacity_ratio": 0.07,
-      "growth_openings": 9,
-      "saturation_state": "needs_growth",
-      "selection_action": "boost",
-      "latest_publication_date": "2026-04-13",
-      "days_since_latest": 88,
-      "subtopics_total": 5,
-      "subtopics_covered": [
-        "Furniture and Anchors"
-      ],
-      "subtopic_ids_covered": [
-        "furniture"
-      ],
-      "subtopics_missing": [
-        "Layout and Foundation",
-        "Color Palette",
-        "Lighting",
-        "Textures and Layers"
-      ],
-      "subtopic_ids_missing": [
-        "layout",
-        "colors",
-        "lighting",
-        "textures"
-      ],
-      "angle_distribution": {
-        "ideas": 0,
-        "how_to": 0,
-        "mistakes": 0,
-        "best_options": 1,
-        "style_specific": 0
-      },
-      "underused_angles": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "style_specific"
-      ],
-      "overused_angles": [],
-      "intent_distribution": {
-        "comparison": 1,
-        "decision_making": 0,
-        "implementation": 0,
-        "inspiration": 0,
-        "problem_solving": 0
-      },
-      "underused_intents": [
-        "comparison",
-        "decision_making",
-        "implementation",
-        "inspiration",
-        "problem_solving"
-      ],
-      "overused_intents": [],
-      "recommended_concepts": [
-        {
-          "cluster_id": "mediterranean_bedroom",
-          "cluster_name": "mediterranean bedroom",
-          "domain_id": "bedrooms",
-          "subtopic_id": "colors",
-          "subtopic_name": "Color Palette",
-          "angle_id": "how_to",
-          "intent_id": "implementation",
-          "modifier": "",
-          "primary_keyword": "how to choose colors for a mediterranean bedroom",
-          "secondary_keywords": [
-            "mediterranean bedroom ideas",
-            "how to style a mediterranean bedroom",
-            "mediterranean bedroom decor",
-            "mediterranean bedroom layout ideas"
-          ],
-          "search_intent": "how_to",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 76,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "underdeveloped",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "mediterranean_bedroom",
-          "cluster_name": "mediterranean bedroom",
-          "domain_id": "bedrooms",
-          "subtopic_id": "colors",
-          "subtopic_name": "Color Palette",
-          "angle_id": "ideas",
-          "intent_id": "inspiration",
-          "modifier": "",
-          "primary_keyword": "mediterranean bedroom color palette ideas",
-          "secondary_keywords": [
-            "mediterranean bedroom ideas",
-            "how to style a mediterranean bedroom",
-            "mediterranean bedroom decor",
-            "mediterranean bedroom layout ideas"
-          ],
-          "search_intent": "ideas",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 76,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "underdeveloped",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "mediterranean_bedroom",
-          "cluster_name": "mediterranean bedroom",
-          "domain_id": "bedrooms",
-          "subtopic_id": "colors",
-          "subtopic_name": "Color Palette",
-          "angle_id": "mistakes",
-          "intent_id": "problem_solving",
-          "modifier": "",
-          "primary_keyword": "mediterranean bedroom color mistakes to avoid",
-          "secondary_keywords": [
-            "mediterranean bedroom ideas",
-            "how to style a mediterranean bedroom",
-            "mediterranean bedroom decor",
-            "mediterranean bedroom layout ideas"
-          ],
-          "search_intent": "problem_solution",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 76,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "underdeveloped",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        }
-      ],
-      "recommended_topics": [
-        "how to choose colors for a mediterranean bedroom",
-        "mediterranean bedroom color palette ideas",
-        "mediterranean bedroom color mistakes to avoid"
-      ],
-      "priority_score": 69,
-      "season": "",
-      "holiday": "",
-      "source": "content architecture",
-      "pinterest_signal": {
-        "label": "cold",
-        "boost": -6,
-        "pinterest_article_count": 1,
-        "strong_article_count": 0,
-        "weak_article_count": 1,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "pinterest_intelligence": {
-        "cluster_signal_label": "no_data",
-        "cluster_signal_boost": 0
-      },
-      "seed_keywords": [
-        "mediterranean bedroom ideas",
-        "how to style a mediterranean bedroom",
-        "mediterranean bedroom decor",
-        "mediterranean bedroom layout ideas",
-        "mediterranean bedroom color palette"
-      ],
-      "allowed_angle_ids": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "style_specific"
-      ]
-    },
-    {
       "cluster_id": "japandi_bedroom",
       "cluster_name": "japandi bedroom",
       "domain_id": "bedrooms",
@@ -79390,7 +79392,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-20",
-      "days_since_latest": 81,
+      "days_since_latest": 86,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -79603,7 +79605,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-22",
-      "days_since_latest": 79,
+      "days_since_latest": 84,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -79816,7 +79818,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-24",
-      "days_since_latest": 77,
+      "days_since_latest": 82,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -80029,7 +80031,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-27",
-      "days_since_latest": 74,
+      "days_since_latest": 78,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -80242,7 +80244,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-29",
-      "days_since_latest": 72,
+      "days_since_latest": 76,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -80455,7 +80457,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-01",
-      "days_since_latest": 70,
+      "days_since_latest": 75,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -80668,7 +80670,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-08",
-      "days_since_latest": 63,
+      "days_since_latest": 68,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Surface Styling"
@@ -80877,7 +80879,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-11",
-      "days_since_latest": 59,
+      "days_since_latest": 64,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Surface Styling"
@@ -81086,7 +81088,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-13",
-      "days_since_latest": 58,
+      "days_since_latest": 62,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Surface Styling"
@@ -81295,7 +81297,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-15",
-      "days_since_latest": 56,
+      "days_since_latest": 60,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Seasonal Refresh"
@@ -81507,7 +81509,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-20",
-      "days_since_latest": 51,
+      "days_since_latest": 55,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Light and Openness"
@@ -81713,7 +81715,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-22",
-      "days_since_latest": 49,
+      "days_since_latest": 53,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Layered Lighting"
@@ -81919,7 +81921,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-25",
-      "days_since_latest": 45,
+      "days_since_latest": 50,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Layered Lighting"
@@ -82114,6 +82116,212 @@
       ]
     },
     {
+      "cluster_id": "bathroom_lighting",
+      "cluster_name": "bathroom lighting",
+      "domain_id": "utility_transition",
+      "health_label": "underdeveloped",
+      "article_count": 1,
+      "article_capacity_target": 12,
+      "capacity_ratio": 0.08,
+      "growth_openings": 7,
+      "saturation_state": "needs_growth",
+      "selection_action": "boost",
+      "latest_publication_date": "2026-05-29",
+      "days_since_latest": 46,
+      "subtopics_total": 3,
+      "subtopics_covered": [
+        "Layered Lighting"
+      ],
+      "subtopic_ids_covered": [
+        "layering"
+      ],
+      "subtopics_missing": [
+        "Lamps and Accent Lighting",
+        "Overhead Fixtures"
+      ],
+      "subtopic_ids_missing": [
+        "lamps",
+        "overhead"
+      ],
+      "angle_distribution": {
+        "ideas": 0,
+        "how_to": 0,
+        "mistakes": 0,
+        "best_options": 1,
+        "style_specific": 0
+      },
+      "underused_angles": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "style_specific"
+      ],
+      "overused_angles": [],
+      "intent_distribution": {
+        "comparison": 1,
+        "decision_making": 0,
+        "implementation": 0,
+        "inspiration": 0,
+        "problem_solving": 0
+      },
+      "underused_intents": [
+        "comparison",
+        "decision_making",
+        "implementation",
+        "inspiration",
+        "problem_solving"
+      ],
+      "overused_intents": [],
+      "recommended_concepts": [
+        {
+          "cluster_id": "bathroom_lighting",
+          "cluster_name": "bathroom lighting",
+          "domain_id": "utility_transition",
+          "subtopic_id": "lamps",
+          "subtopic_name": "Lamps and Accent Lighting",
+          "angle_id": "how_to",
+          "intent_id": "implementation",
+          "modifier": "",
+          "primary_keyword": "how to place lamps in bathroom",
+          "secondary_keywords": [
+            "bathroom lighting ideas",
+            "bathroom lamp styling ideas",
+            "how to layer lighting in bathroom",
+            "bathroom lighting mistakes to avoid"
+          ],
+          "search_intent": "how_to",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 82,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": true,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        },
+        {
+          "cluster_id": "bathroom_lighting",
+          "cluster_name": "bathroom lighting",
+          "domain_id": "utility_transition",
+          "subtopic_id": "lamps",
+          "subtopic_name": "Lamps and Accent Lighting",
+          "angle_id": "ideas",
+          "intent_id": "inspiration",
+          "modifier": "",
+          "primary_keyword": "bathroom lamp styling ideas",
+          "secondary_keywords": [
+            "bathroom lighting ideas",
+            "how to layer lighting in bathroom",
+            "bathroom lighting mistakes to avoid",
+            "best lighting for bathroom"
+          ],
+          "search_intent": "ideas",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 82,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": true,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        },
+        {
+          "cluster_id": "bathroom_lighting",
+          "cluster_name": "bathroom lighting",
+          "domain_id": "utility_transition",
+          "subtopic_id": "lamps",
+          "subtopic_name": "Lamps and Accent Lighting",
+          "angle_id": "mistakes",
+          "intent_id": "problem_solving",
+          "modifier": "",
+          "primary_keyword": "bathroom lamp placement mistakes to avoid",
+          "secondary_keywords": [
+            "bathroom lighting ideas",
+            "bathroom lamp styling ideas",
+            "how to layer lighting in bathroom",
+            "bathroom lighting mistakes to avoid"
+          ],
+          "search_intent": "problem_solution",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 82,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": true,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        }
+      ],
+      "recommended_topics": [
+        "how to place lamps in bathroom",
+        "bathroom lamp styling ideas",
+        "bathroom lamp placement mistakes to avoid"
+      ],
+      "priority_score": 65,
+      "season": "",
+      "holiday": "",
+      "source": "content architecture",
+      "pinterest_signal": {
+        "label": "no_data",
+        "boost": 0,
+        "pinterest_article_count": 0,
+        "strong_article_count": 0,
+        "weak_article_count": 0,
+        "average_score": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_saves": 0.0
+      },
+      "pinterest_intelligence": {
+        "cluster_signal_label": "no_data",
+        "cluster_signal_boost": 0
+      },
+      "seed_keywords": [
+        "bathroom lighting ideas",
+        "bathroom lamp styling ideas"
+      ],
+      "allowed_angle_ids": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "style_specific"
+      ]
+    },
+    {
       "cluster_id": "transitional_bedroom",
       "cluster_name": "transitional bedroom",
       "domain_id": "bedrooms",
@@ -82125,7 +82333,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-05",
-      "days_since_latest": 34,
+      "days_since_latest": 39,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors",
@@ -82338,7 +82546,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-08",
-      "days_since_latest": 31,
+      "days_since_latest": 36,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors",
@@ -82551,7 +82759,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-19",
-      "days_since_latest": 20,
+      "days_since_latest": 25,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation",
@@ -82626,7 +82834,7 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 74,
+          "score": 78,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -82663,7 +82871,7 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 74,
+          "score": 78,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -82700,7 +82908,7 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 74,
+          "score": 78,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -82764,7 +82972,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-07-01",
-      "days_since_latest": 8,
+      "days_since_latest": 13,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors",
@@ -82977,7 +83185,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-07-08",
-      "days_since_latest": 2,
+      "days_since_latest": 6,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors",
@@ -83190,7 +83398,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-02",
-      "days_since_latest": 99,
+      "days_since_latest": 104,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Seasonal Refresh"
@@ -83391,212 +83599,6 @@
       ]
     },
     {
-      "cluster_id": "bathroom_lighting",
-      "cluster_name": "bathroom lighting",
-      "domain_id": "utility_transition",
-      "health_label": "underdeveloped",
-      "article_count": 1,
-      "article_capacity_target": 12,
-      "capacity_ratio": 0.08,
-      "growth_openings": 7,
-      "saturation_state": "needs_growth",
-      "selection_action": "boost",
-      "latest_publication_date": "2026-05-29",
-      "days_since_latest": 41,
-      "subtopics_total": 3,
-      "subtopics_covered": [
-        "Layered Lighting"
-      ],
-      "subtopic_ids_covered": [
-        "layering"
-      ],
-      "subtopics_missing": [
-        "Lamps and Accent Lighting",
-        "Overhead Fixtures"
-      ],
-      "subtopic_ids_missing": [
-        "lamps",
-        "overhead"
-      ],
-      "angle_distribution": {
-        "ideas": 0,
-        "how_to": 0,
-        "mistakes": 0,
-        "best_options": 1,
-        "style_specific": 0
-      },
-      "underused_angles": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "style_specific"
-      ],
-      "overused_angles": [],
-      "intent_distribution": {
-        "comparison": 1,
-        "decision_making": 0,
-        "implementation": 0,
-        "inspiration": 0,
-        "problem_solving": 0
-      },
-      "underused_intents": [
-        "comparison",
-        "decision_making",
-        "implementation",
-        "inspiration",
-        "problem_solving"
-      ],
-      "overused_intents": [],
-      "recommended_concepts": [
-        {
-          "cluster_id": "bathroom_lighting",
-          "cluster_name": "bathroom lighting",
-          "domain_id": "utility_transition",
-          "subtopic_id": "lamps",
-          "subtopic_name": "Lamps and Accent Lighting",
-          "angle_id": "how_to",
-          "intent_id": "implementation",
-          "modifier": "",
-          "primary_keyword": "how to place lamps in bathroom",
-          "secondary_keywords": [
-            "bathroom lighting ideas",
-            "bathroom lamp styling ideas",
-            "how to layer lighting in bathroom",
-            "bathroom lighting mistakes to avoid"
-          ],
-          "search_intent": "how_to",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 78,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": false,
-            "cluster_health": "underdeveloped",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "bathroom_lighting",
-          "cluster_name": "bathroom lighting",
-          "domain_id": "utility_transition",
-          "subtopic_id": "lamps",
-          "subtopic_name": "Lamps and Accent Lighting",
-          "angle_id": "ideas",
-          "intent_id": "inspiration",
-          "modifier": "",
-          "primary_keyword": "bathroom lamp styling ideas",
-          "secondary_keywords": [
-            "bathroom lighting ideas",
-            "how to layer lighting in bathroom",
-            "bathroom lighting mistakes to avoid",
-            "best lighting for bathroom"
-          ],
-          "search_intent": "ideas",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 78,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": false,
-            "cluster_health": "underdeveloped",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "bathroom_lighting",
-          "cluster_name": "bathroom lighting",
-          "domain_id": "utility_transition",
-          "subtopic_id": "lamps",
-          "subtopic_name": "Lamps and Accent Lighting",
-          "angle_id": "mistakes",
-          "intent_id": "problem_solving",
-          "modifier": "",
-          "primary_keyword": "bathroom lamp placement mistakes to avoid",
-          "secondary_keywords": [
-            "bathroom lighting ideas",
-            "bathroom lamp styling ideas",
-            "how to layer lighting in bathroom",
-            "bathroom lighting mistakes to avoid"
-          ],
-          "search_intent": "problem_solution",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 78,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": false,
-            "cluster_health": "underdeveloped",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        }
-      ],
-      "recommended_topics": [
-        "how to place lamps in bathroom",
-        "bathroom lamp styling ideas",
-        "bathroom lamp placement mistakes to avoid"
-      ],
-      "priority_score": 60,
-      "season": "",
-      "holiday": "",
-      "source": "content architecture",
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "pinterest_intelligence": {
-        "cluster_signal_label": "no_data",
-        "cluster_signal_boost": 0
-      },
-      "seed_keywords": [
-        "bathroom lighting ideas",
-        "bathroom lamp styling ideas"
-      ],
-      "allowed_angle_ids": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "style_specific"
-      ]
-    },
-    {
       "cluster_id": "spring_living_room_styling",
       "cluster_name": "spring living room styling",
       "domain_id": "seasonal_styling",
@@ -83608,7 +83610,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-15",
-      "days_since_latest": 86,
+      "days_since_latest": 91,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Seasonal Refresh",
@@ -83685,7 +83687,7 @@
             "monetizable_decision",
             "evergreen_authority"
           ],
-          "score": 83,
+          "score": 87,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -83723,7 +83725,7 @@
             "seasonal_opportunity",
             "evergreen_authority"
           ],
-          "score": 83,
+          "score": 87,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -83761,7 +83763,7 @@
             "seasonal_opportunity",
             "evergreen_authority"
           ],
-          "score": 83,
+          "score": 87,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -83780,7 +83782,7 @@
         "how to layer textiles for spring living room styling",
         "spring living room styling texture mistakes to avoid"
       ],
-      "priority_score": 54,
+      "priority_score": 57,
       "season": "spring",
       "holiday": "",
       "source": "content architecture",

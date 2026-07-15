@@ -1,16 +1,17 @@
 # Weekly Pipeline Report
 
-Generated: 2026-07-10
+Generated: 2026-07-15
 Window: last 7 days
 
-Articles Published: 2  
-Pins Generated: 6  
-Pins Scheduled: 95  
+Articles Published: 3  
+Pins Generated: 9  
+Pins Scheduled: 98  
 Pins Published: 0  
 Repins Scheduled: 0
 
 ## Articles Published
 - best-furniture-for-a-mediterranean-kitchen
+- mediterranean-entryway-texture-mistakes-to-avoid
 - minimalist-bedroom-texture-mistakes-to-avoid
 
 ## Top Performing Pins

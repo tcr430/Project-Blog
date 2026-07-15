@@ -7,7 +7,7 @@ cluster_name: "earthy entryway"
 cluster_slug: "earthy-entryway"
 cluster_article_count: 1
 cluster_primary_keywords: ["best furniture for an earthy entryway"]
-cluster_generated_at: "2026-07-10T11:51:24.235365+00:00"
+cluster_generated_at: "2026-07-15T10:51:54.051964+00:00"
 cluster_intro: "Earthy Entryway is a useful decorating topic because it combines inspiration with practical decision-making. Readers usually arrive here looking for a clear style direction, help solving a room problem, or confidence about how to make the look feel intentional at home.
 
 This pillar page brings together the site's coverage around earthy entryway, with article angles shaped by keyword themes such as best furniture for an earthy entryway. That mix helps the page support both broader search intent and more specific decorating questions without feeling repetitive.
@@ -55,16 +55,16 @@ These adjacent hubs help readers keep moving through the topic without losing th
 <p><a class="cluster-hub-link" href="/clusters/earthy-bathroom/">Open this cluster</a></p>
 </div>
 <div class="cluster-hub-card">
+<h3><a href="/clusters/mediterranean-entryway/">Mediterranean Entryway</a></h3>
+<p>Broad editorial cluster for mediterranean entryway topics.</p>
+<p class="cluster-hub-meta">1 article</p>
+<p><a class="cluster-hub-link" href="/clusters/mediterranean-entryway/">Open this cluster</a></p>
+</div>
+<div class="cluster-hub-card">
 <h3><a href="/clusters/minimalist-entryway/">Minimalist Entryway</a></h3>
 <p>Broad editorial cluster for minimalist entryway topics.</p>
 <p class="cluster-hub-meta">1 article</p>
 <p><a class="cluster-hub-link" href="/clusters/minimalist-entryway/">Open this cluster</a></p>
-</div>
-<div class="cluster-hub-card">
-<h3><a href="/clusters/moody-entryway/">Moody Entryway</a></h3>
-<p>Broad editorial cluster for moody entryway topics.</p>
-<p class="cluster-hub-meta">1 article</p>
-<p><a class="cluster-hub-link" href="/clusters/moody-entryway/">Open this cluster</a></p>
 </div>
 </div>
 
@@ -74,4 +74,4 @@ A simple path through this topic so readers can build confidence one step at a t
 
 1. Start with [How to Choose Furniture for an Earthy Entryway](/ideas/2026/06/12/best-furniture-earthy-entryway/) for the broadest orientation.
 2. After that, move into [Earthy Bathroom](/clusters/earthy-bathroom/) to keep the topic expanding naturally.
-3. After that, move into [Minimalist Entryway](/clusters/minimalist-entryway/) to keep the topic expanding naturally.
+3. After that, move into [Mediterranean Entryway](/clusters/mediterranean-entryway/) to keep the topic expanding naturally.

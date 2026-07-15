@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "a2391d60ce6c2ee077b99d7c628b51a5f08ec9c9aa55053f12cb6ba392cdb7dd",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/mediterranean-entryway-texture-mistakes-to-avoid/hero.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-1": {
+    "cache_key": "467a0fc178bdb6b0f670bcddc0f00adc4fcc368c43c13ed1e22ab36635352557",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/mediterranean-entryway-texture-mistakes-to-avoid/section-1.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-2": {
+    "cache_key": "700c8087495cf17358a90d36f7c4bba0dcd05f92a7db63319d7916d7acdfff7d",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/mediterranean-entryway-texture-mistakes-to-avoid/section-2.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-3": {
+    "cache_key": "42fadec6789f41297db19b5e8ab3c5d04273f2314c78d0388d211301d598e781",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/mediterranean-entryway-texture-mistakes-to-avoid/section-3.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-4": {
+    "cache_key": "508aaa2b10b5289ed029d1981555e184ab9a49d9ef86e5544405ca6f352715d2",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/mediterranean-entryway-texture-mistakes-to-avoid/section-4.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-5": {
+    "cache_key": "3eb24b0141d01ad015bf4c164c42982521b515ced3aee0b416a5068411dcacc3",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/mediterranean-entryway-texture-mistakes-to-avoid/section-5.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  }
+}

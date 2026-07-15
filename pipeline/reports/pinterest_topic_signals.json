@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-10T11:51:22.537171+00:00",
-  "cluster_count": 54,
+  "generated_at": "2026-07-15T10:51:52.288233+00:00",
+  "cluster_count": 55,
   "summary": {
     "hot": 0,
     "warm": 0,
     "cold": 18,
-    "no_data": 36
+    "no_data": 37
   },
   "clusters": [
     {
@@ -556,6 +556,30 @@
       "average_saves": 0.0,
       "signal_label": "cold",
       "signal_boost": -6
+    },
+    {
+      "cluster_name": "mediterranean entryway",
+      "article_count": 1,
+      "article_slugs": [
+        "mediterranean-entryway-texture-mistakes-to-avoid"
+      ],
+      "primary_keywords": [
+        "mediterranean entryway texture mistakes to avoid"
+      ],
+      "secondary_keywords": [
+        "mediterranean entryway ideas",
+        "how to style a mediterranean entryway",
+        "mediterranean entryway decor",
+        "mediterranean entryway layout ideas"
+      ],
+      "pinterest_article_count": 0,
+      "strong_article_count": 0,
+      "weak_article_count": 0,
+      "average_score": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_saves": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0
     },
     {
       "cluster_name": "mediterranean kitchen",
