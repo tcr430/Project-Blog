@@ -1,51 +1,51 @@
 {
-  "generated_at": "2026-07-15T10:47:24.075388+00:00",
+  "generated_at": "2026-07-17T10:43:19.500228+00:00",
   "articles": [
     {
-      "article_slug": "mediterranean-entryway-texture-mistakes-to-avoid",
-      "cluster_id": "mediterranean_entryway",
+      "article_slug": "mediterranean-bathroom-texture-mistakes-to-avoid",
+      "cluster_id": "mediterranean_bathroom",
       "subtopic_id": "textures",
       "angle_id": "mistakes",
-      "primary_keyword": "mediterranean entryway texture mistakes to avoid",
+      "primary_keyword": "mediterranean bathroom texture mistakes to avoid",
       "validation_status": "warning",
       "warnings": [
-        "Section headings rely on repetitive formulas instead of distinct editorial moves.",
         "Several section headings do not signal the topic strongly enough.",
         "Supporting keyword ideas are barely reflected in the body."
       ],
       "errors": [],
       "checks": {
         "generic_intro": {
-          "intro_word_count": 132,
+          "intro_word_count": 148,
           "concept_overlap": 7,
-          "first_sentence": "Mediterranean entryways evoke a timeless charm rooted in nature: soft stone, weathered wood, linen textiles, and earth-toned plaster walls combine to create inviting, layered spaces."
+          "first_sentence": "Mediterranean bathrooms are beloved for their warm, rustic charm and inviting textures, capturing the sunny, coastal spirit of southern Europe."
         },
         "heading_quality": {
-          "heading_count": 5,
+          "heading_count": 6,
           "vague_heading_count": 0,
-          "low_specificity_heading_count": 2,
+          "low_specificity_heading_count": 3,
           "repeated_signature_count": 0,
-          "repeated_stem_count": 1,
+          "repeated_stem_count": 0,
           "headings": [
-            "Mistake 1: Overwhelming Texture Clutter That Competes Rather than Layers",
-            "Mistake 2: Ignoring Visual Weight and Material Scale",
-            "Mistake 3: Overlooking Color and Texture Harmony Across Materials",
-            "Mistake 4: Letting Materials and Textures Obscure Natural Light and Flow",
-            "Mistake 5: Losing the Quiet Warmth Through Over-Styling or Under-Layering"
+            "Overusing Rough Stone Without Contrast",
+            "Neglecting Texture Layers in Flat White Spaces",
+            "Missing Cohesion Between Materials",
+            "Overwhelming the Bathroom with Large-Scale Patterns or Tiles",
+            "Letting Texture Choices Overshadow Light and Flow",
+            "Conclusion"
           ]
         },
         "specificity": {
-          "concept_token_hits": 8,
+          "concept_token_hits": 11,
           "specificity_term_hits": 10,
           "secondary_keyword_hits": 0
         },
         "distinctiveness": {
-          "nearest_article_slug": "",
-          "max_similarity": 0.0,
+          "nearest_article_slug": "best-furniture-mediterranean-bathroom",
+          "max_similarity": 0.286,
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-07-15T10:47:24.074796+00:00"
+      "timestamp": "2026-07-17T10:43:19.499602+00:00"
     },
     {
       "article_slug": "summer-balcony-styling-mistakes-to-avoid",
@@ -92,7 +92,53 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-07-15T10:45:35.349335+00:00"
+      "timestamp": "2026-07-17T10:42:47.716585+00:00"
+    },
+    {
+      "article_slug": "mediterranean-entryway-texture-mistakes-to-avoid",
+      "cluster_id": "mediterranean_entryway",
+      "subtopic_id": "textures",
+      "angle_id": "mistakes",
+      "primary_keyword": "mediterranean entryway texture mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Section headings rely on repetitive formulas instead of distinct editorial moves.",
+        "Several section headings do not signal the topic strongly enough.",
+        "Supporting keyword ideas are barely reflected in the body."
+      ],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 132,
+          "concept_overlap": 7,
+          "first_sentence": "Mediterranean entryways evoke a timeless charm rooted in nature: soft stone, weathered wood, linen textiles, and earth-toned plaster walls combine to create inviting, layered spaces."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 2,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 1,
+          "headings": [
+            "Mistake 1: Overwhelming Texture Clutter That Competes Rather than Layers",
+            "Mistake 2: Ignoring Visual Weight and Material Scale",
+            "Mistake 3: Overlooking Color and Texture Harmony Across Materials",
+            "Mistake 4: Letting Materials and Textures Obscure Natural Light and Flow",
+            "Mistake 5: Losing the Quiet Warmth Through Over-Styling or Under-Layering"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 8,
+          "specificity_term_hits": 10,
+          "secondary_keyword_hits": 0
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-07-15T10:47:24.074796+00:00"
     },
     {
       "article_slug": "best-furniture-for-a-mediterranean-kitchen",

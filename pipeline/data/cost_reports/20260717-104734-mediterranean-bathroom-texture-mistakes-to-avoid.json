@@ -1,0 +1,309 @@
+{
+  "generated_at": "2026-07-17T10:47:34.356351+00:00",
+  "trend": "mediterranean bathroom texture mistakes to avoid",
+  "slug": "mediterranean-bathroom-texture-mistakes-to-avoid",
+  "article_generation": {
+    "cache_hit": false,
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/article_packages/68df07736e96776fda19dd53eee29e093b2f788706228e239dd72dba20bc5bf6.json",
+    "model": "gpt-4.1-mini",
+    "generation_calls": 1,
+    "short_retries": 0,
+    "angle_retries": 0,
+    "product_retries": 0,
+    "selected_products": 0,
+    "affiliate_mode": false,
+    "monetization_profile_id": "fix_oriented",
+    "generated_link_count": 0,
+    "primary_keyword": "mediterranean bathroom texture mistakes to avoid",
+    "topical_cluster": "mediterranean bathroom"
+  },
+  "seo_validation": {
+    "article_slug": "mediterranean-bathroom-texture-mistakes-to-avoid",
+    "cluster": "mediterranean bathroom",
+    "cluster_id": "mediterranean bathroom",
+    "subtopic_id": "textures",
+    "subtopic_name": "textures and layers",
+    "angle_id": "mistakes",
+    "intent_id": "problem_solving",
+    "primary_keyword": "mediterranean bathroom texture mistakes to avoid",
+    "validation_status": "warning",
+    "warnings": [
+      "Headings do not reflect the topic cluster strongly enough.",
+      "Main section headings may be too generic for the chosen keyword.",
+      "None of the secondary keywords appear in the article body.",
+      "Primary keyword appears very lightly in the article body."
+    ],
+    "errors": [],
+    "duplicate_candidate_slugs": [],
+    "timestamp": "2026-07-17T10:43:19.495877+00:00"
+  },
+  "editorial_validation": {
+    "article_slug": "mediterranean-bathroom-texture-mistakes-to-avoid",
+    "cluster_id": "mediterranean_bathroom",
+    "subtopic_id": "textures",
+    "angle_id": "mistakes",
+    "primary_keyword": "mediterranean bathroom texture mistakes to avoid",
+    "validation_status": "warning",
+    "warnings": [
+      "Several section headings do not signal the topic strongly enough.",
+      "Supporting keyword ideas are barely reflected in the body."
+    ],
+    "errors": [],
+    "checks": {
+      "generic_intro": {
+        "intro_word_count": 148,
+        "concept_overlap": 7,
+        "first_sentence": "Mediterranean bathrooms are beloved for their warm, rustic charm and inviting textures, capturing the sunny, coastal spirit of southern Europe."
+      },
+      "heading_quality": {
+        "heading_count": 6,
+        "vague_heading_count": 0,
+        "low_specificity_heading_count": 3,
+        "repeated_signature_count": 0,
+        "repeated_stem_count": 0,
+        "headings": [
+          "Overusing Rough Stone Without Contrast",
+          "Neglecting Texture Layers in Flat White Spaces",
+          "Missing Cohesion Between Materials",
+          "Overwhelming the Bathroom with Large-Scale Patterns or Tiles",
+          "Letting Texture Choices Overshadow Light and Flow",
+          "Conclusion"
+        ]
+      },
+      "specificity": {
+        "concept_token_hits": 11,
+        "specificity_term_hits": 10,
+        "secondary_keyword_hits": 0
+      },
+      "distinctiveness": {
+        "nearest_article_slug": "best-furniture-mediterranean-bathroom",
+        "max_similarity": 0.286,
+        "strongest_heading_overlap": 0
+      }
+    },
+    "timestamp": "2026-07-17T10:43:19.499602+00:00"
+  },
+  "image_generation": {
+    "cache_path": "/home/runner/work/Project-Blog/Project-Blog/pipeline/data/image_generation_cache/mediterranean-bathroom-texture-mistakes-to-avoid.json",
+    "provider": "flux",
+    "provider_model": "flux-2-max",
+    "model": "flux-2-max",
+    "fallback_provider": "openai",
+    "fallback_model": "gpt-image-1",
+    "size": "1536x1024",
+    "hero_quality": "high",
+    "section_quality": "medium",
+    "allow_fallback": true,
+    "fallback_events": 6,
+    "generated_images": 6,
+    "cache_hits": 0,
+    "generation_calls": 12,
+    "qa_calls": 1,
+    "details": [
+      {
+        "label": "hero",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 2,
+        "qa_calls": 1,
+        "quality": "high",
+        "qa_enabled": true,
+        "provider": "openai",
+        "provider_model": "gpt-image-1",
+        "fallback_used": true,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "error": "HTTP Error 402: Payment Required"
+          },
+          {
+            "provider": "openai",
+            "model": "gpt-image-1",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "quality": "high",
+            "elapsed_seconds_total": 86.58,
+            "width": 1536,
+            "height": 1024,
+            "format": "PNG"
+          }
+        ],
+        "validation_reason": "image passed basic validation",
+        "qa_reason": "The image depicts a before-and-after style comparison of a Mediterranean bathroom vanity area, showing a distinct correction in style and materials. It features realistic materials, soft natural lighting, and an editorial quality without clutter or artificial effects. The composition is coherent with a single vanity zone and no duplicated elements, matching the prompt requirements well."
+      },
+      {
+        "label": "section-1",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 2,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "openai",
+        "provider_model": "gpt-image-1",
+        "fallback_used": true,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "error": "HTTP Error 402: Payment Required"
+          },
+          {
+            "provider": "openai",
+            "model": "gpt-image-1",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "quality": "medium",
+            "elapsed_seconds_total": 20.37,
+            "width": 1536,
+            "height": 1024,
+            "format": "PNG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-2",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 2,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "openai",
+        "provider_model": "gpt-image-1",
+        "fallback_used": true,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "error": "HTTP Error 402: Payment Required"
+          },
+          {
+            "provider": "openai",
+            "model": "gpt-image-1",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "quality": "medium",
+            "elapsed_seconds_total": 22.55,
+            "width": 1536,
+            "height": 1024,
+            "format": "PNG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-3",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 2,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "openai",
+        "provider_model": "gpt-image-1",
+        "fallback_used": true,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "error": "HTTP Error 402: Payment Required"
+          },
+          {
+            "provider": "openai",
+            "model": "gpt-image-1",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "quality": "medium",
+            "elapsed_seconds_total": 47.58,
+            "width": 1536,
+            "height": 1024,
+            "format": "PNG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-4",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 2,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "openai",
+        "provider_model": "gpt-image-1",
+        "fallback_used": true,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "error": "HTTP Error 402: Payment Required"
+          },
+          {
+            "provider": "openai",
+            "model": "gpt-image-1",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "quality": "medium",
+            "elapsed_seconds_total": 23.08,
+            "width": 1536,
+            "height": 1024,
+            "format": "PNG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      },
+      {
+        "label": "section-5",
+        "cache_hit": false,
+        "generated": true,
+        "generation_calls": 2,
+        "qa_calls": 0,
+        "quality": "medium",
+        "qa_enabled": false,
+        "provider": "openai",
+        "provider_model": "gpt-image-1",
+        "fallback_used": true,
+        "provider_events": [
+          {
+            "provider": "flux",
+            "model": "flux-2-max",
+            "attempt": 1,
+            "error": "HTTP Error 402: Payment Required"
+          },
+          {
+            "provider": "openai",
+            "model": "gpt-image-1",
+            "attempt": 1,
+            "validation_passed": true,
+            "validation_reason": "image passed basic validation",
+            "quality": "medium",
+            "elapsed_seconds_total": 23.08,
+            "width": 1536,
+            "height": 1024,
+            "format": "PNG"
+          }
+        ],
+        "validation_reason": "image passed basic validation"
+      }
+    ]
+  },
+  "pinterest": {
+    "variants_requested": 4,
+    "pin_assets_generated": false,
+    "mode": null
+  }
+}

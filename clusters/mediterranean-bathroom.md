@@ -5,14 +5,14 @@ permalink: "/clusters/mediterranean-bathroom/"
 description: "Broad editorial cluster for mediterranean bathroom topics."
 cluster_name: "mediterranean bathroom"
 cluster_slug: "mediterranean-bathroom"
-cluster_article_count: 1
-cluster_primary_keywords: ["best furniture for a mediterranean bathroom"]
-cluster_generated_at: "2026-07-15T10:51:54.051964+00:00"
+cluster_article_count: 2
+cluster_primary_keywords: ["mediterranean bathroom texture mistakes to avoid", "best furniture for a mediterranean bathroom"]
+cluster_generated_at: "2026-07-17T10:47:36.218542+00:00"
 cluster_intro: "Mediterranean Bathroom is a useful decorating topic because it combines inspiration with practical decision-making. Readers usually arrive here looking for a clear style direction, help solving a room problem, or confidence about how to make the look feel intentional at home.
 
-This pillar page brings together the site's coverage around mediterranean bathroom, with article angles shaped by keyword themes such as best furniture for a mediterranean bathroom. That mix helps the page support both broader search intent and more specific decorating questions without feeling repetitive.
+This pillar page brings together the site's coverage around mediterranean bathroom, with article angles shaped by keyword themes such as mediterranean bathroom texture mistakes to avoid, best furniture for a mediterranean bathroom. That mix helps the page support both broader search intent and more specific decorating questions without feeling repetitive.
 
-There are currently 1 related article in this cluster, covering comparison. Use the guide below to move from overview pieces into more focused styling advice, problem-solving content, and room-specific ideas."
+There are currently 2 related articles in this cluster, covering problem solution, comparison. Use the guide below to move from overview pieces into more focused styling advice, problem-solving content, and room-specific ideas."
 generated_cluster_page: true
 pillar_page: true
 ---
@@ -30,7 +30,7 @@ pillar_page: true
 
 ## Cluster Guide
 
-This article collection keeps every mediterranean bathroom guide in one place so readers can compare ideas, follow related angles, and move deeper into the topic as the cluster grows. There are currently 1 linked article below.
+This article collection keeps every mediterranean bathroom guide in one place so readers can compare ideas, follow related angles, and move deeper into the topic as the cluster grows. There are currently 2 linked articles below.
 
 ## Furniture and Anchors
 
@@ -42,6 +42,17 @@ Use this section to get oriented in furniture and anchors first, then follow the
 *2026-04-17 | best furniture for a mediterranean bathroom*
 Discover how to select the best furniture for a Mediterranean bathroom with our curated guide focused on materials, proportions, and styling that capture timeless warmth and balance.
 [Read the full article](/ideas/2026/04/17/best-furniture-mediterranean-bathroom/)
+
+## Textures and Layers
+
+Textures and Layers coverage for mediterranean bathroom. In this cluster, the textures and layers section currently gathers 1 related article so readers can move from inspiration to more practical decisions without losing the thread of the topic.
+
+Use this section to get oriented in textures and layers first, then follow the reading path below to expand into adjacent decisions.
+
+### [Mediterranean Bathroom Texture Mistakes to Avoid for a Cohesive Look](/mistakes%20%26%20fixes/2026/07/17/mediterranean-bathroom-texture-mistakes-to-avoid/)
+*2026-07-17 | mediterranean bathroom texture mistakes to avoid*
+Discover common texture mistakes in Mediterranean bathroom decor and learn practical fixes for a balanced, inviting, and authentic Mediterranean look.
+[Read the full article](/mistakes%20%26%20fixes/2026/07/17/mediterranean-bathroom-texture-mistakes-to-avoid/)
 
 ## Related Clusters
 
@@ -73,5 +84,5 @@ These adjacent hubs help readers keep moving through the topic without losing th
 A simple path through this topic so readers can build confidence one step at a time:
 
 1. Start with [Where to Start with Furniture for a Mediterranean Bathroom](/ideas/2026/04/17/best-furniture-mediterranean-bathroom/) for the broadest orientation.
-2. After that, move into [Moody Bathroom](/clusters/moody-bathroom/) to keep the topic expanding naturally.
-3. After that, move into [Neutral Bathroom](/clusters/neutral-bathroom/) to keep the topic expanding naturally.
+2. Then read [Mediterranean Bathroom Texture Mistakes to Avoid for a Cohesive Look](/mistakes%20%26%20fixes/2026/07/17/mediterranean-bathroom-texture-mistakes-to-avoid/) to go deeper into textures and layers.
+3. After that, move into [Moody Bathroom](/clusters/moody-bathroom/) to keep the topic expanding naturally.

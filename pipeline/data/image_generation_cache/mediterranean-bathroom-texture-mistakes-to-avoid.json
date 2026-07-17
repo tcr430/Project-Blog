@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "18e76fc56592e74dc3609874546865103abaccdd5e4b28c0c1eb61e1ff2abeb5",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/mediterranean-bathroom-texture-mistakes-to-avoid/hero.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-1": {
+    "cache_key": "808eb3228d5160ce6c679621009e25e6d0ba6d9455420bd607140540d42c6e61",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/mediterranean-bathroom-texture-mistakes-to-avoid/section-1.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-2": {
+    "cache_key": "932cd3f644f977ef9ef2d29ac22c21379bdd1975ff1881eb387ab45cc3929ad2",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/mediterranean-bathroom-texture-mistakes-to-avoid/section-2.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-3": {
+    "cache_key": "f0d5c39236d316f1b0ae25819c66a0ab4dec5060be9ac10747b9fd3394cfb8f5",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/mediterranean-bathroom-texture-mistakes-to-avoid/section-3.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-4": {
+    "cache_key": "15b85f14bbe5da1fd36bc2699d58921f377d21fb83dfabe78f466faadf8bb152",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/mediterranean-bathroom-texture-mistakes-to-avoid/section-4.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-5": {
+    "cache_key": "5c34e39e73437dd65aea61974e3aa23c504bdfef4f62ef36c10ae0a7fbed4369",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/mediterranean-bathroom-texture-mistakes-to-avoid/section-5.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  }
+}

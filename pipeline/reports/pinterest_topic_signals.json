@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T10:51:52.288233+00:00",
+  "generated_at": "2026-07-17T10:47:34.538295+00:00",
   "cluster_count": 55,
   "summary": {
     "hot": 0,
@@ -511,11 +511,13 @@
     },
     {
       "cluster_name": "mediterranean bathroom",
-      "article_count": 1,
+      "article_count": 2,
       "article_slugs": [
+        "mediterranean-bathroom-texture-mistakes-to-avoid",
         "best-furniture-mediterranean-bathroom"
       ],
       "primary_keywords": [
+        "mediterranean bathroom texture mistakes to avoid",
         "best furniture for a mediterranean bathroom"
       ],
       "secondary_keywords": [
