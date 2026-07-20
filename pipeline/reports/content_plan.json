@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-07-17T10:47:36.007944+00:00",
+  "generated_at": "2026-07-20T11:45:40.788573+00:00",
   "total_clusters": 396,
   "summary": {
-    "missing": 341,
-    "underdeveloped": 55,
+    "missing": 340,
+    "underdeveloped": 56,
     "growing": 0,
     "strong": 0,
     "saturated": 0
   },
   "saturation_summary": {
-    "empty": 341,
-    "needs_growth": 55
+    "empty": 340,
+    "needs_growth": 56
   },
   "editorial_mix_rules": {
     "recent_window_article_count": 8,
@@ -357,7 +357,6 @@
     "home office color palettes",
     "home office styling details",
     "kitchen color palettes",
-    "kitchen styling details",
     "living room color palettes",
     "nursery styling details",
     "patio styling details",
@@ -426,6 +425,7 @@
     "neutral kitchen",
     "neutral entryway",
     "transitional kitchen",
+    "transitional entryway",
     "earthy bedroom",
     "earthy bathroom",
     "scandinavian bedroom",
@@ -436,7 +436,7 @@
     "moody bedroom",
     "minimalist bathroom",
     "mediterranean bedroom",
-    "transitional entryway",
+    "japandi bedroom",
     "earthy kitchen",
     "earthy entryway",
     "scandinavian kitchen",
@@ -451,7 +451,6 @@
     "mediterranean entryway",
     "living room textures and materials",
     "small dining nook",
-    "japandi bedroom",
     "japandi bathroom",
     "cottage bedroom",
     "cottage bathroom",
@@ -472,6 +471,7 @@
     "minimalist bedroom",
     "mediterranean bathroom",
     "spring bedroom refresh",
+    "kitchen styling details",
     "spring living room styling"
   ],
   "clusters": [
@@ -59563,213 +59563,6 @@
       ]
     },
     {
-      "cluster_id": "kitchen_styling_details",
-      "cluster_name": "kitchen styling details",
-      "domain_id": "kitchens_dining",
-      "health_label": "missing",
-      "article_count": 0,
-      "article_capacity_target": 10,
-      "capacity_ratio": 0.0,
-      "growth_openings": 9,
-      "saturation_state": "empty",
-      "selection_action": "boost",
-      "latest_publication_date": "",
-      "days_since_latest": null,
-      "subtopics_total": 3,
-      "subtopics_covered": [],
-      "subtopic_ids_covered": [],
-      "subtopics_missing": [
-        "Surface Styling",
-        "Shelf Styling",
-        "Accessories and Finishing Touches"
-      ],
-      "subtopic_ids_missing": [
-        "surfaces",
-        "shelves",
-        "accessories"
-      ],
-      "angle_distribution": {
-        "ideas": 0,
-        "how_to": 0,
-        "mistakes": 0,
-        "best_options": 0,
-        "budget": 0,
-        "style_specific": 0
-      },
-      "underused_angles": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "budget",
-        "style_specific"
-      ],
-      "overused_angles": [],
-      "intent_distribution": {
-        "comparison": 0,
-        "decision_making": 0,
-        "implementation": 0,
-        "inspiration": 0,
-        "problem_solving": 0
-      },
-      "underused_intents": [
-        "comparison",
-        "decision_making",
-        "implementation",
-        "inspiration",
-        "problem_solving"
-      ],
-      "overused_intents": [],
-      "recommended_concepts": [
-        {
-          "cluster_id": "kitchen_styling_details",
-          "cluster_name": "kitchen styling details",
-          "domain_id": "kitchens_dining",
-          "subtopic_id": "accessories",
-          "subtopic_name": "Accessories and Finishing Touches",
-          "angle_id": "how_to",
-          "intent_id": "implementation",
-          "modifier": "",
-          "primary_keyword": "how to accessorize kitchen",
-          "secondary_keywords": [
-            "kitchen surface styling ideas",
-            "kitchen finishing touch ideas",
-            "how to style surfaces in kitchen",
-            "kitchen surface styling mistakes to avoid"
-          ],
-          "search_intent": "how_to",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 96,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "kitchen_styling_details",
-          "cluster_name": "kitchen styling details",
-          "domain_id": "kitchens_dining",
-          "subtopic_id": "accessories",
-          "subtopic_name": "Accessories and Finishing Touches",
-          "angle_id": "ideas",
-          "intent_id": "inspiration",
-          "modifier": "",
-          "primary_keyword": "kitchen finishing touch ideas",
-          "secondary_keywords": [
-            "kitchen surface styling ideas",
-            "how to style surfaces in kitchen",
-            "kitchen surface styling mistakes to avoid",
-            "best decor accents for kitchen"
-          ],
-          "search_intent": "ideas",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 96,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "kitchen_styling_details",
-          "cluster_name": "kitchen styling details",
-          "domain_id": "kitchens_dining",
-          "subtopic_id": "accessories",
-          "subtopic_name": "Accessories and Finishing Touches",
-          "angle_id": "mistakes",
-          "intent_id": "problem_solving",
-          "modifier": "",
-          "primary_keyword": "kitchen accessory mistakes to avoid",
-          "secondary_keywords": [
-            "kitchen surface styling ideas",
-            "kitchen finishing touch ideas",
-            "how to style surfaces in kitchen",
-            "kitchen surface styling mistakes to avoid"
-          ],
-          "search_intent": "problem_solution",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 96,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "missing",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        }
-      ],
-      "recommended_topics": [
-        "how to accessorize kitchen",
-        "kitchen finishing touch ideas",
-        "kitchen accessory mistakes to avoid"
-      ],
-      "priority_score": 92,
-      "season": "",
-      "holiday": "",
-      "source": "content architecture",
-      "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
-        "strong_article_count": 0,
-        "weak_article_count": 0,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "pinterest_intelligence": {
-        "cluster_signal_label": "no_data",
-        "cluster_signal_boost": 0
-      },
-      "seed_keywords": [
-        "kitchen surface styling ideas",
-        "kitchen finishing touch ideas"
-      ],
-      "allowed_angle_ids": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "budget",
-        "style_specific"
-      ]
-    },
-    {
       "cluster_id": "living_room_color_palettes",
       "cluster_name": "living room color palettes",
       "domain_id": "living_spaces",
@@ -72794,7 +72587,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-04",
-      "days_since_latest": 73,
+      "days_since_latest": 77,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -73007,7 +72800,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-06",
-      "days_since_latest": 71,
+      "days_since_latest": 75,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -73220,7 +73013,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-18",
-      "days_since_latest": 59,
+      "days_since_latest": 62,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation"
@@ -73433,7 +73226,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-27",
-      "days_since_latest": 50,
+      "days_since_latest": 53,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation"
@@ -73646,7 +73439,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-01",
-      "days_since_latest": 45,
+      "days_since_latest": 48,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -73848,6 +73641,219 @@
       ]
     },
     {
+      "cluster_id": "transitional_entryway",
+      "cluster_name": "transitional entryway",
+      "domain_id": "utility_transition",
+      "health_label": "underdeveloped",
+      "article_count": 1,
+      "article_capacity_target": 14,
+      "capacity_ratio": 0.07,
+      "growth_openings": 9,
+      "saturation_state": "needs_growth",
+      "selection_action": "boost",
+      "latest_publication_date": "2026-06-03",
+      "days_since_latest": 46,
+      "subtopics_total": 5,
+      "subtopics_covered": [
+        "Textures and Layers"
+      ],
+      "subtopic_ids_covered": [
+        "textures"
+      ],
+      "subtopics_missing": [
+        "Layout and Foundation",
+        "Color Palette",
+        "Furniture and Anchors",
+        "Lighting"
+      ],
+      "subtopic_ids_missing": [
+        "layout",
+        "colors",
+        "furniture",
+        "lighting"
+      ],
+      "angle_distribution": {
+        "ideas": 0,
+        "how_to": 0,
+        "mistakes": 1,
+        "best_options": 0,
+        "style_specific": 0
+      },
+      "underused_angles": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "style_specific"
+      ],
+      "overused_angles": [],
+      "intent_distribution": {
+        "comparison": 0,
+        "decision_making": 0,
+        "implementation": 0,
+        "inspiration": 0,
+        "problem_solving": 1
+      },
+      "underused_intents": [
+        "comparison",
+        "decision_making",
+        "implementation",
+        "inspiration",
+        "problem_solving"
+      ],
+      "overused_intents": [],
+      "recommended_concepts": [
+        {
+          "cluster_id": "transitional_entryway",
+          "cluster_name": "transitional entryway",
+          "domain_id": "utility_transition",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "how_to",
+          "intent_id": "implementation",
+          "modifier": "",
+          "primary_keyword": "how to choose colors for a transitional entryway",
+          "secondary_keywords": [
+            "transitional entryway ideas",
+            "how to style a transitional entryway",
+            "transitional entryway decor",
+            "transitional entryway layout ideas"
+          ],
+          "search_intent": "how_to",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 82,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": true,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        },
+        {
+          "cluster_id": "transitional_entryway",
+          "cluster_name": "transitional entryway",
+          "domain_id": "utility_transition",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "ideas",
+          "intent_id": "inspiration",
+          "modifier": "",
+          "primary_keyword": "transitional entryway color palette ideas",
+          "secondary_keywords": [
+            "transitional entryway ideas",
+            "how to style a transitional entryway",
+            "transitional entryway decor",
+            "transitional entryway layout ideas"
+          ],
+          "search_intent": "ideas",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 82,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": true,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        },
+        {
+          "cluster_id": "transitional_entryway",
+          "cluster_name": "transitional entryway",
+          "domain_id": "utility_transition",
+          "subtopic_id": "colors",
+          "subtopic_name": "Color Palette",
+          "angle_id": "style_specific",
+          "intent_id": "inspiration",
+          "modifier": "",
+          "primary_keyword": "transitional entryway paint and color ideas",
+          "secondary_keywords": [
+            "transitional entryway ideas",
+            "how to style a transitional entryway",
+            "transitional entryway decor",
+            "transitional entryway layout ideas"
+          ],
+          "search_intent": "styling_advice",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 82,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": true,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        }
+      ],
+      "recommended_topics": [
+        "how to choose colors for a transitional entryway",
+        "transitional entryway color palette ideas",
+        "transitional entryway paint and color ideas"
+      ],
+      "priority_score": 75,
+      "season": "",
+      "holiday": "",
+      "source": "content architecture",
+      "pinterest_signal": {
+        "label": "no_data",
+        "boost": 0,
+        "pinterest_article_count": 0,
+        "strong_article_count": 0,
+        "weak_article_count": 0,
+        "average_score": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_saves": 0.0
+      },
+      "pinterest_intelligence": {
+        "cluster_signal_label": "no_data",
+        "cluster_signal_boost": 0
+      },
+      "seed_keywords": [
+        "transitional entryway ideas",
+        "how to style a transitional entryway",
+        "transitional entryway decor",
+        "transitional entryway layout ideas",
+        "transitional entryway color palette"
+      ],
+      "allowed_angle_ids": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "style_specific"
+      ]
+    },
+    {
       "cluster_id": "earthy_bedroom",
       "cluster_name": "earthy bedroom",
       "domain_id": "bedrooms",
@@ -73859,7 +73865,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-18",
-      "days_since_latest": 120,
+      "days_since_latest": 123,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -74072,7 +74078,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-23",
-      "days_since_latest": 116,
+      "days_since_latest": 119,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -74285,7 +74291,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-28",
-      "days_since_latest": 110,
+      "days_since_latest": 113,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -74498,7 +74504,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-03-30",
-      "days_since_latest": 109,
+      "days_since_latest": 112,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -74711,7 +74717,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-01",
-      "days_since_latest": 106,
+      "days_since_latest": 109,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation"
@@ -74924,7 +74930,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-01",
-      "days_since_latest": 106,
+      "days_since_latest": 109,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -75137,7 +75143,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-03",
-      "days_since_latest": 105,
+      "days_since_latest": 108,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -75350,7 +75356,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-06",
-      "days_since_latest": 102,
+      "days_since_latest": 105,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -75563,7 +75569,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-10",
-      "days_since_latest": 98,
+      "days_since_latest": 101,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -75776,7 +75782,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-13",
-      "days_since_latest": 95,
+      "days_since_latest": 98,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -75978,9 +75984,9 @@
       ]
     },
     {
-      "cluster_id": "transitional_entryway",
-      "cluster_name": "transitional entryway",
-      "domain_id": "utility_transition",
+      "cluster_id": "japandi_bedroom",
+      "cluster_name": "japandi bedroom",
+      "domain_id": "bedrooms",
       "health_label": "underdeveloped",
       "article_count": 1,
       "article_capacity_target": 14,
@@ -75988,8 +75994,8 @@
       "growth_openings": 9,
       "saturation_state": "needs_growth",
       "selection_action": "boost",
-      "latest_publication_date": "2026-06-03",
-      "days_since_latest": 43,
+      "latest_publication_date": "2026-04-20",
+      "days_since_latest": 91,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -76041,20 +76047,20 @@
       "overused_intents": [],
       "recommended_concepts": [
         {
-          "cluster_id": "transitional_entryway",
-          "cluster_name": "transitional entryway",
-          "domain_id": "utility_transition",
+          "cluster_id": "japandi_bedroom",
+          "cluster_name": "japandi bedroom",
+          "domain_id": "bedrooms",
           "subtopic_id": "colors",
           "subtopic_name": "Color Palette",
           "angle_id": "how_to",
           "intent_id": "implementation",
           "modifier": "",
-          "primary_keyword": "how to choose colors for a transitional entryway",
+          "primary_keyword": "how to choose colors for a japandi bedroom",
           "secondary_keywords": [
-            "transitional entryway ideas",
-            "how to style a transitional entryway",
-            "transitional entryway decor",
-            "transitional entryway layout ideas"
+            "japandi bedroom ideas",
+            "how to style a japandi bedroom",
+            "japandi bedroom decor",
+            "japandi bedroom layout ideas"
           ],
           "search_intent": "how_to",
           "season": "",
@@ -76064,13 +76070,13 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 78,
+          "score": 80,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
             "underused_angle": true,
             "underused_intent": true,
-            "stale_cluster": false,
+            "stale_cluster": true,
             "cluster_health": "underdeveloped",
             "pinterest_subtopic_signal": "no_data",
             "pinterest_angle_signal": "no_data",
@@ -76078,20 +76084,20 @@
           }
         },
         {
-          "cluster_id": "transitional_entryway",
-          "cluster_name": "transitional entryway",
-          "domain_id": "utility_transition",
+          "cluster_id": "japandi_bedroom",
+          "cluster_name": "japandi bedroom",
+          "domain_id": "bedrooms",
           "subtopic_id": "colors",
           "subtopic_name": "Color Palette",
           "angle_id": "ideas",
           "intent_id": "inspiration",
           "modifier": "",
-          "primary_keyword": "transitional entryway color palette ideas",
+          "primary_keyword": "japandi bedroom color palette ideas",
           "secondary_keywords": [
-            "transitional entryway ideas",
-            "how to style a transitional entryway",
-            "transitional entryway decor",
-            "transitional entryway layout ideas"
+            "japandi bedroom ideas",
+            "how to style a japandi bedroom",
+            "japandi bedroom decor",
+            "japandi bedroom layout ideas"
           ],
           "search_intent": "ideas",
           "season": "",
@@ -76101,13 +76107,13 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 78,
+          "score": 80,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
             "underused_angle": true,
             "underused_intent": true,
-            "stale_cluster": false,
+            "stale_cluster": true,
             "cluster_health": "underdeveloped",
             "pinterest_subtopic_signal": "no_data",
             "pinterest_angle_signal": "no_data",
@@ -76115,20 +76121,20 @@
           }
         },
         {
-          "cluster_id": "transitional_entryway",
-          "cluster_name": "transitional entryway",
-          "domain_id": "utility_transition",
+          "cluster_id": "japandi_bedroom",
+          "cluster_name": "japandi bedroom",
+          "domain_id": "bedrooms",
           "subtopic_id": "colors",
           "subtopic_name": "Color Palette",
           "angle_id": "style_specific",
           "intent_id": "inspiration",
           "modifier": "",
-          "primary_keyword": "transitional entryway paint and color ideas",
+          "primary_keyword": "japandi bedroom paint and color ideas",
           "secondary_keywords": [
-            "transitional entryway ideas",
-            "how to style a transitional entryway",
-            "transitional entryway decor",
-            "transitional entryway layout ideas"
+            "japandi bedroom ideas",
+            "how to style a japandi bedroom",
+            "japandi bedroom decor",
+            "japandi bedroom layout ideas"
           ],
           "search_intent": "styling_advice",
           "season": "",
@@ -76138,13 +76144,13 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 78,
+          "score": 80,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
             "underused_angle": true,
             "underused_intent": true,
-            "stale_cluster": false,
+            "stale_cluster": true,
             "cluster_health": "underdeveloped",
             "pinterest_subtopic_signal": "no_data",
             "pinterest_angle_signal": "no_data",
@@ -76153,20 +76159,20 @@
         }
       ],
       "recommended_topics": [
-        "how to choose colors for a transitional entryway",
-        "transitional entryway color palette ideas",
-        "transitional entryway paint and color ideas"
+        "how to choose colors for a japandi bedroom",
+        "japandi bedroom color palette ideas",
+        "japandi bedroom paint and color ideas"
       ],
-      "priority_score": 70,
+      "priority_score": 72,
       "season": "",
       "holiday": "",
       "source": "content architecture",
       "pinterest_signal": {
-        "label": "no_data",
-        "boost": 0,
-        "pinterest_article_count": 0,
+        "label": "cold",
+        "boost": -6,
+        "pinterest_article_count": 1,
         "strong_article_count": 0,
-        "weak_article_count": 0,
+        "weak_article_count": 1,
         "average_score": 0.0,
         "average_outbound_clicks": 0.0,
         "average_saves": 0.0
@@ -76176,11 +76182,11 @@
         "cluster_signal_boost": 0
       },
       "seed_keywords": [
-        "transitional entryway ideas",
-        "how to style a transitional entryway",
-        "transitional entryway decor",
-        "transitional entryway layout ideas",
-        "transitional entryway color palette"
+        "japandi bedroom ideas",
+        "how to style a japandi bedroom",
+        "japandi bedroom decor",
+        "japandi bedroom layout ideas",
+        "japandi bedroom color palette"
       ],
       "allowed_angle_ids": [
         "ideas",
@@ -76202,7 +76208,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-10",
-      "days_since_latest": 36,
+      "days_since_latest": 39,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -76415,7 +76421,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-12",
-      "days_since_latest": 34,
+      "days_since_latest": 37,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -76628,7 +76634,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-15",
-      "days_since_latest": 31,
+      "days_since_latest": 34,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -76841,7 +76847,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-17",
-      "days_since_latest": 29,
+      "days_since_latest": 32,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -77054,7 +77060,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-22",
-      "days_since_latest": 24,
+      "days_since_latest": 27,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -77267,7 +77273,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-24",
-      "days_since_latest": 22,
+      "days_since_latest": 26,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -77480,7 +77486,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-26",
-      "days_since_latest": 20,
+      "days_since_latest": 24,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -77555,7 +77561,7 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 74,
+          "score": 78,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -77592,7 +77598,7 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 74,
+          "score": 78,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -77629,7 +77635,7 @@
           "editorial_mix_tags": [
             "evergreen_authority"
           ],
-          "score": 74,
+          "score": 78,
           "pinterest_intelligence_boost": 0,
           "why": {
             "missing_subtopic": true,
@@ -77693,7 +77699,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-29",
-      "days_since_latest": 17,
+      "days_since_latest": 20,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -77906,7 +77912,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-07-03",
-      "days_since_latest": 13,
+      "days_since_latest": 17,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -78119,7 +78125,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-07-06",
-      "days_since_latest": 10,
+      "days_since_latest": 13,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -78332,7 +78338,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-07-10",
-      "days_since_latest": 6,
+      "days_since_latest": 9,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -78545,7 +78551,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-07-15",
-      "days_since_latest": 2,
+      "days_since_latest": 5,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -79168,219 +79174,6 @@
       ]
     },
     {
-      "cluster_id": "japandi_bedroom",
-      "cluster_name": "japandi bedroom",
-      "domain_id": "bedrooms",
-      "health_label": "underdeveloped",
-      "article_count": 1,
-      "article_capacity_target": 14,
-      "capacity_ratio": 0.07,
-      "growth_openings": 9,
-      "saturation_state": "needs_growth",
-      "selection_action": "boost",
-      "latest_publication_date": "2026-04-20",
-      "days_since_latest": 87,
-      "subtopics_total": 5,
-      "subtopics_covered": [
-        "Textures and Layers"
-      ],
-      "subtopic_ids_covered": [
-        "textures"
-      ],
-      "subtopics_missing": [
-        "Layout and Foundation",
-        "Color Palette",
-        "Furniture and Anchors",
-        "Lighting"
-      ],
-      "subtopic_ids_missing": [
-        "layout",
-        "colors",
-        "furniture",
-        "lighting"
-      ],
-      "angle_distribution": {
-        "ideas": 0,
-        "how_to": 0,
-        "mistakes": 1,
-        "best_options": 0,
-        "style_specific": 0
-      },
-      "underused_angles": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "style_specific"
-      ],
-      "overused_angles": [],
-      "intent_distribution": {
-        "comparison": 0,
-        "decision_making": 0,
-        "implementation": 0,
-        "inspiration": 0,
-        "problem_solving": 1
-      },
-      "underused_intents": [
-        "comparison",
-        "decision_making",
-        "implementation",
-        "inspiration",
-        "problem_solving"
-      ],
-      "overused_intents": [],
-      "recommended_concepts": [
-        {
-          "cluster_id": "japandi_bedroom",
-          "cluster_name": "japandi bedroom",
-          "domain_id": "bedrooms",
-          "subtopic_id": "colors",
-          "subtopic_name": "Color Palette",
-          "angle_id": "how_to",
-          "intent_id": "implementation",
-          "modifier": "",
-          "primary_keyword": "how to choose colors for a japandi bedroom",
-          "secondary_keywords": [
-            "japandi bedroom ideas",
-            "how to style a japandi bedroom",
-            "japandi bedroom decor",
-            "japandi bedroom layout ideas"
-          ],
-          "search_intent": "how_to",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 76,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "underdeveloped",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "japandi_bedroom",
-          "cluster_name": "japandi bedroom",
-          "domain_id": "bedrooms",
-          "subtopic_id": "colors",
-          "subtopic_name": "Color Palette",
-          "angle_id": "ideas",
-          "intent_id": "inspiration",
-          "modifier": "",
-          "primary_keyword": "japandi bedroom color palette ideas",
-          "secondary_keywords": [
-            "japandi bedroom ideas",
-            "how to style a japandi bedroom",
-            "japandi bedroom decor",
-            "japandi bedroom layout ideas"
-          ],
-          "search_intent": "ideas",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 76,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "underdeveloped",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        },
-        {
-          "cluster_id": "japandi_bedroom",
-          "cluster_name": "japandi bedroom",
-          "domain_id": "bedrooms",
-          "subtopic_id": "colors",
-          "subtopic_name": "Color Palette",
-          "angle_id": "style_specific",
-          "intent_id": "inspiration",
-          "modifier": "",
-          "primary_keyword": "japandi bedroom paint and color ideas",
-          "secondary_keywords": [
-            "japandi bedroom ideas",
-            "how to style a japandi bedroom",
-            "japandi bedroom decor",
-            "japandi bedroom layout ideas"
-          ],
-          "search_intent": "styling_advice",
-          "season": "",
-          "holiday": "",
-          "source": "content_plan",
-          "editorial_mix_primary": "evergreen_authority",
-          "editorial_mix_tags": [
-            "evergreen_authority"
-          ],
-          "score": 76,
-          "pinterest_intelligence_boost": 0,
-          "why": {
-            "missing_subtopic": true,
-            "underused_angle": true,
-            "underused_intent": true,
-            "stale_cluster": true,
-            "cluster_health": "underdeveloped",
-            "pinterest_subtopic_signal": "no_data",
-            "pinterest_angle_signal": "no_data",
-            "editorial_mix_reason": ""
-          }
-        }
-      ],
-      "recommended_topics": [
-        "how to choose colors for a japandi bedroom",
-        "japandi bedroom color palette ideas",
-        "japandi bedroom paint and color ideas"
-      ],
-      "priority_score": 69,
-      "season": "",
-      "holiday": "",
-      "source": "content architecture",
-      "pinterest_signal": {
-        "label": "cold",
-        "boost": -6,
-        "pinterest_article_count": 1,
-        "strong_article_count": 0,
-        "weak_article_count": 1,
-        "average_score": 0.0,
-        "average_outbound_clicks": 0.0,
-        "average_saves": 0.0
-      },
-      "pinterest_intelligence": {
-        "cluster_signal_label": "no_data",
-        "cluster_signal_boost": 0
-      },
-      "seed_keywords": [
-        "japandi bedroom ideas",
-        "how to style a japandi bedroom",
-        "japandi bedroom decor",
-        "japandi bedroom layout ideas",
-        "japandi bedroom color palette"
-      ],
-      "allowed_angle_ids": [
-        "ideas",
-        "how_to",
-        "mistakes",
-        "best_options",
-        "style_specific"
-      ]
-    },
-    {
       "cluster_id": "japandi_bathroom",
       "cluster_name": "japandi bathroom",
       "domain_id": "utility_transition",
@@ -79392,7 +79185,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-22",
-      "days_since_latest": 86,
+      "days_since_latest": 89,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -79605,7 +79398,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-24",
-      "days_since_latest": 84,
+      "days_since_latest": 87,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -79818,7 +79611,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-27",
-      "days_since_latest": 80,
+      "days_since_latest": 84,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Textures and Layers"
@@ -80031,7 +79824,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-29",
-      "days_since_latest": 78,
+      "days_since_latest": 82,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -80244,7 +80037,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-01",
-      "days_since_latest": 77,
+      "days_since_latest": 80,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors"
@@ -80457,7 +80250,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-08",
-      "days_since_latest": 70,
+      "days_since_latest": 73,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Surface Styling"
@@ -80666,7 +80459,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-11",
-      "days_since_latest": 66,
+      "days_since_latest": 69,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Surface Styling"
@@ -80875,7 +80668,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-13",
-      "days_since_latest": 64,
+      "days_since_latest": 68,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Surface Styling"
@@ -81084,7 +80877,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-15",
-      "days_since_latest": 62,
+      "days_since_latest": 66,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Seasonal Refresh"
@@ -81296,7 +81089,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-20",
-      "days_since_latest": 57,
+      "days_since_latest": 60,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Light and Openness"
@@ -81502,7 +81295,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-22",
-      "days_since_latest": 55,
+      "days_since_latest": 59,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Layered Lighting"
@@ -81708,7 +81501,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-25",
-      "days_since_latest": 52,
+      "days_since_latest": 55,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Layered Lighting"
@@ -81914,7 +81707,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-05-29",
-      "days_since_latest": 48,
+      "days_since_latest": 51,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Layered Lighting"
@@ -82120,7 +81913,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-05",
-      "days_since_latest": 41,
+      "days_since_latest": 44,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors",
@@ -82333,7 +82126,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-08",
-      "days_since_latest": 38,
+      "days_since_latest": 41,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors",
@@ -82546,7 +82339,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-06-19",
-      "days_since_latest": 27,
+      "days_since_latest": 30,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Layout and Foundation",
@@ -82759,7 +82552,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-07-01",
-      "days_since_latest": 15,
+      "days_since_latest": 18,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors",
@@ -82972,7 +82765,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-07-08",
-      "days_since_latest": 8,
+      "days_since_latest": 12,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors",
@@ -83185,7 +82978,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-07-17",
-      "days_since_latest": 0,
+      "days_since_latest": 3,
       "subtopics_total": 5,
       "subtopics_covered": [
         "Furniture and Anchors",
@@ -83398,7 +83191,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-02",
-      "days_since_latest": 106,
+      "days_since_latest": 109,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Seasonal Refresh"
@@ -83599,6 +83392,215 @@
       ]
     },
     {
+      "cluster_id": "kitchen_styling_details",
+      "cluster_name": "kitchen styling details",
+      "domain_id": "kitchens_dining",
+      "health_label": "underdeveloped",
+      "article_count": 1,
+      "article_capacity_target": 10,
+      "capacity_ratio": 0.1,
+      "growth_openings": 8,
+      "saturation_state": "needs_growth",
+      "selection_action": "boost",
+      "latest_publication_date": "2026-07-20",
+      "days_since_latest": 0,
+      "subtopics_total": 3,
+      "subtopics_covered": [
+        "Surface Styling"
+      ],
+      "subtopic_ids_covered": [
+        "surfaces"
+      ],
+      "subtopics_missing": [
+        "Shelf Styling",
+        "Accessories and Finishing Touches"
+      ],
+      "subtopic_ids_missing": [
+        "shelves",
+        "accessories"
+      ],
+      "angle_distribution": {
+        "ideas": 0,
+        "how_to": 0,
+        "mistakes": 1,
+        "best_options": 0,
+        "budget": 0,
+        "style_specific": 0
+      },
+      "underused_angles": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "budget",
+        "style_specific"
+      ],
+      "overused_angles": [],
+      "intent_distribution": {
+        "comparison": 0,
+        "decision_making": 0,
+        "implementation": 0,
+        "inspiration": 0,
+        "problem_solving": 1
+      },
+      "underused_intents": [
+        "comparison",
+        "decision_making",
+        "implementation",
+        "inspiration",
+        "problem_solving"
+      ],
+      "overused_intents": [],
+      "recommended_concepts": [
+        {
+          "cluster_id": "kitchen_styling_details",
+          "cluster_name": "kitchen styling details",
+          "domain_id": "kitchens_dining",
+          "subtopic_id": "accessories",
+          "subtopic_name": "Accessories and Finishing Touches",
+          "angle_id": "how_to",
+          "intent_id": "implementation",
+          "modifier": "",
+          "primary_keyword": "how to accessorize kitchen",
+          "secondary_keywords": [
+            "kitchen surface styling ideas",
+            "kitchen finishing touch ideas",
+            "how to style surfaces in kitchen",
+            "kitchen surface styling mistakes to avoid"
+          ],
+          "search_intent": "how_to",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 74,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        },
+        {
+          "cluster_id": "kitchen_styling_details",
+          "cluster_name": "kitchen styling details",
+          "domain_id": "kitchens_dining",
+          "subtopic_id": "accessories",
+          "subtopic_name": "Accessories and Finishing Touches",
+          "angle_id": "ideas",
+          "intent_id": "inspiration",
+          "modifier": "",
+          "primary_keyword": "kitchen finishing touch ideas",
+          "secondary_keywords": [
+            "kitchen surface styling ideas",
+            "how to style surfaces in kitchen",
+            "kitchen surface styling mistakes to avoid",
+            "best decor accents for kitchen"
+          ],
+          "search_intent": "ideas",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 74,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        },
+        {
+          "cluster_id": "kitchen_styling_details",
+          "cluster_name": "kitchen styling details",
+          "domain_id": "kitchens_dining",
+          "subtopic_id": "accessories",
+          "subtopic_name": "Accessories and Finishing Touches",
+          "angle_id": "style_specific",
+          "intent_id": "inspiration",
+          "modifier": "",
+          "primary_keyword": "minimalist decor accents for kitchen",
+          "secondary_keywords": [
+            "kitchen surface styling ideas",
+            "kitchen finishing touch ideas",
+            "how to style surfaces in kitchen",
+            "kitchen surface styling mistakes to avoid"
+          ],
+          "search_intent": "styling_advice",
+          "season": "",
+          "holiday": "",
+          "source": "content_plan",
+          "editorial_mix_primary": "evergreen_authority",
+          "editorial_mix_tags": [
+            "evergreen_authority"
+          ],
+          "score": 74,
+          "pinterest_intelligence_boost": 0,
+          "why": {
+            "missing_subtopic": true,
+            "underused_angle": true,
+            "underused_intent": true,
+            "stale_cluster": false,
+            "cluster_health": "underdeveloped",
+            "pinterest_subtopic_signal": "no_data",
+            "pinterest_angle_signal": "no_data",
+            "editorial_mix_reason": ""
+          }
+        }
+      ],
+      "recommended_topics": [
+        "how to accessorize kitchen",
+        "kitchen finishing touch ideas",
+        "minimalist decor accents for kitchen"
+      ],
+      "priority_score": 62,
+      "season": "",
+      "holiday": "",
+      "source": "content architecture",
+      "pinterest_signal": {
+        "label": "no_data",
+        "boost": 0,
+        "pinterest_article_count": 0,
+        "strong_article_count": 0,
+        "weak_article_count": 0,
+        "average_score": 0.0,
+        "average_outbound_clicks": 0.0,
+        "average_saves": 0.0
+      },
+      "pinterest_intelligence": {
+        "cluster_signal_label": "no_data",
+        "cluster_signal_boost": 0
+      },
+      "seed_keywords": [
+        "kitchen surface styling ideas",
+        "kitchen finishing touch ideas"
+      ],
+      "allowed_angle_ids": [
+        "ideas",
+        "how_to",
+        "mistakes",
+        "best_options",
+        "budget",
+        "style_specific"
+      ]
+    },
+    {
       "cluster_id": "spring_living_room_styling",
       "cluster_name": "spring living room styling",
       "domain_id": "seasonal_styling",
@@ -83610,7 +83612,7 @@
       "saturation_state": "needs_growth",
       "selection_action": "boost",
       "latest_publication_date": "2026-04-15",
-      "days_since_latest": 93,
+      "days_since_latest": 96,
       "subtopics_total": 3,
       "subtopics_covered": [
         "Seasonal Refresh",

@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-17T10:42:24.979954+00:00",
+  "generated_at": "2026-07-20T11:41:13.292029+00:00",
   "overview": {
-    "pin_count": 149,
+    "pin_count": 152,
     "published_pin_count": 51,
     "analytics_ready_pin_count": 0,
-    "tracked_article_count": 47
+    "tracked_article_count": 48
   },
   "best_performing_clusters": [
     {
@@ -275,6 +275,24 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "best-decor-accents-for-living-room"
+      ]
+    },
+    {
+      "cluster_id": "mediterranean_bathroom",
+      "cluster_name": "mediterranean bathroom",
+      "pin_count": 3,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "mediterranean-bathroom-texture-mistakes-to-avoid"
       ]
     },
     {
@@ -1487,6 +1505,25 @@
       ]
     },
     {
+      "cluster_id": "mediterranean_bathroom",
+      "subtopic_id": "textures",
+      "subtopic_name": "textures and layers",
+      "pin_count": 3,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "mediterranean-bathroom-texture-mistakes-to-avoid"
+      ]
+    },
+    {
       "cluster_id": "mediterranean_entryway",
       "subtopic_id": "textures",
       "subtopic_name": "textures and layers",
@@ -1776,7 +1813,7 @@
     },
     {
       "angle_id": "mistakes",
-      "pin_count": 60,
+      "pin_count": 63,
       "published_pin_count": 20,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1892,7 +1929,7 @@
       "visual_family_id": "airy_editorial",
       "shot_library_id": "textures_materials",
       "intent_id": "problem_solving",
-      "pin_count": 2,
+      "pin_count": 3,
       "published_pin_count": 2,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -1904,6 +1941,7 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
+        "mediterranean-bathroom-texture-mistakes-to-avoid",
         "moody-bedroom-texture-mistakes-to-avoid",
         "parisian-bathroom-texture-mistakes-to-avoid"
       ]
@@ -2250,7 +2288,7 @@
       "visual_family_id": "airy_editorial",
       "shot_library_id": "textures_materials",
       "intent_id": "problem_solving",
-      "pin_count": 2,
+      "pin_count": 3,
       "published_pin_count": 2,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -2262,6 +2300,7 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
+        "mediterranean-bathroom-texture-mistakes-to-avoid",
         "moody-bedroom-texture-mistakes-to-avoid",
         "parisian-bathroom-texture-mistakes-to-avoid"
       ]
@@ -2757,7 +2796,7 @@
       "visual_family_id": "airy_editorial",
       "shot_library_id": "textures_materials",
       "intent_id": "problem_solving",
-      "pin_count": 2,
+      "pin_count": 3,
       "published_pin_count": 2,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -2769,6 +2808,7 @@
       "signal_label": "no_data",
       "signal_boost": 0,
       "top_article_slugs": [
+        "mediterranean-bathroom-texture-mistakes-to-avoid",
         "moody-bedroom-texture-mistakes-to-avoid",
         "parisian-bathroom-texture-mistakes-to-avoid"
       ]
@@ -3229,7 +3269,7 @@
       },
       {
         "angle_id": "mistakes",
-        "pin_count": 60,
+        "pin_count": 63,
         "published_pin_count": 20,
         "analytics_ready_count": 0,
         "average_score": 0.0,
@@ -3345,7 +3385,7 @@
         "visual_family_id": "airy_editorial",
         "shot_library_id": "textures_materials",
         "intent_id": "problem_solving",
-        "pin_count": 2,
+        "pin_count": 3,
         "published_pin_count": 2,
         "analytics_ready_count": 0,
         "average_score": 0.0,
@@ -3357,6 +3397,7 @@
         "signal_label": "no_data",
         "signal_boost": 0,
         "top_article_slugs": [
+          "mediterranean-bathroom-texture-mistakes-to-avoid",
           "moody-bedroom-texture-mistakes-to-avoid",
           "parisian-bathroom-texture-mistakes-to-avoid"
         ]

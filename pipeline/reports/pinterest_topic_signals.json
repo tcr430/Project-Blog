@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-17T10:47:34.538295+00:00",
-  "cluster_count": 55,
+  "generated_at": "2026-07-20T11:45:39.205844+00:00",
+  "cluster_count": 56,
   "summary": {
     "hot": 0,
     "warm": 0,
     "cold": 18,
-    "no_data": 37
+    "no_data": 38
   },
   "clusters": [
     {
@@ -414,6 +414,30 @@
       "average_saves": 0.0,
       "signal_label": "cold",
       "signal_boost": -6
+    },
+    {
+      "cluster_name": "kitchen styling details",
+      "article_count": 1,
+      "article_slugs": [
+        "kitchen-surface-styling-mistakes-to-avoid"
+      ],
+      "primary_keywords": [
+        "kitchen surface styling mistakes to avoid"
+      ],
+      "secondary_keywords": [
+        "kitchen surface styling ideas",
+        "kitchen finishing touch ideas",
+        "how to style surfaces in kitchen",
+        "best decor accents for kitchen"
+      ],
+      "pinterest_article_count": 0,
+      "strong_article_count": 0,
+      "weak_article_count": 0,
+      "average_score": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_saves": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0
     },
     {
       "cluster_name": "linen and boucle styling",

@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-17T10:47:34.531901+00:00",
-  "cluster_count": 55,
-  "article_count": 62,
+  "generated_at": "2026-07-20T11:45:39.199234+00:00",
+  "cluster_count": 56,
+  "article_count": 63,
   "subtopic_count": 10,
   "angle_count": 5,
   "angle_distribution": {
     "best_options": 29,
     "how_to": 4,
     "ideas": 4,
-    "mistakes": 24,
+    "mistakes": 25,
     "style_specific": 1
   },
   "clusters": [
@@ -372,7 +372,7 @@
         "transitional-bedroom-texture-mistakes-to-avoid",
         "best-furniture-transitional-bedroom"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 1,
       "promoted_article_count": 0,
       "weak_article_count": 0,
@@ -1145,6 +1145,50 @@
           "latest_article_date": "2026-04-20",
           "representative_article_slugs": [
             "japandi-bedroom-texture-mistakes-to-avoid"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "mistakes": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_id": "kitchen_styling_details",
+      "cluster_name": "kitchen styling details",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "kitchens_dining"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "kitchen surface styling mistakes to avoid"
+      ],
+      "latest_article_date": "2026-07-20",
+      "latest_publication": {
+        "article_slug": "kitchen-surface-styling-mistakes-to-avoid",
+        "article_title": "What Goes Wrong with Kitchen Styling Details?",
+        "publish_date": "2026-07-20",
+        "subtopic_id": "surfaces",
+        "subtopic_name": "surface styling",
+        "angle_id": "mistakes"
+      },
+      "representative_article_slugs": [
+        "kitchen-surface-styling-mistakes-to-avoid"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "surfaces",
+          "subtopic_name": "surface styling",
+          "article_count": 1,
+          "latest_article_date": "2026-07-20",
+          "representative_article_slugs": [
+            "kitchen-surface-styling-mistakes-to-avoid"
           ]
         }
       ],
@@ -2456,7 +2500,7 @@
       "representative_article_slugs": [
         "transitional-entryway-texture-mistakes-to-avoid"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,

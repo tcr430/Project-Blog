@@ -1,16 +1,16 @@
 # Weekly Pipeline Report
 
-Generated: 2026-07-17
+Generated: 2026-07-20
 Window: last 7 days
 
 Articles Published: 3  
 Pins Generated: 9  
-Pins Scheduled: 101  
+Pins Scheduled: 104  
 Pins Published: 0  
 Repins Scheduled: 0
 
 ## Articles Published
-- best-furniture-for-a-mediterranean-kitchen
+- kitchen-surface-styling-mistakes-to-avoid
 - mediterranean-bathroom-texture-mistakes-to-avoid
 - mediterranean-entryway-texture-mistakes-to-avoid
 

@@ -7,7 +7,7 @@ cluster_name: "moody kitchen"
 cluster_slug: "moody-kitchen"
 cluster_article_count: 1
 cluster_primary_keywords: ["moody kitchen texture mistakes to avoid"]
-cluster_generated_at: "2026-07-17T10:47:36.218542+00:00"
+cluster_generated_at: "2026-07-20T11:45:41.033544+00:00"
 cluster_intro: "Moody Kitchen is a useful decorating topic because it combines inspiration with practical decision-making. Readers usually arrive here looking for a clear style direction, help solving a room problem, or confidence about how to make the look feel intentional at home.
 
 This pillar page brings together the site's coverage around moody kitchen, with article angles shaped by keyword themes such as moody kitchen texture mistakes to avoid. That mix helps the page support both broader search intent and more specific decorating questions without feeling repetitive.
@@ -55,16 +55,16 @@ These adjacent hubs help readers keep moving through the topic without losing th
 <p><a class="cluster-hub-link" href="/clusters/earthy-kitchen/">Open this cluster</a></p>
 </div>
 <div class="cluster-hub-card">
+<h3><a href="/clusters/kitchen-styling-details/">Kitchen Styling Details</a></h3>
+<p>Broad editorial cluster for kitchen styling details topics.</p>
+<p class="cluster-hub-meta">1 article</p>
+<p><a class="cluster-hub-link" href="/clusters/kitchen-styling-details/">Open this cluster</a></p>
+</div>
+<div class="cluster-hub-card">
 <h3><a href="/clusters/mediterranean-kitchen/">Mediterranean Kitchen</a></h3>
 <p>Broad editorial cluster for mediterranean kitchen topics.</p>
 <p class="cluster-hub-meta">1 article</p>
 <p><a class="cluster-hub-link" href="/clusters/mediterranean-kitchen/">Open this cluster</a></p>
-</div>
-<div class="cluster-hub-card">
-<h3><a href="/clusters/minimalist-kitchen/">Minimalist Kitchen</a></h3>
-<p>Broad editorial cluster for minimalist kitchen topics.</p>
-<p class="cluster-hub-meta">1 article</p>
-<p><a class="cluster-hub-link" href="/clusters/minimalist-kitchen/">Open this cluster</a></p>
 </div>
 </div>
 
@@ -74,4 +74,4 @@ A simple path through this topic so readers can build confidence one step at a t
 
 1. Start with [Moody Kitchen Texture Mistakes to Avoid](/mistakes%20%26%20fixes/2026/06/26/moody-kitchen-texture-mistakes-to-avoid/) for the broadest orientation.
 2. After that, move into [Earthy Kitchen](/clusters/earthy-kitchen/) to keep the topic expanding naturally.
-3. After that, move into [Mediterranean Kitchen](/clusters/mediterranean-kitchen/) to keep the topic expanding naturally.
+3. After that, move into [Kitchen Styling Details](/clusters/kitchen-styling-details/) to keep the topic expanding naturally.

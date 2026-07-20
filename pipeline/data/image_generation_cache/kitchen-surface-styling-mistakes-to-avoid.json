@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "9a9497640ae0513120371c54ad3ae7057d810e18bb26e866dd71ec2be2ccbe84",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/kitchen-surface-styling-mistakes-to-avoid/hero.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-1": {
+    "cache_key": "6c706d1d7c7c9b2069b1da0e8ea3e98e6cc97db2fa8fe459ccb8bdc235535e67",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/kitchen-surface-styling-mistakes-to-avoid/section-1.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-2": {
+    "cache_key": "952a5a9f6dccd00997b7ab85b889c13203d388412065e91b6615708e07b1223a",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/kitchen-surface-styling-mistakes-to-avoid/section-2.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-3": {
+    "cache_key": "a653bccf0d7361251ea2f6d24bbdc2ab7965cf722d44eab6c03d8a0b1768a192",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/kitchen-surface-styling-mistakes-to-avoid/section-3.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-4": {
+    "cache_key": "4d8f873582c44c10b3fcb8cd1dfda0fb52ccc285c32a0fa62a8f9a38a9851df2",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/kitchen-surface-styling-mistakes-to-avoid/section-4.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-5": {
+    "cache_key": "c16cfdd2869bc118f55f51a588783f0187a8ac1a88555ebefd052cb8179c740c",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/kitchen-surface-styling-mistakes-to-avoid/section-5.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  }
+}

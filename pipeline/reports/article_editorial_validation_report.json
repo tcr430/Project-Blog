@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-17T10:43:19.500228+00:00",
+  "generated_at": "2026-07-20T11:42:14.847757+00:00",
   "articles": [
     {
-      "article_slug": "mediterranean-bathroom-texture-mistakes-to-avoid",
-      "cluster_id": "mediterranean_bathroom",
-      "subtopic_id": "textures",
+      "article_slug": "kitchen-surface-styling-mistakes-to-avoid",
+      "cluster_id": "kitchen_styling_details",
+      "subtopic_id": "surfaces",
       "angle_id": "mistakes",
-      "primary_keyword": "mediterranean bathroom texture mistakes to avoid",
+      "primary_keyword": "kitchen surface styling mistakes to avoid",
       "validation_status": "warning",
       "warnings": [
         "Several section headings do not signal the topic strongly enough.",
@@ -15,9 +15,9 @@
       "errors": [],
       "checks": {
         "generic_intro": {
-          "intro_word_count": 148,
-          "concept_overlap": 7,
-          "first_sentence": "Mediterranean bathrooms are beloved for their warm, rustic charm and inviting textures, capturing the sunny, coastal spirit of southern Europe."
+          "intro_word_count": 116,
+          "concept_overlap": 10,
+          "first_sentence": "Kitchens are the heart of most homes, and the surface styling there matters more than many realize."
         },
         "heading_quality": {
           "heading_count": 6,
@@ -26,26 +26,26 @@
           "repeated_signature_count": 0,
           "repeated_stem_count": 0,
           "headings": [
-            "Overusing Rough Stone Without Contrast",
-            "Neglecting Texture Layers in Flat White Spaces",
-            "Missing Cohesion Between Materials",
-            "Overwhelming the Bathroom with Large-Scale Patterns or Tiles",
-            "Letting Texture Choices Overshadow Light and Flow",
+            "Overcrowding with Too Many Small Items",
+            "Forgetting to Coordinate Surface Decor with Cabinets and Walls",
+            "Skimping on Textural Layers and Natural Elements",
+            "Overlooking Scale and Proportion on Kitchen Surfaces",
+            "Neglecting How Light Interacts with Surface Styling",
             "Conclusion"
           ]
         },
         "specificity": {
           "concept_token_hits": 11,
-          "specificity_term_hits": 10,
+          "specificity_term_hits": 8,
           "secondary_keyword_hits": 0
         },
         "distinctiveness": {
-          "nearest_article_slug": "best-furniture-mediterranean-bathroom",
-          "max_similarity": 0.286,
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-07-17T10:43:19.499602+00:00"
+      "timestamp": "2026-07-20T11:42:14.847104+00:00"
     },
     {
       "article_slug": "summer-balcony-styling-mistakes-to-avoid",
@@ -92,7 +92,53 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-07-17T10:42:47.716585+00:00"
+      "timestamp": "2026-07-20T11:41:36.734935+00:00"
+    },
+    {
+      "article_slug": "mediterranean-bathroom-texture-mistakes-to-avoid",
+      "cluster_id": "mediterranean_bathroom",
+      "subtopic_id": "textures",
+      "angle_id": "mistakes",
+      "primary_keyword": "mediterranean bathroom texture mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Several section headings do not signal the topic strongly enough.",
+        "Supporting keyword ideas are barely reflected in the body."
+      ],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 148,
+          "concept_overlap": 7,
+          "first_sentence": "Mediterranean bathrooms are beloved for their warm, rustic charm and inviting textures, capturing the sunny, coastal spirit of southern Europe."
+        },
+        "heading_quality": {
+          "heading_count": 6,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 3,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Overusing Rough Stone Without Contrast",
+            "Neglecting Texture Layers in Flat White Spaces",
+            "Missing Cohesion Between Materials",
+            "Overwhelming the Bathroom with Large-Scale Patterns or Tiles",
+            "Letting Texture Choices Overshadow Light and Flow",
+            "Conclusion"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 11,
+          "specificity_term_hits": 10,
+          "secondary_keyword_hits": 0
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "best-furniture-mediterranean-bathroom",
+          "max_similarity": 0.286,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-07-17T10:43:19.499602+00:00"
     },
     {
       "article_slug": "mediterranean-entryway-texture-mistakes-to-avoid",
