@@ -1,42 +1,40 @@
 {
-  "generated_at": "2026-07-20T11:42:14.847757+00:00",
+  "generated_at": "2026-07-24T11:00:52.843897+00:00",
   "articles": [
     {
-      "article_slug": "kitchen-surface-styling-mistakes-to-avoid",
-      "cluster_id": "kitchen_styling_details",
-      "subtopic_id": "surfaces",
+      "article_slug": "japandi-kitchen-texture-mistakes-to-avoid",
+      "cluster_id": "japandi_kitchen",
+      "subtopic_id": "textures",
       "angle_id": "mistakes",
-      "primary_keyword": "kitchen surface styling mistakes to avoid",
+      "primary_keyword": "japandi kitchen texture mistakes to avoid",
       "validation_status": "warning",
       "warnings": [
-        "Several section headings do not signal the topic strongly enough.",
         "Supporting keyword ideas are barely reflected in the body."
       ],
       "errors": [],
       "checks": {
         "generic_intro": {
-          "intro_word_count": 116,
-          "concept_overlap": 10,
-          "first_sentence": "Kitchens are the heart of most homes, and the surface styling there matters more than many realize."
+          "intro_word_count": 136,
+          "concept_overlap": 7,
+          "first_sentence": "Embracing the Japandi kitchen style is about balancing the serene minimalism of Japanese design with the cozy warmth of Scandinavian interiors."
         },
         "heading_quality": {
-          "heading_count": 6,
+          "heading_count": 5,
           "vague_heading_count": 0,
-          "low_specificity_heading_count": 3,
+          "low_specificity_heading_count": 1,
           "repeated_signature_count": 0,
           "repeated_stem_count": 0,
           "headings": [
-            "Overcrowding with Too Many Small Items",
-            "Forgetting to Coordinate Surface Decor with Cabinets and Walls",
-            "Skimping on Textural Layers and Natural Elements",
-            "Overlooking Scale and Proportion on Kitchen Surfaces",
-            "Neglecting How Light Interacts with Surface Styling",
-            "Conclusion"
+            "When Surfaces Are Too Uniform: Introducing Layered Textural Contrast",
+            "Balancing Natural and Manufactured Textures Without Clashing",
+            "Overlooking the Importance of Scale and Texture Proportion",
+            "Placing Textures Without Considering Light and Flow",
+            "Losing the Calm Finish: How to Layer Finishes for That Signature Japandi Warmth"
           ]
         },
         "specificity": {
-          "concept_token_hits": 11,
-          "specificity_term_hits": 8,
+          "concept_token_hits": 8,
+          "specificity_term_hits": 13,
           "secondary_keyword_hits": 0
         },
         "distinctiveness": {
@@ -45,7 +43,7 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-07-20T11:42:14.847104+00:00"
+      "timestamp": "2026-07-24T11:00:52.843391+00:00"
     },
     {
       "article_slug": "summer-balcony-styling-mistakes-to-avoid",
@@ -92,7 +90,53 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-07-20T11:41:36.734935+00:00"
+      "timestamp": "2026-07-24T10:59:58.995427+00:00"
+    },
+    {
+      "article_slug": "kitchen-surface-styling-mistakes-to-avoid",
+      "cluster_id": "kitchen_styling_details",
+      "subtopic_id": "surfaces",
+      "angle_id": "mistakes",
+      "primary_keyword": "kitchen surface styling mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Several section headings do not signal the topic strongly enough.",
+        "Supporting keyword ideas are barely reflected in the body."
+      ],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 116,
+          "concept_overlap": 10,
+          "first_sentence": "Kitchens are the heart of most homes, and the surface styling there matters more than many realize."
+        },
+        "heading_quality": {
+          "heading_count": 6,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 3,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Overcrowding with Too Many Small Items",
+            "Forgetting to Coordinate Surface Decor with Cabinets and Walls",
+            "Skimping on Textural Layers and Natural Elements",
+            "Overlooking Scale and Proportion on Kitchen Surfaces",
+            "Neglecting How Light Interacts with Surface Styling",
+            "Conclusion"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 11,
+          "specificity_term_hits": 8,
+          "secondary_keyword_hits": 0
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-07-20T11:42:14.847104+00:00"
     },
     {
       "article_slug": "mediterranean-bathroom-texture-mistakes-to-avoid",

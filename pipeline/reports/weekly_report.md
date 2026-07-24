@@ -1,18 +1,17 @@
 # Weekly Pipeline Report
 
-Generated: 2026-07-20
+Generated: 2026-07-24
 Window: last 7 days
 
-Articles Published: 3  
-Pins Generated: 9  
-Pins Scheduled: 104  
+Articles Published: 2  
+Pins Generated: 6  
+Pins Scheduled: 106  
 Pins Published: 0  
 Repins Scheduled: 0
 
 ## Articles Published
+- japandi-kitchen-texture-mistakes-to-avoid
 - kitchen-surface-styling-mistakes-to-avoid
-- mediterranean-bathroom-texture-mistakes-to-avoid
-- mediterranean-entryway-texture-mistakes-to-avoid
 
 ## Top Performing Pins
 - No published pin analytics were available for this window.

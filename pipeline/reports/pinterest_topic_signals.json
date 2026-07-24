@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-20T11:45:39.205844+00:00",
-  "cluster_count": 56,
+  "generated_at": "2026-07-24T11:04:10.279606+00:00",
+  "cluster_count": 57,
   "summary": {
     "hot": 0,
     "warm": 0,
     "cold": 18,
-    "no_data": 38
+    "no_data": 39
   },
   "clusters": [
     {
@@ -414,6 +414,30 @@
       "average_saves": 0.0,
       "signal_label": "cold",
       "signal_boost": -6
+    },
+    {
+      "cluster_name": "japandi kitchen",
+      "article_count": 1,
+      "article_slugs": [
+        "japandi-kitchen-texture-mistakes-to-avoid"
+      ],
+      "primary_keywords": [
+        "japandi kitchen texture mistakes to avoid"
+      ],
+      "secondary_keywords": [
+        "japandi kitchen ideas",
+        "how to style a japandi kitchen",
+        "japandi kitchen decor",
+        "japandi kitchen layout ideas"
+      ],
+      "pinterest_article_count": 0,
+      "strong_article_count": 0,
+      "weak_article_count": 0,
+      "average_score": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_saves": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0
     },
     {
       "cluster_name": "kitchen styling details",

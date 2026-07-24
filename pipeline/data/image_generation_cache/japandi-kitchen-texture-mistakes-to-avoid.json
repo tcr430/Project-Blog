@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "8d4e4c72963b0ddb6c389ce754e327e59a328594c1d2a4f35d622b107409f3b8",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/japandi-kitchen-texture-mistakes-to-avoid/hero.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-1": {
+    "cache_key": "11ce5f68991e05edae0d2ed1cbc7edd0a3cd6ead294907351e2c9b4ee924e8c4",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/japandi-kitchen-texture-mistakes-to-avoid/section-1.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-2": {
+    "cache_key": "c8b4f82e1c398456c838ec9ad37e759db9c4dcdb90c7435e6669e2ec51a6ec5b",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/japandi-kitchen-texture-mistakes-to-avoid/section-2.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-3": {
+    "cache_key": "7eb7923dceaf54e86cd3b4d98d4776c0f9adb7d7bfdcec85a657ba51bbcbf018",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/japandi-kitchen-texture-mistakes-to-avoid/section-3.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-4": {
+    "cache_key": "a1d4667df7113ad064a754e8da34f042b20022efc28e68727f86ae35a10a4957",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/japandi-kitchen-texture-mistakes-to-avoid/section-4.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-5": {
+    "cache_key": "ca91564f83babf7cfa63c38383ae9759a665c0871cb4244f9444b1fb0cc955b8",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/japandi-kitchen-texture-mistakes-to-avoid/section-5.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  }
+}

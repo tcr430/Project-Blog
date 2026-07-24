@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-20T11:45:39.199234+00:00",
-  "cluster_count": 56,
-  "article_count": 63,
+  "generated_at": "2026-07-24T11:04:10.274852+00:00",
+  "cluster_count": 57,
+  "article_count": 64,
   "subtopic_count": 10,
   "angle_count": 5,
   "angle_distribution": {
     "best_options": 29,
     "how_to": 4,
     "ideas": 4,
-    "mistakes": 25,
+    "mistakes": 26,
     "style_specific": 1
   },
   "clusters": [
@@ -316,7 +316,7 @@
         "transitional-bathroom-texture-mistakes-to-avoid",
         "best-furniture-for-transitional-bathroom"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 1,
       "promoted_article_count": 0,
       "weak_article_count": 0,
@@ -1145,6 +1145,50 @@
           "latest_article_date": "2026-04-20",
           "representative_article_slugs": [
             "japandi-bedroom-texture-mistakes-to-avoid"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "mistakes": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_id": "japandi_kitchen",
+      "cluster_name": "japandi kitchen",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "kitchens_dining"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "japandi kitchen texture mistakes to avoid"
+      ],
+      "latest_article_date": "2026-07-24",
+      "latest_publication": {
+        "article_slug": "japandi-kitchen-texture-mistakes-to-avoid",
+        "article_title": "Japandi Kitchen Texture Mistakes to Avoid",
+        "publish_date": "2026-07-24",
+        "subtopic_id": "textures",
+        "subtopic_name": "textures and layers",
+        "angle_id": "mistakes"
+      },
+      "representative_article_slugs": [
+        "japandi-kitchen-texture-mistakes-to-avoid"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "textures",
+          "subtopic_name": "textures and layers",
+          "article_count": 1,
+          "latest_article_date": "2026-07-24",
+          "representative_article_slugs": [
+            "japandi-kitchen-texture-mistakes-to-avoid"
           ]
         }
       ],
