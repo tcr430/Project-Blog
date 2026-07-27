@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-24T11:04:10.274852+00:00",
-  "cluster_count": 57,
-  "article_count": 64,
+  "generated_at": "2026-07-27T12:20:36.567437+00:00",
+  "cluster_count": 58,
+  "article_count": 65,
   "subtopic_count": 10,
   "angle_count": 5,
   "angle_distribution": {
-    "best_options": 29,
+    "best_options": 30,
     "how_to": 4,
     "ideas": 4,
     "mistakes": 26,
@@ -1000,7 +1000,7 @@
       "representative_article_slugs": [
         "best-furniture-earthy-entryway"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
@@ -1044,7 +1044,7 @@
       "representative_article_slugs": [
         "best-furniture-for-earthy-kitchen"
       ],
-      "recent_article_count": 1,
+      "recent_article_count": 0,
       "internal_link_targets_available": 0,
       "promoted_article_count": 0,
       "weak_article_count": 0,
@@ -1150,6 +1150,50 @@
       ],
       "angle_distribution": {
         "mistakes": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_id": "japandi_entryway",
+      "cluster_name": "japandi entryway",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "utility_transition"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "best furniture for a japandi entryway"
+      ],
+      "latest_article_date": "2026-07-27",
+      "latest_publication": {
+        "article_slug": "best-furniture-for-japandi-entryway",
+        "article_title": "Thoughtfully Selecting the Best Furniture for a Japandi Entryway",
+        "publish_date": "2026-07-27",
+        "subtopic_id": "furniture",
+        "subtopic_name": "furniture and anchors",
+        "angle_id": "best_options"
+      },
+      "representative_article_slugs": [
+        "best-furniture-for-japandi-entryway"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "furniture",
+          "subtopic_name": "furniture and anchors",
+          "article_count": 1,
+          "latest_article_date": "2026-07-27",
+          "representative_article_slugs": [
+            "best-furniture-for-japandi-entryway"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "best_options": 1
       },
       "status": "underdeveloped"
     },

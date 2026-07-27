@@ -7,7 +7,7 @@ cluster_name: "moody entryway"
 cluster_slug: "moody-entryway"
 cluster_article_count: 1
 cluster_primary_keywords: ["moody entryway texture mistakes to avoid"]
-cluster_generated_at: "2026-07-24T11:04:11.657503+00:00"
+cluster_generated_at: "2026-07-27T12:20:38.411951+00:00"
 cluster_intro: "Moody Entryway is a useful decorating topic because it combines inspiration with practical decision-making. Readers usually arrive here looking for a clear style direction, help solving a room problem, or confidence about how to make the look feel intentional at home.
 
 This pillar page brings together the site's coverage around moody entryway, with article angles shaped by keyword themes such as moody entryway texture mistakes to avoid. That mix helps the page support both broader search intent and more specific decorating questions without feeling repetitive.
@@ -61,10 +61,10 @@ These adjacent hubs help readers keep moving through the topic without losing th
 <p><a class="cluster-hub-link" href="/clusters/earthy-entryway/">Open this cluster</a></p>
 </div>
 <div class="cluster-hub-card">
-<h3><a href="/clusters/mediterranean-entryway/">Mediterranean Entryway</a></h3>
-<p>Broad editorial cluster for mediterranean entryway topics.</p>
+<h3><a href="/clusters/japandi-entryway/">Japandi Entryway</a></h3>
+<p>Broad editorial cluster for japandi entryway topics.</p>
 <p class="cluster-hub-meta">1 article</p>
-<p><a class="cluster-hub-link" href="/clusters/mediterranean-entryway/">Open this cluster</a></p>
+<p><a class="cluster-hub-link" href="/clusters/japandi-entryway/">Open this cluster</a></p>
 </div>
 </div>
 

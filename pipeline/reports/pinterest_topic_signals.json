@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-24T11:04:10.279606+00:00",
-  "cluster_count": 57,
+  "generated_at": "2026-07-27T12:20:36.573917+00:00",
+  "cluster_count": 58,
   "summary": {
     "hot": 0,
     "warm": 0,
     "cold": 18,
-    "no_data": 39
+    "no_data": 40
   },
   "clusters": [
     {
@@ -414,6 +414,30 @@
       "average_saves": 0.0,
       "signal_label": "cold",
       "signal_boost": -6
+    },
+    {
+      "cluster_name": "japandi entryway",
+      "article_count": 1,
+      "article_slugs": [
+        "best-furniture-for-japandi-entryway"
+      ],
+      "primary_keywords": [
+        "best furniture for a japandi entryway"
+      ],
+      "secondary_keywords": [
+        "japandi entryway ideas",
+        "how to style a japandi entryway",
+        "japandi entryway decor",
+        "japandi entryway layout ideas"
+      ],
+      "pinterest_article_count": 0,
+      "strong_article_count": 0,
+      "weak_article_count": 0,
+      "average_score": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_saves": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0
     },
     {
       "cluster_name": "japandi kitchen",

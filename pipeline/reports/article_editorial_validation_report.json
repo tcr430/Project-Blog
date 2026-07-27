@@ -1,40 +1,41 @@
 {
-  "generated_at": "2026-07-24T11:00:52.843897+00:00",
+  "generated_at": "2026-07-27T12:17:20.883626+00:00",
   "articles": [
     {
-      "article_slug": "japandi-kitchen-texture-mistakes-to-avoid",
-      "cluster_id": "japandi_kitchen",
-      "subtopic_id": "textures",
-      "angle_id": "mistakes",
-      "primary_keyword": "japandi kitchen texture mistakes to avoid",
+      "article_slug": "best-furniture-for-japandi-entryway",
+      "cluster_id": "japandi_entryway",
+      "subtopic_id": "furniture",
+      "angle_id": "best_options",
+      "primary_keyword": "best furniture for a japandi entryway",
       "validation_status": "warning",
       "warnings": [
+        "Several section headings do not signal the topic strongly enough.",
         "Supporting keyword ideas are barely reflected in the body."
       ],
       "errors": [],
       "checks": {
         "generic_intro": {
-          "intro_word_count": 136,
-          "concept_overlap": 7,
-          "first_sentence": "Embracing the Japandi kitchen style is about balancing the serene minimalism of Japanese design with the cozy warmth of Scandinavian interiors."
+          "intro_word_count": 102,
+          "concept_overlap": 5,
+          "first_sentence": "Entryways often set the tone for the home, yet styling them to feel both welcoming and purposeful can be surprisingly complex."
         },
         "heading_quality": {
           "heading_count": 5,
           "vague_heading_count": 0,
-          "low_specificity_heading_count": 1,
+          "low_specificity_heading_count": 2,
           "repeated_signature_count": 0,
           "repeated_stem_count": 0,
           "headings": [
-            "When Surfaces Are Too Uniform: Introducing Layered Textural Contrast",
-            "Balancing Natural and Manufactured Textures Without Clashing",
-            "Overlooking the Importance of Scale and Texture Proportion",
-            "Placing Textures Without Considering Light and Flow",
-            "Losing the Calm Finish: How to Layer Finishes for That Signature Japandi Warmth"
+            "Defining Essential Criteria for Japandi Entryway Furniture",
+            "Embracing Oak and Linen: A Timeless Natural Duo",
+            "Considering Alternative Storage: Rattan and Stone Elements",
+            "Adapting Furniture Choices to Room Size and Layout Challenges",
+            "Practical Guidance for Confident Furniture Selection"
           ]
         },
         "specificity": {
-          "concept_token_hits": 8,
-          "specificity_term_hits": 13,
+          "concept_token_hits": 6,
+          "specificity_term_hits": 11,
           "secondary_keyword_hits": 0
         },
         "distinctiveness": {
@@ -43,7 +44,55 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-07-24T11:00:52.843391+00:00"
+      "timestamp": "2026-07-27T12:17:20.882953+00:00"
+    },
+    {
+      "article_slug": "thoughtful-small-bathroom-ideas-layered-light-spaces",
+      "cluster_id": "small bathroom ideas",
+      "subtopic_id": "legacy_unspecified",
+      "angle_id": "legacy_unspecified",
+      "primary_keyword": "small bathroom ideas",
+      "validation_status": "fail",
+      "warnings": [
+        "Several section headings do not signal the topic strongly enough.",
+        "Supporting keyword ideas are barely reflected in the body."
+      ],
+      "errors": [
+        "Section headings are too unspecific to support a strong editorial frame."
+      ],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 125,
+          "concept_overlap": 5,
+          "first_sentence": "A small bathroom often feels like a puzzle: how to balance function with style while making the most of limited space?"
+        },
+        "heading_quality": {
+          "heading_count": 6,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 5,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Establishing the Foundation: Neutral Layers and Natural Surfaces",
+            "Introducing Depth with Color and Complementary Tones",
+            "Layering Function and Style in the Shower or Bath Zone",
+            "Styling Open Storage: A Subtle Balance of Practicality and Calm",
+            "Final Decisions: Mirrors, Lighting, and Finishing Details for Cohesion",
+            "Conclusion"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 10,
+          "specificity_term_hits": 12,
+          "secondary_keyword_hits": 0
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-07-27T12:16:50.270555+00:00"
     },
     {
       "article_slug": "summer-balcony-styling-mistakes-to-avoid",
@@ -90,7 +139,51 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-07-24T10:59:58.995427+00:00"
+      "timestamp": "2026-07-27T12:16:50.037854+00:00"
+    },
+    {
+      "article_slug": "japandi-kitchen-texture-mistakes-to-avoid",
+      "cluster_id": "japandi_kitchen",
+      "subtopic_id": "textures",
+      "angle_id": "mistakes",
+      "primary_keyword": "japandi kitchen texture mistakes to avoid",
+      "validation_status": "warning",
+      "warnings": [
+        "Supporting keyword ideas are barely reflected in the body."
+      ],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 136,
+          "concept_overlap": 7,
+          "first_sentence": "Embracing the Japandi kitchen style is about balancing the serene minimalism of Japanese design with the cozy warmth of Scandinavian interiors."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 1,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "When Surfaces Are Too Uniform: Introducing Layered Textural Contrast",
+            "Balancing Natural and Manufactured Textures Without Clashing",
+            "Overlooking the Importance of Scale and Texture Proportion",
+            "Placing Textures Without Considering Light and Flow",
+            "Losing the Calm Finish: How to Layer Finishes for That Signature Japandi Warmth"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 8,
+          "specificity_term_hits": 13,
+          "secondary_keyword_hits": 0
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-07-24T11:00:52.843391+00:00"
     },
     {
       "article_slug": "kitchen-surface-styling-mistakes-to-avoid",
@@ -273,54 +366,6 @@
         }
       },
       "timestamp": "2026-07-10T11:47:59.651333+00:00"
-    },
-    {
-      "article_slug": "thoughtful-small-bathroom-ideas-layered-light-spaces",
-      "cluster_id": "small bathroom ideas",
-      "subtopic_id": "legacy_unspecified",
-      "angle_id": "legacy_unspecified",
-      "primary_keyword": "small bathroom ideas",
-      "validation_status": "fail",
-      "warnings": [
-        "Several section headings do not signal the topic strongly enough.",
-        "Supporting keyword ideas are barely reflected in the body."
-      ],
-      "errors": [
-        "Section headings are too unspecific to support a strong editorial frame."
-      ],
-      "checks": {
-        "generic_intro": {
-          "intro_word_count": 125,
-          "concept_overlap": 5,
-          "first_sentence": "A small bathroom often feels like a puzzle: how to balance function with style while making the most of limited space?"
-        },
-        "heading_quality": {
-          "heading_count": 6,
-          "vague_heading_count": 0,
-          "low_specificity_heading_count": 5,
-          "repeated_signature_count": 0,
-          "repeated_stem_count": 0,
-          "headings": [
-            "Establishing the Foundation: Neutral Layers and Natural Surfaces",
-            "Introducing Depth with Color and Complementary Tones",
-            "Layering Function and Style in the Shower or Bath Zone",
-            "Styling Open Storage: A Subtle Balance of Practicality and Calm",
-            "Final Decisions: Mirrors, Lighting, and Finishing Details for Cohesion",
-            "Conclusion"
-          ]
-        },
-        "specificity": {
-          "concept_token_hits": 10,
-          "specificity_term_hits": 12,
-          "secondary_keyword_hits": 0
-        },
-        "distinctiveness": {
-          "nearest_article_slug": "",
-          "max_similarity": 0.0,
-          "strongest_heading_overlap": 0
-        }
-      },
-      "timestamp": "2026-07-10T11:47:16.531550+00:00"
     },
     {
       "article_slug": "minimalist-bedroom-texture-mistakes-to-avoid",

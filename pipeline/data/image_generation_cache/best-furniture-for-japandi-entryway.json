@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "563d27e0e08fc13ea1b0414634052b1aa769d33eae58b8d013e83423ec6bc0dc",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-japandi-entryway/hero.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-1": {
+    "cache_key": "9be5ecac92718775383c25778dfb8e1ae625144147310ba0a0e83bbcb56fcbb5",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-japandi-entryway/section-1.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-2": {
+    "cache_key": "405ec21dcc295b6bc140467e5a6ad56b7f3d1cb9678ba367ec5e7cf1ceb374c6",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-japandi-entryway/section-2.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-3": {
+    "cache_key": "398e7d43638144059cf97e137d3b496943b3aed6810515f4546e96688fc1e3a1",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-japandi-entryway/section-3.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-4": {
+    "cache_key": "a9c022204035f97f20693e2720c796cd402cf5cb02ff24548e0920bc3fd590b7",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-japandi-entryway/section-4.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-5": {
+    "cache_key": "3afeec0a7ba20f1c11da7f09e419ec2014a584d4c866f23cdde2333f370ac8cd",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-japandi-entryway/section-5.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  }
+}

@@ -1,17 +1,17 @@
 # Weekly Pipeline Report
 
-Generated: 2026-07-24
+Generated: 2026-07-27
 Window: last 7 days
 
 Articles Published: 2  
 Pins Generated: 6  
-Pins Scheduled: 106  
+Pins Scheduled: 108  
 Pins Published: 0  
 Repins Scheduled: 0
 
 ## Articles Published
+- best-furniture-for-japandi-entryway
 - japandi-kitchen-texture-mistakes-to-avoid
-- kitchen-surface-styling-mistakes-to-avoid
 
 ## Top Performing Pins
 - No published pin analytics were available for this window.
