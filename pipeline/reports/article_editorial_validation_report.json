@@ -1,41 +1,40 @@
 {
-  "generated_at": "2026-07-27T12:17:20.883626+00:00",
+  "generated_at": "2026-07-29T11:21:34.460470+00:00",
   "articles": [
     {
-      "article_slug": "best-furniture-for-japandi-entryway",
-      "cluster_id": "japandi_entryway",
+      "article_slug": "best-furniture-for-a-cottage-kitchen",
+      "cluster_id": "cottage_kitchen",
       "subtopic_id": "furniture",
       "angle_id": "best_options",
-      "primary_keyword": "best furniture for a japandi entryway",
+      "primary_keyword": "best furniture for a cottage kitchen",
       "validation_status": "warning",
       "warnings": [
-        "Several section headings do not signal the topic strongly enough.",
         "Supporting keyword ideas are barely reflected in the body."
       ],
       "errors": [],
       "checks": {
         "generic_intro": {
-          "intro_word_count": 102,
-          "concept_overlap": 5,
-          "first_sentence": "Entryways often set the tone for the home, yet styling them to feel both welcoming and purposeful can be surprisingly complex."
+          "intro_word_count": 137,
+          "concept_overlap": 6,
+          "first_sentence": "Choosing the right furniture for a cottage kitchen is more than a search for pretty pieces; it’s about blending practicality with the quiet warmth that defines this style."
         },
         "heading_quality": {
           "heading_count": 5,
           "vague_heading_count": 0,
-          "low_specificity_heading_count": 2,
+          "low_specificity_heading_count": 0,
           "repeated_signature_count": 0,
           "repeated_stem_count": 0,
           "headings": [
-            "Defining Essential Criteria for Japandi Entryway Furniture",
-            "Embracing Oak and Linen: A Timeless Natural Duo",
-            "Considering Alternative Storage: Rattan and Stone Elements",
-            "Adapting Furniture Choices to Room Size and Layout Challenges",
-            "Practical Guidance for Confident Furniture Selection"
+            "Defining Selection Criteria for Cottage Kitchen Furniture",
+            "Exploring Natural Wood Furniture: Warmth and Timelessness",
+            "Painted Wood Furniture: Soft Contrast and Vintage Appeal",
+            "Matching Furniture Choices to Room Scale and Style Context",
+            "Refining Your Furniture Selection with Practical Buying Tips"
           ]
         },
         "specificity": {
           "concept_token_hits": 6,
-          "specificity_term_hits": 11,
+          "specificity_term_hits": 9,
           "secondary_keyword_hits": 0
         },
         "distinctiveness": {
@@ -44,7 +43,7 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-07-27T12:17:20.882953+00:00"
+      "timestamp": "2026-07-29T11:21:34.459835+00:00"
     },
     {
       "article_slug": "thoughtful-small-bathroom-ideas-layered-light-spaces",
@@ -92,7 +91,7 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-07-27T12:16:50.270555+00:00"
+      "timestamp": "2026-07-29T11:20:59.883669+00:00"
     },
     {
       "article_slug": "summer-balcony-styling-mistakes-to-avoid",
@@ -139,7 +138,52 @@
           "strongest_heading_overlap": 0
         }
       },
-      "timestamp": "2026-07-27T12:16:50.037854+00:00"
+      "timestamp": "2026-07-29T11:20:59.659358+00:00"
+    },
+    {
+      "article_slug": "best-furniture-for-japandi-entryway",
+      "cluster_id": "japandi_entryway",
+      "subtopic_id": "furniture",
+      "angle_id": "best_options",
+      "primary_keyword": "best furniture for a japandi entryway",
+      "validation_status": "warning",
+      "warnings": [
+        "Several section headings do not signal the topic strongly enough.",
+        "Supporting keyword ideas are barely reflected in the body."
+      ],
+      "errors": [],
+      "checks": {
+        "generic_intro": {
+          "intro_word_count": 102,
+          "concept_overlap": 5,
+          "first_sentence": "Entryways often set the tone for the home, yet styling them to feel both welcoming and purposeful can be surprisingly complex."
+        },
+        "heading_quality": {
+          "heading_count": 5,
+          "vague_heading_count": 0,
+          "low_specificity_heading_count": 2,
+          "repeated_signature_count": 0,
+          "repeated_stem_count": 0,
+          "headings": [
+            "Defining Essential Criteria for Japandi Entryway Furniture",
+            "Embracing Oak and Linen: A Timeless Natural Duo",
+            "Considering Alternative Storage: Rattan and Stone Elements",
+            "Adapting Furniture Choices to Room Size and Layout Challenges",
+            "Practical Guidance for Confident Furniture Selection"
+          ]
+        },
+        "specificity": {
+          "concept_token_hits": 6,
+          "specificity_term_hits": 11,
+          "secondary_keyword_hits": 0
+        },
+        "distinctiveness": {
+          "nearest_article_slug": "",
+          "max_similarity": 0.0,
+          "strongest_heading_overlap": 0
+        }
+      },
+      "timestamp": "2026-07-27T12:17:20.882953+00:00"
     },
     {
       "article_slug": "japandi-kitchen-texture-mistakes-to-avoid",

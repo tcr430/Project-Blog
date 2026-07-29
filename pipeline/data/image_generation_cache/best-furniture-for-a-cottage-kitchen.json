@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "cache_key": "72023938d25a3eab0dcde345871f23ac1edb37fa3cb639c0045f42bd8cce91d3",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-a-cottage-kitchen/hero.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-1": {
+    "cache_key": "62bd28cf99a39edb7f73998cc0a25832ce301e77b81140a1370e56e908797bf1",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-a-cottage-kitchen/section-1.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-2": {
+    "cache_key": "e7054a1918f7f0499b74c47d891a4c8f372fcae61dfef5ee37d22b52dcfb4a21",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-a-cottage-kitchen/section-2.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-3": {
+    "cache_key": "2531e6dc3043e9dce0563870b9e1344d92580206d297b1c441430863c015236c",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-a-cottage-kitchen/section-3.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-4": {
+    "cache_key": "45251aadb0be74148a21bc826b5b16855c5ac657f00a1f9527ce37a6a0c87999",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-a-cottage-kitchen/section-4.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  },
+  "section-5": {
+    "cache_key": "f1c6a863d5f7b50b4b1b8faa441990f20afcbdd9c5d8963c9998ede331d78b59",
+    "output_path": "/home/runner/work/Project-Blog/Project-Blog/assets/img/best-furniture-for-a-cottage-kitchen/section-5.png",
+    "provider": "openai",
+    "provider_model": "gpt-image-1"
+  }
+}

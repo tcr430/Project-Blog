@@ -7,7 +7,7 @@ cluster_name: "japandi entryway"
 cluster_slug: "japandi-entryway"
 cluster_article_count: 1
 cluster_primary_keywords: ["best furniture for a japandi entryway"]
-cluster_generated_at: "2026-07-27T12:20:38.411951+00:00"
+cluster_generated_at: "2026-07-29T11:25:05.554698+00:00"
 cluster_intro: "Japandi Entryway is a useful decorating topic because it combines inspiration with practical decision-making. Readers usually arrive here looking for a clear style direction, help solving a room problem, or confidence about how to make the look feel intentional at home.
 
 This pillar page brings together the site's coverage around japandi entryway, with article angles shaped by keyword themes such as best furniture for a japandi entryway. That mix helps the page support both broader search intent and more specific decorating questions without feeling repetitive.

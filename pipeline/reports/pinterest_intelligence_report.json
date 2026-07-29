@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-27T12:16:26.669926+00:00",
+  "generated_at": "2026-07-29T11:20:36.147153+00:00",
   "overview": {
-    "pin_count": 158,
+    "pin_count": 161,
     "published_pin_count": 51,
     "analytics_ready_pin_count": 0,
-    "tracked_article_count": 50
+    "tracked_article_count": 51
   },
   "best_performing_clusters": [
     {
@@ -239,6 +239,24 @@
       "signal_boost": 0,
       "top_article_slugs": [
         "japandi-bedroom-texture-mistakes-to-avoid"
+      ]
+    },
+    {
+      "cluster_id": "japandi_entryway",
+      "cluster_name": "japandi entryway",
+      "pin_count": 3,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-for-japandi-entryway"
       ]
     },
     {
@@ -1047,6 +1065,25 @@
       ]
     },
     {
+      "cluster_id": "japandi_entryway",
+      "subtopic_id": "furniture",
+      "subtopic_name": "furniture and anchors",
+      "pin_count": 3,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-for-japandi-entryway"
+      ]
+    },
+    {
       "cluster_id": "moody_bathroom",
       "subtopic_id": "furniture",
       "subtopic_name": "furniture and anchors",
@@ -1829,7 +1866,7 @@
   "best_performing_angles": [
     {
       "angle_id": "best_options",
-      "pin_count": 72,
+      "pin_count": 75,
       "published_pin_count": 24,
       "analytics_ready_count": 0,
       "average_score": 0.0,
@@ -2151,6 +2188,27 @@
         "balancing-light-layers-best-lighting-for-living-room",
         "best-lighting-for-bathroom-layered-approach",
         "best-lighting-for-bedroom-layered-approach"
+      ]
+    },
+    {
+      "visual_style_key": "bottom_title|crisp_modern|storage_organization|comparison",
+      "style_name": "bottom-title",
+      "visual_family_id": "crisp_modern",
+      "shot_library_id": "storage_organization",
+      "intent_id": "comparison",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-for-japandi-entryway"
       ]
     },
     {
@@ -2489,6 +2547,27 @@
       "top_article_slugs": [
         "balancing-light-layers-best-lighting-for-living-room",
         "best-lighting-for-bathroom-layered-approach"
+      ]
+    },
+    {
+      "visual_style_key": "centered_title|crisp_modern|storage_organization|comparison",
+      "style_name": "centered-title",
+      "visual_family_id": "crisp_modern",
+      "shot_library_id": "storage_organization",
+      "intent_id": "comparison",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-for-japandi-entryway"
       ]
     },
     {
@@ -3024,6 +3103,27 @@
       ]
     },
     {
+      "visual_style_key": "top_title|crisp_modern|storage_organization|comparison",
+      "style_name": "top-title",
+      "visual_family_id": "crisp_modern",
+      "shot_library_id": "storage_organization",
+      "intent_id": "comparison",
+      "pin_count": 1,
+      "published_pin_count": 0,
+      "analytics_ready_count": 0,
+      "average_score": 0.0,
+      "average_impressions": 0.0,
+      "average_saves": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_pin_clicks": 0.0,
+      "average_closeups": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0,
+      "top_article_slugs": [
+        "best-furniture-for-japandi-entryway"
+      ]
+    },
+    {
       "visual_style_key": "top_title|crisp_modern|textures_materials|problem_solving",
       "style_name": "top-title",
       "visual_family_id": "crisp_modern",
@@ -3311,7 +3411,7 @@
     "angles": [
       {
         "angle_id": "best_options",
-        "pin_count": 72,
+        "pin_count": 75,
         "published_pin_count": 24,
         "analytics_ready_count": 0,
         "average_score": 0.0,

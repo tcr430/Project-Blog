@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-27T12:20:36.573917+00:00",
-  "cluster_count": 58,
+  "generated_at": "2026-07-29T11:25:03.839595+00:00",
+  "cluster_count": 59,
   "summary": {
     "hot": 0,
     "warm": 0,
     "cold": 18,
-    "no_data": 40
+    "no_data": 41
   },
   "clusters": [
     {
@@ -270,6 +270,30 @@
       "average_saves": 0.0,
       "signal_label": "cold",
       "signal_boost": -6
+    },
+    {
+      "cluster_name": "cottage kitchen",
+      "article_count": 1,
+      "article_slugs": [
+        "best-furniture-for-a-cottage-kitchen"
+      ],
+      "primary_keywords": [
+        "best furniture for a cottage kitchen"
+      ],
+      "secondary_keywords": [
+        "cottage kitchen ideas",
+        "how to style a cottage kitchen",
+        "cottage kitchen decor",
+        "cottage kitchen layout ideas"
+      ],
+      "pinterest_article_count": 0,
+      "strong_article_count": 0,
+      "weak_article_count": 0,
+      "average_score": 0.0,
+      "average_outbound_clicks": 0.0,
+      "average_saves": 0.0,
+      "signal_label": "no_data",
+      "signal_boost": 0
     },
     {
       "cluster_name": "earthy bathroom",

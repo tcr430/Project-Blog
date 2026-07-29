@@ -1,15 +1,16 @@
 # Weekly Pipeline Report
 
-Generated: 2026-07-27
+Generated: 2026-07-29
 Window: last 7 days
 
-Articles Published: 2  
-Pins Generated: 6  
-Pins Scheduled: 108  
+Articles Published: 3  
+Pins Generated: 9  
+Pins Scheduled: 111  
 Pins Published: 0  
 Repins Scheduled: 0
 
 ## Articles Published
+- best-furniture-for-a-cottage-kitchen
 - best-furniture-for-japandi-entryway
 - japandi-kitchen-texture-mistakes-to-avoid
 

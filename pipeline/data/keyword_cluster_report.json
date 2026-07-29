@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-27T12:20:36.567437+00:00",
-  "cluster_count": 58,
-  "article_count": 65,
+  "generated_at": "2026-07-29T11:25:03.832854+00:00",
+  "cluster_count": 59,
+  "article_count": 66,
   "subtopic_count": 10,
   "angle_count": 5,
   "angle_distribution": {
-    "best_options": 30,
+    "best_options": 31,
     "how_to": 4,
     "ideas": 4,
     "mistakes": 26,
@@ -886,6 +886,50 @@
       ],
       "angle_distribution": {
         "mistakes": 1
+      },
+      "status": "underdeveloped"
+    },
+    {
+      "cluster_id": "cottage_kitchen",
+      "cluster_name": "cottage kitchen",
+      "legacy_cluster_names": [],
+      "domain_ids": [
+        "kitchens_dining"
+      ],
+      "article_count": 1,
+      "primary_keywords_used": [
+        "best furniture for a cottage kitchen"
+      ],
+      "latest_article_date": "2026-07-29",
+      "latest_publication": {
+        "article_slug": "best-furniture-for-a-cottage-kitchen",
+        "article_title": "Choosing the Best Furniture for a Cottage Kitchen: A Thoughtful Comparison",
+        "publish_date": "2026-07-29",
+        "subtopic_id": "furniture",
+        "subtopic_name": "furniture and anchors",
+        "angle_id": "best_options"
+      },
+      "representative_article_slugs": [
+        "best-furniture-for-a-cottage-kitchen"
+      ],
+      "recent_article_count": 1,
+      "internal_link_targets_available": 0,
+      "promoted_article_count": 0,
+      "weak_article_count": 0,
+      "subtopic_count": 1,
+      "subtopic_coverage": [
+        {
+          "subtopic_id": "furniture",
+          "subtopic_name": "furniture and anchors",
+          "article_count": 1,
+          "latest_article_date": "2026-07-29",
+          "representative_article_slugs": [
+            "best-furniture-for-a-cottage-kitchen"
+          ]
+        }
+      ],
+      "angle_distribution": {
+        "best_options": 1
       },
       "status": "underdeveloped"
     },
